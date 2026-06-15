@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import CTASection from '@/components/CTASection';
+import PageCTA from '@/components/PageCTA';
 import { pageMetadata } from '@/data/pages';
 
 export const metadata = {
@@ -97,7 +97,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-      <CTASection title="Need a repair instead of a guide?" />
+      <PageCTA title="Need Help With Your TV Repair Issue?" />
     </main>
   );
 }

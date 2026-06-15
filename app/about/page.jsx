@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import CTASection from '@/components/CTASection';
 import JsonLd from '@/components/JsonLd';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
@@ -10,6 +9,29 @@ export const metadata = {
   alternates: { canonical: '/about' },
   openGraph: { title: pageMetadata.about.title, description: pageMetadata.about.description, url: '/about' },
 };
+
+const coreValues = [
+  {
+    icon: 'fa-solid fa-microchip',
+    title: 'Technical Mastery',
+    text: 'Expert repair knowledge backed by advanced diagnostic tools and hands-on technical experience.',
+  },
+  {
+    icon: 'fa-solid fa-hand-holding-dollar',
+    title: 'Honest Pricing',
+    text: 'Clear diagnosis, transparent estimates and no hidden repair charges before work begins.',
+  },
+  {
+    icon: 'fa-solid fa-certificate',
+    title: 'Certified Excellence',
+    text: 'Skilled technicians handling LED, OLED, QLED and Smart TV repair with professional care.',
+  },
+  {
+    icon: 'fa-solid fa-headset',
+    title: 'Priority Support',
+    text: 'Fast communication, doorstep assistance and reliable support across Delhi, Noida and NCR.',
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -49,31 +71,25 @@ export default function AboutPage() {
           <Image src="/images/team.png" alt="GR Solution repair team" width={650} height={480} className="card-img-rounded" />
         </div>
       </section>
-      <section className="section">
+      <section className="section" style={{ padding: '80px 0' }}>
         <div className="container">
           <div className="section-title section-centered-title">
-            <span className="badge">OUR VALUES</span>
+            <span className="badge mb-3">OUR VALUES</span>
             <h2>Our Core Values</h2>
           </div>
-          <div className="grid-3">
-            {[
-              ['Technical Precision', 'Careful diagnostics before repair decisions.'],
-              ['Transparent Service', 'Clear guidance on fault, estimate and feasibility.'],
-              ['Doorstep Convenience', 'Local technician support across Delhi, Noida and NCR.'],
-              ['Customer Trust', 'Service built around communication and practical solutions.'],
-              ['Modern Skills', 'Repair knowledge for LED, OLED, QLED and Smart TV systems.'],
-              ['Responsible Repair', 'Honest advice when replacement is better than repair.'],
-            ].map(([title, text]) => (
-              <article className="card" key={title}>
-                <i className="fa-solid fa-circle-check card-icon" />
-                <h3>{title}</h3>
-                <p>{text}</p>
+          <div className="grid-4">
+            {coreValues.map((value) => (
+              <article className="card core-value-card" key={value.title}>
+                <div className="core-value-icon">
+                  <i className={value.icon} />
+                </div>
+                <h3>{value.title}</h3>
+                <p>{value.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
-      <CTASection title="Talk to a repair expert today" />
     </main>
   );
 }

@@ -6,14 +6,17 @@ export default function HeroSection({ eyebrow, title, highlight, description, im
     <section className="hero">
       <div className="container hero-grid">
         <div className="hero-content">
-          {eyebrow ? <span className="badge">{eyebrow}</span> : null}
+          <div className="badge-group">
+            {eyebrow ? <span className="badge">{eyebrow}</span> : null}
+            <span className="badge"><i className="fa-solid fa-star" /> 4.9/5 Rating</span>
+          </div>
           <h1>
             {title} <br />
             {highlight ? <span className="primary-text">{highlight}</span> : null}
           </h1>
           <p>{description}</p>
-          <div className="nav-ctas">
-            <Link href={ctaHref} className="btn btn-primary btn-lg">
+          <div className="hero-ctas">
+            <Link href={ctaHref} className="btn btn-primary">
               {ctaLabel}
             </Link>
             <Link href="/services" className="btn btn-outline">

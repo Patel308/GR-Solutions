@@ -1,11 +1,11 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
-import CTASection from '@/components/CTASection';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import JsonLd from '@/components/JsonLd';
-import ContactForm from '@/components/ContactForm';
+import BookingForm from '@/components/BookingForm';
 import { services } from '@/data/services';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
@@ -29,11 +29,48 @@ const faqs = [
   },
   {
     question: 'How quickly can a technician visit?',
-    answer: 'Many bookings can be handled the same day depending on location, technician availability and the repair type.',
+    answer: 'In most nearby service areas, we try to arrange same-day or next-day technician visits depending on availability and the repair issue.',
   },
   {
     question: 'Which TV types do you repair?',
-    answer: 'We handle LED, LCD, OLED, QLED and Smart TV issues including display, sound, power, backlight and panel faults.',
+    answer: 'We repair LED, LCD, OLED, QLED, Smart TV, Android TV and large-screen televisions from major brands.',
+  },
+  {
+    question: 'Do you repair TV panels and display issues?',
+    answer: 'Yes, we handle panel-related issues, display lines, backlight problems, no display, screen flickering and panel bonding cases where repair is possible.',
+  },
+  {
+    question: 'Do you provide warranty after repair?',
+    answer: 'Warranty depends on the repair type and parts used. Our team explains the warranty terms clearly before starting the repair.',
+  },
+  {
+    question: 'Can I get an estimate before repair?',
+    answer: 'Yes, after diagnosis we share the repair estimate clearly so you can approve the work before any paid repair begins.',
+  },
+  {
+    question: 'Do you use genuine parts?',
+    answer: 'We use genuine or high-quality compatible parts depending on availability, device model and customer approval.',
+  },
+  {
+    question: 'How can I book a repair service?',
+    answer: 'You can call directly, send a WhatsApp message, or submit the enquiry form on the website. Our team will contact you for details and scheduling.',
+  },
+];
+
+const brandNames = ['SAMSUNG', 'SONY', 'LG', 'XIAOMI', 'ONEPLUS', 'VU', 'TOSHIBA', 'PANASONIC'];
+
+const whyChooseBenefits = [
+  {
+    title: 'Same Day Repair',
+    text: '90% of our TV and mobile repairs are completed within 6 hours.',
+  },
+  {
+    title: 'Certified Technicians',
+    text: '10+ years of experience in high-end television technology.',
+  },
+  {
+    title: 'Transparent Pricing',
+    text: 'Fixed diagnostic fees and upfront quotes before repair.',
   },
 ];
 
@@ -57,9 +94,10 @@ export default function HomePage() {
         eyebrow="#1 TV Repair in Delhi, Noida & NCR"
         title="Premium TV Repair Services"
         highlight="At Your Doorstep"
-        description="Expert LCD, LED, OLED and QLED TV repairs with genuine parts where available, same-day service options and trusted doorstep support."
+        description="Expert LCD, LED, OLED, and QLED TV repairs. We provide genuine parts, same-day service, and a 90-day warranty. Trusted by 15,000+ happy customers in Delhi, Noida & NCR."
       />
 
+      {/* Services Carousel */}
       <section className="section section-hero-carousel">
         <div className="container">
           <div className="section-title section-centered-title">
@@ -82,57 +120,366 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container grid-2-alt">
-          <div>
-            <span className="badge">WHY CHOOSE US</span>
-            <h2>
-              Why Delhi, Noida & NCR Trusts <span className="primary-text">GR Solution</span>
-            </h2>
-            <p>
-              Our repair process focuses on clear diagnosis, professional handling, transparent communication and practical
-              repair options before any paid work begins.
-            </p>
-            <Link href="/about" className="btn btn-outline">
-              About GR Solution
-            </Link>
-          </div>
-          <div className="grid-2">
-            {['Certified technicians', 'Doorstep diagnosis', 'Clear repair estimate', 'Local NCR coverage'].map((item) => (
-              <article className="card" key={item}>
-                <i className="fa-solid fa-circle-check card-icon" />
-                <h3>{item}</h3>
-              </article>
-            ))}
+      {/* Why Choose Us — Redesigned */}
+      <section className="section" style={{ padding: '100px 0', background: 'var(--bg-light)' }}>
+        <div className="container">
+          <div className="hero-grid" style={{ alignItems: 'center' }}>
+            <div className="hero-image">
+              <Image
+                src="/images/team.png"
+                alt="GR Solution Expert Team"
+                width={650}
+                height={480}
+                style={{ borderRadius: '20px', width: '100%' }}
+              />
+            </div>
+            <div className="hero-content">
+              <h2 style={{ fontSize: '2.5rem' }}>
+                Why Delhi, Noida & NCR Trusts <br />
+                <span className="primary-text">GR Service Center</span>
+              </h2>
+              <ul style={{ marginTop: '2rem' }}>
+                {whyChooseBenefits.map((benefit) => (
+                  <li
+                    key={benefit.title}
+                    style={{
+                      display: 'flex',
+                      gap: '1rem',
+                      alignItems: 'flex-start',
+                      marginBottom: '1.5rem',
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: '40px',
+                        height: '40px',
+                        background: 'rgba(0, 74, 173, 0.1)',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'var(--primary)',
+                        flexShrink: 0,
+                      }}
+                    >
+                      <i className="fa-solid fa-check" />
+                    </div>
+                    <div>
+                      <h4 style={{ marginBottom: 0 }}>{benefit.title}</h4>
+                      <p style={{ color: 'var(--text-muted)' }}>{benefit.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* For Custom Electronics — Dark CTA Section */}
+      <section
+        style={{
+          padding: '120px 0',
+          background: "linear-gradient(rgba(8, 9, 28, 0.88), rgba(8, 9, 28, 0.92)), url('/images/hero.png') center/cover",
+          color: 'var(--white)',
+          textAlign: 'center',
+        }}
+      >
+        <div className="container">
+          <span
+            style={{
+              display: 'inline-block',
+              background: '#2563eb',
+              color: '#ffffff',
+              border: 'none',
+              marginBottom: '2rem',
+              padding: '0.8rem 2rem',
+              borderRadius: '999px',
+              fontWeight: 800,
+              fontSize: '0.8rem',
+              letterSpacing: '0.04em',
+            }}
+          >
+            FOR CUSTOM ELECTRONICS
+          </span>
+          <h2 style={{ color: 'white', fontSize: '3.5rem', marginBottom: '2rem', lineHeight: 1.2 }}>
+            Can&apos;t Find Your <span style={{ color: '#60a5fa' }}>Specific Issue?</span>
+          </h2>
+          <p
+            style={{
+              margin: '0 auto 4rem',
+              color: 'rgba(255,255,255,0.85)',
+              fontSize: '1.25rem',
+              maxWidth: '900px',
+              lineHeight: 1.8,
+            }}
+          >
+            Our laboratory is equipped with state-of-the-art diagnostic tools for complex board-level
+            electronics. From panel bonding to chipset reballing, we handle it all.{' '}
+            <br />
+            <strong style={{ color: 'white' }}>Talk to an engineer for a free technical consultation.</strong>
+          </p>
+          <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a
+              href={siteConfig.phoneHref}
+              className="custom-cta-primary"
+              style={{
+                padding: '0.9rem 2.5rem',
+                background: '#2563eb',
+                border: '2px solid #2563eb',
+                borderRadius: '999px',
+                fontWeight: 700,
+                fontSize: '0.95rem',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                color: '#ffffff',
+                textDecoration: 'none',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <i className="fa-solid fa-phone" /> Call An Engineer
+            </a>
+            <Link
+              href="/contact"
+              className="custom-cta-outline"
+              style={{
+                padding: '0.9rem 2.5rem',
+                border: '2px solid rgba(255,255,255,0.7)',
+                borderRadius: '999px',
+                fontWeight: 700,
+                fontSize: '0.95rem',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                color: 'white',
+                textDecoration: 'none',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              Submit Service Request &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Ready to Help — Premium Booking Section */}
+      <section className="section-contact-booking" id="quote">
+        <div className="container">
+          <div className="hero-grid" style={{ alignItems: 'flex-start', gap: '6rem' }}>
+            {/* Left Column */}
+            <div>
+              <span
+                className="badge"
+                style={{
+                  background: 'rgba(0,74,173,0.1)',
+                  color: 'var(--primary)',
+                  padding: '0.5rem 1.2rem',
+                  borderRadius: '20px',
+                  fontWeight: 700,
+                  fontSize: '0.75rem',
+                  letterSpacing: '0.02em',
+                  marginBottom: '2rem',
+                  display: 'inline-block',
+                }}
+              >
+                READY TO HELP
+              </span>
+              <h2
+                className="fs-huge"
+                style={{
+                  lineHeight: 1.1,
+                  fontWeight: 800,
+                  color: 'var(--secondary)',
+                  marginBottom: '3rem',
+                }}
+              >
+                Book Your Premium <br />
+                <span className="primary-text">Repair Service</span>
+              </h2>
+
+              {/* Feature Items */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', marginTop: '2rem' }}>
+                <div className="booking-feature-row">
+                  <div className="booking-feature-icon">
+                    <i className="fa-solid fa-truck-fast" />
+                  </div>
+                  <div>
+                    <h4 style={{ marginBottom: '0.4rem', color: 'var(--secondary)', fontSize: '1.1rem', fontWeight: 700 }}>
+                      90 Min Response
+                    </h4>
+                    <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, fontSize: '0.95rem' }}>
+                      Our lead engineers priority-dispatch to your location across Delhi NCR.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="booking-feature-row">
+                  <div className="booking-feature-icon">
+                    <i className="fa-solid fa-shield-halved" />
+                  </div>
+                  <div>
+                    <h4 style={{ marginBottom: '0.4rem', color: 'var(--secondary)', fontSize: '1.1rem', fontWeight: 700 }}>
+                      Verified Guarantee
+                    </h4>
+                    <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, fontSize: '0.95rem' }}>
+                      All repairs come with an authorized certificate and 12-month warranty.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="booking-feature-row">
+                  <div className="booking-feature-icon">
+                    <i className="fa-solid fa-headset" />
+                  </div>
+                  <div>
+                    <h4 style={{ marginBottom: '0.4rem', color: 'var(--secondary)', fontSize: '1.1rem', fontWeight: 700 }}>
+                      24/7 Priority Hotline
+                    </h4>
+                    <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, fontSize: '0.95rem' }}>
+                      Direct access to our technical desk for post-repair support and guidance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Row */}
+              <div className="booking-contact-row">
+                <div>
+                  <span
+                    style={{
+                      fontSize: '0.75rem',
+                      fontWeight: 800,
+                      color: '#94a3b8',
+                      display: 'block',
+                      marginBottom: '0.6rem',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    CALL US NOW
+                  </span>
+                  <a
+                    href={siteConfig.phoneHref}
+                    style={{
+                      fontSize: '1.6rem',
+                      fontWeight: 800,
+                      color: 'var(--secondary)',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    {siteConfig.phone}
+                  </a>
+                </div>
+                <div>
+                  <span
+                    style={{
+                      fontSize: '0.75rem',
+                      fontWeight: 800,
+                      color: '#94a3b8',
+                      display: 'block',
+                      marginBottom: '0.6rem',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    EMAIL US
+                  </span>
+                  <a
+                    href={siteConfig.emailHref}
+                    style={{
+                      fontSize: '1.6rem',
+                      fontWeight: 800,
+                      color: 'var(--secondary)',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    {siteConfig.email}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column — Form Card */}
+            <div>
+              <BookingForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Authorized Service Expertise — Brands Carousel */}
+      <section className="section-brands">
+        <div className="container">
+          <div className="section-title">
+            <h2>Authorized Service Expertise</h2>
+            <p>We are certified experts in repairing products from all global giants.</p>
+          </div>
+          <div className="logo-carousel-container">
+            <div className="logo-track">
+              {[...brandNames, ...brandNames].map((brand, i) => (
+                <div className="logo-item" key={`${brand}-${i}`}>
+                  {brand}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Our Expert Repair Team */}
+      <section className="section" style={{ padding: '100px 0', background: 'var(--white)' }}>
+        <div className="container hero-grid" style={{ alignItems: 'center', gap: '5rem' }}>
+          <div>
+            <span className="badge" style={{ marginBottom: '1.5rem' }}>
+              EXPERT ENGINEERS
+            </span>
+            <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>
+              Meet Our <span className="primary-text">Expert Repair Team</span>
+            </h2>
+            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+              At GR Solution, our team consists of 25+ certified electronics engineers who have worked
+              with major global brands like Sony, Samsung, and LG. We specialize in precision board-level
+              and panel repairs that most shops can&apos;t handle.
+            </p>
+            <div style={{ display: 'flex', gap: '3rem', marginTop: '2.5rem' }}>
+              <div>
+                <h2 style={{ marginBottom: 0, color: 'var(--secondary)' }}>15+</h2>
+                <span style={{ color: 'var(--text-muted)' }}>Years Experience</span>
+              </div>
+              <div>
+                <h2 style={{ marginBottom: 0, color: 'var(--secondary)' }}>25k+</h2>
+                <span style={{ color: 'var(--text-muted)' }}>TVs Repaired</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <Image
+              src="/images/team.png"
+              alt="GR Solution Technical Team"
+              width={650}
+              height={480}
+              style={{ borderRadius: '20px', width: '100%', boxShadow: 'var(--shadow-lg)' }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
       <Testimonials />
 
+      {/* FAQ — moved to near the end */}
       <section className="section section-faq">
-        <div className="container grid-2-alt">
-          <div>
-            <span className="badge">FAQ</span>
+        <div className="container">
+          <div className="section-title section-centered-title">
+            <span className="badge mb-3">FAQ</span>
             <h2>Common Questions</h2>
             <p>Helpful answers about GR Solution repair services across Delhi, Noida and NCR.</p>
           </div>
-          <FAQ faqs={faqs} />
-        </div>
-      </section>
-
-      <section className="section" id="quote">
-        <div className="container grid-2-alt">
-          <div>
-            <span className="badge">BOOK SERVICE</span>
-            <h2>Get A Free Repair Consultation</h2>
-            <p>Share your device issue and our team will guide you on the next step.</p>
+          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <FAQ faqs={faqs} />
           </div>
-          <ContactForm id="callbackForm" title="Request Callback" />
         </div>
       </section>
 
-      <CTASection />
     </main>
   );
 }

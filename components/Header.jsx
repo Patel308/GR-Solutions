@@ -9,6 +9,10 @@ import { services } from '@/data/services';
 import { siteConfig } from '@/data/siteConfig';
 import EnquiryModal from './EnquiryModal';
 
+const dropdownServices = services.filter(
+  (s) => !['laptop-repair', 'mobile-repair'].includes(s.slug)
+);
+
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +37,7 @@ export default function Header() {
                       Services <i className="fa-solid fa-chevron-down" />
                     </Link>
                     <ul className="dropdown-menu">
-                      {services.map((service) => (
+                      {dropdownServices.map((service) => (
                         <li key={service.slug}>
                           <Link href={`/services/${service.slug}`} onClick={() => setMenuOpen(false)}>
                             <i className={service.icon} /> {service.title}
