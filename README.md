@@ -1,101 +1,534 @@
-# SLV Service Center - Premium TV Repair HTML5 Template
+# GR Solution - Next.js SSG Local SEO Website
 
-**SLV Service Center** is a high-performance, SEO-optimized, and visually stunning HTML5 template designed specifically for TV Repair, Electronics Servicing, and Technical Support businesses. This template features a modern, clean, and professional design that ensures a premium user experience across all devices.
+A production-ready Next.js website for **GR Solution**, a local TV and electronics repair service provider serving Delhi, Noida, and NCR.
 
-## 🚀 Key Features
-
-*   **Extreme Responsiveness**: Flawless layout on Desktop, Tablet, and all Smart Mobile devices.
-*   **Modern Premium Aesthetic**: Clean typography (Inter), elegant color palettes, and glassmorphism-inspired elements.
-*   **Full Page SEO Optimized**: Semantic HTML5, unique meta tags, Open Graph (OG), Twitter Cards, and Canonical link integration.
-*   **Local SEO Schema**: Integrated LocalBusiness JSON-LD markup for better local search visibility in Delhi NCR.
-*   **Performance Focused**: Optimized assets, ultra-fast loading times, and high Core Web Vitals scores.
-*   **Dedicated Service Pages**: Professional sub-pages for specific repair solutions (OLED, LED, Laptop, Mobile, CCTV, etc.).
-*   **Interactive FAQ & Support**: Modern card-based accordion with live 24/7 support indicators.
-*   **Premium Blog Design**: Fully functional sidebar with categorical icons and interactive count badges.
-
-## 📁 Optimized Project Structure
-
-```text
-/GR-Solution-Template
-  ├── css/             # Stylesheets (main.css)
-  ├── images/          # Professional Graphics & Logos
-  ├── js/              # Premium JavaScript logic (main.js)
-  ├── services/        # Specialized Service HTML Pages (LED, OLED, etc.)
-  ├── Theme-Preview/   # High-resolution Full-Page Screenshots
-  ├── Documentation/   # Comprehensive Setup & Maintenance Guides
-  ├── index.html       # Landing Page (Home)
-  ├── about.html       # Company History & Values
-  ├── services.html    # All Services Overview
-  ├── blog.html        # Repair Insights & Maintenance Tips
-  ├── contact.html     # Professional Enquiry & Booking
-  ├── privacy.html     # Data Security Policy
-  └── terms.html       # Service Terms & Conditions
-```
-
-## ⚙️ Professional Setup
-
-1.  **Deployment**: Upload the files to any web hosting (Shared, VPS, or Static hosting like Vercel/Netlify).
-2.  **Customization**: All global styles are managed via CSS Variables in `:root` inside `css/main.css`.
-3.  **SEO**: Update the `meta` tags in the `<head>` of each file with your specific target keywords.
-4.  **Analytics**: Replace the Google Analytics ID in `index.html` to track your traffic.
-
-## 🛠️ Technology Stack
-
-*   **HTML5 & CSS3** (Vanilla)
-*   **Modern JavaScript** (ES6+)
-*   **Font Awesome 6.4.0**
-# SLV Service Center - Premium TV Repair HTML5 Template
-
-**SLV Service Center** is a high-performance, SEO-optimized, and visually stunning HTML5 template designed specifically for TV Repair, Electronics Servicing, and Technical Support businesses. This template features a modern, clean, and professional design that ensures a premium user experience across all devices.
-
-## 🚀 Key Features
-
-*   **Extreme Responsiveness**: Flawless layout on Desktop, Tablet, and all Smart Mobile devices.
-*   **Modern Premium Aesthetic**: Clean typography (Inter), elegant color palettes, and glassmorphism-inspired elements.
-*   **Full Page SEO Optimized**: Semantic HTML5, unique meta tags, Open Graph (OG), Twitter Cards, and Canonical link integration.
-*   **Local SEO Schema**: Integrated LocalBusiness JSON-LD markup for better local search visibility in Delhi NCR.
-*   **Performance Focused**: Optimized assets, ultra-fast loading times, and high Core Web Vitals scores.
-*   **Dedicated Service Pages**: Professional sub-pages for specific repair solutions (OLED, LED, Laptop, Mobile, CCTV, etc.).
-*   **Interactive FAQ & Support**: Modern card-based accordion with live 24/7 support indicators.
-*   **Premium Blog Design**: Fully functional sidebar with categorical icons and interactive count badges.
-
-## 📁 Optimized Project Structure
-
-```text
-/GR-Solution-Template
-  ├── css/             # Stylesheets (main.css)
-  ├── images/          # Professional Graphics & Logos
-  ├── js/              # Premium JavaScript logic (main.js)
-  ├── services/        # Specialized Service HTML Pages (LED, OLED, etc.)
-  ├── Theme-Preview/   # High-resolution Full-Page Screenshots
-  ├── Documentation/   # Comprehensive Setup & Maintenance Guides
-  ├── index.html       # Landing Page (Home)
-  ├── about.html       # Company History & Values
-  ├── services.html    # All Services Overview
-  ├── blog.html        # Repair Insights & Maintenance Tips
-  ├── contact.html     # Professional Enquiry & Booking
-  ├── privacy.html     # Data Security Policy
-  └── terms.html       # Service Terms & Conditions
-```
-
-## ⚙️ Professional Setup
-
-1.  **Deployment**: Upload the files to any web hosting (Shared, VPS, or Static hosting like Vercel/Netlify).
-2.  **Customization**: All global styles are managed via CSS Variables in `:root` inside `css/main.css`.
-3.  **SEO**: Update the `meta` tags in the `<head>` of each file with your specific target keywords.
-4.  **Analytics**: Replace the Google Analytics ID in `index.html` to track your traffic.
-
-## 🛠️ Technology Stack
-
-*   **HTML5 & CSS3** (Vanilla)
-*   **Modern JavaScript** (ES6+)
-*   **Font Awesome 6.4.0**
-*   **Google Fonts (Inter)**
-
-## ⚖️ License
-
-&copy; 2026 SLV Service Center. All Rights Reserved. This project is private property and unauthorized distribution is prohibited.
+This project was migrated from a vanilla HTML/CSS/JavaScript website to a modern **Next.js App Router + SSG architecture** for better SEO, maintainability, performance, and future local SEO scaling.
 
 ---
 
-&copy; 2026 SLV Service Center. Engineered for Excellence & Professional Service.
+## Project Overview
+
+The original website was built using static HTML pages with repeated header, footer, service cards, forms, and SEO tags across multiple files.
+
+The new version uses:
+
+* Next.js App Router
+* Static Site Generation
+* Reusable React components
+* Data-driven service pages
+* Dynamic metadata
+* Dynamic sitemap
+* Dynamic robots.txt
+* JSON-LD structured data
+* Local SEO-ready architecture
+* Responsive design
+* High-conversion CTA sections
+
+The goal of this migration is to make the website easier to maintain, faster to load, and better structured for local SEO campaigns.
+
+---
+
+## Tech Stack
+
+* Next.js
+* React
+* JavaScript
+* CSS
+* App Router
+* Static Site Generation
+* Next.js Metadata API
+* JSON-LD schema
+* FormSubmit/contact form integration
+
+---
+
+## Key Features
+
+* Static homepage
+* About page
+* Services listing page
+* Blog page
+* Contact page
+* Privacy Policy page
+* Terms page
+* Dynamic service detail pages
+* SEO metadata for every page
+* Service-specific pages using `generateStaticParams`
+* Dynamic sitemap generation
+* Dynamic robots.txt generation
+* LocalBusiness, Organization, WebSite, Breadcrumb, Service, and FAQ schema
+* Old `.html` URL redirects
+* Reusable header and footer
+* Responsive services dropdown
+* Contact/enquiry form
+* Floating WhatsApp and call buttons
+* Premium CTA sections
+* Mobile responsive layout
+
+---
+
+## Current Routes
+
+```
+/
+/about
+/services
+/blog
+/contact
+/landing
+/privacy
+/terms
+/services/led-tv-repair
+/services/oled-qled-repair
+/services/panel-bonding
+/services/smart-tv-setup
+/services/cctv-repair
+/services/dth-services
+/services/laptop-repair
+/services/mobile-repair
+```
+
+The core visible navigation focuses on TV and electronics repair services. Laptop and mobile repair pages still exist for legacy compatibility and direct URL access but are not promoted in primary navigation.
+
+---
+
+## Project Structure
+
+```
+.
+├── app/
+│   ├── about/
+│   │   └── page.jsx
+│   ├── blog/
+│   │   └── page.jsx
+│   ├── contact/
+│   │   └── page.jsx
+│   ├── landing/
+│   │   └── page.jsx
+│   ├── privacy/
+│   │   └── page.jsx
+│   ├── services/
+│   │   ├── page.jsx
+│   │   └── [slug]/
+│   │       └── page.jsx
+│   ├── terms/
+│   │   └── page.jsx
+│   ├── globals.css
+│   ├── layout.jsx
+│   ├── page.jsx
+│   ├── robots.js
+│   └── sitemap.js
+│
+├── components/
+│   ├── BookingForm.jsx
+│   ├── ContactForm.jsx
+│   ├── CTASection.jsx
+│   ├── EnquiryModal.jsx
+│   ├── FAQ.jsx
+│   ├── FloatingButtons.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── HeroSection.jsx
+│   ├── JsonLd.jsx
+│   ├── PageCTA.jsx
+│   ├── ServiceCard.jsx
+│   └── Testimonials.jsx
+│
+├── data/
+│   ├── navigation.js
+│   ├── pages.js
+│   ├── services.js
+│   └── siteConfig.js
+│
+├── public/
+│   ├── assets/
+│   └── images/
+│
+├── jsconfig.json
+├── next.config.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+---
+
+## SSG Architecture
+
+This project uses a static-first Next.js architecture.
+
+Normal pages inside the App Router are statically generated by default when they do not require server-side rendering.
+
+Dynamic service detail pages are generated using:
+
+```js
+generateStaticParams()
+```
+
+Each service page is created at build time from the service data stored in:
+
+```
+data/services.js
+```
+
+This keeps service pages fast, crawlable, and SEO-friendly.
+
+---
+
+## SEO Architecture
+
+The website uses a structured SEO setup suitable for a local service business.
+
+SEO features include:
+
+* Unique metadata per page
+* Canonical URLs
+* Open Graph metadata
+* Dynamic sitemap
+* Dynamic robots.txt
+* JSON-LD structured data
+* LocalBusiness schema
+* Organization schema
+* WebSite schema
+* Service schema
+* FAQ schema
+* Breadcrumb schema
+* 301 redirects from old `.html` URLs
+
+The project is prepared for future local SEO expansion across Delhi NCR.
+
+---
+
+## Local SEO Expansion
+
+The current structure can later support city/service landing pages such as:
+
+```
+/led-tv-repair-delhi
+/led-tv-repair-noida
+/led-tv-repair-gurgaon
+/tv-repair-ghaziabad
+/tv-repair-faridabad
+/smart-tv-repair-delhi
+/oled-tv-repair-noida
+/panel-bonding-delhi
+```
+
+These pages should be added carefully with unique content, local service proof, FAQs, internal links, and location-specific schema.
+
+---
+
+## Important Components
+
+### `Header.jsx`
+
+Main navigation, logo, service dropdown, quick enquiry button, and call button.
+
+### `Footer.jsx`
+
+Dark professional footer with logo, quick links, services, contact details, social icons, and copyright bar.
+
+### `HeroSection.jsx`
+
+Homepage hero section with badges, CTA buttons, main heading, service highlights, and hero image.
+
+### `ServiceCard.jsx`
+
+Reusable service card used for service listings and related services.
+
+### `ContactForm.jsx`
+
+Reusable contact/enquiry form used across contact and booking sections.
+
+### `BookingForm.jsx`
+
+Premium booking form with brand selection, used on the homepage booking section.
+
+### `FAQ.jsx`
+
+Reusable FAQ accordion section with structured customer questions.
+
+### `JsonLd.jsx`
+
+Reusable component for injecting JSON-LD structured data safely.
+
+### `PageCTA.jsx`
+
+Reusable high-conversion CTA section for non-home pages with Call Now, WhatsApp, and Book Service buttons.
+
+### `CTASection.jsx`
+
+Legacy CTA component. Kept for compatibility but largely replaced by `PageCTA.jsx` on non-home pages.
+
+### `FloatingButtons.jsx`
+
+Floating WhatsApp and call buttons for quick customer action.
+
+---
+
+## Data Files
+
+### `data/siteConfig.js`
+
+Stores core business information such as:
+
+* Business name
+* Phone number
+* WhatsApp number
+* Email
+* Address
+* Website URL
+* Opening hours
+* Service areas
+* Social links
+
+Update this file when business details change.
+
+### `data/services.js`
+
+Stores service page data such as:
+
+* Service slug
+* Title
+* Description
+* SEO metadata
+* Service image
+* Benefits
+* Process steps
+* FAQs
+* Related services
+
+To add a new service page, add a new object in this file.
+
+### `data/navigation.js`
+
+Stores main navigation links.
+
+### `data/pages.js`
+
+Stores per-page metadata including title, description, and path for static pages.
+
+---
+
+## Installation
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Open local site:
+
+```
+http://localhost:3000
+```
+
+---
+
+## Production Build
+
+Create production build:
+
+```bash
+npm run build
+```
+
+Start production server:
+
+```bash
+npm run start
+```
+
+---
+
+## Build Output Meaning
+
+Next.js may show output like:
+
+```
+○  Static
+●  SSG
+```
+
+Meaning:
+
+* `○ Static`: page is prerendered as static content.
+* `● SSG`: page is prerendered as static HTML using `generateStaticParams`.
+
+This is expected and good for SEO.
+
+---
+
+## Deployment
+
+### Vercel
+
+Recommended deployment platform.
+
+Build command:
+
+```bash
+npm run build
+```
+
+Output:
+
+```
+.next
+```
+
+### Node Hosting
+
+For a Node server deployment:
+
+```bash
+npm install
+npm run build
+npm run start
+```
+
+Default port:
+
+```
+3000
+```
+
+---
+
+## Redirects
+
+Old `.html` URLs are redirected to clean Next.js routes using `next.config.js`.
+
+Examples:
+
+```
+/index.html    → /
+/about.html    → /about
+/services.html → /services
+/contact.html  → /contact
+/blog.html     → /blog
+/privacy.html  → /privacy
+/terms.html    → /terms
+```
+
+This helps preserve SEO value from old URLs.
+
+---
+
+## Sitemap and Robots
+
+The project uses dynamic files:
+
+```
+app/sitemap.js
+app/robots.js
+```
+
+These generate:
+
+```
+/sitemap.xml
+/robots.txt
+```
+
+The sitemap includes static pages and all service detail pages.
+
+---
+
+## Adding a New Service Page
+
+To add a new service page:
+
+1. Open:
+
+```
+data/services.js
+```
+
+2. Add a new service object with:
+
+```js
+{
+  slug: "new-service",
+  title: "New Service",
+  metaTitle: "New Service in Delhi NCR",
+  metaDescription: "Professional new service support across Delhi, Noida and NCR.",
+  description: "...",
+  image: "/images/example.jpg",
+  benefits: [],
+  process: [],
+  faqs: []
+}
+```
+
+3. The route will be generated automatically at:
+
+```
+/services/new-service
+```
+
+4. Run:
+
+```bash
+npm run build
+```
+
+---
+
+## Updating Business Details
+
+To update phone, email, address, WhatsApp, or service areas, edit:
+
+```
+data/siteConfig.js
+```
+
+Do not hardcode business details in multiple components unless necessary.
+
+---
+
+## Git Safety
+
+Do not commit:
+
+```
+.env
+.next/
+node_modules/
+private keys
+AWS credentials
+SSH commands
+API keys
+```
+
+These should remain ignored through `.gitignore`.
+
+---
+
+## Recommended SEO Improvements Later
+
+Future improvements can include:
+
+* City-specific landing pages
+* Blog detail pages
+* Google Analytics or GTM setup
+* Google Search Console verification
+* Review schema where appropriate
+* More local backlinks and citations
+* Google Business Profile optimization
+* Unique service-area pages for Delhi, Noida, Gurgaon, Ghaziabad, and Faridabad
+
+---
+
+## Final Notes
+
+This project is designed as a static-first, SEO-friendly Next.js website for a local repair business.
+
+The SSG architecture makes it fast, crawlable, maintainable, and ready for future Delhi NCR local SEO expansion.
