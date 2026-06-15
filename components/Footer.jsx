@@ -128,7 +128,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>&copy; 2026 GR Solution. All Rights Reserved.</p>
-          <p>Mon - Sun: 09:30 AM - 07:30 PM</p>
+          <p>Mon - Sun: 09:00 AM - 09:00 PM</p>
           <div className="footer-bottom-links-row">
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms & Conditions</Link>

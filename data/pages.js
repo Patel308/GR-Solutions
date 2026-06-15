@@ -12,9 +12,9 @@ export const pageMetadata = {
     path: '/about',
   },
   services: {
-    title: 'Professional TV, Laptop & Mobile Repair Services Delhi NCR | GR Solution',
+    title: 'TV & Electronics Repair Services in Delhi NCR | GR Solution',
     description:
-      'Explore LED TV, OLED/QLED, panel bonding, Smart TV setup, CCTV, DTH, laptop and mobile repair services by GR Solution.',
+      'Explore GR Solution repair services for LED TV, OLED/QLED TV, panel bonding, Smart TV setup, CCTV and DTH support across Delhi, Noida and NCR.',
     path: '/services',
   },
   blog: {
@@ -36,13 +36,13 @@ export const pageMetadata = {
     path: '/landing',
   },
   privacy: {
-    title: 'Privacy Policy | GR Solution',
-    description: 'Privacy policy for GR Solution service enquiries, contact forms and customer communication.',
+    title: 'Privacy Policy — GR Solution TV Repair Service Delhi NCR',
+    description: 'Privacy policy for GR Solution service enquiries, contact forms and customer communication. Learn how we handle your data securely.',
     path: '/privacy',
   },
   terms: {
-    title: 'Terms & Conditions | GR Solution',
-    description: 'Service terms and conditions for GR Solution repair bookings, diagnosis, parts and warranty.',
+    title: 'Terms & Conditions — GR Solution Repair Services Delhi NCR',
+    description: 'Service terms and conditions for GR Solution repair bookings, diagnosis, parts and warranty across Delhi, Noida and NCR.',
     path: '/terms',
   },
 };

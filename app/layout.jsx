@@ -9,7 +9,7 @@ export const metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: 'GR Solution | TV Repair Delhi, Noida & NCR',
-    template: '%s',
+    template: '%s | GR Solution',
   },
   description: siteConfig.description,
   robots: {
@@ -44,7 +44,7 @@ const organizationSchema = {
     '@type': 'ContactPoint',
     telephone: siteConfig.phone,
     contactType: 'customer service',
-    areaServed: 'IN',
+    areaServed: siteConfig.serviceAreas,
   },
 };
 
@@ -56,6 +56,9 @@ const localBusinessSchema = {
   url: siteConfig.url,
   telephone: siteConfig.phone,
   email: siteConfig.email,
+  priceRange: '₹₹',
+  sameAs: [siteConfig.googleBusinessProfile],
+  hasMap: siteConfig.googleBusinessProfile,
   address: {
     '@type': 'PostalAddress',
     ...siteConfig.address,
