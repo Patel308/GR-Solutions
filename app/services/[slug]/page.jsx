@@ -83,7 +83,7 @@ export default async function ServiceDetailPage({ params }) {
       />
 
       {/* Breadcrumb */}
-      <section className="section border-b border-[#eee] bg-white py-2">
+      <section className="border-b border-[#eee] bg-white py-2">
         <div className="container">
           <Breadcrumb items={[
             { label: 'Home', href: '/' },
@@ -94,38 +94,38 @@ export default async function ServiceDetailPage({ params }) {
       </section>
 
       {/* Hero */}
-      <section className="section service-detail-hero bg-white py-24">
-        <div className="container grid-2-alt grid items-center gap-16 lg:grid-cols-2">
+      <section className="bg-white py-24">
+        <div className="container grid items-center gap-16 lg:grid-cols-2">
           <div>
-            <span className="badge inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">{service.title.toUpperCase()}</span>
+            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">{service.title.toUpperCase()}</span>
             <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">{service.h1}</h1>
             <p className="mt-6 text-lg leading-relaxed text-textMuted">{service.fullDescription}</p>
-            <div className="btn-group mt-8 flex flex-wrap gap-4">
-              <a href={siteConfig.phoneHref} className="btn btn-primary inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a href={siteConfig.phoneHref} className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call Now
               </a>
-              <Link href="/contact" className="btn btn-outline inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
+              <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
                 Book Service
               </Link>
             </div>
           </div>
-          <Image src={service.image} alt={`${service.title} service in Delhi NCR`} width={680} height={500} className="card-img-rounded rounded-3xl object-cover shadow-cardPro" priority />
+          <Image src={service.image} alt={`${service.title} service in Delhi NCR`} width={680} height={500} className="w-full rounded-3xl object-cover shadow-cardPro" priority />
         </div>
       </section>
 
       {/* Benefits */}
       <section className="py-20">
         <div className="container">
-          <div className="section-title section-centered-title">
-            <span className="badge mb-3">WHAT WE FIX</span>
-            <h2>
-              {service.title} <span className="primary-text">Benefits</span>
+          <div className="mb-20 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">WHAT WE FIX</span>
+            <h2 className="text-4xl font-black text-secondary">
+              {service.title} <span className="text-primary">Benefits</span>
             </h2>
           </div>
-          <div className="grid-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {service.benefits.map((benefit) => (
-              <article className="card rounded-card border border-black/5 bg-white p-10 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={benefit}>
-                <i className={`${service.icon} card-icon mb-5 text-4xl text-primary`} />
+              <article className="rounded-card border border-black/5 bg-white p-10 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={benefit}>
+                <i className={`${service.icon} mb-5 text-4xl text-primary`} />
                 <h3 className="text-xl font-black text-secondary">{benefit}</h3>
               </article>
             ))}
@@ -136,16 +136,16 @@ export default async function ServiceDetailPage({ params }) {
       {/* Repair Process */}
       <section className="bg-bgLight py-20">
         <div className="container">
-          <div className="section-title section-centered-title">
-            <span className="badge mb-3">PROCESS</span>
-            <h2>Simple Repair Process</h2>
-            <p>{service.shortDescription}</p>
+          <div className="mb-20 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">PROCESS</span>
+            <h2 className="text-4xl font-black text-secondary">Simple Repair Process</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">{service.shortDescription}</p>
           </div>
-          <div className="grid-4 mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {service.process.map((step, index) => (
-              <article className="card process-card rounded-card border border-primary/10 bg-white p-8 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step}>
-                <span className="process-step-badge inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
-                <div className="process-icon-box my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
+              <article className="rounded-card border border-primary/10 bg-white p-8 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step}>
+                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
+                <div className="mx-auto my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
                   <i className={genericProcess[index]?.icon || 'fa-solid fa-check'} />
                 </div>
                 <h3 className="text-xl font-black text-secondary">{step}</h3>
@@ -159,24 +159,24 @@ export default async function ServiceDetailPage({ params }) {
       {/* Related Services */}
       <section className="py-20">
         <div className="container">
-          <div className="section-title section-centered-title">
-            <span className="badge mb-3">RELATED SERVICES</span>
-            <h2>Explore More Services</h2>
-            <p>Browse other GR Solution repair services available across Delhi, Noida and NCR.</p>
+          <div className="mb-20 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">RELATED SERVICES</span>
+            <h2 className="text-4xl font-black text-secondary">Explore More Services</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">Browse other GR Solution repair services available across Delhi, Noida and NCR.</p>
           </div>
-          <div className="grid-3 mt-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {related.map((item) => (
-              <article className="card service-card-detailed" key={item.slug}>
-                <div className="service-card-img-wrap">
-                  <Image src={item.image} alt={`${item.title} by GR Solution`} width={520} height={320} />
-                  <div className="service-card-img-overlay" />
+              <article className="flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={item.slug}>
+                <div className="relative overflow-hidden">
+                  <Image src={item.image} alt={`${item.title} by GR Solution`} width={520} height={320} className="h-60 w-full object-cover transition duration-500 hover:scale-105" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 transition duration-300 hover:opacity-100" />
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-1 flex-col gap-3 p-8">
                   <h3 className="text-lg font-black text-secondary">{item.title}</h3>
                   <p className="flex-1 text-sm leading-relaxed text-textMuted">
                     {item.shortDescription}
                   </p>
-                  <Link href={`/services/${item.slug}`} className="btn btn-primary self-start rounded-full bg-primary px-6 py-3 font-black text-white">
+                  <Link href={`/services/${item.slug}`} className="self-start rounded-full bg-primary px-6 py-3 font-black text-white transition hover:-translate-y-1 hover:bg-secondary">
                     View Service
                   </Link>
                 </div>
@@ -193,9 +193,9 @@ export default async function ServiceDetailPage({ params }) {
       {service.faqs?.length > 0 && (
         <section className="bg-bgLight py-20">
           <div className="container">
-            <div className="section-title section-centered-title">
-              <span className="badge mb-3">FAQ</span>
-              <h2>{service.title} Questions</h2>
+            <div className="mb-20 text-center">
+              <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FAQ</span>
+              <h2 className="text-4xl font-black text-secondary">{service.title} Questions</h2>
             </div>
             <div className="mx-auto max-w-[800px]">
               <FAQ faqs={service.faqs} />

@@ -12,9 +12,9 @@ export default function Footer() {
   return (
     <footer className="bg-[#09091b] py-[100px] pb-7 text-white">
       <div className="container">
-        <div className="footer-grid grid items-start gap-16 md:grid-cols-2 xl:grid-cols-[1.6fr_0.9fr_1.1fr_1.25fr]">
-          <div className="footer-col">
-            <Link href="/" className="logo mb-6 inline-flex rounded-[10px] bg-white px-5 py-3 shadow-oldLg">
+        <div className="grid items-start gap-16 md:grid-cols-2 xl:grid-cols-[1.6fr_0.9fr_1.1fr_1.25fr]">
+          <div>
+            <Link href="/" className="mb-6 inline-flex rounded-[10px] bg-white px-5 py-3 shadow-oldLg">
               <Image
                 src="/images/logo.jpg"
                 alt="GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR"
@@ -23,14 +23,14 @@ export default function Footer() {
                 className="h-10 w-auto object-contain"
               />
             </Link>
-            <p className="footer-brand-text mb-8 max-w-[430px] text-[1.1rem] leading-[1.7] text-white">
+            <p className="mb-8 max-w-[430px] text-[1.1rem] leading-[1.7] text-white">
               Delhi, Noida & NCR&apos;s #1 premium TV repair service provider with 15+ years of technical
               excellence and transparent pricing.
             </p>
-            <div className="social-links flex gap-4">
+            <div className="flex gap-4">
               <a
                 href="https://facebook.com"
-                className="social-btn facebook inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-primary"
+                className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#1877f2]"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -39,7 +39,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://instagram.com"
-                className="social-btn instagram inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-primary"
+                className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#e4405f]"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -48,7 +48,7 @@ export default function Footer() {
               </a>
               <a
                 href={siteConfig.whatsappHref}
-                className="social-btn whatsapp inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-primary"
+                className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#25d366]"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -57,7 +57,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://youtube.com"
-                className="social-btn youtube inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-primary"
+                className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#ff0000]"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -67,9 +67,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="footer-col">
+          <div>
             <h4 className="mb-6 text-xl font-black text-white">Quick Links</h4>
-            <ul className="footer-links grid gap-4">
+            <ul className="grid gap-4">
               {mainNavigation.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-[#b9c3d8] transition duration-300 hover:pl-1 hover:text-white">{item.label}</Link>
@@ -78,9 +78,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="footer-col">
+          <div>
             <h4 className="mb-6 text-xl font-black text-white">Our Services</h4>
-            <ul className="footer-links grid gap-4">
+            <ul className="grid gap-4">
               {footerServices.map((service) => (
                 <li key={service.slug}>
                   <Link href={`/services/${service.slug}`} className="text-[#b9c3d8] transition duration-300 hover:pl-1 hover:text-white">{service.title}</Link>
@@ -89,12 +89,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="footer-col footer-contact-col">
-            <h4 className="footer-heading-underline mb-6 text-xl font-black text-white">Contact Us</h4>
-            <ul className="contact-info footer-contact-list mt-6 grid gap-5">
-              <li className="footer-contact-item grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4">
+          <div className="max-sm:w-full">
+            <h4 className="mb-6 inline-block border-b-2 border-primary pb-1 text-xl font-black text-white max-sm:block max-sm:text-center">Contact Us</h4>
+            <ul className="mx-auto mt-6 grid max-w-[340px] gap-5 sm:max-w-none">
+              <li className="grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4 text-left">
                 <i className="fa-solid fa-location-dot inline-flex size-[46px] items-center justify-center rounded-xl bg-primary/25 text-accent" />
-                <div className="info-text footer-contact-text">
+                <div>
                   <strong className="mb-1 block text-white">
                     Visit Center
                   </strong>
@@ -104,18 +104,18 @@ export default function Footer() {
                   </span>
                 </div>
               </li>
-              <li className="footer-contact-item grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4">
+              <li className="grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4 text-left">
                 <i className="fa-solid fa-phone inline-flex size-[46px] items-center justify-center rounded-xl bg-primary/25 text-accent" />
-                <div className="info-text footer-contact-text">
+                <div>
                   <strong className="mb-1 block text-white">
                     Call Support
                   </strong>
                   <a href={siteConfig.phoneHref} className="text-[#b9c3d8] hover:text-white">{siteConfig.phone}</a>
                 </div>
               </li>
-              <li className="footer-contact-item grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4">
+              <li className="grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4 text-left">
                 <i className="fa-solid fa-envelope inline-flex size-[46px] items-center justify-center rounded-xl bg-primary/25 text-accent" />
-                <div className="info-text footer-contact-text">
+                <div>
                   <strong className="mb-1 block text-white">
                     Email Us
                   </strong>
@@ -126,10 +126,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer-bottom mt-20 flex flex-wrap items-center justify-between gap-6 border-t border-white/15 pt-10 text-[#b9c3d8]">
+        <div className="mt-20 flex flex-wrap items-center justify-between gap-6 border-t border-white/15 pb-28 pt-10 text-[#b9c3d8] md:pb-0">
           <p>&copy; 2026 GR Solution. All Rights Reserved.</p>
           <p>Mon - Sun: 09:00 AM - 09:00 PM</p>
-          <div className="footer-bottom-links-row flex gap-8">
+          <div className="flex gap-8 max-md:flex-col max-md:items-center max-md:gap-2">
             <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white">Terms & Conditions</Link>
           </div>

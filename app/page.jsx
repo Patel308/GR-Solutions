@@ -98,21 +98,21 @@ export default function HomePage() {
       />
 
       {/* Services Carousel */}
-      <section className="section section-hero-carousel">
+      <section className="bg-bgLight py-[60px] pb-[100px]">
         <div className="container">
-          <div className="section-title section-centered-title">
-            <span className="badge mb-3">OUR REPAIR SOLUTIONS</span>
-            <h2>Our Specialty Services</h2>
-            <p>We handle major electronics and home technology repairs with professional diagnostics.</p>
+          <div className="mb-20 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">OUR REPAIR SOLUTIONS</span>
+            <h2 className="text-4xl font-black text-secondary">Our Specialty Services</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">We handle major electronics and home technology repairs with professional diagnostics.</p>
           </div>
-          <div className="carousel-container specialty-carousel-next" aria-label="GR Solution specialty services">
+          <div className="specialty-carousel-next hidden overflow-hidden lg:block" aria-label="GR Solution specialty services">
             <div className="carousel-track">
               {carouselServices.map((service, index) => (
                 <ServiceCard key={`${service.slug}-${index}`} service={service} featured={index === 1} carousel />
               ))}
             </div>
           </div>
-          <div className="services-mobile-grid-next">
+          <div className="grid gap-8 md:grid-cols-2 lg:hidden">
             {services.slice(0, 6).map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
@@ -121,10 +121,10 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us — Redesigned */}
-      <section className="section" style={{ padding: '100px 0', background: 'var(--bg-light)' }}>
+      <section className="bg-bgLight py-[100px]">
         <div className="container">
-          <div className="hero-grid" style={{ alignItems: 'center' }}>
-            <div className="hero-image">
+          <div className="grid items-center gap-16 lg:grid-cols-2">
+            <div>
               <Image
                 src="/images/team.webp"
                 alt="GR Solution Expert Team"
@@ -133,10 +133,10 @@ export default function HomePage() {
                 style={{ borderRadius: '20px', width: '100%' }}
               />
             </div>
-            <div className="hero-content">
+            <div>
               <h2 style={{ fontSize: '2.5rem' }}>
                 Why Delhi, Noida & NCR Trusts <br />
-                <span className="primary-text">GR Service Center</span>
+                <span className="text-primary">GR Service Center</span>
               </h2>
               <ul style={{ marginTop: '2rem' }}>
                 {whyChooseBenefits.map((benefit) => (
@@ -222,40 +222,13 @@ export default function HomePage() {
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
               href={siteConfig.phoneHref}
-              className="custom-cta-primary"
-              style={{
-                padding: '0.9rem 2.5rem',
-                background: '#2563eb',
-                border: '2px solid #2563eb',
-                borderRadius: '999px',
-                fontWeight: 700,
-                fontSize: '0.95rem',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.6rem',
-                color: '#ffffff',
-                textDecoration: 'none',
-                transition: 'all 0.3s ease',
-              }}
+              className="inline-flex items-center gap-3 rounded-full border-2 border-[#2563eb] bg-[#2563eb] px-10 py-4 text-[0.95rem] font-bold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:border-[#1d4ed8] hover:bg-[#1d4ed8] hover:shadow-[0_8px_25px_rgba(37,99,235,0.4)]"
             >
               <i className="fa-solid fa-phone" /> Call An Engineer
             </a>
             <Link
               href="/contact"
-              className="custom-cta-outline"
-              style={{
-                padding: '0.9rem 2.5rem',
-                border: '2px solid rgba(255,255,255,0.7)',
-                borderRadius: '999px',
-                fontWeight: 700,
-                fontSize: '0.95rem',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.6rem',
-                color: 'white',
-                textDecoration: 'none',
-                transition: 'all 0.3s ease',
-              }}
+              className="inline-flex items-center gap-3 rounded-full border-2 border-white/70 px-10 py-4 text-[0.95rem] font-bold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
             >
               Submit Service Request &rarr;
             </Link>
@@ -264,13 +237,13 @@ export default function HomePage() {
       </section>
 
       {/* Ready to Help — Premium Booking Section */}
-      <section className="section-contact-booking" id="quote">
+      <section className="border-t border-slate-200 bg-slate-50 py-[100px]" id="quote">
         <div className="container">
-          <div className="hero-grid" style={{ alignItems: 'flex-start', gap: '6rem' }}>
+          <div className="grid items-start gap-20 lg:grid-cols-2">
             {/* Left Column */}
             <div>
               <span
-                className="badge"
+                className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary"
                 style={{
                   background: 'rgba(0,74,173,0.1)',
                   color: 'var(--primary)',
@@ -286,7 +259,7 @@ export default function HomePage() {
                 READY TO HELP
               </span>
               <h2
-                className="fs-huge"
+                className="text-[3.2rem]"
                 style={{
                   lineHeight: 1.1,
                   fontWeight: 800,
@@ -295,13 +268,13 @@ export default function HomePage() {
                 }}
               >
                 Book Your Premium <br />
-                <span className="primary-text">Repair Service</span>
+                <span className="text-primary">Repair Service</span>
               </h2>
 
               {/* Feature Items */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', marginTop: '2rem' }}>
-                <div className="booking-feature-row">
-                  <div className="booking-feature-icon">
+                <div className="flex items-start gap-6 transition duration-300">
+                  <div className="flex size-[54px] shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
                     <i className="fa-solid fa-truck-fast" />
                   </div>
                   <div>
@@ -314,8 +287,8 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="booking-feature-row">
-                  <div className="booking-feature-icon">
+                <div className="flex items-start gap-6 transition duration-300">
+                  <div className="flex size-[54px] shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
                     <i className="fa-solid fa-shield-halved" />
                   </div>
                   <div>
@@ -328,8 +301,8 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="booking-feature-row">
-                  <div className="booking-feature-icon">
+                <div className="flex items-start gap-6 transition duration-300">
+                  <div className="flex size-[54px] shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
                     <i className="fa-solid fa-headset" />
                   </div>
                   <div>
@@ -344,7 +317,7 @@ export default function HomePage() {
               </div>
 
               {/* Contact Row */}
-              <div className="booking-contact-row">
+              <div className="mt-16 flex gap-20 border-t border-slate-200 pt-12 max-md:flex-col max-md:gap-6">
                 <div>
                   <span
                     style={{
@@ -407,11 +380,11 @@ export default function HomePage() {
       </section>
 
       {/* Authorized Service Expertise — Brands Carousel */}
-      <section className="section-brands">
+      <section className="border-t border-[#eee] bg-bgLight py-[100px]">
         <div className="container">
-          <div className="section-title">
-            <h2>Authorized Service Expertise</h2>
-            <p>We are certified experts in repairing products from all global giants.</p>
+          <div className="mb-20 text-center">
+            <h2 className="text-4xl font-black text-secondary">Authorized Service Expertise</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">We are certified experts in repairing products from all global giants.</p>
           </div>
           <div className="logo-carousel-container">
             <div className="logo-track">
@@ -426,14 +399,14 @@ export default function HomePage() {
       </section>
 
       {/* Meet Our Expert Repair Team */}
-      <section className="section" style={{ padding: '100px 0', background: 'var(--white)' }}>
-        <div className="container hero-grid" style={{ alignItems: 'center', gap: '5rem' }}>
+      <section className="bg-white py-[100px]">
+        <div className="container grid items-center gap-20 lg:grid-cols-2">
           <div>
-            <span className="badge" style={{ marginBottom: '1.5rem' }}>
+            <span className="mb-6 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
               EXPERT ENGINEERS
             </span>
             <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>
-              Meet Our <span className="primary-text">Expert Repair Team</span>
+              Meet Our <span className="text-primary">Expert Repair Team</span>
             </h2>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
               At GR Solution, our team consists of 25+ certified electronics engineers who have worked
@@ -467,12 +440,12 @@ export default function HomePage() {
       <Testimonials />
 
       {/* FAQ — moved to near the end */}
-      <section className="section section-faq">
+      <section className="bg-bgLight py-[120px]">
         <div className="container">
-          <div className="section-title section-centered-title">
-            <span className="badge mb-3">FAQ</span>
-            <h2>Common Questions</h2>
-            <p>Helpful answers about GR Solution repair services across Delhi, Noida and NCR.</p>
+          <div className="mb-20 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FAQ</span>
+            <h2 className="text-4xl font-black text-secondary">Common Questions</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">Helpful answers about GR Solution repair services across Delhi, Noida and NCR.</p>
           </div>
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             <FAQ faqs={faqs} />

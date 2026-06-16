@@ -57,12 +57,12 @@ export default function ServicesPage() {
       />
 
       {/* Hero */}
-      <section className="section page-hero-next bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] pb-20 pt-24">
+      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] pb-20 pt-24">
         <div className="container text-center">
-          <span className="badge inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR SERVICES</span>
+          <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR SERVICES</span>
           <h1 className="mx-auto mt-6 max-w-5xl text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">
             Professional TV & Electronics{' '}
-            <span className="primary-text text-primary">Repair Services</span>
+            <span className="text-primary">Repair Services</span>
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-textMuted">
             Explore GR Solution services for LED TV, OLED/QLED, panel bonding, Smart TV setup,
@@ -73,10 +73,10 @@ export default function ServicesPage() {
 
       {/* Service Cards Grid */}
       <section className="bg-white py-20">
-        <div className="container grid-3 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {tvServices.map((service) => (
             <article className="flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={service.slug}>
-              <div className="service-card-img-wrap relative overflow-hidden">
+              <div className="relative overflow-hidden">
                 <Image
                   src={service.image}
                   alt={`${service.title} by GR Solution`}
@@ -84,7 +84,7 @@ export default function ServicesPage() {
                   height={320}
                   className="h-60 w-full object-cover transition duration-500 hover:scale-105"
                 />
-                <div className="service-card-img-overlay" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 transition duration-300 hover:opacity-100" />
               </div>
               <div className="flex flex-1 flex-col gap-3 p-8">
                 <h3 className="text-xl font-black text-secondary">{service.title}</h3>
@@ -92,7 +92,7 @@ export default function ServicesPage() {
                   {service.shortDescription}
                 </p>
                 {service.benefits?.length > 0 && (
-                  <ul className="service-card-benefits grid gap-2 text-sm text-textMuted">
+                  <ul className="grid gap-2 text-sm text-textMuted">
                     {service.benefits.slice(0, 3).map((b) => (
                       <li key={b} className="flex gap-2">
                         <i className="fa-solid fa-check mt-1 text-success" /> {b}
@@ -102,7 +102,7 @@ export default function ServicesPage() {
                 )}
                 <Link
                   href={`/services/${service.slug}`}
-                  className="btn btn-primary mt-2 inline-flex self-start rounded-full bg-primary px-6 py-3 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary"
+                  className="mt-2 inline-flex self-start rounded-full bg-primary px-6 py-3 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary"
                 >
                   View Service
                 </Link>
@@ -115,16 +115,16 @@ export default function ServicesPage() {
       {/* 4-Step Repair Process */}
       <section className="bg-bgLight py-24">
         <div className="container">
-          <div className="section-title section-centered-title mb-12 text-center">
-            <span className="badge mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">SERVICE FLOW</span>
+          <div className="mb-12 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">SERVICE FLOW</span>
             <h2 className="mt-4 text-4xl font-black text-secondary">Our 4-Step Repair Process</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">A simple process from first contact to approved repair.</p>
           </div>
-          <div className="grid-4 mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {processSteps.map((step, index) => (
-              <article className="card process-card rounded-card border border-primary/10 bg-white p-8 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step.title}>
-                <span className="process-step-badge inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
-                <div className="process-icon-box my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
+              <article className="rounded-card border border-primary/10 bg-white p-8 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step.title}>
+                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
+                <div className="mx-auto my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
                   <i className={step.icon} />
                 </div>
                 <h3 className="text-xl font-black text-secondary">{step.title}</h3>

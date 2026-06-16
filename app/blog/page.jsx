@@ -58,43 +58,43 @@ const posts = [
 export default function BlogPage() {
   return (
     <main>
-      <section className="section page-hero-next bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
-        <div className="container grid-2-alt grid items-center gap-16 lg:grid-cols-2">
+      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
+        <div className="container grid items-center gap-16 lg:grid-cols-2">
           <div>
-            <span className="badge inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR INSIGHTS</span>
+            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR INSIGHTS</span>
             <h1 className="mt-7 text-[clamp(3rem,5.5vw,5rem)] font-black leading-tight text-secondary">
-              Expert TV Care & <span className="primary-text text-primary">Technical Guides</span>
+              Expert TV Care & <span className="text-primary">Technical Guides</span>
             </h1>
             <p className="mt-6 max-w-3xl text-xl leading-relaxed text-textMain">Maintenance tips, display technology explainers and repair guidance from GR Solution.</p>
           </div>
-          <Image src="/images/hero.webp" alt="TV repair insights" width={650} height={460} className="card-img-rounded rounded-3xl object-cover shadow-cardPro" />
+          <Image src="/images/hero.webp" alt="TV repair insights" width={650} height={460} className="w-full rounded-3xl object-cover shadow-cardPro" />
         </div>
       </section>
-      <section className="section py-24">
+      <section className="py-24">
         <div className="container">
-          <article className="card featured-post-next grid overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-cardPro lg:grid-cols-[1.2fr_1fr]">
-            <Image src="/images/hero.webp" alt="Featured Mini LED and QLED repair article" width={760} height={420} />
-            <div className="card-content p-10">
-              <span className="badge inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FEATURED</span>
+          <article className="mb-12 grid overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-cardPro lg:grid-cols-[1.2fr_1fr]">
+            <Image src="/images/hero.webp" alt="Featured Mini LED and QLED repair article" width={760} height={420} className="h-full min-h-[360px] w-full object-cover" />
+            <div className="p-10">
+              <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FEATURED</span>
               <h2 className="mt-5 text-3xl font-black leading-tight text-secondary">The Future of Mini-LED & QLED Television Repair</h2>
               <p className="mt-4 text-lg leading-relaxed text-textMuted">
                 Premium display technology gives better brightness and contrast, but it also needs accurate diagnosis
                 when symptoms appear. GR Solution helps customers understand repair feasibility before major decisions.
               </p>
-              <Link href="/services/oled-qled-repair" className="btn btn-primary mt-6 inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <Link href="/services/oled-qled-repair" className="mt-6 inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 Ask A Technician
               </Link>
             </div>
           </article>
-          <div className="grid-3 blog-grid-next grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
-              <article className="card blog-card-next flex min-h-[590px] flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={post.title}>
+              <article className="flex min-h-[590px] flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={post.title}>
                 <Image src={post.image} alt={post.title} width={520} height={320} className="h-[290px] w-full object-cover" />
-                <div className="card-content flex flex-1 flex-col gap-4 p-10">
-                  <span className="badge inline-flex self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">{post.category}</span>
+                <div className="flex flex-1 flex-col gap-4 p-10">
+                  <span className="inline-flex self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">{post.category}</span>
                   <h3 className="text-2xl font-black leading-tight text-secondary">{post.title}</h3>
                   <p className="text-lg leading-relaxed text-textMuted">{post.text}</p>
-                  <Link href={post.link} className="read-more-next mt-auto font-black text-primary hover:text-secondary">
+                  <Link href={post.link} className="mt-auto font-black text-primary hover:text-secondary">
                     Read More <span aria-hidden="true">-&gt;</span>
                   </Link>
                 </div>

@@ -74,7 +74,7 @@ export default function ContactForm({ id = 'contactForm', compact = false, title
         <label className="font-extrabold text-secondary">{appointment ? 'Issue Description' : 'Message'}</label>
         <textarea name="message" rows={compact ? 4 : 5} className={inputClass} />
       </div>
-      <button type="submit" className="btn btn-primary inline-flex w-full items-center justify-center gap-3 rounded-full border-2 border-primary bg-primary px-6 py-4 font-black text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-70" disabled={pending}>
+      <button type="submit" className="inline-flex w-full items-center justify-center gap-3 rounded-full border-2 border-primary bg-primary px-6 py-4 font-black text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-70" disabled={pending}>
         <i className={pending ? 'fa-solid fa-spinner fa-spin' : 'fa-solid fa-paper-plane'} />{' '}
         {pending ? 'Sending...' : appointment ? 'Submit Inquiry' : 'Send Enquiry'}
       </button>

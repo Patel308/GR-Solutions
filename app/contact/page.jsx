@@ -23,34 +23,34 @@ export default function ContactPage() {
           url: `${siteConfig.url}/contact`,
         }}
       />
-      <section className="section contact-hero-pro bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
-        <div className="container contact-hero-grid-pro grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="contact-hero-copy-pro">
-            <span className="badge inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REACH OUT</span>
+      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
+        <div className="container grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REACH OUT</span>
             <h1 className="mt-7 text-[clamp(3rem,6vw,5.4rem)] font-black leading-[1.08] text-secondary">
-              Experience Premium <span className="primary-text text-primary">At-Home TV Repair</span>
+              Experience Premium <span className="text-primary">At-Home TV Repair</span>
             </h1>
             <p className="mt-7 max-w-3xl text-xl leading-relaxed text-textMain">
               Delhi, Noida & NCR&apos;s trusted engineering team for OLED, QLED and LED TV repairs. Contact us for a free
               diagnostic consultation and professional same-day doorstep service.
             </p>
           </div>
-          <Image src="/images/service_tv.webp" alt="GR Solution technician repairing a TV at home" width={650} height={520} className="contact-hero-image-pro h-[min(520px,52vw)] min-h-[360px] w-full rounded-3xl object-cover shadow-cardPro" priority />
+          <Image src="/images/service_tv.webp" alt="GR Solution technician repairing a TV at home" width={650} height={520} className="h-[min(520px,52vw)] min-h-[360px] w-full rounded-3xl object-cover shadow-cardPro" priority />
         </div>
       </section>
-      <section className="section contact-mid-pro bg-white py-28">
-        <div className="container contact-mid-grid-pro grid items-start gap-20 lg:grid-cols-[1.25fr_0.85fr]">
-          <div className="contact-info-panel-pro">
+      <section className="bg-white py-28">
+        <div className="container grid items-start gap-20 lg:grid-cols-[1.25fr_0.85fr]">
+          <div>
             <h2 className="text-[clamp(2rem,3.4vw,3rem)] font-black leading-tight text-secondary">
               Have A Question? <br />
-              <span className="primary-text text-primary">Talk To Us</span>
+              <span className="text-primary">Talk To Us</span>
             </h2>
-            <p className="contact-intro-pro mb-12 mt-6 max-w-3xl text-lg leading-relaxed text-textMain">
+            <p className="mb-12 mt-6 max-w-3xl text-lg leading-relaxed text-textMain">
               Have questions about a repair or want to book an appointment? Get in touch with our team and we&apos;ll get
               back to you quickly.
             </p>
-            <div className="contact-cards-next grid gap-10">
-              <article className="contact-row-pro grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
+            <div className="grid gap-10">
+              <article className="grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
                 <i className="fa-solid fa-phone-volume mt-1 text-3xl text-primary" />
                 <div>
                   <h3 className="mb-2 text-xl font-black text-secondary">Direct Call</h3>
@@ -58,7 +58,7 @@ export default function ContactPage() {
                   <p className="mt-1 text-textMuted">Mon - Sun: 9:00 AM - 9:00 PM</p>
                 </div>
               </article>
-              <article className="contact-row-pro grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
+              <article className="grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
                 <i className="fa-solid fa-location-dot mt-1 text-3xl text-primary" />
                 <div>
                   <h3 className="mb-2 text-xl font-black text-secondary">Service Location</h3>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                   <p className="mt-1 text-textMuted">{siteConfig.serviceAreas.join(', ')}</p>
                 </div>
               </article>
-              <article className="contact-row-pro grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
+              <article className="grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
                 <i className="fa-solid fa-envelope mt-1 text-3xl text-primary" />
                 <div>
                   <h3 className="mb-2 text-xl font-black text-secondary">Email Support</h3>
@@ -77,19 +77,19 @@ export default function ContactPage() {
               </article>
             </div>
           </div>
-          <div className="appointment-card-pro">
+          <div>
             <ContactForm id="appointmentForm" title="Book Your Appointment" appointment />
           </div>
         </div>
       </section>
-      <section className="section section-full-width-map contact-map-pro bg-bgLight py-20">
+      <section className="bg-bgLight py-20">
         <div className="container">
-          <div className="map-heading-pro mb-7 flex flex-wrap items-end justify-between gap-8">
+          <div className="mb-7 flex flex-wrap items-end justify-between gap-8">
             <div>
-              <span className="badge inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">LOCATION</span>
+              <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">LOCATION</span>
               <h2 className="mt-3 text-4xl font-black text-secondary">Locate Our Center</h2>
             </div>
-            <Link href={siteConfig.googleBusinessProfile} target="_blank" className="btn btn-outline inline-flex rounded-full border-2 border-primary bg-white px-6 py-3 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
+            <Link href={siteConfig.googleBusinessProfile} target="_blank" className="inline-flex rounded-full border-2 border-primary bg-white px-6 py-3 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
               View Google Business Profile
             </Link>
           </div>
