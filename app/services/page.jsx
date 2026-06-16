@@ -57,14 +57,14 @@ export default function ServicesPage() {
       />
 
       {/* Hero */}
-      <section className="section page-hero-next" style={{ paddingTop: '100px', paddingBottom: '80px' }}>
-        <div className="container" style={{ textAlign: 'center' }}>
-          <span className="badge">REPAIR SERVICES</span>
-          <h1 style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+      <section className="section page-hero-next bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] pb-20 pt-24">
+        <div className="container text-center">
+          <span className="badge inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR SERVICES</span>
+          <h1 className="mx-auto mt-6 max-w-5xl text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">
             Professional TV & Electronics{' '}
-            <span className="primary-text">Repair Services</span>
+            <span className="primary-text text-primary">Repair Services</span>
           </h1>
-          <p style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-textMuted">
             Explore GR Solution services for LED TV, OLED/QLED, panel bonding, Smart TV setup,
             CCTV security and DTH support across Delhi, Noida and NCR.
           </p>
@@ -72,37 +72,37 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Cards Grid */}
-      <section style={{ padding: '80px 0', background: 'var(--white)' }}>
-        <div className="container grid-3">
+      <section className="bg-white py-20">
+        <div className="container grid-3 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {tvServices.map((service) => (
-            <article className="card service-card-detailed" key={service.slug}>
-              <div className="service-card-img-wrap">
+            <article className="card service-card-detailed flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={service.slug}>
+              <div className="service-card-img-wrap relative overflow-hidden">
                 <Image
                   src={service.image}
                   alt={`${service.title} by GR Solution`}
                   width={520}
                   height={320}
+                  className="h-60 w-full object-cover transition duration-500 hover:scale-105"
                 />
                 <div className="service-card-img-overlay" />
               </div>
-              <div className="card-content" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                <h3 style={{ fontSize: '1.2rem' }}>{service.title}</h3>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.6, flex: 1 }}>
+              <div className="card-content flex flex-1 flex-col gap-3 p-8">
+                <h3 className="text-xl font-black text-secondary">{service.title}</h3>
+                <p className="flex-1 text-[0.95rem] leading-relaxed text-textMuted">
                   {service.shortDescription}
                 </p>
                 {service.benefits?.length > 0 && (
-                  <ul className="service-card-benefits">
+                  <ul className="service-card-benefits grid gap-2 text-sm text-textMuted">
                     {service.benefits.slice(0, 3).map((b) => (
-                      <li key={b}>
-                        <i className="fa-solid fa-check" /> {b}
+                      <li key={b} className="flex gap-2">
+                        <i className="fa-solid fa-check mt-1 text-success" /> {b}
                       </li>
                     ))}
                   </ul>
                 )}
                 <Link
                   href={`/services/${service.slug}`}
-                  className="btn btn-primary"
-                  style={{ alignSelf: 'flex-start', marginTop: '0.5rem' }}
+                  className="btn btn-primary mt-2 inline-flex self-start rounded-full bg-primary px-6 py-3 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary"
                 >
                   View Service
                 </Link>
@@ -113,22 +113,22 @@ export default function ServicesPage() {
       </section>
 
       {/* 4-Step Repair Process */}
-      <section style={{ padding: '100px 0', background: 'var(--bg-light)' }}>
+      <section className="bg-bgLight py-24">
         <div className="container">
-          <div className="section-title section-centered-title">
-            <span className="badge mb-3">SERVICE FLOW</span>
-            <h2>Our 4-Step Repair Process</h2>
-            <p>A simple process from first contact to approved repair.</p>
+          <div className="section-title section-centered-title mb-12 text-center">
+            <span className="badge mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">SERVICE FLOW</span>
+            <h2 className="mt-4 text-4xl font-black text-secondary">Our 4-Step Repair Process</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">A simple process from first contact to approved repair.</p>
           </div>
-          <div className="grid-4" style={{ marginTop: '2rem' }}>
+          <div className="grid-4 mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {processSteps.map((step, index) => (
-              <article className="card process-card" key={step.title}>
-                <span className="process-step-badge">STEP {index + 1}</span>
-                <div className="process-icon-box">
+              <article className="card process-card rounded-card border border-primary/10 bg-white p-8 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step.title}>
+                <span className="process-step-badge inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
+                <div className="process-icon-box my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
                   <i className={step.icon} />
                 </div>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
+                <h3 className="text-xl font-black text-secondary">{step.title}</h3>
+                <p className="mt-3 leading-relaxed text-textMuted">{step.text}</p>
               </article>
             ))}
           </div>

@@ -68,7 +68,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <Image src="/images/team.png" alt="GR Solution repair team" width={650} height={480} className="card-img-rounded" />
+          <Image src="/images/team.webp" alt="GR Solution repair team" width={650} height={480} className="card-img-rounded" />
         </div>
       </section>
       <section className="section" style={{ padding: '80px 0' }}>

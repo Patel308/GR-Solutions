@@ -3,18 +3,18 @@ import { siteConfig } from '@/data/siteConfig';
 
 export default function CTASection({ title = 'Need expert repair support?', text = 'Call GR Solution for fast doorstep service across Delhi, Noida and NCR.' }) {
   return (
-    <section className="section cta-section-next">
-      <div className="container grid-2-alt">
+    <section className="section cta-section-next bg-secondary py-24 text-white">
+      <div className="container grid-2-alt grid items-center gap-12 lg:grid-cols-2">
         <div>
-          <span className="badge">FAST SUPPORT</span>
-          <h2>{title}</h2>
-          <p>{text}</p>
+          <span className="badge inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-extrabold text-white">FAST SUPPORT</span>
+          <h2 className="mt-5 text-4xl font-extrabold leading-tight">{title}</h2>
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-white/75">{text}</p>
         </div>
-        <div className="btn-group">
-          <a href={siteConfig.phoneHref} className="btn btn-primary btn-lg">
+        <div className="btn-group flex flex-wrap gap-4 lg:justify-end">
+          <a href={siteConfig.phoneHref} className="btn btn-primary btn-lg inline-flex rounded-full border-2 border-primary bg-primary px-8 py-4 font-extrabold text-white shadow-cta transition duration-300 hover:-translate-y-1">
             <i className="fa-solid fa-phone" /> Call Now
           </a>
-          <Link href="/contact" className="btn btn-outline btn-lg">
+          <Link href="/contact" className="btn btn-outline btn-lg inline-flex rounded-full border-2 border-white/35 bg-transparent px-8 py-4 font-extrabold text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary">
             Book Service
           </Link>
         </div>

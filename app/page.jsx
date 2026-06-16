@@ -126,7 +126,7 @@ export default function HomePage() {
           <div className="hero-grid" style={{ alignItems: 'center' }}>
             <div className="hero-image">
               <Image
-                src="/images/team.png"
+                src="/images/team.webp"
                 alt="GR Solution Expert Team"
                 width={650}
                 height={480}
@@ -180,7 +180,7 @@ export default function HomePage() {
       <section
         style={{
           padding: '120px 0',
-          background: "linear-gradient(rgba(8, 9, 28, 0.88), rgba(8, 9, 28, 0.92)), url('/images/hero.png') center/cover",
+          background: "linear-gradient(rgba(8, 9, 28, 0.88), rgba(8, 9, 28, 0.92)), url('/images/hero.webp') center/cover",
           color: 'var(--white)',
           textAlign: 'center',
         }}
@@ -453,7 +453,7 @@ export default function HomePage() {
           </div>
           <div>
             <Image
-              src="/images/team.png"
+              src="/images/team.webp"
               alt="GR Solution Technical Team"
               width={650}
               height={480}

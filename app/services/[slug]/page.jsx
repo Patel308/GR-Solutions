@@ -4,6 +4,7 @@ import Link from 'next/link';
 import FAQ from '@/components/FAQ';
 import PageCTA from '@/components/PageCTA';
 import JsonLd from '@/components/JsonLd';
+import Breadcrumb from '@/components/Breadcrumb';
 import { getServiceBySlug, services } from '@/data/services';
 import { siteConfig } from '@/data/siteConfig';
 
@@ -81,28 +82,39 @@ export default async function ServiceDetailPage({ params }) {
         ].filter(Boolean)}
       />
 
+      {/* Breadcrumb */}
+      <section className="section border-b border-[#eee] bg-white py-2">
+        <div className="container">
+          <Breadcrumb items={[
+            { label: 'Home', href: '/' },
+            { label: 'Services', href: '/services' },
+            { label: service.title, href: null },
+          ]} />
+        </div>
+      </section>
+
       {/* Hero */}
-      <section className="section service-detail-hero">
-        <div className="container grid-2-alt">
+      <section className="section service-detail-hero bg-white py-24">
+        <div className="container grid-2-alt grid items-center gap-16 lg:grid-cols-2">
           <div>
-            <span className="badge">{service.title.toUpperCase()}</span>
-            <h1>{service.h1}</h1>
-            <p>{service.fullDescription}</p>
-            <div className="btn-group">
-              <a href={siteConfig.phoneHref} className="btn btn-primary">
+            <span className="badge inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">{service.title.toUpperCase()}</span>
+            <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">{service.h1}</h1>
+            <p className="mt-6 text-lg leading-relaxed text-textMuted">{service.fullDescription}</p>
+            <div className="btn-group mt-8 flex flex-wrap gap-4">
+              <a href={siteConfig.phoneHref} className="btn btn-primary inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call Now
               </a>
-              <Link href="/contact" className="btn btn-outline">
+              <Link href="/contact" className="btn btn-outline inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
                 Book Service
               </Link>
             </div>
           </div>
-          <Image src={service.image} alt={`${service.title} service in Delhi NCR`} width={680} height={500} className="card-img-rounded" priority />
+          <Image src={service.image} alt={`${service.title} service in Delhi NCR`} width={680} height={500} className="card-img-rounded rounded-3xl object-cover shadow-cardPro" priority />
         </div>
       </section>
 
       {/* Benefits */}
-      <section style={{ padding: '80px 0' }}>
+      <section className="py-20">
         <div className="container">
           <div className="section-title section-centered-title">
             <span className="badge mb-3">WHAT WE FIX</span>
@@ -112,9 +124,9 @@ export default async function ServiceDetailPage({ params }) {
           </div>
           <div className="grid-3">
             {service.benefits.map((benefit) => (
-              <article className="card" key={benefit} style={{ textAlign: 'center' }}>
-                <i className={`${service.icon} card-icon`} />
-                <h3>{benefit}</h3>
+              <article className="card rounded-card border border-black/5 bg-white p-10 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={benefit}>
+                <i className={`${service.icon} card-icon mb-5 text-4xl text-primary`} />
+                <h3 className="text-xl font-black text-secondary">{benefit}</h3>
               </article>
             ))}
           </div>
@@ -122,22 +134,22 @@ export default async function ServiceDetailPage({ params }) {
       </section>
 
       {/* Repair Process */}
-      <section style={{ padding: '80px 0', background: 'var(--bg-light)' }}>
+      <section className="bg-bgLight py-20">
         <div className="container">
           <div className="section-title section-centered-title">
             <span className="badge mb-3">PROCESS</span>
             <h2>Simple Repair Process</h2>
             <p>{service.shortDescription}</p>
           </div>
-          <div className="grid-4" style={{ marginTop: '2rem' }}>
+          <div className="grid-4 mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {service.process.map((step, index) => (
-              <article className="card process-card" key={step}>
-                <span className="process-step-badge">STEP {index + 1}</span>
-                <div className="process-icon-box">
+              <article className="card process-card rounded-card border border-primary/10 bg-white p-8 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step}>
+                <span className="process-step-badge inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
+                <div className="process-icon-box my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
                   <i className={genericProcess[index]?.icon || 'fa-solid fa-check'} />
                 </div>
-                <h3>{step}</h3>
-                <p>{genericProcess[index]?.text || ''}</p>
+                <h3 className="text-xl font-black text-secondary">{step}</h3>
+                <p className="mt-3 leading-relaxed text-textMuted">{genericProcess[index]?.text || ''}</p>
               </article>
             ))}
           </div>
@@ -145,26 +157,26 @@ export default async function ServiceDetailPage({ params }) {
       </section>
 
       {/* Related Services */}
-      <section style={{ padding: '80px 0' }}>
+      <section className="py-20">
         <div className="container">
           <div className="section-title section-centered-title">
             <span className="badge mb-3">RELATED SERVICES</span>
             <h2>Explore More Services</h2>
             <p>Browse other GR Solution repair services available across Delhi, Noida and NCR.</p>
           </div>
-          <div className="grid-3" style={{ marginTop: '1rem' }}>
+          <div className="grid-3 mt-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {related.map((item) => (
               <article className="card service-card-detailed" key={item.slug}>
                 <div className="service-card-img-wrap">
                   <Image src={item.image} alt={`${item.title} by GR Solution`} width={520} height={320} />
                   <div className="service-card-img-overlay" />
                 </div>
-                <div className="card-content" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                  <h3 style={{ fontSize: '1.15rem' }}>{item.title}</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6, flex: 1 }}>
+                <div className="card-content flex flex-col gap-3">
+                  <h3 className="text-lg font-black text-secondary">{item.title}</h3>
+                  <p className="flex-1 text-sm leading-relaxed text-textMuted">
                     {item.shortDescription}
                   </p>
-                  <Link href={`/services/${item.slug}`} className="btn btn-primary" style={{ alignSelf: 'flex-start' }}>
+                  <Link href={`/services/${item.slug}`} className="btn btn-primary self-start rounded-full bg-primary px-6 py-3 font-black text-white">
                     View Service
                   </Link>
                 </div>
@@ -179,13 +191,13 @@ export default async function ServiceDetailPage({ params }) {
 
       {/* FAQ — near the end */}
       {service.faqs?.length > 0 && (
-        <section style={{ padding: '80px 0', background: 'var(--bg-light)' }}>
+        <section className="bg-bgLight py-20">
           <div className="container">
             <div className="section-title section-centered-title">
               <span className="badge mb-3">FAQ</span>
               <h2>{service.title} Questions</h2>
             </div>
-            <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <div className="mx-auto max-w-[800px]">
               <FAQ faqs={service.faqs} />
             </div>
           </div>
