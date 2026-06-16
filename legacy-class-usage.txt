@@ -1,0 +1,238 @@
+components\CTASection.jsx:14:          <a href={siteConfig.phoneHref} className="btn btn-primary btn-lg inline-flex rounded-full border-2 border-primary bg-primary px-8 py-4 font-extrabold text-white shadow-cta transition duration-300 hover:-translate-y-1">
+components\CTASection.jsx:17:          <Link href="/contact" className="btn btn-outline btn-lg inline-flex rounded-full border-2 border-white/35 bg-transparent px-8 py-4 font-extrabold text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary">
+components\EnquiryModal.jsx:11:      <div className="modal-content relative max-h-[90vh] w-full max-w-[560px] overflow-y-auto rounded-modal bg-white p-8 shadow-cardPro transition duration-300">
+components\FAQ.jsx:12:        <div key={faq.question} className={`faq-item overflow-hidden rounded-[18px] border border-primary/10 bg-white shadow-oldMd ${openIndex === index ? 'active border-primary shadow-cardPro' : ''}`}>
+components\FAQ.jsx:15:            className={`faq-question flex w-full items-center justify-between px-6 py-5 text-left text-lg font-black transition duration-300 ${openIndex === index ? 'bg-[#f0f7ff] text-primary' : 'bg-white text-secondary'}`}
+components\FAQ.jsx:21:          <div className={`faq-answer overflow-hidden px-6 transition-all duration-300 ${openIndex === index ? 'max-h-60 pb-5' : 'max-h-0'}`}>
+components\FloatingButtons.jsx:5:    <div className="floating-actions fixed bottom-5 right-5 z-[900] flex flex-col gap-3">
+components\Header.jsx:25:        <div className="container navbar flex min-h-[96px] items-center justify-between">
+components\Header.jsx:27:            <Image src="/images/logo.jpg" alt="GR Solution Logo" width={150} height={50} className="nav-logo h-auto w-[150px] object-contain" priority />
+components\Header.jsx:30:          <ul className={`nav-links items-center gap-8 lg:flex ${menuOpen ? 'mobile-active flex' : 'hidden'}`}>
+components\Header.jsx:74:          <div className="nav-ctas flex items-center gap-4">
+components\Header.jsx:77:              className="btn btn-outline open-enquiry-modal inline-flex min-w-[190px] items-center justify-center gap-3 rounded-full border-2 border-primary bg-white px-6 py-4 font-extrabold leading-none text-primary shadow-cta transition duration-300 ease-old hover:-translate-y-1 hover:border-secondary hover:bg-secondary hover:text-white hover:shadow-ctaHover"
+components\Header.jsx:84:              className="btn btn-primary inline-flex min-w-[170px] items-center justify-center gap-3 rounded-full border-2 border-primary bg-primary px-6 py-4 font-extrabold leading-none text-white shadow-cta transition duration-300 ease-old hover:-translate-y-1 hover:border-secondary hover:bg-secondary hover:shadow-ctaHover"
+components\HeroSection.jsx:7:      <div className="container hero-grid grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
+components\HeroSection.jsx:8:        <div className="hero-content animate-softRise">
+components\HeroSection.jsx:9:          <div className="badge-group mb-6 flex flex-wrap gap-4">
+components\HeroSection.jsx:19:            <Link href={ctaHref} className="btn btn-primary inline-flex items-center justify-center rounded-full border-2 border-primary bg-primary px-8 py-4 font-extrabold text-white shadow-cta transition duration-300 ease-old hover:-translate-y-1 hover:border-secondary hover:bg-secondary hover:shadow-ctaHover">
+components\HeroSection.jsx:22:            <Link href="/services" className="btn btn-outline inline-flex items-center justify-center rounded-full border-2 border-primary bg-white px-8 py-4 font-extrabold text-primary shadow-cta transition duration-300 ease-old hover:-translate-y-1 hover:border-secondary hover:bg-secondary hover:text-white hover:shadow-ctaHover">
+components\HeroSection.jsx:26:          <div className="hero-stats flex flex-wrap gap-8">
+components\HeroSection.jsx:41:        <div className="hero-image relative animate-softRise overflow-hidden rounded-card shadow-oldLg">
+components\HeroSection.jsx:43:          <div className="hero-image-badge absolute bottom-5 left-5 rounded-xl bg-white/90 p-4 shadow-oldLg">
+components\PageCTA.jsx:23:            <a href={siteConfig.phoneHref} className="page-cta-btn page-cta-btn-primary inline-flex items-center justify-center gap-3 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-accent">
+components\PageCTA.jsx:34:            <Link href="/contact" className="page-cta-btn page-cta-btn-outline inline-flex items-center justify-center rounded-full border-2 border-white/35 px-7 py-4 font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary">
+components\ServiceCard.jsx:17:        <Link href={`/services/${service.slug}`} className="btn btn-primary mt-auto inline-flex self-start rounded-full border-2 border-primary bg-primary px-7 py-3 font-extrabold text-white shadow-cta transition duration-300 ease-old hover:-translate-y-1 hover:border-secondary hover:bg-secondary">
+app\page.jsx:126:          <div className="hero-grid" style={{ alignItems: 'center' }}>
+app\page.jsx:127:            <div className="hero-image">
+app\page.jsx:136:            <div className="hero-content">
+app\page.jsx:269:          <div className="hero-grid" style={{ alignItems: 'flex-start', gap: '6rem' }}>
+app\page.jsx:430:        <div className="container hero-grid" style={{ alignItems: 'center', gap: '5rem' }}>
+app\not-found.jsx:16:            <Link href="/" className="btn btn-primary">Back to Home</Link>
+app\not-found.jsx:17:            <Link href="/services" className="btn btn-outline">View Services</Link>
+app\not-found.jsx:18:            <Link href="/contact" className="btn btn-outline">Contact GR Solution</Link>
+app\globals.css:67:.nav-logo { height: 50px; }
+app\globals.css:69:.navbar .nav-ctas {
+app\globals.css:75:.hero-stats {
+app\globals.css:92:.hero-image-badge {
+app\globals.css:102:.hero-image-badge p {
+app\globals.css:244:.hero-grid-centered { align-items: center; }
+app\globals.css:355:.btn-primary {
+app\globals.css:361:.btn-primary:hover {
+app\globals.css:368:.btn-outline {
+app\globals.css:374:.btn-outline:hover {
+app\globals.css:395:.navbar {
+app\globals.css:479:.nav-links {
+app\globals.css:485:.nav-links a {
+app\globals.css:494:.nav-links a:hover,
+app\globals.css:495:.nav-links a.active {
+app\globals.css:499:.nav-links a::after {
+app\globals.css:510:.nav-links a:hover::after,
+app\globals.css:511:.nav-links a.active::after {
+app\globals.css:515:.nav-ctas {
+app\globals.css:522:   .nav-links {
+app\globals.css:526:   .navbar {
+app\globals.css:530:   .nav-ctas .btn span {
+app\globals.css:534:   .nav-ctas .btn {
+app\globals.css:541:   .nav-ctas {
+app\globals.css:558:.nav-links li {
+app\globals.css:581:.nav-links li:hover .dropdown-menu {
+app\globals.css:621:.nav-links a i.fa-chevron-down {
+app\globals.css:627:.nav-links li:hover > a i.fa-chevron-down {
+app\globals.css:632:.nav-links {
+app\globals.css:654:.nav-links li.active-dropdown .dropdown-menu {
+app\globals.css:667:.hero-grid {
+app\globals.css:674:.hero-content h1 {
+app\globals.css:678:.hero-content p {
+app\globals.css:683:.hero-image {
+app\globals.css:691:.badge-group {
+app\globals.css:857:.floating-actions {
+app\globals.css:907:.footer-grid {
+app\globals.css:914:.footer-col h4 {
+app\globals.css:962:.footer-bottom {
+app\globals.css:975:.footer-bottom a {
+app\globals.css:981:.footer-bottom a:hover {
+app\globals.css:985:.footer-bottom-links-row {
+app\globals.css:991:.footer-bottom {
+app\globals.css:997:.footer-bottom-links-row {
+app\globals.css:1216:.modal-content {
+app\globals.css:1236:.modal-content::-webkit-scrollbar {
+app\globals.css:1240:.modal.active .modal-content {
+app\globals.css:1381:    .modal-content {
+app\globals.css:1415:.faq-item {
+app\globals.css:1425:.faq-item:hover {
+app\globals.css:1431:.faq-item.active {
+app\globals.css:1436:.faq-question {
+app\globals.css:1448:.faq-item.active .faq-question {
+app\globals.css:1453:.faq-question i {
+app\globals.css:1459:.faq-item.active .faq-question i {
+app\globals.css:1464:.faq-answer {
+app\globals.css:1472:.faq-item.active .faq-answer {
+app\globals.css:1477:.faq-answer p {
+app\globals.css:1569:    .hero-grid, .grid-2, .grid-2-alt {
+app\globals.css:1575:    .hero-content { margin: 0 auto; max-width: 800px; }
+app\globals.css:1577:    .nav-links { display: none; }
+app\globals.css:1578:    .footer-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+app\globals.css:1599:button.faq-question,
+app\globals.css:1644:.core-value-card {
+app\globals.css:1654:.core-value-card > * {
+app\globals.css:1660:.core-value-card:hover,
+app\globals.css:1661:.core-value-card:focus,
+app\globals.css:1662:.core-value-card:focus-visible,
+app\globals.css:1663:.core-value-card:active {
+app\globals.css:1671:.core-value-card:hover h3,
+app\globals.css:1672:.core-value-card:hover p,
+app\globals.css:1673:.core-value-card:focus h3,
+app\globals.css:1674:.core-value-card:focus p,
+app\globals.css:1675:.core-value-card:focus-visible h3,
+app\globals.css:1676:.core-value-card:focus-visible p,
+app\globals.css:1677:.core-value-card:active h3,
+app\globals.css:1678:.core-value-card:active p {
+app\globals.css:1684:.core-value-card:hover .core-value-icon,
+app\globals.css:1685:.core-value-card:focus .core-value-icon,
+app\globals.css:1686:.core-value-card:focus-visible .core-value-icon,
+app\globals.css:1687:.core-value-card:active .core-value-icon {
+app\globals.css:1692:.core-value-card:hover .core-value-icon i,
+app\globals.css:1693:.core-value-card:focus .core-value-icon i,
+app\globals.css:1694:.core-value-card:focus-visible .core-value-icon i,
+app\globals.css:1695:.core-value-card:active .core-value-icon i {
+app\globals.css:1741:.service-card-detailed {
+app\globals.css:1760:.service-card-detailed:hover .service-card-img-wrap img {
+app\globals.css:1774:.service-card-detailed .card-content {
+app\globals.css:1839:.cta-section-next .btn-outline {
+app\globals.css:1869:.process-card {
+app\globals.css:1876:.process-card:hover {
+app\globals.css:1908:.process-card h3 {
+app\globals.css:1913:.process-card p {
+app\globals.css:1946:.floating-actions {
+app\globals.css:1978:.nav-links.mobile-active {
+app\globals.css:1983:.nav-links.mobile-active {
+app\globals.css:2024:.hero-stats {
+app\globals.css:2029:.nav-ctas .btn {
+app\globals.css:2033:.floating-actions {
+app\globals.css:2059:.navbar {
+app\globals.css:2063:.nav-logo {
+app\globals.css:2069:.nav-links {
+app\globals.css:2073:.nav-links a {
+app\globals.css:2077:.navbar .nav-ctas .btn {
+app\globals.css:2088:.contact-hero-grid-pro {
+app\globals.css:2110:.contact-hero-image-pro {
+app\globals.css:2149:.contact-row-pro {
+app\globals.css:2156:.contact-row-pro > i {
+app\globals.css:2170:.contact-row-pro h3 {
+app\globals.css:2175:.contact-row-pro a {
+app\globals.css:2182:.contact-row-pro p {
+app\globals.css:2188:.appointment-card-pro .lead-form {
+app\globals.css:2195:.appointment-card-pro .lead-form h2 {
+app\globals.css:2200:.appointment-card-pro .form-group-alt {
+app\globals.css:2204:.appointment-card-pro .form-group-alt label {
+app\globals.css:2210:.appointment-card-pro .form-input-alt {
+app\globals.css:2217:.appointment-card-pro textarea.form-input-alt {
+app\globals.css:2221:.appointment-card-pro .btn {
+app\globals.css:2248:.contact-hero-grid-pro,
+app\globals.css:2255:.navbar {
+app\globals.css:2259:.contact-hero-grid-pro,
+app\globals.css:2264:.contact-hero-image-pro {
+app\globals.css:2278:.contact-hero-image-pro {
+app\globals.css:2287:.appointment-card-pro .lead-form {
+app\globals.css:2292:.contact-row-pro {
+app\globals.css:2297:.contact-row-pro > i {
+app\globals.css:2331:.hero-content h1 {
+app\globals.css:2338:.hero-content p {
+app\globals.css:2345:.hero-content,
+app\globals.css:2346:.hero-image,
+app\globals.css:2365:.nav-ctas .btn {
+app\globals.css:2380:.nav-ctas .btn-primary {
+app\globals.css:2386:.nav-ctas .btn-primary:hover {
+app\globals.css:2392:.nav-ctas .btn-outline {
+app\globals.css:2398:.nav-ctas .btn-outline:hover {
+app\globals.css:2405:.nav-ctas .btn i {
+app\globals.css:2431:.hero-ctas .btn-primary {
+app\globals.css:2437:.hero-ctas .btn-primary:hover {
+app\globals.css:2444:.hero-ctas .btn-outline {
+app\globals.css:2450:.hero-ctas .btn-outline:hover {
+app\globals.css:2497:.hero-content,
+app\globals.css:2498:.hero-image,
+app\globals.css:2514:.blog-card-next {
+app\globals.css:2522:.blog-card-next img {
+app\globals.css:2527:.blog-card-next .card-content {
+app\globals.css:2535:.blog-card-next .badge {
+app\globals.css:2540:.blog-card-next h3 {
+app\globals.css:2546:.blog-card-next p {
+app\globals.css:2568:.faq-list .faq-item {
+app\globals.css:2577:.faq-list .faq-question {
+app\globals.css:2587:.faq-list .faq-item.active .faq-question {
+app\globals.css:2592:.faq-list .faq-question i {
+app\globals.css:2596:.faq-list .faq-item.active .faq-question i {
+app\globals.css:2600:.faq-list .faq-answer {
+app\globals.css:2605:.faq-list .faq-item.active .faq-answer {
+app\globals.css:2610:.faq-list .faq-answer p {
+app\globals.css:2633:.hero-content h1 {
+app\globals.css:2637:.navbar .nav-ctas .btn {
+app\globals.css:2646:.blog-card-next {
+app\globals.css:2656:    .nav-ctas .btn-outline { display: none; }
+app\globals.css:2659:    .hero-content h1 { font-size: 2.8rem; }
+app\globals.css:2660:    .hero-content p { font-size: 1.1rem; }
+app\globals.css:2662:    .modal-content {
+app\globals.css:2668:    .faq-question { padding: 1.2rem 1.5rem; font-size: 1rem; }
+app\globals.css:2669:    .faq-answer { padding: 0 1.5rem; }
+app\globals.css:2673:    .hero-content h1 { font-size: 2.2rem; line-height: 1.2; }
+app\globals.css:2674:    .hero-content .btn-group { flex-direction: column; width: 100%; }
+app\globals.css:2675:    .hero-content .btn { width: 100%; text-align: center; }
+app\globals.css:2679:    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+app\globals.css:2680:    .footer-col { display: flex; flex-direction: column; align-items: center; }
+app\globals.css:2687:    .hero-content h1 { font-size: 1.8rem; }
+app\globals.css:2689:    .nav-ctas .btn { padding: 0.5rem 0.8rem; font-size: 0.8rem; }
+app\globals.css:2840:    .section-contact-booking .hero-grid { gap: 3rem !important; }
+app\globals.css:2849:    .section-contact-booking .hero-grid > div:first-child { margin-bottom: 20px; }
+app\globals.css:2938:.page-cta-btn-primary {
+app\globals.css:2944:.page-cta-btn-primary:hover {
+app\globals.css:2962:.page-cta-btn-outline {
+app\globals.css:2968:.page-cta-btn-outline:hover {
+app\globals.css:3054:    .footer-bottom {
+components\Footer.jsx:15:        <div className="footer-grid grid items-start gap-16 md:grid-cols-2 xl:grid-cols-[1.6fr_0.9fr_1.1fr_1.25fr]">
+components\Footer.jsx:16:          <div className="footer-col">
+components\Footer.jsx:70:          <div className="footer-col">
+components\Footer.jsx:81:          <div className="footer-col">
+components\Footer.jsx:92:          <div className="footer-col footer-contact-col">
+components\Footer.jsx:129:        <div className="footer-bottom mt-20 flex flex-wrap items-center justify-between gap-6 border-t border-white/15 pt-10 text-[#b9c3d8]">
+components\Footer.jsx:132:          <div className="footer-bottom-links-row flex gap-8">
+app\services\[slug]\page.jsx:104:              <a href={siteConfig.phoneHref} className="btn btn-primary inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+app\services\[slug]\page.jsx:107:              <Link href="/contact" className="btn btn-outline inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
+app\services\[slug]\page.jsx:146:              <article className="card process-card rounded-card border border-primary/10 bg-white p-8 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step}>
+app\services\[slug]\page.jsx:169:              <article className="card service-card-detailed" key={item.slug}>
+app\services\[slug]\page.jsx:179:                  <Link href={`/services/${item.slug}`} className="btn btn-primary self-start rounded-full bg-primary px-6 py-3 font-black text-white">
+components\ContactForm.jsx:75:      <button type="submit" className="btn btn-primary inline-flex w-full items-center justify-center gap-3 rounded-full border-2 border-primary bg-primary px-6 py-4 font-black text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-70" disabled={pending}>
+app\about\page.jsx:60:            <div className="hero-stats">
+app\about\page.jsx:82:              <article className="card core-value-card" key={value.title}>
+app\blog\page.jsx:84:              <Link href="/services/oled-qled-repair" className="btn btn-primary mt-6 inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+app\blog\page.jsx:91:              <article className="card blog-card-next flex min-h-[590px] flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={post.title}>
+app\services\page.jsx:78:            <article className="card service-card-detailed flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={service.slug}>
+app\services\page.jsx:105:                  className="btn btn-primary mt-2 inline-flex self-start rounded-full bg-primary px-6 py-3 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary"
+app\services\page.jsx:125:              <article className="card process-card rounded-card border border-primary/10 bg-white p-8 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step.title}>
+app\contact\page.jsx:27:        <div className="container contact-hero-grid-pro grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
+app\contact\page.jsx:38:          <Image src="/images/service_tv.webp" alt="GR Solution technician repairing a TV at home" width={650} height={520} className="contact-hero-image-pro h-[min(520px,52vw)] min-h-[360px] w-full rounded-3xl object-cover shadow-cardPro" priority />
+app\contact\page.jsx:53:              <article className="contact-row-pro grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
+app\contact\page.jsx:61:              <article className="contact-row-pro grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
+app\contact\page.jsx:71:              <article className="contact-row-pro grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
+app\contact\page.jsx:80:          <div className="appointment-card-pro">
+app\contact\page.jsx:92:            <Link href={siteConfig.googleBusinessProfile} target="_blank" className="btn btn-outline inline-flex rounded-full border-2 border-primary bg-white px-6 py-3 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">

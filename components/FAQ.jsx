@@ -7,22 +7,42 @@ export default function FAQ({ faqs }) {
   if (!faqs?.length) return null;
 
   return (
-    <div className="faq-list grid gap-4">
-      {faqs.map((faq, index) => (
-        <div key={faq.question} className={`faq-item overflow-hidden rounded-[18px] border border-primary/10 bg-white shadow-oldMd ${openIndex === index ? 'active border-primary shadow-cardPro' : ''}`}>
-          <button
-            type="button"
-            className={`faq-question flex w-full items-center justify-between px-6 py-5 text-left text-lg font-black transition duration-300 ${openIndex === index ? 'bg-[#f0f7ff] text-primary' : 'bg-white text-secondary'}`}
-            onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+    <div className="grid gap-4">
+      {faqs.map((faq, index) => {
+        const isOpen = openIndex === index;
+        return (
+          <div
+            key={faq.question}
+            className={`overflow-hidden rounded-[18px] border bg-white shadow-oldMd transition duration-300 ${
+              isOpen
+                ? 'border-primary shadow-cardPro'
+                : 'border-primary/10 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-oldLg'
+            }`}
           >
-            <span>{faq.question}</span>
-            <i className={`fa-solid fa-chevron-down transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-primary' : 'text-textMuted'}`} />
-          </button>
-          <div className={`faq-answer overflow-hidden px-6 transition-all duration-300 ${openIndex === index ? 'max-h-60 pb-5' : 'max-h-0'}`}>
-            <p className="text-base leading-relaxed text-textMuted">{faq.answer}</p>
+            <button
+              type="button"
+              className={`flex w-full items-center justify-between px-6 py-5 text-left text-lg font-black transition duration-300 ${
+                isOpen ? 'bg-[#f0f7ff] text-primary' : 'bg-white text-secondary'
+              }`}
+              onClick={() => setOpenIndex(isOpen ? -1 : index)}
+            >
+              <span>{faq.question}</span>
+              <i
+                className={`fa-solid fa-chevron-down transition-transform duration-300 ${
+                  isOpen ? 'rotate-180 text-primary' : 'text-textMuted'
+                }`}
+              />
+            </button>
+            <div
+              className={`overflow-hidden px-6 transition-all duration-300 ${
+                isOpen ? 'max-h-60 pb-5' : 'max-h-0'
+              }`}
+            >
+              <p className="text-base leading-relaxed text-textMuted">{faq.answer}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

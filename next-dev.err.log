@@ -1,0 +1,317 @@
+[browser] Image with src "/images/logo.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\dell\Desktop\Gr Solutions\app\globals.css:2523:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:594:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:337:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:463:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.jsx [Server Component] 
+    at handleErrors (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14007:21)
+    at WebSocket.handleMessage (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/dell/Desktop/Gr Solutions/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)

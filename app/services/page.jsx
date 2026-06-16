@@ -75,7 +75,7 @@ export default function ServicesPage() {
       <section className="bg-white py-20">
         <div className="container grid-3 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {tvServices.map((service) => (
-            <article className="card service-card-detailed flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={service.slug}>
+            <article className="flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={service.slug}>
               <div className="service-card-img-wrap relative overflow-hidden">
                 <Image
                   src={service.image}
@@ -86,7 +86,7 @@ export default function ServicesPage() {
                 />
                 <div className="service-card-img-overlay" />
               </div>
-              <div className="card-content flex flex-1 flex-col gap-3 p-8">
+              <div className="flex flex-1 flex-col gap-3 p-8">
                 <h3 className="text-xl font-black text-secondary">{service.title}</h3>
                 <p className="flex-1 text-[0.95rem] leading-relaxed text-textMuted">
                   {service.shortDescription}

@@ -171,7 +171,7 @@ export default async function ServiceDetailPage({ params }) {
                   <Image src={item.image} alt={`${item.title} by GR Solution`} width={520} height={320} />
                   <div className="service-card-img-overlay" />
                 </div>
-                <div className="card-content flex flex-col gap-3">
+                <div className="flex flex-col gap-3">
                   <h3 className="text-lg font-black text-secondary">{item.title}</h3>
                   <p className="flex-1 text-sm leading-relaxed text-textMuted">
                     {item.shortDescription}
