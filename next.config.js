@@ -13,6 +13,17 @@ const nextConfig = {
       ['terms', '/terms'],
     ];
 
+    const legacyIndexedPages = [
+      ['led-tv', '/services/led-tv-repair'],
+      ['lcd-tv', '/services/lcd-tv-repair'],
+      ['oled-tv', '/services/oled-qled-tv-repair'],
+      ['blog-details', '/blog'],
+      ['projects', '/services'],
+      ['fridge', '/services'],
+      ['shop', '/services'],
+      ['single-shop', '/services'],
+    ];
+
     const serviceHtmlRedirects = [
       ['led-tv-repair', '/services/led-tv-repair'],
       ['oled-qled-tv-repair', '/services/oled-qled-tv-repair'],
@@ -39,7 +50,18 @@ const nextConfig = {
     ];
 
     return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.grsolution.co.in' }],
+        destination: 'https://grsolution.co.in/:path*',
+        permanent: true,
+      },
       ...rootPages.map(([page, destination]) => ({
+        source: `/${page}.html`,
+        destination,
+        permanent: true,
+      })),
+      ...legacyIndexedPages.map(([page, destination]) => ({
         source: `/${page}.html`,
         destination,
         permanent: true,
