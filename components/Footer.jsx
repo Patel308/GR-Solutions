@@ -89,10 +89,12 @@ export default function Footer() {
 
           <div className="max-sm:w-full">
             <h4 className="mb-6 inline-block border-b-2 border-primary pb-1 text-xl font-black text-white max-sm:block max-sm:text-center">Contact Us</h4>
-            <ul className="mx-auto mt-6 grid max-w-[360px] gap-5 sm:max-w-none">
-              <li className="grid grid-cols-[56px_minmax(0,1fr)] items-start gap-4 text-left">
-                <i className="fa-solid fa-location-dot inline-flex size-12 items-center justify-center rounded-xl bg-primary/25 text-accent" />
-                <div>
+            <ul className="mt-6 grid max-w-[340px] gap-6 max-sm:mx-auto">
+              <li className="flex items-start gap-4 text-left">
+                <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/25 text-accent">
+                  <i className="fa-solid fa-location-dot" />
+                </span>
+                <div className="min-w-0 pt-0.5">
                   <strong className="mb-1 block text-white">
                     Visit Center
                   </strong>
@@ -102,18 +104,22 @@ export default function Footer() {
                   </span>
                 </div>
               </li>
-              <li className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-4 text-left">
-                <i className="fa-solid fa-phone inline-flex size-12 items-center justify-center rounded-xl bg-primary/25 text-accent" />
-                <div>
+              <li className="flex items-center gap-4 text-left">
+                <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/25 text-accent">
+                  <i className="fa-solid fa-phone" />
+                </span>
+                <div className="min-w-0">
                   <strong className="mb-1 block text-white">
                     Call Support
                   </strong>
                   <a href={siteConfig.phoneHref} className="text-[#b9c3d8] hover:text-white">{siteConfig.phone}</a>
                 </div>
               </li>
-              <li className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-4 text-left">
-                <i className="fa-solid fa-envelope inline-flex size-12 items-center justify-center rounded-xl bg-primary/25 text-accent" />
-                <div>
+              <li className="flex items-center gap-4 text-left">
+                <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/25 text-accent">
+                  <i className="fa-solid fa-envelope" />
+                </span>
+                <div className="min-w-0">
                   <strong className="mb-1 block text-white">
                     Email Us
                   </strong>

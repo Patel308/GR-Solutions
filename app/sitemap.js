@@ -1,5 +1,6 @@
 import { services } from '@/data/services';
 import { localServicePages } from '@/data/localServicePages';
+import { brandServicePages } from '@/data/brandServicePages';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 
@@ -26,5 +27,12 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
-  return [...staticPages, ...servicePages, ...localPages];
+  const brandPages = brandServicePages.map((page) => ({
+    url: `${siteConfig.url}/services/${page.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...servicePages, ...localPages, ...brandPages];
 }

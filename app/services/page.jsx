@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import { services } from '@/data/services';
+import { brands, getPrimaryBrandCityPage } from '@/data/brandServicePages';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 
@@ -107,6 +108,33 @@ export default function ServicesPage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      {/* TV Repair by Brand */}
+      <section className="bg-white py-20">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">BY BRAND</span>
+            <h2 className="mt-4 text-4xl font-black text-secondary">TV Repair by Brand</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">
+              GR Solution provides repair support for the following TV brands across Delhi, Noida, Greater Noida and Ghaziabad.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {brands.map((brand) => {
+              const primaryPage = getPrimaryBrandCityPage(brand.slug);
+              return (
+                <Link
+                  key={brand.slug}
+                  href={`/services/${primaryPage.slug}`}
+                  className="rounded-2xl border border-primary/10 bg-bgLight p-5 text-center font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
+                >
+                  {brand.displayName} TV Repair
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 
