@@ -19,7 +19,11 @@ export const siteConfig = {
     addressRegion: 'Delhi NCR',
     addressCountry: 'IN',
   },
-  serviceAreas: ['Delhi', 'Noida', 'Gurgaon', 'Ghaziabad', 'Faridabad', 'NCR'],
+  serviceAreas: ['Delhi NCR', 'Delhi', 'Noida', 'Greater Noida', 'Ghaziabad'],
+  geo: {
+    latitude: 28.6244,
+    longitude: 77.3185,
+  },
   openingHours: {
     opens: '09:00',
     closes: '21:00',

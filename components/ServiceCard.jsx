@@ -10,7 +10,7 @@ export default function ServiceCard({ service, featured = false, carousel = fals
           : 'flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition duration-300 ease-old hover:-translate-y-1 hover:shadow-oldLg'
       }
     >
-      <Image src={service.image} alt={`${service.title} by GR Solution`} width={520} height={360} />
+      <Image src={service.image} alt={`${service.title} service by GR Solution`} width={520} height={360} />
       <div className="flex flex-1 flex-col p-10">
         <h3 className="mb-4 text-2xl font-extrabold text-secondary">{service.title}</h3>
         <p className="mb-6 text-base leading-relaxed text-textMuted">{service.shortDescription}</p>

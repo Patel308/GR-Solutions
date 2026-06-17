@@ -27,24 +27,6 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
-                className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#1877f2]"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-              >
-                <i className="fa-brands fa-facebook-f" />
-              </a>
-              <a
-                href="https://instagram.com"
-                className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#e4405f]"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <i className="fa-brands fa-instagram" />
-              </a>
-              <a
                 href={siteConfig.whatsappHref}
                 className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#25d366]"
                 target="_blank"
@@ -52,15 +34,6 @@ export default function Footer() {
                 aria-label="WhatsApp"
               >
                 <i className="fa-brands fa-whatsapp" />
-              </a>
-              <a
-                href="https://youtube.com"
-                className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#ff0000]"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-              >
-                <i className="fa-brands fa-youtube" />
               </a>
             </div>
           </div>

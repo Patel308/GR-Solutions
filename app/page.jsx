@@ -62,16 +62,25 @@ const brandNames = ['SAMSUNG', 'SONY', 'LG', 'XIAOMI', 'ONEPLUS', 'VU', 'TOSHIBA
 const whyChooseBenefits = [
   {
     title: 'Same Day Repair',
-    text: '90% of our TV and mobile repairs are completed within 6 hours.',
+    text: 'Fast doorstep support is arranged based on technician availability and service location.',
   },
   {
-    title: 'Certified Technicians',
-    text: '10+ years of experience in high-end television technology.',
+    title: 'Experienced Technicians',
+    text: 'Practical experience with LED, OLED/QLED, LCD, Plasma and Curved TV diagnosis.',
   },
   {
     title: 'Transparent Pricing',
     text: 'Fixed diagnostic fees and upfront quotes before repair.',
   },
+];
+
+const popularLocationLinks = [
+  { label: 'LED TV Repair in Delhi', href: '/services/led-tv-repair-delhi' },
+  { label: 'LED TV Repair in Noida', href: '/services/led-tv-repair-noida' },
+  { label: 'OLED/QLED TV Repair in Delhi', href: '/services/oled-qled-tv-repair-delhi' },
+  { label: 'LCD TV Repair in Ghaziabad', href: '/services/lcd-tv-repair-ghaziabad' },
+  { label: 'TV Repair Services', href: '/services' },
+  { label: 'Contact GR Solution', href: '/contact' },
 ];
 
 export default function HomePage() {
@@ -94,7 +103,7 @@ export default function HomePage() {
         eyebrow="#1 TV Repair in Delhi, Noida & NCR"
         title="Premium TV Repair Services"
         highlight="At Your Doorstep"
-        description="Expert LCD, LED, OLED, and QLED TV repairs. We provide genuine parts, same-day service, and a 90-day warranty. Trusted by 15,000+ happy customers in Delhi, Noida & NCR."
+        description="Expert LCD, LED, OLED, and QLED TV repairs with careful diagnosis, transparent estimates and a 90-day service warranty where applicable. Trusted by 15,000+ happy customers in Delhi, Noida & NCR."
       />
 
       {/* Services Carousel */}
@@ -121,13 +130,39 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us — Redesigned */}
+      <section className="bg-white py-[90px]">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
+              POPULAR LOCATIONS
+            </span>
+            <h2 className="text-4xl font-black text-secondary">Popular TV Repair Locations</h2>
+            <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
+              Quick links to the most requested GR Solution TV repair pages across Delhi NCR.
+            </p>
+          </div>
+          <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {popularLocationLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex items-center justify-between gap-4 rounded-2xl border border-primary/10 bg-bgLight px-5 py-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:bg-white hover:text-primary"
+              >
+                <span>{item.label}</span>
+                <i className="fa-solid fa-arrow-right text-sm text-primary transition group-hover:translate-x-1" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-bgLight py-[100px]">
         <div className="container">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div>
               <Image
                 src="/images/team.webp"
-                alt="GR Solution Expert Team"
+                alt="GR Solution TV repair team in Delhi NCR"
                 width={650}
                 height={480}
                 style={{ borderRadius: '20px', width: '100%' }}
@@ -136,7 +171,7 @@ export default function HomePage() {
             <div>
               <h2 style={{ fontSize: '2.5rem' }}>
                 Why Delhi, Noida & NCR Trusts <br />
-                <span className="text-primary">GR Service Center</span>
+                <span className="text-primary">GR Solution</span>
               </h2>
               <ul style={{ marginTop: '2rem' }}>
                 {whyChooseBenefits.map((benefit) => (
@@ -296,7 +331,7 @@ export default function HomePage() {
                       Verified Guarantee
                     </h4>
                     <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, fontSize: '0.95rem' }}>
-                      All repairs come with an authorized certificate and 12-month warranty.
+                      Warranty terms are explained before approval, with a 90-day service warranty where applicable.
                     </p>
                   </div>
                 </div>
@@ -383,8 +418,8 @@ export default function HomePage() {
       <section className="border-t border-[#eee] bg-bgLight py-[100px]">
         <div className="container">
           <div className="mb-20 text-center">
-            <h2 className="text-4xl font-black text-secondary">Authorized Service Expertise</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">We are certified experts in repairing products from all global giants.</p>
+            <h2 className="text-4xl font-black text-secondary">TV Brand Repair Experience</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">We provide independent TV repair support for popular brands after technician diagnosis and part availability checks.</p>
           </div>
           <div className="logo-carousel-container">
             <div className="logo-track">
@@ -409,9 +444,8 @@ export default function HomePage() {
               Meet Our <span className="text-primary">Expert Repair Team</span>
             </h2>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-              At GR Solution, our team consists of 25+ certified electronics engineers who have worked
-              with major global brands like Sony, Samsung, and LG. We specialize in precision board-level
-              and panel repairs that most shops can&apos;t handle.
+              At GR Solution, our team focuses on practical TV diagnosis for common and complex display,
+              power, sound and board-level symptoms. We explain repair feasibility clearly before work begins.
             </p>
             <div style={{ display: 'flex', gap: '3rem', marginTop: '2.5rem' }}>
               <div>
@@ -419,15 +453,15 @@ export default function HomePage() {
                 <span style={{ color: 'var(--text-muted)' }}>Years Experience</span>
               </div>
               <div>
-                <h2 style={{ marginBottom: 0, color: 'var(--secondary)' }}>25k+</h2>
-                <span style={{ color: 'var(--text-muted)' }}>TVs Repaired</span>
+                <h2 style={{ marginBottom: 0, color: 'var(--secondary)' }}>15,000+</h2>
+                <span style={{ color: 'var(--text-muted)' }}>Happy Customers</span>
               </div>
             </div>
           </div>
           <div>
             <Image
               src="/images/team.webp"
-              alt="GR Solution Technical Team"
+              alt="GR Solution technicians handling TV repair diagnostics in Delhi NCR"
               width={650}
               height={480}
               style={{ borderRadius: '20px', width: '100%', boxShadow: 'var(--shadow-lg)' }}

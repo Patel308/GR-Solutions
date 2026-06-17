@@ -23,7 +23,7 @@ const coreValues = [
   },
   {
     icon: 'fa-solid fa-certificate',
-    title: 'Certified Excellence',
+    title: 'Repair Excellence',
     text: 'Skilled technicians handling LED, OLED/QLED, LCD, Plasma and Curved TV repair with professional care.',
   },
   {
@@ -51,7 +51,7 @@ export default function AboutPage() {
           <div>
             <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">ABOUT GR SOLUTION</span>
             <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">
-              Excellence In <span className="text-primary">TV Repair Service</span>
+              Delhi&apos;s Expert TV Repair Team <span className="text-primary">15+ Years of Service</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-textMuted">
               GR Solution focuses on dependable LED, OLED/QLED, LCD, Plasma and Curved TV repair support for families and businesses
@@ -63,12 +63,12 @@ export default function AboutPage() {
                 <span className="text-textMuted">Years Experience</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-extrabold text-secondary">25k+</span>
-                <span className="text-textMuted">Customers Served</span>
+                <span className="text-2xl font-extrabold text-secondary">15,000+</span>
+                <span className="text-textMuted">Happy Customers</span>
               </div>
             </div>
           </div>
-          <Image src="/images/team.webp" alt="GR Solution repair team" width={650} height={480} className="w-full rounded-[20px] shadow-oldLg" />
+          <Image src="/images/team.webp" alt="GR Solution TV repair team in Delhi NCR" width={650} height={480} className="w-full rounded-[20px] shadow-oldLg" />
         </div>
       </section>
       <section className="py-20">

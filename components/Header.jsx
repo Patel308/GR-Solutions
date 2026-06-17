@@ -24,7 +24,7 @@ export default function Header() {
       <header className="sticky top-0 z-[1000] bg-white shadow-nav">
         <div className="container relative flex min-h-[96px] items-center justify-between">
           <Link href="/" aria-label="GR Solution home">
-            <Image src="/images/logo.jpg" alt="GR Solution Logo" width={150} height={50} className="h-auto w-[150px] object-contain" priority />
+            <Image src="/images/logo.jpg" alt="GR Solution TV repair service logo" width={150} height={50} className="h-auto w-[150px] object-contain" priority />
           </Link>
 
           <ul

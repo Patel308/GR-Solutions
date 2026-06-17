@@ -30,7 +30,7 @@ export default function Testimonials() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((item) => (
             <article className="rounded-card border border-black/5 bg-white p-10 shadow-oldMd transition duration-300 hover:-translate-y-1 hover:shadow-oldLg" key={item.name}>
-              <Image src={item.image} alt={`${item.name} testimonial`} width={90} height={90} className="mb-6 rounded-full" />
+              <Image src={item.image} alt={`Customer feedback for GR Solution TV repair service from ${item.name}`} width={90} height={90} className="mb-6 rounded-full" />
               <p className="text-lg leading-relaxed text-textMain">&quot;{item.text}&quot;</p>
               <h3 className="mt-4 text-xl font-black text-secondary">{item.name}</h3>
             </article>

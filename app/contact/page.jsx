@@ -16,12 +16,22 @@ export default function ContactPage() {
   return (
     <main>
       <JsonLd
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'ContactPage',
-          name: 'Contact GR Solution',
-          url: `${siteConfig.url}/contact`,
-        }}
+        data={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'ContactPage',
+            name: 'Contact GR Solution',
+            url: `${siteConfig.url}/contact`,
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+              { '@type': 'ListItem', position: 2, name: 'Contact', item: `${siteConfig.url}/contact` },
+            ],
+          },
+        ]}
       />
       <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
         <div className="container grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
@@ -32,10 +42,10 @@ export default function ContactPage() {
             </h1>
             <p className="mt-7 max-w-3xl text-xl leading-relaxed text-textMain">
               Delhi, Noida & NCR&apos;s trusted engineering team for OLED, QLED and LED TV repairs. Contact us for a free
-              diagnostic consultation and professional same-day doorstep service.
+              diagnostic consultation and professional doorstep service where available.
             </p>
           </div>
-          <Image src="/images/service_tv.webp" alt="GR Solution technician repairing a TV at home" width={650} height={520} className="h-[min(520px,52vw)] min-h-[360px] w-full rounded-3xl object-cover shadow-cardPro" priority />
+          <Image src="/images/service_tv.webp" alt="GR Solution technician repairing a TV at home in Delhi NCR" width={650} height={520} className="h-[min(520px,52vw)] min-h-[360px] w-full rounded-3xl object-cover shadow-cardPro" priority />
         </div>
       </section>
       <section className="bg-white py-28">

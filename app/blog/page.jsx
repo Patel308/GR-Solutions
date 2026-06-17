@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import PageCTA from '@/components/PageCTA';
+import JsonLd from '@/components/JsonLd';
 import { pageMetadata } from '@/data/pages';
+import { siteConfig } from '@/data/siteConfig';
 
 export const metadata = {
   title: pageMetadata.blog.title,
@@ -58,22 +60,32 @@ const posts = [
 export default function BlogPage() {
   return (
     <main>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+            { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteConfig.url}/blog` },
+          ],
+        }}
+      />
       <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
         <div className="container grid items-center gap-16 lg:grid-cols-2">
           <div>
             <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR INSIGHTS</span>
             <h1 className="mt-7 text-[clamp(3rem,5.5vw,5rem)] font-black leading-tight text-secondary">
-              Expert TV Care & <span className="text-primary">Technical Guides</span>
+              TV Repair Tips & Guides for <span className="text-primary">Delhi, Noida & NCR Residents</span>
             </h1>
             <p className="mt-6 max-w-3xl text-xl leading-relaxed text-textMain">Maintenance tips, display technology explainers and repair guidance from GR Solution.</p>
           </div>
-          <Image src="/images/hero.webp" alt="TV repair insights" width={650} height={460} className="w-full rounded-3xl object-cover shadow-cardPro" />
+          <Image src="/images/hero.webp" alt="GR Solution TV repair guide for Delhi NCR residents" width={650} height={460} className="w-full rounded-3xl object-cover shadow-cardPro" />
         </div>
       </section>
       <section className="py-24">
         <div className="container">
           <article className="mb-12 grid overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-cardPro lg:grid-cols-[1.2fr_1fr]">
-            <Image src="/images/hero.webp" alt="Featured Mini LED and QLED repair article" width={760} height={420} className="h-full min-h-[360px] w-full object-cover" />
+            <Image src="/images/hero.webp" alt="OLED and QLED TV repair diagnosis guide by GR Solution" width={760} height={420} className="h-full min-h-[360px] w-full object-cover" />
             <div className="p-10">
               <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FEATURED</span>
               <h2 className="mt-5 text-3xl font-black leading-tight text-secondary">OLED/QLED Television Repair Needs Careful Diagnosis</h2>
@@ -89,7 +101,7 @@ export default function BlogPage() {
           <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <article className="flex min-h-[590px] flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={post.title}>
-                <Image src={post.image} alt={post.title} width={520} height={320} className="h-[290px] w-full object-cover" />
+                <Image src={post.image} alt={`${post.title} by GR Solution`} width={520} height={320} className="h-[290px] w-full object-cover" />
                 <div className="flex flex-1 flex-col gap-4 p-10">
                   <span className="inline-flex self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">{post.category}</span>
                   <h3 className="text-2xl font-black leading-tight text-secondary">{post.title}</h3>

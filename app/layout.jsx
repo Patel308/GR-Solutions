@@ -23,6 +23,7 @@ export const metadata = {
   icons: {
     icon: '/images/logo.jpg',
   },
+  // TODO: Add metadata.verification.google when the real Google Search Console code is provided.
   openGraph: {
     type: 'website',
     siteName: siteConfig.name,
@@ -50,18 +51,24 @@ const organizationSchema = {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': ['LocalBusiness', 'ProfessionalService'],
   name: siteConfig.name,
   image: `${siteConfig.url}/images/logo.jpg`,
   url: siteConfig.url,
   telephone: siteConfig.phone,
   email: siteConfig.email,
-  priceRange: '₹₹',
-  sameAs: [siteConfig.googleBusinessProfile],
+  currenciesAccepted: 'INR',
+  paymentAccepted: 'Cash, UPI, Card',
+  priceRange: 'Inspection-based estimate',
   hasMap: siteConfig.googleBusinessProfile,
   address: {
     '@type': 'PostalAddress',
     ...siteConfig.address,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: siteConfig.geo.latitude,
+    longitude: siteConfig.geo.longitude,
   },
   areaServed: siteConfig.serviceAreas,
   openingHoursSpecification: {

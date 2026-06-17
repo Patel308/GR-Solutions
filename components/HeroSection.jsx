@@ -8,7 +8,7 @@ export default function HeroSection({ eyebrow, title, highlight, description, im
         <div className="animate-softRise">
           <div className="mb-6 flex flex-wrap gap-4">
             {eyebrow ? <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-extrabold uppercase text-primary">{eyebrow}</span> : null}
-            <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-extrabold uppercase text-primary"><i className="fa-solid fa-star" /> 4.9/5 Rating</span>
+            <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-extrabold uppercase text-primary"><i className="fa-solid fa-location-dot" /> Delhi NCR Doorstep Support</span>
           </div>
           <h1 className="mb-6 max-w-[850px] text-[clamp(3.2rem,5.5vw,5.2rem)] font-extrabold leading-[1.08] text-secondary">
             {title} <br />
@@ -39,10 +39,10 @@ export default function HeroSection({ eyebrow, title, highlight, description, im
           </div>
         </div>
         <div className="relative animate-softRise overflow-hidden rounded-card shadow-oldLg">
-          <Image src={image} alt={`${title} ${highlight || ''}`} width={720} height={560} priority />
+          <Image src={image} alt="GR Solution technician repairing LED TV at home in Delhi NCR" width={720} height={560} priority />
           <div className="absolute bottom-5 left-5 rounded-xl bg-white/90 p-4 shadow-oldLg">
             <p className="m-0 font-extrabold text-primary">
-              <i className="fa-solid fa-shield-halved" /> Certified Techs Only
+              <i className="fa-solid fa-shield-halved" /> Careful Diagnosis First
             </p>
           </div>
         </div>
