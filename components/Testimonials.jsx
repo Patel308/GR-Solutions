@@ -8,7 +8,7 @@ const testimonials = [
   },
   {
     name: 'Priya Verma',
-    text: 'Professional doorstep support and transparent pricing. My Smart TV was working again the same day.',
+    text: 'Professional doorstep support and transparent pricing. My OLED TV was working again the same day.',
     image: '/assets/customer_testimonial_female_1769457061538.webp',
   },
   {

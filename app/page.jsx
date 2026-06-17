@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: 'Which TV types do you repair?',
-    answer: 'We repair LED, LCD, OLED, QLED, Smart TV, Android TV and large-screen televisions from major brands.',
+    answer: 'We repair LED, LCD, OLED/QLED, Plasma, Curved and large-screen televisions from major brands.',
   },
   {
     question: 'Do you repair TV panels and display issues?',

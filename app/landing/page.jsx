@@ -18,7 +18,7 @@ export default function LandingPage() {
         eyebrow="SAME-DAY SERVICE"
         title="Book TV Repair"
         highlight="Across Delhi NCR"
-        description="Fast repair consultation for LED, OLED, QLED and Smart TV faults with doorstep visit options."
+        description="Fast repair consultation for LED, OLED/QLED, LCD, Plasma and Curved TV faults with doorstep visit options."
         ctaHref="#book"
         ctaLabel="Book Now"
       />

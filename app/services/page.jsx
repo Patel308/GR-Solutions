@@ -12,9 +12,7 @@ export const metadata = {
   openGraph: { title: pageMetadata.services.title, description: pageMetadata.services.description, url: '/services' },
 };
 
-const tvServices = services.filter(
-  (s) => !['laptop-repair', 'mobile-repair'].includes(s.slug)
-);
+const tvServices = services;
 
 const processSteps = [
   {
@@ -61,12 +59,12 @@ export default function ServicesPage() {
         <div className="container text-center">
           <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR SERVICES</span>
           <h1 className="mx-auto mt-6 max-w-5xl text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">
-            Professional TV & Electronics{' '}
+            Professional TV{' '}
             <span className="text-primary">Repair Services</span>
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-textMuted">
-            Explore GR Solution services for LED TV, OLED/QLED, panel bonding, Smart TV setup,
-            CCTV security and DTH support across Delhi, Noida and NCR.
+            Explore GR Solution services for LED, OLED/QLED, LCD, Plasma and Curved TV repair
+            across Delhi, Noida, Greater Noida and Ghaziabad.
           </p>
         </div>
       </section>

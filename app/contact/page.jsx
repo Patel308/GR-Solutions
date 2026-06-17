@@ -49,17 +49,21 @@ export default function ContactPage() {
               Have questions about a repair or want to book an appointment? Get in touch with our team and we&apos;ll get
               back to you quickly.
             </p>
-            <div className="grid gap-10">
-              <article className="grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
-                <i className="fa-solid fa-phone-volume mt-1 text-3xl text-primary" />
+            <div className="grid gap-8">
+              <article className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-5">
+                <span className="flex size-12 items-center justify-center rounded-xl bg-primary/10 text-xl text-primary">
+                  <i className="fa-solid fa-phone-volume" />
+                </span>
                 <div>
                   <h3 className="mb-2 text-xl font-black text-secondary">Direct Call</h3>
                   <a href={siteConfig.phoneHref} className="text-lg font-black text-textMain">{siteConfig.phone}</a>
                   <p className="mt-1 text-textMuted">Mon - Sun: 9:00 AM - 9:00 PM</p>
                 </div>
               </article>
-              <article className="grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
-                <i className="fa-solid fa-location-dot mt-1 text-3xl text-primary" />
+              <article className="grid grid-cols-[56px_minmax(0,1fr)] items-start gap-5">
+                <span className="mt-1 flex size-12 items-center justify-center rounded-xl bg-primary/10 text-xl text-primary">
+                  <i className="fa-solid fa-location-dot" />
+                </span>
                 <div>
                   <h3 className="mb-2 text-xl font-black text-secondary">Service Location</h3>
                   <a href={siteConfig.googleBusinessProfile} target="_blank" className="text-lg font-black leading-relaxed text-textMain">
@@ -68,8 +72,10 @@ export default function ContactPage() {
                   <p className="mt-1 text-textMuted">{siteConfig.serviceAreas.join(', ')}</p>
                 </div>
               </article>
-              <article className="grid grid-cols-[48px_minmax(0,1fr)] items-start gap-6">
-                <i className="fa-solid fa-envelope mt-1 text-3xl text-primary" />
+              <article className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-5">
+                <span className="flex size-12 items-center justify-center rounded-xl bg-primary/10 text-xl text-primary">
+                  <i className="fa-solid fa-envelope" />
+                </span>
                 <div>
                   <h3 className="mb-2 text-xl font-black text-secondary">Email Support</h3>
                   <a href={siteConfig.emailHref} className="text-lg font-black text-textMain">{siteConfig.email}</a>

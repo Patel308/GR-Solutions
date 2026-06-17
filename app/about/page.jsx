@@ -24,7 +24,7 @@ const coreValues = [
   {
     icon: 'fa-solid fa-certificate',
     title: 'Certified Excellence',
-    text: 'Skilled technicians handling LED, OLED, QLED and Smart TV repair with professional care.',
+    text: 'Skilled technicians handling LED, OLED/QLED, LCD, Plasma and Curved TV repair with professional care.',
   },
   {
     icon: 'fa-solid fa-headset',
@@ -54,7 +54,7 @@ export default function AboutPage() {
               Excellence In <span className="text-primary">TV Repair Service</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-textMuted">
-              GR Solution focuses on dependable LED, OLED, QLED and Smart TV repair support for families and businesses
+              GR Solution focuses on dependable LED, OLED/QLED, LCD, Plasma and Curved TV repair support for families and businesses
               across Delhi, Noida and NCR.
             </p>
             <div className="mt-8 flex flex-wrap gap-8">

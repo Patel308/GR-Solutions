@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'GR Solution',
   legalName: 'GR Solution',
   description:
-    'Premium LED TV, OLED/QLED, Smart TV, panel bonding, CCTV, DTH, laptop, and mobile repair services across Delhi, Noida, and NCR.',
+    'Premium LED TV, OLED/QLED TV, LCD TV, Plasma TV and Curved TV repair services across Delhi, Noida, Greater Noida, Ghaziabad and NCR.',
   url: 'https://grsolution.co.in',
   phone: '+91 99902 83890',
   phoneHref: 'tel:+919990283890',

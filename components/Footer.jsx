@@ -4,9 +4,7 @@ import { mainNavigation } from '@/data/navigation';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/siteConfig';
 
-const footerServices = services.filter(
-  (s) => !['laptop-repair', 'mobile-repair'].includes(s.slug)
-);
+const footerServices = services;
 
 export default function Footer() {
   return (
@@ -91,9 +89,9 @@ export default function Footer() {
 
           <div className="max-sm:w-full">
             <h4 className="mb-6 inline-block border-b-2 border-primary pb-1 text-xl font-black text-white max-sm:block max-sm:text-center">Contact Us</h4>
-            <ul className="mx-auto mt-6 grid max-w-[340px] gap-5 sm:max-w-none">
-              <li className="grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4 text-left">
-                <i className="fa-solid fa-location-dot inline-flex size-[46px] items-center justify-center rounded-xl bg-primary/25 text-accent" />
+            <ul className="mx-auto mt-6 grid max-w-[360px] gap-5 sm:max-w-none">
+              <li className="grid grid-cols-[56px_minmax(0,1fr)] items-start gap-4 text-left">
+                <i className="fa-solid fa-location-dot inline-flex size-12 items-center justify-center rounded-xl bg-primary/25 text-accent" />
                 <div>
                   <strong className="mb-1 block text-white">
                     Visit Center
@@ -104,8 +102,8 @@ export default function Footer() {
                   </span>
                 </div>
               </li>
-              <li className="grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4 text-left">
-                <i className="fa-solid fa-phone inline-flex size-[46px] items-center justify-center rounded-xl bg-primary/25 text-accent" />
+              <li className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-4 text-left">
+                <i className="fa-solid fa-phone inline-flex size-12 items-center justify-center rounded-xl bg-primary/25 text-accent" />
                 <div>
                   <strong className="mb-1 block text-white">
                     Call Support
@@ -113,8 +111,8 @@ export default function Footer() {
                   <a href={siteConfig.phoneHref} className="text-[#b9c3d8] hover:text-white">{siteConfig.phone}</a>
                 </div>
               </li>
-              <li className="grid grid-cols-[46px_minmax(0,1fr)] items-start gap-4 text-left">
-                <i className="fa-solid fa-envelope inline-flex size-[46px] items-center justify-center rounded-xl bg-primary/25 text-accent" />
+              <li className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-4 text-left">
+                <i className="fa-solid fa-envelope inline-flex size-12 items-center justify-center rounded-xl bg-primary/25 text-accent" />
                 <div>
                   <strong className="mb-1 block text-white">
                     Email Us

@@ -12,46 +12,46 @@ export const metadata = {
 
 const posts = [
   {
-    category: 'SMARTPHONE',
-    title: 'How to Spot Fake Mobile Screens',
-    text: "Don't get scammed. Learn the differences between OEM and duplicate displays before choosing a repair.",
-    image: '/images/service_mobile.webp',
-    link: '/services/mobile-repair',
-  },
-  {
-    category: 'TV PANEL',
-    title: 'Fixing Vertical Lines Without Replacing Screen',
-    text: 'Discover COF bonding technology that can save repair cost when the panel condition allows recovery.',
-    image: '/images/service_panel.webp',
-    link: '/services/panel-bonding',
-  },
-  {
-    category: 'OLED CARE',
-    title: 'Preventing OLED Burn-In: 5 Golden Rules',
-    text: 'Protect your high-end display with simple picture settings, viewing habits and maintenance steps.',
-    image: '/images/service_oled.webp',
-    link: '/services/oled-qled-repair',
-  },
-  {
-    category: 'MINI-LED',
-    title: 'The Future of Mini-LED & QLED Television Repair',
-    text: 'A practical look at modern display technology, symptoms to watch for and when diagnosis matters.',
-    image: '/images/hero.webp',
-    link: '/services/oled-qled-repair',
-  },
-  {
-    category: 'SMART TV',
-    title: 'Smart TV Setup Tips For Better Streaming',
-    text: 'Network, app and picture setting tips that help your Smart TV run smoother every day.',
+    category: 'LED TV',
+    title: 'Why LED TVs Lose Picture But Keep Sound',
+    text: 'Learn why backlight, T-Con, power and panel faults can create a black screen while audio still works.',
     image: '/images/service_tv.webp',
-    link: '/services/smart-tv-setup',
+    link: '/services/led-tv-repair',
   },
   {
-    category: 'DTH SIGNAL',
-    title: 'DTH No Signal: Common Causes',
-    text: 'Dish alignment, LNB, cable and weather-related checks before booking a service visit.',
-    image: '/images/service_dth.webp',
-    link: '/services/dth-services',
+    category: 'OLED/QLED',
+    title: 'OLED and QLED Display Symptoms Explained',
+    text: 'Understand burn-in-like marks, color shifts, brightness problems and when premium TV diagnosis matters.',
+    image: '/images/service_oled.webp',
+    link: '/services/oled-qled-tv-repair',
+  },
+  {
+    category: 'LCD TV',
+    title: 'Is LCD TV Repair Still Worth It?',
+    text: 'A practical guide to age, part availability, display faults and repair-versus-replace decisions.',
+    image: '/images/service_tv.webp',
+    link: '/services/lcd-tv-repair',
+  },
+  {
+    category: 'PLASMA TV',
+    title: 'Common Plasma TV Power and Heating Issues',
+    text: 'Older plasma TVs need realistic inspection for power boards, sustain boards, heating and shutdown symptoms.',
+    image: '/images/hero.webp',
+    link: '/services/plasma-tv-repair',
+  },
+  {
+    category: 'CURVED TV',
+    title: 'Curved TV Handling and Screen Care Tips',
+    text: 'Curved screens need careful movement, mounting and inspection to avoid panel stress and display distortion.',
+    image: '/images/service_oled.webp',
+    link: '/services/curved-tv-repair',
+  },
+  {
+    category: 'LOCAL REPAIR',
+    title: 'How To Prepare Before A TV Technician Visit',
+    text: 'Simple checks for power, inputs, symptoms and model details before booking doorstep TV repair.',
+    image: '/images/hero.webp',
+    link: '/services/led-tv-repair-delhi',
   },
 ];
 
@@ -76,12 +76,12 @@ export default function BlogPage() {
             <Image src="/images/hero.webp" alt="Featured Mini LED and QLED repair article" width={760} height={420} className="h-full min-h-[360px] w-full object-cover" />
             <div className="p-10">
               <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FEATURED</span>
-              <h2 className="mt-5 text-3xl font-black leading-tight text-secondary">The Future of Mini-LED & QLED Television Repair</h2>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-secondary">OLED/QLED Television Repair Needs Careful Diagnosis</h2>
               <p className="mt-4 text-lg leading-relaxed text-textMuted">
                 Premium display technology gives better brightness and contrast, but it also needs accurate diagnosis
                 when symptoms appear. GR Solution helps customers understand repair feasibility before major decisions.
               </p>
-              <Link href="/services/oled-qled-repair" className="mt-6 inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <Link href="/services/oled-qled-tv-repair" className="mt-6 inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 Ask A Technician
               </Link>
             </div>

@@ -1,8 +1,8 @@
 export const pageMetadata = {
   home: {
-    title: 'Expert LED / OLED / Smart TV Repair in Delhi, Noida & NCR | GR Solution',
+    title: 'Expert LED / OLED / LCD TV Repair in Delhi, Noida & NCR | GR Solution',
     description:
-      "Delhi, Noida & NCR's trusted premium TV repair service for LED, OLED, QLED and Smart TVs with same-day doorstep support.",
+      "Delhi, Noida & NCR's trusted premium TV repair service for LED, OLED, QLED, LCD, Plasma and Curved TVs with doorstep support.",
     path: '/',
   },
   about: {
@@ -12,27 +12,27 @@ export const pageMetadata = {
     path: '/about',
   },
   services: {
-    title: 'TV & Electronics Repair Services in Delhi NCR | GR Solution',
+    title: 'TV Repair Services in Delhi NCR | GR Solution',
     description:
-      'Explore GR Solution repair services for LED TV, OLED/QLED TV, panel bonding, Smart TV setup, CCTV and DTH support across Delhi, Noida and NCR.',
+      'Explore GR Solution repair services for LED TV, OLED/QLED TV, LCD TV, Plasma TV and Curved TV support across Delhi, Noida and NCR.',
     path: '/services',
   },
   blog: {
     title: 'TV Repair Tips & Electronics Maintenance Blog | GR Solution',
     description:
-      'Repair insights, maintenance tips and practical guides for TVs, displays, DTH, CCTV, laptops and mobile devices.',
+      'Repair insights, maintenance tips and practical guides for LED, OLED/QLED, LCD, Plasma and Curved TVs.',
     path: '/blog',
   },
   contact: {
     title: 'Contact Us | Premium TV Repair in Delhi, Noida & NCR | GR Solution',
     description:
-      'Contact GR Solution for LED, OLED, Smart TV and electronics repair across Delhi, Noida and NCR. Call or WhatsApp for service.',
+      'Contact GR Solution for LED, OLED/QLED, LCD, Plasma and Curved TV repair across Delhi, Noida and NCR. Call or WhatsApp for service.',
     path: '/contact',
   },
   landing: {
     title: 'Book TV Repair Service in Delhi, Noida & NCR | GR Solution',
     description:
-      'Book a same-day TV repair visit for LED, OLED, QLED and Smart TV issues with GR Solution.',
+      'Book a TV repair visit for LED, OLED/QLED, LCD, Plasma and Curved TV issues with GR Solution.',
     path: '/landing',
   },
   privacy: {

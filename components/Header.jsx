@@ -9,9 +9,7 @@ import { services } from '@/data/services';
 import { siteConfig } from '@/data/siteConfig';
 import EnquiryModal from './EnquiryModal';
 
-const dropdownServices = services.filter(
-  (s) => !['laptop-repair', 'mobile-repair'].includes(s.slug)
-);
+const dropdownServices = services;
 
 export default function Header() {
   const pathname = usePathname();
@@ -82,14 +80,14 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <button
               type="button"
-              className={`${ctaBase} hidden min-w-[190px] border-primary bg-white text-primary hover:border-secondary hover:bg-secondary hover:text-white sm:inline-flex`}
+              className={`${ctaBase} hidden min-w-[190px] border-primary bg-white text-primary hover:border-secondary hover:bg-secondary hover:text-white md:inline-flex`}
               onClick={() => setModalOpen(true)}
             >
               <i className="fa-solid fa-paper-plane" /> Quick Enquiry
             </button>
             <a
               href={siteConfig.phoneHref}
-              className={`${ctaBase} min-w-[132px] border-primary bg-primary text-white hover:border-secondary hover:bg-secondary sm:min-w-[170px]`}
+              className={`${ctaBase} min-w-[132px] border-primary bg-primary text-white hover:border-secondary hover:bg-secondary md:min-w-[170px]`}
             >
               <i className="fa-solid fa-phone" /> Call Now
             </a>
