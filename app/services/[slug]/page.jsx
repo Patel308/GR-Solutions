@@ -298,7 +298,13 @@ export default async function ServiceDetailPage({ params }) {
 
 function LocalServicePage({ page }) {
   const service = getServiceBySlug(page.parentServiceSlug);
+  const parentServiceTitle = service?.title || 'TV Repair Services';
+  const parentServiceHref = service ? `/services/${service.slug}` : '/services';
+  const schemaServiceType = page.schemaServiceType || service?.serviceType || 'TV repair service';
   const sameCityPages = getLocalPagesByCity(page.citySlug).filter((item) => item.slug !== page.slug);
+  const relatedSameCityPages = sameCityPages.length
+    ? sameCityPages.map((item) => ({ label: item.keyword, href: `/services/${item.slug}` }))
+    : page.relatedServiceLinks || [];
   const pageUrl = `${siteConfig.url}/services/${page.slug}`;
 
   return (
@@ -327,7 +333,7 @@ function LocalServicePage({ page }) {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: page.title,
-            serviceType: service.serviceType,
+            serviceType: schemaServiceType,
             description: page.metaDescription,
             url: pageUrl,
             areaServed: page.cityName,
@@ -354,12 +360,18 @@ function LocalServicePage({ page }) {
           {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
-              { '@type': 'ListItem', position: 2, name: 'Services', item: `${siteConfig.url}/services` },
-              { '@type': 'ListItem', position: 3, name: service.title, item: `${siteConfig.url}/services/${service.slug}` },
-              { '@type': 'ListItem', position: 4, name: page.title, item: pageUrl },
-            ],
+            itemListElement: service
+              ? [
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+                  { '@type': 'ListItem', position: 2, name: 'Services', item: `${siteConfig.url}/services` },
+                  { '@type': 'ListItem', position: 3, name: service.title, item: `${siteConfig.url}/services/${service.slug}` },
+                  { '@type': 'ListItem', position: 4, name: page.title, item: pageUrl },
+                ]
+              : [
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+                  { '@type': 'ListItem', position: 2, name: 'Services', item: `${siteConfig.url}/services` },
+                  { '@type': 'ListItem', position: 3, name: page.title, item: pageUrl },
+                ],
           },
           {
             '@context': 'https://schema.org',
@@ -379,7 +391,7 @@ function LocalServicePage({ page }) {
             items={[
               { label: 'Home', href: '/' },
               { label: 'Services', href: '/services' },
-              { label: service.title, href: `/services/${service.slug}` },
+              { label: parentServiceTitle, href: parentServiceHref },
               { label: page.cityName, href: null },
             ]}
           />
@@ -433,7 +445,7 @@ function LocalServicePage({ page }) {
             </p>
             <div className="mt-6 grid gap-3">
               <Link href="/" className="font-black text-primary hover:text-secondary">Visit GR Solution homepage</Link>
-              <Link href={`/services/${service.slug}`} className="font-black text-primary hover:text-secondary">Explore main {service.title} service</Link>
+              <Link href={parentServiceHref} className="font-black text-primary hover:text-secondary">Explore main {parentServiceTitle}</Link>
               <Link href="/contact" className="font-black text-primary hover:text-secondary">Open contact and booking page</Link>
             </div>
           </aside>
@@ -561,15 +573,47 @@ function LocalServicePage({ page }) {
           <div>
             <h2 className="text-3xl font-black text-secondary">Related TV Repair Services In {page.cityName}</h2>
             <div className="mt-6 grid gap-3">
-              {sameCityPages.map((link) => (
-                <Link key={link.slug} href={`/services/${link.slug}`} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary">
-                  {link.keyword}
+              {relatedSameCityPages.map((link) => (
+                <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary">
+                  {link.label}
                 </Link>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      {(page.tvTypesCovered?.length > 0 || page.brandCityLinks?.length > 0) && (
+        <section className="bg-bgLight py-20">
+          <div className="container grid gap-8 lg:grid-cols-2">
+            {page.tvTypesCovered?.length > 0 && (
+              <article className="rounded-card bg-white p-8 shadow-oldMd">
+                <h2 className="text-3xl font-black text-secondary">TV Types Covered</h2>
+                <ul className="mt-6 grid gap-3">
+                  {page.tvTypesCovered.map((item) => (
+                    <li key={item} className="flex gap-3 leading-relaxed text-textMuted">
+                      <i className="fa-solid fa-circle-check mt-1 text-success" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            )}
+            {page.brandCityLinks?.length > 0 && (
+              <article className="rounded-card bg-white p-8 shadow-oldMd">
+                <h2 className="text-3xl font-black text-secondary">Brand Repair Links</h2>
+                <div className="mt-6 grid gap-3">
+                  {page.brandCityLinks.map((link) => (
+                    <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-bgLight p-4 font-black text-secondary transition hover:-translate-y-1 hover:text-primary">
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </article>
+            )}
+          </div>
+        </section>
+      )}
 
       <section className="bg-bgLight py-20">
         <div className="container">

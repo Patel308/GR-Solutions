@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import { services } from '@/data/services';
-import { brands, getPrimaryBrandCityPage } from '@/data/brandServicePages';
+import { cityTvRepairPages } from '@/data/localServicePages';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 
@@ -14,6 +14,24 @@ export const metadata = {
 };
 
 const tvServices = services;
+
+const topLocalSearches = [
+  { label: 'LED TV Repair Noida', href: '/services/led-tv-repair-noida' },
+  { label: 'LED TV Repair Delhi', href: '/services/led-tv-repair-delhi' },
+  { label: 'Sony TV Repair Noida', href: '/services/sony-tv-repair-noida' },
+  { label: 'Samsung TV Service Centre Delhi', href: '/services/samsung-tv-repair-delhi' },
+  { label: 'LG TV Service Center in Delhi', href: '/services/lg-tv-repair-delhi' },
+  { label: 'TV Repair in Indirapuram Ghaziabad', href: '/services/tv-repair-ghaziabad' },
+];
+
+const brandHubLinks = [
+  { label: 'Sony TV Repair', href: '/services/sony-tv-repair-delhi' },
+  { label: 'Samsung TV Repair', href: '/services/samsung-tv-repair-delhi' },
+  { label: 'LG TV Repair', href: '/services/lg-tv-repair-delhi' },
+  { label: 'Mi/Xiaomi TV Repair', href: '/services/mi-xiaomi-tv-repair-delhi' },
+  { label: 'Vu TV Repair', href: '/services/vu-tv-repair-delhi' },
+  { label: 'OnePlus TV Repair', href: '/services/oneplus-tv-repair-delhi' },
+];
 
 const processSteps = [
   {
@@ -112,6 +130,52 @@ export default function ServicesPage() {
       </section>
 
       {/* TV Repair by Brand */}
+      <section className="bg-bgLight py-20">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">LOCAL TV REPAIR</span>
+            <h2 className="mt-4 text-4xl font-black text-secondary">TV Repair by City</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">
+              Start with the city page if you need complete TV repair guidance for LED, OLED/QLED, LCD, Plasma and Curved TV issues.
+            </p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {cityTvRepairPages.map((page) => (
+              <Link
+                key={page.slug}
+                href={`/services/${page.slug}`}
+                className="rounded-2xl border border-primary/10 bg-white p-6 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
+              >
+                {page.keyword}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">POPULAR SEARCHES</span>
+            <h2 className="mt-4 text-4xl font-black text-secondary">Top Local TV Repair Searches</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">
+              Quick links based on high-priority Google Keyword Planner opportunities for GR Solution.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {topLocalSearches.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-2xl border border-primary/10 bg-bgLight p-5 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-20">
         <div className="container">
           <div className="mb-12 text-center">
@@ -121,19 +185,16 @@ export default function ServicesPage() {
               GR Solution provides repair support for the following TV brands across Delhi, Noida, Greater Noida and Ghaziabad.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            {brands.map((brand) => {
-              const primaryPage = getPrimaryBrandCityPage(brand.slug);
-              return (
-                <Link
-                  key={brand.slug}
-                  href={`/services/${primaryPage.slug}`}
-                  className="rounded-2xl border border-primary/10 bg-bgLight p-5 text-center font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
-                >
-                  {brand.displayName} TV Repair
-                </Link>
-              );
-            })}
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+            {brandHubLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-2xl border border-primary/10 bg-bgLight p-5 text-center font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

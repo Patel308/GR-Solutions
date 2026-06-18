@@ -75,11 +75,17 @@ const whyChooseBenefits = [
 ];
 
 const popularLocationLinks = [
-  { label: 'LED TV Repair in Delhi', href: '/services/led-tv-repair-delhi' },
-  { label: 'LED TV Repair in Noida', href: '/services/led-tv-repair-noida' },
-  { label: 'OLED/QLED TV Repair in Delhi', href: '/services/oled-qled-tv-repair-delhi' },
-  { label: 'LCD TV Repair in Ghaziabad', href: '/services/lcd-tv-repair-ghaziabad' },
-  { label: 'TV Repair Services', href: '/services' },
+  { label: 'LED TV Repair Noida', href: '/services/led-tv-repair-noida' },
+  { label: 'LED TV Repair Delhi', href: '/services/led-tv-repair-delhi' },
+  { label: 'TV Repair Noida', href: '/services/tv-repair-noida' },
+  { label: 'TV Repair Delhi', href: '/services/tv-repair-delhi' },
+  { label: 'Sony TV Repair Noida', href: '/services/sony-tv-repair-noida' },
+  { label: 'Samsung TV Repair Delhi', href: '/services/samsung-tv-repair-delhi' },
+  { label: 'TV Repair Greater Noida', href: '/services/tv-repair-greater-noida' },
+  { label: 'TV Repair Ghaziabad', href: '/services/tv-repair-ghaziabad' },
+  { label: 'LCD TV Repair Delhi', href: '/services/lcd-tv-repair-delhi' },
+  { label: 'LED TV Repair Ghaziabad', href: '/services/led-tv-repair-ghaziabad' },
+  { label: 'TV Repair Near Me', href: '/services/tv-repair-near-me' },
   { label: 'Contact GR Solution', href: '/contact' },
 ];
 
@@ -134,9 +140,9 @@ export default function HomePage() {
         <div className="container">
           <div className="mb-12 text-center">
             <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-              POPULAR LOCATIONS
+              POPULAR SEARCHES
             </span>
-            <h2 className="text-4xl font-black text-secondary">Popular TV Repair Locations</h2>
+            <h2 className="text-4xl font-black text-secondary">Popular TV Repair Searches in Delhi NCR</h2>
             <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
               Quick links to the most requested GR Solution TV repair pages across Delhi NCR.
             </p>
@@ -414,7 +420,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Authorized Service Expertise — Brands Carousel */}
+      {/* Brand repair experience carousel */}
       <section className="border-t border-[#eee] bg-bgLight py-[100px]">
         <div className="container">
           <div className="mb-20 text-center">
