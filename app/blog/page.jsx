@@ -4,6 +4,7 @@ import PageCTA from '@/components/PageCTA';
 import JsonLd from '@/components/JsonLd';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
+import { blogArticles } from '@/data/blogArticles';
 
 export const metadata = {
   title: pageMetadata.blog.title,
@@ -13,6 +14,13 @@ export const metadata = {
 };
 
 const posts = [
+  ...blogArticles.map((article) => ({
+    category: article.category,
+    title: article.title,
+    text: article.metaDescription,
+    image: article.image,
+    link: `/blog/${article.slug}`,
+  })),
   {
     category: 'LED TV',
     title: 'Why LED TVs Lose Picture But Keep Sound',

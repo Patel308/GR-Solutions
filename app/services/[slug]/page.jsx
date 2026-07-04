@@ -588,7 +588,7 @@ function LocalServicePage({ page }) {
           <div className="container grid gap-8 lg:grid-cols-2">
             {page.tvTypesCovered?.length > 0 && (
               <article className="rounded-card bg-white p-8 shadow-oldMd">
-                <h2 className="text-3xl font-black text-secondary">TV Types Covered</h2>
+                <h2 className="text-3xl font-black text-secondary">{page.isNearMePage ? 'TV Types We Support' : 'TV Types Covered'}</h2>
                 <ul className="mt-6 grid gap-3">
                   {page.tvTypesCovered.map((item) => (
                     <li key={item} className="flex gap-3 leading-relaxed text-textMuted">
@@ -601,7 +601,7 @@ function LocalServicePage({ page }) {
             )}
             {page.brandCityLinks?.length > 0 && (
               <article className="rounded-card bg-white p-8 shadow-oldMd">
-                <h2 className="text-3xl font-black text-secondary">Brand Repair Links</h2>
+                <h2 className="text-3xl font-black text-secondary">{page.isNearMePage ? 'TV Brands We Commonly Repair' : 'Brand Repair Links'}</h2>
                 <div className="mt-6 grid gap-3">
                   {page.brandCityLinks.map((link) => (
                     <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-bgLight p-4 font-black text-secondary transition hover:-translate-y-1 hover:text-primary">
@@ -787,6 +787,11 @@ function BrandServicePage({ page }) {
               <Link href="/" className="font-black text-primary hover:text-secondary">Visit GR Solution homepage</Link>
               <Link href="/services" className="font-black text-primary hover:text-secondary">Explore all TV repair services</Link>
               <Link href="/contact" className="font-black text-primary hover:text-secondary">Open contact and booking page</Link>
+              {page.priorityInternalLinks?.slice(0, 2).map((link) => (
+                <Link key={link.href} href={link.href} className="font-black text-primary hover:text-secondary">
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </aside>
         </div>

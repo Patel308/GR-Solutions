@@ -254,6 +254,11 @@ function makeBrandCitySlug(brand, city) {
 }
 
 function makeFaqs(brand, city) {
+  const serviceCentreAnswer =
+    brand.slug === 'samsung'
+      ? 'GR Solution provides independent doorstep Samsung TV repair support in Delhi NCR. We do not claim to be an official authorized Samsung service centre unless explicitly stated. Our technicians inspect common display, sound, power, motherboard and smart TV issues and explain available repair options.'
+      : `GR Solution provides independent doorstep ${brand.displayName} TV repair support in Delhi NCR. We do not claim to be an official authorized ${brand.displayName} service center unless explicitly stated. Our technicians inspect common display, sound, power and smart TV issues and explain available repair options.`;
+
   return [
     {
       question: `Do you provide ${brand.displayName} TV repair in ${city.name}?`,
@@ -261,7 +266,7 @@ function makeFaqs(brand, city) {
     },
     {
       question: `Is GR Solution an authorized ${brand.displayName} service center?`,
-      answer: `GR Solution is an independent TV repair service. We do not claim authorized brand service center status, and we provide repair support based on technician diagnosis and part availability.`,
+      answer: serviceCentreAnswer,
     },
     {
       question: `What ${brand.displayName} TV problems can be repaired?`,
@@ -363,6 +368,11 @@ export const brandServicePages = brands.flatMap((brand) =>
         label: `${item.displayName} TV Repair in ${city.name}`,
         href: `/services/${makeBrandCitySlug(item, city)}`,
       })),
+      priorityInternalLinks: [
+        { label: `TV Repair in ${city.name}`, href: `/services/tv-repair-${city.slug}` },
+        { label: `LED TV Repair in ${city.name}`, href: `/services/led-tv-repair-${city.slug}` },
+        { label: `Contact GR Solution`, href: '/contact' },
+      ],
       panelTypes: brand.panelTypes,
       techNote: brand.techNote,
     };

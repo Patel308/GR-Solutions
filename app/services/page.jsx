@@ -28,7 +28,7 @@ const brandHubLinks = [
   { label: 'Sony TV Repair', href: '/services/sony-tv-repair-delhi' },
   { label: 'Samsung TV Repair', href: '/services/samsung-tv-repair-delhi' },
   { label: 'LG TV Repair', href: '/services/lg-tv-repair-delhi' },
-  { label: 'Mi/Xiaomi TV Repair', href: '/services/mi-xiaomi-tv-repair-delhi' },
+  { label: 'Mi/Xiaomi TV Repair', href: '/services/mi-tv-repair-delhi' },
   { label: 'Vu TV Repair', href: '/services/vu-tv-repair-delhi' },
   { label: 'OnePlus TV Repair', href: '/services/oneplus-tv-repair-delhi' },
 ];

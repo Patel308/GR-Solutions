@@ -1,6 +1,7 @@
 import { services } from '@/data/services';
 import { localServicePages } from '@/data/localServicePages';
 import { brandServicePages } from '@/data/brandServicePages';
+import { blogArticles } from '@/data/blogArticles';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 
@@ -34,5 +35,12 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...servicePages, ...localPages, ...brandPages];
+  const blogArticlePages = blogArticles.map((article) => ({
+    url: `${siteConfig.url}/blog/${article.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.75,
+  }));
+
+  return [...staticPages, ...servicePages, ...localPages, ...brandPages, ...blogArticlePages];
 }

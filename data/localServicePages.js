@@ -5,7 +5,7 @@ export const cities = [
     slug: 'delhi',
     name: 'Delhi',
     areaServed: 'Delhi',
-    nearby: ['New Kondli', 'Mayur Vihar', 'Laxmi Nagar', 'Preet Vihar', 'South Delhi', 'West Delhi'],
+    nearby: ['East Delhi', 'South Delhi', 'West Delhi', 'North Delhi', 'New Kondli', 'Mayur Vihar', 'Laxmi Nagar', 'Preet Vihar', 'Dwarka', 'Rohini'],
     localNote:
       'Delhi customers often need quick support for apartments, independent homes, rented flats and office displays where downtime is inconvenient.',
     areaProfile:
@@ -19,7 +19,7 @@ export const cities = [
     slug: 'noida',
     name: 'Noida',
     areaServed: 'Noida',
-    nearby: ['Sector 18', 'Sector 62', 'Sector 75', 'Sector 137', 'Noida Extension access roads', 'film city side'],
+    nearby: ['Sector 18', 'Sector 62', 'Sector 63', 'Sector 75', 'Sector 76', 'Sector 104', 'Sector 137', 'Noida Extension'],
     localNote:
       'Noida homes and offices commonly use wall-mounted smart displays, large LED units and premium TVs that need careful handling during inspection.',
     areaProfile:
@@ -33,7 +33,7 @@ export const cities = [
     slug: 'greater-noida',
     name: 'Greater Noida',
     areaServed: 'Greater Noida',
-    nearby: ['Alpha', 'Beta', 'Gamma', 'Pari Chowk', 'Knowledge Park', 'Noida Extension'],
+    nearby: ['Pari Chowk', 'Alpha', 'Beta', 'Gamma', 'Knowledge Park', 'Techzone', 'Greater Noida West'],
     localNote:
       'Greater Noida service calls often involve larger homes, societies and older display units where transport risk should be avoided when possible.',
     areaProfile:
@@ -47,7 +47,7 @@ export const cities = [
     slug: 'ghaziabad',
     name: 'Ghaziabad',
     areaServed: 'Ghaziabad',
-    nearby: ['Indirapuram', 'Vaishali', 'Vasundhara', 'Raj Nagar Extension', 'Kaushambi', 'Crossings Republik'],
+    nearby: ['Indirapuram', 'Vaishali', 'Vasundhara', 'Raj Nagar Extension', 'Kaushambi', 'Crossings Republik', 'Sahibabad'],
     localNote:
       'Ghaziabad customers often contact us for no-picture, sound, power and display issues on TVs used daily in family living rooms.',
     areaProfile:
@@ -220,7 +220,7 @@ function makeFaqs(service, city, profile) {
 }
 
 function makeContentBlocks(service, city, profile, keyword) {
-  return [
+  const blocks = [
     {
       title: `Diagnosis approach for ${keyword}`,
       text: `${profile.diagnosticDetail} For ${city.name} customers, the first useful detail is not only the TV brand but the exact behavior: standby light, sound, menu visibility, screen glow, line pattern, power cycling and whether the problem appears on all sources. This makes the first inspection more accurate and reduces guesswork.`,
@@ -246,6 +246,88 @@ function makeContentBlocks(service, city, profile, keyword) {
       text: `After an approved repair, the useful checks include ${profile.qualityChecks.join(', ')}. These checks help confirm that the TV is not only turning on but also behaving normally under real viewing conditions. GR Solution also explains simple care steps based on the repaired fault and TV type.`,
     },
   ];
+
+  if (service.slug === 'led-tv-repair') {
+    blocks.push({
+      title: 'Common LED TV Problems We Repair',
+      text: `For ${city.name} LED TV repair requests, GR Solution commonly checks backlight failure, display lines, sound but no picture, motherboard issues, power board faults and HDMI/input problems. Customers searching for LED TV repair service in Delhi or LED TV repair in Vaishali Ghaziabad are guided toward the nearest canonical city page instead of duplicate pages.`,
+    });
+    blocks.push({
+      title: `TV backlight repair ${city.name} guidance`,
+      text: `For TV backlight repair in ${city.name}, useful symptoms include a very dim picture, sound working with no visible image, uneven brightness, flashing backlight, or a faint picture visible with a torch test. GR Solution checks backlight strips, power supply behavior, mainboard signals and panel condition before explaining whether backlight repair is practical.`,
+    });
+  }
+
+  if (service.slug === 'oled-qled-tv-repair' && city.slug === 'delhi') {
+    blocks.push({
+      title: 'QLED TV repair Delhi guidance',
+      text: 'QLED TV repair in Delhi is handled on the same canonical OLED/QLED page because the search intent overlaps with premium display diagnosis. GR Solution checks brightness, color tone, panel lines, local dimming behavior, HDMI response, sound and mainboard symptoms before suggesting repair.',
+    });
+  }
+
+  if (service.slug === 'lcd-tv-repair' && city.slug === 'noida') {
+    blocks.push({
+      title: 'LCD TV repair Noida guidance',
+      text: 'For LCD TV repair Noida requests, common coverage includes Sector 18, Sector 62, Sector 63, Sector 75, Sector 76, Sector 104, Sector 137 and Noida Extension. GR Solution checks screen brightness, power board behavior, backlight symptoms, sound and display timing before explaining whether older LCD repair is practical.',
+    });
+  }
+
+  if (service.slug === 'plasma-tv-repair' && city.slug === 'delhi') {
+    blocks.push({
+      title: 'Plasma TV repair Delhi guidance',
+      text: 'Plasma TV repair in Delhi needs inspection-first advice because older plasma sets can have heating, sustain board, power board, sound-without-display and panel feasibility issues. GR Solution explains whether repair is sensible before customers spend on older display hardware.',
+    });
+  }
+
+  return blocks;
+}
+
+function makeExtraProblems(service) {
+  if (service.slug !== 'led-tv-repair') return [];
+  return [
+    'Motherboard symptoms causing restart, no signal or unstable smart functions.',
+    'Power board faults where the TV clicks, blinks or does not start.',
+    'HDMI/input issues where set-top box, console or streaming device is not detected.',
+  ];
+}
+
+function makeExtraFaqs(service, city) {
+  if (service.slug === 'led-tv-repair') {
+    return [
+      {
+        question: `Do you provide LED TV repair service at home in ${city.name}?`,
+        answer: `Yes, GR Solution provides doorstep LED TV inspection in ${city.name}, subject to technician availability, fault type and safe access to the TV.`,
+      },
+      {
+        question: 'Can LED TV backlight and screen issues be checked together?',
+        answer: 'Yes. Backlight, screen lines, sound-but-no-picture, motherboard, power board and input symptoms are checked before repair is suggested.',
+      },
+      {
+        question: `Do you provide TV backlight repair in ${city.name}?`,
+        answer: `Yes, GR Solution checks TV backlight repair symptoms in ${city.name}, including dark screen, weak brightness, sound but no picture and uneven light before recommending repair.`,
+      },
+    ];
+  }
+
+  if (service.slug === 'oled-qled-tv-repair' && city.slug === 'delhi') {
+    return [
+      {
+        question: 'Do you provide QLED TV repair in Delhi?',
+        answer: 'Yes, QLED TV repair in Delhi is handled through GR Solution OLED/QLED TV diagnosis, including brightness, color, line, sound, HDMI and board symptoms.',
+      },
+    ];
+  }
+
+  if (service.slug === 'lcd-tv-repair' && city.slug === 'noida') {
+    return [
+      {
+        question: 'Do you provide LCD TV repair in Noida sectors?',
+        answer: 'Yes, GR Solution supports LCD TV repair in Noida areas such as Sector 18, 62, 63, 75, 76, 104, 137 and nearby Noida Extension locations.',
+      },
+    ];
+  }
+
+  return [];
 }
 
 function makeWhyChoose(service, city, profile) {
@@ -283,7 +365,7 @@ const serviceCityPages = services.flatMap((service) => {
       intro: `${profile.intro} If you are searching for ${keyword}, GR Solution helps you understand the issue clearly before approving repair. We focus on practical diagnosis, transparent guidance and careful handling of screen, sound, power and display-related faults.`,
       cityExplanation: `${city.localNote} Our ${profile.keywordBase.toLowerCase()} support in ${city.name} is built around symptom-first inspection, so customers do not have to guess whether the issue is a power board, panel, backlight, software or input problem.`,
       localTrust: city.trust,
-      commonProblems: profile.problemFocus,
+      commonProblems: [...profile.problemFocus, ...makeExtraProblems(service)],
       contentBlocks: makeContentBlocks(service, city, profile, keyword),
       whyChoose: makeWhyChoose(service, city, profile),
       qualityChecks: profile.qualityChecks,
@@ -301,7 +383,7 @@ const serviceCityPages = services.flatMap((service) => {
         'Receive repair feasibility, estimate and approval options.',
         'Approved repair is completed and tested for stable picture and sound.',
       ],
-      faqs: makeFaqs(service, city, profile),
+      faqs: [...makeFaqs(service, city, profile), ...makeExtraFaqs(service, city)],
       sameServiceOtherCities: otherCities.map((item) => ({
         label: `${profile.keywordBase} ${item.name}`,
         href: `/services/${makeSlug(service.slug, item.slug)}`,
@@ -525,12 +607,15 @@ export const cityTvRepairPages = cities.map((city) => {
       href: `/services/tv-repair-${item.slug}`,
     })),
     otherServicesSameCity: serviceLinks,
-    relatedServiceLinks: serviceLinks,
+    relatedServiceLinks: [
+      ...serviceLinks,
+      { label: `Contact GR Solution for TV Repair ${city.name}`, href: '/contact' },
+    ],
     brandCityLinks: [
       { label: `Sony TV Repair ${city.name}`, href: `/services/sony-tv-repair-${city.slug}` },
       { label: `Samsung TV Repair ${city.name}`, href: `/services/samsung-tv-repair-${city.slug}` },
       { label: `LG TV Repair ${city.name}`, href: `/services/lg-tv-repair-${city.slug}` },
-      { label: `Mi/Xiaomi TV Repair ${city.name}`, href: `/services/mi-xiaomi-tv-repair-${city.slug}` },
+      { label: `Mi/Xiaomi TV Repair ${city.name}`, href: `/services/mi-tv-repair-${city.slug}` },
     ],
     tvTypesCovered,
   };
@@ -664,7 +749,12 @@ export const nearMeServicePage = {
     { label: 'Sony TV Repair Noida', href: '/services/sony-tv-repair-noida' },
     { label: 'Samsung TV Repair Delhi', href: '/services/samsung-tv-repair-delhi' },
     { label: 'LG TV Repair Delhi', href: '/services/lg-tv-repair-delhi' },
+    { label: 'Mi/Xiaomi TV Repair Delhi', href: '/services/mi-tv-repair-delhi' },
     { label: 'Vu TV Repair Delhi', href: '/services/vu-tv-repair-delhi' },
+    { label: 'TCL TV Repair Delhi', href: '/services/tcl-tv-repair-delhi' },
+    { label: 'Panasonic TV Repair Delhi', href: '/services/panasonic-tv-repair-delhi' },
+    { label: 'Philips TV Repair Delhi', href: '/services/philips-tv-repair-delhi' },
+    { label: 'Hisense TV Repair Delhi', href: '/services/hisense-tv-repair-delhi' },
   ],
   tvTypesCovered,
 };

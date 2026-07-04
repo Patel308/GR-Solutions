@@ -41,6 +41,10 @@ const nextConfig = {
 
     const legacyServiceRedirects = [
       ['/services/oled-qled-repair', '/services/oled-qled-tv-repair'],
+      ['/services/mi-xiaomi-tv-repair-delhi', '/services/mi-tv-repair-delhi'],
+      ['/services/mi-xiaomi-tv-repair-noida', '/services/mi-tv-repair-noida'],
+      ['/services/mi-xiaomi-tv-repair-greater-noida', '/services/mi-tv-repair-greater-noida'],
+      ['/services/mi-xiaomi-tv-repair-ghaziabad', '/services/mi-tv-repair-ghaziabad'],
       ['/services/panel-bonding', '/services/led-tv-repair'],
       ['/services/smart-tv-setup', '/services/led-tv-repair'],
       ['/services/cctv-repair', '/services'],
