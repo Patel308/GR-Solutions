@@ -362,6 +362,30 @@ function makeSearchIntentGuidance(brand, city) {
   return brandGuidance[brand.slug] || '';
 }
 
+const brandTechnologyLabels = {
+  samsung: 'Samsung QLED TV Repair',
+  lg: 'LG OLED TV Repair',
+  sony: 'Sony Bravia TV Repair',
+  mi: 'Mi Android TV Repair',
+  oneplus: 'OnePlus Smart TV Repair',
+  tcl: 'TCL Smart TV Repair',
+  panasonic: 'Panasonic LED TV Repair',
+  vu: 'Vu Smart TV Repair',
+  philips: 'Philips Android TV Repair',
+  hisense: 'Hisense Smart TV Repair',
+};
+
+function makeSupportingTopics(brand, city) {
+  const label = brandTechnologyLabels[brand.slug];
+  return [
+    {
+      keyword: `${label} ${city.name}`,
+      title: `${label} in ${city.name}`,
+      text: `GR Solution provides independent, inspection-led support for ${brand.displayName} ${brand.panelTypes} and related smart TV symptoms across ${city.name}. Model, screen condition and parts availability are checked before repair is approved.`,
+    },
+  ];
+}
+
 export const brandServicePages = brands.flatMap((brand) =>
   cities.map((city) => {
     const slug = makeBrandCitySlug(brand, city);
@@ -388,6 +412,7 @@ export const brandServicePages = brands.flatMap((brand) =>
       intro: `${brand.displayName} TVs use ${brand.techNote}, and faults can range from simple software glitches to backlight, power or board-level issues. If you are looking for ${keyword}, GR Solution helps you understand the actual fault before approving repair, instead of guessing or replacing parts unnecessarily.`,
       cityExplanation: `${city.localNote} Our ${brand.displayName} TV repair support in ${city.name} is built around symptom-first inspection, so customers do not have to guess whether the issue is a power board, panel, backlight, software or input problem. ${makeSearchIntentGuidance(brand, city)}`.trim(),
       commonIssues: makeCommonProblemsSection(brand),
+      supportingTopics: makeSupportingTopics(brand, city),
       repairProcess: makeRepairProcess(brand, city),
       cityCoverage: `Service coverage for ${keyword} includes ${city.nearby.join(', ')} and nearby NCR pockets. Availability depends on technician schedule, TV size, access and part requirements.`,
       repairVsReplace: brand.decisionGuidance,

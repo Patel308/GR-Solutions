@@ -476,6 +476,8 @@ function LocalServicePage({ page }) {
         </div>
       </section>
 
+      <SupportingTopicsSection topics={page.supportingTopics} cityName={page.cityName} />
+
       <section className="py-20">
         <div className="container grid gap-8 lg:grid-cols-[1fr_0.85fr]">
           <article className="rounded-card border border-black/5 bg-white p-8 shadow-oldMd">
@@ -782,6 +784,8 @@ function BrandServicePage({ page }) {
       </section>
 
       {/* Brand-specific repair guidance */}
+      <SupportingTopicsSection topics={page.supportingTopics} cityName={page.cityName} />
+
       <section className="py-20">
         <div className="container grid gap-8 lg:grid-cols-2">
           <article className="rounded-card border border-black/5 bg-white p-8 shadow-oldMd">
@@ -907,5 +911,31 @@ function BrandServicePage({ page }) {
         description={`Call GR Solution for doorstep diagnosis, transparent repair guidance and ${page.brand} TV service support across ${page.cityName}.`}
       />
     </main>
+  );
+}
+
+function SupportingTopicsSection({ topics, cityName }) {
+  if (!topics?.length) return null;
+
+  return (
+    <section className="py-20">
+      <div className="container">
+        <div className="mb-12 text-center">
+          <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">HELPFUL TOPICS</span>
+          <h2 className="text-4xl font-black text-secondary">TV Repair Topics for {cityName}</h2>
+          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
+            Concise guidance for common search questions, diagnosis decisions and safe next steps.
+          </p>
+        </div>
+        <div className={`grid gap-6 ${topics.length === 1 ? 'mx-auto max-w-3xl' : 'md:grid-cols-2 xl:grid-cols-3'}`}>
+          {topics.map((topic) => (
+            <article key={topic.keyword} className="rounded-card border border-primary/10 bg-white p-7 shadow-oldMd">
+              <h3 className="text-xl font-black leading-tight text-secondary">{topic.title}</h3>
+              <p className="mt-4 leading-relaxed text-textMuted">{topic.text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

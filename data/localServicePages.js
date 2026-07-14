@@ -182,6 +182,127 @@ const serviceLocalProfiles = {
   },
 };
 
+const serviceIntentTopics = {
+  'led-tv-repair': [
+    {
+      label: 'LED TV Backlight Repair',
+      text: 'A dim screen, brief logo flash or sound with a dark picture can point to backlight strips, their driver circuit or the power section. Inspection confirms the cause before parts are suggested.',
+    },
+    {
+      label: 'LED TV No Picture Repair',
+      text: 'No-picture symptoms may come from the backlight, T-Con, mainboard, power board or panel. Checking screen glow, sound and menu response helps separate these faults.',
+    },
+    {
+      label: 'LED TV Flickering Screen Repair',
+      text: 'Screen flicker can be linked to unstable power, ageing backlights, loose connections or display electronics. Note whether it changes after warm-up or across different inputs.',
+    },
+    {
+      label: 'LED TV Power Board Repair',
+      text: 'Blinking standby lights, repeated restarts and failure to power on can involve the power board, but socket, cable and mainboard behavior should be checked first.',
+    },
+    {
+      label: 'LED TV Sound But No Picture Repair',
+      text: 'When audio works but the screen is dark, the panel is not automatically faulty. Backlight and display-path checks provide a safer repair decision.',
+    },
+  ],
+  'oled-qled-tv-repair': [
+    {
+      label: 'OLED TV Vertical Line Repair',
+      text: 'Vertical lines on an OLED display need careful panel, driver and board diagnosis. Pressure, impact and whether menus show the same line are useful details.',
+    },
+    {
+      label: 'QLED TV Dim Screen Repair',
+      text: 'QLED brightness loss may involve picture settings, local dimming, backlight electronics, power behavior or the display assembly, so diagnosis should precede a costly decision.',
+    },
+    {
+      label: 'OLED TV Color Issue Repair',
+      text: 'Color shift, dark patches and uneven tones can be source-specific, software-related or panel-level. Testing menus and multiple inputs helps narrow the issue.',
+    },
+    {
+      label: 'QLED TV No Display Repair',
+      text: 'A QLED television with power but no usable image may have input, mainboard, power, backlight or panel symptoms. Model-specific inspection is important.',
+    },
+    {
+      label: 'OLED QLED TV Mainboard Repair',
+      text: 'Boot loops, frozen apps, missing HDMI inputs and intermittent display behavior can involve the mainboard. Software and connected devices are checked before board work.',
+    },
+  ],
+  'lcd-tv-repair': [
+    {
+      label: 'LCD TV Dim Picture Repair',
+      text: 'An ageing LCD television may look dim because of backlight, inverter, power or panel wear. TV age and part availability help determine whether repair remains practical.',
+    },
+    {
+      label: 'LCD TV Display Line Repair',
+      text: 'Display lines can originate from cables, timing electronics or the panel itself. A diagnosis helps avoid replacing boards when the screen is the real limitation.',
+    },
+    {
+      label: 'LCD TV Power Supply Repair',
+      text: 'Slow startup, clicking, a dead standby light or shutdown after warm-up can involve the power section. Safe voltage and stability checks guide the next step.',
+    },
+    {
+      label: 'LCD TV Sound Repair',
+      text: 'Low, distorted or missing sound may be caused by settings, input sources, speakers or audio circuitry. Testing another source helps isolate the symptom.',
+    },
+    {
+      label: 'LCD TV Input Port Repair',
+      text: 'An HDMI or AV port that shows no signal should be checked with another cable and source before the connector or input board is considered faulty.',
+    },
+  ],
+  'plasma-tv-repair': [
+    {
+      label: 'Plasma TV Power Supply Repair',
+      text: 'Older plasma TVs can click, blink or remain in protection mode because of power or sustain-board faults. Part availability is checked before repair is approved.',
+    },
+    {
+      label: 'Plasma TV Overheating Repair',
+      text: 'Heat-related shutdown needs ventilation, dust, fan where fitted, power and sustain-section checks. Repeated power cycling should be avoided until inspection.',
+    },
+    {
+      label: 'Plasma TV No Display Repair',
+      text: 'A glowing or dark plasma screen with sound may involve sustain boards, power, control electronics or the panel. Older-model feasibility matters.',
+    },
+    {
+      label: 'Plasma TV Sustain Board Repair',
+      text: 'Sustain-board symptoms can include clicking, a blank screen, patches or protection shutdown. Diagnosis and realistic part sourcing come before a repair promise.',
+    },
+    {
+      label: 'Plasma TV Sound Issue Repair',
+      text: 'Plasma sound faults may be related to settings, speakers, source devices or audio circuitry. Picture and power behavior are checked at the same time.',
+    },
+  ],
+  'curved-tv-repair': [
+    {
+      label: 'Curved TV Screen Line Repair',
+      text: 'Lines on a curved screen require careful inspection for panel stress, connection and display-board symptoms. The screen should not be pressed or flexed.',
+    },
+    {
+      label: 'Curved TV No Display Repair',
+      text: 'No display can involve backlight, power, mainboard or panel faults. Mounting pressure and recent movement are useful diagnostic details for curved sets.',
+    },
+    {
+      label: 'Curved TV Power Issue Repair',
+      text: 'A curved TV that restarts or will not power on needs socket, power board and mainboard checks without unnecessary movement of the panel.',
+    },
+    {
+      label: 'Curved TV Picture Distortion Repair',
+      text: 'Uneven brightness or distorted picture can be connected to settings, source, mounting pressure or display electronics. Multiple inputs should be compared.',
+    },
+    {
+      label: 'Curved TV HDMI Repair',
+      text: 'HDMI loss may be caused by the cable, source device, port or mainboard. Testing another known working input helps prevent an unnecessary board repair.',
+    },
+  ],
+};
+
+function makeSupportingTopics(service, city) {
+  return serviceIntentTopics[service.slug].map((topic) => ({
+    keyword: `${topic.label} ${city.name}`,
+    title: `${topic.label} in ${city.name}`,
+    text: `${topic.text} GR Solution provides inspection-led guidance across ${city.name} and nearby NCR areas.`,
+  }));
+}
+
 function makeSlug(serviceSlug, citySlug) {
   return `${serviceSlug}-${citySlug}`;
 }
@@ -395,6 +516,7 @@ const serviceCityPages = services.flatMap((service) => {
       cityExplanation: `${city.localNote} Our ${profile.keywordBase.toLowerCase()} support in ${city.name} is built around symptom-first inspection, so customers do not have to guess whether the issue is a power board, panel, backlight, software or input problem.`,
       localTrust: city.trust,
       commonProblems: [...profile.problemFocus, ...makeExtraProblems(service)],
+      supportingTopics: makeSupportingTopics(service, city),
       contentBlocks: makeContentBlocks(service, city, profile, keyword),
       whyChoose: makeWhyChoose(service, city, profile),
       qualityChecks: profile.qualityChecks,
@@ -612,6 +734,18 @@ export const cityTvRepairPages = cities.map((city) => {
       'Smart TV apps, HDMI inputs, WiFi, remote or source switching fail.',
       'Panel, motherboard, power board, speaker or T-Con symptoms need diagnosis.',
     ],
+    supportingTopics: [
+      {
+        keyword: `Doorstep TV Repair ${city.name}`,
+        title: `Doorstep TV Repair in ${city.name}`,
+        text: `GR Solution starts suitable ${city.name} requests with doorstep inspection, helping customers understand display, sound, power, input and smart TV symptoms before moving a large television or approving repair.`,
+      },
+      {
+        keyword: `TV Inspection At Home ${city.name}`,
+        title: `TV Inspection at Home in ${city.name}`,
+        text: `Share the TV brand, model, screen size, exact symptom and access details for an at-home inspection request in ${city.name}. Some panel or workshop-level faults may still require safer off-site handling after diagnosis.`,
+      },
+    ],
     contentBlocks: makeGenericTvContentBlocks(city, profile),
     whyChoose: makeGenericWhyChoose(city),
     qualityChecks: ['picture and brightness test', 'sound output check', 'HDMI/source switching', 'smart app response', 'stability after repair'],
@@ -680,6 +814,18 @@ export const nearMeServicePage = {
     'TV does not power on or keeps shutting down.',
     'Remote, HDMI, WiFi, input source or sound is not working correctly.',
     'Curved TV display distortion or panel handling concerns need checking.',
+  ],
+  supportingTopics: [
+    {
+      keyword: 'TV Repair Booking Delhi NCR',
+      title: 'TV Repair Booking in Delhi NCR',
+      text: 'Book by call, WhatsApp or the contact form with your locality, TV brand, model, size and symptom. GR Solution confirms service feasibility and scheduling before a visit.',
+    },
+    {
+      keyword: 'TV Technician Delhi NCR',
+      title: 'Finding a TV Technician in Delhi NCR',
+      text: 'Choose diagnosis-first support that explains the fault, estimate and repair-versus-replacement options. GR Solution provides independent TV repair assistance from its verified New Kondli address.',
+    },
   ],
   contentBlocks: [
     {
