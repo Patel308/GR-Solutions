@@ -375,13 +375,32 @@ const brandTechnologyLabels = {
   hisense: 'Hisense Smart TV Repair',
 };
 
+const brandDiagnosticLabels = {
+  samsung: 'Samsung Smart Hub Repair',
+  lg: 'LG WebOS TV Repair',
+  sony: 'Sony Android TV Repair',
+  mi: 'Mi PatchWall TV Repair',
+  oneplus: 'OnePlus TV Boot Loop Repair',
+  tcl: 'TCL Google TV Repair',
+  panasonic: 'Panasonic TV Power Board Repair',
+  vu: 'Vu TV Backlight Repair',
+  philips: 'Philips Ambilight TV Repair',
+  hisense: 'Hisense TV No Display Repair',
+};
+
 function makeSupportingTopics(brand, city) {
   const label = brandTechnologyLabels[brand.slug];
+  const diagnosticLabel = brandDiagnosticLabels[brand.slug];
   return [
     {
       keyword: `${label} ${city.name}`,
       title: `${label} in ${city.name}`,
       text: `GR Solution provides independent, inspection-led support for ${brand.displayName} ${brand.panelTypes} and related smart TV symptoms across ${city.name}. Model, screen condition and parts availability are checked before repair is approved.`,
+    },
+    {
+      keyword: `${diagnosticLabel} ${city.name}`,
+      title: `${diagnosticLabel} in ${city.name}`,
+      text: `${makeSearchIntentGuidance(brand, city)} GR Solution checks software, power, display and board behavior before recommending parts or a workshop-level repair.`,
     },
   ];
 }

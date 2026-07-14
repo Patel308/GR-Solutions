@@ -204,6 +204,14 @@ const serviceIntentTopics = {
       label: 'LED TV Sound But No Picture Repair',
       text: 'When audio works but the screen is dark, the panel is not automatically faulty. Backlight and display-path checks provide a safer repair decision.',
     },
+    {
+      label: 'LED TV Dark Screen Repair',
+      text: 'A very dark image that is visible only under a torch can indicate backlight or driver trouble. Brightness settings and source behavior are checked before opening the TV.',
+    },
+    {
+      label: 'LED TV Restart Issue Repair',
+      text: 'Repeated restarting may involve unstable power, the mainboard, connected HDMI devices or smart software. Noting when the restart happens helps narrow the cause.',
+    },
   ],
   'oled-qled-tv-repair': [
     {
@@ -225,6 +233,14 @@ const serviceIntentTopics = {
     {
       label: 'OLED QLED TV Mainboard Repair',
       text: 'Boot loops, frozen apps, missing HDMI inputs and intermittent display behavior can involve the mainboard. Software and connected devices are checked before board work.',
+    },
+    {
+      label: 'OLED TV Burn In Inspection',
+      text: 'Persistent logos or uneven image retention need a realistic panel assessment. Content tests help separate temporary retention, settings and permanent panel wear.',
+    },
+    {
+      label: 'QLED TV Brightness Issue Diagnosis',
+      text: 'Uneven or reduced brightness can involve picture settings, local dimming, backlight control, power or panel behavior. Testing standard content helps compare zones safely.',
     },
   ],
   'lcd-tv-repair': [
@@ -248,6 +264,14 @@ const serviceIntentTopics = {
       label: 'LCD TV Input Port Repair',
       text: 'An HDMI or AV port that shows no signal should be checked with another cable and source before the connector or input board is considered faulty.',
     },
+    {
+      label: 'LCD TV White Screen Repair',
+      text: 'A white or washed-out LCD screen may involve timing electronics, display cables, power or the panel. Sound and menu behavior provide useful diagnostic clues.',
+    },
+    {
+      label: 'LCD TV Slow Startup Repair',
+      text: 'A television that takes longer to start as it ages can have power-supply, capacitor or mainboard symptoms. Warm-up behavior and part feasibility should be assessed.',
+    },
   ],
   'plasma-tv-repair': [
     {
@@ -270,6 +294,14 @@ const serviceIntentTopics = {
       label: 'Plasma TV Sound Issue Repair',
       text: 'Plasma sound faults may be related to settings, speakers, source devices or audio circuitry. Picture and power behavior are checked at the same time.',
     },
+    {
+      label: 'Plasma TV Clicking Sound Repair',
+      text: 'Repeated clicking without startup can indicate protection behavior in the power or sustain sections. Continued power cycling should be avoided before inspection.',
+    },
+    {
+      label: 'Plasma TV Shutdown Issue Repair',
+      text: 'Shutdown after several minutes may relate to heat, power stability or ageing boards. Ventilation and fault history help determine whether repair is economical.',
+    },
   ],
   'curved-tv-repair': [
     {
@@ -291,6 +323,14 @@ const serviceIntentTopics = {
     {
       label: 'Curved TV HDMI Repair',
       text: 'HDMI loss may be caused by the cable, source device, port or mainboard. Testing another known working input helps prevent an unnecessary board repair.',
+    },
+    {
+      label: 'Curved TV Mounting Damage Inspection',
+      text: 'An overly tight or unsuitable wall mount can stress a curved chassis and display. Mounting position, recent movement and visible pressure points are reviewed carefully.',
+    },
+    {
+      label: 'Curved TV Uneven Brightness Repair',
+      text: 'Brightness variation may come from settings, backlight zones, panel stress or display electronics. A neutral test image helps determine whether the pattern changes.',
     },
   ],
 };
@@ -744,6 +784,31 @@ export const cityTvRepairPages = cities.map((city) => {
         keyword: `TV Inspection At Home ${city.name}`,
         title: `TV Inspection at Home in ${city.name}`,
         text: `Share the TV brand, model, screen size, exact symptom and access details for an at-home inspection request in ${city.name}. Some panel or workshop-level faults may still require safer off-site handling after diagnosis.`,
+      },
+      {
+        keyword: `Same Day TV Inspection ${city.name}`,
+        title: `Same-Day TV Inspection Requests in ${city.name}`,
+        text: `Same-day availability in ${city.name} depends on technician route, booking time, access and the reported fault. GR Solution confirms the realistic visit window rather than making an automatic guarantee.`,
+      },
+      {
+        keyword: `Wall Mounted TV Diagnosis ${city.name}`,
+        title: `Wall-Mounted TV Diagnosis in ${city.name}`,
+        text: `Share mounting height, bracket type and access details before a ${city.name} visit. Large or premium screens may need two-person handling before internal inspection can begin safely.`,
+      },
+      {
+        keyword: `TV Screen Line Diagnosis ${city.name}`,
+        title: `TV Screen Line Diagnosis in ${city.name}`,
+        text: `Vertical or horizontal lines may involve cables, timing electronics, a board or the panel itself. A photo and confirmation that the line appears in menus can improve diagnosis planning.`,
+      },
+      {
+        keyword: `TV Motherboard Repair ${city.name}`,
+        title: `TV Motherboard Repair in ${city.name}`,
+        text: `Boot loops, missing inputs, frozen smart features and restart behavior can point toward the motherboard, but software, power and connected devices should be ruled out first.`,
+      },
+      {
+        keyword: `Smart TV Software Repair ${city.name}`,
+        title: `Smart TV Software Repair in ${city.name}`,
+        text: `App crashes, Wi-Fi problems and a frozen home screen may be software or storage related. Model details and error behavior help determine whether reset, update or hardware diagnosis is appropriate.`,
       },
     ],
     contentBlocks: makeGenericTvContentBlocks(city, profile),
