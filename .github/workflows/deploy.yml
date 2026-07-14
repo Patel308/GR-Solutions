@@ -1,0 +1,152 @@
+name: Build, Push, Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: grsolution-production-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  DOCKER_IMAGE: pateldeepesh/tv-wale
+  NEXT_PUBLIC_SITE_URL: https://grsolution.co.in
+
+jobs:
+  quality:
+    name: Quality Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Production build check
+        run: npm run build
+
+  build:
+    name: Build and Push Image
+    runs-on: ubuntu-latest
+    needs: quality
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Extract image metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.DOCKER_IMAGE }}
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=sha,prefix=sha-,format=short
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          platforms: linux/amd64
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            NEXT_PUBLIC_SITE_URL=${{ env.NEXT_PUBLIC_SITE_URL }}
+          cache-from: type=registry,ref=${{ env.DOCKER_IMAGE }}:buildcache
+          cache-to: type=registry,ref=${{ env.DOCKER_IMAGE }}:buildcache,mode=max
+          provenance: false
+
+  deploy:
+    name: Blue-Green Deploy to AWS
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout deployment files
+        uses: actions/checkout@v4
+
+      - name: Upload isolated deployment scripts
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "deploy/grsolution/deploy.sh,deploy/grsolution/router.conf.tpl"
+          target: "/home/scallar/apps/grsolution-deploy"
+          strip_components: 2
+          overwrite: true
+
+      - name: Run blue-green deployment
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          command_timeout: 600s
+          script: |
+            set -euo pipefail
+
+            for attempt in 1 2 3 4 5; do
+              if timeout 45s sh -c 'echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin'; then
+                break
+              fi
+              if [ "$attempt" -eq 5 ]; then
+                echo "Docker Hub login failed after five attempts."
+                exit 1
+              fi
+              sleep 15
+            done
+
+            chmod 750 /home/scallar/apps/grsolution-deploy/deploy.sh
+            SHORT_SHA=$(printf '%s' "${{ github.sha }}" | cut -c1-7)
+            DOCKER_IMAGE="${{ env.DOCKER_IMAGE }}:sha-${SHORT_SHA}" \
+            VERIFY_URL="${{ secrets.DEPLOY_VERIFY_URL }}" \
+              /home/scallar/apps/grsolution-deploy/deploy.sh
+
+      - name: Verify live application and static assets
+        env:
+          DEPLOY_VERIFY_URL: ${{ secrets.DEPLOY_VERIFY_URL }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${DEPLOY_VERIFY_URL%/}"
+
+          test "$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "$BASE_URL/api/health")" = "200"
+          test "$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "$BASE_URL/")" = "200"
+
+          HTML=$(curl -sSL --max-time 20 "$BASE_URL/")
+          CHUNK=$(printf '%s' "$HTML" | grep -o '"/_next/static/chunks/[^"]*\.js"' | head -1 | tr -d '"' || true)
+          if [ -n "$CHUNK" ]; then
+            test "$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "$BASE_URL$CHUNK")" = "200"
+          fi
+
+          echo "GR Solution production verification passed."

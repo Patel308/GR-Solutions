@@ -42,6 +42,32 @@ The goal of this migration is to make the website easier to maintain, faster to 
 
 ---
 
+## CI/CD and Blue-Green Deployment
+
+Pushes to `main` run the production workflow in `.github/workflows/deploy.yml`:
+
+1. Install dependencies, lint, and run a full Next.js production build.
+2. Build the `linux/amd64` Docker image and push immutable `sha-xxxxxxx` plus `latest` tags to `pateldeepesh/tv-wale`.
+3. Upload the isolated GR Solution deployment scripts to the AWS VM.
+4. Start the inactive `grsolution-blue` or `grsolution-green` container and wait for its health check.
+5. Switch the dedicated `grsolution-router` container only after the new slot is healthy.
+6. Verify the public health endpoint, homepage, and a Next.js static chunk. A failed verification restores the previous slot.
+
+The deployment uses its own Docker network and container names. Host Nginx continues to proxy `grsolution.co.in` to `127.0.0.1:3022`; no Scallar, TV Wale, or unrelated container is modified.
+
+Required GitHub Actions repository secrets:
+
+* `DOCKERHUB_USERNAME`
+* `DOCKERHUB_TOKEN`
+* `SSH_HOST`
+* `SSH_USERNAME`
+* `SSH_KEY`
+* `DEPLOY_VERIFY_URL` (`https://grsolution.co.in`)
+
+The production runtime environment remains on the server at `/home/scallar/apps/tv-wale/.env`. It is never copied into GitHub or the Docker image.
+
+---
+
 ## Key Features
 
 * Static homepage

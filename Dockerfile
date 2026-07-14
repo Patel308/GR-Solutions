@@ -21,4 +21,6 @@ ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
 COPY --from=builder /app ./
 
 EXPOSE 3000
+HEALTHCHECK --interval=15s --timeout=5s --start-period=25s --retries=5 \
+  CMD node -e "const req=require('http').get('http://127.0.0.1:3000/api/health',r=>process.exit(r.statusCode===200?0:1));req.on('error',()=>process.exit(1));req.setTimeout(4000,()=>{req.destroy();process.exit(1)})"
 CMD ["npm", "run", "start"]
