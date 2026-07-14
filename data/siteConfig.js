@@ -11,6 +11,7 @@ export const siteConfig = {
   email: 'info@grsolution.co.in',
   emailHref: 'mailto:info@grsolution.co.in',
   formEndpoint: 'https://formsubmit.co/ajax/kamleshg9569@gmail.com',
+  formNotificationEmail: 'deepeshpatelinfinix@gmail.com',
   googleBusinessProfile: 'https://share.google/dl2v9Ju9KJjnoN5K6',
   address: {
     streetAddress: 'C-4/102, Pocket C 3, New Kondli, Kondli',

@@ -9,7 +9,6 @@ export const metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: 'GR Solution | TV Repair Delhi, Noida & NCR',
-    template: '%s | GR Solution',
   },
   description: siteConfig.description,
   robots: {

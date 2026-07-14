@@ -41,6 +41,7 @@ export default function BookingForm() {
       <h3 className="mb-7 text-2xl font-extrabold text-secondary">Request A Callback</h3>
       <form onSubmit={handleSubmit} className="grid gap-5">
         <input type="hidden" name="_subject" value="New Callback Request!" />
+        <input type="hidden" name="_cc" value={siteConfig.formNotificationEmail} />
         <input type="hidden" name="_captcha" value="false" />
 
         <div className="grid gap-2">

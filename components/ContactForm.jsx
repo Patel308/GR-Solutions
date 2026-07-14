@@ -47,6 +47,7 @@ export default function ContactForm({ id = 'contactForm', compact = false, title
     >
       {title ? <h2 className="mb-8 text-2xl font-extrabold text-secondary">{title}</h2> : null}
       <input type="hidden" name="_subject" value="New GR Solution website enquiry" />
+      <input type="hidden" name="_cc" value={siteConfig.formNotificationEmail} />
       <input type="hidden" name="_template" value="table" />
 
       <div className="mb-4 grid gap-2">
@@ -63,7 +64,7 @@ export default function ContactForm({ id = 'contactForm', compact = false, title
           <option value="" disabled>
             {appointment ? 'Select area' : 'Select service'}
           </option>
-          {(appointment ? ['West Delhi', 'South Delhi', 'East Delhi', 'North Delhi', 'Noida', 'Gurgaon', 'Ghaziabad', 'Faridabad'] : services).map((item) => (
+          {(appointment ? ['West Delhi', 'South Delhi', 'East Delhi', 'North Delhi', 'Noida', 'Greater Noida', 'Ghaziabad'] : services).map((item) => (
             <option key={appointment ? item : item.slug} value={appointment ? item : item.title}>
               {appointment ? item : item.title}
             </option>

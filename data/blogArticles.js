@@ -46,6 +46,11 @@ export const blogArticles = [
         body:
           'Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins. The technician explains whether screen replacement, repair, workshop handling or replacement guidance is the more practical option.',
       },
+      {
+        heading: 'What other Delhi TV repair costs should you compare?',
+        body:
+          'People also compare LED TV panel repair cost Delhi, LED TV repair cost Delhi, OLED TV repair cost Delhi, general TV repair cost Delhi, TV screen replacement cost Delhi and technician charges in Delhi. These are related but not identical jobs. A visit charge, board repair, backlight repair, panel work and full screen replacement involve different parts and labour, so a single online figure can be misleading. Ask what the estimate includes and approve work only after the fault is identified.',
+      },
     ],
     internalLinks: [
       { label: 'LED TV Repair in Delhi', href: '/services/led-tv-repair-delhi' },
@@ -200,6 +205,21 @@ export const blogArticles = [
           'For Delhi, Noida, Ghaziabad and Greater Noida, the first useful step is sharing the TV age, model number, symptom and location. Ghaziabad customers can mention Indirapuram, Vaishali or Vasundhara; Noida customers can share sector and society details; Greater Noida customers can share sector, landmark and access instructions.',
       },
       {
+        heading: 'TV repair cost guidance for Ghaziabad',
+        body:
+          'LED TV panel repair cost in Ghaziabad, LED TV repair cost, OLED TV repair cost, general TV repair cost, screen replacement cost and technician charges all describe different scopes of work. Customers in Indirapuram, Vaishali, Vasundhara, Kaushambi, Raj Nagar Extension, Crossings Republik and Sahibabad should share the exact model and symptom before comparing estimates. GR Solution gives inspection-based guidance and does not publish one misleading price for every fault.',
+      },
+      {
+        heading: 'TV repair cost guidance for Greater Noida',
+        body:
+          'For Greater Noida, LED panel repair, LED repair, OLED repair, screen replacement and technician visit costs depend on the model, screen size, fault and travel or handling requirements. Customers around Pari Chowk, Alpha, Beta, Gamma, Knowledge Park, Techzone and Greater Noida West should also share society access and wall-mount details so visit planning is realistic.',
+      },
+      {
+        heading: 'TV repair cost guidance for Noida',
+        body:
+          'TV repair cost in Noida varies between a technician inspection, backlight repair, board work, OLED diagnosis, panel-related work and full screen replacement. Customers in Sector 18, 62, 63, 75, 76, 104, 137 and Noida Extension should provide the TV model, size and exact symptom before asking for an estimate. This avoids confusing a dark-screen backlight fault with physical panel damage.',
+      },
+      {
         heading: 'When LCD TV repair is worth it',
         body:
           'LCD repair can be sensible for power board, speaker, input, remote, backlight or certain board issues where parts are available. It may not be sensible for physical panel damage, severe ageing symptoms or estimates close to a newer replacement TV.',
@@ -218,6 +238,8 @@ export const blogArticles = [
     internalLinks: [
       { label: 'LCD TV Repair Delhi', href: '/services/lcd-tv-repair-delhi' },
       { label: 'LCD TV Repair Noida', href: '/services/lcd-tv-repair-noida' },
+      { label: 'LCD TV Repair Greater Noida', href: '/services/lcd-tv-repair-greater-noida' },
+      { label: 'LCD TV Repair Ghaziabad', href: '/services/lcd-tv-repair-ghaziabad' },
       { label: 'TV Repair Ghaziabad', href: '/services/tv-repair-ghaziabad' },
       { label: 'Contact GR Solution', href: '/contact' },
     ],
@@ -225,6 +247,7 @@ export const blogArticles = [
       { question: 'Is LCD TV repair still worth it?', answer: 'It can be worth it for power, sound, input or board faults when parts are available and the panel is healthy.' },
       { question: 'Why does LCD repair cost vary?', answer: 'Cost depends on age, brand, screen size, fault type and parts availability.' },
       { question: 'Do you cover Noida and Ghaziabad?', answer: 'Yes, GR Solution provides LCD TV repair guidance across Delhi NCR including Noida, Ghaziabad and Greater Noida.' },
+      { question: 'How are technician charges decided in Noida, Ghaziabad or Greater Noida?', answer: 'Visit and repair charges depend on location, TV size, access, fault type and the work required. GR Solution explains inspection-based costs before approved repair work begins.' },
       { question: 'Can an old LCD TV with no picture be fixed?', answer: 'Sometimes, if the issue is power, backlight, inverter or board related. Panel damage may not be practical.' },
       { question: 'Do you quote fixed prices online?', answer: 'No. GR Solution shares an inspection-based estimate after checking the actual fault.' },
     ],

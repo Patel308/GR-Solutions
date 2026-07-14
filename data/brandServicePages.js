@@ -318,6 +318,50 @@ function makeWhyChoose(brand, city) {
   ];
 }
 
+function makeSearchIntentGuidance(brand, city) {
+  const guidance = {
+    'sony-noida':
+      'This canonical page also answers Sony LED TV repair in Noida searches. GR Solution provides independent repair support and does not present itself as an official Sony service center.',
+    'sony-delhi':
+      'Customers searching for Sony LED TV repair in Delhi or a Sony TV repair centre in South, West or East Delhi can request independent doorstep diagnosis here. GR Solution does not claim official Sony authorization.',
+    'sony-ghaziabad':
+      'This page covers Sony LED TV repair in Ghaziabad and general Sony TV repair Ghaziabad requests across Indirapuram, Vaishali, Vasundhara and nearby localities.',
+    'sony-greater-noida':
+      'Customers searching for a Sony TV service center in Greater Noida can request independent Sony TV diagnosis through this canonical page. GR Solution does not claim official Sony authorization.',
+    'samsung-delhi':
+      'This page serves Samsung LED TV service center Delhi and South Delhi search intent with clear independent-repair wording. GR Solution does not claim to be an official or authorized Samsung service center.',
+    'samsung-noida':
+      'This page covers Samsung LED TV repair in Noida alongside common Samsung Smart TV, QLED, power, display and backlight issues.',
+    'samsung-ghaziabad':
+      'Customers searching for a Samsung LED TV service center in Ghaziabad can request independent Samsung TV repair support through this page. GR Solution does not claim official Samsung authorization.',
+    'lg-delhi':
+      'This page covers LG TV repair Delhi and LG LED TV service center in Delhi search intent through independent doorstep repair support. GR Solution does not claim official LG authorization.',
+    'mi-delhi':
+      'This page covers Xiaomi TV repair Delhi and Mi LED TV service center in Delhi search intent using independent-repair wording, including Android TV, PatchWall, Wi-Fi, display and board symptoms.',
+    'mi-noida':
+      'This page is the canonical destination for Xiaomi TV repair Noida and Mi TV repair Noida, including Android TV, PatchWall, remote, Wi-Fi and display-related diagnosis.',
+    'vu-noida':
+      'Customers searching for a Vu TV service center in Noida can request independent Vu TV repair support here. GR Solution does not claim to be an official or authorized Vu service center.',
+  };
+
+  const specificGuidance = guidance[`${brand.slug}-${city.slug}`];
+  if (specificGuidance) return specificGuidance;
+
+  const brandGuidance = {
+    hisense: `Hisense TV repair in ${city.name} can include LED, UHD, QLED, backlight, power, HDMI and smart software diagnosis, with panel condition checked before expensive repair decisions.`,
+    lg: `LG TV repair in ${city.name} can include LED, OLED, WebOS, backlight, power, sound, HDMI and mainboard symptoms, depending on the model and parts availability.`,
+    mi: `Mi/Xiaomi TV repair in ${city.name} includes Android TV, PatchWall, Wi-Fi, remote pairing, boot, display, backlight and motherboard checks.`,
+    oneplus: `OnePlus TV repair in ${city.name} includes Android or Google TV software, Wi-Fi, sound, display, backlight, power and board-level symptom checks.`,
+    panasonic: `Panasonic TV repair in ${city.name} covers practical diagnosis for LED, LCD, older Plasma, power, sound, display and input-related faults.`,
+    philips: `Philips TV repair in ${city.name} can include LED display, Android TV, Ambilight, sound, power, HDMI and motherboard diagnosis where applicable to the model.`,
+    samsung: `Samsung TV repair in ${city.name} includes independent diagnosis for LED, Crystal UHD, QLED, Smart TV, backlight, power, display and input issues.`,
+    tcl: `TCL TV repair in ${city.name} can include LED, QLED, Android or Google TV, boot, Wi-Fi, sound, backlight, power and display diagnosis.`,
+    vu: `Vu TV repair in ${city.name} includes independent support for LED, 4K, Smart TV, backlight, display, power, sound and software-related symptoms.`,
+  };
+
+  return brandGuidance[brand.slug] || '';
+}
+
 export const brandServicePages = brands.flatMap((brand) =>
   cities.map((city) => {
     const slug = makeBrandCitySlug(brand, city);
@@ -342,7 +386,7 @@ export const brandServicePages = brands.flatMap((brand) =>
       heroIntro: `Need ${keyword}? GR Solution provides doorstep inspection and repair support for ${brand.displayName} ${brand.panelTypes} and Smart TV issues across ${city.name} and nearby NCR areas.`,
       directAnswer: `GR Solution offers doorstep ${brand.displayName} TV repair service in ${city.name}, covering ${brand.techNote}. A technician inspects the reported issue and shares a clear, inspection-based estimate before any repair work begins.`,
       intro: `${brand.displayName} TVs use ${brand.techNote}, and faults can range from simple software glitches to backlight, power or board-level issues. If you are looking for ${keyword}, GR Solution helps you understand the actual fault before approving repair, instead of guessing or replacing parts unnecessarily.`,
-      cityExplanation: `${city.localNote} Our ${brand.displayName} TV repair support in ${city.name} is built around symptom-first inspection, so customers do not have to guess whether the issue is a power board, panel, backlight, software or input problem.`,
+      cityExplanation: `${city.localNote} Our ${brand.displayName} TV repair support in ${city.name} is built around symptom-first inspection, so customers do not have to guess whether the issue is a power board, panel, backlight, software or input problem. ${makeSearchIntentGuidance(brand, city)}`.trim(),
       commonIssues: makeCommonProblemsSection(brand),
       repairProcess: makeRepairProcess(brand, city),
       cityCoverage: `Service coverage for ${keyword} includes ${city.nearby.join(', ')} and nearby NCR pockets. Availability depends on technician schedule, TV size, access and part requirements.`,

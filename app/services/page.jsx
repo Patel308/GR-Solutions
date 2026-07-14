@@ -33,6 +33,13 @@ const brandHubLinks = [
   { label: 'OnePlus TV Repair', href: '/services/oneplus-tv-repair-delhi' },
 ];
 
+const nearbyRepairLinks = [
+  { label: 'TV Repair Near Me', href: '/services/tv-repair-near-me' },
+  { label: 'TV Repair in Delhi', href: '/services/tv-repair-delhi' },
+  { label: 'TV Repair in Noida', href: '/services/tv-repair-noida' },
+  { label: 'TV Repair in Ghaziabad', href: '/services/tv-repair-ghaziabad' },
+];
+
 const processSteps = [
   {
     icon: 'fa-solid fa-phone-volume',
@@ -126,6 +133,32 @@ export default function ServicesPage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-bgLight py-20">
+        <div className="container grid items-start gap-10 lg:grid-cols-[1.15fr_1fr]">
+          <div>
+            <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">NEARBY SUPPORT</span>
+            <h2 className="mt-4 text-4xl font-black text-secondary">How nearby TV repair requests work</h2>
+            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-textMuted">
+              Searches such as TV repair nearby, nearest TV repairman, nearby TV service centre,
+              nearest TV repair shop or TV repair shops in my area usually mean the customer wants
+              quick local help. GR Solution provides independent doorstep inspection across its
+              verified Delhi NCR service areas and does not claim unverified shop branches or brand authorization.
+            </p>
+            <p className="mt-4 max-w-3xl leading-relaxed text-textMuted">
+              Share your location, TV brand, screen size and exact symptom first. The team can then
+              explain visit availability and whether the issue is suitable for doorstep diagnosis.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {nearbyRepairLinks.map((item) => (
+              <Link key={item.href} href={item.href} className="rounded-2xl border border-primary/10 bg-white p-5 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary">
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

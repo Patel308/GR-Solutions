@@ -313,24 +313,6 @@ function LocalServicePage({ page }) {
         data={[
           {
             '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
-            name: siteConfig.name,
-            url: siteConfig.url,
-            telephone: siteConfig.phone,
-            email: siteConfig.email,
-            priceRange: 'Inspection-based estimate',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: siteConfig.address.streetAddress,
-              addressLocality: siteConfig.address.addressLocality,
-              addressRegion: siteConfig.address.addressRegion,
-              postalCode: siteConfig.address.postalCode,
-              addressCountry: siteConfig.address.addressCountry,
-            },
-            areaServed: [page.cityName, ...siteConfig.serviceAreas],
-          },
-          {
-            '@context': 'https://schema.org',
             '@type': 'Service',
             name: page.title,
             serviceType: schemaServiceType,
@@ -643,24 +625,6 @@ function BrandServicePage({ page }) {
     <main>
       <JsonLd
         data={[
-          {
-            '@context': 'https://schema.org',
-            '@type': 'ProfessionalService',
-            name: siteConfig.name,
-            url: siteConfig.url,
-            telephone: siteConfig.phone,
-            email: siteConfig.email,
-            priceRange: 'Inspection-based estimate',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: siteConfig.address.streetAddress,
-              addressLocality: siteConfig.address.addressLocality,
-              addressRegion: siteConfig.address.addressRegion,
-              postalCode: siteConfig.address.postalCode,
-              addressCountry: siteConfig.address.addressCountry,
-            },
-            areaServed: [page.cityName, ...siteConfig.serviceAreas],
-          },
           {
             '@context': 'https://schema.org',
             '@type': 'Service',

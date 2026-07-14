@@ -25,7 +25,7 @@ export const metadata = {
 const faqs = [
   {
     question: 'Do you provide home service across Delhi, Noida & NCR?',
-    answer: 'Yes, GR Solution provides doorstep repair services across Delhi, Noida, Gurgaon, Ghaziabad, Faridabad and nearby NCR areas.',
+    answer: 'Yes, GR Solution provides doorstep repair services across Delhi, Noida, Greater Noida, Ghaziabad and nearby NCR areas.',
   },
   {
     question: 'How quickly can a technician visit?',

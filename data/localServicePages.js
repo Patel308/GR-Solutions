@@ -256,12 +256,28 @@ function makeContentBlocks(service, city, profile, keyword) {
       title: `TV backlight repair ${city.name} guidance`,
       text: `For TV backlight repair in ${city.name}, useful symptoms include a very dim picture, sound working with no visible image, uneven brightness, flashing backlight, or a faint picture visible with a torch test. GR Solution checks backlight strips, power supply behavior, mainboard signals and panel condition before explaining whether backlight repair is practical.`,
     });
+
+    const localLedIntent = {
+      noida:
+        'Customers looking for LED TV repair service in Noida, LCD/LED TV repair in Noida, LED TV repair in Noida Sector 137 or LED TV repair at home in Noida can use this page as the canonical local guide. Coverage includes Sector 137 and nearby Noida sectors, subject to scheduling and safe access.',
+      delhi:
+        'This page covers LED TV repair in South Delhi and wider Delhi NCR as well as doorstep LED TV diagnosis across Delhi. GR Solution is based in New Kondli and does not claim a branch in a repair market; customers receive location-aware visit planning from the verified business address.',
+      ghaziabad:
+        'This page covers LED TV repair service in Ghaziabad, including Vasundhara, Vaishali, Indirapuram and nearby localities. Share the society, landmark and wall-mount details when requesting a doorstep visit.',
+    }[city.slug];
+
+    if (localLedIntent) {
+      blocks.push({
+        title: `${profile.keywordBase} coverage in ${city.name}`,
+        text: localLedIntent,
+      });
+    }
   }
 
-  if (service.slug === 'oled-qled-tv-repair' && city.slug === 'delhi') {
+  if (service.slug === 'oled-qled-tv-repair') {
     blocks.push({
-      title: 'QLED TV repair Delhi guidance',
-      text: 'QLED TV repair in Delhi is handled on the same canonical OLED/QLED page because the search intent overlaps with premium display diagnosis. GR Solution checks brightness, color tone, panel lines, local dimming behavior, HDMI response, sound and mainboard symptoms before suggesting repair.',
+      title: `OLED and QLED TV repair ${city.name} guidance`,
+      text: `OLED TV repair in ${city.name} and QLED TV repair in ${city.name} are handled on this combined canonical page because both searches need premium-display diagnosis without competing local URLs. OLED checks focus on black levels, retention, burn-in-like symptoms, power and processor behavior. QLED checks include brightness, color tone, local dimming, panel lines, HDMI response, sound and mainboard symptoms.`,
     });
   }
 
@@ -270,6 +286,15 @@ function makeContentBlocks(service, city, profile, keyword) {
       title: 'LCD TV repair Noida guidance',
       text: 'For LCD TV repair Noida requests, common coverage includes Sector 18, Sector 62, Sector 63, Sector 75, Sector 76, Sector 104, Sector 137 and Noida Extension. GR Solution checks screen brightness, power board behavior, backlight symptoms, sound and display timing before explaining whether older LCD repair is practical.',
     });
+  }
+
+  if (service.slug === 'lcd-tv-repair' && city.slug === 'delhi') {
+    return [
+      {
+        question: 'Is LCD TV repair available in South Delhi?',
+        answer: 'Yes, GR Solution provides independent doorstep LCD TV inspection across South Delhi and other Delhi areas, subject to scheduling, TV condition and parts availability.',
+      },
+    ];
   }
 
   if (service.slug === 'plasma-tv-repair' && city.slug === 'delhi') {
@@ -309,11 +334,15 @@ function makeExtraFaqs(service, city) {
     ];
   }
 
-  if (service.slug === 'oled-qled-tv-repair' && city.slug === 'delhi') {
+  if (service.slug === 'oled-qled-tv-repair') {
     return [
       {
-        question: 'Do you provide QLED TV repair in Delhi?',
-        answer: 'Yes, QLED TV repair in Delhi is handled through GR Solution OLED/QLED TV diagnosis, including brightness, color, line, sound, HDMI and board symptoms.',
+        question: `Do you provide OLED TV repair in ${city.name}?`,
+        answer: `Yes, GR Solution provides OLED TV inspection in ${city.name} for power, processor, color, line, retention and display symptoms, subject to repair feasibility and parts availability.`,
+      },
+      {
+        question: `Do you provide QLED TV repair in ${city.name}?`,
+        answer: `Yes, QLED TV repair in ${city.name} is handled through the combined OLED/QLED diagnosis page, including brightness, color, line, sound, HDMI and board symptoms.`,
       },
     ];
   }
@@ -411,7 +440,7 @@ const genericTvCityProfiles = {
     cityExplanation:
       'For TV repair in Delhi, common service planning areas include East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Laxmi Nagar, Preet Vihar, Mayur Vihar, Dwarka and Rohini. The same no-display issue can mean a backlight fault in one LED TV, a board issue in another, or panel damage in a premium display, so diagnosis matters more than guessing.',
     localFocus:
-      'Because GR Solution is based in New Kondli, Delhi requests can usually be discussed with strong local context. Customers should share nearby landmarks, floor number, parking or society entry instructions and whether the TV is wall mounted.',
+      'Because GR Solution is based in New Kondli, Delhi requests can usually be discussed with strong local context. Customers looking for TV repair in South Delhi, TV repair home service Delhi or TV repair at home Delhi should share nearby landmarks, floor number, parking or society entry instructions and whether the TV is wall mounted.',
     nearbyText: 'East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Laxmi Nagar, Preet Vihar, Mayur Vihar, Dwarka and Rohini',
     urgency:
       'Delhi customers often want fast repair because the TV is used daily in family rooms, offices or waiting areas. GR Solution prioritizes clear scheduling, diagnosis-first communication and practical repair-versus-replacement guidance.',
@@ -427,7 +456,7 @@ const genericTvCityProfiles = {
     cityExplanation:
       'For TV repair Noida searches, customers commonly ask from Sector 18, Sector 62, Sector 63, Sector 75, Sector 76, Sector 104, Sector 137 and Noida Extension access areas. High-rise societies need entry and lift planning, while offices may need appointment windows that avoid work disruption.',
     localFocus:
-      'If you are searching for tv repair near me Noida, share the sector, society tower, gate instruction, TV brand, screen size and whether the display is wall mounted. These details help the technician prepare safe handling and the right first diagnostic path.',
+      'If you are searching for TV repair near me Noida or a TV repair shop in Noida, GR Solution offers independent doorstep inspection from its verified Delhi business address rather than claiming an unverified Noida shop. Share the sector, society tower, gate instruction, TV brand, screen size and whether the display is wall mounted.',
     nearbyText: 'Sector 18, Sector 62, Sector 63, Sector 75, Sector 76, Sector 104, Sector 137 and Noida Extension',
     urgency:
       'Noida service calls often need efficient coordination because large screens are difficult to move and transport can add panel risk. Doorstep inspection helps decide whether repair can be handled at home or needs safer workshop handling.',
