@@ -135,6 +135,84 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border-y border-slate-100 bg-white py-20 sm:py-24">
+        <div className="container">
+          <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-16">
+            <div>
+              <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
+                REAL WORKSHOP PHOTOS
+              </span>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-secondary sm:text-4xl">
+                See the Care Behind Every TV Repair
+              </h2>
+              <p className="mt-5 max-w-xl text-base leading-relaxed text-textMuted sm:text-lg">
+                These are photos from the GR Solution workshop, where technicians inspect TV display, power and board-level issues before discussing the available repair options with you.
+              </p>
+              <div className="mt-7 grid gap-4">
+                <div className="flex items-start gap-3">
+                  <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm text-primary">
+                    <i className="fa-solid fa-magnifying-glass" />
+                  </span>
+                  <p className="leading-relaxed text-textMuted"><strong className="text-secondary">Inspection-led diagnosis:</strong> We check the reported symptom before suggesting a repair path.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm text-primary">
+                    <i className="fa-solid fa-comments" />
+                  </span>
+                  <p className="leading-relaxed text-textMuted"><strong className="text-secondary">Clear repair discussion:</strong> Feasibility and next steps are explained before paid work begins.</p>
+                </div>
+              </div>
+              <Link
+                href="/contact"
+                className="mt-8 inline-flex items-center gap-3 font-black text-primary transition hover:text-secondary"
+              >
+                Discuss your TV issue with GR Solution <i className="fa-solid fa-arrow-right text-sm" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-[minmax(0,1.25fr)_minmax(140px,0.75fr)] gap-4 sm:gap-5">
+              <figure className="relative col-span-2 overflow-hidden rounded-lg bg-slate-100 shadow-cardPro">
+                <Image
+                  src="/images/workshop-repair-bench.webp"
+                  alt="GR Solution workshop repair bench with TV panels and diagnostic equipment"
+                  width={1200}
+                  height={900}
+                  sizes="(min-width: 1024px) 58vw, 100vw"
+                  className="aspect-[4/3] h-full w-full object-cover"
+                />
+                <figcaption className="absolute bottom-3 left-3 rounded-md bg-secondary/90 px-3 py-2 text-xs font-bold text-white shadow-oldMd sm:bottom-4 sm:left-4 sm:text-sm">
+                  TV diagnostics at our workshop
+                </figcaption>
+              </figure>
+              <figure className="overflow-hidden rounded-lg bg-slate-100 shadow-cardPro">
+                <Image
+                  src="/images/workshop-tv-diagnosis.webp"
+                  alt="GR Solution technician inspecting a TV at the workshop"
+                  width={720}
+                  height={960}
+                  sizes="(min-width: 1024px) 32vw, 62vw"
+                  className="aspect-[3/4] h-full w-full object-cover"
+                />
+              </figure>
+              <figure className="flex min-h-0 flex-col justify-between rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-oldMd sm:p-5">
+                <Image
+                  src="/images/workshop-interior.webp"
+                  alt="Interior view of the GR Solution TV repair workshop"
+                  width={141}
+                  height={118}
+                  sizes="141px"
+                  className="h-auto w-full rounded-md border border-slate-200 object-cover"
+                />
+                <figcaption className="mt-4">
+                  <span className="text-xs font-black uppercase tracking-wide text-primary">Our workspace</span>
+                  <p className="mt-1 text-sm font-bold leading-snug text-secondary">Practical support for TV repair work.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us — Redesigned */}
       <section className="bg-white py-[90px]">
         <div className="container">
@@ -263,6 +341,7 @@ export default function HomePage() {
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
               href={siteConfig.phoneHref}
+              data-call-location="homepage_engineer_cta"
               className="inline-flex items-center gap-3 rounded-full border-2 border-[#2563eb] bg-[#2563eb] px-10 py-4 text-[0.95rem] font-bold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:border-[#1d4ed8] hover:bg-[#1d4ed8] hover:shadow-[0_8px_25px_rgba(37,99,235,0.4)]"
             >
               <i className="fa-solid fa-phone" /> Call An Engineer
@@ -374,6 +453,7 @@ export default function HomePage() {
                   </span>
                   <a
                     href={siteConfig.phoneHref}
+                    data-call-location="homepage_callback_phone"
                     style={{
                       fontSize: '1.6rem',
                       fontWeight: 800,

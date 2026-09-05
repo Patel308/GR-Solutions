@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import JsonLd from '@/components/JsonLd';
+import CallTracking from '@/components/CallTracking';
 import { siteConfig } from '@/data/siteConfig';
 
 export const metadata = {
@@ -98,6 +99,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <FloatingButtons />
+        <CallTracking />
       </body>
     </html>
   );

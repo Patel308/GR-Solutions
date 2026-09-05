@@ -28,6 +28,7 @@ export default function PageCTA({ badge = 'FAST LOCAL SUPPORT', title, descripti
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href={siteConfig.phoneHref}
+              data-call-location="page_cta_call_now"
               className="inline-flex items-center justify-center gap-3 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-accent"
             >
               <i className="fa-solid fa-phone" /> Call Now

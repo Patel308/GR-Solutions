@@ -87,6 +87,7 @@ export default function Header() {
             </button>
             <a
               href={siteConfig.phoneHref}
+              data-call-location="header_call_now"
               className={`${ctaBase} min-w-[132px] border-primary bg-primary text-white hover:border-secondary hover:bg-secondary md:min-w-[170px]`}
             >
               <i className="fa-solid fa-phone" /> Call Now

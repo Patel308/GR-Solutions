@@ -66,7 +66,7 @@ export default function ContactPage() {
                 </span>
                 <div>
                   <h3 className="mb-2 text-xl font-black text-secondary">Direct Call</h3>
-                  <a href={siteConfig.phoneHref} className="text-lg font-black text-textMain">{siteConfig.phone}</a>
+                  <a href={siteConfig.phoneHref} data-call-location="contact_direct_call" className="text-lg font-black text-textMain">{siteConfig.phone}</a>
                   <p className="mt-1 text-textMuted">Mon - Sun: 9:00 AM - 9:00 PM</p>
                 </div>
               </article>

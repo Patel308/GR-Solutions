@@ -166,7 +166,7 @@ export default async function ServiceDetailPage({ params }) {
             <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">{service.h1}</h1>
             <p className="mt-6 text-lg leading-relaxed text-textMuted">{service.fullDescription}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={siteConfig.phoneHref} className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <a href={siteConfig.phoneHref} data-call-location="service_hero_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call Now
               </a>
               <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
@@ -391,7 +391,7 @@ function LocalServicePage({ page }) {
               {page.directAnswer}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={siteConfig.phoneHref} className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <a href={siteConfig.phoneHref} data-call-location="service_cta_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call GR Solution
               </a>
               <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
@@ -419,7 +419,7 @@ function LocalServicePage({ page }) {
           <aside className="rounded-card border border-primary/10 bg-bgLight p-8">
             <h3 className="text-2xl font-black text-secondary">GR Solution Contact</h3>
             <p className="mt-4 leading-relaxed text-textMuted">
-              Phone: <a href={siteConfig.phoneHref} className="font-black text-primary">{siteConfig.phone}</a>
+              Phone: <a href={siteConfig.phoneHref} data-call-location="service_contact_phone" className="font-black text-primary">{siteConfig.phone}</a>
               <br />
               Email: <a href={siteConfig.emailHref} className="font-black text-primary">{siteConfig.email}</a>
               <br />
@@ -699,7 +699,7 @@ function BrandServicePage({ page }) {
             <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.6rem)] font-black leading-tight text-secondary">{page.h1}</h1>
             <p className="mt-6 leading-relaxed text-textMuted">{page.heroIntro}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={siteConfig.phoneHref} className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <a href={siteConfig.phoneHref} data-call-location="city_service_hero_call" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call Now
               </a>
               <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
@@ -743,7 +743,7 @@ function BrandServicePage({ page }) {
           <aside className="rounded-card border border-primary/10 bg-bgLight p-8">
             <h3 className="text-2xl font-black text-secondary">GR Solution Contact</h3>
             <p className="mt-4 leading-relaxed text-textMuted">
-              Phone: <a href={siteConfig.phoneHref} className="font-black text-primary">{siteConfig.phone}</a>
+              Phone: <a href={siteConfig.phoneHref} data-call-location="city_service_contact_phone" className="font-black text-primary">{siteConfig.phone}</a>
               <br />
               Email: <a href={siteConfig.emailHref} className="font-black text-primary">{siteConfig.email}</a>
               <br />

@@ -85,7 +85,7 @@ export default function Footer() {
                   <strong className="mb-1 block text-white">
                     Call Support
                   </strong>
-                  <a href={siteConfig.phoneHref} className="text-[#b9c3d8] hover:text-white">{siteConfig.phone}</a>
+                  <a href={siteConfig.phoneHref} data-call-location="footer_call_support" className="text-[#b9c3d8] hover:text-white">{siteConfig.phone}</a>
                 </div>
               </li>
               <li className="flex items-center gap-4 text-left">

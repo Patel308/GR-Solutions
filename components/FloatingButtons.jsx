@@ -13,6 +13,7 @@ export default function FloatingButtons() {
       </a>
       <a
         href={siteConfig.phoneHref}
+        data-call-location="floating_call_button"
         className="flex size-[54px] items-center justify-center rounded-full bg-primary text-xl text-white shadow-oldLg transition duration-300 hover:-translate-y-1"
         aria-label="Call GR Solution"
       >
