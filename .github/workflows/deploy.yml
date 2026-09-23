@@ -48,6 +48,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: quality
     timeout-minutes: 30
+    outputs:
+      image_digest: ${{ steps.build.outputs.digest }}
 
     steps:
       - name: Checkout
@@ -72,6 +74,7 @@ jobs:
             type=sha,prefix=sha-,format=short
 
       - name: Build and push
+        id: build
         uses: docker/build-push-action@v6
         with:
           context: .
@@ -87,68 +90,40 @@ jobs:
           provenance: false
 
   deploy:
-    name: Blue-Green Deploy to AWS
+    name: Deploy to Hostinger
     runs-on: ubuntu-latest
     needs: build
     if: github.ref == 'refs/heads/main'
-    timeout-minutes: 20
+    timeout-minutes: 15
 
     steps:
-      - name: Checkout deployment files
-        uses: actions/checkout@v4
-
-      - name: Upload isolated deployment scripts
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          source: "deploy/grsolution/deploy.sh,deploy/grsolution/router.conf.tpl"
-          target: "/home/scallar/apps/grsolution-deploy"
-          strip_components: 2
-          overwrite: true
-
-      - name: Run blue-green deployment
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          command_timeout: 600s
-          script: |
-            set -euo pipefail
-
-            for attempt in 1 2 3 4 5; do
-              if timeout 45s sh -c 'echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin'; then
-                break
-              fi
-              if [ "$attempt" -eq 5 ]; then
-                echo "Docker Hub login failed after five attempts."
-                exit 1
-              fi
-              sleep 15
-            done
-
-            chmod 750 /home/scallar/apps/grsolution-deploy/deploy.sh
-            SHORT_SHA=$(printf '%s' "${{ github.sha }}" | cut -c1-7)
-            DOCKER_IMAGE="${{ env.DOCKER_IMAGE }}:sha-${SHORT_SHA}" \
-            VERIFY_URL="${{ secrets.DEPLOY_VERIFY_URL }}" \
-              /home/scallar/apps/grsolution-deploy/deploy.sh
-
-      - name: Verify live application and static assets
+      - name: Deploy the exact Docker Hub image
         env:
-          DEPLOY_VERIFY_URL: ${{ secrets.DEPLOY_VERIFY_URL }}
+          HOSTINGER_SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          HOSTINGER_SSH_KNOWN_HOSTS: ${{ secrets.HOSTINGER_SSH_KNOWN_HOSTS }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+          IMAGE_DIGEST: ${{ needs.build.outputs.image_digest }}
         run: |
           set -euo pipefail
-          BASE_URL="${DEPLOY_VERIFY_URL%/}"
+          [[ "$IMAGE_DIGEST" =~ ^sha256:[a-f0-9]{64}$ ]]
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$HOSTINGER_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          printf '%s\n' "$HOSTINGER_SSH_KEY" > ~/.ssh/site_deploy
+          chmod 600 ~/.ssh/known_hosts ~/.ssh/site_deploy
+          trap 'rm -f ~/.ssh/site_deploy' EXIT
+          printf '%s\n' "$DOCKERHUB_USERNAME" "$DOCKERHUB_TOKEN" "$IMAGE_DIGEST" |
+            ssh -T -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
+              -i ~/.ssh/site_deploy deploy@187.127.146.219
 
-          test "$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "$BASE_URL/api/health")" = "200"
-          test "$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "$BASE_URL/")" = "200"
-
-          HTML=$(curl -sSL --max-time 20 "$BASE_URL/")
+      - name: Verify the Hostinger origin
+        run: |
+          set -euo pipefail
+          ORIGIN=187.127.146.219
+          DOMAIN=grsolution.co.in
+          curl -fsS --max-time 20 --resolve "$DOMAIN:443:$ORIGIN" "https://$DOMAIN/api/health" > /dev/null
+          HTML=$(curl -fsS --max-time 20 --resolve "$DOMAIN:443:$ORIGIN" "https://$DOMAIN/")
           CHUNK=$(printf '%s' "$HTML" | grep -o '"/_next/static/chunks/[^"]*\.js"' | head -1 | tr -d '"' || true)
-          if [ -n "$CHUNK" ]; then
-            test "$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "$BASE_URL$CHUNK")" = "200"
-          fi
-
-          echo "GR Solution production verification passed."
+          [[ -n "$CHUNK" ]]
+          curl -fsS --max-time 20 --resolve "$DOMAIN:443:$ORIGIN" "https://$DOMAIN$CHUNK" > /dev/null
+          echo "Hostinger origin and static asset passed"
