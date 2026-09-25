@@ -26,7 +26,7 @@ export const pageMetadata = {
   pricing: {
     title: 'TV Repair Prices in Delhi NCR | 2026 Price Guide',
     description:
-      'Delhi NCR market prices for TV repair by fault and screen size: backlight, power board, mainboard, T-Con, panel replacement and visit charges.',
+      'Delhi NCR TV repair prices by fault and screen size: backlight, power board, mainboard, T-Con and panel replacement. Diagnosis is free.',
     path: '/pricing',
   },
   reviews: {

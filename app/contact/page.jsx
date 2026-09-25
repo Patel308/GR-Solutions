@@ -105,13 +105,19 @@ export default function ContactPage() {
               <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">LOCATION</span>
               <h2 className="mt-3 text-4xl font-black text-secondary">Locate Our Center</h2>
             </div>
-            <Link href={siteConfig.googleBusinessProfile} target="_blank" className="inline-flex rounded-full border-2 border-primary bg-white px-6 py-3 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
+            <Link href={siteConfig.googleBusinessProfile} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full border-2 border-primary bg-white px-6 py-3 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
               View Google Business Profile
             </Link>
           </div>
+          {/* Pinned to the actual business address rather than the "Delhi NCR"
+              region centroid, so the on-page location matches the NAP and the
+              geo coordinates in the LocalBusiness schema. Uses the keyless
+              address embed, so no Maps API key is needed. */}
           <iframe
-            title="GR Solution service area map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112075.76219313936!2d77.1065171731608!3d28.613766785899995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf0154942ae45%3A0x6b107e33527a7187!2sDelhi%20NCR!5e0!3m2!1sen!2sin!4v1714571983054!5m2!1sen!2sin"
+            title="Map to GR Solution, New Kondli, Delhi"
+            src={`https://www.google.com/maps?q=${encodeURIComponent(
+              `${siteConfig.name}, ${siteConfig.address.streetAddress}, ${siteConfig.address.addressLocality} ${siteConfig.address.postalCode}`,
+            )}&z=16&output=embed`}
             width="100%"
             height="380"
             loading="lazy"

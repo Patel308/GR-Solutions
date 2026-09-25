@@ -12,7 +12,7 @@ export const siteConfig = {
   emailHref: 'mailto:info@grsolution.co.in',
   formEndpoint: 'https://formsubmit.co/ajax/kamleshg9569@gmail.com',
   formNotificationEmail: 'deepeshpatelinfinix@gmail.com',
-  googleBusinessProfile: 'https://share.google/dl2v9Ju9KJjnoN5K6',
+  googleBusinessProfile: 'https://share.google/iyXemxWlZ7gIQwDAr',
   address: {
     streetAddress: 'C-4/102, Pocket C 3, New Kondli, Kondli',
     addressLocality: 'Delhi',
@@ -34,6 +34,13 @@ export const siteConfig = {
     // TODO: Replace with verified GR Solution profiles if available.
     facebook: '',
     instagram: '',
+  },
+  // Business details for /about and the Organization schema. Leave a field
+  // empty until it is confirmed -- empty fields are simply not rendered.
+  aboutDetails: {
+    founderName: '',
+    foundedYear: '', // four-digit year, e.g. '2010'
+    technicianCount: '', // number of technicians, e.g. '4'
   },
   logo: '/images/logo.jpg',
   defaultOgImage: '/images/logo.jpg',

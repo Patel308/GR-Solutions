@@ -133,6 +133,18 @@ export default function LocalityPage({ page }) {
           ))}
           <h3 className="mt-10 text-2xl font-black text-secondary">{page.situations.caption}</h3>
           <ContentTable table={page.situations} />
+          {page.completedJobs?.length ? (
+            <>
+              <h3 className="mt-10 text-2xl font-black text-secondary">Recent jobs in {page.name}</h3>
+              <ContentTable
+                table={{
+                  caption: `Recent TV repair jobs in ${page.name}`,
+                  columns: ['Month', 'TV', 'Symptom', 'What we found', 'Outcome'],
+                  rows: page.completedJobs.map((job) => [job.month, job.tv, job.symptom, job.found, job.outcome]),
+                }}
+              />
+            </>
+          ) : null}
         </div>
       </section>
 

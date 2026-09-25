@@ -14,6 +14,12 @@ import { buildTitle, clampDescription } from './seo';
 //  - GR Solution is an independent repairer. Pages that mention "service
 //    centre" searches say plainly that it is not a brand-authorised centre.
 //  - Measure similarity after any edit; keep every pair under 35%.
+//
+// Completed jobs: each locality accepts an optional `completedJobs` array. Add
+// only real jobs, with the customer's permission, in this shape:
+//   { month: 'Sep 2026', tv: 'Samsung 55" QLED', symptom: 'Sound, no picture',
+//     found: 'Two failed backlight strips', outcome: 'Strips replaced on site' }
+// The "Recent jobs" table renders only when at least one job is present.
 
 const cols = ['Situation', 'What we check first', 'Usual path'];
 
@@ -338,6 +344,59 @@ const localities = [
       {
         question: 'Do you cover homes near Sector 62 as well?',
         answer: 'Yes. Coverage includes Sectors 58, 59, 61, 63, 71 and 73, among others.',
+      },
+    ],
+  },
+  {
+    slug: 'tv-repair-noida-sector-137',
+    name: 'Noida Sector 137',
+    citySlug: 'noida',
+    cityName: 'Noida',
+    keyword: 'TV Repair Noida Sector 137',
+    metaDescription:
+      'LED, QLED and OLED TV repair in Noida Sector 137 and nearby Expressway sectors. Doorstep diagnosis in high-rise societies, estimate before any work.',
+    directAnswer:
+      'GR Solution repairs LED, QLED and OLED TVs in Noida Sector 137 and the neighbouring Expressway sectors, including 128, 132, 134, 135 and 143. Sector 137 is almost entirely high-rise townships, so most repairs are done inside the flat, and the visit is planned around gate entry, tower access and the service lift.',
+    intro:
+      'Sector 137 sits on the Noida–Greater Noida Expressway, with its own stop on the Aqua Line metro. It is a relatively young part of Noida, built up mainly over the last decade and a half as large high-rise townships. That shapes the TVs we see here — mostly recent LED and QLED sets of 50 inches and above — and the way a visit has to be arranged.',
+    areas: ['Sector 137', 'Sector 128', 'Sector 132', 'Sector 134', 'Sector 135', 'Sector 143', 'Expressway societies'],
+    facts: [
+      ['Distance from our base', 'Roughly 20 km from New Kondli via the Expressway'],
+      ['Electricity distributor', 'PVVNL (Paschimanchal Vidyut Vitran Nigam Limited)'],
+      ['Typical housing', 'Large high-rise townships with generator backup'],
+      ['Workshop handling', 'Longer trip, so repairs are done in the flat wherever the fault allows'],
+    ],
+    angleHeading: 'Newer TVs, bigger screens, tower logistics',
+    angle: [
+      'Because the housing here is recent, so are many of the televisions. That makes the warranty check the first step. A large set bought in the last year or two may still be covered by the manufacturer or an extended plan from the retailer, and a covered fault should go to the brand, not to a paid repair. We will tell you if the symptom looks like a warranty case.',
+      'Outside warranty, the pattern is familiar from the rest of the Expressway: power-supply faults triggered at the generator changeover, and backlight or local-dimming problems on 55- to 65-inch panels. Sector 137 is about 20 km from our base, so a large panel is not moved unless the fault genuinely needs a bench. Sending the model number and a short video first usually lets the technician bring the right part.',
+    ],
+    situations: {
+      caption: 'Common situations in Sector 137',
+      columns: cols,
+      rows: [
+        ['Set under two years old develops a fault', 'Warranty or extended-plan cover', 'Manufacturer first if still covered'],
+        ['65" LED dark after a power cut', 'Power supply board and generator changeover', 'Board repair inside the flat'],
+        ['QLED with patchy dark scenes', 'Local-dimming backlight zones', 'Backlight repair, dismounting only if needed'],
+      ],
+    },
+    tips: [
+      'Pre-approve the visit in your township’s visitor app and share the tower and flat number.',
+      'Find the purchase invoice first — recent sets here are often still under warranty.',
+      'If the TV is wall-mounted above 55 inches, say so, so that two technicians are sent.',
+    ],
+    faqs: [
+      {
+        question: 'Do you repair TVs in Noida Sector 137?',
+        answer: 'Yes. We cover Sector 137 and the neighbouring Expressway sectors, including 128, 132, 134, 135 and 143.',
+      },
+      {
+        question: 'Do you repair LED TVs at home in Sector 137 societies?',
+        answer: 'Yes. Most LED faults, including power board and backlight repairs, are done inside the flat, which avoids moving a large panel along the Expressway.',
+      },
+      {
+        question: 'My TV is less than two years old. Should I call you or the brand?',
+        answer: 'Check the warranty first. If the manufacturer or an extended plan still covers the TV, use it. We can help you tell whether the symptom looks like a warranty fault.',
       },
     ],
   },

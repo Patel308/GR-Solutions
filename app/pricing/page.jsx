@@ -8,7 +8,7 @@ import PriceTable from '@/components/PriceTable';
 import { cities } from '@/data/localServicePages';
 import { pageMetadata } from '@/data/pages';
 import {
-  diagnosisCharge,
+  diagnosisPolicy,
   panelPriceBands,
   pricingReviewedOn,
   pricingSources,
@@ -40,8 +40,8 @@ const faqs = [
       'It depends on the failed component. In the Delhi NCR market, software fixes run about ₹500–₹2,500, power board repairs ₹1,000–₹6,500, backlight replacement ₹3,000–₹18,000 and mainboard repairs ₹2,000–₹12,500, depending on screen size. Panel replacement is far more expensive.',
   },
   {
-    question: 'What is the visit charge for TV repair?',
-    answer: `A doorstep TV inspection in the Delhi NCR market typically costs around ₹${diagnosisCharge.amount}, and most providers adjust it against the final bill if the repair goes ahead. Confirm GR Solution’s current visit terms when you book.`,
+    question: 'Is there a charge for TV diagnosis?',
+    answer: `Not with GR Solution — diagnosis is free, and you get a firm estimate before any paid work. For comparison, a doorstep TV inspection in the Delhi NCR market typically costs around ₹${diagnosisPolicy.marketRange}.`,
   },
   {
     question: 'Why can’t you give me an exact price over the phone?',
@@ -123,9 +123,11 @@ export default function PricingPage() {
         <div className="container max-w-5xl">
           <div className="grid gap-6 md:grid-cols-3">
             <article className="rounded-card border border-primary/10 bg-bgLight p-6">
-              <h2 className="text-lg font-black uppercase tracking-wide text-primary">Visit / inspection</h2>
-              <p className="mt-3 text-3xl font-black text-secondary">{'₹'}{diagnosisCharge.amount}</p>
-              <p className="mt-3 text-sm leading-relaxed text-textMuted">{diagnosisCharge.note}</p>
+              <h2 className="text-lg font-black uppercase tracking-wide text-primary">Diagnosis</h2>
+              <p className="mt-3 text-3xl font-black text-secondary">{diagnosisPolicy.label}</p>
+              <p className="mt-3 text-sm leading-relaxed text-textMuted">
+                {diagnosisPolicy.note} Market inspection charges typically run {'₹'}{diagnosisPolicy.marketRange}.
+              </p>
             </article>
             <article className="rounded-card border border-primary/10 bg-bgLight p-6">
               <h2 className="text-lg font-black uppercase tracking-wide text-primary">Most common repair</h2>

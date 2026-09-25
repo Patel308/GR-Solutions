@@ -31,13 +31,15 @@ export const pricingReviewedOn = '2026-09-25';
 export const sizeBands = ['32" - 43"', '44" - 55"', '56" and above'];
 
 /**
- * Doorstep visit / inspection charge in the Delhi NCR market. Urban Company
- * lists a TV check-up from Rs 249 in Delhi NCR, adjusted against the final
- * quote; independent repairers commonly charge up to around Rs 500.
+ * Diagnosis. GR Solution's own policy is a free diagnosis (confirmed by the
+ * business, 2026-09-25). `marketRange` is shown only as a comparison: Urban
+ * Company lists a TV check-up from Rs 249 in Delhi NCR, and independent
+ * repairers commonly charge up to around Rs 500.
  */
-export const diagnosisCharge = {
-  amount: '249 - 500',
-  note: 'Typical Delhi NCR market range for a doorstep TV inspection. Most providers adjust it against the final bill when the repair goes ahead. Confirm the current visit terms when you book.',
+export const diagnosisPolicy = {
+  label: 'Free',
+  note: 'GR Solution diagnoses your TV free of charge and gives you a firm estimate before any paid work begins.',
+  marketRange: '249 - 500',
 };
 
 /**
@@ -142,6 +144,3 @@ export function hasRealPricing(rows) {
   return Array.isArray(rows) && rows.length > 0 && rows.every((row) => row.bands.every(isFilled));
 }
 
-export function hasDiagnosisCharge() {
-  return isFilled(diagnosisCharge.amount);
-}

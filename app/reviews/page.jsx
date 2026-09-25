@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
 import { pageMetadata } from '@/data/pages';
 import { entityIds, siteConfig } from '@/data/siteConfig';
-import { testimonials } from '@/data/testimonials';
+import { googleReviewSnapshot, testimonials } from '@/data/testimonials';
 
 const meta = pageMetadata.reviews;
 const pageUrl = `${siteConfig.url}${meta.path}`;
@@ -94,6 +94,33 @@ export default function ReviewsPage() {
               <i className="fa-solid fa-location-dot" /> Read reviews on Google
             </a>
           ) : null}
+        </div>
+      </section>
+
+      <section className="bg-bgLight py-16">
+        <div className="container">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-4xl font-black text-secondary">On Google</h2>
+            <p className="mt-4 text-5xl font-black text-primary">
+              {googleReviewSnapshot.rating}
+              <span className="ml-2 text-2xl text-amber-500" aria-hidden="true">{'★'}</span>
+            </p>
+            <p className="mt-2 text-lg text-textMuted">
+              from {googleReviewSnapshot.count} Google reviews, as of {googleReviewSnapshot.asOf}
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {googleReviewSnapshot.quotes.map((quote) => (
+              <figure key={quote.text} className="m-0 rounded-card bg-white p-7 shadow-oldMd">
+                <p className="text-amber-500" aria-label={`${quote.stars} out of 5 stars`}>
+                  {'★'.repeat(quote.stars)}
+                  <span className="text-slate-300">{'★'.repeat(5 - quote.stars)}</span>
+                </p>
+                <blockquote className="m-0 mt-3 text-lg leading-relaxed text-textMain">&ldquo;{quote.text}&rdquo;</blockquote>
+                <figcaption className="mt-4 text-sm font-bold text-textMuted">Google review</figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
 

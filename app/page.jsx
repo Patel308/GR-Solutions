@@ -73,7 +73,7 @@ const whyChooseBenefits = [
   },
   {
     title: 'Transparent Pricing',
-    text: 'Fixed diagnostic fees and upfront quotes before repair.',
+    text: 'Free diagnosis and an upfront quote before any repair.',
   },
 ];
 

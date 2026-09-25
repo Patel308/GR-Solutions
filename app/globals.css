@@ -199,9 +199,14 @@ p {
     }
 }
 
+/* Phones: the container previously combined a 90% width with Tailwind's 5%
+   side padding, leaving double gutters (36px each side on a 360px screen).
+   Use a single, standard 16px gutter instead. */
 @media (max-width: 640px) {
     .container {
-        width: min(90%, 1440px);
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
