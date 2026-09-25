@@ -25,8 +25,8 @@ export default function ContentTable({ table }) {
             </tr>
           </thead>
           <tbody>
-            {table.rows.map((row) => (
-              <tr key={row[0]} className="odd:bg-white even:bg-bgLight">
+            {table.rows.map((row, rowIndex) => (
+              <tr key={`${row[0]}-${rowIndex}`} className="odd:bg-white even:bg-bgLight">
                 {row.map((cell, i) => (
                   <td key={`${row[0]}-${i}`} className={`${tdClass} ${i === 0 ? 'font-black text-secondary' : ''}`}>
                     {cell}

@@ -116,7 +116,7 @@ export const costGuideArticles = [
       {
         question: 'Is there a charge for the technician visit?',
         answer:
-          'In the Delhi NCR market a doorstep TV inspection typically costs around ₹249 to ₹500, and most providers adjust it against the final bill if the repair goes ahead. Confirm GR Solution’s current visit terms when you book.',
+          'No. GR Solution’s diagnosis is free, and you receive a firm estimate before any paid work. For comparison, a doorstep TV inspection in the Delhi NCR market typically costs around ₹249 to ₹500.',
       },
       {
         question: 'Why is my TV repair quote higher than my neighbour’s?',
@@ -235,7 +235,7 @@ export const costGuideArticles = [
       {
         question: 'What are typical TV technician charges in Noida?',
         answer:
-          'Doorstep inspection in the NCR market typically runs about ₹249 to ₹500 and is usually adjusted against the repair bill. Repair labour is then quoted as part of the estimate once the fault is identified, rather than billed by the hour. Confirm current visit terms when booking.',
+          'GR Solution’s diagnosis is free. In the wider NCR market, doorstep inspection typically runs about ₹249 to ₹500. Repair labour is quoted as part of the estimate once the fault is identified, rather than billed by the hour.',
       },
       {
         question: 'Do you repair TVs at home in Noida high-rises?',
@@ -338,7 +338,7 @@ export const costGuideArticles = [
       {
         question: 'Do you charge extra for travel to Greater Noida?',
         answer:
-          'Visit terms are confirmed when you book. Tell us your sector so the visit can be scheduled realistically. The repair price itself is set by the failed component, not by distance.',
+          'Diagnosis is free. Tell us your sector so the visit can be scheduled realistically. The repair price itself is set by the failed component, not by distance.',
       },
       {
         question: 'Can you tell me the cost over the phone?',

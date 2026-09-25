@@ -22,3 +22,17 @@ export const testimonials = [
     image: '/assets/customer_testimonial_male_2_1769457083041.webp',
   },
 ];
+
+// Google Business Profile snapshot. Quotes are copied verbatim from public
+// Google reviews (reviewer names withheld). Update `asOf` whenever the figures
+// are refreshed -- a stale rating is worse than none. Not marked up as schema.
+export const googleReviewSnapshot = {
+  rating: '4.9',
+  count: 9,
+  asOf: 'September 2026',
+  quotes: [
+    { text: 'Excellent and Affordable Service....there machanics are very Friendly', stars: 5 },
+    { text: 'Very professional team and affordable price.', stars: 5 },
+    { text: 'He was quite professional to work with helping us repair our plasma TV display', stars: 4 },
+  ],
+};
