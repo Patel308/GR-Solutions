@@ -11,12 +11,62 @@ import {
   getLocalPagesByService,
   getLocalServicePageBySlug,
   localServicePages,
+  getServiceIntentTopics,
+  getServiceLocalProfile,
 } from '@/data/localServicePages';
 import {
   brandServicePages,
   getBrandServicePageBySlug,
 } from '@/data/brandServicePages';
-import { siteConfig } from '@/data/siteConfig';
+import { siteConfig, entityIds } from '@/data/siteConfig';
+import { getArticlesLinkingTo } from '@/data/blogArticles';
+import ContentTable from '@/components/ContentTable';
+import LocalityPage from '@/components/LocalityPage';
+import { getLocalityPageBySlug, getLocalityPagesByCity, localityPages } from '@/data/localityPages';
+
+// Surfaces the in-depth guides that already point at this page, so link equity
+// flows in both directions instead of only blog -> services.
+function RelatedGuides({ path, cityName }) {
+  const articles = getArticlesLinkingTo(path);
+  if (!articles.length) return null;
+
+  return (
+    <section className="py-20">
+      <div className="container">
+        <div className="mb-10">
+          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
+            IN-DEPTH GUIDES
+          </span>
+          <h2 className="mt-5 text-3xl font-black text-secondary">
+            Read Before You Book{cityName ? ` in ${cityName}` : ''}
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
+            Detailed cost and diagnosis guides covering what actually drives the price and which
+            faults are worth repairing.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {articles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/blog/${article.slug}`}
+              className="flex flex-col rounded-card border border-black/5 bg-white p-7 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg"
+            >
+              <span className="text-xs font-black uppercase tracking-wide text-primary">
+                {article.category}
+              </span>
+              <h3 className="mt-3 text-xl font-black leading-tight text-secondary">{article.title}</h3>
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-textMuted">
+                {article.metaDescription}
+              </p>
+              <span className="mt-4 font-black text-primary">Read the guide &rarr;</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 const genericProcess = [
   { icon: 'fa-solid fa-calendar-check', title: 'Book Service Visit', text: 'Call, WhatsApp or submit the enquiry form with your repair requirement.' },
@@ -26,11 +76,26 @@ const genericProcess = [
 ];
 
 export function generateStaticParams() {
-  return [...services, ...localServicePages, ...brandServicePages].map((page) => ({ slug: page.slug }));
+  return [...services, ...localServicePages, ...localityPages, ...brandServicePages].map((page) => ({ slug: page.slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const localityPage = getLocalityPageBySlug(slug);
+  if (localityPage) {
+    return {
+      title: localityPage.metaTitle,
+      description: localityPage.metaDescription,
+      alternates: { canonical: `/services/${localityPage.slug}` },
+      openGraph: {
+        title: localityPage.metaTitle,
+        description: localityPage.metaDescription,
+        url: `/services/${localityPage.slug}`,
+        images: [localityPage.image],
+      },
+    };
+  }
+
   const localPage = getLocalServicePageBySlug(slug);
   if (localPage) {
     return {
@@ -79,6 +144,9 @@ export async function generateMetadata({ params }) {
 
 export default async function ServiceDetailPage({ params }) {
   const { slug } = await params;
+  const localityPage = getLocalityPageBySlug(slug);
+  if (localityPage) return <LocalityPage page={localityPage} />;
+
   const localPage = getLocalServicePageBySlug(slug);
   if (localPage) return <LocalServicePage page={localPage} />;
 
@@ -164,6 +232,13 @@ export default async function ServiceDetailPage({ params }) {
           <div>
             <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">{service.title.toUpperCase()}</span>
             <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">{service.h1}</h1>
+            {/* Extractable direct answer, matching the pattern already used on
+                the local and brand pages. Answer engines lift this block. */}
+            {service.directAnswer ? (
+              <p className="mt-6 rounded-2xl border border-primary/10 bg-bgLight p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
+                {service.directAnswer}
+              </p>
+            ) : null}
             <p className="mt-6 text-lg leading-relaxed text-textMuted">{service.fullDescription}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href={siteConfig.phoneHref} data-call-location="service_hero_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
@@ -274,6 +349,10 @@ export default async function ServiceDetailPage({ params }) {
           </div>
         </div>
       </section>
+
+      <ServiceFaultsSection serviceSlug={service.slug} serviceTitle={service.title} cityPages={cityPages} />
+
+      <RelatedGuides path={`/services/${service.slug}`} />
 
       {/* CTA */}
       <PageCTA serviceName={service.title} />
@@ -434,6 +513,14 @@ function LocalServicePage({ page }) {
         </div>
       </section>
 
+      <LocalAngleSection content={page.localContent} />
+      <CityFactsSection
+        facts={page.cityFacts}
+        cityName={page.cityName}
+        focus={page.isGenericTvRepair ? null : cityFactFocus[page.parentServiceSlug]}
+      />
+      {page.isGenericTvRepair ? <LocalityLinks citySlug={page.citySlug} cityName={page.cityName} /> : null}
+
       <section className="bg-bgLight py-20">
         <div className="container">
           <div className="mb-12 text-center">
@@ -534,6 +621,11 @@ function LocalServicePage({ page }) {
           <article className="rounded-card bg-white p-8 shadow-oldMd">
             <h2 className="text-2xl font-black text-secondary">Cost Guidance</h2>
             <p className="mt-4 leading-relaxed text-textMuted">{page.pricing}</p>
+            {page.costGuideHref ? (
+              <Link href={page.costGuideHref} className="mt-4 inline-flex font-black text-primary hover:text-secondary">
+                Full {page.cityName} TV repair cost guide &rarr;
+              </Link>
+            ) : null}
           </article>
           <article className="rounded-card bg-white p-8 shadow-oldMd">
             <h2 className="text-2xl font-black text-secondary">Quick Support</h2>
@@ -566,6 +658,8 @@ function LocalServicePage({ page }) {
           </div>
         </div>
       </section>
+
+      <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {(page.tvTypesCovered?.length > 0 || page.brandCityLinks?.length > 0) && (
         <section className="bg-bgLight py-20">
@@ -892,6 +986,8 @@ function BrandServicePage({ page }) {
         </div>
       </section>
 
+      <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
+
       {/* FAQ */}
       <section className="bg-bgLight py-20">
         <div className="container">
@@ -911,6 +1007,183 @@ function BrandServicePage({ page }) {
         description={`Call GR Solution for doorstep diagnosis, transparent repair guidance and ${page.brand} TV service support across ${page.cityName}.`}
       />
     </main>
+  );
+}
+
+// The full service-level explanations. These used to be repeated verbatim on
+// all four city pages; they now live once, here on the parent service page, and
+// each city page carries the keyword label with a short summary.
+function ServiceFaultsSection({ serviceSlug, serviceTitle, cityPages }) {
+  const topics = getServiceIntentTopics(serviceSlug);
+  const profile = getServiceLocalProfile(serviceSlug);
+  if (!topics.length || !profile) return null;
+
+  return (
+    <section className="bg-bgLight py-20">
+      <div className="container">
+        <div className="mb-12 max-w-4xl">
+          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
+            FAULTS EXPLAINED
+          </span>
+          <h2 className="mt-5 text-4xl font-black text-secondary">{serviceTitle} Faults Explained</h2>
+          <p className="mt-5 text-lg leading-relaxed text-textMuted">{profile.diagnosticDetail}</p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {topics.map((topic) => (
+            <article key={topic.label} className="rounded-card border border-primary/10 bg-white p-7 shadow-oldMd">
+              <h3 className="text-xl font-black leading-tight text-secondary">{topic.label}</h3>
+              <p className="mt-4 leading-relaxed text-textMuted">{topic.text}</p>
+            </article>
+          ))}
+        </div>
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          <article className="rounded-card bg-white p-8 shadow-oldMd">
+            <h3 className="text-2xl font-black text-secondary">Safe handling</h3>
+            <p className="mt-4 leading-relaxed text-textMuted">{profile.handlingCare}</p>
+          </article>
+          <article className="rounded-card bg-white p-8 shadow-oldMd">
+            <h3 className="text-2xl font-black text-secondary">After-repair checks</h3>
+            <p className="mt-4 leading-relaxed text-textMuted">
+              After an approved repair, the checks include {profile.qualityChecks.join(', ')}, confirming the TV
+              behaves normally under real viewing conditions rather than simply turning on.
+            </p>
+          </article>
+        </div>
+        {cityPages?.length ? (
+          <div className="mt-12 flex flex-wrap gap-3">
+            {cityPages.map((item) => (
+              <Link
+                key={item.slug}
+                href={`/services/${item.slug}`}
+                className="rounded-full border border-primary/20 bg-white px-5 py-3 font-black text-primary transition hover:bg-primary hover:text-white"
+              >
+                {item.keyword}
+              </Link>
+            ))}
+          </div>
+        ) : null}
+      </div>
+    </section>
+  );
+}
+
+// Hand-written local angle for this exact service and city (data/serviceCityContent.js).
+function LocalAngleSection({ content }) {
+  if (!content) return null;
+
+  return (
+    <section className="py-20">
+      <div className="container max-w-5xl">
+        <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
+          LOCAL INSIGHT
+        </span>
+        <h2 className="mt-5 text-3xl font-black leading-tight text-secondary md:text-4xl">{content.heading}</h2>
+        {content.paragraphs.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="mt-5 text-lg leading-relaxed text-textMuted">
+            {paragraph}
+          </p>
+        ))}
+        {content.situations ? (
+          <>
+            <h3 className="mt-10 text-2xl font-black text-secondary">{content.situations.caption}</h3>
+            <ContentTable table={content.situations} />
+          </>
+        ) : null}
+      </div>
+    </section>
+  );
+}
+
+// City hubs link down to their dedicated locality pages.
+function LocalityLinks({ citySlug, cityName }) {
+  const items = getLocalityPagesByCity(citySlug);
+  if (!items.length) return null;
+
+  return (
+    <section className="py-16">
+      <div className="container">
+        <h2 className="text-3xl font-black text-secondary">{cityName} areas with their own guide</h2>
+        <p className="mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
+          Local detail for the parts of {cityName} we are asked about most: housing, access, electricity supply and
+          how a visit is planned there.
+        </p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((item) => (
+            <Link
+              key={item.slug}
+              href={`/services/${item.slug}`}
+              className="group flex items-center justify-between gap-4 rounded-2xl border border-primary/10 bg-bgLight px-5 py-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:bg-white hover:text-primary"
+            >
+              <span>{item.title}</span>
+              <i className="fa-solid fa-arrow-right text-sm text-primary" />
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Which city fact matters most for each TV type. The city hub shows every fact
+// and the locality table; each service page shows only its most relevant fact,
+// so six pages in the same city do not repeat the same block.
+const cityFactFocus = {
+  'led-tv-repair': { key: 'power', title: 'Power supply and your TV' },
+  'oled-qled-tv-repair': { key: 'housing', title: 'Homes and handling' },
+  'lcd-tv-repair': { key: 'baseNote', title: 'Visit planning' },
+  'plasma-tv-repair': { key: 'housing', title: 'Homes and handling' },
+  'curved-tv-repair': { key: 'baseNote', title: 'Visit planning' },
+};
+
+// Verifiable facts about the city itself (data/cityLocalFacts.js).
+function CityFactsSection({ facts, cityName, focus }) {
+  if (!facts) return null;
+
+  if (focus) {
+    return (
+      <section className="bg-bgLight py-16">
+        <div className="container max-w-5xl">
+          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
+            {cityName.toUpperCase()} AT A GLANCE
+          </span>
+          <h2 className="mt-5 text-3xl font-black leading-tight text-secondary">
+            {focus.title} in {cityName}
+          </h2>
+          <p className="mt-5 text-lg leading-relaxed text-textMuted">{facts[focus.key]}</p>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="bg-bgLight py-20">
+      <div className="container">
+        <div className="max-w-4xl">
+          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
+            {cityName.toUpperCase()} AT A GLANCE
+          </span>
+          <h2 className="mt-5 text-3xl font-black leading-tight text-secondary md:text-4xl">{facts.heading}</h2>
+        </div>
+        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+          <article className="rounded-card bg-white p-7 shadow-oldMd">
+            <h3 className="text-xl font-black text-secondary">Visit planning</h3>
+            <p className="mt-4 leading-relaxed text-textMuted">{facts.baseNote}</p>
+          </article>
+          <article className="rounded-card bg-white p-7 shadow-oldMd">
+            <h3 className="text-xl font-black text-secondary">Power supply and your TV</h3>
+            <p className="mt-4 leading-relaxed text-textMuted">{facts.power}</p>
+          </article>
+          <article className="rounded-card bg-white p-7 shadow-oldMd">
+            <h3 className="text-xl font-black text-secondary">Homes and handling</h3>
+            <p className="mt-4 leading-relaxed text-textMuted">{facts.housing}</p>
+          </article>
+        </div>
+        <div className="mt-10 max-w-5xl">
+          <h3 className="text-2xl font-black text-secondary">{facts.localityTable.caption}</h3>
+          <ContentTable table={facts.localityTable} />
+        </div>
+      </div>
+    </section>
   );
 }
 

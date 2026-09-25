@@ -6,10 +6,24 @@ import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
 import FAQ from '@/components/FAQ';
 import { blogArticles, blogAuthor, getBlogArticleBySlug } from '@/data/blogArticles';
-import { siteConfig } from '@/data/siteConfig';
+import { siteConfig, entityIds } from '@/data/siteConfig';
+import PriceTable from '@/components/PriceTable';
+import ContentTable from '@/components/ContentTable';
 
 export function generateStaticParams() {
   return blogArticles.map((article) => ({ slug: article.slug }));
+}
+
+// Dates are rendered in a fixed en-IN format so the static output stays
+// identical regardless of where the build runs.
+function formatDate(value) {
+  if (!value) return '';
+  return new Date(`${value}T00:00:00Z`).toLocaleDateString('en-IN', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
 }
 
 export async function generateMetadata({ params }) {
@@ -36,10 +50,14 @@ export default async function BlogArticlePage({ params }) {
   if (!article) notFound();
 
   const pageUrl = `${siteConfig.url}/blog/${article.slug}`;
+  // The byline is a team, not an individual, so it is typed as an Organization.
+  // Schema.org allows either for `author`; claiming Person for a group name is
+  // the kind of mismatch that undermines E-E-A-T rather than supporting it.
   const authorSchema = {
-    '@type': 'Person',
+    '@type': 'Organization',
     name: blogAuthor.name,
     url: `${siteConfig.url}${blogAuthor.profileUrl}`,
+    ...(blogAuthor.linkedinUrl ? { sameAs: [blogAuthor.linkedinUrl] } : {}),
   };
 
   return (
@@ -62,16 +80,13 @@ export default async function BlogArticlePage({ params }) {
             description: article.metaDescription,
             image: `${siteConfig.url}${article.image}`,
             url: pageUrl,
+            datePublished: article.publishedAt,
+            dateModified: article.updatedAt || article.publishedAt,
             author: authorSchema,
-            publisher: {
-              '@type': 'Organization',
-              name: siteConfig.name,
-              logo: {
-                '@type': 'ImageObject',
-                url: `${siteConfig.url}${siteConfig.logo}`,
-              },
-            },
-            mainEntityOfPage: pageUrl,
+            publisher: { '@id': entityIds.organization },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+            inLanguage: 'en-IN',
+            isPartOf: { '@id': entityIds.website },
           },
           {
             '@context': 'https://schema.org',
@@ -107,12 +122,27 @@ export default async function BlogArticlePage({ params }) {
             <p className="mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
               {article.directAnswer}
             </p>
-            <div className="mt-6 text-sm font-bold text-textMuted">
-              By {blogAuthor.name}
-              <span className="mx-2">|</span>
+            <div className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-bold text-textMuted">
+              <span>
+                By{' '}
+                <Link href={blogAuthor.profileUrl} className="text-primary hover:text-secondary">
+                  {blogAuthor.name}
+                </Link>
+              </span>
+              <span aria-hidden="true">|</span>
               <span>{blogAuthor.role}</span>
-              <span className="mx-2">|</span>
-              <span>LinkedIn placeholder: {blogAuthor.linkedinUrl}</span>
+              <span aria-hidden="true">|</span>
+              <span>
+                Published <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
+              </span>
+              {article.updatedAt && article.updatedAt !== article.publishedAt ? (
+                <>
+                  <span aria-hidden="true">|</span>
+                  <span>
+                    Last reviewed <time dateTime={article.updatedAt}>{formatDate(article.updatedAt)}</time>
+                  </span>
+                </>
+              ) : null}
             </div>
           </div>
           <Image src={article.image} alt={`${article.h1} guide by GR Solution`} width={680} height={500} className="h-[min(520px,52vw)] min-h-[340px] w-full rounded-3xl object-cover shadow-cardPro" priority />
@@ -127,7 +157,24 @@ export default async function BlogArticlePage({ params }) {
               {article.sections.map((section) => (
                 <section key={section.heading}>
                   <h2 className="text-3xl font-black text-secondary">{section.heading}</h2>
-                  <p className="mt-4 text-lg leading-relaxed text-textMuted">{section.body}</p>
+                  {section.body ? (
+                    <p className="mt-4 text-lg leading-relaxed text-textMuted">{section.body}</p>
+                  ) : null}
+                  {section.table ? <ContentTable table={section.table} /> : null}
+                  {section.priceTable ? <PriceTable {...section.priceTable} /> : null}
+                  {section.list?.length ? (
+                    <ul className="mt-5 grid gap-3">
+                      {section.list.map((item) => (
+                        <li key={item} className="flex gap-3 text-lg leading-relaxed text-textMuted">
+                          <span className="mt-2 size-2 shrink-0 rounded-full bg-primary" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  {section.closing ? (
+                    <p className="mt-5 text-lg leading-relaxed text-textMuted">{section.closing}</p>
+                  ) : null}
                 </section>
               ))}
             </div>

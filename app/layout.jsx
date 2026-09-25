@@ -1,10 +1,12 @@
 import './globals.css';
+// Self-hosted icon subset (replaces the render-blocking cdnjs Font Awesome CSS).
+import './icons.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import JsonLd from '@/components/JsonLd';
 import CallTracking from '@/components/CallTracking';
-import { siteConfig } from '@/data/siteConfig';
+import { siteConfig, entityIds, sameAsProfiles } from '@/data/siteConfig';
 
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -35,12 +37,23 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#0d47a1',
+};
+
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': entityIds.organization,
   name: siteConfig.name,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/images/logo.jpg`,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${siteConfig.url}${siteConfig.logo}`,
+  },
+  ...(sameAsProfiles.length ? { sameAs: sameAsProfiles } : {}),
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: siteConfig.phone,
@@ -52,8 +65,11 @@ const organizationSchema = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'ProfessionalService'],
+  '@id': entityIds.localBusiness,
+  parentOrganization: { '@id': entityIds.organization },
+  ...(sameAsProfiles.length ? { sameAs: sameAsProfiles } : {}),
   name: siteConfig.name,
-  image: `${siteConfig.url}/images/logo.jpg`,
+  image: `${siteConfig.url}${siteConfig.logo}`,
   url: siteConfig.url,
   telephone: siteConfig.phone,
   email: siteConfig.email,
@@ -82,17 +98,16 @@ const localBusinessSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': entityIds.website,
   name: siteConfig.name,
   url: siteConfig.url,
+  publisher: { '@id': entityIds.organization },
+  inLanguage: 'en-IN',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-      </head>
+    <html lang="en-IN">
       <body>
         <JsonLd data={[organizationSchema, localBusinessSchema, websiteSchema]} />
         <Header />

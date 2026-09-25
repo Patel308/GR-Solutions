@@ -8,6 +8,9 @@ export const metadata = {
   title: pageMetadata.landing.title,
   description: pageMetadata.landing.description,
   alternates: { canonical: '/landing' },
+  // Paid/conversion landing page: duplicates /contact intent with no unique
+  // organic value, so it is kept out of the index and out of the sitemap.
+  robots: { index: false, follow: true },
   openGraph: { title: pageMetadata.landing.title, description: pageMetadata.landing.description, url: '/landing' },
 };
 

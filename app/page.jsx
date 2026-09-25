@@ -9,6 +9,7 @@ import BookingForm from '@/components/BookingForm';
 import { services } from '@/data/services';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
+import { brands } from '@/data/brandServicePages';
 
 export const metadata = {
   title: pageMetadata.home.title,
@@ -57,7 +58,9 @@ const faqs = [
   },
 ];
 
-const brandNames = ['SAMSUNG', 'SONY', 'LG', 'XIAOMI', 'ONEPLUS', 'VU', 'TOSHIBA', 'PANASONIC'];
+// Kept in sync with data/brandServicePages.js -- every brand shown here has a
+// real brand page behind it, and every brand page is represented here.
+const brandNames = brands.map((brand) => brand.displayName.toUpperCase());
 
 const whyChooseBenefits = [
   {
@@ -535,11 +538,11 @@ export default function HomePage() {
             </p>
             <div style={{ display: 'flex', gap: '3rem', marginTop: '2.5rem' }}>
               <div>
-                <h2 style={{ marginBottom: 0, color: 'var(--secondary)' }}>15+</h2>
+                <span style={{ fontSize: '2rem', fontWeight: 800, display: 'block', color: 'var(--secondary)' }}>15+</span>
                 <span style={{ color: 'var(--text-muted)' }}>Years Experience</span>
               </div>
               <div>
-                <h2 style={{ marginBottom: 0, color: 'var(--secondary)' }}>15,000+</h2>
+                <span style={{ fontSize: '2rem', fontWeight: 800, display: 'block', color: 'var(--secondary)' }}>15,000+</span>
                 <span style={{ color: 'var(--text-muted)' }}>Happy Customers</span>
               </div>
             </div>

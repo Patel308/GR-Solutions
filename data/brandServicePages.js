@@ -1,4 +1,5 @@
 import { cities } from './localServicePages';
+import { buildTitle, clampDescription } from './seo';
 
 const siteContactAddress = 'C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096';
 
@@ -242,6 +243,29 @@ export const brands = [
     decisionGuidance:
       'Repair is usually the sensible choice for Hisense TVs when backlight, board, software or HDMI issues are present and the panel itself is intact. Replacement is worth considering if the panel develops physical damage or if board-level faults recur despite an earlier repair.',
   },
+  {
+    slug: 'toshiba',
+    slugSegment: 'toshiba-tv-repair',
+    name: 'Toshiba',
+    displayName: 'Toshiba',
+    image: '/images/service_tv.webp',
+    techNote: 'LED, UHD and QLED display lines, with smart platforms that vary by model generation',
+    panelTypes: 'LED, UHD and QLED',
+    commonIssues: [
+      'TV powering on with sound but no visible picture',
+      'Backlight failure producing a dark or unevenly lit screen',
+      'Smart platform stuck on the boot logo or failing to reach the home screen',
+      'Apps crashing, buffering or refusing to update on the smart interface',
+      'HDMI or input source not detected when a device is connected',
+      'Power board faults causing no power or a blinking standby light',
+      'Panel lines, patches or color banding across the display',
+      'Remote pairing problems on models that use a paired remote',
+    ],
+    repairGuidance:
+      'Toshiba televisions sold in India have shipped with different smart platforms across model generations, so the first step is confirming the exact model and which interface it runs before assuming a software or hardware cause. No-display and shutdown complaints are traced through the power board, backlight and mainboard in the usual order, because these sections behave much like other LED and QLED sets. Boot-loop, app-crash and remote-pairing symptoms are treated as software-side issues first, since a platform reset or firmware update frequently clears them without opening the unit.',
+    decisionGuidance:
+      'Repair is usually practical for a Toshiba TV when the glass and panel are intact and the fault traces to the power board, backlight, mainboard or smart platform software. Replacement becomes the better option when the panel is cracked or water damaged, when parts for an older model generation are no longer practical to source, or when the estimate approaches the cost of a comparable new set.',
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -373,6 +397,7 @@ const brandTechnologyLabels = {
   vu: 'Vu Smart TV Repair',
   philips: 'Philips Android TV Repair',
   hisense: 'Hisense Smart TV Repair',
+  toshiba: 'Toshiba Smart TV Repair',
 };
 
 const brandDiagnosticLabels = {
@@ -386,6 +411,7 @@ const brandDiagnosticLabels = {
   vu: 'Vu TV Backlight Repair',
   philips: 'Philips Ambilight TV Repair',
   hisense: 'Hisense TV No Display Repair',
+  toshiba: 'Toshiba TV Boot Loop Repair',
 };
 
 function makeSupportingTopics(brand, city) {
@@ -423,8 +449,8 @@ export const brandServicePages = brands.flatMap((brand) =>
       cityName: city.name,
       title,
       h1,
-      metaTitle: `${brand.displayName} TV Repair ${city.name} | Doorstep Service | GR Solution`,
-      metaDescription: `Need ${brand.displayName} TV repair in ${city.name}? GR Solution provides doorstep inspection and repair support for ${brand.displayName} TV issues across ${city.name} and nearby NCR areas.`,
+      metaTitle: buildTitle(`${brand.displayName} TV Repair ${city.name}`, 'Doorstep Service'),
+      metaDescription: clampDescription(`${brand.displayName} TV repair in ${city.name}. GR Solution provides doorstep inspection and repair support for ${brand.displayName} TV issues across ${city.name} and nearby NCR areas.`),
       image: brand.image,
       heroIntro: `Need ${keyword}? GR Solution provides doorstep inspection and repair support for ${brand.displayName} ${brand.panelTypes} and Smart TV issues across ${city.name} and nearby NCR areas.`,
       directAnswer: `GR Solution offers doorstep ${brand.displayName} TV repair service in ${city.name}, covering ${brand.techNote}. A technician inspects the reported issue and shares a clear, inspection-based estimate before any repair work begins.`,

@@ -1,6 +1,8 @@
 export const services = [
   {
     slug: 'led-tv-repair',
+    directAnswer:
+      'GR Solution repairs LED televisions across Delhi NCR for backlight failure, power board faults, no-picture symptoms, sound problems and HDMI issues. A technician inspects the set at your home, identifies which component actually failed, and gives you a firm estimate before any paid work begins.',
     title: 'LED TV Repair',
     metaTitle: 'LED TV Repair Delhi NCR | Doorstep Diagnosis | GR Solution',
     metaDescription:
@@ -27,8 +29,10 @@ export const services = [
   },
   {
     slug: 'oled-qled-tv-repair',
+    directAnswer:
+      'GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board, power, software and display faults. OLED and QLED panels are inspected carefully before any diagnosis, because panel-level work on premium sets is expensive and is often mistaken for a cheaper board or backlight fault.',
     title: 'OLED/QLED TV Repair',
-    metaTitle: 'OLED/QLED TV Repair Delhi NCR | Premium TV Diagnosis | GR Solution',
+    metaTitle: 'OLED/QLED TV Repair Delhi NCR | GR Solution',
     metaDescription:
       'Expert OLED and QLED TV repair support in Delhi NCR for display, color, brightness, burn-in symptoms, power and smart TV faults.',
     h1: 'OLED/QLED TV Repair Experts',
@@ -53,8 +57,10 @@ export const services = [
   },
   {
     slug: 'lcd-tv-repair',
+    directAnswer:
+      'GR Solution repairs LCD televisions across Delhi NCR for no-display, dim picture, power board, sound and input faults. On older LCD sets the technician also checks part availability and TV condition, then tells you honestly whether repair or replacement is the better decision.',
     title: 'LCD TV Repair',
-    metaTitle: 'LCD TV Repair Delhi NCR | Screen, Sound & Power Fix | GR Solution',
+    metaTitle: 'LCD TV Repair Delhi NCR | Screen & Power Fix | GR',
     metaDescription:
       'LCD TV repair in Delhi NCR for no display, sound issues, power faults, lines, remote/input problems and ageing TV diagnosis.',
     h1: 'Reliable LCD TV Repair',
@@ -79,8 +85,10 @@ export const services = [
   },
   {
     slug: 'plasma-tv-repair',
+    directAnswer:
+      'GR Solution inspects and repairs plasma televisions across Delhi NCR for no-power, heat-related shutdown, sound-without-picture and sustain board faults. Because plasma sets are older, part availability is confirmed before a repair is recommended, so you are not charged for work that cannot be completed.',
     title: 'Plasma TV Repair',
-    metaTitle: 'Plasma TV Repair Delhi NCR | Power & Display Diagnosis | GR Solution',
+    metaTitle: 'Plasma TV Repair Delhi NCR | GR Solution',
     metaDescription:
       'Plasma TV repair support in Delhi NCR for older plasma display, sound, heating, power board and no-picture issues.',
     h1: 'Professional Plasma TV Repair',
@@ -105,8 +113,10 @@ export const services = [
   },
   {
     slug: 'curved-tv-repair',
+    directAnswer:
+      'GR Solution repairs curved televisions across Delhi NCR for display distortion, black screen, sound, power and panel-related faults. Curved panels are handled carefully during inspection and mounting checks, because panel stress can worsen an otherwise repairable display fault.',
     title: 'Curved TV Repair',
-    metaTitle: 'Curved TV Repair Delhi NCR | Display & Panel Diagnosis | GR Solution',
+    metaTitle: 'Curved TV Repair Delhi NCR | GR Solution',
     metaDescription:
       'Curved TV repair in Delhi NCR for display distortion, no picture, sound, power, panel handling and mounting-related issues.',
     h1: 'Curved TV Repair Service',

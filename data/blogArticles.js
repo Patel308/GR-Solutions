@@ -2,12 +2,18 @@ export const blogAuthor = {
   name: 'GR Solution Editorial Team',
   role: 'TV repair guidance team',
   profileUrl: '/about',
-  linkedinUrl: '#linkedin-profile-to-be-added',
+  // TODO: add a verified LinkedIn/profile URL, then include it in sameAs below.
+  linkedinUrl: '',
 };
 
-export const blogArticles = [
+import { costGuideArticles } from './costGuides';
+import { symptomGuideArticles } from './symptomGuides';
+
+const coreArticles = [
   {
     slug: 'led-tv-screen-replacement-cost-delhi',
+    publishedAt: '2026-07-04',
+    updatedAt: '2026-09-25',
     title: 'LED TV Screen Replacement Cost Delhi',
     metaTitle: 'LED TV Screen Replacement Cost Delhi | GR Solution',
     metaDescription:
@@ -67,6 +73,8 @@ export const blogArticles = [
   },
   {
     slug: 'led-tv-panel-repair-delhi',
+    publishedAt: '2026-07-04',
+    updatedAt: '2026-09-25',
     title: 'LED TV Panel Repair Delhi',
     metaTitle: 'LED TV Panel Repair Delhi | Lines & Display Guide',
     metaDescription:
@@ -122,6 +130,8 @@ export const blogArticles = [
   },
   {
     slug: 'led-tv-screen-repair-delhi-ncr',
+    publishedAt: '2026-07-04',
+    updatedAt: '2026-09-25',
     title: 'LED TV Screen Repair Delhi NCR',
     metaTitle: 'LED TV Screen Repair Delhi NCR | GR Solution',
     metaDescription:
@@ -181,6 +191,8 @@ export const blogArticles = [
   },
   {
     slug: 'lcd-tv-repair-cost-delhi-ncr',
+    publishedAt: '2026-07-14',
+    updatedAt: '2026-09-25',
     title: 'LCD TV Repair Cost Delhi NCR',
     metaTitle: 'LCD TV Repair Cost Delhi NCR | GR Solution',
     metaDescription:
@@ -253,6 +265,26 @@ export const blogArticles = [
     ],
   },
 ];
+
+/**
+ * Reverse index of `internalLinks`: given a service page path, return the guides
+ * that already link to it.
+ *
+ * Link equity previously flowed only one way -- articles linked out to service
+ * pages, but no service page linked back, leaving every article on a single
+ * inbound link from /blog. Inverting the existing data keeps the relationship
+ * declared in one place instead of duplicating it on both sides.
+ */
+// Cost guides live in their own file because they carry tables and price data.
+// Newest first, so /blog leads with the freshest material.
+export const blogArticles = [...costGuideArticles, ...symptomGuideArticles, ...coreArticles];
+
+export function getArticlesLinkingTo(path) {
+  if (!path) return [];
+  return blogArticles.filter((article) =>
+    (article.internalLinks || []).some((link) => link.href === path),
+  );
+}
 
 export function getBlogArticleBySlug(slug) {
   return blogArticles.find((article) => article.slug === slug);

@@ -32,14 +32,33 @@
 
 html {
     scroll-behavior: smooth;
+    /* The header is sticky at ~96px, so anchor targets must be offset or they
+       land underneath it. */
+    scroll-padding-top: 6.5rem;
 }
 
 body {
     margin: 0;
     background: var(--white);
     color: var(--text-main);
-    font-family: var(--font-inter), Inter, Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* The infinite marquees below use `width: max-content`, which overflows the
+   viewport by design. Clipping is scoped to those tracks rather than applied to
+   `body`, because `overflow-x` on `body` can break `position: sticky`
+   descendants -- and the site header is sticky. */
+.logo-carousel-container,
+.specialty-carousel-next {
+    overflow-x: clip;
+}
+
+/* Grid children default to `min-width: auto`, so a wide table inside one (even
+   inside an overflow-x-auto wrapper) stretches the whole grid column past the
+   viewport and causes horizontal page scroll on phones. Letting grid children
+   shrink keeps wide tables scrolling inside their own box instead. */
+.grid > * {
+    min-width: 0;
 }
 
 input,
