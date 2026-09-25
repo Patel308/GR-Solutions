@@ -42,29 +42,30 @@ The goal of this migration is to make the website easier to maintain, faster to 
 
 ---
 
-## CI/CD and Blue-Green Deployment
+## CI/CD and Hostinger Deployment
 
 Pushes to `main` run the production workflow in `.github/workflows/deploy.yml`:
 
 1. Install dependencies, lint, and run a full Next.js production build.
 2. Build the `linux/amd64` Docker image and push immutable `sha-xxxxxxx` plus `latest` tags to `pateldeepesh/tv-wale`.
-3. Upload the isolated GR Solution deployment scripts to the AWS VM.
-4. Start the inactive `grsolution-blue` or `grsolution-green` container and wait for its health check.
-5. Switch the dedicated `grsolution-router` container only after the new slot is healthy.
-6. Verify the public health endpoint, homepage, and a Next.js static chunk. A failed verification restores the previous slot.
+3. Send the exact published image digest to the restricted Hostinger deploy key.
+4. Recreate only `grsolution-web`, check its `/api/health` endpoint, and restore the previous image if the new container is unhealthy.
+5. Verify HTTPS at the Hostinger origin and a Next.js static chunk.
 
-The deployment uses its own Docker network and container names. Host Nginx continues to proxy `grsolution.co.in` to `127.0.0.1:3022`; no Scallar, TV Wale, or unrelated container is modified.
+Hostinger runs this site at `/srv/scallar/grsolution`, with the shared Caddy
+proxy routing `grsolution.co.in` to its separate Compose project. The app has
+no published host port or database. The AWS deployment remains the rollback
+source until DNS cutover is verified.
 
 Required GitHub Actions repository secrets:
 
 * `DOCKERHUB_USERNAME`
 * `DOCKERHUB_TOKEN`
-* `SSH_HOST`
-* `SSH_USERNAME`
-* `SSH_KEY`
-* `DEPLOY_VERIFY_URL` (`https://grsolution.co.in`)
+* `HOSTINGER_SSH_KEY`
+* `HOSTINGER_SSH_KNOWN_HOSTS`
 
-The production runtime environment remains on the server at `/home/scallar/apps/tv-wale/.env`. It is never copied into GitHub or the Docker image.
+Runtime settings remain on Hostinger at `/srv/scallar/grsolution/env/runtime.env`.
+The image includes public site URL and analytics settings at build time.
 
 ---
 
