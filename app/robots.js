@@ -6,7 +6,10 @@ export default function robots() {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        // Only /api/ is blocked. /_next/ must stay crawlable: every next/image
+        // output is served from /_next/image, and Googlebot needs the CSS/JS
+        // chunks under /_next/static to render pages.
+        disallow: ['/api/'],
       },
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,

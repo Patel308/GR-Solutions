@@ -6,7 +6,7 @@ export const pageMetadata = {
     path: '/',
   },
   about: {
-    title: 'GR Solution | 15+ Yrs TV Repair Experts Delhi NCR | About Us',
+    title: 'About GR Solution | TV Repair Experts Delhi NCR',
     description:
       'Learn about GR Solution, a trusted TV repair service in Delhi, Noida and NCR with experienced technicians and customer-first service.',
     path: '/about',
@@ -17,6 +17,24 @@ export const pageMetadata = {
       'Explore GR Solution repair services for LED TV, OLED/QLED TV, LCD TV, Plasma TV and Curved TV support across Delhi, Noida and NCR.',
     path: '/services',
   },
+  brands: {
+    title: 'TV Repair by Brand in Delhi NCR | All Brands',
+    description:
+      'Brand-wise TV repair support across Delhi, Noida, Greater Noida and Ghaziabad for every major television brand GR Solution services.',
+    path: '/services/brands',
+  },
+  pricing: {
+    title: 'TV Repair Prices in Delhi NCR | 2026 Price Guide',
+    description:
+      'Delhi NCR market prices for TV repair by fault and screen size: backlight, power board, mainboard, T-Con, panel replacement and visit charges.',
+    path: '/pricing',
+  },
+  reviews: {
+    title: 'Customer Reviews | GR Solution TV Repair Delhi NCR',
+    description:
+      'What customers say about GR Solution TV repair in Delhi, Noida and NCR, and where to read or leave an independent Google review.',
+    path: '/reviews',
+  },
   blog: {
     title: 'TV Repair Tips Delhi NCR | GR Solution Blog',
     description:
@@ -24,24 +42,28 @@ export const pageMetadata = {
     path: '/blog',
   },
   contact: {
-    title: 'Contact Us | Premium TV Repair in Delhi, Noida & NCR | GR Solution',
+    title: 'Contact GR Solution | TV Repair Delhi, Noida & NCR',
     description:
       'Contact GR Solution for LED, OLED/QLED, LCD, Plasma and Curved TV repair across Delhi, Noida and NCR. Call or WhatsApp for service.',
     path: '/contact',
   },
   landing: {
-    title: 'Book TV Repair Service in Delhi, Noida & NCR | GR Solution',
+    title: 'Book TV Repair in Delhi, Noida & NCR | GR Solution',
     description:
       'Book a TV repair visit for LED, OLED/QLED, LCD, Plasma and Curved TV issues with GR Solution.',
     path: '/landing',
+    // Conversion/paid-traffic page. It duplicates /contact intent, has no unique
+    // organic value and no internal inbound links, so it stays out of the index
+    // and out of the sitemap.
+    excludeFromSitemap: true,
   },
   privacy: {
-    title: 'Privacy Policy — GR Solution TV Repair Service Delhi NCR',
+    title: 'Privacy Policy | GR Solution TV Repair Delhi NCR',
     description: 'Privacy policy for GR Solution service enquiries, contact forms and customer communication. Learn how we handle your data securely.',
     path: '/privacy',
   },
   terms: {
-    title: 'Terms & Conditions — GR Solution Repair Services Delhi NCR',
+    title: 'Terms & Conditions | GR Solution TV Repair Delhi NCR',
     description: 'Service terms and conditions for GR Solution repair bookings, diagnosis, parts and warranty across Delhi, Noida and NCR.',
     path: '/terms',
   },

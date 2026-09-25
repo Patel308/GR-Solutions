@@ -35,5 +35,24 @@ export const siteConfig = {
     facebook: '',
     instagram: '',
   },
+  logo: '/images/logo.jpg',
   defaultOgImage: '/images/logo.jpg',
 };
+
+// Entity identifiers for the JSON-LD graph. Keeping the @id values stable lets
+// every page reference the same Organization/LocalBusiness/WebSite nodes
+// instead of re-declaring detached copies.
+export const entityIds = {
+  organization: `${siteConfig.url}/#organization`,
+  localBusiness: `${siteConfig.url}/#localbusiness`,
+  website: `${siteConfig.url}/#website`,
+};
+
+// Verified external profiles for schema `sameAs`. Only the Google Business
+// Profile is confirmed today; social handles stay out until they are verified,
+// because an unverified sameAs weakens entity resolution rather than helping it.
+export const sameAsProfiles = [
+  siteConfig.googleBusinessProfile,
+  siteConfig.socialLinks.facebook,
+  siteConfig.socialLinks.instagram,
+].filter(Boolean);

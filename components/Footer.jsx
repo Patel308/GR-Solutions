@@ -6,11 +6,28 @@ import { siteConfig } from '@/data/siteConfig';
 
 const footerServices = services;
 
+const footerExtraLinks = [
+  { label: 'Repair Prices', href: '/pricing' },
+  { label: 'Customer Reviews', href: '/reviews' },
+];
+
+// Sitewide links for the highest-intent local pages. Without these, the 25 local
+// and 40 brand pages receive no sitewide link equity and the near-me page sits
+// on just two inbound links.
+const footerLocations = [
+  { label: 'TV Repair Near Me', href: '/services/tv-repair-near-me' },
+  { label: 'TV Repair in Delhi', href: '/services/tv-repair-delhi' },
+  { label: 'TV Repair in Noida', href: '/services/tv-repair-noida' },
+  { label: 'TV Repair in Greater Noida', href: '/services/tv-repair-greater-noida' },
+  { label: 'TV Repair in Ghaziabad', href: '/services/tv-repair-ghaziabad' },
+  { label: 'TV Repair by Brand', href: '/services/brands' },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#09091b] py-[100px] pb-7 text-white">
       <div className="container">
-        <div className="grid items-start gap-16 md:grid-cols-2 xl:grid-cols-[1.6fr_0.9fr_1.1fr_1.25fr]">
+        <div className="grid items-start gap-16 md:grid-cols-2 xl:grid-cols-[1.35fr_0.75fr_1fr_1fr_1.15fr]">
           <div>
             <Link href="/" className="mb-6 inline-flex rounded-[10px] bg-white px-5 py-3 shadow-oldLg">
               <Image
@@ -41,7 +58,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-6 text-xl font-black text-white">Quick Links</h4>
             <ul className="grid gap-4">
-              {mainNavigation.map((item) => (
+              {[...mainNavigation, ...footerExtraLinks].map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-[#b9c3d8] transition duration-300 hover:pl-1 hover:text-white">{item.label}</Link>
                 </li>
@@ -55,6 +72,17 @@ export default function Footer() {
               {footerServices.map((service) => (
                 <li key={service.slug}>
                   <Link href={`/services/${service.slug}`} className="text-[#b9c3d8] transition duration-300 hover:pl-1 hover:text-white">{service.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="mb-6 text-xl font-black text-white">Popular Locations</h4>
+            <ul className="grid gap-4">
+              {footerLocations.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-[#b9c3d8] transition duration-300 hover:pl-1 hover:text-white">{item.label}</Link>
                 </li>
               ))}
             </ul>

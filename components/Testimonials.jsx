@@ -1,22 +1,7 @@
 import Image from 'next/image';
+import { testimonials } from '@/data/testimonials';
 
-const testimonials = [
-  {
-    name: 'Amit Sharma',
-    text: 'Excellent service. The technician explained the LED TV issue clearly and completed the repair quickly.',
-    image: '/assets/customer_testimonial_male_1769457041364.webp',
-  },
-  {
-    name: 'Priya Verma',
-    text: 'Professional doorstep support and transparent pricing. My OLED TV was working again the same day.',
-    image: '/assets/customer_testimonial_female_1769457061538.webp',
-  },
-  {
-    name: 'Rahul Mehta',
-    text: 'Good diagnosis for panel lines and honest guidance before repair. Very helpful team.',
-    image: '/assets/customer_testimonial_male_2_1769457083041.webp',
-  },
-];
+
 
 export default function Testimonials() {
   return (

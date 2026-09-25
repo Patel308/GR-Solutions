@@ -1,4 +1,45 @@
 import { services } from './services';
+import { buildTitle, clampDescription } from './seo';
+import { cityLocalFacts } from './cityLocalFacts';
+import { getServiceCityContent } from './serviceCityContent';
+import { repairPriceBands, sizeBands } from './pricing';
+
+// City cost guides, linked from the "Cost Guidance" card on each local page.
+const cityCostGuideHref = (citySlug) => `/blog/tv-repair-cost-${citySlug}`;
+
+// Real Delhi NCR market ranges for the fault most associated with each TV type,
+// quoted in the pricing copy so the page answers "how much" directly.
+function marketRangeLine(faultLabel) {
+  const row = repairPriceBands.find((item) => item.fault === faultLabel);
+  if (!row) return '';
+  return `${row.fault}: roughly ₹${row.bands[0]} on ${sizeBands[0]} sets, ₹${row.bands[1]} on ${sizeBands[1]} and ₹${row.bands[2]} on ${sizeBands[2]} in the Delhi NCR market.`;
+}
+
+// First sentence of a paragraph -- used where the full service-level text now
+// lives on the parent service page and the city page carries a short version.
+function firstSentence(text) {
+  const match = (text || '').match(/^.*?[.!?](\s|$)/);
+  return (match ? match[0] : text || '').trim();
+}
+
+// City-specific phrasing built from the hand-written situations for this page.
+function situationsList(content) {
+  return (content?.situations?.rows || []).map((row) => row[0].charAt(0).toLowerCase() + row[0].slice(1));
+}
+
+function situationPaths(content) {
+  return (content?.situations?.rows || [])
+    .map((row) => `${row[0].toLowerCase()} usually leads to ${row[2].charAt(0).toLowerCase()}${row[2].slice(1)}`)
+    .join('; ');
+}
+
+const servicePricingFault = {
+  'led-tv-repair': 'Backlight / LED strip replacement',
+  'oled-qled-tv-repair': 'Mainboard / motherboard repair',
+  'lcd-tv-repair': 'Power supply board repair or replacement',
+  'plasma-tv-repair': 'Power supply board repair or replacement',
+  'curved-tv-repair': 'Backlight / LED strip replacement',
+};
 
 export const cities = [
   {
@@ -335,12 +376,23 @@ const serviceIntentTopics = {
   ],
 };
 
+// City pages carry the keyword-bearing label plus a one-line summary; the full
+// explanation of each fault lives once, on the parent service page, instead of
+// being repeated verbatim across all four cities.
 function makeSupportingTopics(service, city) {
   return serviceIntentTopics[service.slug].map((topic) => ({
     keyword: `${topic.label} ${city.name}`,
     title: `${topic.label} in ${city.name}`,
-    text: `${topic.text} GR Solution provides inspection-led guidance across ${city.name} and nearby NCR areas.`,
+    text: firstSentence(topic.text),
   }));
+}
+
+export function getServiceIntentTopics(serviceSlug) {
+  return serviceIntentTopics[serviceSlug] || [];
+}
+
+export function getServiceLocalProfile(serviceSlug) {
+  return serviceLocalProfiles[serviceSlug] || null;
 }
 
 function makeSlug(serviceSlug, citySlug) {
@@ -348,6 +400,8 @@ function makeSlug(serviceSlug, citySlug) {
 }
 
 function makeFaqs(service, city, profile) {
+  const content = getServiceCityContent(makeSlug(service.slug, city.slug));
+  const facts = cityLocalFacts[city.slug];
   return [
     {
       question: `Do you provide ${service.title} in ${city.name}?`,
@@ -355,23 +409,27 @@ function makeFaqs(service, city, profile) {
     },
     {
       question: `How quickly can I book ${profile.keywordBase} ${city.name}?`,
-      answer: `Visit timing depends on technician availability and location, but GR Solution tries to arrange quick support after you share the TV model, symptom and address.`,
+      answer: `Visit timing depends on the day’s bookings and where in ${city.name} you are. ${facts ? firstSentence(facts.baseNote.split('. ').slice(1).join('. ') || facts.baseNote) : ''}`.trim(),
     },
     {
       question: `What problems are common in ${service.title.toLowerCase()}?`,
-      answer: `${profile.problemFocus.slice(0, 3).join(' ')} A technician checks the actual fault before suggesting repair.`,
+      answer: situationsList(content).length
+        ? `In ${city.name}, the situations that come up most are: ${situationsList(content).join('; ')}. A technician checks the actual fault before suggesting repair.`
+        : `${profile.problemFocus.slice(0, 3).join(' ')} A technician checks the actual fault before suggesting repair.`,
     },
     {
       question: `Can you repair the TV at home in ${city.name}?`,
-      answer: `Many diagnosis and repair tasks can start at home. If workshop handling is safer, the technician explains why before moving ahead.`,
+      answer: `Many diagnosis and repair tasks can start at home. ${facts ? facts.housing.split('. ').slice(-1)[0].replace(/\.$/, '') + '.' : ''} If workshop handling is safer, the technician explains why before moving ahead.`,
     },
     {
       question: `How much does ${service.title.toLowerCase()} cost in ${city.name}?`,
-      answer: `Cost depends on TV size, model, fault type and parts. GR Solution shares an estimate after inspection instead of quoting blindly.`,
+      answer: `Cost depends on TV size, model, fault type and parts. ${marketRangeLine(servicePricingFault[service.slug])} GR Solution confirms the exact figure after inspection.`,
     },
     {
       question: 'Should I repair or replace my TV?',
-      answer: profile.repairReplace,
+      answer: content
+        ? `${firstSentence(profile.repairReplace)} For ${service.title.toLowerCase()} in ${city.name}: ${situationPaths(content)}.`
+        : profile.repairReplace,
     },
     {
       question: `Which ${city.name} areas do you cover?`,
@@ -381,10 +439,14 @@ function makeFaqs(service, city, profile) {
 }
 
 function makeContentBlocks(service, city, profile, keyword) {
+  const rows = getServiceCityContent(makeSlug(service.slug, city.slug))?.situations?.rows || [];
+  const [first, second, third] = rows;
   const blocks = [
     {
       title: `Diagnosis approach for ${keyword}`,
-      text: `${profile.diagnosticDetail} For ${city.name} customers, the first useful detail is not only the TV brand but the exact behavior: standby light, sound, menu visibility, screen glow, line pattern, power cycling and whether the problem appears on all sources. This makes the first inspection more accurate and reduces guesswork.`,
+      text: first
+        ? `The first inspection is faster when you share the model number, whether sound works, the standby-light behaviour and whether the fault shows on every input. A frequent ${city.name} starting point is "${first[0].toLowerCase()}", where the technician checks ${first[1].charAt(0).toLowerCase()}${first[1].slice(1)} before anything else. The full diagnosis sequence is set out on the main ${service.title} page.`
+        : profile.diagnosticDetail,
     },
     {
       title: `Local service planning in ${city.name}`,
@@ -392,30 +454,28 @@ function makeContentBlocks(service, city, profile, keyword) {
     },
     {
       title: `Safe handling for ${service.title.toLowerCase()}`,
-      text: `${profile.handlingCare} Customers should avoid pressing the screen, opening the back cover, repeated power cycling, or moving larger TVs alone. Small handling mistakes can turn a repairable issue into a panel risk, especially when the original fault is only power, board or backlight related.`,
+      text: third
+        ? `For "${third[0].toLowerCase()}", ${third[1].charAt(0).toLowerCase()}${third[1].slice(1)} is checked before anything is moved, and the usual path is ${third[2].charAt(0).toLowerCase()}${third[2].slice(1)}. Until the visit, avoid pressing the screen, opening the back cover or moving a large set alone.`
+        : profile.handlingCare,
     },
     {
       title: `How pricing is discussed`,
-      text: `${profile.costFactors} GR Solution does not publish fake fixed prices for complex TV faults because two TVs with the same symptom can need completely different work. The safer approach is inspection first, then a clear estimate, approval, and repair only when the customer understands the option.`,
-    },
-    {
-      title: `What makes the page useful`,
-      text: `This ${keyword} page is built for people comparing repair options before calling. It explains likely symptoms, local service coverage, repair-versus-replace thinking, contact details and practical preparation steps, so the customer can describe the problem clearly and avoid unnecessary part replacement.`,
+      text: `${marketRangeLine(servicePricingFault[service.slug])} ${second ? `In ${city.name}, "${second[0].toLowerCase()}" is a common case, and its usual path is ${second[2].charAt(0).toLowerCase()}${second[2].slice(1)}.` : ''} The exact figure is confirmed after inspection.`,
     },
     {
       title: `After-repair checks`,
-      text: `After an approved repair, the useful checks include ${profile.qualityChecks.join(', ')}. These checks help confirm that the TV is not only turning on but also behaving normally under real viewing conditions. GR Solution also explains simple care steps based on the repaired fault and TV type.`,
+      text: `After an approved repair in ${city.name}, the technician confirms ${profile.qualityChecks.slice(0, 3).join(', ')} and a stability check before handover.`,
     },
   ];
 
   if (service.slug === 'led-tv-repair') {
     blocks.push({
       title: 'Common LED TV Problems We Repair',
-      text: `For ${city.name} LED TV repair requests, GR Solution commonly checks backlight failure, display lines, sound but no picture, motherboard issues, power board faults and HDMI/input problems. Customers searching for LED TV repair service in Delhi or LED TV repair in Vaishali Ghaziabad are guided toward the nearest canonical city page instead of duplicate pages.`,
+      text: `Backlight failure, display lines, sound but no picture, motherboard, power board and HDMI faults. LED TV repair service in Delhi and LED TV repair in Vaishali Ghaziabad requests are handled on their own city pages.`,
     });
     blocks.push({
       title: `TV backlight repair ${city.name} guidance`,
-      text: `For TV backlight repair in ${city.name}, useful symptoms include a very dim picture, sound working with no visible image, uneven brightness, flashing backlight, or a faint picture visible with a torch test. GR Solution checks backlight strips, power supply behavior, mainboard signals and panel condition before explaining whether backlight repair is practical.`,
+      text: `For TV backlight repair in ${city.name}, the quickest check is a phone torch held at a sharp angle to the screen: a faint picture means the backlight, not the panel, has failed.`,
     });
 
     const localLedIntent = {
@@ -438,7 +498,7 @@ function makeContentBlocks(service, city, profile, keyword) {
   if (service.slug === 'oled-qled-tv-repair') {
     blocks.push({
       title: `OLED and QLED TV repair ${city.name} guidance`,
-      text: `OLED TV repair in ${city.name} and QLED TV repair in ${city.name} are handled on this combined canonical page because both searches need premium-display diagnosis without competing local URLs. OLED checks focus on black levels, retention, burn-in-like symptoms, power and processor behavior. QLED checks include brightness, color tone, local dimming, panel lines, HDMI response, sound and mainboard symptoms.`,
+      text: `OLED TV repair in ${city.name} and QLED TV repair in ${city.name} are covered together here. OLED checks focus on retention and burn-in; QLED checks focus on brightness, local dimming and colour.`,
     });
   }
 
@@ -482,15 +542,15 @@ function makeExtraFaqs(service, city) {
     return [
       {
         question: `Do you provide LED TV repair service at home in ${city.name}?`,
-        answer: `Yes, GR Solution provides doorstep LED TV inspection in ${city.name}, subject to technician availability, fault type and safe access to the TV.`,
+        answer: `Yes, subject to availability and safe access to the TV.`,
       },
       {
         question: 'Can LED TV backlight and screen issues be checked together?',
-        answer: 'Yes. Backlight, screen lines, sound-but-no-picture, motherboard, power board and input symptoms are checked before repair is suggested.',
+        answer: 'Yes, in the same visit.',
       },
       {
         question: `Do you provide TV backlight repair in ${city.name}?`,
-        answer: `Yes, GR Solution checks TV backlight repair symptoms in ${city.name}, including dark screen, weak brightness, sound but no picture and uneven light before recommending repair.`,
+        answer: `Yes. Start with the torch test: a faint image under a torch means the backlight has failed and the panel is fine.`,
       },
     ];
   }
@@ -499,11 +559,11 @@ function makeExtraFaqs(service, city) {
     return [
       {
         question: `Do you provide OLED TV repair in ${city.name}?`,
-        answer: `Yes, GR Solution provides OLED TV inspection in ${city.name} for power, processor, color, line, retention and display symptoms, subject to repair feasibility and parts availability.`,
+        answer: `Yes, for power, board, retention and display faults, subject to feasibility.`,
       },
       {
         question: `Do you provide QLED TV repair in ${city.name}?`,
-        answer: `Yes, QLED TV repair in ${city.name} is handled through the combined OLED/QLED diagnosis page, including brightness, color, line, sound, HDMI and board symptoms.`,
+        answer: `Yes, including brightness, local-dimming, colour and board faults.`,
       },
     ];
   }
@@ -525,7 +585,6 @@ function makeWhyChoose(service, city, profile) {
     `GR Solution focuses on symptom-led ${service.title.toLowerCase()} diagnosis, so the visit starts with what the TV is actually doing rather than a rushed assumption.`,
     `The business details stay consistent for local trust: GR Solution, ${siteContactAddress}, phone +91 99902 83890 and email info@grsolution.co.in.`,
     `${city.trust} This matters when a customer wants local support without losing clarity on estimate, handling and next steps.`,
-    `For ${profile.keywordBase.toLowerCase()}, the team explains whether the issue appears repairable at home, needs safer workshop handling, or should be compared with replacement before money is spent.`,
   ];
 }
 
@@ -538,6 +597,9 @@ const serviceCityPages = services.flatMap((service) => {
     const slug = makeSlug(service.slug, city.slug);
     const otherCities = cities.filter((item) => item.slug !== city.slug);
     const otherServices = services.filter((item) => item.slug !== service.slug);
+    const localContent = getServiceCityContent(slug);
+    const facts = cityLocalFacts[city.slug];
+    const localSituations = (localContent?.situations?.rows || []).map((row) => `${row[0]} — we check ${row[1].charAt(0).toLowerCase()}${row[1].slice(1)}.`);
 
     return {
       slug,
@@ -548,25 +610,23 @@ const serviceCityPages = services.flatMap((service) => {
       keyword,
       title: `${profile.keywordBase} in ${city.name}`,
       h1: `${profile.keywordBase} in ${city.name}`,
-      metaTitle: `${keyword} | Doorstep TV Repair | GR Solution`,
+      metaTitle: buildTitle(keyword, 'Doorstep TV Repair'),
       metaDescription: `Need ${keyword}? GR Solution provides doorstep TV inspection, diagnosis and repair support across ${city.name} and nearby NCR areas.`,
       image: profile.image,
       directAnswer: `Need ${profile.keywordBase} in ${city.name}? GR Solution provides doorstep inspection, diagnosis and repair support for ${service.title.toLowerCase()} issues across ${city.name} and nearby NCR areas.`,
-      intro: `${profile.intro} If you are searching for ${keyword}, GR Solution helps you understand the issue clearly before approving repair. We focus on practical diagnosis, transparent guidance and careful handling of screen, sound, power and display-related faults.`,
-      cityExplanation: `${city.localNote} Our ${profile.keywordBase.toLowerCase()} support in ${city.name} is built around symptom-first inspection, so customers do not have to guess whether the issue is a power board, panel, backlight, software or input problem.`,
+      intro: `${profile.intro} For ${keyword}, GR Solution diagnoses the actual fault before any repair is approved.`,
+      cityExplanation: city.localNote,
       localTrust: city.trust,
-      commonProblems: [...profile.problemFocus, ...makeExtraProblems(service)],
+      commonProblems: [...localSituations, ...profile.problemFocus, ...makeExtraProblems(service)],
       supportingTopics: makeSupportingTopics(service, city),
       contentBlocks: makeContentBlocks(service, city, profile, keyword),
       whyChoose: makeWhyChoose(service, city, profile),
       qualityChecks: profile.qualityChecks,
       repairReplace: profile.repairReplace,
-      beforeCalling: profile.beforeCalling,
+      beforeCalling: `${profile.beforeCalling} ${city.accessAdvice}`,
       coverage: `Service coverage for ${keyword} includes ${city.nearby.join(', ')} and nearby NCR pockets. Availability depends on technician schedule, TV size, access and part requirements.`,
-      pricing:
-        'Pricing depends on the exact TV model, screen size, fault type, part availability and whether the repair can be completed on-site. GR Solution avoids fake fixed-price claims and shares a clear estimate after diagnosis.',
-      emergency:
-        'For urgent TV issues, call or WhatsApp GR Solution with the model number, symptom, location and a short photo or video if useful. This helps the team plan the visit and carry the right diagnostic approach.',
+      pricing: `The ${city.name} cost guide lists Delhi NCR market ranges for every common fault by screen size. Your firm estimate is shared after diagnosis.`,
+      emergency: `For an urgent ${keyword} request, call or WhatsApp the model number, symptom and your ${city.name} locality. ${facts ? firstSentence(facts.baseNote) : ''}`.trim(),
       process: [
         `Share your ${service.title.toLowerCase()} issue and ${city.name} location.`,
         'Get a visit schedule or next-step guidance from GR Solution.',
@@ -574,7 +634,14 @@ const serviceCityPages = services.flatMap((service) => {
         'Receive repair feasibility, estimate and approval options.',
         'Approved repair is completed and tested for stable picture and sound.',
       ],
-      faqs: [...makeFaqs(service, city, profile), ...makeExtraFaqs(service, city)],
+      faqs: [
+        ...makeFaqs(service, city, profile),
+        ...makeExtraFaqs(service, city),
+        ...(getServiceCityContent(slug)?.faqs || []),
+      ],
+      localContent: getServiceCityContent(slug),
+      cityFacts: cityLocalFacts[city.slug],
+      costGuideHref: cityCostGuideHref(city.slug),
       sameServiceOtherCities: otherCities.map((item) => ({
         label: `${profile.keywordBase} ${item.name}`,
         href: `/services/${makeSlug(service.slug, item.slug)}`,
@@ -642,7 +709,7 @@ const genericTvCityProfiles = {
   ghaziabad: {
     keyword: 'TV Repair Ghaziabad',
     h1: 'TV Repair in Ghaziabad',
-    metaTitle: 'TV Repair Ghaziabad | Indirapuram & Vaishali | GR Solution',
+    metaTitle: 'TV Repair Ghaziabad | Indirapuram & Vaishali | GR',
     metaDescription: 'Need TV repair in Ghaziabad or Indirapuram? GR Solution supports LED, OLED/QLED, LCD, Plasma and Curved TV diagnosis.',
     image: '/images/service_tv.webp',
     intro:
@@ -666,6 +733,7 @@ const tvTypesCovered = [
 ];
 
 function makeGenericTvFaqs(city, profile) {
+  const content = getServiceCityContent(`tv-repair-${city.slug}`);
   return [
     {
       question: `Do you provide TV repair in ${city.name}?`,
@@ -685,15 +753,17 @@ function makeGenericTvFaqs(city, profile) {
     },
     {
       question: 'How much does TV repair cost?',
-      answer: 'Cost depends on TV type, screen size, brand, fault type and part availability. GR Solution shares an inspection-based estimate before repair.',
+      answer: `Cost depends on the failed component and screen size. ${marketRangeLine('Power supply board repair or replacement')} The ${city.name} cost guide covers every common fault, and GR Solution confirms the exact figure after inspection.`,
     },
     {
       question: 'Should I repair or replace my TV?',
-      answer: 'Repair is usually worth checking when the screen is intact and the issue is backlight, board, audio, power or software related. Replacement may be better for severe panel damage or very high repair estimates.',
+      answer: content
+        ? `Repair is usually worth it when the screen is intact. In ${city.name}: ${situationPaths(content)}.`
+        : 'Repair is usually worth checking when the screen is intact and the issue is backlight, board, audio, power or software related.',
     },
     {
       question: 'What should I check before calling?',
-      answer: 'Check the power socket, try another input, note whether sound is present, avoid pressing the screen and keep the TV model number ready.',
+      answer: `Check the power socket, try another input, note whether sound is present and keep the TV model number ready. ${city.accessAdvice}`,
     },
     {
       question: 'How can I book TV repair?',
@@ -703,6 +773,7 @@ function makeGenericTvFaqs(city, profile) {
 }
 
 function makeGenericTvContentBlocks(city, profile) {
+  const content = getServiceCityContent(`tv-repair-${city.slug}`);
   return [
     {
       title: `Best answer for ${profile.keyword}`,
@@ -710,7 +781,9 @@ function makeGenericTvContentBlocks(city, profile) {
     },
     {
       title: 'Common problems we solve',
-      text: `Common TV faults include backlight failure, power board issues, motherboard symptoms, vertical or horizontal lines, HDMI or input faults, smart TV app lag, no sound, distorted picture, panel patches and screen flicker. GR Solution checks the actual behavior before recommending repair so customers do not spend on unnecessary parts.`,
+      text: content
+        ? `The ${city.name} symptoms we see most are ${situationsList(content).join(', ')}. Across all TV types we also handle backlight failure, power board and motherboard faults, screen lines, HDMI and input faults, smart TV app problems and no-sound faults.`
+        : 'Common TV faults include backlight failure, power board issues, motherboard symptoms, screen lines, HDMI faults, smart TV app lag and no sound.',
     },
     {
       title: 'TV types covered',
@@ -722,11 +795,13 @@ function makeGenericTvContentBlocks(city, profile) {
     },
     {
       title: 'Repair versus replacement guidance',
-      text: 'Repair is often sensible when the panel glass is intact and the fault is linked to backlight, power, audio, HDMI, motherboard or software behavior. Replacement may be wiser if the panel is cracked, water damaged, heavily lined, or if the repair estimate comes close to the cost of a suitable new TV.',
+      text: content
+        ? `Repair is often sensible when the panel glass is intact. For ${city.name} homes: ${situationPaths(content)}.`
+        : 'Repair is often sensible when the panel glass is intact and the fault is linked to backlight, power, audio, HDMI, motherboard or software behavior.',
     },
     {
       title: 'Pricing guidance',
-      text: 'GR Solution does not publish fake fixed repair prices for complex TV faults. Final cost depends on brand, model, screen size, part availability, fault type and whether the work can be completed at home. The technician explains diagnosis and estimate before paid repair work begins.',
+      text: `${marketRangeLine('Backlight / LED strip replacement')} ${marketRangeLine('Power supply board repair or replacement')} Final cost is confirmed after inspection.`,
     },
   ];
 }
@@ -738,6 +813,12 @@ function makeGenericWhyChoose(city) {
     `${city.trust}`,
     'Customers receive practical repair-versus-replace guidance instead of fake fixed-price claims or unverified brand authorization claims.',
   ];
+}
+
+// The city hub keeps each keyword-bearing topic label but only its first
+// sentence, so the same explanation is not repeated verbatim on four hubs.
+function shortTopics(topics) {
+  return topics.map((topic) => ({ ...topic, text: firstSentence(topic.text) }));
 }
 
 export const cityTvRepairPages = cities.map((city) => {
@@ -774,7 +855,7 @@ export const cityTvRepairPages = cities.map((city) => {
       'Smart TV apps, HDMI inputs, WiFi, remote or source switching fail.',
       'Panel, motherboard, power board, speaker or T-Con symptoms need diagnosis.',
     ],
-    supportingTopics: [
+    supportingTopics: shortTopics([
       {
         keyword: `Doorstep TV Repair ${city.name}`,
         title: `Doorstep TV Repair in ${city.name}`,
@@ -810,7 +891,7 @@ export const cityTvRepairPages = cities.map((city) => {
         title: `Smart TV Software Repair in ${city.name}`,
         text: `App crashes, Wi-Fi problems and a frozen home screen may be software or storage related. Model details and error behavior help determine whether reset, update or hardware diagnosis is appropriate.`,
       },
-    ],
+    ]),
     contentBlocks: makeGenericTvContentBlocks(city, profile),
     whyChoose: makeGenericWhyChoose(city),
     qualityChecks: ['picture and brightness test', 'sound output check', 'HDMI/source switching', 'smart app response', 'stability after repair'],
@@ -819,9 +900,11 @@ export const cityTvRepairPages = cities.map((city) => {
     beforeCalling:
       'Check the power socket, try a different input source, confirm whether sound is present, avoid pressing the screen, keep the TV model number ready, and share a short photo or video of the symptom if possible.',
     coverage: `TV repair coverage in ${city.name} includes ${profile.nearbyText} and nearby NCR locations, subject to technician schedule and service feasibility.`,
-    pricing:
-      'Pricing depends on screen size, brand, model, part availability and fault type. GR Solution gives an inspection-based estimate before any paid repair is started.',
+    pricing: `Pricing depends on screen size, brand, model, part availability and fault type. ${marketRangeLine('Power supply board repair or replacement')} GR Solution gives an inspection-based estimate before any paid repair is started.`,
     emergency: profile.urgency,
+    localContent: getServiceCityContent(`tv-repair-${city.slug}`),
+    cityFacts: cityLocalFacts[city.slug],
+    costGuideHref: cityCostGuideHref(city.slug),
     process: [
       `Share your TV brand, size, symptom and ${city.name} location.`,
       'Get a call or WhatsApp response for visit planning.',
@@ -829,7 +912,7 @@ export const cityTvRepairPages = cities.map((city) => {
       'Repair feasibility and estimate are explained clearly.',
       'Approved repair is completed and checked for stable picture and sound.',
     ],
-    faqs: makeGenericTvFaqs(city, profile),
+    faqs: [...makeGenericTvFaqs(city, profile), ...(getServiceCityContent(`tv-repair-${city.slug}`)?.faqs || [])],
     sameServiceOtherCities: otherCities.map((item) => ({
       label: `TV Repair ${item.name}`,
       href: `/services/tv-repair-${item.slug}`,
