@@ -9,6 +9,7 @@ import { localityPages } from '@/data/localityPages';
 import { pageMetadata } from '@/data/pages';
 import { diagnosisPolicy } from '@/data/pricing';
 import { entityIds, siteConfig } from '@/data/siteConfig';
+import { PhoneNumber } from '@/components/ContactChannel';
 
 export const metadata = {
   title: pageMetadata.about.title,
@@ -105,7 +106,7 @@ export default function AboutPage() {
     ['Brands', `${brands.length} major brands, including Samsung, LG, Sony and Mi`],
     ['Diagnosis', `${diagnosisPolicy.label} — estimate given before any paid work`],
     ['Hours', 'Monday to Sunday, 9:00 AM to 9:00 PM'],
-    ['Phone and WhatsApp', siteConfig.phone],
+    ['Phone and WhatsApp', <PhoneNumber key="phone" />],
   ].filter(Boolean);
 
   return (

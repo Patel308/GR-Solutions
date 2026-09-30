@@ -1,5 +1,6 @@
 import { services } from './services';
 import { buildTitle, clampDescription } from './seo';
+import { contactChannels } from './siteConfig';
 import { cityLocalFacts } from './cityLocalFacts';
 import { getServiceCityContent } from './serviceCityContent';
 import { repairPriceBands, sizeBands } from './pricing';
@@ -583,7 +584,7 @@ function makeExtraFaqs(service, city) {
 function makeWhyChoose(service, city, profile) {
   return [
     `GR Solution focuses on symptom-led ${service.title.toLowerCase()} diagnosis, so the visit starts with what the TV is actually doing rather than a rushed assumption.`,
-    `The business details stay consistent for local trust: GR Solution, ${siteContactAddress}, phone +91 99902 83890 and email info@grsolution.co.in.`,
+    `The business details stay consistent for local trust: GR Solution, ${siteContactAddress}, phone ${contactChannels.seo.phone} and email info@grsolution.co.in.`,
     `${city.trust} This matters when a customer wants local support without losing clarity on estimate, handling and next steps.`,
   ];
 }
@@ -809,7 +810,7 @@ function makeGenericTvContentBlocks(city, profile) {
 function makeGenericWhyChoose(city) {
   return [
     `GR Solution uses symptom-led TV diagnosis for ${city.name}, so the technician checks what the TV is actually doing before suggesting repair.`,
-    `Business details remain consistent: GR Solution, ${siteContactAddress}, phone +91 99902 83890 and email info@grsolution.co.in.`,
+    `Business details remain consistent: GR Solution, ${siteContactAddress}, phone ${contactChannels.seo.phone} and email info@grsolution.co.in.`,
     `${city.trust}`,
     'Customers receive practical repair-versus-replace guidance instead of fake fixed-price claims or unverified brand authorization claims.',
   ];
@@ -1003,7 +1004,7 @@ export const nearMeServicePage = {
   ],
   whyChoose: [
     'Nearby support across Delhi NCR with clear location and scheduling communication.',
-    `Consistent NAP details: GR Solution, ${siteContactAddress}, phone +91 99902 83890 and email info@grsolution.co.in.`,
+    `Consistent NAP details: GR Solution, ${siteContactAddress}, phone ${contactChannels.seo.phone} and email info@grsolution.co.in.`,
     'Independent TV repair support without fake authorized service center claims.',
     'Practical guidance for Smart TV, LED, OLED/QLED, LCD, Plasma and Curved TV faults.',
   ],

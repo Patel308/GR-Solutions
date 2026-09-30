@@ -1,5 +1,6 @@
 import { cities } from './localServicePages';
 import { buildTitle, clampDescription } from './seo';
+import { contactChannels } from './siteConfig';
 
 const siteContactAddress = 'C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096';
 
@@ -336,7 +337,7 @@ function makeRepairProcess(brand, city) {
 function makeWhyChoose(brand, city) {
   return [
     `GR Solution follows a symptom-led approach for ${brand.displayName} TV repair, so the visit starts with what the TV is actually doing rather than a rushed assumption.`,
-    `Business details stay consistent for local trust: GR Solution, ${siteContactAddress}, phone +91 99902 83890 and email info@grsolution.co.in.`,
+    `Business details stay consistent for local trust: GR Solution, ${siteContactAddress}, phone ${contactChannels.seo.phone} and email info@grsolution.co.in.`,
     `${city.trust}`,
     `For ${brand.displayName} TVs specifically, the team explains whether the issue is repairable at home, needs safer workshop handling, or should be weighed against replacement before money is spent.`,
   ];

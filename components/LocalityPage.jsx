@@ -9,6 +9,7 @@ import { getLocalityPagesByCity } from '@/data/localityPages';
 import { services } from '@/data/services';
 import { repairPriceBands } from '@/data/pricing';
 import { entityIds, siteConfig } from '@/data/siteConfig';
+import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
 
 // The three faults that decide most locality enquiries; the full grid lives on
 // /pricing and in the city cost guide.
@@ -83,21 +84,17 @@ export default function LocalityPage({ page }) {
             {page.directAnswer}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href={siteConfig.phoneHref}
-              data-call-location={`locality_${page.slug}_call`}
+            <PhoneLink
+              callLocation={`locality_${page.slug}_call`}
               className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary"
             >
               <i className="fa-solid fa-phone" /> Call Now
-            </a>
-            <a
-              href={siteConfig.whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
+            </PhoneLink>
+            <WhatsAppLink
               className="inline-flex items-center gap-2 rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white"
             >
               <i className="fa-brands fa-whatsapp" /> WhatsApp
-            </a>
+            </WhatsAppLink>
           </div>
         </div>
       </section>

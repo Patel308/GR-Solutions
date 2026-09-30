@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { siteConfig } from '@/data/siteConfig';
+import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
 
 export default function PageCTA({ badge = 'FAST LOCAL SUPPORT', title, description, serviceName }) {
   const ctaTitle = title || (serviceName ? `Need Expert ${serviceName} in Delhi NCR?` : 'Need Repair Support?');
@@ -26,21 +26,17 @@ export default function PageCTA({ badge = 'FAST LOCAL SUPPORT', title, descripti
             <span><i className="fa-solid fa-circle-check text-success" /> Delhi NCR doorstep support</span>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              href={siteConfig.phoneHref}
-              data-call-location="page_cta_call_now"
+            <PhoneLink
+              callLocation="page_cta_call_now"
               className="inline-flex items-center justify-center gap-3 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-accent"
             >
               <i className="fa-solid fa-phone" /> Call Now
-            </a>
-            <a
-              href={siteConfig.whatsappHref}
+            </PhoneLink>
+            <WhatsAppLink
               className="inline-flex items-center justify-center gap-3 rounded-full bg-[#25d366] px-7 py-4 font-black text-white shadow-cta transition duration-300 hover:-translate-y-1"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <i className="fa-brands fa-whatsapp" /> WhatsApp Us
-            </a>
+            </WhatsAppLink>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-full border-2 border-white/35 px-7 py-4 font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary"

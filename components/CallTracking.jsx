@@ -27,6 +27,7 @@ export default function CallTracking() {
       const eventParams = {
         method: 'phone',
         call_location: callLocation,
+        lead_channel: link.dataset.leadChannel || 'unknown',
         page_path: window.location.pathname,
       };
 

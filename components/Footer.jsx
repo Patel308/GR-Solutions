@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { mainNavigation } from '@/data/navigation';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/siteConfig';
+import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
 
 const footerServices = services;
 
@@ -43,15 +44,12 @@ export default function Footer() {
               excellence and transparent pricing.
             </p>
             <div className="flex gap-4">
-              <a
-                href={siteConfig.whatsappHref}
+              <WhatsAppLink
                 className="inline-flex size-[50px] items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-1 hover:bg-[#25d366]"
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label="WhatsApp"
               >
                 <i className="fa-brands fa-whatsapp" />
-              </a>
+              </WhatsAppLink>
             </div>
           </div>
 
@@ -113,7 +111,7 @@ export default function Footer() {
                   <strong className="mb-1 block text-white">
                     Call Support
                   </strong>
-                  <a href={siteConfig.phoneHref} data-call-location="footer_call_support" className="text-[#b9c3d8] hover:text-white">{siteConfig.phone}</a>
+                  <PhoneLink callLocation="footer_call_support" className="text-[#b9c3d8] hover:text-white" />
                 </div>
               </li>
               <li className="flex items-center gap-4 text-left">
