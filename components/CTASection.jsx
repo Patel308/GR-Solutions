@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { siteConfig } from '@/data/siteConfig';
+import { PhoneLink } from '@/components/ContactChannel';
 
 export default function CTASection({ title = 'Need expert repair support?', text = 'Call GR Solution for fast doorstep service across Delhi, Noida and NCR.' }) {
   return (
@@ -11,9 +11,9 @@ export default function CTASection({ title = 'Need expert repair support?', text
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-white/75">{text}</p>
         </div>
         <div className="flex flex-wrap gap-4 lg:justify-end">
-          <a href={siteConfig.phoneHref} data-call-location="cta_call_now" className="inline-flex rounded-full border-2 border-primary bg-primary px-8 py-4 font-extrabold text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-primaryDark">
+          <PhoneLink callLocation="cta_call_now" className="inline-flex rounded-full border-2 border-primary bg-primary px-8 py-4 font-extrabold text-white shadow-cta transition duration-300 hover:-translate-y-1 hover:bg-primaryDark">
             <i className="fa-solid fa-phone" /> Call Now
-          </a>
+          </PhoneLink>
           <Link href="/contact" className="inline-flex rounded-full border-2 border-white/35 bg-transparent px-8 py-4 font-extrabold text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary">
             Book Service
           </Link>

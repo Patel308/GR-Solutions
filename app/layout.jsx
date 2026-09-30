@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import JsonLd from '@/components/JsonLd';
 import CallTracking from '@/components/CallTracking';
+import { ContactChannelProvider } from '@/components/ContactChannel';
 import { siteConfig, entityIds, sameAsProfiles } from '@/data/siteConfig';
 
 export const metadata = {
@@ -110,10 +111,12 @@ export default function RootLayout({ children }) {
     <html lang="en-IN">
       <body>
         <JsonLd data={[organizationSchema, localBusinessSchema, websiteSchema]} />
-        <Header />
-        {children}
-        <Footer />
-        <FloatingButtons />
+        <ContactChannelProvider>
+          <Header />
+          {children}
+          <Footer />
+          <FloatingButtons />
+        </ContactChannelProvider>
         <CallTracking />
       </body>
     </html>

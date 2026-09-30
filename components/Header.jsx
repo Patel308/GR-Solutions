@@ -8,6 +8,7 @@ import { mainNavigation } from '@/data/navigation';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/siteConfig';
 import EnquiryModal from './EnquiryModal';
+import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
 
 const dropdownServices = services;
 
@@ -121,15 +122,14 @@ export default function Header() {
             </button>
 
             {/* Compact pill on phones, full "Call Now" button from md up */}
-            <a
-              href={siteConfig.phoneHref}
-              data-call-location="header_call_now"
+            <PhoneLink
+              callLocation="header_call_now"
               className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 text-sm font-extrabold leading-none text-white shadow-cta transition duration-300 ease-old hover:bg-secondary active:scale-[0.97] md:h-auto md:min-w-[170px] md:gap-3 md:border-2 md:border-primary md:px-6 md:py-4 md:text-base md:hover:-translate-y-1 md:hover:border-secondary md:hover:shadow-ctaHover"
             >
               <i className="fa-solid fa-phone text-[0.85em]" />
               <span className="md:hidden">Call</span>
               <span className="hidden md:inline">Call Now</span>
-            </a>
+            </PhoneLink>
 
             <button
               type="button"
@@ -229,14 +229,11 @@ export default function Header() {
               >
                 <i className="fa-solid fa-paper-plane" /> Enquiry
               </button>
-              <a
-                href={siteConfig.whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#25d366] text-sm font-extrabold text-white transition active:scale-[0.97]"
               >
                 <i className="fa-brands fa-whatsapp" /> WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
             <p className="mt-4 text-center text-xs font-semibold text-textMuted">
               {hoursLabel} &middot; Free diagnosis &middot; Delhi NCR

@@ -10,6 +10,7 @@ import { services } from '@/data/services';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 import { brands } from '@/data/brandServicePages';
+import { PhoneLink } from '@/components/ContactChannel';
 
 export const metadata = {
   title: pageMetadata.home.title,
@@ -342,13 +343,12 @@ export default function HomePage() {
             <strong style={{ color: 'white' }}>Talk to an engineer for a free technical consultation.</strong>
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a
-              href={siteConfig.phoneHref}
-              data-call-location="homepage_engineer_cta"
+            <PhoneLink
+              callLocation="homepage_engineer_cta"
               className="inline-flex items-center gap-3 rounded-full border-2 border-[#2563eb] bg-[#2563eb] px-10 py-4 text-[0.95rem] font-bold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:border-[#1d4ed8] hover:bg-[#1d4ed8] hover:shadow-[0_8px_25px_rgba(37,99,235,0.4)]"
             >
               <i className="fa-solid fa-phone" /> Call An Engineer
-            </a>
+            </PhoneLink>
             <Link
               href="/contact"
               className="inline-flex items-center gap-3 rounded-full border-2 border-white/70 px-10 py-4 text-[0.95rem] font-bold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
@@ -454,18 +454,15 @@ export default function HomePage() {
                   >
                     CALL US NOW
                   </span>
-                  <a
-                    href={siteConfig.phoneHref}
-                    data-call-location="homepage_callback_phone"
+                  <PhoneLink
+                    callLocation="homepage_callback_phone"
                     style={{
                       fontSize: '1.6rem',
                       fontWeight: 800,
                       color: 'var(--secondary)',
                       textDecoration: 'none',
                     }}
-                  >
-                    {siteConfig.phone}
-                  </a>
+                  />
                 </div>
                 <div>
                   <span

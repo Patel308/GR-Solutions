@@ -18,11 +18,26 @@ import {
   brandServicePages,
   getBrandServicePageBySlug,
 } from '@/data/brandServicePages';
-import { siteConfig, entityIds } from '@/data/siteConfig';
+import { siteConfig, entityIds, contactChannels } from '@/data/siteConfig';
 import { getArticlesLinkingTo } from '@/data/blogArticles';
 import ContentTable from '@/components/ContentTable';
 import LocalityPage from '@/components/LocalityPage';
 import { getLocalityPageBySlug, getLocalityPagesByCity, localityPages } from '@/data/localityPages';
+import { PhoneLink, PhoneNumber, WhatsAppLink } from '@/components/ContactChannel';
+
+// Page copy is written with the SEO number; swap it for the visitor's channel
+// number so ad visitors browsing these pages never see the SEO line.
+function withChannelPhone(text) {
+  const [before, ...rest] = text.split(contactChannels.seo.phone);
+  if (!rest.length) return text;
+  return (
+    <>
+      {before}
+      <PhoneNumber />
+      {rest.join(contactChannels.seo.phone)}
+    </>
+  );
+}
 
 // Surfaces the in-depth guides that already point at this page, so link equity
 // flows in both directions instead of only blog -> services.
@@ -241,9 +256,9 @@ export default async function ServiceDetailPage({ params }) {
             ) : null}
             <p className="mt-6 text-lg leading-relaxed text-textMuted">{service.fullDescription}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={siteConfig.phoneHref} data-call-location="service_hero_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <PhoneLink callLocation="service_hero_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call Now
-              </a>
+              </PhoneLink>
               <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
                 Book Service
               </Link>
@@ -470,9 +485,9 @@ function LocalServicePage({ page }) {
               {page.directAnswer}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={siteConfig.phoneHref} data-call-location="service_cta_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <PhoneLink callLocation="service_cta_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call GR Solution
-              </a>
+              </PhoneLink>
               <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
                 Book Inspection
               </Link>
@@ -498,7 +513,7 @@ function LocalServicePage({ page }) {
           <aside className="rounded-card border border-primary/10 bg-bgLight p-8">
             <h3 className="text-2xl font-black text-secondary">GR Solution Contact</h3>
             <p className="mt-4 leading-relaxed text-textMuted">
-              Phone: <a href={siteConfig.phoneHref} data-call-location="service_contact_phone" className="font-black text-primary">{siteConfig.phone}</a>
+              Phone: <PhoneLink callLocation="service_contact_phone" className="font-black text-primary" />
               <br />
               Email: <a href={siteConfig.emailHref} className="font-black text-primary">{siteConfig.email}</a>
               <br />
@@ -573,7 +588,7 @@ function LocalServicePage({ page }) {
               {page.whyChoose.map((point) => (
                 <li key={point} className="flex gap-3 leading-relaxed text-textMuted">
                   <i className="fa-solid fa-shield-halved mt-1 text-primary" />
-                  <span>{point}</span>
+                  <span>{withChannelPhone(point)}</span>
                 </li>
               ))}
             </ul>
@@ -793,15 +808,15 @@ function BrandServicePage({ page }) {
             <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.6rem)] font-black leading-tight text-secondary">{page.h1}</h1>
             <p className="mt-6 leading-relaxed text-textMuted">{page.heroIntro}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={siteConfig.phoneHref} data-call-location="city_service_hero_call" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <PhoneLink callLocation="city_service_hero_call" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
                 <i className="fa-solid fa-phone" /> Call Now
-              </a>
+              </PhoneLink>
               <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
                 Book Repair
               </Link>
-              <a href={siteConfig.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#25d366] px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1">
+              <WhatsAppLink className="inline-flex items-center gap-2 rounded-full bg-[#25d366] px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1">
                 <i className="fa-brands fa-whatsapp" /> WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </div>
           <Image
@@ -837,7 +852,7 @@ function BrandServicePage({ page }) {
           <aside className="rounded-card border border-primary/10 bg-bgLight p-8">
             <h3 className="text-2xl font-black text-secondary">GR Solution Contact</h3>
             <p className="mt-4 leading-relaxed text-textMuted">
-              Phone: <a href={siteConfig.phoneHref} data-call-location="city_service_contact_phone" className="font-black text-primary">{siteConfig.phone}</a>
+              Phone: <PhoneLink callLocation="city_service_contact_phone" className="font-black text-primary" />
               <br />
               Email: <a href={siteConfig.emailHref} className="font-black text-primary">{siteConfig.email}</a>
               <br />
@@ -922,7 +937,7 @@ function BrandServicePage({ page }) {
               {page.whyChoose.map((point) => (
                 <li key={point} className="flex gap-3 leading-relaxed text-textMuted">
                   <i className="fa-solid fa-shield-halved mt-1 text-primary" />
-                  <span>{point}</span>
+                  <span>{withChannelPhone(point)}</span>
                 </li>
               ))}
             </ul>
