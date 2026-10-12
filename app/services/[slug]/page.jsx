@@ -1,10 +1,16 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import FAQ from '@/components/FAQ';
 import PageCTA from '@/components/PageCTA';
 import JsonLd from '@/components/JsonLd';
-import Breadcrumb from '@/components/Breadcrumb';
+import ServiceCard from '@/components/ServiceCard';
+import SectionCTA from '@/components/SectionCTA';
+import { TrustBand } from '@/components/TrustStrip';
+import PageHero, { HeroActions } from '@/components/page/PageHero';
+import SectionHead from '@/components/page/SectionHead';
+import LinkTiles from '@/components/page/LinkTiles';
+import ProcessSteps from '@/components/page/ProcessSteps';
+import { lowerServiceTitle } from '@/components/ui/text';
 import { getServiceBySlug, services } from '@/data/services';
 import {
   getLocalPagesByCity,
@@ -18,7 +24,7 @@ import {
   brandServicePages,
   getBrandServicePageBySlug,
 } from '@/data/brandServicePages';
-import { siteConfig, entityIds, contactChannels } from '@/data/siteConfig';
+import { siteConfig, contactChannels } from '@/data/siteConfig';
 import { getArticlesLinkingTo } from '@/data/blogArticles';
 import ContentTable from '@/components/ContentTable';
 import LocalityPage from '@/components/LocalityPage';
@@ -41,46 +47,77 @@ function withChannelPhone(text) {
 
 // Surfaces the in-depth guides that already point at this page, so link equity
 // flows in both directions instead of only blog -> services.
-function RelatedGuides({ path, cityName }) {
+function RelatedGuides({ path, cityName, tone = 'band-tint' }) {
   const articles = getArticlesLinkingTo(path);
   if (!articles.length) return null;
 
   return (
-    <section className="py-20">
+    <section className={`section ${tone}`} data-section="related_guides">
       <div className="container">
-        <div className="mb-10">
-          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-            IN-DEPTH GUIDES
-          </span>
-          <h2 className="mt-5 text-3xl font-black text-secondary">
-            Read Before You Book{cityName ? ` in ${cityName}` : ''}
-          </h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
-            Detailed cost and diagnosis guides covering what actually drives the price and which
-            faults are worth repairing.
-          </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <SectionHead
+          align="left"
+          eyebrow="IN-DEPTH GUIDES"
+          title={`Read Before You Book${cityName ? ` in ${cityName}` : ''}`}
+          lead="Detailed cost and diagnosis guides covering what actually drives the price and which faults are worth repairing."
+        />
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {articles.map((article) => (
             <Link
               key={article.slug}
               href={`/blog/${article.slug}`}
-              className="flex flex-col rounded-card border border-black/5 bg-white p-7 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg"
+              className="card card-interactive group flex flex-col p-5 sm:p-6"
             >
-              <span className="text-xs font-black uppercase tracking-wide text-primary">
-                {article.category}
-              </span>
-              <h3 className="mt-3 text-xl font-black leading-tight text-secondary">{article.title}</h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-textMuted">
-                {article.metaDescription}
-              </p>
-              <span className="mt-4 font-black text-primary">Read the guide &rarr;</span>
+              <span className="badge self-start uppercase tracking-[0.06em]">{article.category}</span>
+              <h3 className="mt-3 text-lg leading-snug transition-colors group-hover:text-navy-700">{article.title}</h3>
+              <p className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-muted">{article.metaDescription}</p>
+              <span className="mt-4 font-semibold text-navy-600">Read the guide &rarr;</span>
             </Link>
           ))}
         </div>
       </div>
     </section>
   );
+}
+
+// "GR Solution Contact" card beside the opening guidance on city and brand pages.
+function ContactAside({ callLocation, links }) {
+  return (
+    <aside className="card self-start p-5 sm:p-6 lg:sticky lg:top-28">
+      <h3 className="text-lg">GR Solution Contact</h3>
+      <ul className="mt-4 grid gap-3 text-[0.9375rem] leading-relaxed text-muted">
+        <li className="flex gap-3">
+          <i className="fa-solid fa-phone mt-1 w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
+          <span>
+            Phone: <PhoneLink callLocation={callLocation} className="font-semibold text-navy-600 hover:text-navy-800" />
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <i className="fa-solid fa-envelope mt-1 w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
+          <span>
+            Email: <a href={siteConfig.emailHref} className="break-all font-semibold text-navy-600 hover:text-navy-800">{siteConfig.email}</a>
+          </span>
+        </li>
+        <li className="flex gap-3">
+          <i className="fa-solid fa-location-dot mt-1 w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
+          <span>
+            Address: {siteConfig.address.streetAddress}, {siteConfig.address.addressLocality} {siteConfig.address.postalCode}
+          </span>
+        </li>
+      </ul>
+      <div className="mt-4 grid border-t border-line pt-2">
+        {links.map((link, index) => (
+          <Link key={`${link.href}-${index}`} href={link.href} className="link-arrow min-h-[2.75rem] text-[0.9375rem]">
+            {link.label} <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+          </Link>
+        ))}
+      </div>
+    </aside>
+  );
+}
+
+// A heading and text card used for the paired panels on city and brand pages.
+function Panel({ children, tone = 'card', className = '' }) {
+  return <article className={`${tone} p-5 sm:p-7 ${className}`}>{children}</article>;
 }
 
 const genericProcess = [
@@ -174,9 +211,10 @@ export default async function ServiceDetailPage({ params }) {
   const related = services.filter((item) => item.slug !== service.slug).slice(0, 3);
   const cityPages = getLocalPagesByService(service.slug);
   const serviceUrl = `${siteConfig.url}/services/${service.slug}`;
+  const serviceName = lowerServiceTitle(service.title);
 
   return (
-    <main>
+    <main data-wa-context={`${serviceName} in Delhi NCR`}>
       <JsonLd
         data={[
           {
@@ -230,136 +268,102 @@ export default async function ServiceDetailPage({ params }) {
         ].filter(Boolean)}
       />
 
-      {/* Breadcrumb */}
-      <section className="border-b border-[#eee] bg-white py-2">
-        <div className="container">
-          <Breadcrumb items={[
-            { label: 'Home', href: '/' },
-            { label: 'Services', href: '/services' },
-            { label: service.title, href: null },
-          ]} />
-        </div>
-      </section>
+      <PageHero
+        section="service_hero"
+        breadcrumb={[
+          { label: 'Home', href: '/' },
+          { label: 'Services', href: '/services' },
+          { label: service.title, href: null },
+        ]}
+        eyebrow={service.title.toUpperCase()}
+        title={service.h1}
+        // Extractable direct answer, matching the pattern already used on the
+        // local and brand pages. Answer engines lift this block.
+        answer={service.directAnswer}
+        image={{ src: service.image, alt: `${service.title} service in Delhi NCR` }}
+        actions={
+          <HeroActions>
+            <PhoneLink callLocation="service_hero_call" className="btn btn-primary btn-lg" data-cta="service_hero_call">
+              <i className="fa-solid fa-phone" aria-hidden="true" /> Call Now
+            </PhoneLink>
+            <Link href="/contact" className="btn btn-secondary btn-lg" data-cta="service_hero_book">
+              Book Service
+            </Link>
+          </HeroActions>
+        }
+      >
+        <p className="mt-6 max-w-[62ch] leading-relaxed text-muted">{service.fullDescription}</p>
+      </PageHero>
 
-      {/* Hero */}
-      <section className="bg-white py-24">
-        <div className="container grid items-center gap-16 lg:grid-cols-2">
-          <div>
-            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">{service.title.toUpperCase()}</span>
-            <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">{service.h1}</h1>
-            {/* Extractable direct answer, matching the pattern already used on
-                the local and brand pages. Answer engines lift this block. */}
-            {service.directAnswer ? (
-              <p className="mt-6 rounded-2xl border border-primary/10 bg-bgLight p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
-                {service.directAnswer}
-              </p>
-            ) : null}
-            <p className="mt-6 text-lg leading-relaxed text-textMuted">{service.fullDescription}</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <PhoneLink callLocation="service_hero_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
-                <i className="fa-solid fa-phone" /> Call Now
-              </PhoneLink>
-              <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
-                Book Service
-              </Link>
-            </div>
-          </div>
-          <Image src={service.image} alt={`${service.title} service in Delhi NCR`} width={680} height={500} className="w-full rounded-3xl object-cover shadow-cardPro" priority />
-        </div>
-      </section>
+      <TrustBand />
 
       {/* Benefits */}
-      <section className="py-20">
+      <section className="section band" data-section="service_benefits">
         <div className="container">
-          <div className="mb-20 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">WHAT WE FIX</span>
-            <h2 className="text-4xl font-black text-secondary">
-              {service.title} <span className="text-primary">Benefits</span>
-            </h2>
-          </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <SectionHead
+            eyebrow="WHAT WE FIX"
+            title={
+              <>
+                {service.title} <span className="heading-accent">Benefits</span>
+              </>
+            }
+          />
+          <ul className="mx-auto grid max-w-5xl gap-3 sm:grid-cols-3 sm:gap-5">
             {service.benefits.map((benefit) => (
-              <article className="rounded-card border border-black/5 bg-white p-10 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={benefit}>
-                <i className={`${service.icon} mb-5 text-4xl text-primary`} />
-                <h3 className="text-xl font-black text-secondary">{benefit}</h3>
-              </article>
+              <li key={benefit} className="card flex items-center gap-4 p-4 sm:flex-col sm:items-start sm:p-6">
+                <span className="icon-tile size-12 text-lg" aria-hidden="true">
+                  <i className={service.icon} />
+                </span>
+                <h3 className="text-[1.0625rem] sm:text-lg">{benefit}</h3>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {/* Service Areas */}
-      <section className="bg-bgLight py-20">
+      <section className="section band-tint" data-section="service_areas">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">AVAILABLE IN</span>
-            <h2 className="text-4xl font-black text-secondary">{service.title} Service Areas</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">
-              Explore city-specific guidance for {service.title.toLowerCase()} across Delhi NCR.
-            </p>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {cityPages.map((page) => (
-              <Link
-                key={page.slug}
-                href={`/services/${page.slug}`}
-                className="rounded-2xl border border-primary/10 bg-white p-5 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
-              >
-                {page.keyword}
-              </Link>
-            ))}
-          </div>
+          <SectionHead
+            eyebrow="AVAILABLE IN"
+            title={`${service.title} Service Areas`}
+            lead={`Explore city-specific guidance for ${serviceName} across Delhi NCR.`}
+          />
+          <LinkTiles
+            icon="fa-solid fa-location-dot"
+            className="mx-auto max-w-5xl sm:grid-cols-2 xl:grid-cols-4"
+            links={cityPages.map((page) => ({ href: `/services/${page.slug}`, label: page.keyword }))}
+          />
         </div>
       </section>
 
       {/* Repair Process */}
-      <section className="bg-bgLight py-20">
+      <section className="section band" data-section="service_process">
         <div className="container">
-          <div className="mb-20 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">PROCESS</span>
-            <h2 className="text-4xl font-black text-secondary">Simple Repair Process</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">{service.shortDescription}</p>
-          </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {service.process.map((step, index) => (
-              <article className="rounded-card border border-primary/10 bg-white p-8 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step}>
-                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
-                <div className="mx-auto my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
-                  <i className={genericProcess[index]?.icon || 'fa-solid fa-check'} />
-                </div>
-                <h3 className="text-xl font-black text-secondary">{step}</h3>
-                <p className="mt-3 leading-relaxed text-textMuted">{genericProcess[index]?.text || ''}</p>
-              </article>
-            ))}
-          </div>
+          <SectionHead eyebrow="PROCESS" title="Simple Repair Process" lead={service.shortDescription} />
+          <ProcessSteps
+            steps={service.process.map((step, index) => ({
+              title: step,
+              text: genericProcess[index]?.text || '',
+              icon: genericProcess[index]?.icon,
+            }))}
+          />
         </div>
       </section>
 
+      <SectionCTA section="service_mid_cta" className="pt-0 sm:pt-0" />
+
       {/* Related Services */}
-      <section className="py-20">
+      <section className="section band-tint" data-section="related_services">
         <div className="container">
-          <div className="mb-20 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">RELATED SERVICES</span>
-            <h2 className="text-4xl font-black text-secondary">Explore More Services</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">Browse other GR Solution repair services available across Delhi, Noida and NCR.</p>
-          </div>
-          <div className="mt-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <SectionHead
+            eyebrow="RELATED SERVICES"
+            title="Explore More Services"
+            lead="Browse other GR Solution repair services available across Delhi, Noida and NCR."
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
             {related.map((item) => (
-              <article className="flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={item.slug}>
-                <div className="relative overflow-hidden">
-                  <Image src={item.image} alt={`${item.title} by GR Solution`} width={520} height={320} className="h-60 w-full object-cover transition duration-500 hover:scale-105" />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 transition duration-300 hover:opacity-100" />
-                </div>
-                <div className="flex flex-1 flex-col gap-3 p-8">
-                  <h3 className="text-lg font-black text-secondary">{item.title}</h3>
-                  <p className="flex-1 text-sm leading-relaxed text-textMuted">
-                    {item.shortDescription}
-                  </p>
-                  <Link href={`/services/${item.slug}`} className="self-start rounded-full bg-primary px-6 py-3 font-black text-white transition hover:-translate-y-1 hover:bg-secondary">
-                    View Service
-                  </Link>
-                </div>
-              </article>
+              <ServiceCard key={item.slug} service={item} alt={`${item.title} by GR Solution`} />
             ))}
           </div>
         </div>
@@ -374,14 +378,11 @@ export default async function ServiceDetailPage({ params }) {
 
       {/* FAQ — near the end */}
       {service.faqs?.length > 0 && (
-        <section className="bg-bgLight py-20">
+        <section className="section band-tint" data-section="faq">
           <div className="container">
-            <div className="mb-20 text-center">
-              <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FAQ</span>
-              <h2 className="text-4xl font-black text-secondary">{service.title} Questions</h2>
-            </div>
-            <div className="mx-auto max-w-[800px]">
-              <FAQ faqs={service.faqs} />
+            <SectionHead eyebrow="FAQ" title={`${service.title} Questions`} />
+            <div className="mx-auto max-w-3xl">
+              <FAQ faqs={service.faqs} name="service-faq" />
             </div>
           </div>
         </section>
@@ -400,9 +401,10 @@ function LocalServicePage({ page }) {
     ? sameCityPages.map((item) => ({ label: item.keyword, href: `/services/${item.slug}` }))
     : page.relatedServiceLinks || [];
   const pageUrl = `${siteConfig.url}/services/${page.slug}`;
+  const waContext = `${service ? lowerServiceTitle(service.title) : 'TV repair'} in ${page.cityName}`;
 
   return (
-    <main>
+    <main data-wa-context={waContext}>
       <JsonLd
         data={[
           {
@@ -461,70 +463,57 @@ function LocalServicePage({ page }) {
         ]}
       />
 
-      <section className="border-b border-[#eee] bg-white py-2">
-        <div className="container">
-          <Breadcrumb
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Services', href: '/services' },
-              { label: parentServiceTitle, href: parentServiceHref },
-              { label: page.cityName, href: null },
+      <PageHero
+        section="city_hero"
+        breadcrumb={[
+          { label: 'Home', href: '/' },
+          { label: 'Services', href: '/services' },
+          { label: parentServiceTitle, href: parentServiceHref },
+          { label: page.cityName, href: null },
+        ]}
+        eyebrow={page.keyword.toUpperCase()}
+        title={page.h1}
+        answer={page.directAnswer}
+        image={{ src: page.image, alt: `${page.keyword} by GR Solution` }}
+        actions={
+          <HeroActions stack>
+            <PhoneLink callLocation="service_cta_call" className="btn btn-primary btn-lg" data-cta="city_hero_call">
+              <i className="fa-solid fa-phone" aria-hidden="true" /> Call GR Solution
+            </PhoneLink>
+            <Link href="/contact" className="btn btn-secondary btn-lg" data-cta="city_hero_book">
+              Book Inspection
+            </Link>
+          </HeroActions>
+        }
+      >
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {['Doorstep inspection', 'Transparent estimate', 'Delhi NCR support'].map((item) => (
+            <li key={item} className="chip">
+              <i className="fa-solid fa-circle-check text-teal-600" aria-hidden="true" />
+              {item}
+            </li>
+          ))}
+        </ul>
+      </PageHero>
+
+      <TrustBand />
+
+      <section className="section band" data-section="city_guidance">
+        <div className="container grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,0.85fr)] lg:gap-12">
+          <article className="max-w-prose">
+            <h2>Useful {page.keyword} Guidance</h2>
+            <p className="mt-5 text-[1.0625rem] leading-relaxed text-body">{page.intro}</p>
+            <p className="mt-4 text-[1.0625rem] leading-relaxed text-body">{page.cityExplanation}</p>
+            <p className="mt-4 text-[1.0625rem] leading-relaxed text-body">{page.localTrust}</p>
+          </article>
+          <ContactAside
+            callLocation="service_contact_phone"
+            links={[
+              { href: '/', label: 'Visit GR Solution homepage' },
+              { href: parentServiceHref, label: `Explore main ${parentServiceTitle}` },
+              { href: '/contact', label: 'Open contact and booking page' },
             ]}
           />
-        </div>
-      </section>
-
-      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
-        <div className="container grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">
-              {page.keyword.toUpperCase()}
-            </span>
-            <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.6rem)] font-black leading-tight text-secondary">{page.h1}</h1>
-            <p className="mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
-              {page.directAnswer}
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <PhoneLink callLocation="service_cta_call" className="inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
-                <i className="fa-solid fa-phone" /> Call GR Solution
-              </PhoneLink>
-              <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
-                Book Inspection
-              </Link>
-            </div>
-            <div className="mt-8 grid gap-3 text-sm font-black text-primary sm:grid-cols-3">
-              <span className="rounded-full bg-white px-4 py-3 shadow-oldMd">Doorstep inspection</span>
-              <span className="rounded-full bg-white px-4 py-3 shadow-oldMd">Transparent estimate</span>
-              <span className="rounded-full bg-white px-4 py-3 shadow-oldMd">Delhi NCR support</span>
-            </div>
-          </div>
-          <Image src={page.image} alt={`${page.keyword} by GR Solution`} width={680} height={500} className="h-[min(520px,52vw)] min-h-[340px] w-full rounded-3xl object-cover shadow-cardPro" priority />
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="container grid gap-10 lg:grid-cols-[1.25fr_0.75fr]">
-          <article className="rounded-card border border-black/5 bg-white p-8 shadow-oldMd">
-            <h2 className="text-3xl font-black text-secondary">Useful {page.keyword} Guidance</h2>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">{page.intro}</p>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">{page.cityExplanation}</p>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">{page.localTrust}</p>
-          </article>
-          <aside className="rounded-card border border-primary/10 bg-bgLight p-8">
-            <h3 className="text-2xl font-black text-secondary">GR Solution Contact</h3>
-            <p className="mt-4 leading-relaxed text-textMuted">
-              Phone: <PhoneLink callLocation="service_contact_phone" className="font-black text-primary" />
-              <br />
-              Email: <a href={siteConfig.emailHref} className="font-black text-primary">{siteConfig.email}</a>
-              <br />
-              Address: {siteConfig.address.streetAddress}, {siteConfig.address.addressLocality} {siteConfig.address.postalCode}
-            </p>
-            <div className="mt-6 grid gap-3">
-              <Link href="/" className="font-black text-primary hover:text-secondary">Visit GR Solution homepage</Link>
-              <Link href={parentServiceHref} className="font-black text-primary hover:text-secondary">Explore main {parentServiceTitle}</Link>
-              <Link href="/contact" className="font-black text-primary hover:text-secondary">Open contact and booking page</Link>
-            </div>
-          </aside>
         </div>
       </section>
 
@@ -536,140 +525,125 @@ function LocalServicePage({ page }) {
       />
       {page.isGenericTvRepair ? <LocalityLinks citySlug={page.citySlug} cityName={page.cityName} /> : null}
 
-      <section className="bg-bgLight py-20">
+      <section className="section band" data-section="city_detailed_guidance">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">LOCAL REPAIR GUIDE</span>
-            <h2 className="text-4xl font-black text-secondary">Detailed {page.keyword} Guidance</h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
-              Practical answers for diagnosis, local scheduling, safe handling, repair feasibility and after-repair checks.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <SectionHead
+            eyebrow="LOCAL REPAIR GUIDE"
+            title={`Detailed ${page.keyword} Guidance`}
+            lead="Practical answers for diagnosis, local scheduling, safe handling, repair feasibility and after-repair checks."
+          />
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {page.contentBlocks.map((block) => (
-              <article key={block.title} className="rounded-card border border-primary/10 bg-white p-7 shadow-oldMd">
-                <h3 className="text-xl font-black leading-tight text-secondary">{block.title}</h3>
-                <p className="mt-4 leading-relaxed text-textMuted">{block.text}</p>
+              <article key={block.title} className="card p-5 sm:p-6">
+                <h3 className="text-lg leading-snug">{block.title}</h3>
+                <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{block.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-bgLight py-20">
-        <div className="container grid gap-8 lg:grid-cols-2">
-          <div className="rounded-card bg-white p-8 shadow-oldMd">
-            <h2 className="text-3xl font-black text-secondary">Common Problems We Solve</h2>
-            <ul className="mt-6 grid gap-4">
+      <section className="section band-tint" data-section="city_problems">
+        <div className="container grid gap-5 lg:grid-cols-2">
+          <Panel>
+            <h2 className="heading-panel">Common Problems We Solve</h2>
+            <ul className="check-list mt-5 grid gap-3 leading-relaxed text-body">
               {page.commonProblems.map((problem) => (
-                <li key={problem} className="flex gap-3 leading-relaxed text-textMuted">
-                  <i className="fa-solid fa-circle-check mt-1 text-success" />
+                <li key={problem}>
                   <span>{problem}</span>
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="rounded-card bg-white p-8 shadow-oldMd">
-            <h2 className="text-3xl font-black text-secondary">What To Check Before Calling</h2>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">{page.beforeCalling}</p>
-            <h3 className="mt-8 text-2xl font-black text-secondary">Repair vs Replace</h3>
-            <p className="mt-4 text-lg leading-relaxed text-textMuted">{page.repairReplace}</p>
-          </div>
+          </Panel>
+          <Panel>
+            <h2 className="heading-panel">What To Check Before Calling</h2>
+            <p className="mt-4 leading-relaxed text-body">{page.beforeCalling}</p>
+            <h3 className="mt-7 text-lg">Repair vs Replace</h3>
+            <p className="mt-2 leading-relaxed text-body">{page.repairReplace}</p>
+          </Panel>
         </div>
       </section>
 
+      <SectionCTA section="city_mid_cta" />
+
       <SupportingTopicsSection topics={page.supportingTopics} cityName={page.cityName} />
 
-      <section className="py-20">
-        <div className="container grid gap-8 lg:grid-cols-[1fr_0.85fr]">
-          <article className="rounded-card border border-black/5 bg-white p-8 shadow-oldMd">
-            <h2 className="text-3xl font-black text-secondary">Why Choose GR Solution In {page.cityName}</h2>
-            <ul className="mt-6 grid gap-4">
+      <section className="section band-tint" data-section="city_why_choose">
+        <div className="container grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">
+          <Panel>
+            <h2 className="heading-panel">Why Choose GR Solution In {page.cityName}</h2>
+            <ul className="check-list mt-5 grid gap-3 leading-relaxed text-body">
               {page.whyChoose.map((point) => (
-                <li key={point} className="flex gap-3 leading-relaxed text-textMuted">
-                  <i className="fa-solid fa-shield-halved mt-1 text-primary" />
+                <li key={point}>
                   <span>{withChannelPhone(point)}</span>
                 </li>
               ))}
             </ul>
-          </article>
-          <article className="rounded-card border border-primary/10 bg-bgLight p-8">
-            <h2 className="text-3xl font-black text-secondary">Quality Checks</h2>
-            <p className="mt-4 leading-relaxed text-textMuted">
+          </Panel>
+          <Panel>
+            <h2 className="heading-panel">Quality Checks</h2>
+            <p className="mt-4 leading-relaxed text-muted">
               The final check depends on the TV type and approved repair, but these checkpoints help confirm that the fault is stable after service.
             </p>
-            <ul className="mt-6 grid gap-3">
+            <ul className="mt-5 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               {page.qualityChecks.map((check) => (
-                <li key={check} className="rounded-2xl bg-white px-4 py-3 font-bold text-secondary shadow-oldMd">
-                  <i className="fa-solid fa-check mr-2 text-success" />
+                <li key={check} className="flex items-start gap-2.5 rounded-xl border border-line bg-surface px-3.5 py-3 font-semibold leading-snug text-ink">
+                  <i className="fa-solid fa-check mt-0.5 text-teal-600" aria-hidden="true" />
                   {check}
                 </li>
               ))}
             </ul>
-          </article>
+          </Panel>
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="section band" data-section="city_process">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">SERVICE PROCESS</span>
-            <h2 className="text-4xl font-black text-secondary">How {page.keyword} Works</h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-            {page.process.map((step, index) => (
-              <article key={step} className="rounded-card border border-primary/10 bg-white p-6 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg">
-                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
-                <p className="mt-4 font-bold leading-relaxed text-secondary">{step}</p>
-              </article>
-            ))}
-          </div>
+          <SectionHead eyebrow="SERVICE PROCESS" title={`How ${page.keyword} Works`} />
+          <ProcessSteps titleAs="p" steps={page.process.map((step) => ({ title: step }))} />
         </div>
       </section>
 
-      <section className="bg-bgLight py-20">
-        <div className="container grid gap-8 lg:grid-cols-3">
-          <article className="rounded-card bg-white p-8 shadow-oldMd">
-            <h2 className="text-2xl font-black text-secondary">Local Coverage</h2>
-            <p className="mt-4 leading-relaxed text-textMuted">{page.coverage}</p>
-          </article>
-          <article className="rounded-card bg-white p-8 shadow-oldMd">
-            <h2 className="text-2xl font-black text-secondary">Cost Guidance</h2>
-            <p className="mt-4 leading-relaxed text-textMuted">{page.pricing}</p>
+      <section className="section band-tint" data-section="city_coverage">
+        <div className="container grid gap-5 lg:grid-cols-3">
+          <Panel>
+            <span className="icon-tile icon-tile-teal" aria-hidden="true">
+              <i className="fa-solid fa-map-location-dot" />
+            </span>
+            <h2 className="heading-panel mt-4">Local Coverage</h2>
+            <p className="mt-3 leading-relaxed text-muted">{page.coverage}</p>
+          </Panel>
+          <Panel>
+            <span className="icon-tile icon-tile-teal" aria-hidden="true">
+              <i className="fa-solid fa-indian-rupee-sign" />
+            </span>
+            <h2 className="heading-panel mt-4">Cost Guidance</h2>
+            <p className="mt-3 leading-relaxed text-muted">{page.pricing}</p>
             {page.costGuideHref ? (
-              <Link href={page.costGuideHref} className="mt-4 inline-flex font-black text-primary hover:text-secondary">
+              <Link href={page.costGuideHref} className="link-arrow mt-2" data-cta="city_cost_guide">
                 Full {page.cityName} TV repair cost guide &rarr;
               </Link>
             ) : null}
-          </article>
-          <article className="rounded-card bg-white p-8 shadow-oldMd">
-            <h2 className="text-2xl font-black text-secondary">Quick Support</h2>
-            <p className="mt-4 leading-relaxed text-textMuted">{page.emergency}</p>
-          </article>
+          </Panel>
+          <Panel>
+            <span className="icon-tile icon-tile-teal" aria-hidden="true">
+              <i className="fa-solid fa-bolt" />
+            </span>
+            <h2 className="heading-panel mt-4">Quick Support</h2>
+            <p className="mt-3 leading-relaxed text-muted">{page.emergency}</p>
+          </Panel>
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container grid gap-8 lg:grid-cols-2">
+      <section className="section band" data-section="city_links">
+        <div className="container grid gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
-            <h2 className="text-3xl font-black text-secondary">Same Service In Other Cities</h2>
-            <div className="mt-6 grid gap-3">
-              {page.sameServiceOtherCities.map((link) => (
-                <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+            <h2 className="heading-panel">Same Service In Other Cities</h2>
+            <LinkTiles className="mt-5" icon="fa-solid fa-location-dot" links={page.sameServiceOtherCities} />
           </div>
           <div>
-            <h2 className="text-3xl font-black text-secondary">Related TV Repair Services In {page.cityName}</h2>
-            <div className="mt-6 grid gap-3">
-              {relatedSameCityPages.map((link) => (
-                <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+            <h2 className="heading-panel">Related TV Repair Services In {page.cityName}</h2>
+            <LinkTiles className="mt-5" icon="fa-solid fa-tv" links={relatedSameCityPages} />
           </div>
         </div>
       </section>
@@ -677,45 +651,35 @@ function LocalServicePage({ page }) {
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {(page.tvTypesCovered?.length > 0 || page.brandCityLinks?.length > 0) && (
-        <section className="bg-bgLight py-20">
-          <div className="container grid gap-8 lg:grid-cols-2">
+        <section className="section band" data-section="city_tv_types">
+          <div className="container grid gap-5 lg:grid-cols-2">
             {page.tvTypesCovered?.length > 0 && (
-              <article className="rounded-card bg-white p-8 shadow-oldMd">
-                <h2 className="text-3xl font-black text-secondary">{page.isNearMePage ? 'TV Types We Support' : 'TV Types Covered'}</h2>
-                <ul className="mt-6 grid gap-3">
+              <Panel>
+                <h2 className="heading-panel">{page.isNearMePage ? 'TV Types We Support' : 'TV Types Covered'}</h2>
+                <ul className="check-list mt-5 grid gap-3 leading-relaxed text-body">
                   {page.tvTypesCovered.map((item) => (
-                    <li key={item} className="flex gap-3 leading-relaxed text-textMuted">
-                      <i className="fa-solid fa-circle-check mt-1 text-success" />
+                    <li key={item}>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
-              </article>
+              </Panel>
             )}
             {page.brandCityLinks?.length > 0 && (
-              <article className="rounded-card bg-white p-8 shadow-oldMd">
-                <h2 className="text-3xl font-black text-secondary">{page.isNearMePage ? 'TV Brands We Commonly Repair' : 'Brand Repair Links'}</h2>
-                <div className="mt-6 grid gap-3">
-                  {page.brandCityLinks.map((link) => (
-                    <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-bgLight p-4 font-black text-secondary transition hover:-translate-y-1 hover:text-primary">
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </article>
+              <Panel>
+                <h2 className="heading-panel">{page.isNearMePage ? 'TV Brands We Commonly Repair' : 'Brand Repair Links'}</h2>
+                <LinkTiles className="mt-5" links={page.brandCityLinks} />
+              </Panel>
             )}
           </div>
         </section>
       )}
 
-      <section className="bg-bgLight py-20">
+      <section className="section band-tint" data-section="faq">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FAQ</span>
-            <h2 className="text-4xl font-black text-secondary">{page.keyword} FAQs</h2>
-          </div>
-          <div className="mx-auto max-w-[850px]">
-            <FAQ faqs={page.faqs} />
+          <SectionHead eyebrow="FAQ" title={`${page.keyword} FAQs`} />
+          <div className="mx-auto max-w-3xl">
+            <FAQ faqs={page.faqs} name="city-faq" />
           </div>
         </div>
       </section>
@@ -733,7 +697,7 @@ function BrandServicePage({ page }) {
   const pageUrl = `${siteConfig.url}/services/${page.slug}`;
 
   return (
-    <main>
+    <main data-wa-context={`${page.brand} TV repair in ${page.cityName}`}>
       <JsonLd
         data={[
           {
@@ -785,218 +749,174 @@ function BrandServicePage({ page }) {
         ]}
       />
 
-      {/* Breadcrumb */}
-      <section className="border-b border-[#eee] bg-white py-2">
-        <div className="container">
-          <Breadcrumb
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Services', href: '/services' },
-              { label: `${page.brand} TV Repair in ${page.cityName}`, href: null },
+      {/* The quick-answer summary sits directly under the H1, as on every
+          other template; the hero intro follows the calls to action. */}
+      <PageHero
+        section="brand_hero"
+        breadcrumb={[
+          { label: 'Home', href: '/' },
+          { label: 'Services', href: '/services' },
+          { label: `${page.brand} TV Repair in ${page.cityName}`, href: null },
+        ]}
+        eyebrow={`${page.brand.toUpperCase()} TV REPAIR`}
+        title={page.h1}
+        answer={page.directAnswer}
+        image={{ src: page.image, alt: `${page.brand} TV repair service by GR Solution in ${page.cityName}` }}
+        actions={
+          <HeroActions>
+            <PhoneLink callLocation="city_service_hero_call" className="btn btn-primary btn-lg" data-cta="brand_hero_call">
+              <i className="fa-solid fa-phone" aria-hidden="true" /> Call Now
+            </PhoneLink>
+            <Link href="/contact" className="btn btn-secondary btn-lg" data-cta="brand_hero_book">
+              Book Repair
+            </Link>
+            <WhatsAppLink className="btn btn-whatsapp btn-lg" data-cta="brand_hero_whatsapp">
+              <i className="fa-brands fa-whatsapp" aria-hidden="true" /> WhatsApp
+            </WhatsAppLink>
+          </HeroActions>
+        }
+      >
+        <p className="mt-6 max-w-[62ch] leading-relaxed text-muted">{page.heroIntro}</p>
+      </PageHero>
+
+      <TrustBand />
+
+      {/* Intro + city explanation */}
+      <section className="section band" data-section="brand_intro">
+        <div className="container grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,0.85fr)] lg:gap-12">
+          <article className="max-w-prose">
+            <h2>
+              Is It Worth Repairing A {page.brand} TV In {page.cityName}?
+            </h2>
+            <p className="mt-5 text-[1.0625rem] leading-relaxed text-body">{page.intro}</p>
+            <p className="mt-4 text-[1.0625rem] leading-relaxed text-body">{page.cityExplanation}</p>
+          </article>
+          <ContactAside
+            callLocation="city_service_contact_phone"
+            links={[
+              { href: '/', label: 'Visit GR Solution homepage' },
+              { href: '/services', label: 'Explore all TV repair services' },
+              { href: '/contact', label: 'Open contact and booking page' },
+              ...(page.priorityInternalLinks?.slice(0, 2) || []),
             ]}
           />
         </div>
       </section>
 
-      {/* Hero */}
-      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
-        <div className="container grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">
-              {page.brand.toUpperCase()} TV REPAIR
-            </span>
-            <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.6rem)] font-black leading-tight text-secondary">{page.h1}</h1>
-            <p className="mt-6 leading-relaxed text-textMuted">{page.heroIntro}</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <PhoneLink callLocation="city_service_hero_call" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
-                <i className="fa-solid fa-phone" /> Call Now
-              </PhoneLink>
-              <Link href="/contact" className="inline-flex rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white">
-                Book Repair
-              </Link>
-              <WhatsAppLink className="inline-flex items-center gap-2 rounded-full bg-[#25d366] px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1">
-                <i className="fa-brands fa-whatsapp" /> WhatsApp
-              </WhatsAppLink>
-            </div>
-          </div>
-          <Image
-            src={page.image}
-            alt={`${page.brand} TV repair service by GR Solution in ${page.cityName}`}
-            width={680}
-            height={500}
-            className="h-[min(520px,52vw)] min-h-[340px] w-full rounded-3xl object-cover shadow-cardPro"
-            priority
-          />
-        </div>
-      </section>
-
-      {/* Quick answer box */}
-      <section className="py-16">
-        <div className="container">
-          <div className="mx-auto max-w-3xl rounded-2xl border border-primary/10 bg-bgLight p-7 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
-            {page.directAnswer}
-          </div>
-        </div>
-      </section>
-
-      {/* Intro + city explanation */}
-      <section className="py-4">
-        <div className="container grid gap-10 lg:grid-cols-[1.25fr_0.75fr]">
-          <article className="rounded-card border border-black/5 bg-white p-8 shadow-oldMd">
-            <h2 className="text-3xl font-black text-secondary">
-              Is It Worth Repairing A {page.brand} TV In {page.cityName}?
-            </h2>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">{page.intro}</p>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">{page.cityExplanation}</p>
-          </article>
-          <aside className="rounded-card border border-primary/10 bg-bgLight p-8">
-            <h3 className="text-2xl font-black text-secondary">GR Solution Contact</h3>
-            <p className="mt-4 leading-relaxed text-textMuted">
-              Phone: <PhoneLink callLocation="city_service_contact_phone" className="font-black text-primary" />
-              <br />
-              Email: <a href={siteConfig.emailHref} className="font-black text-primary">{siteConfig.email}</a>
-              <br />
-              Address: {siteConfig.address.streetAddress}, {siteConfig.address.addressLocality} {siteConfig.address.postalCode}
-            </p>
-            <div className="mt-6 grid gap-3">
-              <Link href="/" className="font-black text-primary hover:text-secondary">Visit GR Solution homepage</Link>
-              <Link href="/services" className="font-black text-primary hover:text-secondary">Explore all TV repair services</Link>
-              <Link href="/contact" className="font-black text-primary hover:text-secondary">Open contact and booking page</Link>
-              {page.priorityInternalLinks?.slice(0, 2).map((link) => (
-                <Link key={link.href} href={link.href} className="font-black text-primary hover:text-secondary">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </aside>
-        </div>
-      </section>
-
       {/* Common problems */}
-      <section className="bg-bgLight py-20">
+      <section className="section band-tint" data-section="brand_problems">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">COMMON PROBLEMS</span>
-            <h2 className="text-4xl font-black text-secondary">
-              What Problems Can Be Fixed In A {page.brand} TV?
-            </h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <SectionHead
+            eyebrow="COMMON PROBLEMS"
+            title={`What Problems Can Be Fixed In A ${page.brand} TV?`}
+          />
+          <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-4 xl:gap-4">
             {page.commonIssues.map((issue) => (
-              <article key={issue} className="rounded-card border border-primary/10 bg-white p-6 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg">
-                <i className="fa-solid fa-circle-exclamation mb-3 text-2xl text-primary" />
-                <p className="font-bold leading-relaxed text-secondary">{issue}</p>
-              </article>
+              <li key={issue} className="card flex items-start gap-3 p-4 sm:p-5 xl:flex-col">
+                <span className="icon-tile size-10 shrink-0" aria-hidden="true">
+                  <i className="fa-solid fa-circle-exclamation" />
+                </span>
+                <p className="font-semibold leading-relaxed text-ink">{issue}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {/* Brand-specific repair guidance */}
       <SupportingTopicsSection topics={page.supportingTopics} cityName={page.cityName} />
 
-      <section className="py-20">
-        <div className="container grid gap-8 lg:grid-cols-2">
-          <article className="rounded-card border border-black/5 bg-white p-8 shadow-oldMd">
-            <h2 className="text-3xl font-black text-secondary">
+      <section className="section band" data-section="brand_inspection">
+        <div className="container grid gap-5 lg:grid-cols-2">
+          <Panel>
+            <span className="icon-tile icon-tile-teal" aria-hidden="true">
+              <i className="fa-solid fa-magnifying-glass" />
+            </span>
+            <h2 className="heading-panel mt-4">
               How Does GR Solution Inspect A {page.brand} TV?
             </h2>
-            <p className="mt-5 leading-relaxed text-textMuted">{page.repairGuidance}</p>
-          </article>
-          <article className="rounded-card border border-primary/10 bg-bgLight p-8">
-            <h2 className="text-3xl font-black text-secondary">Repair vs Replace</h2>
-            <p className="mt-5 leading-relaxed text-textMuted">{page.repairVsReplace}</p>
-          </article>
+            <p className="mt-3 leading-relaxed text-body">{page.repairGuidance}</p>
+          </Panel>
+          <Panel tone="panel">
+            <span className="icon-tile icon-tile-teal bg-white" aria-hidden="true">
+              <i className="fa-solid fa-wrench" />
+            </span>
+            <h2 className="heading-panel mt-4">Repair vs Replace</h2>
+            <p className="mt-3 leading-relaxed text-body">{page.repairVsReplace}</p>
+          </Panel>
         </div>
       </section>
 
       {/* Repair process */}
-      <section className="bg-bgLight py-20">
+      <section className="section band-tint" data-section="brand_process">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">PROCESS</span>
-            <h2 className="text-4xl font-black text-secondary">{page.brand} TV Repair Process</h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-            {page.repairProcess.map((step, index) => (
-              <article key={step} className="rounded-card border border-primary/10 bg-white p-6 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg">
-                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
-                <p className="mt-4 font-bold leading-relaxed text-secondary">{step}</p>
-              </article>
-            ))}
-          </div>
+          <SectionHead eyebrow="PROCESS" title={`${page.brand} TV Repair Process`} />
+          <ProcessSteps titleAs="p" steps={page.repairProcess.map((step) => ({ title: step }))} />
         </div>
       </section>
 
+      <SectionCTA section="brand_mid_cta" />
+
       {/* Why choose + before calling checklist */}
-      <section className="py-20">
-        <div className="container grid gap-8 lg:grid-cols-2">
-          <article className="rounded-card border border-black/5 bg-white p-8 shadow-oldMd">
-            <h2 className="text-3xl font-black text-secondary">Why Choose GR Solution In {page.cityName}</h2>
-            <ul className="mt-6 grid gap-4">
+      <section className="section band" data-section="brand_why_choose">
+        <div className="container grid gap-5 lg:grid-cols-2">
+          <Panel>
+            <h2 className="heading-panel">Why Choose GR Solution In {page.cityName}</h2>
+            <ul className="check-list mt-5 grid gap-3 leading-relaxed text-body">
               {page.whyChoose.map((point) => (
-                <li key={point} className="flex gap-3 leading-relaxed text-textMuted">
-                  <i className="fa-solid fa-shield-halved mt-1 text-primary" />
+                <li key={point}>
                   <span>{withChannelPhone(point)}</span>
                 </li>
               ))}
             </ul>
-          </article>
-          <article className="rounded-card border border-primary/10 bg-bgLight p-8">
-            <h2 className="text-3xl font-black text-secondary">What To Check Before Calling</h2>
-            <ul className="mt-6 grid gap-3">
+          </Panel>
+          <Panel tone="panel">
+            <h2 className="heading-panel">What To Check Before Calling</h2>
+            <ul className="check-list mt-5 grid gap-3 leading-relaxed text-body">
               {page.beforeCallingChecklist.map((item) => (
-                <li key={item} className="flex gap-3 leading-relaxed text-textMuted">
-                  <i className="fa-solid fa-circle-check mt-1 text-success" />
+                <li key={item}>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-          </article>
+          </Panel>
         </div>
       </section>
 
       {/* City coverage + pricing */}
-      <section className="bg-bgLight py-20">
-        <div className="container grid gap-8 lg:grid-cols-2">
-          <article className="rounded-card bg-white p-8 shadow-oldMd">
-            <h2 className="text-2xl font-black text-secondary">Service Coverage In {page.cityName}</h2>
-            <p className="mt-4 leading-relaxed text-textMuted">{page.cityCoverage}</p>
-          </article>
-          <article className="rounded-card bg-white p-8 shadow-oldMd">
-            <h2 className="text-2xl font-black text-secondary">Pricing Guidance</h2>
-            <p className="mt-4 leading-relaxed text-textMuted">{page.pricingNote}</p>
-          </article>
+      <section className="section band-tint" data-section="brand_coverage">
+        <div className="container grid gap-5 lg:grid-cols-2">
+          <Panel>
+            <span className="icon-tile icon-tile-teal" aria-hidden="true">
+              <i className="fa-solid fa-map-location-dot" />
+            </span>
+            <h2 className="heading-panel mt-4">Service Coverage In {page.cityName}</h2>
+            <p className="mt-3 leading-relaxed text-muted">{page.cityCoverage}</p>
+          </Panel>
+          <Panel>
+            <span className="icon-tile icon-tile-teal" aria-hidden="true">
+              <i className="fa-solid fa-indian-rupee-sign" />
+            </span>
+            <h2 className="heading-panel mt-4">Pricing Guidance</h2>
+            <p className="mt-3 leading-relaxed text-muted">{page.pricingNote}</p>
+          </Panel>
         </div>
       </section>
 
       {/* Related links */}
-      <section className="py-20">
-        <div className="container grid gap-8 lg:grid-cols-2">
+      <section className="section band" data-section="brand_links">
+        <div className="container grid gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
-            <h2 className="text-3xl font-black text-secondary">{page.brand} TV Repair In Other Cities</h2>
-            <div className="mt-6 grid gap-3">
-              {page.relatedBrandCityLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+            <h2 className="heading-panel">{page.brand} TV Repair In Other Cities</h2>
+            <LinkTiles className="mt-5" icon="fa-solid fa-location-dot" links={page.relatedBrandCityLinks} />
           </div>
           <div>
-            <h2 className="text-3xl font-black text-secondary">Other TV Brands In {page.cityName}</h2>
-            <div className="mt-6 grid gap-3">
-              {page.relatedCityServiceLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-            <div className="mt-6 grid gap-3">
-              <Link href="/services" className="rounded-2xl border border-primary/10 bg-bgLight p-4 font-black text-primary shadow-oldMd transition hover:-translate-y-1">
-                View All TV Repair Services
-              </Link>
-            </div>
+            <h2 className="heading-panel">Other TV Brands In {page.cityName}</h2>
+            <LinkTiles className="mt-5" icon="fa-solid fa-tv" links={page.relatedCityServiceLinks} />
+            <Link href="/services" className="link-tile mt-3 border-navy-100 bg-navy-50 text-navy-700">
+              <span>View All TV Repair Services</span>
+              <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </section>
@@ -1004,14 +924,11 @@ function BrandServicePage({ page }) {
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {/* FAQ */}
-      <section className="bg-bgLight py-20">
+      <section className="section band-tint" data-section="faq">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FAQ</span>
-            <h2 className="text-4xl font-black text-secondary">{page.brand} TV Repair FAQs</h2>
-          </div>
-          <div className="mx-auto max-w-[850px]">
-            <FAQ faqs={page.faqs} />
+          <SectionHead eyebrow="FAQ" title={`${page.brand} TV Repair FAQs`} />
+          <div className="mx-auto max-w-3xl">
+            <FAQ faqs={page.faqs} name="brand-faq" />
           </div>
         </div>
       </section>
@@ -1034,44 +951,55 @@ function ServiceFaultsSection({ serviceSlug, serviceTitle, cityPages }) {
   if (!topics.length || !profile) return null;
 
   return (
-    <section className="bg-bgLight py-20">
+    <section className="section band" data-section="service_faults">
       <div className="container">
-        <div className="mb-12 max-w-4xl">
-          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-            FAULTS EXPLAINED
-          </span>
-          <h2 className="mt-5 text-4xl font-black text-secondary">{serviceTitle} Faults Explained</h2>
-          <p className="mt-5 text-lg leading-relaxed text-textMuted">{profile.diagnosticDetail}</p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <SectionHead
+          align="left"
+          className="max-w-4xl"
+          eyebrow="FAULTS EXPLAINED"
+          title={`${serviceTitle} Faults Explained`}
+          lead={profile.diagnosticDetail}
+        />
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {topics.map((topic) => (
-            <article key={topic.label} className="rounded-card border border-primary/10 bg-white p-7 shadow-oldMd">
-              <h3 className="text-xl font-black leading-tight text-secondary">{topic.label}</h3>
-              <p className="mt-4 leading-relaxed text-textMuted">{topic.text}</p>
+            <article key={topic.label} className="card p-5 sm:p-6">
+              <h3 className="text-lg leading-snug">{topic.label}</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{topic.text}</p>
             </article>
           ))}
         </div>
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          <article className="rounded-card bg-white p-8 shadow-oldMd">
-            <h3 className="text-2xl font-black text-secondary">Safe handling</h3>
-            <p className="mt-4 leading-relaxed text-textMuted">{profile.handlingCare}</p>
+        <div className="mt-5 grid gap-4 lg:grid-cols-2">
+          <article className="panel flex gap-4 p-5 sm:p-6">
+            <span className="icon-tile icon-tile-teal bg-white" aria-hidden="true">
+              <i className="fa-solid fa-shield-halved" />
+            </span>
+            <div className="min-w-0">
+              <h3 className="text-lg">Safe handling</h3>
+              <p className="mt-2 leading-relaxed text-muted">{profile.handlingCare}</p>
+            </div>
           </article>
-          <article className="rounded-card bg-white p-8 shadow-oldMd">
-            <h3 className="text-2xl font-black text-secondary">After-repair checks</h3>
-            <p className="mt-4 leading-relaxed text-textMuted">
-              After an approved repair, the checks include {profile.qualityChecks.join(', ')}, confirming the TV
-              behaves normally under real viewing conditions rather than simply turning on.
-            </p>
+          <article className="panel flex gap-4 p-5 sm:p-6">
+            <span className="icon-tile icon-tile-teal bg-white" aria-hidden="true">
+              <i className="fa-solid fa-clipboard-list" />
+            </span>
+            <div className="min-w-0">
+              <h3 className="text-lg">After-repair checks</h3>
+              <p className="mt-2 leading-relaxed text-muted">
+                After an approved repair, the checks include {profile.qualityChecks.join(', ')}, confirming the TV
+                behaves normally under real viewing conditions rather than simply turning on.
+              </p>
+            </div>
           </article>
         </div>
         {cityPages?.length ? (
-          <div className="mt-12 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap gap-2.5">
             {cityPages.map((item) => (
               <Link
                 key={item.slug}
                 href={`/services/${item.slug}`}
-                className="rounded-full border border-primary/20 bg-white px-5 py-3 font-black text-primary transition hover:bg-primary hover:text-white"
+                className="chip min-h-[2.75rem] px-4 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
               >
+                <i className="fa-solid fa-location-dot text-teal-600" aria-hidden="true" />
                 {item.keyword}
               </Link>
             ))}
@@ -1087,23 +1015,23 @@ function LocalAngleSection({ content }) {
   if (!content) return null;
 
   return (
-    <section className="py-20">
-      <div className="container max-w-5xl">
-        <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-          LOCAL INSIGHT
-        </span>
-        <h2 className="mt-5 text-3xl font-black leading-tight text-secondary md:text-4xl">{content.heading}</h2>
-        {content.paragraphs.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="mt-5 text-lg leading-relaxed text-textMuted">
-            {paragraph}
-          </p>
-        ))}
-        {content.situations ? (
-          <>
-            <h3 className="mt-10 text-2xl font-black text-secondary">{content.situations.caption}</h3>
-            <ContentTable table={content.situations} />
-          </>
-        ) : null}
+    <section className="section band-tint" data-section="local_angle">
+      <div className="container">
+        <div className="max-w-4xl">
+          <span className="eyebrow">LOCAL INSIGHT</span>
+          <h2 className="mt-3">{content.heading}</h2>
+          {content.paragraphs.map((paragraph) => (
+            <p key={paragraph.slice(0, 40)} className="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-body">
+              {paragraph}
+            </p>
+          ))}
+          {content.situations ? (
+            <>
+              <h3 className="mt-10 text-xl">{content.situations.caption}</h3>
+              <ContentTable table={content.situations} />
+            </>
+          ) : null}
+        </div>
       </div>
     </section>
   );
@@ -1115,25 +1043,20 @@ function LocalityLinks({ citySlug, cityName }) {
   if (!items.length) return null;
 
   return (
-    <section className="py-16">
+    <section className="section band-tint" data-section="locality_links">
       <div className="container">
-        <h2 className="text-3xl font-black text-secondary">{cityName} areas with their own guide</h2>
-        <p className="mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
-          Local detail for the parts of {cityName} we are asked about most: housing, access, electricity supply and
-          how a visit is planned there.
-        </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item) => (
-            <Link
-              key={item.slug}
-              href={`/services/${item.slug}`}
-              className="group flex items-center justify-between gap-4 rounded-2xl border border-primary/10 bg-bgLight px-5 py-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:bg-white hover:text-primary"
-            >
-              <span>{item.title}</span>
-              <i className="fa-solid fa-arrow-right text-sm text-primary" />
-            </Link>
-          ))}
+        <div className="section-head">
+          <h2>{cityName} areas with their own guide</h2>
+          <p className="lead mt-3">
+            Local detail for the parts of {cityName} we are asked about most: housing, access, electricity supply and
+            how a visit is planned there.
+          </p>
         </div>
+        <LinkTiles
+          className="sm:grid-cols-2 lg:grid-cols-3"
+          icon="fa-solid fa-location-dot"
+          links={items.map((item) => ({ href: `/services/${item.slug}`, label: item.title }))}
+        />
       </div>
     </section>
   );
@@ -1143,11 +1066,11 @@ function LocalityLinks({ citySlug, cityName }) {
 // and the locality table; each service page shows only its most relevant fact,
 // so six pages in the same city do not repeat the same block.
 const cityFactFocus = {
-  'led-tv-repair': { key: 'power', title: 'Power supply and your TV' },
-  'oled-qled-tv-repair': { key: 'housing', title: 'Homes and handling' },
-  'lcd-tv-repair': { key: 'baseNote', title: 'Visit planning' },
-  'plasma-tv-repair': { key: 'housing', title: 'Homes and handling' },
-  'curved-tv-repair': { key: 'baseNote', title: 'Visit planning' },
+  'led-tv-repair': { key: 'power', title: 'Power supply and your TV', icon: 'fa-solid fa-bolt' },
+  'oled-qled-tv-repair': { key: 'housing', title: 'Homes and handling', icon: 'fa-solid fa-house' },
+  'lcd-tv-repair': { key: 'baseNote', title: 'Visit planning', icon: 'fa-solid fa-calendar-check' },
+  'plasma-tv-repair': { key: 'housing', title: 'Homes and handling', icon: 'fa-solid fa-house' },
+  'curved-tv-repair': { key: 'baseNote', title: 'Visit planning', icon: 'fa-solid fa-calendar-check' },
 };
 
 // Verifiable facts about the city itself (data/cityLocalFacts.js).
@@ -1156,45 +1079,51 @@ function CityFactsSection({ facts, cityName, focus }) {
 
   if (focus) {
     return (
-      <section className="bg-bgLight py-16">
-        <div className="container max-w-5xl">
-          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-            {cityName.toUpperCase()} AT A GLANCE
-          </span>
-          <h2 className="mt-5 text-3xl font-black leading-tight text-secondary">
-            {focus.title} in {cityName}
-          </h2>
-          <p className="mt-5 text-lg leading-relaxed text-textMuted">{facts[focus.key]}</p>
+      <section className="section-tight band" data-section="city_facts">
+        <div className="container">
+          <div className="flex max-w-4xl flex-col gap-4 rounded-[1.25rem] border border-teal-100 bg-teal-50/60 p-5 sm:flex-row sm:gap-6 sm:p-8">
+            <span className="icon-tile size-12 bg-white text-lg text-teal-700 shadow-xs" aria-hidden="true">
+              <i className={focus.icon} />
+            </span>
+            <div className="min-w-0">
+              <span className="eyebrow">{cityName.toUpperCase()} AT A GLANCE</span>
+              <h2 className="heading-panel mt-3">
+                {focus.title} in {cityName}
+              </h2>
+              <p className="mt-3 leading-relaxed text-body">{facts[focus.key]}</p>
+            </div>
+          </div>
         </div>
       </section>
     );
   }
 
+  const cards = [
+    { title: 'Visit planning', text: facts.baseNote, icon: 'fa-solid fa-calendar-check' },
+    { title: 'Power supply and your TV', text: facts.power, icon: 'fa-solid fa-bolt' },
+    { title: 'Homes and handling', text: facts.housing, icon: 'fa-solid fa-house' },
+  ];
+
   return (
-    <section className="bg-bgLight py-20">
+    <section className="section band" data-section="city_facts">
       <div className="container">
-        <div className="max-w-4xl">
-          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-            {cityName.toUpperCase()} AT A GLANCE
-          </span>
-          <h2 className="mt-5 text-3xl font-black leading-tight text-secondary md:text-4xl">{facts.heading}</h2>
+        <div className="section-head max-w-4xl">
+          <span className="eyebrow">{cityName.toUpperCase()} AT A GLANCE</span>
+          <h2 className="mt-3">{facts.heading}</h2>
         </div>
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
-          <article className="rounded-card bg-white p-7 shadow-oldMd">
-            <h3 className="text-xl font-black text-secondary">Visit planning</h3>
-            <p className="mt-4 leading-relaxed text-textMuted">{facts.baseNote}</p>
-          </article>
-          <article className="rounded-card bg-white p-7 shadow-oldMd">
-            <h3 className="text-xl font-black text-secondary">Power supply and your TV</h3>
-            <p className="mt-4 leading-relaxed text-textMuted">{facts.power}</p>
-          </article>
-          <article className="rounded-card bg-white p-7 shadow-oldMd">
-            <h3 className="text-xl font-black text-secondary">Homes and handling</h3>
-            <p className="mt-4 leading-relaxed text-textMuted">{facts.housing}</p>
-          </article>
+        <div className="grid gap-4 lg:grid-cols-3">
+          {cards.map((card) => (
+            <article key={card.title} className="card p-5 sm:p-6">
+              <span className="icon-tile icon-tile-teal" aria-hidden="true">
+                <i className={card.icon} />
+              </span>
+              <h3 className="mt-4 text-lg">{card.title}</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{card.text}</p>
+            </article>
+          ))}
         </div>
         <div className="mt-10 max-w-5xl">
-          <h3 className="text-2xl font-black text-secondary">{facts.localityTable.caption}</h3>
+          <h3 className="text-xl">{facts.localityTable.caption}</h3>
           <ContentTable table={facts.localityTable} />
         </div>
       </div>
@@ -1206,20 +1135,18 @@ function SupportingTopicsSection({ topics, cityName }) {
   if (!topics?.length) return null;
 
   return (
-    <section className="py-20">
+    <section className="section band" data-section="supporting_topics">
       <div className="container">
-        <div className="mb-12 text-center">
-          <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">HELPFUL TOPICS</span>
-          <h2 className="text-4xl font-black text-secondary">TV Repair Topics for {cityName}</h2>
-          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
-            Concise guidance for common search questions, diagnosis decisions and safe next steps.
-          </p>
-        </div>
-        <div className={`grid gap-6 ${topics.length === 1 ? 'mx-auto max-w-3xl' : 'md:grid-cols-2 xl:grid-cols-3'}`}>
+        <SectionHead
+          eyebrow="HELPFUL TOPICS"
+          title={`TV Repair Topics for ${cityName}`}
+          lead="Concise guidance for common search questions, diagnosis decisions and safe next steps."
+        />
+        <div className={`grid gap-4 ${topics.length === 1 ? 'mx-auto max-w-3xl' : 'md:grid-cols-2 xl:grid-cols-3'}`}>
           {topics.map((topic) => (
-            <article key={topic.keyword} className="rounded-card border border-primary/10 bg-white p-7 shadow-oldMd">
-              <h3 className="text-xl font-black leading-tight text-secondary">{topic.title}</h3>
-              <p className="mt-4 leading-relaxed text-textMuted">{topic.text}</p>
+            <article key={topic.keyword} className="card p-5 sm:p-6">
+              <h3 className="text-lg leading-snug">{topic.title}</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{topic.text}</p>
             </article>
           ))}
         </div>

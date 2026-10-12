@@ -6,13 +6,13 @@ import cx from '@/components/ui/cx';
 // Service card: a compact row on phones, a vertical card from 640px up. The
 // "View Service" link is stretched over the whole card, so the entire card is
 // one large tap target while the link text stays the same.
-export default function ServiceCard({ service, className }) {
+export default function ServiceCard({ service, className, alt }) {
   return (
     <article className={cx('card card-interactive group relative flex h-full overflow-hidden sm:flex-col', className)}>
       <div className="flex w-28 shrink-0 items-center justify-center bg-gradient-to-br from-navy-50 to-teal-50 p-3 sm:w-auto sm:px-6 sm:py-5">
         <Image
           src={illustrationFor(service)}
-          alt={`${service.title} service by GR Solution`}
+          alt={alt ?? `${service.title} service by GR Solution`}
           width={320}
           height={200}
           unoptimized

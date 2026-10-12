@@ -49,3 +49,14 @@ export default function TrustStrip({ className, tone = 'light' }) {
     </ul>
   );
 }
+
+// Full-width band holding the strip, placed directly under a page hero.
+export function TrustBand() {
+  return (
+    <section aria-label="Why customers choose GR Solution" className="border-b border-line bg-white py-5 sm:py-6">
+      <div className="container">
+        <TrustStrip />
+      </div>
+    </section>
+  );
+}

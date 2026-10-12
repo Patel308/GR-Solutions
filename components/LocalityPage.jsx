@@ -1,10 +1,15 @@
 import Link from 'next/link';
-import Breadcrumb from '@/components/Breadcrumb';
 import ContentTable from '@/components/ContentTable';
 import FAQ from '@/components/FAQ';
 import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
 import PriceTable from '@/components/PriceTable';
+import SectionCTA from '@/components/SectionCTA';
+import { TrustBand } from '@/components/TrustStrip';
+import PageHero, { HeroActions } from '@/components/page/PageHero';
+import SectionHead from '@/components/page/SectionHead';
+import LinkTiles from '@/components/page/LinkTiles';
+import HeroMapArt from '@/components/page/HeroMapArt';
 import { getLocalityPagesByCity } from '@/data/localityPages';
 import { services } from '@/data/services';
 import { repairPriceBands } from '@/data/pricing';
@@ -22,7 +27,7 @@ export default function LocalityPage({ page }) {
   const siblings = getLocalityPagesByCity(page.citySlug).filter((item) => item.slug !== page.slug);
 
   return (
-    <main>
+    <main data-wa-context={`TV repair in ${page.name}, ${page.cityName}`}>
       <JsonLd
         data={[
           {
@@ -61,57 +66,53 @@ export default function LocalityPage({ page }) {
         ]}
       />
 
-      <section className="border-b border-[#eee] bg-white py-2">
-        <div className="container">
-          <Breadcrumb
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Services', href: '/services' },
-              { label: `TV Repair in ${page.cityName}`, href: page.parentHref },
-              { label: page.name, href: null },
-            ]}
-          />
-        </div>
-      </section>
-
-      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-20">
-        <div className="container max-w-5xl">
-          <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">
+      <PageHero
+        section="locality_hero"
+        breadcrumb={[
+          { label: 'Home', href: '/' },
+          { label: 'Services', href: '/services' },
+          { label: `TV Repair in ${page.cityName}`, href: page.parentHref },
+          { label: page.name, href: null },
+        ]}
+        eyebrow={
+          <>
             {page.name.toUpperCase()} &middot; {page.cityName.toUpperCase()}
-          </span>
-          <h1 className="mt-6 text-[clamp(2.6rem,5vw,4.4rem)] font-black leading-tight text-secondary">{page.h1}</h1>
-          <p className="mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
-            {page.directAnswer}
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          </>
+        }
+        title={page.h1}
+        answer={page.directAnswer}
+        art={<HeroMapArt className="w-full max-w-[22rem] drop-shadow-[0_24px_40px_rgb(15_23_42/0.12)]" />}
+        actions={
+          <HeroActions>
             <PhoneLink
               callLocation={`locality_${page.slug}_call`}
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary"
+              className="btn btn-primary btn-lg"
+              data-cta="locality_hero_call"
             >
-              <i className="fa-solid fa-phone" /> Call Now
+              <i className="fa-solid fa-phone" aria-hidden="true" /> Call Now
             </PhoneLink>
-            <WhatsAppLink
-              className="inline-flex items-center gap-2 rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary shadow-cta transition hover:-translate-y-1 hover:bg-primary hover:text-white"
-            >
-              <i className="fa-brands fa-whatsapp" /> WhatsApp
+            <WhatsAppLink className="btn btn-whatsapp btn-lg" data-cta="locality_hero_whatsapp">
+              <i className="fa-brands fa-whatsapp" aria-hidden="true" /> WhatsApp
             </WhatsAppLink>
-          </div>
-        </div>
-      </section>
+          </HeroActions>
+        }
+      />
 
-      <section className="py-16">
-        <div className="container grid gap-10 lg:grid-cols-[1.3fr_0.7fr]">
-          <div>
-            <p className="text-lg leading-relaxed text-textMuted">{page.intro}</p>
-            <h2 className="mt-10 text-3xl font-black text-secondary">{page.name} at a glance</h2>
+      <TrustBand />
+
+      <section className="section band" data-section="locality_facts">
+        <div className="container grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,0.8fr)] lg:gap-12">
+          <div className="min-w-0">
+            <p className="max-w-prose text-[1.0625rem] leading-relaxed text-body">{page.intro}</p>
+            <h2 className="mt-10">{page.name} at a glance</h2>
             <ContentTable table={{ caption: `${page.name} local facts`, columns: ['Fact', 'Detail'], rows: page.facts }} />
           </div>
-          <aside className="self-start rounded-card border border-primary/10 bg-bgLight p-8">
-            <h2 className="text-2xl font-black text-secondary">Areas covered</h2>
-            <ul className="mt-5 grid gap-2">
+          <aside className="panel self-start p-5 sm:p-7 lg:sticky lg:top-28">
+            <h2 className="heading-panel">Areas covered</h2>
+            <ul className="mt-5 grid gap-2.5">
               {page.areas.map((area) => (
-                <li key={area} className="flex gap-3 text-textMuted">
-                  <i className="fa-solid fa-location-dot mt-1 text-primary" />
+                <li key={area} className="flex gap-3 leading-relaxed text-body">
+                  <i className="fa-solid fa-location-dot mt-1 w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
                   <span>{area}</span>
                 </li>
               ))}
@@ -120,98 +121,90 @@ export default function LocalityPage({ page }) {
         </div>
       </section>
 
-      <section className="bg-bgLight py-16">
-        <div className="container max-w-5xl">
-          <h2 className="text-3xl font-black leading-tight text-secondary md:text-4xl">{page.angleHeading}</h2>
-          {page.angle.map((paragraph) => (
-            <p key={paragraph.slice(0, 40)} className="mt-5 text-lg leading-relaxed text-textMuted">
-              {paragraph}
-            </p>
-          ))}
-          <h3 className="mt-10 text-2xl font-black text-secondary">{page.situations.caption}</h3>
-          <ContentTable table={page.situations} />
-          {page.completedJobs?.length ? (
-            <>
-              <h3 className="mt-10 text-2xl font-black text-secondary">Recent jobs in {page.name}</h3>
-              <ContentTable
-                table={{
-                  caption: `Recent TV repair jobs in ${page.name}`,
-                  columns: ['Month', 'TV', 'Symptom', 'What we found', 'Outcome'],
-                  rows: page.completedJobs.map((job) => [job.month, job.tv, job.symptom, job.found, job.outcome]),
-                }}
-              />
-            </>
-          ) : null}
+      <section className="section band-tint" data-section="locality_angle">
+        <div className="container">
+          <div className="max-w-4xl">
+            <h2>{page.angleHeading}</h2>
+            {page.angle.map((paragraph) => (
+              <p key={paragraph.slice(0, 40)} className="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-body">
+                {paragraph}
+              </p>
+            ))}
+            <h3 className="mt-10 text-xl">{page.situations.caption}</h3>
+            <ContentTable table={page.situations} />
+            {page.completedJobs?.length ? (
+              <>
+                <h3 className="mt-10 text-xl">Recent jobs in {page.name}</h3>
+                <ContentTable
+                  table={{
+                    caption: `Recent TV repair jobs in ${page.name}`,
+                    columns: ['Month', 'TV', 'Symptom', 'What we found', 'Outcome'],
+                    rows: page.completedJobs.map((job) => [job.month, job.tv, job.symptom, job.found, job.outcome]),
+                  }}
+                />
+              </>
+            ) : null}
+          </div>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="container grid gap-10 lg:grid-cols-2">
+      <section className="section band" data-section="locality_visit">
+        <div className="container grid gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
-            <h2 className="text-3xl font-black text-secondary">Before the visit</h2>
-            <ul className="mt-6 grid gap-4">
+            <h2 className="heading-panel">Before the visit</h2>
+            <ul className="check-list mt-5 grid gap-3.5 text-[1.0625rem] leading-relaxed text-body">
               {page.tips.map((tip) => (
-                <li key={tip} className="flex gap-3 text-lg leading-relaxed text-textMuted">
-                  <i className="fa-solid fa-circle-check mt-1 text-success" />
+                <li key={tip}>
                   <span>{tip}</span>
                 </li>
               ))}
             </ul>
           </div>
-          <div>
-            <h2 className="text-3xl font-black text-secondary">What repairs typically cost</h2>
+          <div className="min-w-0">
+            <h2 className="heading-panel">What repairs typically cost</h2>
             <PriceTable rows={localityPriceRows} caption={`Typical TV repair costs in ${page.name}`} />
-            <Link href={page.costGuideHref} className="mt-4 inline-flex font-black text-primary hover:text-secondary">
+            <Link href={page.costGuideHref} className="link-arrow mt-2" data-cta="locality_cost_guide">
               Full {page.cityName} TV repair cost guide &rarr;
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-bgLight py-16">
+      <SectionCTA section="locality_mid_cta" className="pt-0 sm:pt-0" />
+
+      <section className="section band-tint" data-section="faq">
         <div className="container">
-          <div className="mb-10 text-center">
-            <h2 className="text-4xl font-black text-secondary">{page.keyword} FAQs</h2>
-          </div>
-          <div className="mx-auto max-w-4xl">
-            <FAQ faqs={page.faqs} />
+          <SectionHead title={`${page.keyword} FAQs`} />
+          <div className="mx-auto max-w-3xl">
+            <FAQ faqs={page.faqs} name="locality-faq" />
           </div>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="container grid gap-8 lg:grid-cols-2">
+      <section className="section band" data-section="locality_links">
+        <div className="container grid gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
-            <h2 className="text-3xl font-black text-secondary">TV repair services in {page.cityName}</h2>
-            <div className="mt-6 grid gap-3">
-              <Link href={page.parentHref} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary">
-                TV Repair in {page.cityName}
-              </Link>
-              {services.map((service) => (
-                <Link
-                  key={service.slug}
-                  href={`/services/${service.slug}-${page.citySlug}`}
-                  className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary"
-                >
-                  {service.title} in {page.cityName}
-                </Link>
-              ))}
-            </div>
+            <h2 className="heading-panel">TV repair services in {page.cityName}</h2>
+            <LinkTiles
+              className="mt-5"
+              icon="fa-solid fa-tv"
+              links={[
+                { href: page.parentHref, label: `TV Repair in ${page.cityName}` },
+                ...services.map((service) => ({
+                  href: `/services/${service.slug}-${page.citySlug}`,
+                  label: `${service.title} in ${page.cityName}`,
+                })),
+              ]}
+            />
           </div>
           {siblings.length ? (
             <div>
-              <h2 className="text-3xl font-black text-secondary">Other {page.cityName} areas</h2>
-              <div className="mt-6 grid gap-3">
-                {siblings.map((item) => (
-                  <Link
-                    key={item.slug}
-                    href={`/services/${item.slug}`}
-                    className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:text-primary"
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-              </div>
+              <h2 className="heading-panel">Other {page.cityName} areas</h2>
+              <LinkTiles
+                className="mt-5"
+                icon="fa-solid fa-location-dot"
+                links={siblings.map((item) => ({ href: `/services/${item.slug}`, label: item.title }))}
+              />
             </div>
           ) : null}
         </div>
