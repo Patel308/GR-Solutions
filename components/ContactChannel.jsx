@@ -77,10 +77,32 @@ export function PhoneLink({ callLocation, children, ...props }) {
   );
 }
 
-export function WhatsAppLink({ children, ...props }) {
+// Prefilled WhatsApp text built from the page the visitor is on. Pages put a
+// short context on <main data-wa-context="OLED/QLED TV repair in Noida">.
+export function whatsAppMessage(element) {
+  const host = element?.closest?.('[data-wa-context]') || document.querySelector('main[data-wa-context]');
+  const context = host?.getAttribute('data-wa-context');
+  return context ? `Hi GR Solution, I need ${context}.` : 'Hi GR Solution, I need help with my TV.';
+}
+
+// The server HTML keeps a plain wa.me link (works without JavaScript); the
+// message is added at click time so it always matches the current page.
+export function WhatsAppLink({ children, message, onClick, ...props }) {
   const { channel, whatsappHref } = useContactChannel();
+  const handleClick = (event) => {
+    const text = message || whatsAppMessage(event.currentTarget);
+    event.currentTarget.href = `${whatsappHref}?text=${encodeURIComponent(text)}`;
+    onClick?.(event);
+  };
   return (
-    <a href={whatsappHref} target="_blank" rel="noopener noreferrer" data-lead-channel={channel} {...props}>
+    <a
+      href={whatsappHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-lead-channel={channel}
+      onClick={handleClick}
+      {...props}
+    >
       {children}
     </a>
   );

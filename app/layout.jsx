@@ -4,7 +4,8 @@ import './icons.css';
 import { fontBody, fontDisplay } from './fonts';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import FloatingButtons from '@/components/FloatingButtons';
+import StickyActionBar from '@/components/StickyActionBar';
+import { EnquiryProvider } from '@/components/EnquiryContext';
 import JsonLd from '@/components/JsonLd';
 import CallTracking from '@/components/CallTracking';
 import { ContactChannelProvider } from '@/components/ContactChannel';
@@ -113,10 +114,20 @@ export default function RootLayout({ children }) {
       <body className="font-sans">
         <JsonLd data={[organizationSchema, localBusinessSchema, websiteSchema]} />
         <ContactChannelProvider>
-          <Header />
-          {children}
-          <Footer />
-          <FloatingButtons />
+          <EnquiryProvider>
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[3000] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:font-semibold focus:text-primary focus:shadow-card-hover"
+            >
+              Skip to content
+            </a>
+            <Header />
+            <div id="main-content" tabIndex={-1} className="outline-none">
+              {children}
+            </div>
+            <Footer />
+            <StickyActionBar />
+          </EnquiryProvider>
         </ContactChannelProvider>
         <CallTracking />
       </body>
