@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: false,
+  images: {
+    // AVIF first (about 20-50% smaller than WebP), WebP for browsers without
+    // AVIF support. Chosen per request from the Accept header; image URLs in
+    // the HTML do not change.
+    formats: ['image/avif', 'image/webp'],
+  },
   async redirects() {
     const rootPages = [
       ['index', '/'],
