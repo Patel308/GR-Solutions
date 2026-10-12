@@ -1,5 +1,8 @@
 # GR Solution redesign: Phase 0 audit, baseline and plan
 
+> Update: the redesign is complete; results, open decisions and the final
+> checks are in [`phase-5-report.md`](phase-5-report.md).
+
 Status: **Phase 0 complete. No UI has been changed.** The baseline was taken
 from a production build of `main` at commit `595b6c7` (same as this branch's
 base). Everything below is measured, not estimated, unless marked otherwise.

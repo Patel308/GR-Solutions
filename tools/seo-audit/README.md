@@ -37,9 +37,23 @@ Playwright and Lighthouse use `/opt/pw-browsers/chromium` by default; pass
 
 - `snapshots/baseline/` — the Phase 0 baseline (raw server HTML), taken from a
   production build of commit `595b6c7` (see `snapshots/baseline/meta.json`).
-- `reports/phase-0/` — Lighthouse and responsive summaries. Raw Lighthouse
-  reports and screenshots are git-ignored and can be regenerated from the
-  baseline commit with the commands above.
+- `reports/phase-0/` — Lighthouse and responsive summaries of the old site.
+- `reports/phase-5/` — the same for the redesigned site, plus a same-day
+  re-measurement of the old site (`lighthouse-baseline-rerun/`).
+  Raw Lighthouse reports and screenshots are git-ignored and can be
+  regenerated with the commands above.
+
+## Signed-off changes
+
+`approved-changes.json` lists changes the owner approved during the
+redesign (new form labels, the stock-image swaps, D15, D18 and the
+site-wide components). `diff.mjs` reads it by default (`--approved <file>`
+for another list, `--approved none` to see everything). A rule matches by
+level, field, page and detail-line patterns; matching lines are reported
+under **APPROVED** with the rule id and decision, any other lines keep their
+level, and only unapproved violations fail the run. Add a rule only for a
+change that has been signed off, and keep its patterns as narrow as the
+change itself.
 
 ## Reading a diff
 

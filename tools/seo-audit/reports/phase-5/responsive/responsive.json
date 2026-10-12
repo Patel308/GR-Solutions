@@ -1,0 +1,3974 @@
+[
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 14863,
+      "h1": {
+        "fontSize": 32,
+        "lineHeight": 35,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 141,
+        "bottom": 247,
+        "height": 106,
+        "lines": 3,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 17,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 39
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919990283890",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 576,
+        "left": 16,
+        "width": 158,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "Get Free Quote",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 731,
+          "width": 360,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 272,
+        "tag": "P",
+        "text": "Expert LCD, LED, OLED, and QLED TV repairs with careful diagnosis, transparent e",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 11563,
+      "h1": {
+        "fontSize": 32,
+        "lineHeight": 35,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 170,
+        "bottom": 240,
+        "height": 70,
+        "lines": 2,
+        "shareOfViewport": 0.09
+      },
+      "bodyText": {
+        "fontSize": 17.02,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 39
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 628,
+        "left": 16,
+        "width": 158,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call Now",
+        "Book Service",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 731,
+          "width": 360,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 61,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 168,
+        "tag": "P",
+        "text": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board, ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 22343,
+      "h1": {
+        "fontSize": 32,
+        "lineHeight": 35,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 207,
+        "bottom": 242,
+        "height": 35,
+        "lines": 1,
+        "shareOfViewport": 0.04
+      },
+      "bodyText": {
+        "fontSize": 17.02,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 39
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 548,
+        "left": 16,
+        "width": 328,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 731,
+          "width": 360,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 180,
+        "tag": "P",
+        "text": "Need TV repair in Noida? GR Solution provides doorstep inspection, diagnosis, an",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 10173,
+      "h1": {
+        "fontSize": 32,
+        "lineHeight": 35,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 134,
+        "bottom": 275,
+        "height": 141,
+        "lines": 4,
+        "shareOfViewport": 0.18
+      },
+      "bodyText": {
+        "fontSize": 16.008,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 35
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 8303,
+        "left": 36,
+        "width": 288,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 731,
+          "width": 360,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 57,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 104,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 15007,
+      "h1": {
+        "fontSize": 32,
+        "lineHeight": 35,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 170,
+        "bottom": 276,
+        "height": 106,
+        "lines": 3,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 17.02,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 39
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 5973,
+        "left": 37,
+        "width": 137,
+        "height": 48,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 731,
+          "width": 360,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 60,
+        "under48": 3,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 178,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 325,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 180,
+        "tag": "P",
+        "text": "TV repair cost in Delhi is decided by which component failed, not by the brand. ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 4923,
+      "h1": {
+        "fontSize": 32,
+        "lineHeight": 35,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 134,
+        "bottom": 204,
+        "height": 70,
+        "lines": 2,
+        "shareOfViewport": 0.09
+      },
+      "bodyText": {
+        "fontSize": 17.08,
+        "lineHeight": 1.6,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 38
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 381,
+        "left": 16,
+        "width": 158,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "WhatsApp",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 731,
+          "width": 360,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 45,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 168,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 14494,
+      "h1": {
+        "fontSize": 32.6,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 141,
+        "bottom": 249,
+        "height": 108,
+        "lines": 3,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 17,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 42
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919990283890",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 550,
+        "left": 16,
+        "width": 173,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "Get Free Quote",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 775,
+          "width": 390,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 180,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 11112,
+      "h1": {
+        "fontSize": 32.6,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 171,
+        "bottom": 243,
+        "height": 72,
+        "lines": 2,
+        "shareOfViewport": 0.09
+      },
+      "bodyText": {
+        "fontSize": 17.065,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 42
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 603,
+        "left": 16,
+        "width": 173,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call Now",
+        "Book Service",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 775,
+          "width": 390,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 61,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 152,
+        "tag": "P",
+        "text": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board, ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 21274,
+      "h1": {
+        "fontSize": 32.6,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 171,
+        "bottom": 207,
+        "height": 36,
+        "lines": 1,
+        "shareOfViewport": 0.04
+      },
+      "bodyText": {
+        "fontSize": 17.065,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 42
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 485,
+        "left": 16,
+        "width": 358,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 775,
+          "width": 390,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 204,
+        "tag": "P",
+        "text": "Need TV repair in Noida? GR Solution provides doorstep inspection, diagnosis, an",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 9749,
+      "h1": {
+        "fontSize": 32.6,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 135,
+        "bottom": 243,
+        "height": 108,
+        "lines": 3,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 16.062,
+        "lineHeight": 1.62,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 38
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 7908,
+        "left": 36,
+        "width": 318,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 775,
+          "width": 390,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 57,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 372,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 14628,
+      "h1": {
+        "fontSize": 32.6,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 171,
+        "bottom": 279,
+        "height": 108,
+        "lines": 3,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 17.065,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 42
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 5790,
+        "left": 37,
+        "width": 152,
+        "height": 48,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 775,
+          "width": 390,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 60,
+        "under48": 3,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 178,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 167,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 152,
+        "tag": "P",
+        "text": "TV repair cost in Delhi is decided by which component failed, not by the brand. ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 4856,
+      "h1": {
+        "fontSize": 32.6,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 135,
+        "bottom": 207,
+        "height": 72,
+        "lines": 2,
+        "shareOfViewport": 0.09
+      },
+      "bodyText": {
+        "fontSize": 17.17,
+        "lineHeight": 1.6,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 42
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 384,
+        "left": 16,
+        "width": 173,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "WhatsApp",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 775,
+          "width": 390,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 45,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 172,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 14371,
+      "h1": {
+        "fontSize": 33.08,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 141,
+        "bottom": 250,
+        "height": 109,
+        "lines": 3,
+        "shareOfViewport": 0.12
+      },
+      "bodyText": {
+        "fontSize": 17,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 45
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919990283890",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 552,
+        "left": 16,
+        "width": 185,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "Get Free Quote",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 827,
+          "width": 414,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 184,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=828&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 10789,
+      "h1": {
+        "fontSize": 33.08,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 171,
+        "bottom": 244,
+        "height": 73,
+        "lines": 2,
+        "shareOfViewport": 0.08
+      },
+      "bodyText": {
+        "fontSize": 17.101,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 45
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 577,
+        "left": 16,
+        "width": 185,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call Now",
+        "Book Service",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 827,
+          "width": 414,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 61,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 160,
+        "tag": "P",
+        "text": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board, ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 20606,
+      "h1": {
+        "fontSize": 33.08,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 171,
+        "bottom": 207,
+        "height": 36,
+        "lines": 1,
+        "shareOfViewport": 0.04
+      },
+      "bodyText": {
+        "fontSize": 17.101,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 45
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 458,
+        "left": 16,
+        "width": 382,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 827,
+          "width": 414,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 184,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=828&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 9502,
+      "h1": {
+        "fontSize": 33.08,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 135,
+        "bottom": 244,
+        "height": 109,
+        "lines": 3,
+        "shareOfViewport": 0.12
+      },
+      "bodyText": {
+        "fontSize": 16.1052,
+        "lineHeight": 1.62,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 41
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 7661,
+        "left": 36,
+        "width": 342,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 827,
+          "width": 414,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 57,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 152,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=828&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 14257,
+      "h1": {
+        "fontSize": 33.08,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 171,
+        "bottom": 280,
+        "height": 109,
+        "lines": 3,
+        "shareOfViewport": 0.12
+      },
+      "bodyText": {
+        "fontSize": 17.101,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 45
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 5655,
+        "left": 37,
+        "width": 164,
+        "height": 48,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 827,
+          "width": 414,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 60,
+        "under48": 3,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 178,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 325,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 180,
+        "tag": "P",
+        "text": "TV repair cost in Delhi is decided by which component failed, not by the brand. ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 4831,
+      "h1": {
+        "fontSize": 33.08,
+        "lineHeight": 36,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 135,
+        "bottom": 208,
+        "height": 73,
+        "lines": 2,
+        "shareOfViewport": 0.08
+      },
+      "bodyText": {
+        "fontSize": 17.242,
+        "lineHeight": 1.6,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 44
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 358,
+        "left": 16,
+        "width": 185,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "WhatsApp",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 827,
+          "width": 414,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 45,
+        "under48": 1,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 248,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=828&q=75"
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 13487,
+      "h1": {
+        "fontSize": 40.16,
+        "lineHeight": 44,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 134,
+        "bottom": 222,
+        "height": 88,
+        "lines": 2,
+        "shareOfViewport": 0.09
+      },
+      "bodyText": {
+        "fontSize": 17,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 76
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919990283890",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 414,
+        "left": 24,
+        "width": 146,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "Get Free Quote",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 955,
+          "width": 768,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 77,
+        "under48": 3,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Privacy Policy",
+            "width": 93,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Terms & Conditions",
+            "width": 129,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 196,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 9094,
+      "h1": {
+        "fontSize": 40.16,
+        "lineHeight": 44,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 172,
+        "bottom": 216,
+        "height": 44,
+        "lines": 1,
+        "shareOfViewport": 0.04
+      },
+      "bodyText": {
+        "fontSize": 17.632,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 82
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 480,
+        "left": 24,
+        "width": 149,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call Now",
+        "Book Service",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 955,
+          "width": 768,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 62,
+        "under48": 3,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Privacy Policy",
+            "width": 93,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Terms & Conditions",
+            "width": 129,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 164,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 16290,
+      "h1": {
+        "fontSize": 40.16,
+        "lineHeight": 44,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 172,
+        "bottom": 216,
+        "height": 44,
+        "lines": 1,
+        "shareOfViewport": 0.04
+      },
+      "bodyText": {
+        "fontSize": 17.632,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 82
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 423,
+        "left": 24,
+        "width": 207,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 955,
+          "width": 768,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 77,
+        "under48": 3,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Privacy Policy",
+            "width": 93,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Terms & Conditions",
+            "width": 129,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 188,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 9290,
+      "h1": {
+        "fontSize": 40.16,
+        "lineHeight": 44,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 136,
+        "bottom": 269,
+        "height": 133,
+        "lines": 3,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 16.7424,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 76
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 7878,
+        "left": 125,
+        "width": 149,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 955,
+          "width": 768,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 58,
+        "under48": 3,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Privacy Policy",
+            "width": 93,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Terms & Conditions",
+            "width": 129,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 144,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 9524,
+      "h1": {
+        "fontSize": 40.16,
+        "lineHeight": 44,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 172,
+        "bottom": 260,
+        "height": 88,
+        "lines": 2,
+        "shareOfViewport": 0.09
+      },
+      "bodyText": {
+        "fontSize": 17.632,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 82
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 3666,
+        "left": 428,
+        "width": 133,
+        "height": 48,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 955,
+          "width": 768,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 61,
+        "under48": 5,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 178,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 703,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Privacy Policy",
+            "width": 93,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Terms & Conditions",
+            "width": 129,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 204,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 4469,
+      "h1": {
+        "fontSize": 40.16,
+        "lineHeight": 44,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 136,
+        "bottom": 224,
+        "height": 88,
+        "lines": 2,
+        "shareOfViewport": 0.09
+      },
+      "bodyText": {
+        "fontSize": 18.304,
+        "lineHeight": 1.6,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 73
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 352,
+        "left": 24,
+        "width": 146,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call now",
+        "WhatsApp",
+        "Call [fixed]",
+        "WhatsApp [fixed]",
+        "Book Visit [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "Call WhatsApp Book Visit",
+          "left": 0,
+          "top": 955,
+          "width": 768,
+          "height": 69
+        }
+      ],
+      "tapTargets": {
+        "interactive": 46,
+        "under48": 4,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110",
+            "width": 435,
+            "height": 27,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Privacy Policy",
+            "width": 93,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Terms & Conditions",
+            "width": 129,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 152,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 10376,
+      "h1": {
+        "fontSize": 50.4,
+        "lineHeight": 55,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 232,
+        "bottom": 398,
+        "height": 166,
+        "lines": 3,
+        "shareOfViewport": 0.21
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.56,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 70
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919990283890",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 619,
+        "left": 32,
+        "width": 146,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call now",
+        "Get Free Quote"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 79,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 196,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 7429,
+      "h1": {
+        "fontSize": 50.4,
+        "lineHeight": 55,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 208,
+        "bottom": 319,
+        "height": 111,
+        "lines": 2,
+        "shareOfViewport": 0.14
+      },
+      "bodyText": {
+        "fontSize": 18.4,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 71
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 589,
+        "left": 32,
+        "width": 149,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call Now",
+        "Book Service"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 64,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 184,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 12336,
+      "h1": {
+        "fontSize": 50.4,
+        "lineHeight": 55,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 208,
+        "bottom": 263,
+        "height": 55,
+        "lines": 1,
+        "shareOfViewport": 0.07
+      },
+      "bodyText": {
+        "fontSize": 18.4,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 71
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 475,
+        "left": 32,
+        "width": 207,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 79,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 164,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 6282,
+      "h1": {
+        "fontSize": 50.4,
+        "lineHeight": 55,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 218,
+        "bottom": 384,
+        "height": 166,
+        "lines": 3,
+        "shareOfViewport": 0.21
+      },
+      "bodyText": {
+        "fontSize": 17,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 57
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 5261,
+        "left": 381,
+        "width": 149,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 60,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 176,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8178,
+      "h1": {
+        "fontSize": 50.4,
+        "lineHeight": 55,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 208,
+        "bottom": 374,
+        "height": 166,
+        "lines": 3,
+        "shareOfViewport": 0.21
+      },
+      "bodyText": {
+        "fontSize": 18.4,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 71
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 3165,
+        "left": 511,
+        "width": 133,
+        "height": 48,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 62,
+        "under48": 24,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 178,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 167,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 176,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 3133,
+      "h1": {
+        "fontSize": 50.4,
+        "lineHeight": 55,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 216,
+        "bottom": 327,
+        "height": 111,
+        "lines": 2,
+        "shareOfViewport": 0.14
+      },
+      "bodyText": {
+        "fontSize": 19.84,
+        "lineHeight": 1.6,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 64
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 462,
+        "left": 32,
+        "width": 146,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call now",
+        "WhatsApp"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 48,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 156,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 10516,
+      "h1": {
+        "fontSize": 52,
+        "lineHeight": 57,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 229,
+        "bottom": 401,
+        "height": 172,
+        "lines": 3,
+        "shareOfViewport": 0.19
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.56,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 70
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919990283890",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 622,
+        "left": 112,
+        "width": 146,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call now",
+        "Get Free Quote"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 79,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 224,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 7539,
+      "h1": {
+        "fontSize": 52,
+        "lineHeight": 57,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 208,
+        "bottom": 322,
+        "height": 114,
+        "lines": 2,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 18.5008,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 70
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 593,
+        "left": 112,
+        "width": 149,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call Now",
+        "Book Service"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 64,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 160,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 12553,
+      "h1": {
+        "fontSize": 52,
+        "lineHeight": 57,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 208,
+        "bottom": 265,
+        "height": 57,
+        "lines": 1,
+        "shareOfViewport": 0.06
+      },
+      "bodyText": {
+        "fontSize": 18.5008,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 70
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 506,
+        "left": 112,
+        "width": 207,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 79,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 208,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 6300,
+      "h1": {
+        "fontSize": 52,
+        "lineHeight": 57,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 215,
+        "bottom": 387,
+        "height": 172,
+        "lines": 3,
+        "shareOfViewport": 0.19
+      },
+      "bodyText": {
+        "fontSize": 17,
+        "lineHeight": 1.63,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 57
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 5276,
+        "left": 461,
+        "width": 149,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 60,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 196,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8226,
+      "h1": {
+        "fontSize": 52,
+        "lineHeight": 57,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 208,
+        "bottom": 380,
+        "height": 172,
+        "lines": 3,
+        "shareOfViewport": 0.19
+      },
+      "bodyText": {
+        "fontSize": 18.5008,
+        "lineHeight": 1.6,
+        "color": "rgb(11, 27, 51)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 70
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 3178,
+        "left": 591,
+        "width": 133,
+        "height": 48,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 62,
+        "under48": 24,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 178,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 167,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 180,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=640&q=75"
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 3156,
+      "h1": {
+        "fontSize": 52,
+        "lineHeight": 57,
+        "fontFamily": "fontDisplay, \"fontDisplay Fallback\", system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontWeight": "800",
+        "top": 214,
+        "bottom": 328,
+        "height": 114,
+        "lines": 2,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 20,
+        "lineHeight": 1.6,
+        "color": "rgb(71, 85, 105)",
+        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "approxCharsPerLine": 64
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 464,
+        "left": 112,
+        "width": 146,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call now",
+        "WhatsApp"
+      ],
+      "fixedElements": [],
+      "tapTargets": {
+        "interactive": 48,
+        "under48": 22,
+        "examples": [
+          {
+            "text": "Skip to content",
+            "width": 1,
+            "height": 1,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Show the list of services",
+            "width": 36,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 66,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 62,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Blog",
+            "width": 48,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Contact Us",
+            "width": 79,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Repair Prices",
+            "width": 94,
+            "height": 36,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [
+        "fontDisplay 800"
+      ],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 196,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=640&q=75"
+      }
+    }
+  }
+]

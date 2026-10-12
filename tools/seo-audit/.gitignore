@@ -5,5 +5,6 @@ snapshots/*
 snapshots/baseline/pages-rendered/
 # Regenerable artefacts
 reports/**/lighthouse/raw/
+reports/**/lighthouse-*/raw/
 reports/**/screenshots/
 reports/current/

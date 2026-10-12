@@ -1,0 +1,785 @@
+{
+  "measuredAt": "2026-10-12T07:51:19.949Z",
+  "base": "http://localhost:3200",
+  "runs": 5,
+  "pages": [
+    {
+      "name": "Home",
+      "path": "/",
+      "finalUrl": "http://localhost:3200/",
+      "scores": {
+        "performance": 98,
+        "accessibility": 90,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        98,
+        98,
+        96,
+        95,
+        98
+      ],
+      "metrics": {
+        "FCP": 1532.67465,
+        "LCP": 2279.6866250000003,
+        "TBT": 35.5,
+        "CLS": 0,
+        "SI": 1532.67465
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1533.67065,
+        "LCP": 2285.974875,
+        "TBT": 46.499999999999545,
+        "CLS": 0,
+        "SI": 1533.67065
+      },
+      "lcpElement": {
+        "selector": "header.sticky > div.container > a.shrink-0 > img.h-auto",
+        "snippet": "<img alt=\"GR Solution TV repair service logo\" width=\"150\" height=\"50\" decoding=\"async\" data-nimg=\"1\" class=\"h-auto w-[116px] object-contain sm:w-[132px] lg:w-[150px]\" style=\"color:transparent\" srcset=\"/_next/image?url=%2Fimages%2Flogo.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fi…\" src=\"/_next/image?url=%2Fimages%2Flogo.jpg&amp;w=384&amp;q=75\">",
+        "label": "GR Solution TV repair service logo",
+        "top": 1,
+        "height": 63,
+        "subparts": {
+          "timeToFirstByte": 13,
+          "resourceLoadDelay": 14,
+          "resourceLoadDuration": 14,
+          "elementRenderDelay": 140
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 36,
+          "kb": 443
+        },
+        "image": {
+          "requests": 3,
+          "kb": 185
+        },
+        "script": {
+          "requests": 11,
+          "kb": 166
+        },
+        "other": {
+          "requests": 20,
+          "kb": 57
+        },
+        "document": {
+          "requests": 1,
+          "kb": 23
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 12
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "font": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 443,
+      "domSize": 678,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "select-name",
+            "title": "Select elements do not have associated label elements.",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [
+          {
+            "id": "image-aspect-ratio",
+            "title": "Displays images with incorrect aspect ratio",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 0,
+          "savingsBytes": 26542
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 62 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2311,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 1
+    },
+    {
+      "name": "Service: OLED/QLED TV Repair",
+      "path": "/services/oled-qled-tv-repair",
+      "finalUrl": "http://localhost:3200/services/oled-qled-tv-repair",
+      "scores": {
+        "performance": 99,
+        "accessibility": 94,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        99,
+        97,
+        96,
+        97,
+        96
+      ],
+      "metrics": {
+        "FCP": 1534.2817,
+        "LCP": 2008.5634,
+        "TBT": 42,
+        "CLS": 0,
+        "SI": 1534.2817
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1533.2181,
+        "LCP": 2599.2209000000003,
+        "TBT": 48.5,
+        "CLS": 0,
+        "SI": 1533.2181
+      },
+      "lcpElement": {
+        "selector": "section.bg-white > div.container > div > p.mt-6",
+        "snippet": "<p class=\"mt-6 rounded-2xl border border-primary/10 bg-bgLight p-5 text-lg font-bold…\">",
+        "label": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board,…",
+        "top": 422,
+        "height": 303,
+        "subparts": {
+          "timeToFirstByte": 12,
+          "elementRenderDelay": 139
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 37,
+          "kb": 317
+        },
+        "script": {
+          "requests": 12,
+          "kb": 167
+        },
+        "image": {
+          "requests": 2,
+          "kb": 63
+        },
+        "other": {
+          "requests": 21,
+          "kb": 57
+        },
+        "document": {
+          "requests": 1,
+          "kb": 18
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 12
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "font": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 317,
+      "domSize": 476,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 0,
+          "savingsBytes": 26665
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 38 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2413.5,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 0
+    },
+    {
+      "name": "City: TV Repair in Noida",
+      "path": "/services/tv-repair-noida",
+      "finalUrl": "http://localhost:3200/services/tv-repair-noida",
+      "scores": {
+        "performance": 99,
+        "accessibility": 94,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        98,
+        96,
+        99,
+        99,
+        96
+      ],
+      "metrics": {
+        "FCP": 1532.8072,
+        "LCP": 2001.6144,
+        "TBT": 38.5,
+        "CLS": 0,
+        "SI": 1532.8072
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1533.4809500000001,
+        "LCP": 2298.9618999999993,
+        "TBT": 38.5,
+        "CLS": 0,
+        "SI": 1533.4809500000001
+      },
+      "lcpElement": {
+        "selector": "section.bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] > div.container > div > p.mt-6",
+        "snippet": "<p class=\"mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold l…\">",
+        "label": "Need TV repair in Noida? GR Solution provides doorstep inspection, diagnosis, a…",
+        "top": 422,
+        "height": 216,
+        "subparts": {
+          "timeToFirstByte": 11,
+          "elementRenderDelay": 147
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 37,
+          "kb": 327
+        },
+        "script": {
+          "requests": 12,
+          "kb": 167
+        },
+        "image": {
+          "requests": 2,
+          "kb": 63
+        },
+        "other": {
+          "requests": 21,
+          "kb": 57
+        },
+        "document": {
+          "requests": 1,
+          "kb": 28
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 12
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "font": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 327,
+      "domSize": 686,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 0,
+          "savingsBytes": 26665
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 48 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2125.5,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 3
+    },
+    {
+      "name": "Blog index",
+      "path": "/blog",
+      "finalUrl": "http://localhost:3200/blog",
+      "scores": {
+        "performance": 96,
+        "accessibility": 94,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        99,
+        95,
+        96,
+        96,
+        96
+      ],
+      "metrics": {
+        "FCP": 1533.5192,
+        "LCP": 2654.0384000000004,
+        "TBT": 31,
+        "CLS": 0,
+        "SI": 1533.5192
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1533.1636999999998,
+        "LCP": 2675.8905000000004,
+        "TBT": 34,
+        "CLS": 0,
+        "SI": 1533.1636999999998
+      },
+      "lcpElement": {
+        "selector": "section.bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] > div.container > div > h1.mt-7",
+        "snippet": "<h1 class=\"mt-7 text-[clamp(3rem,5.5vw,5rem)] font-black leading-tight text-secondary\">",
+        "label": "TV Repair Tips & Guides for Delhi, Noida & NCR Residents",
+        "top": 224,
+        "height": 240,
+        "subparts": {
+          "timeToFirstByte": 14,
+          "elementRenderDelay": 141
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 31,
+          "kb": 329
+        },
+        "script": {
+          "requests": 11,
+          "kb": 166
+        },
+        "image": {
+          "requests": 2,
+          "kb": 85
+        },
+        "other": {
+          "requests": 16,
+          "kb": 50
+        },
+        "document": {
+          "requests": 1,
+          "kb": 16
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 12
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "font": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 329,
+      "domSize": 443,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 300,
+          "savingsBytes": 26665
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 58 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2421,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 4
+    },
+    {
+      "name": "Blog post: TV Repair Cost in Delhi",
+      "path": "/blog/tv-repair-cost-delhi",
+      "finalUrl": "http://localhost:3200/blog/tv-repair-cost-delhi",
+      "scores": {
+        "performance": 99,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        98,
+        98,
+        99,
+        96,
+        96
+      ],
+      "metrics": {
+        "FCP": 1533.18175,
+        "LCP": 2014.3635,
+        "TBT": 40.00000000000023,
+        "CLS": 0,
+        "SI": 1533.18175
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1532.25405,
+        "LCP": 2249.7052000000003,
+        "TBT": 40.00000000000023,
+        "CLS": 0,
+        "SI": 1532.25405
+      },
+      "lcpElement": {
+        "selector": "section.bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] > div.container > div > p.mt-6",
+        "snippet": "<p class=\"mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold l…\">",
+        "label": "TV repair cost in Delhi is decided by which component failed, not by the brand.…",
+        "top": 525,
+        "height": 333,
+        "subparts": {
+          "timeToFirstByte": 20,
+          "elementRenderDelay": 141
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 33,
+          "kb": 363
+        },
+        "script": {
+          "requests": 12,
+          "kb": 167
+        },
+        "image": {
+          "requests": 2,
+          "kb": 111
+        },
+        "other": {
+          "requests": 17,
+          "kb": 51
+        },
+        "document": {
+          "requests": 1,
+          "kb": 21
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 12
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "font": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 363,
+      "domSize": 505,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 0,
+          "savingsBytes": 26665
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 90 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2416,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 2
+    }
+  ]
+}
