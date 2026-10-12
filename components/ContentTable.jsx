@@ -2,33 +2,33 @@
  * Generic comparison table. Answer engines and AI Overviews lift tabular facts
  * far more readily than the same information buried in prose, so cost drivers,
  * symptom/cause pairs and local planning facts are published as real tables.
+ *
+ * On phones the same table restyles into stacked cards with CSS only (column
+ * names come from data-label attributes), so every cell stays visible without
+ * horizontal scrolling and the HTML is identical at every width.
  */
-const tableWrap = 'mt-6 overflow-x-auto rounded-2xl border border-black/10';
-const thClass = 'whitespace-nowrap px-4 py-3 text-left text-sm font-black uppercase tracking-wide text-white';
-const tdClass = 'border-t border-black/5 px-4 py-3 align-top text-textMuted';
-
 export default function ContentTable({ table }) {
   if (!table?.columns?.length || !table?.rows?.length) return null;
 
   return (
-    <figure className="m-0">
-      <div className={tableWrap}>
-        <table className="w-full border-collapse text-left">
+    <figure className="m-0 mt-6">
+      <div className="data-table-wrap stack-on-mobile overflow-x-auto rounded-xl border border-line bg-white">
+        <table className="data-table" role="table">
           {table.caption ? <caption className="sr-only">{table.caption}</caption> : null}
-          <thead className="bg-secondary">
-            <tr>
+          <thead role="rowgroup">
+            <tr role="row">
               {table.columns.map((col) => (
-                <th key={col} scope="col" className={thClass}>
+                <th key={col} scope="col" role="columnheader">
                   {col}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody role="rowgroup">
             {table.rows.map((row, rowIndex) => (
-              <tr key={`${row[0]}-${rowIndex}`} className="odd:bg-white even:bg-bgLight">
+              <tr key={`${row[0]}-${rowIndex}`} role="row">
                 {row.map((cell, i) => (
-                  <td key={`${row[0]}-${i}`} className={`${tdClass} ${i === 0 ? 'font-black text-secondary' : ''}`}>
+                  <td key={`${row[0]}-${i}`} role="cell" data-label={table.columns[i]}>
                     {cell}
                   </td>
                 ))}
@@ -38,7 +38,7 @@ export default function ContentTable({ table }) {
         </table>
       </div>
       {table.note ? (
-        <figcaption className="mt-3 text-sm leading-relaxed text-textMuted">{table.note}</figcaption>
+        <figcaption className="mt-3 text-small text-muted">{table.note}</figcaption>
       ) : null}
     </figure>
   );

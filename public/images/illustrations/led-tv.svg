@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none">
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1D63C2"/><stop offset="1" stop-color="#082C66"/></linearGradient>
+    <linearGradient id="glow" gradientUnits="userSpaceOnUse" x1="78" y1="0" x2="242" y2="0"><stop offset="0" stop-color="#5CC8DA" stop-opacity="0"/><stop offset=".5" stop-color="#5CC8DA"/><stop offset="1" stop-color="#5CC8DA" stop-opacity="0"/></linearGradient>
+  </defs>
+  <ellipse cx="160" cy="176" rx="96" ry="6" fill="#0B1B33" opacity=".08"/>
+  <rect x="56" y="30" width="208" height="126" rx="9" fill="#0B1B33"/>
+  <rect x="62" y="36" width="196" height="114" rx="5" fill="url(#screen)"/>
+  <g stroke="url(#glow)" stroke-width="4" stroke-linecap="round">
+    <path d="M78 62h164"/><path d="M78 93h164"/><path d="M78 124h164"/>
+  </g>
+  <g fill="#5CC8DA"><circle cx="96" cy="62" r="3"/><circle cx="160" cy="93" r="3"/><circle cx="224" cy="124" r="3"/></g>
+  <rect x="142" y="156" width="36" height="9" rx="2" fill="#0B1B33"/>
+  <rect x="112" y="165" width="96" height="7" rx="3.5" fill="#0B1B33"/>
+</svg>

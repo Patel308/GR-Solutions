@@ -1,21 +1,32 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { illustrationFor } from '@/components/serviceVisuals';
+import cx from '@/components/ui/cx';
 
-export default function ServiceCard({ service, featured = false, carousel = false }) {
+// Service card: a compact row on phones, a vertical card from 640px up. The
+// "View Service" link is stretched over the whole card, so the entire card is
+// one large tap target while the link text stays the same.
+export default function ServiceCard({ service, className }) {
   return (
-    <article
-      className={
-        carousel
-          ? `flex min-h-[560px] w-[380px] flex-col overflow-hidden rounded-card border bg-white shadow-cardPro transition duration-300 ease-old hover:-translate-y-4 hover:border-primary hover:shadow-oldLg ${featured ? 'border-primary' : 'border-primary/10'}`
-          : 'flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition duration-300 ease-old hover:-translate-y-1 hover:shadow-oldLg'
-      }
-    >
-      <Image src={service.image} alt={`${service.title} service by GR Solution`} width={520} height={360} />
-      <div className="flex flex-1 flex-col p-10">
-        <h3 className="mb-4 text-2xl font-extrabold text-secondary">{service.title}</h3>
-        <p className="mb-6 text-base leading-relaxed text-textMuted">{service.shortDescription}</p>
-        <Link href={`/services/${service.slug}`} className="mt-auto inline-flex self-start rounded-full border-2 border-primary bg-primary px-7 py-3 font-extrabold text-white shadow-cta transition duration-300 ease-old hover:-translate-y-1 hover:border-secondary hover:bg-secondary">
-          View Service
+    <article className={cx('card card-interactive group relative flex h-full overflow-hidden sm:flex-col', className)}>
+      <div className="flex w-28 shrink-0 items-center justify-center bg-gradient-to-br from-navy-50 to-teal-50 p-3 sm:w-auto sm:px-6 sm:py-5">
+        <Image
+          src={illustrationFor(service)}
+          alt={`${service.title} service by GR Solution`}
+          width={320}
+          height={200}
+          unoptimized
+          className="h-auto w-full max-w-[220px] transition-transform duration-300 group-hover:scale-[1.03]"
+        />
+      </div>
+      <div className="flex min-w-0 flex-1 flex-col p-4 sm:p-6">
+        <h3 className="text-[1.0625rem] sm:text-h3">{service.title}</h3>
+        <p className="mt-1.5 flex-1 text-small leading-relaxed text-muted sm:text-[0.9375rem]">{service.shortDescription}</p>
+        <Link
+          href={`/services/${service.slug}`}
+          className="link-arrow mt-1 min-h-[2.75rem] self-start text-[0.9375rem] after:absolute after:inset-0 after:content-['']"
+        >
+          View Service <i className="fa-solid fa-arrow-right" aria-hidden="true" />
         </Link>
       </div>
     </article>

@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import { NOT_APPLICABLE, hasRealPricing, pricingReviewedOn, sizeBands } from '@/data/pricing';
 
-const tableWrap = 'mt-6 overflow-x-auto rounded-2xl border border-black/10';
-const thClass = 'whitespace-nowrap px-4 py-3 text-left text-sm font-black uppercase tracking-wide text-white';
-const tdClass = 'border-t border-black/5 px-4 py-3 align-top text-textMuted';
-
 function formatReviewed(value) {
   return new Date(`${value}T00:00:00Z`).toLocaleDateString('en-IN', {
     month: 'long',
@@ -18,25 +14,28 @@ function formatReviewed(value) {
  * (see data/pricing.js). If any band is reset to the placeholder, the whole
  * table falls back to the inspection-based notice, so a half-filled grid can
  * never reach the page.
+ *
+ * On phones each fault becomes a card listing the three screen-size prices
+ * (CSS only, same HTML), so no price is hidden behind a horizontal scroll.
  */
 export default function PriceTable({ rows, caption, showSourcesLink = true }) {
   if (!hasRealPricing(rows)) {
     return (
-      <div className="mt-6 rounded-2xl border border-primary/20 bg-bgLight p-6">
-        <p className="text-lg font-black leading-relaxed text-secondary">
+      <div className="panel mt-6 p-5 sm:p-6">
+        <p className="font-display text-lg font-bold leading-relaxed text-ink">
           GR Solution quotes after inspection, not before it.
         </p>
-        <p className="mt-3 leading-relaxed text-textMuted">
+        <p className="mt-3 leading-relaxed text-muted">
           The faults below are the ones that decide what a repair costs. Which one you are dealing
           with can only be confirmed by checking the set, so the technician diagnoses first and gives
           you a firm figure before any paid work starts.
         </p>
         <ul className="mt-5 grid gap-3">
           {rows.map((row) => (
-            <li key={row.fault} className="flex gap-3 leading-relaxed text-textMuted">
-              <span className="mt-2 size-2 shrink-0 rounded-full bg-primary" />
+            <li key={row.fault} className="flex gap-3 leading-relaxed text-muted">
+              <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-teal-400" />
               <span>
-                <strong className="text-secondary">{row.fault}</strong> &mdash; {row.symptom}
+                <strong className="text-ink">{row.fault}</strong> &mdash; {row.symptom}
               </span>
             </li>
           ))}
@@ -46,31 +45,31 @@ export default function PriceTable({ rows, caption, showSourcesLink = true }) {
   }
 
   return (
-    <figure className="m-0">
-      <div className={tableWrap}>
-        <table className="w-full border-collapse text-left">
+    <figure className="m-0 mt-6">
+      <div className="data-table-wrap stack-on-mobile stack-inline overflow-x-auto rounded-xl border border-line bg-white">
+        <table className="data-table price-table" role="table">
           {caption ? <caption className="sr-only">{caption}</caption> : null}
-          <thead className="bg-secondary">
-            <tr>
-              <th scope="col" className={thClass}>Fault</th>
+          <thead role="rowgroup">
+            <tr role="row">
+              <th scope="col" role="columnheader">Fault</th>
               {sizeBands.map((band) => (
-                <th key={band} scope="col" className={thClass}>{band}</th>
+                <th key={band} scope="col" role="columnheader">{band}</th>
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody role="rowgroup">
             {rows.map((row) => (
-              <tr key={row.fault} className="odd:bg-white even:bg-bgLight">
-                <td className={`${tdClass} font-black text-secondary`}>
+              <tr key={row.fault} role="row">
+                <td role="cell" data-label="Fault">
                   {row.fault}
-                  <span className="mt-1 block text-sm font-normal text-textMuted">{row.symptom}</span>
+                  <span className="mt-1 block text-small font-normal text-muted">{row.symptom}</span>
                 </td>
                 {row.bands.map((band, i) => (
-                  <td key={`${row.fault}-${i}`} className={`${tdClass} whitespace-nowrap`}>
+                  <td key={`${row.fault}-${i}`} role="cell" data-label={sizeBands[i]} className="whitespace-nowrap tabular-nums">
                     {band === NOT_APPLICABLE ? (
-                      <span className="text-sm">Rarely made at this size</span>
+                      <span className="whitespace-normal text-small text-muted">Rarely made at this size</span>
                     ) : (
-                      <>&#8377;{band}</>
+                      <span className="font-semibold text-ink">&#8377;{band}</span>
                     )}
                   </td>
                 ))}
@@ -79,7 +78,7 @@ export default function PriceTable({ rows, caption, showSourcesLink = true }) {
           </tbody>
         </table>
       </div>
-      <figcaption className="mt-3 text-sm leading-relaxed text-textMuted">
+      <figcaption className="mt-3 text-small leading-relaxed text-muted">
         Delhi NCR market ranges including part and labour, researched from published sources and
         last reviewed {formatReviewed(pricingReviewedOn)}. These are indicative, not a fixed quote:
         the final figure depends on the exact model, part availability and whether the job is done
@@ -87,7 +86,7 @@ export default function PriceTable({ rows, caption, showSourcesLink = true }) {
         {showSourcesLink ? (
           <>
             {' '}
-            <Link href="/pricing#sources" className="font-bold text-primary hover:text-secondary">
+            <Link href="/pricing#sources" className="text-link">
               See sources and method
             </Link>
             .
