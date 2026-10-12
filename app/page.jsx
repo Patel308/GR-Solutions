@@ -497,7 +497,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex gap-10">
               <div>
-                <span className="block font-display text-4xl font-extrabold text-ink">15+</span>
+                <span className="block font-display text-4xl font-extrabold text-ink">5+</span>
                 <span className="text-muted">Years Experience</span>
               </div>
               <div>

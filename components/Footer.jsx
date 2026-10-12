@@ -44,7 +44,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-5 leading-relaxed text-[#C7D2E3]">
-              Delhi, Noida & NCR&apos;s #1 premium TV repair service provider with 15+ years of technical
+              Delhi, Noida & NCR&apos;s #1 premium TV repair service provider with 5+ years of technical
               excellence and transparent pricing.
             </p>
 

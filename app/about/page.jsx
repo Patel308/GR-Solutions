@@ -161,7 +161,7 @@ export default function AboutPage() {
           <div>
             <span className="eyebrow">ABOUT GR SOLUTION</span>
             <h1 className="mt-3">
-              Delhi&apos;s Expert TV Repair Team <span className="heading-accent">15+ Years of Service</span>
+              Delhi&apos;s Expert TV Repair Team <span className="heading-accent">5+ Years of Service</span>
             </h1>
             <p className="answer-box mt-5">
               GR Solution is an independent TV repair workshop in New Kondli, East Delhi. We repair LED, OLED, QLED, LCD,
@@ -170,7 +170,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-6 grid grid-cols-3 gap-3 sm:max-w-xl">
               <div className="flex flex-col rounded-xl border border-line bg-white p-3 shadow-xs sm:p-4">
-                <span className="font-display text-[1.125rem] font-extrabold text-ink min-[400px]:text-xl sm:text-[1.75rem]">15+</span>
+                <span className="font-display text-[1.125rem] font-extrabold text-ink min-[400px]:text-xl sm:text-[1.75rem]">5+</span>
                 <span className="text-small leading-snug text-muted">Years Experience</span>
               </div>
               <div className="flex flex-col rounded-xl border border-line bg-white p-3 shadow-xs sm:p-4">
