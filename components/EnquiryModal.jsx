@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import ContactForm from './ContactForm';
+import { useEnquiry } from './EnquiryContext';
 
 // Native <dialog> opened with showModal(): the browser provides the focus trap,
 // Escape to close and an inert page behind it. Focus returns to whatever
@@ -9,6 +10,8 @@ import ContactForm from './ContactForm';
 export default function EnquiryModal({ open, onClose }) {
   const dialogRef = useRef(null);
   const openerRef = useRef(null);
+  const { source } = useEnquiry();
+  const bookingVisit = source === 'sticky_bar';
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -61,8 +64,13 @@ export default function EnquiryModal({ open, onClose }) {
           <p id="enquiry-description" className="mt-1.5 text-muted">
             Fill in the details below and we will contact you shortly.
           </p>
+          {bookingVisit ? (
+            <p className="badge mt-3">
+              <i className="fa-solid fa-calendar-check" aria-hidden="true" /> Doorstep visit request
+            </p>
+          ) : null}
         </div>
-        <ContactForm id="enquiryForm" compact />
+        <ContactForm id="enquiryForm" compact source={source} />
       </div>
     </dialog>
   );
