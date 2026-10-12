@@ -345,9 +345,9 @@ events are unchanged.
 
 | # | Decision | Status |
 | --- | --- | --- |
-| D1 | Which phone number is the NAP. Pages still show +91 93155 15700 (search) and +91 99902 83890 (ads, home, landing, schema) as before. | Unchanged; needs your call. |
+| D1 | Which phone number is the NAP. | **Decided 12 Oct:** organic (SEO/AIO/GEO) traffic and the NAP use +91 93155 15700 (Kamlesh); Google Ads visitors see +91 99902 83890. Schema, `llms.txt` and every page's HTML carry the organic number. Please set the same number as the Google Business Profile's primary phone. Details: `docs/lead-tracking.md`. |
 | D2, D4, D7, D8 | Exact wording of "free diagnosis", visit/callback times, warranty terms, parts. | Copy unchanged; the trust strip repeats today's wording. |
-| D3, D5, D6, D9 | "24/7", "#1", "15+ years / 15,000+ customers", "laboratory" claims. | Copy unchanged. |
+| D3, D5, D6, D9 | "24/7", "#1", "15,000+ customers", "laboratory" claims. | **D5 decided 12 Oct:** "15+ years" corrected to "5+ years" (About H1 and stat, home stat, footer). Please also check "15,000+ happy customers" (about 3,000 a year over 5 years) and the others. |
 | D10 | Are Amit Sharma, Priya Verma and Rahul Mehta real customers? | Their stock photos are removed; names and quotes kept until you confirm. |
 | D11 | Real photos (shot list in `docs/design-system.md`). | Drawings stand in on the About hero and service cards. |
 | D13 | H4 footer/feature titles (axe heading-order). | Unchanged; needs approval to change heading tags. |
