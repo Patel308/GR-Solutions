@@ -50,9 +50,10 @@ module.exports = {
         star: token('star'),
       },
       fontFamily: {
-        sans: ['var(--font-body)', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
-        main: ['var(--font-body)', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
-        display: ['var(--font-display)', 'var(--font-body)', 'system-ui', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+        // Body: the device's UI font (no download). Headings: Plus Jakarta Sans.
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        main: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        display: ['var(--font-display)', 'system-ui', '-apple-system', '"Segoe UI"', 'Roboto', 'Arial', 'sans-serif'],
       },
       // Fluid type scale: the first value is the size on a 360px phone, the
       // clamp() maximum is reached on desktop. H1 is capped at 2rem on phones.

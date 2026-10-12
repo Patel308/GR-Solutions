@@ -47,13 +47,31 @@ text, 3:1 for large text and UI graphics).
 
 | Role | Family | Weights | Notes |
 | --- | --- | --- | --- |
-| Headings | Plus Jakarta Sans | 700, 800 | `font-display`, preloaded (the H1 weight) |
-| Body, UI | Inter | 400, 600 | `font-sans`, not preloaded |
+| Headings | Plus Jakarta Sans | 800 | `font-display`; one self-hosted file (about 7 KB), preloaded |
+| Body, UI | The device's own UI font | 400, 600 | `font-sans`: Roboto on Android, San Francisco on Apple, Segoe UI on Windows; nothing to download |
 
-Both are self-hosted from `app/fonts/` (Latin subset, `font-display: swap`,
-metric-matched Arial fallback so the swap does not shift layout). Licences:
-`app/fonts/LICENSE-*.txt` (SIL OFL 1.1). Do not add a third family or more
-weights: each weight is about 12-24 KB.
+The heading font is trimmed to the characters the site uses (ASCII plus
+© · × – — ‘ ’ “ ” • … ₹ → ★ and a few symbols) with `font-display: swap` and
+a metric-matched fallback, so nothing shifts when it loads. Headings that ask
+for weight 700 use the 800 face. Licence: `app/fonts/LICENSE-PlusJakartaSans.txt`
+(SIL OFL 1.1).
+
+Why no web font for body text: Inter 400/600 (the font approved in D20) was
+measured on the five reference pages and pushed mobile LCP 0.3-0.6 s past the
+pre-redesign baseline, because every font file loads before the largest text
+paints. The performance budget comes first, so body text uses the system font
+(the alternative listed in D20). To try Inter again, add it to `app/fonts.js`
+and re-run `tools/seo-audit/lighthouse.mjs` against the baseline numbers.
+
+To re-trim the heading font (for example after adding a new symbol to the
+copy), run `pyftsubset` from fonttools on the Fontsource Latin file:
+
+```bash
+pyftsubset plus-jakarta-sans-latin-800-normal.woff2 --flavor=woff2 \
+  --unicodes="U+0020-007E,U+00A0,U+00A9,U+00AE,U+00B0,U+00B7,U+00D7,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026,U+20B9,U+2122,U+2192,U+2605" \
+  --layout-features="kern,liga,calt,tnum,lnum,case,ccmp,locl,mark,mkmk" \
+  --output-file=app/fonts/plus-jakarta-sans-latin-800-normal.woff2
+```
 
 Fluid sizes (smallest phone → desktop):
 

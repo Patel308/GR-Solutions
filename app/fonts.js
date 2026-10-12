@@ -1,34 +1,21 @@
 import localFont from 'next/font/local';
 
-// Self-hosted, Latin-subset woff2 files (SIL Open Font License, see
-// app/fonts/LICENSE-*.txt). next/font generates a metric-matched fallback for
-// each family, so the swap from the fallback to the web font does not shift
-// layout.
-
-// Headings. Small files (~12 KB per weight) that the H1 needs on first paint,
-// so they are preloaded.
+// Headings only: Plus Jakarta Sans 800, a self-hosted woff2 file trimmed to
+// the characters the site uses (about 7 KB; SIL Open Font
+// License, see app/fonts/LICENSE-PlusJakartaSans.txt). next/font generates a
+// metric-matched fallback, so the swap does not shift layout.
+//
+// Body text uses the device's own UI font (Roboto on Android, San Francisco
+// on Apple devices, Segoe UI on Windows): no download at all. A web font for
+// body text was measured to push mobile LCP past the pre-redesign baseline;
+// see docs/redesign/phase-5-report.md.
 export const fontDisplay = localFont({
-  src: [
-    { path: './fonts/plus-jakarta-sans-latin-700-normal.woff2', weight: '700', style: 'normal' },
-    { path: './fonts/plus-jakarta-sans-latin-800-normal.woff2', weight: '800', style: 'normal' },
-  ],
+  // One weight: headings asking for 700 use this 800 face (CSS font
+  // matching picks the nearest heavier weight), which saves a request.
+  src: [{ path: './fonts/plus-jakarta-sans-latin-800-normal.woff2', weight: '800', style: 'normal' }],
   variable: '--font-display',
   display: 'swap',
   preload: true,
-  adjustFontFallback: 'Arial',
-  fallback: ['system-ui', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
-});
-
-// Body copy. Not preloaded: text paints immediately in the metric-matched
-// fallback and swaps when Inter arrives, keeping it off the LCP critical path.
-export const fontBody = localFont({
-  src: [
-    { path: './fonts/inter-latin-400-normal.woff2', weight: '400', style: 'normal' },
-    { path: './fonts/inter-latin-600-normal.woff2', weight: '600', style: 'normal' },
-  ],
-  variable: '--font-body',
-  display: 'swap',
-  preload: false,
   adjustFontFallback: 'Arial',
   fallback: ['system-ui', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
 });

@@ -144,8 +144,8 @@ export default function Header() {
               width={150}
               height={81}
               className="h-auto w-[104px] object-contain sm:w-[116px] lg:w-[132px]"
-              preload
-              fetchPriority="high"
+              loading="eager"
+              fetchPriority="low"
               sizes="(min-width: 992px) 132px, 116px"
             />
           </Link>

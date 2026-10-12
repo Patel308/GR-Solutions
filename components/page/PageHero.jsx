@@ -1,6 +1,34 @@
-import Image from 'next/image';
+import { getImageProps } from 'next/image';
+import { preload } from 'react-dom';
 import Breadcrumb from '@/components/Breadcrumb';
 import cx from '@/components/ui/cx';
+
+const HERO_IMAGE_SIZES = '(min-width: 1280px) 510px, (min-width: 992px) 39vw, (min-width: 608px) 576px, calc(100vw - 2rem)';
+
+// The hero photo is the largest element of the first screen on desktop, so it
+// is preloaded at high priority there (the <img> then uses that response). On
+// phones it sits below the summary and the calls to action, so it is fetched
+// at low priority and never competes with the text that paints first (the
+// phone LCP element).
+function HeroImage({ src, alt }) {
+  const { props } = getImageProps({ src, alt, width: 680, height: 500, sizes: HERO_IMAGE_SIZES, loading: 'eager' });
+  preload(props.src, {
+    as: 'image',
+    imageSrcSet: props.srcSet,
+    imageSizes: props.sizes,
+    fetchPriority: 'high',
+    media: '(min-width: 992px)',
+  });
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      {...props}
+      alt={alt}
+      fetchPriority="low"
+      className="relative aspect-[680/500] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
+    />
+  );
+}
 
 // Hero for the service, city, brand and locality templates. Reading order on
 // a phone: breadcrumb, eyebrow, H1, the answer-first summary (always the first
@@ -30,16 +58,7 @@ export default function PageHero({ breadcrumb, eyebrow, title, answer, actions, 
           {image ? (
             <div className="relative mx-auto w-full max-w-[36rem] lg:max-w-none">
               <div className="absolute -inset-3 hidden rounded-[1.75rem] bg-gradient-to-br from-teal-100/60 via-transparent to-navy-100/70 lg:block" aria-hidden="true" />
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={680}
-                height={500}
-                preload
-                fetchPriority="high"
-                sizes="(min-width: 1280px) 510px, (min-width: 992px) 39vw, (min-width: 608px) 576px, calc(100vw - 2rem)"
-                className="relative aspect-[680/500] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
-              />
+              <HeroImage src={image.src} alt={image.alt} />
             </div>
           ) : null}
 
