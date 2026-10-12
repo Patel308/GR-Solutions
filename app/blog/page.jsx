@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { getImageProps } from 'next/image';
 import Link from 'next/link';
 import PageCTA from '@/components/PageCTA';
 import JsonLd from '@/components/JsonLd';
@@ -68,6 +68,38 @@ const posts = [
   },
 ];
 
+// The hero photo is the first screen's largest element from 640px up, so it is
+// preloaded at high priority there. Phones skip it: the featured card right
+// below shows the same photo, and without it the heading and summary are the
+// largest things on a phone's first screen (they paint as soon as the CSS
+// arrives, like the old page's heading did). The "1px" slot makes a phone
+// fetch only the 16px rendition of the hidden photo.
+const BLOG_HERO_SIZES = '(min-width: 992px) 540px, (min-width: 640px) 576px, 1px';
+
+function BlogHeroImage() {
+  const alt = 'GR Solution TV repair guide for Delhi NCR residents';
+  const { props } = getImageProps({ src: '/images/hero.webp', alt, width: 650, height: 460, sizes: BLOG_HERO_SIZES, loading: 'eager' });
+  return (
+    <>
+      <link
+        rel="preload"
+        as="image"
+        imageSrcSet={props.srcSet}
+        imageSizes={props.sizes}
+        fetchPriority="high"
+        media="(min-width: 640px)"
+      />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        {...props}
+        alt={alt}
+        fetchPriority="low"
+        className="aspect-[650/460] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
+      />
+    </>
+  );
+}
+
 export default function BlogPage() {
   return (
     <main>
@@ -90,25 +122,17 @@ export default function BlogPage() {
             </h1>
             <p className="lead mt-4 max-w-2xl">Maintenance tips, display technology explainers and repair guidance from GR Solution.</p>
           </div>
-          <div className="relative mx-auto w-full max-w-[36rem] lg:max-w-none">
-            <Image
-              src="/images/hero.webp"
-              alt="GR Solution TV repair guide for Delhi NCR residents"
-              width={650}
-              height={460}
-              preload
-              fetchPriority="high"
-              sizes="(min-width: 1280px) 540px, (min-width: 992px) 42vw, (min-width: 608px) 576px, calc(100vw - 2rem)"
-              className="aspect-[650/460] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
-            />
+          <div className="relative mx-auto hidden w-full max-w-[36rem] sm:block lg:max-w-none">
+            <BlogHeroImage />
           </div>
         </div>
       </section>
 
       <section className="section band" data-section="blog_posts">
         <div className="container">
+          {/* Phones: text first, photo last, so the first screen stays text. */}
           <article className="card mb-10 grid overflow-hidden lg:mb-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
-            <div className="relative aspect-[760/420] bg-navy-50 lg:aspect-auto lg:min-h-[22rem]">
+            <div className="relative order-last aspect-[760/420] bg-navy-50 sm:order-none lg:aspect-auto lg:min-h-[22rem]">
               <Image
                 src="/images/hero.webp"
                 alt="OLED and QLED TV repair diagnosis guide by GR Solution"

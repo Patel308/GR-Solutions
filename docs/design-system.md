@@ -177,6 +177,13 @@ These keep search, AI Overview and local rankings stable.
 - Keep FAQ questions and answers identical to their schema.
 - Give new images descriptive alt text, `width`/`height`, `sizes`, and
   `loading="lazy"` unless they are the largest element in the first screen.
+- Keep a phone's first screen led by text (the H1 or the summary), as on the
+  live site: a photo that becomes the phone LCP element adds its download to
+  the LCP. Photos that lead on desktop get a `media`-scoped preload
+  (`PageHero`, the blog index hero).
+- Use solid backgrounds for anything fixed or sticky on phones: no
+  `backdrop-filter` blur (it slows the first frame in Lighthouse's
+  software-rendered Chrome).
 - Run the SEO check after any template change (below).
 
 **Don't**
