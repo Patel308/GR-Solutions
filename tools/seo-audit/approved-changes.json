@@ -145,5 +145,44 @@
       "^\\+ (On this page|Related guides|Read the guide →)(  \\(x\\d+\\))?$",
       "^\\+ fragment #[a-z0-9-]+  \".+\"(  \\(x\\d+\\))?$"
     ]
+  },
+  {
+    "id": "owner-organic-number",
+    "decision": "Owner, 12 Oct 2026: organic SEO/AIO/GEO traffic uses +91 93155 15700 (Kamlesh); Google Ads traffic uses +91 99902 83890. Server HTML, schema telephone and llms.txt now carry the organic number on every page; the ads number is shown after an ad click (and on /landing).",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": "^(JSON-LD changed|NAP (schemaTelephones|telLinks|whatsappLinks|visiblePhones)|llms\\.txt changed|tel/WhatsApp/mailto/external links changed|(main|footer) copy (removed or edited|added))$",
+    "detail": [
+      "^\\s*~ \\[Organization, LocalBusiness\\+ProfessionalService, WebSite\\]:$",
+      "^\\s*~ \\[.*\\]:$",
+      "^\\s*\\$\\[\\d+\\](\\.[A-Za-z@]+|\\[\\d+\\])*\\.telephone: \"\\+91 99902 83890\" -> \"\\+91 93155 15700\"$",
+      "^\\s*before: \\[\"(\\+91 99902 83890|\\+919990283890|tel:\\+919990283890|https://wa\\.me/919990283890)\"\\]$",
+      "^\\s*after: +\\[\"(\\+91 93155 15700|\\+919315515700|tel:\\+919315515700|https://wa\\.me/919315515700)\"\\]$",
+      "^- - Phone: \\+91 99902 83890$",
+      "^\\+ - Phone: \\+91 93155 15700$",
+      "^- (tel tel:\\+919990283890|external https://wa\\.me/919990283890) .*$",
+      "^\\+ (tel tel:\\+919315515700|external https://wa\\.me/919315515700) .*$",
+      "^- \\+91 99902 83890$",
+      "^\\+ \\+91 93155 15700$"
+    ]
+  },
+  {
+    "id": "owner-5-years",
+    "decision": "Owner, 12 Oct 2026: 'It's 5+ years, not 15'. The experience claim reads 5+ in the About H1, the About and home stats and the footer.",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": "^(H1-H3 text changed|(main|footer) copy (removed or edited|added))$",
+    "detail": [
+      "^- H1: Delhi's Expert TV Repair Team 15\\+ Years of Service$",
+      "^\\+ H1: Delhi's Expert TV Repair Team 5\\+ Years of Service$",
+      "^- 15\\+( Years of Service)?$",
+      "^\\+ 5\\+( Years of Service)?$",
+      "^- Delhi, Noida & NCR's #1 premium TV repair service provider with 15\\+ years of technical excellence and transparent pricing\\.$",
+      "^\\+ Delhi, Noida & NCR's #1 premium TV repair service provider with 5\\+ years of technical excellence and transparent pricing\\.$"
+    ]
   }
 ]

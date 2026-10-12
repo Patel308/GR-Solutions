@@ -2,39 +2,53 @@
 
 import { usePathname } from 'next/navigation';
 import { createContext, useContext, useSyncExternalStore } from 'react';
-import { adPaths, contactChannels } from '@/data/siteConfig';
+import { contactChannels } from '@/data/siteConfig';
+import {
+  STORAGE_KEY,
+  applyTouch,
+  channelFor,
+  channelForPath,
+  classifyVisit,
+  leadAttribution,
+  parseStored,
+} from '@/lib/leads/attribution.mjs';
 
-const STORAGE_KEY = 'gr_lead_channel';
-const PAID_CLICK_PARAMS = ['gclid', 'gbraid', 'wbraid', 'gad_source', 'fbclid', 'msclkid'];
-const PAID_MEDIUMS = ['cpc', 'ppc', 'paid', 'paidsearch', 'paid_social', 'display'];
+// Attribution of this browser, resolved once per page load from the URL and
+// referrer the visitor arrived with, then kept for 90 days in localStorage
+// (first-party, no cookies). See lib/leads/attribution.mjs for the rules.
+let attributionState;
 
-const channelForPath = (pathname) => (adPaths.includes(pathname) ? 'ads' : 'seo');
+export function getAttributionState() {
+  if (attributionState !== undefined) return attributionState;
+  let stored = null;
+  try {
+    stored = parseStored(window.localStorage.getItem(STORAGE_KEY));
+    window.sessionStorage.removeItem('gr_lead_channel'); // pre-2026-10 session flag
+  } catch {}
 
-function isPaidClick(search) {
-  const params = new URLSearchParams(search);
-  if (PAID_CLICK_PARAMS.some((key) => params.has(key))) return true;
-  return PAID_MEDIUMS.includes((params.get('utm_medium') || '').toLowerCase());
+  const touch = classifyVisit({
+    search: window.location.search,
+    referrer: document.referrer,
+    host: window.location.host,
+    pathname: window.location.pathname,
+  });
+  attributionState = applyTouch(stored, touch);
+  try {
+    if (attributionState.last) window.localStorage.setItem(STORAGE_KEY, JSON.stringify(attributionState));
+    else window.localStorage.removeItem(STORAGE_KEY);
+  } catch {}
+  return attributionState;
 }
 
-// Resolved once per page load, from the URL the visitor landed on.
-let sessionChannel = null;
+/** Flat attribution fields for the current page, attached to leads and events. */
+export function currentLeadAttribution() {
+  return leadAttribution(getAttributionState(), window.location.pathname);
+}
 
-function getSessionChannel() {
-  if (sessionChannel) return sessionChannel;
-
-  let channel = null;
-  try {
-    channel = sessionStorage.getItem(STORAGE_KEY);
-  } catch {}
-
-  if (isPaidClick(window.location.search)) channel = 'ads';
-  if (channel !== 'ads' && channel !== 'seo') channel = channelForPath(window.location.pathname);
-
-  try {
-    sessionStorage.setItem(STORAGE_KEY, channel);
-  } catch {}
-  sessionChannel = channel;
-  return channel;
+// Channel from the stored touch only; null means "use the route default".
+function getStoredChannel() {
+  const state = getAttributionState();
+  return state.last ? channelFor(state, window.location.pathname) : null;
 }
 
 const subscribe = () => () => {};
@@ -43,13 +57,14 @@ const getServerChannel = () => null;
 const ContactChannelContext = createContext(null);
 
 // Decides which number set (ads or seo) the visitor sees. The server render
-// uses the route alone. On the client, the channel of the session's landing
-// page is remembered, so an ad visitor who browses from "/" into a service page
-// keeps the ads number, and an organic visitor who lands on a blog post keeps
-// the seo number on "/". An ad click (gclid etc.) always switches to ads.
+// uses the route alone, so every page's HTML (what search engines and AI
+// crawlers read) carries the organic number, except the ads-only /landing.
+// After hydration a visitor whose latest non-direct visit in the last 90 days
+// came from an ad click sees the ads number on every page; a later visit from
+// search, an AI assistant or a referral switches back to the organic number.
 export function ContactChannelProvider({ children }) {
   const pathname = usePathname();
-  const storedChannel = useSyncExternalStore(subscribe, getSessionChannel, getServerChannel);
+  const storedChannel = useSyncExternalStore(subscribe, getStoredChannel, getServerChannel);
   const channel = storedChannel || channelForPath(pathname);
   return (
     <ContactChannelContext.Provider value={{ channel, ...contactChannels[channel] }}>
