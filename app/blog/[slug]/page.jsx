@@ -158,9 +158,9 @@ export default async function BlogArticlePage({ params }) {
       </PageHero>
 
       <section className="section band" data-section="article_body">
-        <div className="container grid gap-10 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-12 xl:grid-cols-[minmax(0,1fr)_20rem] xl:gap-16">
+        <div className="container grid gap-10 xl:grid-cols-[minmax(0,1fr)_20rem] xl:gap-16">
           <div className="min-w-0">
-            <TocDetails items={toc} className="mb-8 lg:hidden" />
+            <TocDetails items={toc} className="mb-8 xl:hidden" />
             <article className="prose-article">
               <p className="text-[1.125rem] leading-relaxed text-ink sm:text-[1.1875rem]">{article.intro}</p>
               <div className="mt-10 grid gap-10">
@@ -210,7 +210,7 @@ export default async function BlogArticlePage({ params }) {
                 Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.
               </p>
             </aside>
-            <TocNav items={toc} className="sticky top-28 mt-8 hidden lg:block" />
+            <TocNav items={toc} className="sticky top-28 mt-8 hidden xl:block" />
             <TocSpy ids={toc.map((item) => item.id)} />
           </div>
         </div>

@@ -304,7 +304,7 @@ export default function AboutPage() {
               <Link
                 key={page.slug}
                 href={`/services/${page.slug}`}
-                className="chip min-h-[2.75rem] px-4 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
+                className="chip min-h-12 px-4 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
               >
                 <i className="fa-solid fa-location-dot text-teal-600" aria-hidden="true" />
                 {page.title.replace(/ Service$/, '')}

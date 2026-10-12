@@ -19,7 +19,7 @@ export default function GoogleRating({ className, tone = 'light', showCount = tr
   );
 
   const classes = cx(
-    'inline-flex min-h-[2.75rem] items-center gap-2 text-small font-semibold',
+    'inline-flex min-h-12 items-center gap-2 text-small font-semibold',
     tone === 'dark' ? 'text-white' : 'text-ink',
     className,
   );
@@ -32,7 +32,7 @@ export default function GoogleRating({ className, tone = 'light', showCount = tr
       target="_blank"
       rel="noopener noreferrer"
       className={cx(classes, 'underline-offset-4 hover:underline')}
-      aria-label={`Rated ${rating} out of 5 on Google from ${count} reviews. Opens our Google Business Profile.`}
+      aria-label={`${rating} on Google · ${count} reviews (opens our Google Business Profile)`}
       data-cta="google_rating"
     >
       {content}

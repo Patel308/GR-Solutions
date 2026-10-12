@@ -1,5 +1,4 @@
 import { getImageProps } from 'next/image';
-import { preload } from 'react-dom';
 import Breadcrumb from '@/components/Breadcrumb';
 import cx from '@/components/ui/cx';
 
@@ -10,23 +9,29 @@ const HERO_IMAGE_SIZES = '(min-width: 1280px) 510px, (min-width: 992px) 39vw, (m
 // phones it sits below the summary and the calls to action, so it is fetched
 // at low priority and never competes with the text that paints first (the
 // phone LCP element).
+// A <link> element (hoisted into <head> by React) rather than a preload()
+// hint: hints also travel with prefetched pages, which would make the current
+// page download the photos of pages it merely links to.
 function HeroImage({ src, alt }) {
   const { props } = getImageProps({ src, alt, width: 680, height: 500, sizes: HERO_IMAGE_SIZES, loading: 'eager' });
-  preload(props.src, {
-    as: 'image',
-    imageSrcSet: props.srcSet,
-    imageSizes: props.sizes,
-    fetchPriority: 'high',
-    media: '(min-width: 992px)',
-  });
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      {...props}
-      alt={alt}
-      fetchPriority="low"
-      className="relative aspect-[680/500] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
-    />
+    <>
+      <link
+        rel="preload"
+        as="image"
+        imageSrcSet={props.srcSet}
+        imageSizes={props.sizes}
+        fetchPriority="high"
+        media="(min-width: 992px)"
+      />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        {...props}
+        alt={alt}
+        fetchPriority="low"
+        className="relative aspect-[680/500] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
+      />
+    </>
   );
 }
 

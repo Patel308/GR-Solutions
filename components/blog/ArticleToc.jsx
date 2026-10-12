@@ -1,9 +1,9 @@
 import cx from '@/components/ui/cx';
 
 // "On this page" jump links to the article's existing H2s. Not a heading, so
-// the article outline is unchanged. Phones get a collapsible card above the
-// article; desktop gets a sticky list beside it (see TocSpy for the
-// current-section highlight).
+// the article outline is unchanged. Phones and tablets get a collapsible card
+// above the article; from 1200px a sticky list sits beside it (see TocSpy for
+// the current-section highlight).
 
 function TocList({ items }) {
   return (
@@ -12,7 +12,7 @@ function TocList({ items }) {
         <li key={item.id}>
           <a
             href={`#${item.id}`}
-            className="toc-link block rounded-lg border-l-2 border-transparent py-2 pl-3 pr-2 text-[0.9375rem] leading-snug text-muted transition-colors hover:bg-surface hover:text-navy-700"
+            className="toc-link flex min-h-12 items-center rounded-lg border-l-2 border-transparent py-2 pl-3 pr-2 text-[0.9375rem] leading-snug text-muted transition-colors hover:bg-surface hover:text-navy-700"
           >
             {item.label}
           </a>

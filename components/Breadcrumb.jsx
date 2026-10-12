@@ -21,7 +21,7 @@ export default function Breadcrumb({ items, className }) {
                 <>
                   <Link
                     href={item.href}
-                    className="inline-flex min-h-[2.75rem] items-center font-semibold text-navy-600 underline-offset-4 transition-colors hover:text-navy-800 hover:underline"
+                    className="inline-flex min-h-12 min-w-12 items-center font-semibold text-navy-600 underline-offset-4 transition-colors hover:text-navy-800 hover:underline"
                   >
                     {item.label}
                   </Link>

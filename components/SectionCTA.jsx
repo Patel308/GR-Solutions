@@ -9,6 +9,7 @@ export default function SectionCTA({
   text = 'Talk to a technician. Diagnosis is free and you approve the price before any paid work.',
   className,
   withContainer = true,
+  label = 'Talk to a GR Solution technician',
 }) {
   const body = (
     <div className="flex flex-col gap-4 rounded-2xl border border-navy-100 bg-navy-50 p-5 sm:p-6 md:flex-row md:items-center md:justify-between md:gap-8">
@@ -33,7 +34,7 @@ export default function SectionCTA({
   );
 
   return (
-    <aside aria-label="Talk to a GR Solution technician" data-section={section} className={cx('py-6 sm:py-8', className)}>
+    <aside aria-label={label} data-section={section} className={cx('py-6 sm:py-8', className)}>
       {withContainer ? <div className="container">{body}</div> : body}
     </aside>
   );

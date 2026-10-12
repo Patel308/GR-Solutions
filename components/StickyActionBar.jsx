@@ -20,7 +20,10 @@ export default function StickyActionBar() {
 
   useEffect(() => {
     const footer = document.querySelector('footer');
-    const forms = [...document.querySelectorAll('[data-hide-sticky]')];
+    // Forms inside the enquiry dialog are ignored: the open dialog already
+    // covers the page, and an inert bar would stop focus returning to "Book
+    // Visit" when the dialog closes.
+    const forms = [...document.querySelectorAll('[data-hide-sticky]')].filter((form) => !form.closest('dialog'));
     const visibleForms = new Set();
     const observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
@@ -40,7 +43,8 @@ export default function StickyActionBar() {
   }, [pathname]);
 
   useEffect(() => {
-    const isField = (element) => element instanceof Element && element.matches('input, textarea, select');
+    const isField = (element) =>
+      element instanceof Element && element.matches('input, textarea, select') && !element.closest('dialog');
     const onFocusIn = (event) => {
       if (isField(event.target)) setTyping(true);
     };

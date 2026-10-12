@@ -108,12 +108,12 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  // Desktop services dropdown: opens on hover (CSS), on keyboard focus and on
-  // the chevron button; Escape closes it and returns focus to "Services".
+  // Desktop services dropdown (disclosure pattern): opens on hover (CSS) and
+  // from the chevron button; Escape closes it and returns focus to that button.
   const onDropdownKeyDown = (event) => {
     if (event.key === 'Escape' && dropdownOpen) {
       setDropdownOpen(false);
-      servicesItemRef.current?.querySelector('a')?.focus();
+      servicesItemRef.current?.querySelector('button[aria-controls="services-dropdown"]')?.focus();
     }
   };
   const onDropdownBlur = (event) => {
@@ -122,7 +122,7 @@ export default function Header() {
 
   const navLink = (active) =>
     cx(
-      'relative inline-flex min-h-[2.75rem] items-center rounded-lg px-3 text-[0.9375rem] font-semibold transition-colors',
+      'relative inline-flex min-h-12 items-center rounded-lg px-3 text-[0.9375rem] font-semibold transition-colors',
       active ? 'text-primary' : 'text-ink hover:text-primary',
       'after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:rounded-full after:bg-primary after:transition-transform after:duration-200',
       active ? 'after:scale-x-100' : 'after:scale-x-0 hover:after:scale-x-100',
@@ -164,7 +164,7 @@ export default function Header() {
                       onKeyDown={onDropdownKeyDown}
                       onBlur={onDropdownBlur}
                     >
-                      <Link href="/services" className={cx(navLink(active), 'pr-1')} onFocus={() => setDropdownOpen(true)}>
+                      <Link href="/services" className={cx(navLink(active), 'pr-1')}>
                         Services
                       </Link>
                       <button
@@ -190,7 +190,7 @@ export default function Header() {
                           <li key={service.slug}>
                             <Link
                               href={`/services/${service.slug}`}
-                              className="flex min-h-[2.75rem] items-center gap-3 rounded-xl px-3 font-semibold text-ink transition hover:bg-navy-50 hover:text-primary"
+                              className="flex min-h-12 items-center gap-3 rounded-xl px-3 font-semibold text-ink transition hover:bg-navy-50 hover:text-primary"
                               onClick={() => setDropdownOpen(false)}
                             >
                               <span className="icon-tile size-8 rounded-lg text-sm" aria-hidden="true">
@@ -218,7 +218,7 @@ export default function Header() {
           <div className="flex shrink-0 items-center gap-2">
             <button
               type="button"
-              className="btn btn-secondary hidden min-h-[2.75rem] md:inline-flex"
+              className="btn btn-secondary hidden min-h-12 md:inline-flex"
               onClick={() => openEnquiry('header')}
               data-cta="header_quick_enquiry"
             >
@@ -228,7 +228,7 @@ export default function Header() {
             {/* Compact "Call" on phones, full "Call Now" from md up */}
             <PhoneLink
               callLocation="header_call_now"
-              className="btn btn-primary min-h-[3rem] gap-2 px-4 md:min-h-[2.75rem] md:px-5"
+              className="btn btn-primary min-h-12 gap-2 px-4 md:px-5"
             >
               <i className="fa-solid fa-phone text-[0.9em]" aria-hidden="true" />
               <span className="md:hidden">Call</span>

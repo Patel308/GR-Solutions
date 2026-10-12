@@ -149,10 +149,10 @@ export default function LocalityPage({ page }) {
       </section>
 
       <section className="section band" data-section="locality_visit">
-        <div className="container grid gap-10 lg:grid-cols-2 lg:gap-12">
+        <div className="container grid max-w-5xl gap-12">
           <div>
             <h2 className="heading-panel">Before the visit</h2>
-            <ul className="check-list mt-5 grid gap-3.5 text-[1.0625rem] leading-relaxed text-body">
+            <ul className="check-list mt-5 grid gap-3.5 text-[1.0625rem] leading-relaxed text-body md:grid-cols-2 md:gap-x-10">
               {page.tips.map((tip) => (
                 <li key={tip}>
                   <span>{tip}</span>

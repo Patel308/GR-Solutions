@@ -26,7 +26,7 @@ const footerLocations = [
 
 const columnTitle = 'mb-3 font-display text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-teal-300';
 const footerLink =
-  'inline-flex min-h-[3rem] items-center text-[0.9375rem] text-[#C7D2E3] transition hover:text-white lg:min-h-[2.25rem]';
+  'inline-flex min-h-[3rem] min-w-12 items-center text-[0.9375rem] text-[#C7D2E3] transition hover:text-white lg:min-h-[2.25rem]';
 
 export default function Footer() {
   return (
@@ -66,7 +66,7 @@ export default function Footer() {
                         href={siteConfig.googleBusinessProfile}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-1 flex min-h-[2.75rem] items-center gap-2 font-semibold text-teal-300 hover:text-white"
+                        className="mt-1 flex min-h-12 items-center gap-2 font-semibold text-teal-300 hover:text-white"
                         data-cta="footer_map"
                       >
                         <i className="fa-solid fa-map-location-dot" aria-hidden="true" /> Open in Google Maps
@@ -80,7 +80,7 @@ export default function Footer() {
                   </span>
                   <div className="min-w-0">
                     <strong className="block text-white">Call Support</strong>
-                    <PhoneLink callLocation="footer_call_support" className="inline-flex min-h-[2.75rem] items-center text-[#C7D2E3] hover:text-white" />
+                    <PhoneLink callLocation="footer_call_support" className="inline-flex min-h-12 items-center text-[#C7D2E3] hover:text-white" />
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -89,7 +89,7 @@ export default function Footer() {
                   </span>
                   <div className="min-w-0">
                     <strong className="block text-white">Email Us</strong>
-                    <a href={siteConfig.emailHref} className="inline-flex min-h-[2.75rem] items-center text-[#C7D2E3] hover:text-white">{siteConfig.email}</a>
+                    <a href={siteConfig.emailHref} className="inline-flex min-h-12 items-center text-[#C7D2E3] hover:text-white">{siteConfig.email}</a>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -150,8 +150,8 @@ export default function Footer() {
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-small text-[#A9B6CA] md:flex-row md:items-center md:justify-between">
           <p>&copy; 2026 GR Solution. All Rights Reserved.</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="inline-flex min-h-[3rem] items-center hover:text-white md:min-h-0">Privacy Policy</Link>
-            <Link href="/terms" className="inline-flex min-h-[3rem] items-center hover:text-white md:min-h-0">Terms & Conditions</Link>
+            <Link href="/privacy" className="inline-flex min-h-[3rem] items-center hover:text-white lg:min-h-0">Privacy Policy</Link>
+            <Link href="/terms" className="inline-flex min-h-[3rem] items-center hover:text-white lg:min-h-0">Terms & Conditions</Link>
           </div>
         </div>
       </div>

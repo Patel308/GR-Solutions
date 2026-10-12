@@ -24,7 +24,7 @@ export default function ServiceCard({ service, className, alt }) {
         <p className="mt-1.5 flex-1 text-small leading-relaxed text-muted sm:text-[0.9375rem]">{service.shortDescription}</p>
         <Link
           href={`/services/${service.slug}`}
-          className="link-arrow mt-1 min-h-[2.75rem] self-start text-[0.9375rem] after:absolute after:inset-0 after:content-['']"
+          className="link-arrow mt-1 min-h-12 self-start text-[0.9375rem] after:absolute after:inset-0 after:content-['']"
         >
           View Service <i className="fa-solid fa-arrow-right" aria-hidden="true" />
         </Link>

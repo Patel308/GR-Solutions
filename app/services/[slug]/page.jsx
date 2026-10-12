@@ -84,17 +84,17 @@ function ContactAside({ callLocation, links }) {
   return (
     <aside className="card self-start p-5 sm:p-6 lg:sticky lg:top-28">
       <h3 className="text-lg">GR Solution Contact</h3>
-      <ul className="mt-4 grid gap-3 text-[0.9375rem] leading-relaxed text-muted">
-        <li className="flex gap-3">
-          <i className="fa-solid fa-phone mt-1 w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
+      <ul className="mt-3 grid gap-1 text-[0.9375rem] leading-relaxed text-muted">
+        <li className="flex items-center gap-3">
+          <i className="fa-solid fa-phone w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
           <span>
-            Phone: <PhoneLink callLocation={callLocation} className="font-semibold text-navy-600 hover:text-navy-800" />
+            Phone: <PhoneLink callLocation={callLocation} className="inline-flex min-h-12 items-center font-semibold text-navy-600 hover:text-navy-800" />
           </span>
         </li>
-        <li className="flex gap-3">
-          <i className="fa-solid fa-envelope mt-1 w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
+        <li className="flex items-center gap-3">
+          <i className="fa-solid fa-envelope w-4 shrink-0 text-center text-teal-600" aria-hidden="true" />
           <span>
-            Email: <a href={siteConfig.emailHref} className="break-all font-semibold text-navy-600 hover:text-navy-800">{siteConfig.email}</a>
+            Email: <a href={siteConfig.emailHref} className="inline-flex min-h-12 items-center break-all font-semibold text-navy-600 hover:text-navy-800">{siteConfig.email}</a>
           </span>
         </li>
         <li className="flex gap-3">
@@ -106,7 +106,7 @@ function ContactAside({ callLocation, links }) {
       </ul>
       <div className="mt-4 grid border-t border-line pt-2">
         {links.map((link, index) => (
-          <Link key={`${link.href}-${index}`} href={link.href} className="link-arrow min-h-[2.75rem] text-[0.9375rem]">
+          <Link key={`${link.href}-${index}`} href={link.href} className="link-arrow min-h-12 text-[0.9375rem]">
             {link.label} <i className="fa-solid fa-arrow-right" aria-hidden="true" />
           </Link>
         ))}
@@ -997,7 +997,7 @@ function ServiceFaultsSection({ serviceSlug, serviceTitle, cityPages }) {
               <Link
                 key={item.slug}
                 href={`/services/${item.slug}`}
-                className="chip min-h-[2.75rem] px-4 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
+                className="chip min-h-12 px-4 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
               >
                 <i className="fa-solid fa-location-dot text-teal-600" aria-hidden="true" />
                 {item.keyword}

@@ -216,7 +216,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <SectionCTA section="services_end_cta" />
+      <SectionCTA section="services_end_cta" label="Contact GR Solution" />
     </main>
   );
 }

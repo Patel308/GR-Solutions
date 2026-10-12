@@ -98,7 +98,7 @@ export default function ContactPage() {
                   <h3 className="text-lg">Direct Call</h3>
                   <PhoneLink
                     callLocation="contact_direct_call"
-                    className="inline-flex min-h-[2.75rem] items-center font-display text-xl font-bold text-navy-600 hover:text-navy-800"
+                    className="inline-flex min-h-12 items-center font-display text-xl font-bold text-navy-600 hover:text-navy-800"
                   />
                   <p className="text-small text-muted">Mon - Sun: 9:00 AM - 9:00 PM</p>
                 </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                     href={siteConfig.googleBusinessProfile}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-1 inline-block font-semibold leading-relaxed text-navy-600 underline decoration-navy-200 underline-offset-4 hover:decoration-current"
+                    className="mt-1 inline-flex min-h-12 items-center font-semibold leading-relaxed text-navy-600 underline decoration-navy-200 underline-offset-4 hover:decoration-current"
                   >
                     {siteConfig.address.streetAddress}, {siteConfig.address.addressLocality} {siteConfig.address.postalCode}
                   </a>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                   <h3 className="text-lg">Email Support</h3>
                   <a
                     href={siteConfig.emailHref}
-                    className="inline-flex min-h-[2.75rem] items-center break-all font-semibold text-navy-600 hover:text-navy-800"
+                    className="inline-flex min-h-12 items-center break-all font-semibold text-navy-600 hover:text-navy-800"
                   >
                     {siteConfig.email}
                   </a>

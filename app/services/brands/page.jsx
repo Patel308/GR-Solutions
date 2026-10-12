@@ -109,7 +109,7 @@ export default function BrandsHubPage() {
                     <Link
                       key={city.slug}
                       href={`/services/${brand.slugSegment}-${city.slug}`}
-                      className="chip min-h-[2.75rem] justify-center px-3 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
+                      className="chip min-h-12 justify-center px-3 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
                     >
                       {city.name}
                     </Link>

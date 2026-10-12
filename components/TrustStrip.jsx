@@ -44,7 +44,7 @@ export default function TrustStrip({ className, tone = 'light' }) {
         <span className={cx('icon-tile size-10', dark ? 'bg-white/10 text-star' : 'bg-amber-50 text-star')} aria-hidden="true">
           <i className="fa-solid fa-star" />
         </span>
-        <GoogleRating tone={tone} className="min-h-0 leading-snug" />
+        <GoogleRating tone={tone} className="leading-snug" />
       </li>
     </ul>
   );
