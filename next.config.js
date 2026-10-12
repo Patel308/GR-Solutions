@@ -7,6 +7,14 @@ const nextConfig = {
     // the HTML do not change.
     formats: ['image/avif', 'image/webp'],
   },
+  experimental: {
+    // Next.js 16.4 defaults to one shared browser runtime plus an inline
+    // bootstrap script per page. That inline script waits for the stylesheet,
+    // so the small entry chunk runs after the large framework chunks and
+    // Lighthouse's simulated LCP then counts the 72 KB React chunk as
+    // render-blocking. false keeps the per-page runtime that 16.2 used.
+    turbopackSharedRuntime: false,
+  },
   async redirects() {
     const rootPages = [
       ['index', '/'],
