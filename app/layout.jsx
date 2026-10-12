@@ -1,6 +1,7 @@
 import './globals.css';
 // Self-hosted icon subset (replaces the render-blocking cdnjs Font Awesome CSS).
 import './icons.css';
+import { fontBody, fontDisplay } from './fonts';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
@@ -108,8 +109,8 @@ const websiteSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-IN">
-      <body>
+    <html lang="en-IN" className={`${fontBody.variable} ${fontDisplay.variable}`}>
+      <body className="font-sans">
         <JsonLd data={[organizationSchema, localBusinessSchema, websiteSchema]} />
         <ContactChannelProvider>
           <Header />
