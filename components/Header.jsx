@@ -134,7 +134,7 @@ export default function Header() {
         ref={headerRef}
         data-scrolled="false"
         data-section="header"
-        className="site-header sticky top-0 z-[1000] h-16 bg-white/95 shadow-[0_1px_0_rgb(15_23_42/0.06)] backdrop-blur supports-[backdrop-filter]:bg-white/90 lg:h-20 lg:bg-transparent lg:shadow-none lg:backdrop-blur-none lg:supports-[backdrop-filter]:bg-transparent"
+        className="site-header sticky top-0 z-[1000] h-16 bg-white shadow-[0_1px_0_rgb(15_23_42/0.06)] lg:h-20 lg:bg-transparent lg:shadow-none"
       >
         <div className="site-header-row container flex h-full items-center justify-between gap-3">
           <Link href="/" aria-label="GR Solution home" className="site-header-logo inline-flex shrink-0 items-center" onClick={closeMenu}>

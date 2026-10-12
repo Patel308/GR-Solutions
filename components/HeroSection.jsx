@@ -70,7 +70,7 @@ export default function HeroSection({ eyebrow, title, highlight, description, im
               className="aspect-[4/3] w-full object-cover lg:aspect-[5/6]"
             />
           </div>
-          <div className="absolute bottom-4 left-4 rounded-xl bg-white/95 px-4 py-3 shadow-card backdrop-blur">
+          <div className="absolute bottom-4 left-4 rounded-xl bg-white px-4 py-3 shadow-card">
             <p className="flex items-center gap-2 font-semibold text-ink">
               <i className="fa-solid fa-shield-halved text-teal-600" aria-hidden="true" /> Careful Diagnosis First
             </p>

@@ -815,8 +815,7 @@
 
   .sticky-bar {
     padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom));
-    background: rgb(255 255 255 / 0.97);
-    backdrop-filter: saturate(1.4) blur(10px);
+    background: #ffffff;
     border-top: 1px solid rgb(var(--c-line));
     box-shadow: theme('boxShadow.float');
     transform: translateY(0);

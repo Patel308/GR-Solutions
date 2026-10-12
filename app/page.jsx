@@ -235,7 +235,7 @@ export default function HomePage() {
                   sizes="(min-width: 992px) 58vw, 100vw"
                   className="aspect-[4/3] h-full w-full object-cover"
                 />
-                <figcaption className="absolute bottom-3 left-3 rounded-lg bg-ink/85 px-3 py-2 text-xs font-semibold text-white backdrop-blur sm:bottom-4 sm:left-4 sm:text-sm">
+                <figcaption className="absolute bottom-3 left-3 rounded-lg bg-ink/90 px-3 py-2 text-xs font-semibold text-white sm:bottom-4 sm:left-4 sm:text-sm">
                   TV diagnostics at our workshop
                 </figcaption>
               </figure>
