@@ -44,10 +44,13 @@ Everything below was measured on production builds (`next build` +
 | `9f59ed0` | About, contact, pricing, reviews, services, brands, privacy, terms, 404, landing. |
 | `0238bd9` | `docs/design-system.md`. |
 | `de54228` | AVIF images with WebP fallback. |
-| `4a04262` | Speed fixes that keep mobile LCP at or below the baseline. |
+| `4a04262` | Speed fixes: one 7 KB heading-font file, system font for body text, hero photo priorities, no logo preload. |
 | `b2582f6` | Book Visit: visit requests are labelled and ask for the service area. |
 | `79806fe` | SEO diff tool: signed-off changes reported separately. |
 | `d32fab5` | Accessibility and tap-target fixes from this audit. |
+| `486ce19` | Solid backgrounds instead of backdrop blur on phones (header, sticky bar, captions). |
+| `6831637` | Blog index: text-first first screen on phones. |
+| `0e26236` | Next.js setting `turbopackSharedRuntime: false` ([section 3.2](#32-a-framework-default-that-cost-lighthouse-03-05-s)). |
 
 ## 2. SEO, AIO and GEO checks
 
