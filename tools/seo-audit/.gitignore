@@ -1,0 +1,8 @@
+node_modules/
+# Only the Phase 0 baseline (raw HTML snapshots + site files) is committed.
+snapshots/*
+!snapshots/baseline/
+snapshots/baseline/pages-rendered/
+# Regenerable artefacts
+reports/**/lighthouse/raw/
+reports/**/screenshots/

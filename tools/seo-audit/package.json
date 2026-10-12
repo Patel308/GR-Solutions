@@ -1,0 +1,19 @@
+{
+  "name": "gr-solution-seo-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SEO/AIO/GEO regression guard for the GR Solution redesign: sitemap crawler, snapshot diff, Lighthouse runner and responsive screenshots. Not part of the production build.",
+  "type": "module",
+  "scripts": {
+    "crawl": "node crawl.mjs",
+    "diff": "node diff.mjs",
+    "lighthouse": "node lighthouse.mjs",
+    "screenshots": "node screenshots.mjs"
+  },
+  "dependencies": {
+    "cheerio": "1.2.0",
+    "chrome-launcher": "1.2.2",
+    "lighthouse": "13.5.0",
+    "playwright-core": "1.56.1"
+  }
+}

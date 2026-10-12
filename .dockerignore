@@ -7,3 +7,4 @@ classnames-audit.txt
 legacy-class-usage*.txt
 css-selector-audit.txt
 app/globals.backup-before-full-tailwind-cleanup.css
+tools
