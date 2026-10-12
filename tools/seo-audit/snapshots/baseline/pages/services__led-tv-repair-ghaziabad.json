@@ -1,0 +1,1466 @@
+{
+  "path": "/services/led-tv-repair-ghaziabad",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 153391,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "LED TV Repair Ghaziabad | Doorstep TV Repair | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Need LED TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/led-tv-repair-ghaziabad"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "LED TV Repair Ghaziabad | Doorstep TV Repair | GR Solution"
+      ],
+      [
+        "og:description",
+        "Need LED TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/led-tv-repair-ghaziabad"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "LED TV Repair Ghaziabad | Doorstep TV Repair | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Need LED TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "LED TV Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Useful LED TV Repair Ghaziabad Guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "GR Solution Contact",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "LED TVs in Ghaziabad: the family set that never switches off",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common LED TV situations in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Power supply and your TV in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Detailed LED TV Repair Ghaziabad Guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Diagnosis approach for LED TV Repair Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Local service planning in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Safe handling for led tv repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "How pricing is discussed",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "After-repair checks",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common LED TV Problems We Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV backlight repair Ghaziabad guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Repair coverage in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Common Problems We Solve",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What To Check Before Calling",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Repair vs Replace",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Topics for Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Backlight Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV No Picture Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Flickering Screen Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Power Board Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Sound But No Picture Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Dark Screen Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Restart Issue Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Why Choose GR Solution In Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Quality Checks",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "How LED TV Repair Ghaziabad Works",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Local Coverage",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Cost Guidance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Quick Support",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Same Service In Other Cities",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Related TV Repair Services In Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Read Before You Book in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Repair Cost in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Backlight Failure Symptoms",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Screen Repair Delhi NCR",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "LED TV Repair Ghaziabad FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need LED TV Repair Ghaziabad?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call GR Solution",
+      "region": "main",
+      "section": "LED TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Inspection",
+      "region": "main",
+      "section": "LED TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Useful LED TV Repair Ghaziabad Guidance"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Useful LED TV Repair Ghaziabad Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Visit GR Solution homepage",
+      "region": "main",
+      "section": "Useful LED TV Repair Ghaziabad Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "Explore main LED TV Repair",
+      "region": "main",
+      "section": "Useful LED TV Repair Ghaziabad Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Open contact and booking page",
+      "region": "main",
+      "section": "Useful LED TV Repair Ghaziabad Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-ghaziabad",
+      "text": "Full GhaziabadTV repair cost guide →",
+      "region": "main",
+      "section": "Cost Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-delhi",
+      "text": "LED TV Repair Delhi",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-noida",
+      "text": "LED TV Repair Noida",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-greater-noida",
+      "text": "LED TV Repair Greater Noida",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-ghaziabad",
+      "text": "OLED/QLED TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related TV Repair Services In Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-ghaziabad",
+      "text": "LCD TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related TV Repair Services In Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-ghaziabad",
+      "text": "Plasma TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related TV Repair Services In Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-ghaziabad",
+      "text": "Curved TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related TV Repair Services In Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related TV Repair Services In Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-ghaziabad",
+      "text": "Ghaziabad Cost Guide TV Repair Cost in Ghaziabad TV repair costs in Ghaziabad and the repair-versus-replace decision for everyday family televisions in Indirapuram, Vaishali, Vasundhara and nearby areas. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-backlight-failure-symptoms",
+      "text": "Symptom Guide TV Backlight Failure Symptoms The signs of a failing TV backlight, how to confirm it with a torch, backlight repair costs by screen size in Delhi NCR, and how long repairs last. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/led-tv-screen-repair-delhi-ncr",
+      "text": "Screen Repair Guide LED TV Screen Repair Delhi NCR Guide to LED TV screen repair in Delhi NCR, including Delhi, Noida, Greater Noida and Ghaziabad screen repair options. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Ghaziabad"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need LED TV Repair Ghaziabad?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Need LED TV Repair Ghaziabad?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "LED TV Repair Ghaziabad by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "LED TV Repair in Ghaziabad"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need LED TV Repair Ghaziabad?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "LED TV Repair in Ghaziabad",
+        "serviceType": "LED TV repair",
+        "description": "Need LED TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas.",
+        "url": "https://grsolution.co.in/services/led-tv-repair-ghaziabad",
+        "areaServed": "Ghaziabad",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 99902 83890",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "addressRegion": "Delhi NCR",
+            "postalCode": "110096",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "LED TV Repair",
+            "item": "https://grsolution.co.in/services/led-tv-repair"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "LED TV Repair in Ghaziabad",
+            "item": "https://grsolution.co.in/services/led-tv-repair-ghaziabad"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide LED TV Repair in Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution provides doorstep inspection and repair support for led tv repair across Ghaziabad and nearby NCR areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can I book LED TV Repair Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Visit timing depends on the day’s bookings and where in Ghaziabad you are. Raj Nagar Extension and Crossings Republik are the longer Ghaziabad visits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What problems are common in led tv repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In Ghaziabad, the situations that come up most are: picture has dimmed gradually over months; indirapuram 55\" set, lines after a knock; set-top box not detected on HDMI. A technician checks the actual fault before suggesting repair."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you repair the TV at home in Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many diagnosis and repair tasks can start at home. Market-side homes around Kaushambi and Sahibabad bring tight parking and narrow access. If workshop handling is safer, the technician explains why before moving ahead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does led tv repair cost in Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cost depends on TV size, model, fault type and parts. Backlight / LED strip replacement: roughly ₹3,000 - 8,000 on 32\" - 43\" sets, ₹5,500 - 12,000 on 44\" - 55\" and ₹8,500 - 18,000 on 56\" and above in the Delhi NCR market. GR Solution confirms the exact figure after inspection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I repair or replace my TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LED TV repair is usually worth checking when the screen glass is intact and the fault is linked to backlight, power, audio or board sections. For led tv repair in Ghaziabad: picture has dimmed gradually over months usually leads to strip replacement, usually worthwhile; indirapuram 55\" set, lines after a knock usually leads to honest replace-versus-repair comparison; set-top box not detected on hdmi usually leads to often fixed without opening the TV."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ghaziabad areas do you cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common coverage includes Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension, Kaushambi, Crossings Republik, Sahibabad and nearby localities, subject to scheduling and service availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide LED TV repair service at home in Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, subject to availability and safe access to the TV."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can LED TV backlight and screen issues be checked together?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, in the same visit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide TV backlight repair in Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Start with the torch test: a faint image under a torch means the backlight has failed and the panel is fine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why has my LED TV picture got dimmer over time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Backlight LEDs lose brightness with running hours, and sets that are on most of the day wear faster. A backlight strip replacement restores brightness without touching the panel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it worth repairing a 43-inch LED TV in Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the panel is intact and the fault is backlight, power or a board, usually yes. If the panel is cracked, a new 43-inch set often costs about the same as the repair, and we will say so."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 3,
+    "emailMentions": 3
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Need LED TV Repair in Ghaziabad? GR Solution provides doorstep inspection, diagnosis and repair support for led tv repair issues across Ghaziabad and nearby NCR areas.",
+      "Call GR SolutionBook Inspection",
+      "Doorstep inspectionTransparent estimateDelhi NCR support"
+    ],
+    "faq": {
+      "questions": 12,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "LED TV Repair",
+        "Ghaziabad"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "LED TV Repair",
+          "LED TV Repair in Ghaziabad"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 2308,
+  "mainTextSha256": "f1fff164ccc7e970843fcf36e427c88329fe64464c6c26edc52bf3527f3ed1ac",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "LED TV Repair",
+      "/",
+      "Ghaziabad",
+      "LED TV REPAIR GHAZIABAD",
+      "LED TV Repair in Ghaziabad",
+      "Need LED TV Repair in Ghaziabad? GR Solution provides doorstep inspection, diagnosis and repair support for led tv repair issues across Ghaziabad and nearby NCR areas.",
+      "Call GR Solution",
+      "Book Inspection",
+      "Doorstep inspection",
+      "Transparent estimate",
+      "Delhi NCR support",
+      "Useful LED TV Repair Ghaziabad Guidance",
+      "LED TVs are reliable, but backlight, power board, mainboard and display faults can make the screen go black, flicker or lose sound unexpectedly. For LED TV Repair Ghaziabad, GR Solution diagnoses the actual fault before any repair is approved.",
+      "Ghaziabad customers often contact us for no-picture, sound, power and display issues on TVs used daily in family living rooms.",
+      "GR Solution provides Ghaziabad repair support with a practical focus on diagnosis, estimate clarity and careful handling of screen-related faults.",
+      "GR Solution Contact",
+      "Phone:",
+      "+91 93155 15700",
+      "Email:",
+      "info@grsolution.co.in",
+      "Address: C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Visit GR Solution homepage",
+      "Explore main LED TV Repair",
+      "Open contact and booking page",
+      "LOCAL INSIGHT",
+      "LED TVs in Ghaziabad: the family set that never switches off",
+      "The LED TVs we see in Ghaziabad are mostly the household’s main screen, on for most of the day — typically 32- to 43-inch sets in Vaishali and Vasundhara, larger 50- to 55-inch sets in Indirapuram societies. Long daily running hours wear backlight LEDs faster, so a gradually dimming picture, or a screen that goes dark while sound continues, is the single most common Ghaziabad LED complaint.",
+      "For these mid-size sets the repair-or-replace maths is close, so we give an honest comparison against the price of a new equivalent TV. Kaushambi, Vaishali and Indirapuram are a short trip from New Kondli. Builder floors without lifts are common in the older Vaishali and Vasundhara sectors — mention the floor when booking.",
+      "Before the visit: switch the TV to a bright, static menu screen and look at it from a metre away. Darker patches along the top or bottom edge suggest edge-lit strip wear; a dark grid pattern across the whole screen suggests a direct-lit array. Either detail helps the technician bring the right strip set.",
+      "Common LED TV situations in Ghaziabad",
+      "Common LED TV situations in Ghaziabad",
+      "Situation",
+      "What we check first",
+      "Usual path",
+      "Picture has dimmed gradually over months",
+      "Backlight LED wear",
+      "Strip replacement, usually worthwhile",
+      "Indirapuram 55\" set, lines after a knock",
+      "Panel damage versus T-Con",
+      "Honest replace-versus-repair comparison",
+      "Set-top box not detected on HDMI",
+      "Cable, source, then HDMI port",
+      "Often fixed without opening the TV",
+      "GHAZIABAD AT A GLANCE",
+      "Power supply and your TV in Ghaziabad",
+      "Ghaziabad’s electricity is distributed by PVVNL (Paschimanchal Vidyut Vitran Nigam Limited). Like elsewhere in the NCR, storms and peak-load periods bring voltage fluctuation, and older buildings with ageing internal wiring are more exposed to it. A TV that fails at the moment power returns after a cut is a strong hint that the power board, not the screen, is the problem.",
+      "LOCAL REPAIR GUIDE",
+      "Detailed LED TV Repair Ghaziabad Guidance",
+      "Practical answers for diagnosis, local scheduling, safe handling, repair feasibility and after-repair checks.",
+      "Diagnosis approach for LED TV Repair Ghaziabad",
+      "The first inspection is faster when you share the model number, whether sound works, the standby-light behaviour and whether the fault shows on every input. A frequent Ghaziabad starting point is \"picture has dimmed gradually over months\", where the technician checks backlight LED wear before anything else. The full diagnosis sequence is set out on the main LED TV Repair page.",
+      "Local service planning in Ghaziabad",
+      "Ghaziabad has a mix of apartments, builder floors and busy market-side homes, so clear location details help avoid delays and support practical doorstep diagnosis. For Ghaziabad service, share the locality, nearby road or society, parking constraints and whether the TV has recently been shifted or wall mounted. GR Solution uses this information to decide whether the visit needs basic diagnostic tools, careful demounting support, or a recommendation for workshop-level handling after the first inspection.",
+      "Safe handling for led tv repair",
+      "For \"set-top box not detected on hdmi\", cable, source, then HDMI port is checked before anything is moved, and the usual path is often fixed without opening the TV. Until the visit, avoid pressing the screen, opening the back cover or moving a large set alone.",
+      "How pricing is discussed",
+      "Backlight / LED strip replacement: roughly ₹3,000 - 8,000 on 32\" - 43\" sets, ₹5,500 - 12,000 on 44\" - 55\" and ₹8,500 - 18,000 on 56\" and above in the Delhi NCR market. In Ghaziabad, \"indirapuram 55\" set, lines after a knock\" is a common case, and its usual path is honest replace-versus-repair comparison. The exact figure is confirmed after inspection.",
+      "After-repair checks",
+      "After an approved repair in Ghaziabad, the technician confirms picture brightness, sound output, remote response and a stability check before handover.",
+      "Common LED TV Problems We Repair",
+      "Backlight failure, display lines, sound but no picture, motherboard, power board and HDMI faults. LED TV repair service in Delhi and LED TV repair in Vaishali Ghaziabad requests are handled on their own city pages.",
+      "TV backlight repair Ghaziabad guidance",
+      "For TV backlight repair in Ghaziabad, the quickest check is a phone torch held at a sharp angle to the screen: a faint picture means the backlight, not the panel, has failed.",
+      "LED TV Repair coverage in Ghaziabad",
+      "This page covers LED TV repair service in Ghaziabad, including Vasundhara, Vaishali, Indirapuram and nearby localities. Share the society, landmark and wall-mount details when requesting a doorstep visit.",
+      "Common Problems We Solve",
+      "Picture has dimmed gradually over months — we check backlight LED wear.",
+      "Indirapuram 55\" set, lines after a knock — we check panel damage versus T-Con.",
+      "Set-top box not detected on HDMI — we check cable, source, then HDMI port.",
+      "Sound is working but there is no picture on the screen.",
+      "Backlight glow is weak, uneven or completely failed.",
+      "The TV turns on and off repeatedly or does not power up.",
+      "HDMI, USB, remote or smart input behavior is unstable.",
+      "The screen shows flicker, patches, lines or brightness drops.",
+      "Motherboard symptoms causing restart, no signal or unstable smart functions.",
+      "Power board faults where the TV clicks, blinks or does not start.",
+      "HDMI/input issues where set-top box, console or streaming device is not detected.",
+      "What To Check Before Calling",
+      "Check the power socket, try a different input source, confirm the remote batteries, note whether sound is present, and keep the TV model number ready. For Ghaziabad service, share the locality, nearby road or society, parking constraints and whether the TV has recently been shifted or wall mounted.",
+      "Repair vs Replace",
+      "LED TV repair is usually worth checking when the screen glass is intact and the fault is linked to backlight, power, audio or board sections. Replacement may be wiser if the panel is cracked, heavily damaged or the repair estimate is close to a new TV.",
+      "HELPFUL TOPICS",
+      "TV Repair Topics for Ghaziabad",
+      "Concise guidance for common search questions, diagnosis decisions and safe next steps.",
+      "LED TV Backlight Repair in Ghaziabad",
+      "A dim screen, brief logo flash or sound with a dark picture can point to backlight strips, their driver circuit or the power section.",
+      "LED TV No Picture Repair in Ghaziabad",
+      "No-picture symptoms may come from the backlight, T-Con, mainboard, power board or panel.",
+      "LED TV Flickering Screen Repair in Ghaziabad",
+      "Screen flicker can be linked to unstable power, ageing backlights, loose connections or display electronics.",
+      "LED TV Power Board Repair in Ghaziabad",
+      "Blinking standby lights, repeated restarts and failure to power on can involve the power board, but socket, cable and mainboard behavior should be checked first.",
+      "LED TV Sound But No Picture Repair in Ghaziabad",
+      "When audio works but the screen is dark, the panel is not automatically faulty.",
+      "LED TV Dark Screen Repair in Ghaziabad",
+      "A very dark image that is visible only under a torch can indicate backlight or driver trouble.",
+      "LED TV Restart Issue Repair in Ghaziabad",
+      "Repeated restarting may involve unstable power, the mainboard, connected HDMI devices or smart software.",
+      "Why Choose GR Solution In Ghaziabad",
+      "GR Solution focuses on symptom-led led tv repair diagnosis, so the visit starts with what the TV is actually doing rather than a rushed assumption.",
+      "The business details stay consistent for local trust: GR Solution, C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096, phone +91 93155 15700 and email info@grsolution.co.in.",
+      "GR Solution provides Ghaziabad repair support with a practical focus on diagnosis, estimate clarity and careful handling of screen-related faults. This matters when a customer wants local support without losing clarity on estimate, handling and next steps.",
+      "Quality Checks",
+      "The final check depends on the TV type and approved repair, but these checkpoints help confirm that the fault is stable after service.",
+      "picture brightness",
+      "sound output",
+      "remote response",
+      "HDMI/source switching",
+      "final heat and stability check",
+      "SERVICE PROCESS",
+      "How LED TV Repair Ghaziabad Works",
+      "STEP 1",
+      "Share your led tv repair issue and Ghaziabad location.",
+      "STEP 2",
+      "Get a visit schedule or next-step guidance from GR Solution.",
+      "STEP 3",
+      "Technician checks power, display, sound and board symptoms.",
+      "STEP 4",
+      "Receive repair feasibility, estimate and approval options.",
+      "STEP 5",
+      "Approved repair is completed and tested for stable picture and sound.",
+      "Local Coverage",
+      "Service coverage for LED TV Repair Ghaziabad includes Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension, Kaushambi, Crossings Republik, Sahibabad and nearby NCR pockets. Availability depends on technician schedule, TV size, access and part requirements.",
+      "Cost Guidance",
+      "The Ghaziabad cost guide lists Delhi NCR market ranges for every common fault by screen size. Your firm estimate is shared after diagnosis.",
+      "Full GhaziabadTV repair cost guide →",
+      "Quick Support",
+      "For an urgent LED TV Repair Ghaziabad request, call or WhatsApp the model number, symptom and your Ghaziabad locality. The Ghaziabad localities along the Delhi border — Kaushambi, Vaishali and Indirapuram — are only a short drive from our New Kondli base, closer in practice than much of South Delhi.",
+      "Same Service In Other Cities",
+      "LED TV Repair Delhi",
+      "LED TV Repair Noida",
+      "LED TV Repair Greater Noida",
+      "Related TV Repair Services In Ghaziabad",
+      "OLED/QLED TV Repair Ghaziabad",
+      "LCD TV Repair Ghaziabad",
+      "Plasma TV Repair Ghaziabad",
+      "Curved TV Repair Ghaziabad",
+      "TV Repair Ghaziabad",
+      "IN-DEPTH GUIDES",
+      "Read Before You Book in Ghaziabad",
+      "Detailed cost and diagnosis guides covering what actually drives the price and which faults are worth repairing.",
+      "Ghaziabad Cost Guide",
+      "TV Repair Cost in Ghaziabad",
+      "TV repair costs in Ghaziabad and the repair-versus-replace decision for everyday family televisions in Indirapuram, Vaishali, Vasundhara and nearby areas.",
+      "Read the guide →",
+      "Symptom Guide",
+      "TV Backlight Failure Symptoms",
+      "The signs of a failing TV backlight, how to confirm it with a torch, backlight repair costs by screen size in Delhi NCR, and how long repairs last.",
+      "Read the guide →",
+      "Screen Repair Guide",
+      "LED TV Screen Repair Delhi NCR",
+      "Guide to LED TV screen repair in Delhi NCR, including Delhi, Noida, Greater Noida and Ghaziabad screen repair options.",
+      "Read the guide →",
+      "FAQ",
+      "LED TV Repair Ghaziabad FAQs",
+      "Do you provide LED TV Repair in Ghaziabad?",
+      "Yes, GR Solution provides doorstep inspection and repair support for led tv repair across Ghaziabad and nearby NCR areas.",
+      "How quickly can I book LED TV Repair Ghaziabad?",
+      "Visit timing depends on the day’s bookings and where in Ghaziabad you are. Raj Nagar Extension and Crossings Republik are the longer Ghaziabad visits.",
+      "What problems are common in led tv repair?",
+      "In Ghaziabad, the situations that come up most are: picture has dimmed gradually over months; indirapuram 55\" set, lines after a knock; set-top box not detected on HDMI. A technician checks the actual fault before suggesting repair.",
+      "Can you repair the TV at home in Ghaziabad?",
+      "Many diagnosis and repair tasks can start at home. Market-side homes around Kaushambi and Sahibabad bring tight parking and narrow access. If workshop handling is safer, the technician explains why before moving ahead.",
+      "How much does led tv repair cost in Ghaziabad?",
+      "Cost depends on TV size, model, fault type and parts. Backlight / LED strip replacement: roughly ₹3,000 - 8,000 on 32\" - 43\" sets, ₹5,500 - 12,000 on 44\" - 55\" and ₹8,500 - 18,000 on 56\" and above in the Delhi NCR market. GR Solution confirms the exact figure after inspection.",
+      "Should I repair or replace my TV?",
+      "LED TV repair is usually worth checking when the screen glass is intact and the fault is linked to backlight, power, audio or board sections. For led tv repair in Ghaziabad: picture has dimmed gradually over months usually leads to strip replacement, usually worthwhile; indirapuram 55\" set, lines after a knock usually leads to honest replace-versus-repair comparison; set-top box not detected on hdmi usually leads to often fixed without opening the TV.",
+      "Which Ghaziabad areas do you cover?",
+      "Common coverage includes Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension, Kaushambi, Crossings Republik, Sahibabad and nearby localities, subject to scheduling and service availability.",
+      "Do you provide LED TV repair service at home in Ghaziabad?",
+      "Yes, subject to availability and safe access to the TV.",
+      "Can LED TV backlight and screen issues be checked together?",
+      "Yes, in the same visit.",
+      "Do you provide TV backlight repair in Ghaziabad?",
+      "Yes. Start with the torch test: a faint image under a torch means the backlight has failed and the panel is fine.",
+      "Why has my LED TV picture got dimmer over time?",
+      "Backlight LEDs lose brightness with running hours, and sets that are on most of the day wear faster. A backlight strip replacement restores brightness without touching the panel.",
+      "Is it worth repairing a 43-inch LED TV in Ghaziabad?",
+      "If the panel is intact and the fault is backlight, power or a board, usually yes. If the panel is cracked, a new 43-inch set often costs about the same as the repair, and we will say so.",
+      "FAST LOCAL SUPPORT",
+      "Need LED TV Repair Ghaziabad?",
+      "Call GR Solution for doorstep diagnosis, transparent repair guidance and TV service support across Ghaziabad.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

@@ -1,0 +1,1052 @@
+{
+  "path": "/blog/tv-repair-vs-replacement-guide",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 98461,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Repair or Replace Your TV? A Practical Decision Guide",
+    "titleCount": 1,
+    "metaDescription": "A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/blog/tv-repair-vs-replacement-guide"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Repair or Replace Your TV? A Practical Decision Guide"
+      ],
+      [
+        "og:description",
+        "A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/blog/tv-repair-vs-replacement-guide"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_panel.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Repair or Replace Your TV? A Practical Decision Guide"
+      ],
+      [
+        "twitter:description",
+        "A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Should You Repair or Replace Your TV?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "The decision in five questions",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Typical repair costs against a new TV",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "When repair is clearly the right answer",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "When replacement usually makes more sense",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Why an honest diagnosis matters",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Helpful Links",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair vs Replacement FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need TV Repair Guidance?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "GR Solution Editorial Team",
+      "region": "main",
+      "section": "Should You Repair or Replace Your TV?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing#sources",
+      "text": "See sources and method",
+      "region": "main",
+      "section": "Typical repair costs against a new TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_panel.webp",
+      "alt": "Should You Repair or Replace Your TV? guide by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Should You Repair or Replace Your TV?"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://grsolution.co.in/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV Repair vs Replacement",
+            "item": "https://grsolution.co.in/blog/tv-repair-vs-replacement-guide"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Should You Repair or Replace Your TV?",
+        "description": "A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set.",
+        "image": "https://grsolution.co.in/images/service_panel.webp",
+        "url": "https://grsolution.co.in/blog/tv-repair-vs-replacement-guide",
+        "datePublished": "2026-09-25",
+        "dateModified": "2026-09-25",
+        "author": {
+          "@type": "Organization",
+          "name": "GR Solution Editorial Team",
+          "url": "https://grsolution.co.in/about"
+        },
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://grsolution.co.in/blog/tv-repair-vs-replacement-guide"
+        },
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://grsolution.co.in/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is it worth repairing a 5-year-old TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually, if the screen is intact. Backlight, power board and software faults on a five-year-old TV are generally worth fixing. A cracked panel on the same set usually is not."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "At what point is TV repair not worth it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When the repair estimate reaches about half the price of an equivalent new TV, when the panel is cracked, or when an older set develops several faults at once."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it cheaper to fix a TV screen or buy a new TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On most mid-range TVs, buying a new TV. Panel replacement costs a large share of a new set. On large, recent premium TVs, panel replacement can still make sense."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a TV last after repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A repaired backlight or power board can give years of further use. Longevity depends more on the age and condition of the rest of the set than on the repair itself."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "BreadcrumbList",
+    "BlogPosting",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Repair your TV if the screen is intact and the fault is the backlight, power board, mainboard, T-Con or software — these repairs usually cost a fraction of a new set. Consider replacing it if the panel is cracked, the set is over eight years old with several faults, or the repair estimate reaches about half the price of an equivalent new TV.",
+      "By GR Solution Editorial Team|TV repair guidance team|Published 25 September 2026",
+      "The repair-or-replace decision is simpler than it feels, once you separate the one question that matters most — is the panel damaged? — from everything else. The panel is the most expensive part of any television. When it is intact, almost every other fault is economical to repair. When it is damaged, the maths usually favours a new set."
+    ],
+    "faq": {
+      "questions": 4,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Blog",
+        "TV Repair vs Replacement"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Blog",
+          "TV Repair vs Replacement"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": true,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 856,
+  "mainTextSha256": "d2e0ca245fe8d7a9cb1bc2275dd220a2e30fa496def89b46897421c9e6b52109",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Blog",
+      "/",
+      "TV Repair vs Replacement",
+      "Decision Guide",
+      "Should You Repair or Replace Your TV?",
+      "Repair your TV if the screen is intact and the fault is the backlight, power board, mainboard, T-Con or software — these repairs usually cost a fraction of a new set. Consider replacing it if the panel is cracked, the set is over eight years old with several faults, or the repair estimate reaches about half the price of an equivalent new TV.",
+      "By",
+      "GR Solution Editorial Team",
+      "|",
+      "TV repair guidance team",
+      "|",
+      "Published",
+      "25 September 2026",
+      "The repair-or-replace decision is simpler than it feels, once you separate the one question that matters most — is the panel damaged? — from everything else. The panel is the most expensive part of any television. When it is intact, almost every other fault is economical to repair. When it is damaged, the maths usually favours a new set.",
+      "The decision in five questions",
+      "Repair or replace: decision table",
+      "Question",
+      "Points to repair",
+      "Points to replacement",
+      "Is the screen glass intact?",
+      "Yes",
+      "No — cracked or impact-damaged",
+      "How old is the TV?",
+      "Under 6 years",
+      "Over 8 years",
+      "How many problems at once?",
+      "One clear fault",
+      "Several unrelated faults",
+      "Repair cost vs an equivalent new TV?",
+      "Under a third",
+      "Half or more",
+      "Parts available for the model?",
+      "Yes",
+      "Discontinued or hard to source",
+      "Two or more answers in the right-hand column usually means replacement is the better choice.",
+      "Typical repair costs against a new TV",
+      "The comparison that matters is the repair estimate against what an equivalent TV costs today, not what you paid originally. TV prices have fallen considerably, so a repair that looks reasonable against the original price can look marginal against a new set. Delhi NCR market ranges for common repairs:",
+      "Common TV repair costs in Delhi NCR",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "Backlight / LED strip replacement",
+      "Sound works but the screen is black or unevenly lit",
+      "₹3,000 - 8,000",
+      "₹5,500 - 12,000",
+      "₹8,500 - 18,000",
+      "Power supply board repair or replacement",
+      "No power, or a blinking standby light",
+      "₹1,000 - 3,500",
+      "₹1,800 - 5,000",
+      "₹2,500 - 6,500",
+      "Mainboard / motherboard repair",
+      "Boot loops, no input detection, random shutdowns",
+      "₹2,000 - 5,500",
+      "₹3,000 - 8,000",
+      "₹4,500 - 12,500",
+      "T-Con board repair or replacement",
+      "Half screen, double image, vertical lines",
+      "₹1,500 - 4,000",
+      "₹2,500 - 6,500",
+      "₹4,000 - 12,000",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "See sources and method",
+      ".",
+      "When repair is clearly the right answer",
+      "Backlight failure on any size of TV with an intact panel.",
+      "A power board failure after a power cut or storm.",
+      "Software faults: boot loops, frozen apps, restarts that a firmware reset fixes.",
+      "A single failed HDMI port or audio fault.",
+      "Large premium sets, where an equivalent new TV is genuinely expensive.",
+      "When replacement usually makes more sense",
+      "A cracked or impact-damaged panel on a mid-range TV.",
+      "An older set with several unrelated faults appearing together.",
+      "Models whose boards are discontinued and cannot be sourced.",
+      "Plasma and early LCD sets where the energy saving from a modern TV adds to the case.",
+      "Why an honest diagnosis matters",
+      "The whole decision rests on knowing which component actually failed. A black screen that is diagnosed as \"panel gone\" when it is really a backlight fault turns an affordable repair into an unnecessary purchase. Ask what component has failed, ask to see physical damage if a panel is blamed, and be wary of any diagnosis that always concludes the TV is repairable — or never does.",
+      "Helpful Links",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.",
+      "FAQ",
+      "TV Repair vs Replacement FAQs",
+      "Is it worth repairing a 5-year-old TV?",
+      "Usually, if the screen is intact. Backlight, power board and software faults on a five-year-old TV are generally worth fixing. A cracked panel on the same set usually is not.",
+      "At what point is TV repair not worth it?",
+      "When the repair estimate reaches about half the price of an equivalent new TV, when the panel is cracked, or when an older set develops several faults at once.",
+      "Is it cheaper to fix a TV screen or buy a new TV?",
+      "On most mid-range TVs, buying a new TV. Panel replacement costs a large share of a new set. On large, recent premium TVs, panel replacement can still make sense.",
+      "How long does a TV last after repair?",
+      "A repaired backlight or power board can give years of further use. Longevity depends more on the age and condition of the rest of the set than on the repair itself.",
+      "FAST LOCAL SUPPORT",
+      "Need TV Repair Guidance?",
+      "Call or WhatsApp GR Solution with your TV model, fault symptoms and location for inspection-based next steps.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

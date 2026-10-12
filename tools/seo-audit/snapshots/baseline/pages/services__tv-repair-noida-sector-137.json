@@ -1,0 +1,1080 @@
+{
+  "path": "/services/tv-repair-noida-sector-137",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 98508,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair in Noida Sector 137 | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "LED, QLED and OLED TV repair in Noida Sector 137 and nearby Expressway sectors. Doorstep diagnosis in high-rise societies, estimate before any work.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/tv-repair-noida-sector-137"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair in Noida Sector 137 | GR Solution"
+      ],
+      [
+        "og:description",
+        "LED, QLED and OLED TV repair in Noida Sector 137 and nearby Expressway sectors. Doorstep diagnosis in high-rise societies, estimate before any work."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/tv-repair-noida-sector-137"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair in Noida Sector 137 | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "LED, QLED and OLED TV repair in Noida Sector 137 and nearby Expressway sectors. Doorstep diagnosis in high-rise societies, estimate before any work."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Repair in Noida Sector 137",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Noida Sector 137 at a glance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Areas covered",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Newer TVs, bigger screens, tower logistics",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common situations in Sector 137",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Before the visit",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What repairs typically cost",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Noida Sector 137 FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV repair services in Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Other Noida areas",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV not working in Noida Sector 137?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "TV Repair in Noida Sector 137"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "TV Repair in Noida Sector 137"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing#sources",
+      "text": "See sources and method",
+      "region": "main",
+      "section": "What repairs typically cost"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-noida",
+      "text": "Full NoidaTV repair cost guide →",
+      "region": "main",
+      "section": "What repairs typically cost"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "main",
+      "section": "TV repair services in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-noida",
+      "text": "LED TV Repair in Noida",
+      "region": "main",
+      "section": "TV repair services in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-noida",
+      "text": "OLED/QLED TV Repair in Noida",
+      "region": "main",
+      "section": "TV repair services in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-noida",
+      "text": "LCD TV Repair in Noida",
+      "region": "main",
+      "section": "TV repair services in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-noida",
+      "text": "Plasma TV Repair in Noida",
+      "region": "main",
+      "section": "TV repair services in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-noida",
+      "text": "Curved TV Repair in Noida",
+      "region": "main",
+      "section": "TV repair services in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida-sector-62",
+      "text": "TV Repair in Noida Sector 62",
+      "region": "main",
+      "section": "Other Noida areas"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "TV not working in Noida Sector 137?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "TV not working in Noida Sector 137?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "TV not working in Noida Sector 137?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "TV Repair in Noida Sector 137",
+        "serviceType": "TV repair service",
+        "description": "LED, QLED and OLED TV repair in Noida Sector 137 and nearby Expressway sectors. Doorstep diagnosis in high-rise societies, estimate before any work.",
+        "url": "https://grsolution.co.in/services/tv-repair-noida-sector-137",
+        "provider": {
+          "@id": "https://grsolution.co.in/#localbusiness"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Noida Sector 137",
+          "containedInPlace": {
+            "@type": "City",
+            "name": "Noida"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV Repair in Noida",
+            "item": "https://grsolution.co.in/services/tv-repair-noida"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "TV Repair in Noida Sector 137",
+            "item": "https://grsolution.co.in/services/tv-repair-noida-sector-137"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you repair TVs in Noida Sector 137?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We cover Sector 137 and the neighbouring Expressway sectors, including 128, 132, 134, 135 and 143."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair LED TVs at home in Sector 137 societies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Most LED faults, including power board and backlight repairs, are done inside the flat, which avoids moving a large panel along the Expressway."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "My TV is less than two years old. Should I call you or the brand?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the warranty first. If the manufacturer or an extended plan still covers the TV, use it. We can help you tell whether the symptom looks like a warranty fault."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "GR Solution repairs LED, QLED and OLED TVs in Noida Sector 137 and the neighbouring Expressway sectors, including 128, 132, 134, 135 and 143. Sector 137 is almost entirely high-rise townships, so most repairs are done inside the flat, and the visit is planned around gate entry, tower access and the service lift.",
+      "Call Now WhatsApp",
+      "Sector 137 sits on the Noida–Greater Noida Expressway, with its own stop on the Aqua Line metro. It is a relatively young part of Noida, built up mainly over the last decade and a half as large high-rise townships. That shapes the TVs we see here — mostly recent LED and QLED sets of 50 inches and above — and the way a visit has to be arranged."
+    ],
+    "faq": {
+      "questions": 3,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "TV Repair in Noida",
+        "Noida Sector 137"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "TV Repair in Noida",
+          "TV Repair in Noida Sector 137"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 816,
+  "mainTextSha256": "b763cf266b207e4a9ed779f6e05b3d45ba6d20b084002bdb1e8a44d0f2592236",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "TV Repair in Noida",
+      "/",
+      "Noida Sector 137",
+      "NOIDA SECTOR 137 · NOIDA",
+      "TV Repair in Noida Sector 137",
+      "GR Solution repairs LED, QLED and OLED TVs in Noida Sector 137 and the neighbouring Expressway sectors, including 128, 132, 134, 135 and 143. Sector 137 is almost entirely high-rise townships, so most repairs are done inside the flat, and the visit is planned around gate entry, tower access and the service lift.",
+      "Call Now",
+      "WhatsApp",
+      "Sector 137 sits on the Noida–Greater Noida Expressway, with its own stop on the Aqua Line metro. It is a relatively young part of Noida, built up mainly over the last decade and a half as large high-rise townships. That shapes the TVs we see here — mostly recent LED and QLED sets of 50 inches and above — and the way a visit has to be arranged.",
+      "Noida Sector 137 at a glance",
+      "Noida Sector 137 local facts",
+      "Fact",
+      "Detail",
+      "Distance from our base",
+      "Roughly 20 km from New Kondli via the Expressway",
+      "Electricity distributor",
+      "PVVNL (Paschimanchal Vidyut Vitran Nigam Limited)",
+      "Typical housing",
+      "Large high-rise townships with generator backup",
+      "Workshop handling",
+      "Longer trip, so repairs are done in the flat wherever the fault allows",
+      "Areas covered",
+      "Sector 137",
+      "Sector 128",
+      "Sector 132",
+      "Sector 134",
+      "Sector 135",
+      "Sector 143",
+      "Expressway societies",
+      "Newer TVs, bigger screens, tower logistics",
+      "Because the housing here is recent, so are many of the televisions. That makes the warranty check the first step. A large set bought in the last year or two may still be covered by the manufacturer or an extended plan from the retailer, and a covered fault should go to the brand, not to a paid repair. We will tell you if the symptom looks like a warranty case.",
+      "Outside warranty, the pattern is familiar from the rest of the Expressway: power-supply faults triggered at the generator changeover, and backlight or local-dimming problems on 55- to 65-inch panels. Sector 137 is about 20 km from our base, so a large panel is not moved unless the fault genuinely needs a bench. Sending the model number and a short video first usually lets the technician bring the right part.",
+      "Common situations in Sector 137",
+      "Common situations in Sector 137",
+      "Situation",
+      "What we check first",
+      "Usual path",
+      "Set under two years old develops a fault",
+      "Warranty or extended-plan cover",
+      "Manufacturer first if still covered",
+      "65\" LED dark after a power cut",
+      "Power supply board and generator changeover",
+      "Board repair inside the flat",
+      "QLED with patchy dark scenes",
+      "Local-dimming backlight zones",
+      "Backlight repair, dismounting only if needed",
+      "Before the visit",
+      "Pre-approve the visit in your township’s visitor app and share the tower and flat number.",
+      "Find the purchase invoice first — recent sets here are often still under warranty.",
+      "If the TV is wall-mounted above 55 inches, say so, so that two technicians are sent.",
+      "What repairs typically cost",
+      "Typical TV repair costs in Noida Sector 137",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "Backlight / LED strip replacement",
+      "Sound works but the screen is black or unevenly lit",
+      "₹3,000 - 8,000",
+      "₹5,500 - 12,000",
+      "₹8,500 - 18,000",
+      "Power supply board repair or replacement",
+      "No power, or a blinking standby light",
+      "₹1,000 - 3,500",
+      "₹1,800 - 5,000",
+      "₹2,500 - 6,500",
+      "Mainboard / motherboard repair",
+      "Boot loops, no input detection, random shutdowns",
+      "₹2,000 - 5,500",
+      "₹3,000 - 8,000",
+      "₹4,500 - 12,500",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "See sources and method",
+      ".",
+      "Full NoidaTV repair cost guide →",
+      "TV Repair Noida Sector 137 FAQs",
+      "Do you repair TVs in Noida Sector 137?",
+      "Yes. We cover Sector 137 and the neighbouring Expressway sectors, including 128, 132, 134, 135 and 143.",
+      "Do you repair LED TVs at home in Sector 137 societies?",
+      "Yes. Most LED faults, including power board and backlight repairs, are done inside the flat, which avoids moving a large panel along the Expressway.",
+      "My TV is less than two years old. Should I call you or the brand?",
+      "Check the warranty first. If the manufacturer or an extended plan still covers the TV, use it. We can help you tell whether the symptom looks like a warranty fault.",
+      "TV repair services in Noida",
+      "TV Repair in Noida",
+      "LED TV Repair in Noida",
+      "OLED/QLED TV Repair in Noida",
+      "LCD TV Repair in Noida",
+      "Plasma TV Repair in Noida",
+      "Curved TV Repair in Noida",
+      "Other Noida areas",
+      "TV Repair in Noida Sector 62",
+      "NOIDA SECTOR 137 TV REPAIR",
+      "TV not working in Noida Sector 137?",
+      "Share your TV model and the symptom, and GR Solution will plan a doorstep visit in Noida Sector 137 with an estimate before any paid work begins.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

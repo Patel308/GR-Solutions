@@ -1,0 +1,1095 @@
+{
+  "path": "/pricing",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 109753,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair Prices in Delhi NCR | 2026 Price Guide",
+    "titleCount": 1,
+    "metaDescription": "Delhi NCR TV repair prices by fault and screen size: backlight, power board, mainboard, T-Con and panel replacement. Diagnosis is free.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/pricing"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair Prices in Delhi NCR | 2026 Price Guide"
+      ],
+      [
+        "og:description",
+        "Delhi NCR TV repair prices by fault and screen size: backlight, power board, mainboard, T-Con and panel replacement. Diagnosis is free."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/pricing"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair Prices in Delhi NCR | 2026 Price Guide"
+      ],
+      [
+        "twitter:description",
+        "Delhi NCR TV repair prices by fault and screen size: backlight, power board, mainboard, T-Con and panel replacement. Diagnosis is free."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Repair Prices in Delhi NCR",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Diagnosis",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Most common repair",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Most expensive",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Board and component repairs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Screen and panel replacement",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What changes the price",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Cost guides by city",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Sources and method",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Pricing FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Get a firm price for your TV",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-screen-replacement-cost-delhi-ncr",
+      "text": "here is how to check",
+      "region": "main",
+      "section": "Screen and panel replacement"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-delhi",
+      "text": "TV repair cost in Delhi",
+      "region": "main",
+      "section": "Cost guides by city"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-noida",
+      "text": "TV repair cost in Noida",
+      "region": "main",
+      "section": "Cost guides by city"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-greater-noida",
+      "text": "TV repair cost in Greater Noida",
+      "region": "main",
+      "section": "Cost guides by city"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-ghaziabad",
+      "text": "TV repair cost in Ghaziabad",
+      "region": "main",
+      "section": "Cost guides by city"
+    },
+    {
+      "kind": "external",
+      "href": "https://www.urbancompany.com/delhi-ncr-tv-repair",
+      "text": "Urban Company, TV repair in Delhi NCR",
+      "rel": "nofollow noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Sources and method"
+    },
+    {
+      "kind": "external",
+      "href": "https://samsung-parts.trackit.co.in/india/tv/display-panel-price-list",
+      "text": "Samsung Parts India, TV display panel price list (Jan 2026)",
+      "rel": "nofollow noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Sources and method"
+    },
+    {
+      "kind": "external",
+      "href": "https://greatbharatspares.com/blogs/tv-fault-diagnosis-center/tv-backlight-replacement-cost-guide",
+      "text": "Great Bharat Spares, TV backlight replacement cost guide (Jun 2026)",
+      "rel": "nofollow noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Sources and method"
+    },
+    {
+      "kind": "external",
+      "href": "https://amanrepairing.in/tv-repair-cost-by-problem/",
+      "text": "Aman Repairing, TV repair cost by problem (Delhi NCR)",
+      "rel": "nofollow noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Sources and method"
+    },
+    {
+      "kind": "external",
+      "href": "https://servehyderabad.com/what-is-the-average-cost-of-tv-repair-in-hyderabad/",
+      "text": "Serve Hyderabad, average TV repair cost (2026)",
+      "rel": "nofollow noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Sources and method"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Get a firm price for your TV"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Get a firm price for your TV"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Get a firm price for your TV"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "TV Repair Prices in Delhi NCR",
+        "url": "https://grsolution.co.in/pricing",
+        "description": "Delhi NCR TV repair prices by fault and screen size: backlight, power board, mainboard, T-Con and panel replacement. Diagnosis is free.",
+        "dateModified": "2026-09-25",
+        "isPartOf": {
+          "@id": "https://grsolution.co.in/#website"
+        },
+        "about": {
+          "@id": "https://grsolution.co.in/#localbusiness"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Repair Prices",
+            "item": "https://grsolution.co.in/pricing"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does TV repair cost in Delhi NCR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the failed component. In the Delhi NCR market, software fixes run about ₹500–₹2,500, power board repairs ₹1,000–₹6,500, backlight replacement ₹3,000–₹18,000 and mainboard repairs ₹2,000–₹12,500, depending on screen size. Panel replacement is far more expensive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a charge for TV diagnosis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not with GR Solution — diagnosis is free, and you get a firm estimate before any paid work. For comparison, a doorstep TV inspection in the Delhi NCR market typically costs around ₹249 - 500."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why can’t you give me an exact price over the phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because the same symptom can have several causes at very different prices. A black screen can be a backlight strip or a cracked panel. The ranges on this page tell you what to expect; the firm figure comes after inspection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these GR Solution’s fixed prices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. They are Delhi NCR market ranges researched from published sources, shown so you know what a fair quote looks like. GR Solution gives a firm estimate for your specific TV after diagnosis, before any paid work begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is TV screen replacement worth it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually only on large, recent, premium TVs. On most mid-range sets, a replacement panel costs a large share of a new television, so replacing the TV is often the better choice."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "WebPage",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "In the Delhi NCR market, a TV power board repair typically costs ₹1,000–₹6,500, backlight replacement ₹3,000–₹18,000 and a software fix ₹500–₹2,500, depending on screen size. Panel replacement is the expensive exception. What decides your price is which component failed — not the brand.",
+      "Diagnosis",
+      "Free"
+    ],
+    "faq": {
+      "questions": 5,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Repair Prices"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Repair Prices"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 1045,
+  "mainTextSha256": "1489c1d01106bceac36780d0c590d0c0a1ead87f47847df0b5944624a1e96a2d",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Repair Prices",
+      "PRICE GUIDE · REVIEWED 25 SEPTEMBER 2026",
+      "TV Repair Prices in Delhi NCR",
+      "In the Delhi NCR market, a TV power board repair typically costs ₹1,000–₹6,500, backlight replacement ₹3,000–₹18,000 and a software fix ₹500–₹2,500, depending on screen size. Panel replacement is the expensive exception. What decides your price is which component failed — not the brand.",
+      "Diagnosis",
+      "Free",
+      "GR Solution diagnoses your TV free of charge and gives you a firm estimate before any paid work begins. Market inspection charges typically run ₹249 - 500.",
+      "Most common repair",
+      "Backlight",
+      "Sound with a black screen is usually the backlight, not the panel. Check with a torch at a sharp angle.",
+      "Most expensive",
+      "Panel",
+      "Often a large share of a new TV. Always compare against a new set before approving.",
+      "Board and component repairs",
+      "These fix the large majority of TV faults, and on a set with an intact screen they are almost always worth doing.",
+      "TV repair prices by fault and screen size in Delhi NCR",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "Backlight / LED strip replacement",
+      "Sound works but the screen is black or unevenly lit",
+      "₹3,000 - 8,000",
+      "₹5,500 - 12,000",
+      "₹8,500 - 18,000",
+      "Power supply board repair or replacement",
+      "No power, or a blinking standby light",
+      "₹1,000 - 3,500",
+      "₹1,800 - 5,000",
+      "₹2,500 - 6,500",
+      "Mainboard / motherboard repair",
+      "Boot loops, no input detection, random shutdowns",
+      "₹2,000 - 5,500",
+      "₹3,000 - 8,000",
+      "₹4,500 - 12,500",
+      "T-Con board repair or replacement",
+      "Half screen, double image, vertical lines",
+      "₹1,500 - 4,000",
+      "₹2,500 - 6,500",
+      "₹4,000 - 12,000",
+      "Audio / speaker circuit repair",
+      "No sound, distorted sound, one speaker dead",
+      "₹800 - 2,500",
+      "₹1,000 - 3,500",
+      "₹1,500 - 5,000",
+      "HDMI / input port repair",
+      "One or all inputs not detected",
+      "₹700 - 2,500",
+      "₹1,000 - 3,000",
+      "₹1,500 - 4,000",
+      "Software / firmware reset on smart TVs",
+      "Apps crashing, stuck on logo, interface frozen",
+      "₹500 - 1,500",
+      "₹500 - 2,000",
+      "₹800 - 2,500",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "Screen and panel replacement",
+      "Panel replacement is priced very differently, because the panel is the single most expensive part of a television. Before paying for one, make sure the panel has actually failed —",
+      "here is how to check",
+      ".",
+      "TV panel replacement prices in Delhi NCR",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "LED panel replacement",
+      "Cracked glass or internal panel damage",
+      "₹6,000 - 18,000",
+      "₹17,000 - 28,000",
+      "₹25,000 - 48,000",
+      "QLED panel replacement",
+      "Cracked or damaged quantum-dot panel",
+      "₹12,000 - 17,000",
+      "₹15,000 - 35,000",
+      "₹27,000 - 85,000",
+      "OLED panel replacement",
+      "Physical damage or severe burn-in",
+      "Rarely made at this size",
+      "₹45,000 - 1,05,000",
+      "₹62,000 - 1,30,000",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "What changes the price",
+      "Factors that change TV repair price",
+      "Factor",
+      "Effect",
+      "Why",
+      "Which component failed",
+      "Very high",
+      "Separates a cheap strip swap from a panel replacement",
+      "Screen size",
+      "High",
+      "Larger panels, boards and backlight arrays cost more",
+      "Panel type",
+      "High for panels",
+      "OLED panels cost far more than LED panels of the same size",
+      "Part availability",
+      "Moderate",
+      "Discontinued parts must be sourced or substituted",
+      "Brand",
+      "Low",
+      "Matters mostly through panel type and size, not the badge",
+      "Cost guides by city",
+      "TV repair cost in Delhi",
+      "TV repair cost in Noida",
+      "TV repair cost in Greater Noida",
+      "TV repair cost in Ghaziabad",
+      "Sources and method",
+      "These are Delhi NCR market ranges, not a GR Solution rate card. They were researched from the published sources below and cross-checked against each other. Where a source listed part prices only, a typical labour component was added. Where sources disagreed, ranges were anchored on part cost plus labour rather than the highest quote found, and sources from outside India were excluded. Last reviewed 25 September 2026.",
+      "Urban Company, TV repair in Delhi NCR",
+      "Used for: Visit charge and typical overall repair spend in Delhi NCR",
+      "Samsung Parts India, TV display panel price list (Jan 2026)",
+      "Used for: LED, QLED and OLED panel part prices by screen size",
+      "Great Bharat Spares, TV backlight replacement cost guide (Jun 2026)",
+      "Used for: Backlight strip part prices by screen size",
+      "Aman Repairing, TV repair cost by problem (Delhi NCR)",
+      "Used for: Delhi NCR repair ranges for power board, backlight, T-Con, audio and HDMI",
+      "Serve Hyderabad, average TV repair cost (2026)",
+      "Used for: Cross-check for board, software, audio and HDMI repair ranges",
+      "Pricing FAQs",
+      "How much does TV repair cost in Delhi NCR?",
+      "It depends on the failed component. In the Delhi NCR market, software fixes run about ₹500–₹2,500, power board repairs ₹1,000–₹6,500, backlight replacement ₹3,000–₹18,000 and mainboard repairs ₹2,000–₹12,500, depending on screen size. Panel replacement is far more expensive.",
+      "Is there a charge for TV diagnosis?",
+      "Not with GR Solution — diagnosis is free, and you get a firm estimate before any paid work. For comparison, a doorstep TV inspection in the Delhi NCR market typically costs around ₹249 - 500.",
+      "Why can’t you give me an exact price over the phone?",
+      "Because the same symptom can have several causes at very different prices. A black screen can be a backlight strip or a cracked panel. The ranges on this page tell you what to expect; the firm figure comes after inspection.",
+      "Are these GR Solution’s fixed prices?",
+      "No. They are Delhi NCR market ranges researched from published sources, shown so you know what a fair quote looks like. GR Solution gives a firm estimate for your specific TV after diagnosis, before any paid work begins.",
+      "Is TV screen replacement worth it?",
+      "Usually only on large, recent, premium TVs. On most mid-range sets, a replacement panel costs a large share of a new television, so replacing the TV is often the better choice.",
+      "FIRM ESTIMATE FIRST",
+      "Get a firm price for your TV",
+      "Share your TV model and symptom. GR Solution diagnoses the fault and gives you a firm estimate before any paid work begins.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

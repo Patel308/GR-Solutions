@@ -1,0 +1,1275 @@
+{
+  "path": "/services/curved-tv-repair",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 108259,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Curved TV Repair Delhi NCR | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Curved TV repair in Delhi NCR for display distortion, no picture, sound, power, panel handling and mounting-related issues.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/curved-tv-repair"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Curved TV Repair Delhi NCR | GR Solution"
+      ],
+      [
+        "og:description",
+        "Curved TV repair in Delhi NCR for display distortion, no picture, sound, power, panel handling and mounting-related issues."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/curved-tv-repair"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_oled.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Curved TV Repair Delhi NCR | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Curved TV repair in Delhi NCR for display distortion, no picture, sound, power, panel handling and mounting-related issues."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Curved TV Repair Service",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Curved TV Repair Benefits",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved panel handling care",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Display and power diagnosis",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Mounting and stand-related inspection",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Curved TV Repair Service Areas",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Simple Repair Process",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Share curved TV model and issue",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Inspect display, mounting and electronics",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Explain repair feasibility",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Test picture and stability after repair",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Explore More Services",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "OLED/QLED TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LCD TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Curved TV Repair Faults Explained",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV Screen Line Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV No Display Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV Power Issue Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV Picture Distortion Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV HDMI Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV Mounting Damage Inspection",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV Uneven Brightness Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Safe handling",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "After-repair checks",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Read Before You Book",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Lines on TV Screen",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need Expert Curved TV Repair in Delhi NCR?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Curved TV Repair Questions",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Curved TV Repair Service"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Curved TV Repair Service"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-delhi",
+      "text": "Curved TV Repair Delhi",
+      "region": "main",
+      "section": "Curved TV Repair Service Areas"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-noida",
+      "text": "Curved TV Repair Noida",
+      "region": "main",
+      "section": "Curved TV Repair Service Areas"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-greater-noida",
+      "text": "Curved TV Repair Greater Noida",
+      "region": "main",
+      "section": "Curved TV Repair Service Areas"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-ghaziabad",
+      "text": "Curved TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Curved TV Repair Service Areas"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Explore More Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Explore More Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Explore More Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-delhi",
+      "text": "Curved TV Repair Delhi",
+      "region": "main",
+      "section": "Curved TV Repair Faults Explained"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-noida",
+      "text": "Curved TV Repair Noida",
+      "region": "main",
+      "section": "Curved TV Repair Faults Explained"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-greater-noida",
+      "text": "Curved TV Repair Greater Noida",
+      "region": "main",
+      "section": "Curved TV Repair Faults Explained"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-ghaziabad",
+      "text": "Curved TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Curved TV Repair Faults Explained"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-screen-lines-vertical-horizontal",
+      "text": "Symptom Guide Lines on TV Screen What vertical and horizontal lines on a TV screen mean, how to tell a board fault from panel damage, and when the repair is worth it. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need Expert Curved TV Repair in Delhi NCR?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need Expert Curved TV Repair in Delhi NCR?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need Expert Curved TV Repair in Delhi NCR?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Curved TV Repair Questions"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Curved TV Repair Questions"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_oled.webp",
+      "alt": "Curved TV Repair service in Delhi NCR",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Curved TV Repair Service"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "LED TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Explore More Services"
+    },
+    {
+      "src": "/images/service_oled.webp",
+      "alt": "OLED/QLED TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Explore More Services"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "LCD TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Explore More Services"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Curved TV Repair Questions"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Curved TV Repair",
+        "description": "Curved TV repair in Delhi NCR for display distortion, no picture, sound, power, panel handling and mounting-related issues.",
+        "serviceType": "Curved TV repair",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 99902 83890",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "addressRegion": "Delhi NCR",
+            "postalCode": "110096",
+            "addressCountry": "IN"
+          }
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        },
+        "url": "https://grsolution.co.in/services/curved-tv-repair"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Curved TV Repair",
+            "item": "https://grsolution.co.in/services/curved-tv-repair"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you repair curved TVs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution provides curved TV inspection and repair support for display, sound, power and panel-related symptoms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can curved TV screen distortion be fixed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on whether the issue is panel stress, board-related display processing or physical panel damage. Inspection confirms feasibility."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do curved TVs need special handling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Curved screens should be moved, mounted and inspected carefully to avoid panel stress."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you diagnose wall-mounting related problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we check whether mounting pressure, cabling or stand issues are contributing to the symptom."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is doorstep curved TV repair available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution provides doorstep diagnosis across Delhi NCR service areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book curved TV repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call, WhatsApp or submit the contact form with TV brand, size, issue and location."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "GR Solution repairs curved televisions across Delhi NCR for display distortion, black screen, sound, power and panel-related faults. Curved panels are handled carefully during inspection and mounting checks, because panel stress can worsen an otherwise repairable display fault.",
+      "Curved televisions need careful handling because panel stress, mounting pressure and display distortion can affect repair feasibility. GR Solution inspects curved TV power faults, no display, sound issues, color problems, lines and mounting-related concerns before recommending repair.",
+      "Call NowBook Service"
+    ],
+    "faq": {
+      "questions": 6,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "Curved TV Repair"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "Curved TV Repair"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 866,
+  "mainTextSha256": "690ceffcb4e98568669b5266f333948f9f1e7044759edc01dad152fa574e7c3e",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "Curved TV Repair",
+      "CURVED TV REPAIR",
+      "Curved TV Repair Service",
+      "GR Solution repairs curved televisions across Delhi NCR for display distortion, black screen, sound, power and panel-related faults. Curved panels are handled carefully during inspection and mounting checks, because panel stress can worsen an otherwise repairable display fault.",
+      "Curved televisions need careful handling because panel stress, mounting pressure and display distortion can affect repair feasibility. GR Solution inspects curved TV power faults, no display, sound issues, color problems, lines and mounting-related concerns before recommending repair.",
+      "Call Now",
+      "Book Service",
+      "WHAT WE FIX",
+      "Curved TV Repair",
+      "Benefits",
+      "Curved panel handling care",
+      "Display and power diagnosis",
+      "Mounting and stand-related inspection",
+      "AVAILABLE IN",
+      "Curved TV Repair Service Areas",
+      "Explore city-specific guidance for curved tv repair across Delhi NCR.",
+      "Curved TV Repair Delhi",
+      "Curved TV Repair Noida",
+      "Curved TV Repair Greater Noida",
+      "Curved TV Repair Ghaziabad",
+      "PROCESS",
+      "Simple Repair Process",
+      "Careful curved TV inspection for display distortion, panel symptoms, power and sound faults.",
+      "STEP 1",
+      "Share curved TV model and issue",
+      "Call, WhatsApp or submit the enquiry form with your repair requirement.",
+      "STEP 2",
+      "Inspect display, mounting and electronics",
+      "Our technician checks the issue and explains the repair options clearly.",
+      "STEP 3",
+      "Explain repair feasibility",
+      "You receive clear pricing before any repair work begins.",
+      "STEP 4",
+      "Test picture and stability after repair",
+      "We complete the repair and guide you on care and warranty terms.",
+      "RELATED SERVICES",
+      "Explore More Services",
+      "Browse other GR Solution repair services available across Delhi, Noida and NCR.",
+      "LED TV Repair",
+      "Doorstep LED TV diagnosis and repair support for display, sound, power and backlight faults.",
+      "View Service",
+      "OLED/QLED TV Repair",
+      "Careful diagnostics for premium OLED, QLED and high-end smart TV display issues.",
+      "View Service",
+      "LCD TV Repair",
+      "Practical LCD TV repair support for ageing display, power, sound and input issues.",
+      "View Service",
+      "FAULTS EXPLAINED",
+      "Curved TV Repair Faults Explained",
+      "Curved TV diagnosis looks at both electronics and physical stress. Distortion, uneven brightness, line symptoms, sound-without-picture faults and mounting pressure can point to different issues, so GR Solution checks how the TV is installed, moved and powered before suggesting repair.",
+      "Curved TV Screen Line Repair",
+      "Lines on a curved screen require careful inspection for panel stress, connection and display-board symptoms. The screen should not be pressed or flexed.",
+      "Curved TV No Display Repair",
+      "No display can involve backlight, power, mainboard or panel faults. Mounting pressure and recent movement are useful diagnostic details for curved sets.",
+      "Curved TV Power Issue Repair",
+      "A curved TV that restarts or will not power on needs socket, power board and mainboard checks without unnecessary movement of the panel.",
+      "Curved TV Picture Distortion Repair",
+      "Uneven brightness or distorted picture can be connected to settings, source, mounting pressure or display electronics. Multiple inputs should be compared.",
+      "Curved TV HDMI Repair",
+      "HDMI loss may be caused by the cable, source device, port or mainboard. Testing another known working input helps prevent an unnecessary board repair.",
+      "Curved TV Mounting Damage Inspection",
+      "An overly tight or unsuitable wall mount can stress a curved chassis and display. Mounting position, recent movement and visible pressure points are reviewed carefully.",
+      "Curved TV Uneven Brightness Repair",
+      "Brightness variation may come from settings, backlight zones, panel stress or display electronics. A neutral test image helps determine whether the pattern changes.",
+      "Safe handling",
+      "Curved displays should not be pressed flat, carried by the screen edge or forced into tight mounts. Careful two-handed movement and checking stand or wall-mount pressure helps reduce additional panel stress.",
+      "After-repair checks",
+      "After an approved repair, the checks include screen curvature inspection, mounting pressure check, picture uniformity, sound and input testing, post-repair stability, confirming the TV behaves normally under real viewing conditions rather than simply turning on.",
+      "Curved TV Repair Delhi",
+      "Curved TV Repair Noida",
+      "Curved TV Repair Greater Noida",
+      "Curved TV Repair Ghaziabad",
+      "IN-DEPTH GUIDES",
+      "Read Before You Book",
+      "Detailed cost and diagnosis guides covering what actually drives the price and which faults are worth repairing.",
+      "Symptom Guide",
+      "Lines on TV Screen",
+      "What vertical and horizontal lines on a TV screen mean, how to tell a board fault from panel damage, and when the repair is worth it.",
+      "Read the guide →",
+      "FAST LOCAL SUPPORT",
+      "Need Expert Curved TV Repair in Delhi NCR?",
+      "Call GR Solution for quick doorstep diagnosis, transparent pricing and trusted repair support across Delhi, Noida and NCR.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service",
+      "FAQ",
+      "Curved TV Repair Questions",
+      "Do you repair curved TVs?",
+      "Yes, GR Solution provides curved TV inspection and repair support for display, sound, power and panel-related symptoms.",
+      "Can curved TV screen distortion be fixed?",
+      "It depends on whether the issue is panel stress, board-related display processing or physical panel damage. Inspection confirms feasibility.",
+      "Do curved TVs need special handling?",
+      "Yes. Curved screens should be moved, mounted and inspected carefully to avoid panel stress.",
+      "Can you diagnose wall-mounting related problems?",
+      "Yes, we check whether mounting pressure, cabling or stand issues are contributing to the symptom.",
+      "Is doorstep curved TV repair available?",
+      "Yes, GR Solution provides doorstep diagnosis across Delhi NCR service areas.",
+      "How do I book curved TV repair?",
+      "Call, WhatsApp or submit the contact form with TV brand, size, issue and location."
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

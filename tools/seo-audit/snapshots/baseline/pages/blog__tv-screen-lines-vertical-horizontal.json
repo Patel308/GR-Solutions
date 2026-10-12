@@ -1,0 +1,1032 @@
+{
+  "path": "/blog/tv-screen-lines-vertical-horizontal",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 93265,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Vertical or Horizontal Lines on TV Screen: Fixable?",
+    "titleCount": 1,
+    "metaDescription": "What vertical and horizontal lines on a TV screen mean, how to tell a board fault from panel damage, and when the repair is worth it.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/blog/tv-screen-lines-vertical-horizontal"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Vertical or Horizontal Lines on TV Screen: Fixable?"
+      ],
+      [
+        "og:description",
+        "What vertical and horizontal lines on a TV screen mean, how to tell a board fault from panel damage, and when the repair is worth it."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/blog/tv-screen-lines-vertical-horizontal"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_panel.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Vertical or Horizontal Lines on TV Screen: Fixable?"
+      ],
+      [
+        "twitter:description",
+        "What vertical and horizontal lines on a TV screen mean, how to tell a board fault from panel damage, and when the repair is worth it."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Vertical or Horizontal Lines on a TV Screen: What They Mean",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What causes lines on a TV screen?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "The menu test",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Board fault or panel damage?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What does the repair cost?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "When is it worth repairing?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Helpful Links",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Lines on TV Screen FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need TV Repair Guidance?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "GR Solution Editorial Team",
+      "region": "main",
+      "section": "Vertical or Horizontal Lines on a TV Screen: What They Mean"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing#sources",
+      "text": "See sources and method",
+      "region": "main",
+      "section": "What does the repair cost?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_panel.webp",
+      "alt": "Vertical or Horizontal Lines on a TV Screen: What They Mean guide by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Vertical or Horizontal Lines on a TV Screen: What They Mean"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://grsolution.co.in/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Lines on TV Screen",
+            "item": "https://grsolution.co.in/blog/tv-screen-lines-vertical-horizontal"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Vertical or Horizontal Lines on a TV Screen: What They Mean",
+        "description": "What vertical and horizontal lines on a TV screen mean, how to tell a board fault from panel damage, and when the repair is worth it.",
+        "image": "https://grsolution.co.in/images/service_panel.webp",
+        "url": "https://grsolution.co.in/blog/tv-screen-lines-vertical-horizontal",
+        "datePublished": "2026-09-25",
+        "dateModified": "2026-09-25",
+        "author": {
+          "@type": "Organization",
+          "name": "GR Solution Editorial Team",
+          "url": "https://grsolution.co.in/about"
+        },
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://grsolution.co.in/blog/tv-screen-lines-vertical-horizontal"
+        },
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://grsolution.co.in/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can vertical lines on a TV screen be fixed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often, yes. Lines caused by the T-Con board or a loose panel ribbon are repairable. Lines caused by physical panel damage need a panel replacement, which is often not economical."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why did lines appear on my TV suddenly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sudden lines without any impact usually point to a failing T-Con board or panel driver. Lines that appeared after the set was moved suggest a loosened ribbon cable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are horizontal lines worse than vertical lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Direction depends on how the panel is driven. What matters more is whether the lines change over time, which points to a board, or stay fixed, which points to the panel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will lines on my TV get worse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Board-related lines often spread or multiply as the component degrades. Getting it diagnosed early can keep it a board repair rather than a larger job."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "BreadcrumbList",
+    "BlogPosting",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Lines on a TV screen come from either a board fault or panel damage. Open the TV’s own menu: if the lines also appear over the menu, the fault is inside the TV. Lines that changed or flickered, or half the screen affected, usually point to the T-Con board or a loose panel ribbon — often repairable. Lines that appeared after a knock usually mean panel damage.",
+      "By GR Solution Editorial Team|TV repair guidance team|Published 25 September 2026",
+      "Lines are a frightening symptom because they look like the screen itself is broken. Sometimes it is. Often it is not. A single thin line, a band of colour, a half-dark screen and a grid of lines can each come from different parts of the TV, and the difference between a board repair and a panel replacement is the difference between an affordable fix and buying a new set."
+    ],
+    "faq": {
+      "questions": 4,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Blog",
+        "Lines on TV Screen"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Blog",
+          "Lines on TV Screen"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": true,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 823,
+  "mainTextSha256": "be845b620c4e4084bd8fb7596c4d1ae26d2031230bc1ccc3e4dde55759ac5f7f",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Blog",
+      "/",
+      "Lines on TV Screen",
+      "Symptom Guide",
+      "Vertical or Horizontal Lines on a TV Screen: What They Mean",
+      "Lines on a TV screen come from either a board fault or panel damage. Open the TV’s own menu: if the lines also appear over the menu, the fault is inside the TV. Lines that changed or flickered, or half the screen affected, usually point to the T-Con board or a loose panel ribbon — often repairable. Lines that appeared after a knock usually mean panel damage.",
+      "By",
+      "GR Solution Editorial Team",
+      "|",
+      "TV repair guidance team",
+      "|",
+      "Published",
+      "25 September 2026",
+      "Lines are a frightening symptom because they look like the screen itself is broken. Sometimes it is. Often it is not. A single thin line, a band of colour, a half-dark screen and a grid of lines can each come from different parts of the TV, and the difference between a board repair and a panel replacement is the difference between an affordable fix and buying a new set.",
+      "What causes lines on a TV screen?",
+      "Line patterns and their usual causes",
+      "What you see",
+      "Usual cause",
+      "Usually repairable?",
+      "Lines on one input only",
+      "Cable or source device",
+      "Yes — often no TV repair needed",
+      "Lines that flicker or change with warm-up",
+      "T-Con board or panel ribbon connection",
+      "Usually",
+      "Half the screen dark or doubled",
+      "T-Con board",
+      "Usually",
+      "One fixed, sharp coloured line",
+      "Panel driver (COF) or panel",
+      "Sometimes",
+      "Lines after an impact or pressure",
+      "Physical panel damage",
+      "Rarely worth it",
+      "Lines plus cracks or colour bleed",
+      "Cracked panel",
+      "No — panel replacement",
+      "The menu test",
+      "Press the Menu or Settings button on the remote. If the lines run across the TV’s own menu as well as the picture, the fault is inside the TV. If the menu is clean and the lines appear only on the set-top box or one HDMI device, the problem is the cable or the source, and the TV itself is fine. Swap the HDMI cable before anything else.",
+      "Board fault or panel damage?",
+      "Board faults tend to be dynamic: lines flicker, move, change after the TV warms up, or disappear when the frame is pressed gently near the bottom edge.",
+      "Panel damage tends to be static: a fixed line that never changes, often traceable to a knock, a fall or pressure on the screen.",
+      "A line that appeared after the set was moved or remounted suggests a loosened ribbon cable, which is often repairable.",
+      "Colour bleeding outward from one point, like ink, is internal panel damage.",
+      "What does the repair cost?",
+      "Delhi NCR market ranges for T-Con repair and, where the panel itself is damaged, panel replacement:",
+      "Cost of fixing lines on a TV screen",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "T-Con board repair or replacement",
+      "Half screen, double image, vertical lines",
+      "₹1,500 - 4,000",
+      "₹2,500 - 6,500",
+      "₹4,000 - 12,000",
+      "LED panel replacement",
+      "Cracked glass or internal panel damage",
+      "₹6,000 - 18,000",
+      "₹17,000 - 28,000",
+      "₹25,000 - 48,000",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "See sources and method",
+      ".",
+      "When is it worth repairing?",
+      "A T-Con or ribbon fault is almost always worth repairing. A panel fault is worth repairing only when the panel costs well under the price of a comparable new TV — typically on large, recent, premium sets. On mid-range sets more than five years old, panel damage usually means replacement.",
+      "Helpful Links",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "Curved TV Repair",
+      "Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.",
+      "FAQ",
+      "Lines on TV Screen FAQs",
+      "Can vertical lines on a TV screen be fixed?",
+      "Often, yes. Lines caused by the T-Con board or a loose panel ribbon are repairable. Lines caused by physical panel damage need a panel replacement, which is often not economical.",
+      "Why did lines appear on my TV suddenly?",
+      "Sudden lines without any impact usually point to a failing T-Con board or panel driver. Lines that appeared after the set was moved suggest a loosened ribbon cable.",
+      "Are horizontal lines worse than vertical lines?",
+      "Not necessarily. Direction depends on how the panel is driven. What matters more is whether the lines change over time, which points to a board, or stay fixed, which points to the panel.",
+      "Will lines on my TV get worse?",
+      "Board-related lines often spread or multiply as the component degrades. Getting it diagnosed early can keep it a board repair rather than a larger job.",
+      "FAST LOCAL SUPPORT",
+      "Need TV Repair Guidance?",
+      "Call or WhatsApp GR Solution with your TV model, fault symptoms and location for inspection-based next steps.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

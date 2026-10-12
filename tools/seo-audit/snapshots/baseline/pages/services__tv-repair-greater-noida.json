@@ -1,0 +1,1516 @@
+{
+  "path": "/services/tv-repair-greater-noida",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 162106,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair Greater Noida | Doorstep Support | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "GR Solution provides TV repair in Greater Noida for LED, OLED/QLED, LCD, Plasma and Curved TV issues with doorstep support.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/tv-repair-greater-noida"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair Greater Noida | Doorstep Support | GR Solution"
+      ],
+      [
+        "og:description",
+        "GR Solution provides TV repair in Greater Noida for LED, OLED/QLED, LCD, Plasma and Curved TV issues with doorstep support."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/tv-repair-greater-noida"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair Greater Noida | Doorstep Support | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "GR Solution provides TV repair in Greater Noida for LED, OLED/QLED, LCD, Plasma and Curved TV issues with doorstep support."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Repair in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Useful TV Repair Greater Noida Guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "GR Solution Contact",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV repair in Greater Noida: prepare, then one visit",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common TV symptoms in Greater Noida and their usual causes",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Getting a TV repaired in Greater Noida: the local picture",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Visit planning",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Power supply and your TV",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Homes and handling",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Greater Noida service areas and visit planning",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Detailed TV Repair Greater Noida Guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Best answer for TV Repair Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common problems we solve",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV types covered",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Local coverage in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Repair versus replacement guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Pricing guidance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Common Problems We Solve",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What To Check Before Calling",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Repair vs Replace",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Topics for Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Doorstep TV Repair in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Inspection at Home in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Same-Day TV Inspection Requests in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Wall-Mounted TV Diagnosis in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Screen Line Diagnosis in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Motherboard Repair in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Smart TV Software Repair in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Why Choose GR Solution In Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Quality Checks",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "How TV Repair Greater Noida Works",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Local Coverage",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Cost Guidance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Quick Support",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Same Service In Other Cities",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Related TV Repair Services In Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Read Before You Book in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Repair Cost in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Screen Replacement Cost in Delhi NCR",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Repair vs Replacement",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Types Covered",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Brand Repair Links",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Greater Noida FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need TV Repair Greater Noida?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "TV Repair Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call GR Solution",
+      "region": "main",
+      "section": "TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Inspection",
+      "region": "main",
+      "section": "TV Repair in Greater Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Useful TV Repair Greater Noida Guidance"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Useful TV Repair Greater Noida Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Visit GR Solution homepage",
+      "region": "main",
+      "section": "Useful TV Repair Greater Noida Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Explore main TV Repair Services",
+      "region": "main",
+      "section": "Useful TV Repair Greater Noida Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Open contact and booking page",
+      "region": "main",
+      "section": "Useful TV Repair Greater Noida Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-greater-noida",
+      "text": "Full Greater NoidaTV repair cost guide →",
+      "region": "main",
+      "section": "Cost Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair Delhi",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair Noida",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-greater-noida",
+      "text": "LED TV Repair Greater Noida",
+      "region": "main",
+      "section": "Related TV Repair Services In Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-greater-noida",
+      "text": "OLED/QLED TV Repair Greater Noida",
+      "region": "main",
+      "section": "Related TV Repair Services In Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-greater-noida",
+      "text": "LCD TV Repair Greater Noida",
+      "region": "main",
+      "section": "Related TV Repair Services In Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-greater-noida",
+      "text": "Plasma TV Repair Greater Noida",
+      "region": "main",
+      "section": "Related TV Repair Services In Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-greater-noida",
+      "text": "Curved TV Repair Greater Noida",
+      "region": "main",
+      "section": "Related TV Repair Services In Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-greater-noida",
+      "text": "Greater Noida Cost Guide TV Repair Cost in Greater Noida TV repair costs in Greater Noida, how distance and transport risk affect large-panel jobs, and when a single diagnostic visit saves you money. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-screen-replacement-cost-delhi-ncr",
+      "text": "Panel & Screen Cost Guide TV Screen Replacement Cost in Delhi NCR What TV screen and panel replacement costs across Delhi NCR, how to tell a real panel fault from a backlight problem, and when replacement wins. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-vs-replacement-guide",
+      "text": "Decision Guide TV Repair vs Replacement A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/sony-tv-repair-greater-noida",
+      "text": "Sony TV Repair Greater Noida",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/samsung-tv-repair-greater-noida",
+      "text": "Samsung TV Repair Greater Noida",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lg-tv-repair-greater-noida",
+      "text": "LG TV Repair Greater Noida",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/mi-tv-repair-greater-noida",
+      "text": "Mi/Xiaomi TV Repair Greater Noida",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need TV Repair Greater Noida?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Need TV Repair Greater Noida?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "TV Repair Greater Noida by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "TV Repair in Greater Noida"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need TV Repair Greater Noida?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "TV Repair Greater Noida Service",
+        "serviceType": "TV repair service",
+        "description": "GR Solution provides TV repair in Greater Noida for LED, OLED/QLED, LCD, Plasma and Curved TV issues with doorstep support.",
+        "url": "https://grsolution.co.in/services/tv-repair-greater-noida",
+        "areaServed": "Greater Noida",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 99902 83890",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "addressRegion": "Delhi NCR",
+            "postalCode": "110096",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV Repair Greater Noida Service",
+            "item": "https://grsolution.co.in/services/tv-repair-greater-noida"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide TV repair in Greater Noida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution provides doorstep TV inspection and repair support in Greater Noida, including LED, OLED/QLED, LCD, Plasma and Curved TV issues."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Greater Noida areas do you cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common coverage includes Pari Chowk, Alpha, Beta, Gamma, Knowledge Park, Techzone and Greater Noida West and nearby NCR areas, subject to technician schedule and access details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a TV with sound but no picture be repaired?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often yes. Sound-without-picture can come from backlight, T-Con, panel, power or mainboard issues, so inspection is needed before deciding."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair Smart TV app and HDMI issues?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution checks smart TV software, HDMI input, source switching, remote response and motherboard-related behavior during diagnosis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does TV repair cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cost depends on the failed component and screen size. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. The Greater Noida cost guide covers every common fault, and GR Solution confirms the exact figure after inspection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I repair or replace my TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Repair is usually worth it when the screen is intact. In Greater Noida: dies when the inverter takes over usually leads to board repair plus inverter check; faint picture under a torch usually leads to backlight repair on site; no power, standby light off usually leads to board repair."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I check before calling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the power socket, try another input, note whether sound is present and keep the TV model number ready. Greater Noida customers should share the exact sector, society name, landmark near the gate and whether the TV needs two-person handling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I book TV repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call GR Solution, send a WhatsApp message or use the contact form with the TV brand, size, issue and service location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I avoid a second visit for TV repair in Greater Noida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Send the model number and a short video of the symptom when booking. That usually lets the technician bring the right part and finish in one trip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair TVs in Greater Noida West?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. For Greater Noida West townships, share the tower number and arrange visitor entry in advance."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 3,
+    "emailMentions": 3
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Need TV repair in Greater Noida? GR Solution provides doorstep inspection, diagnosis, and repair support for LED, OLED/QLED, LCD, Plasma and Curved TV issues across Greater Noida and nearby NCR areas.",
+      "Call GR SolutionBook Inspection",
+      "Doorstep inspectionTransparent estimateDelhi NCR support"
+    ],
+    "faq": {
+      "questions": 10,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "TV Repair Services",
+        "Greater Noida"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "TV Repair Greater Noida Service"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 2445,
+  "mainTextSha256": "97c46c7028ba949663283b485843b89bfdbf95ba912d8476e2cf506e7d70aa75",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "TV Repair Services",
+      "/",
+      "Greater Noida",
+      "TV REPAIR GREATER NOIDA",
+      "TV Repair in Greater Noida",
+      "Need TV repair in Greater Noida? GR Solution provides doorstep inspection, diagnosis, and repair support for LED, OLED/QLED, LCD, Plasma and Curved TV issues across Greater Noida and nearby NCR areas.",
+      "Call GR Solution",
+      "Book Inspection",
+      "Doorstep inspection",
+      "Transparent estimate",
+      "Delhi NCR support",
+      "Useful TV Repair Greater Noida Guidance",
+      "Greater Noida TV repair calls often involve larger homes, societies, villas and commercial spaces where moving a big TV without diagnosis can create unnecessary risk. GR Solution provides doorstep inspection support for LED, OLED/QLED, LCD, Plasma and Curved TV faults.",
+      "For TV repair Greater Noida requests, useful local details include Pari Chowk, Alpha, Beta, Gamma, Knowledge Park, Techzone and Greater Noida West. Appointment planning matters because sectors and societies can be spread out, and large TVs may require careful handling.",
+      "Customers should share the exact sector, society name, tower, landmark, screen size and whether two-person handling is required. This helps GR Solution recommend a realistic visit window and avoid unnecessary transport before diagnosis.",
+      "GR Solution Contact",
+      "Phone:",
+      "+91 93155 15700",
+      "Email:",
+      "info@grsolution.co.in",
+      "Address: C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Visit GR Solution homepage",
+      "Explore main TV Repair Services",
+      "Open contact and booking page",
+      "LOCAL INSIGHT",
+      "TV repair in Greater Noida: prepare, then one visit",
+      "Because Greater Noida is the longest drive in our service area, a good repair here starts before the visit. With the model number and a clear symptom — ideally a short video showing the standby light and the screen under a torch — most faults can be narrowed down in advance, and the right part brought along.",
+      "The table below lists the symptoms that come up most in Greater Noida homes, from villas in the lettered sectors to the high-rise townships of Greater Noida West. Wherever the fault allows, repair is done on site, because moving a large panel over a long route is the riskiest part of any TV job.",
+      "Before booking: record a short video showing the standby light and the screen under a phone torch, and send it with the model number. In Greater Noida this is the single most useful thing you can do, because it turns a speculative long trip into a prepared one.",
+      "Common TV symptoms in Greater Noida and their usual causes",
+      "Common TV symptoms in Greater Noida and their usual causes",
+      "Symptom",
+      "Usual cause",
+      "Typical outcome",
+      "Dies when the inverter takes over",
+      "Power board stressed by unstable output",
+      "Board repair plus inverter check",
+      "Faint picture under a torch",
+      "Backlight failure",
+      "Backlight repair on site",
+      "No power, standby light off",
+      "Power board or supply",
+      "Board repair",
+      "GREATER NOIDA AT A GLANCE",
+      "Getting a TV repaired in Greater Noida: the local picture",
+      "Visit planning",
+      "Greater Noida is the furthest of our regular service areas — typically a 35–45 km drive from New Kondli down the Noida–Greater Noida Expressway. That distance is why we ask for a precise symptom description before setting out: the goal is to arrive with the right parts and finish in one trip.",
+      "Power supply and your TV",
+      "Greater Noida is unusual in the NCR because its electricity is supplied by a private distributor, NPCL (Noida Power Company Limited), rather than the state distributor that serves Noida and Ghaziabad. Villas and plotted houses here often run on inverter backup rather than society generators, and a weak or ageing inverter can deliver unstable output that stresses a TV’s power supply.",
+      "Homes and handling",
+      "Greater Noida has a distinctive layout: plotted residential sectors named after Greek letters (Alpha, Beta, Gamma, Delta), institutional areas such as Knowledge Park, and — in Greater Noida West — large high-rise townships. Plotted houses make access easy; the high-rise townships bring the same gate and lift planning as Noida.",
+      "Greater Noida service areas and visit planning",
+      "Greater Noida service areas and visit planning",
+      "Area",
+      "Typical housing",
+      "Visit planning",
+      "Alpha, Beta, Gamma, Delta",
+      "Plotted houses and villas",
+      "Easy access; long drive — book ahead",
+      "Pari Chowk",
+      "Commercial hub and nearby sectors",
+      "Central reference point for scheduling",
+      "Knowledge Park",
+      "Institutions, hostels, staff housing",
+      "Confirm campus entry rules in advance",
+      "Techzone",
+      "Offices and adjoining housing",
+      "Office visits need a fixed slot",
+      "Greater Noida West",
+      "High-rise townships",
+      "Gate pass and lift booking help",
+      "Because distances are long, on-site repair is preferred wherever the fault allows — it avoids transporting a large panel over a long route.",
+      "LOCAL REPAIR GUIDE",
+      "Detailed TV Repair Greater Noida Guidance",
+      "Practical answers for diagnosis, local scheduling, safe handling, repair feasibility and after-repair checks.",
+      "Best answer for TV Repair Greater Noida",
+      "Need TV repair in Greater Noida? GR Solution provides doorstep inspection, diagnosis and repair support for LED, OLED/QLED, LCD, Plasma and Curved TV issues across Greater Noida and nearby NCR areas. The useful first step is to describe the exact symptom: no display, sound without picture, blinking light, display lines, dim screen, app freezing, HDMI issue or sudden power failure.",
+      "Common problems we solve",
+      "The Greater Noida symptoms we see most are dies when the inverter takes over, faint picture under a torch, no power, standby light off. Across all TV types we also handle backlight failure, power board and motherboard faults, screen lines, HDMI and input faults, smart TV app problems and no-sound faults.",
+      "TV types covered",
+      "GR Solution supports LED, OLED/QLED, LCD, Plasma and Curved TVs. LED sets often need backlight or board diagnosis, OLED/QLED TVs need careful panel-aware inspection, LCD and Plasma models need repair-feasibility checks, and Curved TVs need handling care because screen pressure can affect the panel.",
+      "Local coverage in Greater Noida",
+      "Coverage includes Pari Chowk, Alpha, Beta, Gamma, Knowledge Park, Techzone and Greater Noida West. Availability depends on technician schedule, TV size, building access, parking, wall-mount status and whether the issue looks safe for doorstep inspection or needs workshop-level tools after diagnosis.",
+      "Repair versus replacement guidance",
+      "Repair is often sensible when the panel glass is intact. For Greater Noida homes: dies when the inverter takes over usually leads to board repair plus inverter check; faint picture under a torch usually leads to backlight repair on site; no power, standby light off usually leads to board repair.",
+      "Pricing guidance",
+      "Backlight / LED strip replacement: roughly ₹3,000 - 8,000 on 32\" - 43\" sets, ₹5,500 - 12,000 on 44\" - 55\" and ₹8,500 - 18,000 on 56\" and above in the Delhi NCR market. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. Final cost is confirmed after inspection.",
+      "Common Problems We Solve",
+      "TV has sound but no picture or a completely black screen.",
+      "Backlight is dim, uneven, flickering or not working.",
+      "Screen shows vertical lines, patches, color distortion or half display.",
+      "TV does not power on, restarts repeatedly or shuts down after heating.",
+      "Smart TV apps, HDMI inputs, WiFi, remote or source switching fail.",
+      "Panel, motherboard, power board, speaker or T-Con symptoms need diagnosis.",
+      "What To Check Before Calling",
+      "Check the power socket, try a different input source, confirm whether sound is present, avoid pressing the screen, keep the TV model number ready, and share a short photo or video of the symptom if possible.",
+      "Repair vs Replace",
+      "Repair is worth checking when the display glass is intact and the fault appears related to backlight, board, power, audio, input or software behavior. Replacement may be better when the panel is physically damaged, parts are unavailable, or the repair estimate is too close to a new TV.",
+      "HELPFUL TOPICS",
+      "TV Repair Topics for Greater Noida",
+      "Concise guidance for common search questions, diagnosis decisions and safe next steps.",
+      "Doorstep TV Repair in Greater Noida",
+      "GR Solution starts suitable Greater Noida requests with doorstep inspection, helping customers understand display, sound, power, input and smart TV symptoms before moving a large television or approving repair.",
+      "TV Inspection at Home in Greater Noida",
+      "Share the TV brand, model, screen size, exact symptom and access details for an at-home inspection request in Greater Noida.",
+      "Same-Day TV Inspection Requests in Greater Noida",
+      "Same-day availability in Greater Noida depends on technician route, booking time, access and the reported fault.",
+      "Wall-Mounted TV Diagnosis in Greater Noida",
+      "Share mounting height, bracket type and access details before a Greater Noida visit.",
+      "TV Screen Line Diagnosis in Greater Noida",
+      "Vertical or horizontal lines may involve cables, timing electronics, a board or the panel itself.",
+      "TV Motherboard Repair in Greater Noida",
+      "Boot loops, missing inputs, frozen smart features and restart behavior can point toward the motherboard, but software, power and connected devices should be ruled out first.",
+      "Smart TV Software Repair in Greater Noida",
+      "App crashes, Wi-Fi problems and a frozen home screen may be software or storage related.",
+      "Why Choose GR Solution In Greater Noida",
+      "GR Solution uses symptom-led TV diagnosis for Greater Noida, so the technician checks what the TV is actually doing before suggesting repair.",
+      "Business details remain consistent: GR Solution, C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096, phone +91 93155 15700 and email info@grsolution.co.in.",
+      "GR Solution helps Greater Noida customers understand whether a doorstep repair, workshop handling or replacement guidance is the sensible next step.",
+      "Customers receive practical repair-versus-replace guidance instead of fake fixed-price claims or unverified brand authorization claims.",
+      "Quality Checks",
+      "The final check depends on the TV type and approved repair, but these checkpoints help confirm that the fault is stable after service.",
+      "picture and brightness test",
+      "sound output check",
+      "HDMI/source switching",
+      "smart app response",
+      "stability after repair",
+      "SERVICE PROCESS",
+      "How TV Repair Greater Noida Works",
+      "STEP 1",
+      "Share your TV brand, size, symptom and Greater Noida location.",
+      "STEP 2",
+      "Get a call or WhatsApp response for visit planning.",
+      "STEP 3",
+      "Technician checks display, sound, power, input and board symptoms.",
+      "STEP 4",
+      "Repair feasibility and estimate are explained clearly.",
+      "STEP 5",
+      "Approved repair is completed and checked for stable picture and sound.",
+      "Local Coverage",
+      "TV repair coverage in Greater Noida includes Pari Chowk, Alpha, Beta, Gamma, Knowledge Park, Techzone and Greater Noida West and nearby NCR locations, subject to technician schedule and service feasibility.",
+      "Cost Guidance",
+      "Pricing depends on screen size, brand, model, part availability and fault type. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. GR Solution gives an inspection-based estimate before any paid repair is started.",
+      "Full Greater NoidaTV repair cost guide →",
+      "Quick Support",
+      "Greater Noida customers often need a clear answer on whether an older or larger TV is worth repairing. The page explains the decision factors before the customer spends on board, backlight, display or panel-related work.",
+      "Same Service In Other Cities",
+      "TV Repair Delhi",
+      "TV Repair Noida",
+      "TV Repair Ghaziabad",
+      "Related TV Repair Services In Greater Noida",
+      "LED TV Repair Greater Noida",
+      "OLED/QLED TV Repair Greater Noida",
+      "LCD TV Repair Greater Noida",
+      "Plasma TV Repair Greater Noida",
+      "Curved TV Repair Greater Noida",
+      "IN-DEPTH GUIDES",
+      "Read Before You Book in Greater Noida",
+      "Detailed cost and diagnosis guides covering what actually drives the price and which faults are worth repairing.",
+      "Greater Noida Cost Guide",
+      "TV Repair Cost in Greater Noida",
+      "TV repair costs in Greater Noida, how distance and transport risk affect large-panel jobs, and when a single diagnostic visit saves you money.",
+      "Read the guide →",
+      "Panel & Screen Cost Guide",
+      "TV Screen Replacement Cost in Delhi NCR",
+      "What TV screen and panel replacement costs across Delhi NCR, how to tell a real panel fault from a backlight problem, and when replacement wins.",
+      "Read the guide →",
+      "Decision Guide",
+      "TV Repair vs Replacement",
+      "A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set.",
+      "Read the guide →",
+      "TV Types Covered",
+      "LED TV backlight, power board, sound and no-picture faults",
+      "OLED/QLED TV color, brightness, line and premium panel symptoms",
+      "LCD TV ageing display, audio, power and input issues",
+      "Plasma TV power, sustain board, heating and older-model feasibility checks",
+      "Curved TV display distortion, mounting pressure and panel handling concerns",
+      "Brand Repair Links",
+      "Sony TV Repair Greater Noida",
+      "Samsung TV Repair Greater Noida",
+      "LG TV Repair Greater Noida",
+      "Mi/Xiaomi TV Repair Greater Noida",
+      "FAQ",
+      "TV Repair Greater Noida FAQs",
+      "Do you provide TV repair in Greater Noida?",
+      "Yes, GR Solution provides doorstep TV inspection and repair support in Greater Noida, including LED, OLED/QLED, LCD, Plasma and Curved TV issues.",
+      "Which Greater Noida areas do you cover?",
+      "Common coverage includes Pari Chowk, Alpha, Beta, Gamma, Knowledge Park, Techzone and Greater Noida West and nearby NCR areas, subject to technician schedule and access details.",
+      "Can a TV with sound but no picture be repaired?",
+      "Often yes. Sound-without-picture can come from backlight, T-Con, panel, power or mainboard issues, so inspection is needed before deciding.",
+      "Do you repair Smart TV app and HDMI issues?",
+      "Yes, GR Solution checks smart TV software, HDMI input, source switching, remote response and motherboard-related behavior during diagnosis.",
+      "How much does TV repair cost?",
+      "Cost depends on the failed component and screen size. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. The Greater Noida cost guide covers every common fault, and GR Solution confirms the exact figure after inspection.",
+      "Should I repair or replace my TV?",
+      "Repair is usually worth it when the screen is intact. In Greater Noida: dies when the inverter takes over usually leads to board repair plus inverter check; faint picture under a torch usually leads to backlight repair on site; no power, standby light off usually leads to board repair.",
+      "What should I check before calling?",
+      "Check the power socket, try another input, note whether sound is present and keep the TV model number ready. Greater Noida customers should share the exact sector, society name, landmark near the gate and whether the TV needs two-person handling.",
+      "How can I book TV repair?",
+      "Call GR Solution, send a WhatsApp message or use the contact form with the TV brand, size, issue and service location.",
+      "How can I avoid a second visit for TV repair in Greater Noida?",
+      "Send the model number and a short video of the symptom when booking. That usually lets the technician bring the right part and finish in one trip.",
+      "Do you repair TVs in Greater Noida West?",
+      "Yes. For Greater Noida West townships, share the tower number and arrange visitor entry in advance.",
+      "FAST LOCAL SUPPORT",
+      "Need TV Repair Greater Noida?",
+      "Call GR Solution for doorstep diagnosis, transparent repair guidance and TV service support across Greater Noida.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

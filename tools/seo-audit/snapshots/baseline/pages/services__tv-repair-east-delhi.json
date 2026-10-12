@@ -1,0 +1,1091 @@
+{
+  "path": "/services/tv-repair-east-delhi",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 100398,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair in East Delhi | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "TV repair in East Delhi from our New Kondli base — Mayur Vihar, Laxmi Nagar, Preet Vihar, Patparganj and IP Extension. LED, OLED, QLED and LCD.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/tv-repair-east-delhi"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair in East Delhi | GR Solution"
+      ],
+      [
+        "og:description",
+        "TV repair in East Delhi from our New Kondli base — Mayur Vihar, Laxmi Nagar, Preet Vihar, Patparganj and IP Extension. LED, OLED, QLED and LCD."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/tv-repair-east-delhi"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair in East Delhi | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "TV repair in East Delhi from our New Kondli base — Mayur Vihar, Laxmi Nagar, Preet Vihar, Patparganj and IP Extension. LED, OLED, QLED and LCD."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Repair in East Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "East Delhi at a glance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Areas covered",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Why East Delhi repairs are usually the simplest",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common situations in East Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Before the visit",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What repairs typically cost",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair East Delhi FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV repair services in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Other Delhi areas",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV not working in East Delhi?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "TV Repair in East Delhi"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "TV Repair in East Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing#sources",
+      "text": "See sources and method",
+      "region": "main",
+      "section": "What repairs typically cost"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-delhi",
+      "text": "Full DelhiTV repair cost guide →",
+      "region": "main",
+      "section": "What repairs typically cost"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "main",
+      "section": "TV repair services in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-delhi",
+      "text": "LED TV Repair in Delhi",
+      "region": "main",
+      "section": "TV repair services in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-delhi",
+      "text": "OLED/QLED TV Repair in Delhi",
+      "region": "main",
+      "section": "TV repair services in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-delhi",
+      "text": "LCD TV Repair in Delhi",
+      "region": "main",
+      "section": "TV repair services in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-delhi",
+      "text": "Plasma TV Repair in Delhi",
+      "region": "main",
+      "section": "TV repair services in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-delhi",
+      "text": "Curved TV Repair in Delhi",
+      "region": "main",
+      "section": "TV repair services in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-south-delhi",
+      "text": "TV Repair in South Delhi",
+      "region": "main",
+      "section": "Other Delhi areas"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-west-delhi",
+      "text": "TV Repair in West Delhi",
+      "region": "main",
+      "section": "Other Delhi areas"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "TV not working in East Delhi?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "TV not working in East Delhi?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "TV not working in East Delhi?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "TV Repair in East Delhi",
+        "serviceType": "TV repair service",
+        "description": "TV repair in East Delhi from our New Kondli base — Mayur Vihar, Laxmi Nagar, Preet Vihar, Patparganj and IP Extension. LED, OLED, QLED and LCD.",
+        "url": "https://grsolution.co.in/services/tv-repair-east-delhi",
+        "provider": {
+          "@id": "https://grsolution.co.in/#localbusiness"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "East Delhi",
+          "containedInPlace": {
+            "@type": "City",
+            "name": "Delhi"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV Repair in Delhi",
+            "item": "https://grsolution.co.in/services/tv-repair-delhi"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "TV Repair in East Delhi",
+            "item": "https://grsolution.co.in/services/tv-repair-east-delhi"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is TV repair faster in East Delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually, yes. Our base is in New Kondli, so East Delhi localities are our shortest trips and generally the quickest to schedule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you have a TV service centre in East Delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GR Solution is an independent TV repair workshop in New Kondli, East Delhi — not a brand-authorised service centre. We repair all major brands at home or at our workshop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which East Delhi areas do you cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "New Kondli, Kondli, Mayur Vihar Phases 1–3, Laxmi Nagar, Preet Vihar, Patparganj, IP Extension, Shakarpur, Pandav Nagar, Vinod Nagar and nearby localities."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "GR Solution is based in New Kondli, East Delhi, so East Delhi — Mayur Vihar, Laxmi Nagar, Preet Vihar, Patparganj, IP Extension and Kondli — is the shortest trip we make and usually the quickest to schedule. We repair LED, OLED, QLED, LCD, plasma and curved TVs at home, with a firm estimate before any paid work.",
+      "Call Now WhatsApp",
+      "East Delhi is home ground. Our workshop address is C-4/102, Pocket C 3, New Kondli, which sits on the eastern edge of the city where Delhi meets Noida and Ghaziabad. For customers here, that proximity changes the practical side of a repair: shorter waits, and when a set genuinely needs a bench, a short and low-risk trip to the workshop rather than a long drive across the city."
+    ],
+    "faq": {
+      "questions": 3,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "TV Repair in Delhi",
+        "East Delhi"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "TV Repair in Delhi",
+          "TV Repair in East Delhi"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 843,
+  "mainTextSha256": "d83088840e99735f2631e0f49f0cf6318b43027c6f13af4e43e9f52a38830355",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "TV Repair in Delhi",
+      "/",
+      "East Delhi",
+      "EAST DELHI · DELHI",
+      "TV Repair in East Delhi",
+      "GR Solution is based in New Kondli, East Delhi, so East Delhi — Mayur Vihar, Laxmi Nagar, Preet Vihar, Patparganj, IP Extension and Kondli — is the shortest trip we make and usually the quickest to schedule. We repair LED, OLED, QLED, LCD, plasma and curved TVs at home, with a firm estimate before any paid work.",
+      "Call Now",
+      "WhatsApp",
+      "East Delhi is home ground. Our workshop address is C-4/102, Pocket C 3, New Kondli, which sits on the eastern edge of the city where Delhi meets Noida and Ghaziabad. For customers here, that proximity changes the practical side of a repair: shorter waits, and when a set genuinely needs a bench, a short and low-risk trip to the workshop rather than a long drive across the city.",
+      "East Delhi at a glance",
+      "East Delhi local facts",
+      "Fact",
+      "Detail",
+      "Distance from our base",
+      "A few kilometres — the shortest trips we make",
+      "Electricity distributor",
+      "BSES Yamuna Power",
+      "Typical housing",
+      "DDA flats, group housing societies in Patparganj and IP Extension, builder floors around Laxmi Nagar and Shakarpur",
+      "Workshop handling",
+      "Short, low-risk trip when a bench is genuinely needed",
+      "Areas covered",
+      "New Kondli",
+      "Kondli",
+      "Mayur Vihar Phase 1, 2 and 3",
+      "Laxmi Nagar",
+      "Preet Vihar",
+      "Patparganj",
+      "IP Extension",
+      "Shakarpur",
+      "Pandav Nagar",
+      "Vinod Nagar",
+      "Why East Delhi repairs are usually the simplest",
+      "Distance is the biggest variable in any doorstep repair, and in East Delhi it barely registers. That has a knock-on effect on large and premium sets: the usual reason to insist on repairing a big panel on site is to avoid transporting it a long way. Here, if a fault truly needs workshop tools, the trip is short enough that it stops being a serious risk.",
+      "The housing mix is dense and varied. Patparganj and IP Extension are known for their group housing societies with lifts and gate registers. Laxmi Nagar and Shakarpur lean towards builder floors above busy market streets, where parking is the main obstacle and stairs are narrow. Mayur Vihar mixes DDA pockets with societies. Tell us which kind of building you live in and the floor, and the visit is planned around it.",
+      "Common situations in East Delhi",
+      "Common situations in East Delhi",
+      "Situation",
+      "What we check first",
+      "Usual path",
+      "Builder floor above a Laxmi Nagar market, no lift",
+      "Whether the fault can be fixed in place",
+      "On-site repair; parking arranged in advance",
+      "Society flat in IP Extension, large LED dark",
+      "Backlight with the torch test",
+      "Backlight repair on site or a short workshop trip",
+      "Set failed when power returned after a cut",
+      "Power supply board",
+      "Board repair, usually same visit",
+      "Before the visit",
+      "For market-side homes in Laxmi Nagar and Shakarpur, suggest where the technician can park — it is usually the slowest part of the visit.",
+      "In Patparganj and IP Extension societies, register the visit at the gate in advance.",
+      "Because the workshop is close, ask whether a bench repair would be safer for a large panel; here it often is.",
+      "What repairs typically cost",
+      "Typical TV repair costs in East Delhi",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "Backlight / LED strip replacement",
+      "Sound works but the screen is black or unevenly lit",
+      "₹3,000 - 8,000",
+      "₹5,500 - 12,000",
+      "₹8,500 - 18,000",
+      "Power supply board repair or replacement",
+      "No power, or a blinking standby light",
+      "₹1,000 - 3,500",
+      "₹1,800 - 5,000",
+      "₹2,500 - 6,500",
+      "Mainboard / motherboard repair",
+      "Boot loops, no input detection, random shutdowns",
+      "₹2,000 - 5,500",
+      "₹3,000 - 8,000",
+      "₹4,500 - 12,500",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "See sources and method",
+      ".",
+      "Full DelhiTV repair cost guide →",
+      "TV Repair East Delhi FAQs",
+      "Is TV repair faster in East Delhi?",
+      "Usually, yes. Our base is in New Kondli, so East Delhi localities are our shortest trips and generally the quickest to schedule.",
+      "Do you have a TV service centre in East Delhi?",
+      "GR Solution is an independent TV repair workshop in New Kondli, East Delhi — not a brand-authorised service centre. We repair all major brands at home or at our workshop.",
+      "Which East Delhi areas do you cover?",
+      "New Kondli, Kondli, Mayur Vihar Phases 1–3, Laxmi Nagar, Preet Vihar, Patparganj, IP Extension, Shakarpur, Pandav Nagar, Vinod Nagar and nearby localities.",
+      "TV repair services in Delhi",
+      "TV Repair in Delhi",
+      "LED TV Repair in Delhi",
+      "OLED/QLED TV Repair in Delhi",
+      "LCD TV Repair in Delhi",
+      "Plasma TV Repair in Delhi",
+      "Curved TV Repair in Delhi",
+      "Other Delhi areas",
+      "TV Repair in South Delhi",
+      "TV Repair in West Delhi",
+      "EAST DELHI TV REPAIR",
+      "TV not working in East Delhi?",
+      "Share your TV model and the symptom, and GR Solution will plan a doorstep visit in East Delhi with an estimate before any paid work begins.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}
