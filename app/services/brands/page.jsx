@@ -2,6 +2,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
+import { TrustBand } from '@/components/TrustStrip';
+import LinkTiles from '@/components/page/LinkTiles';
+import SectionHead from '@/components/page/SectionHead';
 import { brands, brandServicePages } from '@/data/brandServicePages';
 import { cities } from '@/data/localServicePages';
 import { siteConfig, entityIds } from '@/data/siteConfig';
@@ -25,7 +28,7 @@ export const metadata = {
 
 export default function BrandsHubPage() {
   return (
-    <main>
+    <main data-wa-context="TV repair in Delhi NCR">
       <JsonLd
         data={[
           {
@@ -56,8 +59,8 @@ export default function BrandsHubPage() {
         ]}
       />
 
-      <section className="border-b border-[#eee] bg-white py-2">
-        <div className="container">
+      <section className="hero-surface border-b border-line" data-section="brands_hero">
+        <div className="container pb-10 pt-2 sm:pb-12 lg:pb-16 lg:pt-4">
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
@@ -65,52 +68,48 @@ export default function BrandsHubPage() {
               { label: 'TV Repair by Brand', href: null },
             ]}
           />
-        </div>
-      </section>
-
-      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-20">
-        <div className="container max-w-4xl text-center">
-          <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">
-            ALL BRANDS
-          </span>
-          <h1 className="mt-6 text-[clamp(2.6rem,5vw,4.2rem)] font-black leading-tight text-secondary">
-            TV Repair by Brand in Delhi NCR
-          </h1>
-          <p className="mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
-            GR Solution repairs {brands.length} television brands across Delhi, Noida, Greater Noida and
-            Ghaziabad. Pick your brand and city below for the fault patterns specific to that
-            brand&apos;s panels and smart platform, then book a doorstep inspection.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container">
-          <div className="mb-12 text-center">
-            <h2 className="text-4xl font-black text-secondary">Choose Your TV Brand</h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
-              Each brand page covers the display technology that brand uses, the faults we see most
-              often on it, and how repair feasibility is judged before any part is replaced.
+          <div className="mx-auto mt-4 max-w-3xl text-center lg:mt-8">
+            <span className="eyebrow">ALL BRANDS</span>
+            <h1 className="mt-3">TV Repair by Brand in Delhi NCR</h1>
+            <p className="answer-box mt-5 text-left">
+              GR Solution repairs {brands.length} television brands across Delhi, Noida, Greater Noida and
+              Ghaziabad. Pick your brand and city below for the fault patterns specific to that
+              brand&apos;s panels and smart platform, then book a doorstep inspection.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <TrustBand />
+
+      <section className="section band" data-section="brands_grid">
+        <div className="container">
+          <SectionHead
+            title="Choose Your TV Brand"
+            lead="Each brand page covers the display technology that brand uses, the faults we see most often on it, and how repair feasibility is judged before any part is replaced."
+          />
+
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3 xl:gap-5">
             {brands.map((brand) => (
-              <article
-                key={brand.slug}
-                className="flex flex-col rounded-card border border-black/5 bg-white p-7 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg"
-              >
-                <h3 className="text-2xl font-black text-secondary">{brand.displayName} TV Repair</h3>
-                <p className="mt-3 text-sm font-bold uppercase tracking-wide text-primary">
-                  {brand.panelTypes}
-                </p>
-                <p className="mt-3 flex-1 leading-relaxed text-textMuted">{brand.techNote}.</p>
-                <div className="mt-5 flex flex-wrap gap-2">
+              <article key={brand.slug} className="card flex flex-col p-5 sm:p-6">
+                <div className="flex items-start gap-3">
+                  <span className="icon-tile shrink-0" aria-hidden="true">
+                    <i className="fa-solid fa-tv" />
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="text-h3">{brand.displayName} TV Repair</h3>
+                    <p className="mt-1 text-eyebrow font-semibold uppercase tracking-[0.06em] text-teal-700">
+                      {brand.panelTypes}
+                    </p>
+                  </div>
+                </div>
+                <p className="mt-3 flex-1 text-[0.9375rem] leading-relaxed text-muted">{brand.techNote}.</p>
+                <div className="mt-5 grid grid-cols-2 gap-2 border-t border-line pt-4">
                   {cities.map((city) => (
                     <Link
                       key={city.slug}
                       href={`/services/${brand.slugSegment}-${city.slug}`}
-                      className="rounded-full border border-primary/20 bg-bgLight px-4 py-2 text-sm font-black text-primary transition hover:border-primary hover:bg-primary hover:text-white"
+                      className="chip min-h-[2.75rem] justify-center px-3 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
                     >
                       {city.name}
                     </Link>
@@ -122,26 +121,20 @@ export default function BrandsHubPage() {
         </div>
       </section>
 
-      <section className="bg-bgLight py-16">
+      <section className="section band-tint" data-section="brands_other">
         <div className="container">
-          <h2 className="text-3xl font-black text-secondary">Not sure your brand is listed?</h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
+          <h2>Not sure your brand is listed?</h2>
+          <p className="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-body">
             The pages above cover the brands we are asked about most, but the diagnostic approach is
             the same for any LED, OLED, QLED, LCD, Plasma or Curved television. Power, backlight,
             panel, board and smart-platform faults behave similarly across manufacturers. If your
             brand is not listed, use the general city pages below or call with your model number.
           </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {cities.map((city) => (
-              <Link
-                key={city.slug}
-                href={`/services/tv-repair-${city.slug}`}
-                className="rounded-2xl border border-primary/10 bg-white px-5 py-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
-              >
-                TV Repair in {city.name}
-              </Link>
-            ))}
-          </div>
+          <LinkTiles
+            className="mt-8 sm:grid-cols-2 lg:grid-cols-4"
+            icon="fa-solid fa-location-dot"
+            links={cities.map((city) => ({ href: `/services/tv-repair-${city.slug}`, label: `TV Repair in ${city.name}` }))}
+          />
         </div>
       </section>
 

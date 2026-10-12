@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ContentTable from '@/components/ContentTable';
+import GoogleRating from '@/components/GoogleRating';
 import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
+import SectionCTA from '@/components/SectionCTA';
+import ProcessSteps from '@/components/page/ProcessSteps';
+import SectionHead from '@/components/page/SectionHead';
 import { brands } from '@/data/brandServicePages';
 import { cityTvRepairPages } from '@/data/localServicePages';
 import { localityPages } from '@/data/localityPages';
@@ -45,22 +49,27 @@ const coreValues = [
 // service and pricing pages, gathered here so the About page states it plainly.
 const howWeWork = [
   {
+    icon: 'fa-solid fa-magnifying-glass',
     title: 'Free diagnosis first',
     text: 'The technician inspects the TV and finds the fault before anything is charged.',
   },
   {
+    icon: 'fa-solid fa-microchip',
     title: 'We name the failed part',
     text: 'You are told exactly what failed — backlight, power board, T-Con, mainboard or panel — not a vague "display problem".',
   },
   {
+    icon: 'fa-solid fa-file-invoice',
     title: 'A firm estimate before work',
     text: 'You approve a specific figure for a specific repair. Nothing paid starts without that approval.',
   },
   {
+    icon: 'fa-solid fa-comments',
     title: 'An honest repair-or-replace answer',
     text: 'If a new TV makes more sense than the repair, we say so rather than selling a repair that does not pay off.',
   },
   {
+    icon: 'fa-solid fa-shield-halved',
     title: 'Warranty explained up front',
     text: 'Warranty depends on the repair and the part used, and is explained before the work starts.',
   },
@@ -147,147 +156,168 @@ export default function AboutPage() {
         ]}
       />
 
-      <section className="py-24">
-        <div className="container grid items-center gap-16 lg:grid-cols-2">
+      <section className="hero-surface border-b border-line" data-section="about_hero">
+        <div className="container grid items-center gap-10 pb-10 pt-8 sm:pb-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-14 lg:pb-16 lg:pt-14">
           <div>
-            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">ABOUT GR SOLUTION</span>
-            <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">
-              Delhi&apos;s Expert TV Repair Team <span className="text-primary">15+ Years of Service</span>
+            <span className="eyebrow">ABOUT GR SOLUTION</span>
+            <h1 className="mt-3">
+              Delhi&apos;s Expert TV Repair Team <span className="heading-accent">15+ Years of Service</span>
             </h1>
-            <p className="mt-6 rounded-2xl border border-primary/10 bg-bgLight p-5 text-lg font-bold leading-relaxed text-secondary">
+            <p className="answer-box mt-5">
               GR Solution is an independent TV repair workshop in New Kondli, East Delhi. We repair LED, OLED, QLED, LCD,
               Plasma and Curved televisions at customers&apos; homes across Delhi, Noida, Greater Noida and Ghaziabad, with a
               free diagnosis and a firm estimate before any paid work begins.
             </p>
-            <div className="mt-8 flex flex-wrap gap-8">
-              <div className="flex flex-col">
-                <span className="text-2xl font-extrabold text-secondary">15+</span>
-                <span className="text-textMuted">Years Experience</span>
+            <div className="mt-6 grid grid-cols-3 gap-3 sm:max-w-xl">
+              <div className="flex flex-col rounded-xl border border-line bg-white p-3 shadow-xs sm:p-4">
+                <span className="font-display text-[1.125rem] font-extrabold text-ink min-[400px]:text-xl sm:text-[1.75rem]">15+</span>
+                <span className="text-small leading-snug text-muted">Years Experience</span>
               </div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-extrabold text-secondary">15,000+</span>
-                <span className="text-textMuted">Happy Customers</span>
+              <div className="flex flex-col rounded-xl border border-line bg-white p-3 shadow-xs sm:p-4">
+                <span className="font-display text-[1.125rem] font-extrabold text-ink min-[400px]:text-xl sm:text-[1.75rem]">15,000+</span>
+                <span className="text-small leading-snug text-muted">Happy Customers</span>
               </div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-extrabold text-secondary">{diagnosisPolicy.label}</span>
-                <span className="text-textMuted">Diagnosis</span>
+              <div className="flex flex-col rounded-xl border border-line bg-white p-3 shadow-xs sm:p-4">
+                <span className="font-display text-[1.125rem] font-extrabold text-teal-700 min-[400px]:text-xl sm:text-[1.75rem]">{diagnosisPolicy.label}</span>
+                <span className="text-small leading-snug text-muted">Diagnosis</span>
               </div>
             </div>
+            <GoogleRating className="mt-4" />
           </div>
-          <Image src="/images/team.webp" alt="GR Solution TV repair team in Delhi NCR" width={650} height={480} className="w-full rounded-[20px] shadow-oldLg" priority />
+          {/* PHOTO PLACEHOLDER: replace this drawing with a real photo of the
+              GR Solution team or owner at the workshop (shot list in
+              docs/design-system.md). The stock "team" image was removed. */}
+          <div className="relative mx-auto w-full max-w-[36rem] lg:max-w-none">
+            <Image
+              src="/images/illustrations/tv-repair-workbench.svg"
+              alt="Illustration of a TV repair bench with a test pattern on the screen, a multimeter, a circuit board and hand tools"
+              width={640}
+              height={480}
+              preload
+              fetchPriority="high"
+              unoptimized
+              className="aspect-[4/3] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
+            />
+          </div>
         </div>
       </section>
 
-      <section className="bg-bgLight py-20">
-        <div className="container grid gap-12 lg:grid-cols-[1fr_1fr]">
-          <div>
-            <h2 className="text-3xl font-black text-secondary md:text-4xl">Who we are</h2>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">
+      <section className="section band" data-section="about_who">
+        <div className="container grid gap-10 lg:grid-cols-2 lg:gap-14">
+          <div className="max-w-prose">
+            <h2>Who we are</h2>
+            <p className="mt-5 text-[1.0625rem] leading-relaxed text-body">
               We are a local repair business, not a brand-authorised service centre and not a marketplace that dispatches
               whoever is free. Every job is handled from our own workshop in New Kondli, on the eastern edge of Delhi
               where the city meets Noida and Ghaziabad. That location is why East Delhi, Indirapuram and the older Noida
               sectors are our quickest visits, and why Greater Noida and West Delhi are planned a day ahead.
             </p>
-            <p className="mt-5 text-lg leading-relaxed text-textMuted">
+            <p className="mt-4 text-[1.0625rem] leading-relaxed text-body">
               Most TV faults are repaired at the customer&apos;s home. When a fault genuinely needs a bench — panel
               ribbons, fine board work, some backlight jobs on very large sets — the set comes to the workshop, and we
               explain why before it is moved.
             </p>
           </div>
-          <div>
-            <h2 className="text-3xl font-black text-secondary md:text-4xl">GR Solution at a glance</h2>
+          <div className="min-w-0">
+            <h2>GR Solution at a glance</h2>
             <ContentTable table={{ caption: 'GR Solution business details', columns: ['Detail', 'Information'], rows: facts }} />
           </div>
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="section band-tint" data-section="about_workshop">
         <div className="container">
-          <div className="mb-12 max-w-3xl">
-            <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">REAL WORKSHOP</span>
-            <h2 className="mt-4 text-3xl font-black text-secondary md:text-4xl">Inside our workshop</h2>
-            <p className="mt-4 text-lg leading-relaxed text-textMuted">
-              These photos are from the GR Solution workshop in New Kondli, where bench-level repairs are carried out.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {workshopPhotos.map((photo) => (
-              <figure key={photo.src} className="m-0 overflow-hidden rounded-card bg-white shadow-oldMd">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  width={photo.width}
-                  height={photo.height}
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                  className="aspect-[4/3] h-auto w-full object-cover"
-                />
-                <figcaption className="p-5 font-bold text-secondary">{photo.caption}</figcaption>
-              </figure>
-            ))}
+          <SectionHead
+            align="left"
+            eyebrow="REAL WORKSHOP"
+            title="Inside our workshop"
+            lead="These photos are from the GR Solution workshop in New Kondli, where bench-level repairs are carried out."
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,0.8fr)] lg:gap-5">
+            {workshopPhotos.map((photo) => {
+              const small = photo.width < 400;
+              return (
+                <figure
+                  key={photo.src}
+                  className={`card m-0 flex flex-col overflow-hidden ${small ? 'sm:col-span-2 lg:col-span-1' : ''}`}
+                >
+                  <div className={small ? 'flex flex-1 items-center justify-center bg-surface p-6' : 'flex-1 bg-navy-50'}>
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      width={photo.width}
+                      height={photo.height}
+                      sizes={small ? `${photo.width}px` : '(min-width: 992px) 34vw, (min-width: 640px) 50vw, 100vw'}
+                      className={
+                        small
+                          ? 'h-auto w-full max-w-[141px] rounded-lg object-cover'
+                          : 'aspect-[4/3] h-full w-full object-cover'
+                      }
+                    />
+                  </div>
+                  <figcaption className="flex items-start gap-2.5 p-4 font-semibold leading-snug text-ink sm:p-5">
+                    <i className="fa-solid fa-location-dot mt-1 text-teal-600" aria-hidden="true" />
+                    {photo.caption}
+                  </figcaption>
+                </figure>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      <section className="bg-bgLight py-20">
+      <section className="section band" data-section="about_process">
         <div className="container">
-          <h2 className="text-3xl font-black text-secondary md:text-4xl">How every repair works</h2>
-          <ol className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-            {howWeWork.map((step, index) => (
-              <li key={step.title} className="rounded-card bg-white p-6 shadow-oldMd">
-                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
-                <h3 className="mt-4 text-lg font-black text-secondary">{step.title}</h3>
-                <p className="mt-3 leading-relaxed text-textMuted">{step.text}</p>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-8 text-lg leading-relaxed text-textMuted">
+          <SectionHead align="left" title="How every repair works" />
+          <ProcessSteps steps={howWeWork} />
+          <p className="mt-10 text-[1.0625rem] leading-relaxed text-body">
             Want to know what a repair usually costs before you call? See the{' '}
-            <Link href="/pricing" className="font-black text-primary hover:text-secondary">TV repair price guide</Link>.
+            <Link href="/pricing" className="text-link">TV repair price guide</Link>.
           </p>
         </div>
       </section>
 
-      <section className="py-20">
+      <SectionCTA section="about_mid_cta" className="pt-0 sm:pt-0" />
+
+      <section className="section band-tint" data-section="about_values">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">OUR VALUES</span>
-            <h2 className="text-4xl font-black text-secondary">Our Core Values</h2>
-          </div>
-          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+          <SectionHead eyebrow="OUR VALUES" title="Our Core Values" />
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-5">
             {coreValues.map((value) => (
-              <article className="group rounded-card border border-black/5 bg-white p-8 shadow-oldMd transition duration-300 hover:-translate-y-1 hover:border-primary hover:bg-primary hover:shadow-oldLg" key={value.title}>
-                <div className="mb-6 flex size-[70px] items-center justify-center rounded-[18px] bg-primary/10 text-2xl text-primary transition duration-300 group-hover:bg-white group-hover:text-primary">
+              <article className="card card-interactive p-5 sm:p-6" key={value.title}>
+                <span className="icon-tile size-12 text-lg" aria-hidden="true">
                   <i className={value.icon} />
-                </div>
-                <h3 className="text-xl font-black text-secondary transition duration-300 group-hover:text-white">{value.title}</h3>
-                <p className="mt-3 leading-relaxed text-textMuted transition duration-300 group-hover:text-white/90">{value.text}</p>
+                </span>
+                <h3 className="mt-4 text-lg">{value.title}</h3>
+                <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{value.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-bgLight py-20">
+      <section className="section band" data-section="about_areas">
         <div className="container">
-          <h2 className="text-3xl font-black text-secondary md:text-4xl">Where we work</h2>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <h2>Where we work</h2>
+          <div className="mt-6 flex flex-wrap gap-2.5">
             {[...cityTvRepairPages, ...localityPages].map((page) => (
               <Link
                 key={page.slug}
                 href={`/services/${page.slug}`}
-                className="rounded-full border border-primary/20 bg-white px-5 py-3 font-black text-primary transition hover:bg-primary hover:text-white"
+                className="chip min-h-[2.75rem] px-4 text-navy-700 transition-colors hover:border-navy-300 hover:bg-navy-50"
               >
+                <i className="fa-solid fa-location-dot text-teal-600" aria-hidden="true" />
                 {page.title.replace(/ Service$/, '')}
               </Link>
             ))}
           </div>
-          <p className="mt-8 text-lg leading-relaxed text-textMuted">
+          <p className="mt-8 text-[1.0625rem] leading-relaxed text-body">
             Read what customers say on our{' '}
-            <Link href="/reviews" className="font-black text-primary hover:text-secondary">reviews page</Link>
+            <Link href="/reviews" className="text-link">reviews page</Link>
             {siteConfig.googleBusinessProfile ? (
               <>
                 {' '}or on our{' '}
-                <a href={siteConfig.googleBusinessProfile} target="_blank" rel="noopener noreferrer" className="font-black text-primary hover:text-secondary">
+                <a href={siteConfig.googleBusinessProfile} target="_blank" rel="noopener noreferrer" className="text-link">
                   Google Business Profile
                 </a>
               </>

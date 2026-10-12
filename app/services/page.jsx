@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import SectionCTA from '@/components/SectionCTA';
+import { TrustBand } from '@/components/TrustStrip';
+import LinkTiles from '@/components/page/LinkTiles';
+import ProcessSteps from '@/components/page/ProcessSteps';
+import SectionHead from '@/components/page/SectionHead';
+import { illustrationFor } from '@/components/serviceVisuals';
 import { services } from '@/data/services';
 import { cityTvRepairPages } from '@/data/localServicePages';
 import { pageMetadata } from '@/data/pages';
@@ -65,7 +71,7 @@ const processSteps = [
 
 export default function ServicesPage() {
   return (
-    <main>
+    <main data-wa-context="TV repair in Delhi NCR">
       <JsonLd
         data={{
           '@context': 'https://schema.org',
@@ -81,54 +87,56 @@ export default function ServicesPage() {
       />
 
       {/* Hero */}
-      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] pb-20 pt-24">
-        <div className="container text-center">
-          <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR SERVICES</span>
-          <h1 className="mx-auto mt-6 max-w-5xl text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">
+      <section className="hero-surface border-b border-line" data-section="services_hero">
+        <div className="container pb-10 pt-10 text-center sm:pb-12 lg:pb-16 lg:pt-16">
+          <span className="eyebrow">REPAIR SERVICES</span>
+          <h1 className="mx-auto mt-3 max-w-4xl">
             Professional TV{' '}
-            <span className="text-primary">Repair Services</span>
+            <span className="heading-accent">Repair Services</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-textMuted">
+          <p className="lead mx-auto mt-4 max-w-2xl">
             Explore GR Solution services for LED, OLED/QLED, LCD, Plasma and Curved TV repair
             across Delhi, Noida, Greater Noida and Ghaziabad.
           </p>
         </div>
       </section>
 
+      <TrustBand />
+
       {/* Service Cards Grid */}
-      <section className="bg-white py-20">
-        <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <section className="section band" data-section="services_grid">
+        <div className="container grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {tvServices.map((service) => (
-            <article className="flex flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={service.slug}>
-              <div className="relative overflow-hidden">
+            <article className="card card-interactive group relative flex overflow-hidden sm:flex-col" key={service.slug}>
+              <div className="flex w-28 shrink-0 items-center justify-center bg-gradient-to-br from-navy-50 to-teal-50 p-3 sm:w-auto sm:px-6 sm:py-5">
                 <Image
-                  src={service.image}
+                  src={illustrationFor(service)}
                   alt={`${service.title} by GR Solution`}
                   width={520}
                   height={320}
-                  className="h-60 w-full object-cover transition duration-500 hover:scale-105"
+                  unoptimized
+                  className="h-auto w-full max-w-[240px] transition-transform duration-300 group-hover:scale-[1.03]"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 transition duration-300 hover:opacity-100" />
               </div>
-              <div className="flex flex-1 flex-col gap-3 p-8">
-                <h3 className="text-xl font-black text-secondary">{service.title}</h3>
-                <p className="flex-1 text-[0.95rem] leading-relaxed text-textMuted">
+              <div className="flex min-w-0 flex-1 flex-col p-4 sm:p-6">
+                <h3 className="text-[1.0625rem] sm:text-h3">{service.title}</h3>
+                <p className="mt-1.5 text-small leading-relaxed text-muted sm:mt-2 sm:text-[0.9375rem]">
                   {service.shortDescription}
                 </p>
                 {service.benefits?.length > 0 && (
-                  <ul className="grid gap-2 text-sm text-textMuted">
+                  <ul className="mt-3 grid flex-1 content-start gap-1.5 text-small text-body sm:mt-4 sm:gap-2">
                     {service.benefits.slice(0, 3).map((b) => (
                       <li key={b} className="flex gap-2">
-                        <i className="fa-solid fa-check mt-1 text-success" /> {b}
+                        <i className="fa-solid fa-check mt-1 text-teal-600" aria-hidden="true" /> {b}
                       </li>
                     ))}
                   </ul>
                 )}
                 <Link
                   href={`/services/${service.slug}`}
-                  className="mt-2 inline-flex self-start rounded-full bg-primary px-6 py-3 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary"
+                  className="link-arrow mt-3 self-start after:absolute after:inset-0 after:content-['']"
                 >
-                  View Service
+                  View Service <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
               </div>
             </article>
@@ -136,124 +144,79 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-bgLight py-20">
-        <div className="container grid items-start gap-10 lg:grid-cols-[1.15fr_1fr]">
+      <SectionCTA section="services_mid_cta" className="pt-0 sm:pt-0" />
+
+      <section className="section band-tint" data-section="services_nearby">
+        <div className="container grid items-start gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-14">
           <div>
-            <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">NEARBY SUPPORT</span>
-            <h2 className="mt-4 text-4xl font-black text-secondary">How nearby TV repair requests work</h2>
-            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-textMuted">
+            <span className="eyebrow">NEARBY SUPPORT</span>
+            <h2 className="mt-3">How nearby TV repair requests work</h2>
+            <p className="mt-5 max-w-prose text-[1.0625rem] leading-relaxed text-body">
               Searches such as TV repair nearby, nearest TV repairman, nearby TV service centre,
               nearest TV repair shop or TV repair shops in my area usually mean the customer wants
               quick local help. GR Solution provides independent doorstep inspection across its
               verified Delhi NCR service areas and does not claim unverified shop branches or brand authorization.
             </p>
-            <p className="mt-4 max-w-3xl leading-relaxed text-textMuted">
+            <p className="mt-4 max-w-prose leading-relaxed text-muted">
               Share your location, TV brand, screen size and exact symptom first. The team can then
               explain visit availability and whether the issue is suitable for doorstep diagnosis.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {nearbyRepairLinks.map((item) => (
-              <Link key={item.href} href={item.href} className="rounded-2xl border border-primary/10 bg-white p-5 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary">
-                {item.label}
-              </Link>
-            ))}
-          </div>
+          <LinkTiles className="sm:grid-cols-2 lg:mt-12" icon="fa-solid fa-location-dot" links={nearbyRepairLinks} />
         </div>
       </section>
 
-      {/* TV Repair by Brand */}
-      <section className="bg-bgLight py-20">
+      {/* TV Repair by City */}
+      <section className="section band" data-section="services_cities">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">LOCAL TV REPAIR</span>
-            <h2 className="mt-4 text-4xl font-black text-secondary">TV Repair by City</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">
-              Start with the city page if you need complete TV repair guidance for LED, OLED/QLED, LCD, Plasma and Curved TV issues.
-            </p>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {cityTvRepairPages.map((page) => (
-              <Link
-                key={page.slug}
-                href={`/services/${page.slug}`}
-                className="rounded-2xl border border-primary/10 bg-white p-6 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
-              >
-                {page.keyword}
-              </Link>
-            ))}
-          </div>
+          <SectionHead
+            eyebrow="LOCAL TV REPAIR"
+            title="TV Repair by City"
+            lead="Start with the city page if you need complete TV repair guidance for LED, OLED/QLED, LCD, Plasma and Curved TV issues."
+          />
+          <LinkTiles
+            className="sm:grid-cols-2 xl:grid-cols-4"
+            icon="fa-solid fa-map-location-dot"
+            links={cityTvRepairPages.map((page) => ({ href: `/services/${page.slug}`, label: page.keyword }))}
+          />
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="section band-tint" data-section="services_popular">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">POPULAR SEARCHES</span>
-            <h2 className="mt-4 text-4xl font-black text-secondary">Top Local TV Repair Searches</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">
-              Quick links based on high-priority Google Keyword Planner opportunities for GR Solution.
-            </p>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {topLocalSearches.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-2xl border border-primary/10 bg-bgLight p-5 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
+          <SectionHead
+            eyebrow="POPULAR SEARCHES"
+            title="Top Local TV Repair Searches"
+            lead="Quick links based on high-priority Google Keyword Planner opportunities for GR Solution."
+          />
+          <LinkTiles className="sm:grid-cols-2 lg:grid-cols-3" links={topLocalSearches} />
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="section band" data-section="services_brands">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">BY BRAND</span>
-            <h2 className="mt-4 text-4xl font-black text-secondary">TV Repair by Brand</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">
-              GR Solution provides repair support for the following TV brands across Delhi, Noida, Greater Noida and Ghaziabad.
-            </p>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-            {brandHubLinks.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-2xl border border-primary/10 bg-bgLight p-5 text-center font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:text-primary"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
+          <SectionHead
+            eyebrow="BY BRAND"
+            title="TV Repair by Brand"
+            lead="GR Solution provides repair support for the following TV brands across Delhi, Noida, Greater Noida and Ghaziabad."
+          />
+          <LinkTiles className="sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6" links={brandHubLinks} />
         </div>
       </section>
 
       {/* 4-Step Repair Process */}
-      <section className="bg-bgLight py-24">
+      <section className="section band-tint" data-section="services_process">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">SERVICE FLOW</span>
-            <h2 className="mt-4 text-4xl font-black text-secondary">Our 4-Step Repair Process</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">A simple process from first contact to approved repair.</p>
-          </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {processSteps.map((step, index) => (
-              <article className="rounded-card border border-primary/10 bg-white p-8 text-center shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={step.title}>
-                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-black text-primary">STEP {index + 1}</span>
-                <div className="mx-auto my-5 flex size-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
-                  <i className={step.icon} />
-                </div>
-                <h3 className="text-xl font-black text-secondary">{step.title}</h3>
-                <p className="mt-3 leading-relaxed text-textMuted">{step.text}</p>
-              </article>
-            ))}
-          </div>
+          <SectionHead
+            eyebrow="SERVICE FLOW"
+            title="Our 4-Step Repair Process"
+            lead="A simple process from first contact to approved repair."
+          />
+          <ProcessSteps steps={processSteps} />
         </div>
       </section>
+
+      <SectionCTA section="services_end_cta" />
     </main>
   );
 }

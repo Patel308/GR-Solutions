@@ -9,22 +9,36 @@ export const metadata = {
 export default function TermsPage() {
   return (
     <main>
-      <section className="py-24">
-        <div className="container max-w-4xl">
-          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">TERMS</span>
-          <h1 className="mt-6 text-[clamp(2.8rem,5vw,4.5rem)] font-black leading-tight text-secondary">Terms & Conditions</h1>
-          <p className="mt-6 text-lg leading-relaxed text-textMuted">
+      <section className="hero-surface border-b border-line" data-section="terms_hero">
+        <div className="container max-w-3xl pb-10 pt-10 lg:pb-14 lg:pt-16">
+          <span className="eyebrow">TERMS</span>
+          <h1 className="mt-3">Terms & Conditions</h1>
+          <p className="lead mt-4">
             These terms apply to GR Solution repair enquiries, diagnosis visits, estimates, parts usage and customer
             communication.
           </p>
-          <h2 className="mt-10 text-2xl font-black text-secondary">Diagnosis And Estimates</h2>
-          <p className="mt-3 leading-relaxed text-textMuted">Repair feasibility and final cost depend on device condition, model, fault type and part availability.</p>
-          <h2 className="mt-10 text-2xl font-black text-secondary">Parts And Repair Time</h2>
-          <p className="mt-3 leading-relaxed text-textMuted">Some repairs can be completed the same day. Panel, board-level and part-dependent work may take longer.</p>
-          <h2 className="mt-10 text-2xl font-black text-secondary">Warranty</h2>
-          <p className="mt-3 leading-relaxed text-textMuted">Warranty terms vary by repair type and parts used. Confirm warranty details before approving the repair.</p>
-          <h2 className="mt-10 text-2xl font-black text-secondary">Customer Approval</h2>
-          <p className="mt-3 leading-relaxed text-textMuted">Paid repair work should begin only after the customer approves the estimate and service scope.</p>
+        </div>
+      </section>
+      <section className="section band" data-section="terms_body">
+        <div className="container max-w-3xl">
+          <div className="grid gap-8">
+            <div className="border-b border-line pb-8 last:border-b-0 last:pb-0">
+              <h2 className="heading-panel">Diagnosis And Estimates</h2>
+              <p className="mt-3 text-[1.0625rem] leading-relaxed text-body">Repair feasibility and final cost depend on device condition, model, fault type and part availability.</p>
+            </div>
+            <div className="border-b border-line pb-8 last:border-b-0 last:pb-0">
+              <h2 className="heading-panel">Parts And Repair Time</h2>
+              <p className="mt-3 text-[1.0625rem] leading-relaxed text-body">Some repairs can be completed the same day. Panel, board-level and part-dependent work may take longer.</p>
+            </div>
+            <div className="border-b border-line pb-8 last:border-b-0 last:pb-0">
+              <h2 className="heading-panel">Warranty</h2>
+              <p className="mt-3 text-[1.0625rem] leading-relaxed text-body">Warranty terms vary by repair type and parts used. Confirm warranty details before approving the repair.</p>
+            </div>
+            <div className="border-b border-line pb-8 last:border-b-0 last:pb-0">
+              <h2 className="heading-panel">Customer Approval</h2>
+              <p className="mt-3 text-[1.0625rem] leading-relaxed text-body">Paid repair work should begin only after the customer approves the estimate and service scope.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
