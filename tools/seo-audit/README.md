@@ -10,6 +10,7 @@ production.
 | `diff.mjs` | Compares two snapshots. Every difference is graded **VIOLATION** (frozen by the guardrails), **REVIEW** (allowed only with a written justification) or **INFO**. Exits 1 on any violation. |
 | `lighthouse.mjs` | Mobile Lighthouse (default mobile config: Moto G Power, simulated slow 4G, 4× CPU) on the five reference pages, 3 runs each, median run reported. Google Analytics is blocked so before/after numbers stay comparable. |
 | `screenshots.mjs` | Responsive audit at 360/390/414/768/1280/1440: horizontal overflow, H1 size and line count, fold position of the first CTA, fixed overlays, tap targets < 48px, CLS; first-viewport screenshots plus full-page captures at 390px. |
+| `ab-summary.mjs` | Summarises an interleaved Lighthouse A/B (below): median, mean and range per page and build, plus every run's numbers. |
 
 ## Running
 
@@ -33,13 +34,34 @@ node screenshots.mjs --base http://localhost:3100 --out reports/current/responsi
 Playwright and Lighthouse use `/opt/pw-browsers/chromium` by default; pass
 `--chrome <path>` or set `CHROME_PATH` elsewhere.
 
+### Comparing two builds (interleaved A/B)
+
+Lighthouse's simulated mobile LCP moves by ±0.3–0.5 s between runs of the
+same build, so compare builds by alternating them run by run rather than
+batch by batch. Serve each build on its own port, then:
+
+```bash
+cd tools/seo-audit
+RUNS=/tmp/lh-ab; mkdir -p $RUNS
+for i in 1 2 3 4 5 6 7; do
+  for page in / /services/oled-qled-tv-repair /services/tv-repair-noida /blog /blog/tv-repair-cost-delhi; do
+    slug=$(echo "$page" | sed 's#^/$#home#; s#^/##; s#/#__#g')
+    for v in live:3200 new:3100; do
+      node lighthouse.mjs --base http://localhost:${v#*:} --only "$page" --runs 1 --out $RUNS/$slug-${v%%:*}-$i > /dev/null
+    done
+  done
+done
+node ab-summary.mjs --dir $RUNS --variants live,new --labels "Live site,New site" --out reports/current/lighthouse-ab
+```
+
 ## What is committed
 
 - `snapshots/baseline/` — the Phase 0 baseline (raw server HTML), taken from a
   production build of commit `595b6c7` (see `snapshots/baseline/meta.json`).
 - `reports/phase-0/` — Lighthouse and responsive summaries of the old site.
 - `reports/phase-5/` — the same for the redesigned site, plus a same-day
-  re-measurement of the old site (`lighthouse-baseline-rerun/`).
+  re-measurement of the old site (`lighthouse-baseline-rerun/`) and the
+  final interleaved A/B (`lighthouse-ab/`).
   Raw Lighthouse reports and screenshots are git-ignored and can be
   regenerated with the commands above.
 
