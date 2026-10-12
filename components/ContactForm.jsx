@@ -9,8 +9,9 @@ const DIALOG_SOURCES = {
 };
 
 // Contact page appointment form, landing page form and the Quick Enquiry
-// dialog. Every variant posts to the same FormSubmit inbox (with the CC in
-// siteConfig). The appointment variant keeps the contact page's labels.
+// dialog. Every variant sends to the same FormSubmit inbox (with the CC in
+// siteConfig) and to /api/lead (see LeadForm). The appointment variant keeps
+// the contact page's labels.
 export default function ContactForm({ id = 'contactForm', compact = false, title, appointment = false, source }) {
   const dialogSource = compact ? DIALOG_SOURCES[source] : null;
   const form = appointment ? (

@@ -2,8 +2,9 @@
 
 import { useId, useRef, useState } from 'react';
 import { siteConfig } from '@/data/siteConfig';
-import { PhoneLink, WhatsAppLink, useContactChannel } from '@/components/ContactChannel';
-import { sectionOf, track } from '@/components/analytics';
+import { PhoneLink, WhatsAppLink, currentLeadAttribution, useContactChannel } from '@/components/ContactChannel';
+import { adsConversion, sectionOf, track } from '@/components/analytics';
+import { newLeadId, normalisePhone } from '@/lib/leads/validate.mjs';
 import cx from '@/components/ui/cx';
 
 export const ISSUE_OPTIONS = [
@@ -22,21 +23,20 @@ export const BRAND_OPTIONS = ['Samsung', 'Sony', 'LG', 'MI/Xiaomi', 'OnePlus', '
 
 export const AREA_OPTIONS = ['West Delhi', 'South Delhi', 'East Delhi', 'North Delhi', 'Noida', 'Greater Noida', 'Ghaziabad'];
 
-// Accepts "+91 98765 43210", "098765 43210", "9876543210", spaces or dashes.
-export function normalisePhone(value) {
-  let digits = String(value || '').replace(/\D/g, '');
-  if (digits.length === 12 && digits.startsWith('91')) digits = digits.slice(2);
-  if (digits.length === 11 && digits.startsWith('0')) digits = digits.slice(1);
-  return /^[1-9]\d{9}$/.test(digits) ? digits : null;
-}
+export { normalisePhone };
 
 const PHONE_ERROR = 'Enter a 10-digit phone number so we can call you back.';
 
 /**
- * One form for every lead capture point. Posts to FormSubmit without a page
- * reload. Field `name` attributes match what the inbox already receives
- * (name, phone, brand, service, area, message); `issue`, `page` and
- * `lead_channel` are new and are added at submit time.
+ * One form for every lead capture point. Each submission gets a lead ID and
+ * the visitor's attribution (source, campaign, Google Ads click ID) and is sent
+ * two ways at once, without a page reload:
+ *   1. FormSubmit email (to the inbox, with the CC in siteConfig), as before;
+ *   2. /api/lead, which forwards it to Telegram, a Google Sheet and/or a CRM
+ *      webhook (whichever are configured on the server).
+ * The visitor sees success if either path delivered it. Field `name`
+ * attributes match what the inbox already receives (name, phone, brand,
+ * service, area, message).
  *
  * fields: list of extra fields to show after phone + name:
  *   'issue' (dropdown), 'brand' (dropdown), 'service' (dropdown of services),
@@ -58,6 +58,11 @@ export default function LeadForm({
   const formRef = useRef(null);
   const statusRef = useRef(null);
   const started = useRef(false);
+  const startedAt = useRef(null);
+  // Set while the submit button is being pressed: the phone field's blur
+  // check then waits for the submit, so the inline error cannot push the
+  // button down mid-tap (which made the tap miss and nothing was sent).
+  const pressingSubmit = useRef(false);
   const { channel } = useContactChannel();
   const [state, setState] = useState('idle'); // idle | sending | success | error
   const [errors, setErrors] = useState({});
@@ -68,6 +73,7 @@ export default function LeadForm({
   const onFirstInteraction = () => {
     if (started.current) return;
     started.current = true;
+    startedAt.current = Date.now();
     track('form_start', { form_id: formId, section: section || sectionOf(formRef.current) });
   };
 
@@ -79,7 +85,7 @@ export default function LeadForm({
   };
 
   const onPhoneBlur = (event) => {
-    if (!event.target.value) return;
+    if (!event.target.value || pressingSubmit.current) return;
     setErrors((current) => ({ ...current, phone: normalisePhone(event.target.value) ? undefined : PHONE_ERROR }));
   };
 
@@ -100,23 +106,85 @@ export default function LeadForm({
 
     setState('sending');
     const formData = new FormData(form);
-    formData.set('phone', normalisePhone(formData.get('phone')));
-    // Where the lead came from, for the notification email.
-    formData.set('page', window.location.pathname);
-    formData.set('lead_channel', channel);
-
+    const phone = normalisePhone(formData.get('phone'));
+    const leadId = newLeadId();
+    const page = window.location.pathname;
+    let attribution = {};
     try {
-      const response = await fetch(siteConfig.formEndpoint, {
-        method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' },
-      });
-      if (!response.ok) throw new Error('Form submission failed');
+      attribution = currentLeadAttribution();
+    } catch {}
+    const sourceLabel = String(formData.get('source') || '');
+
+    // Email copy (FormSubmit): readable extra rows for the inbox.
+    formData.set('phone', phone);
+    formData.set('lead_id', leadId);
+    formData.set('page', page);
+    formData.set('lead_channel', channel);
+    const trafficSource = attribution.source ? `${attribution.source} / ${attribution.medium}` : '';
+    if (trafficSource) formData.set('traffic_source', trafficSource);
+    if (attribution.campaign) formData.set('campaign', attribution.campaign);
+    if (attribution.click_id) formData.set(attribution.click_id_type || 'click_id', attribution.click_id);
+    if (attribution.landing_page) formData.set('landing_page', attribution.landing_page);
+
+    const field = (name) => String(formData.get(name) || '');
+    const payload = {
+      lead_id: leadId,
+      phone,
+      name: field('name'),
+      issue: field('issue'),
+      brand: field('brand'),
+      service: field('service'),
+      area: field('area'),
+      message: field('message'),
+      form_id: formId,
+      source: sourceLabel,
+      subject,
+      page,
+      lead_channel: channel,
+      attribution,
+      elapsed_ms: startedAt.current ? Date.now() - startedAt.current : undefined,
+      _honey: field('_honey'),
+    };
+
+    const email = fetch(siteConfig.formEndpoint, {
+      method: 'POST',
+      body: formData,
+      headers: { Accept: 'application/json' },
+    })
+      .then((response) => response.ok)
+      .catch(() => false);
+    const api = fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    })
+      .then(async (response) => {
+        const body = await response.json().catch(() => null);
+        return response.ok && body?.ok ? body : null;
+      })
+      .catch(() => null);
+
+    const [emailOk, apiResult] = await Promise.all([email, api]);
+    const forwarded = Boolean(apiResult && apiResult.delivered > 0);
+    const eventBase = {
+      form_id: formId,
+      section: section || sectionOf(form),
+      lead_channel: channel,
+      lead_id: leadId,
+      traffic_source: attribution.source,
+      traffic_medium: attribution.medium,
+    };
+
+    if (emailOk || forwarded) {
       setState('success');
-      track('form_submit', { form_id: formId, section: section || sectionOf(form), lead_channel: channel });
+      track('form_submit', { ...eventBase, delivery: [emailOk && 'email', forwarded && 'api'].filter(Boolean).join('+') });
+      track('generate_lead', { ...eventBase, method: 'form' });
+      adsConversion('lead', { transactionId: leadId, phone });
       requestAnimationFrame(() => statusRef.current?.focus());
-    } catch {
+    } else {
       setState('error');
+      track('form_error', { ...eventBase, email: emailOk, api: apiResult ? 'ok_not_forwarded' : 'failed' });
     }
   }
 
@@ -235,7 +303,17 @@ export default function LeadForm({
         </div>
       ) : null}
 
-      <button type="submit" className="btn btn-primary btn-lg btn-block mt-1" disabled={sending}>
+      <button
+        type="submit"
+        className="btn btn-primary btn-lg btn-block mt-1"
+        disabled={sending}
+        onPointerDown={() => {
+          pressingSubmit.current = true;
+          setTimeout(() => {
+            pressingSubmit.current = false;
+          }, 1000);
+        }}
+      >
         <i className={sending ? 'fa-solid fa-spinner fa-spin' : 'fa-solid fa-paper-plane'} aria-hidden="true" />
         {sending ? 'Sending…' : submitLabel}
       </button>

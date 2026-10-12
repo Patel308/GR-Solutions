@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint app components data"
+    "lint": "eslint app components data lib",
+    "test": "node --test tests/unit/*.test.mjs"
   },
   "dependencies": {
     "next": "16.4.0",
