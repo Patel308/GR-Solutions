@@ -1,0 +1,149 @@
+[
+  {
+    "id": "lead-form-fields",
+    "decision": "Report section 9 'Callback form', approved by the owner ('implement everything in the report'). Quick Enquiry dialog, home booking form and landing form use the new fields: Phone number (required), Your name, What's wrong? (optional).",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^other copy removed or edited$",
+    "detail": [
+      "^- (Name|Phone|Service Required|Select service|LED TV Repair|OLED/QLED TV Repair|LCD TV Repair|Plasma TV Repair|Curved TV Repair|Message|Send Enquiry)$"
+    ]
+  },
+  {
+    "id": "lead-form-fields",
+    "decision": "Report section 9 'Callback form' (see above): old field labels of the home booking form and the landing form.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^main copy removed or edited$",
+    "scope": "^/(landing)?$",
+    "detail": [
+      "^- (FULL NAME|PHONE NUMBER|SELECT BRAND|Select Brand|ISSUE SUMMARY|PROCEED TO BOOKING|Name|Phone|Service Required|Select service|LED TV Repair|OLED/QLED TV Repair|LCD TV Repair|Plasma TV Repair|Curved TV Repair|Message|Send Enquiry)$"
+    ]
+  },
+  {
+    "id": "stock-images",
+    "decision": "Brief Phase 3: replace stock/AI images (the team 'lab' photo, the 'Why Delhi trusts' image, the identical technician photo on service cards) and remove stock headshots. Service-card images become per-TV-type drawings with the same alt text; team photos become real workshop photos.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^images removed or alt/filename changed$",
+    "detail": [
+      "^- /images/service_(tv|oled)\\.webp  alt=\"(LED|OLED/QLED|LCD|Plasma|Curved) TV Repair( service)? by GR Solution\"(  \\(x\\d+\\))?$",
+      "^- /images/team\\.webp  alt=\"(GR Solution TV repair team in Delhi NCR|GR Solution technicians handling TV repair diagnostics in Delhi NCR)\"$",
+      "^- /assets/customer_testimonial_[a-z0-9_]+\\.webp  alt=\"(Customer feedback for GR Solution TV repair service from|Photo of GR Solution customer) (Amit Sharma|Priya Verma|Rahul Mehta)\"$"
+    ]
+  },
+  {
+    "id": "D18-capitalisation",
+    "decision": "D18, approved by the owner: 'oled/qled tv repair' (a toLowerCase() bug) now reads 'OLED/QLED TV repair' in the Service Areas intro. Headings, FAQs and schema untouched.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^main copy removed or edited$",
+    "scope": "^/services/(led|oled-qled|lcd|plasma|curved)-tv-repair$",
+    "detail": [
+      "^- Explore city-specific guidance for (led|oled/qled|lcd|plasma|curved) tv repair across Delhi NCR\\.$"
+    ]
+  },
+  {
+    "id": "D15-brand-summary-first",
+    "decision": "D15: on the 44 brand pages the existing summary box now sits directly under the H1 (guardrail 4); the hero intro follows it. Text unchanged.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^first content block after H1 changed",
+    "scope": "^/services/(samsung|lg|sony|mi|oneplus|tcl|panasonic|vu|philips|hisense|toshiba)-tv-repair-(delhi|noida|greater-noida|ghaziabad)$"
+  },
+  {
+    "id": "sticky-action-bar",
+    "decision": "Brief Phase 2: sticky Call / WhatsApp / Book Visit bar on phones replaces the floating call and WhatsApp circles.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(internal links added|other copy added|tel/WhatsApp/mailto/external links changed)$",
+    "detail": [
+      "^\\+ /contact  \"Book Visit\"$",
+      "^\\+ (Call|WhatsApp|Book Visit)$",
+      "^\\+ tel tel:\\+\\d+  \"Call\"$",
+      "^- external https://wa\\.me/\\d+  \"WhatsApp GR Solution\"$",
+      "^- tel tel:\\+\\d+  \"Call GR Solution\"$"
+    ]
+  },
+  {
+    "id": "skip-link",
+    "decision": "Accessibility: 'Skip to content' link (keyboard users).",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(other copy added|tel/WhatsApp/mailto/external links changed)$",
+    "detail": [
+      "^\\+ Skip to content$",
+      "^\\+ fragment #main-content  \"Skip to content\"$"
+    ]
+  },
+  {
+    "id": "footer",
+    "decision": "Brief Phase 4 footer: map link to the Google Business Profile and a WhatsApp button next to the NAP.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(footer copy added|tel/WhatsApp/mailto/external links changed)$",
+    "detail": [
+      "^\\+ (Open in Google Maps|WhatsApp)$",
+      "^\\+ external https://share\\.google/\\S+  \"Open in Google Maps\"$"
+    ]
+  },
+  {
+    "id": "lead-form-fields",
+    "decision": "Report section 9 'Callback form': new labels, issue options, submit text and a one-line privacy note; the Quick Enquiry / Book Visit dialog also asks for the service area (owner's request to make Book Visit a proper booking form).",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(other|main) copy added$",
+    "detail": [
+      "^\\+ (Phone number|Your name|\\(optional\\)|What’s wrong\\?|Choose the closest match|No picture but sound works|TV won’t turn on|Lines or spots on screen|Dim or flickering picture|No sound|Restarting or stuck on logo|Cracked or damaged screen|Smart TV, apps or Wi-Fi|Something else|Request a callback|We only use your number to call you back about your TV\\.)(  \\(x\\d+\\))?$",
+      "^\\+ (Service area|Select area|West Delhi|South Delhi|East Delhi|North Delhi|Noida|Greater Noida|Ghaziabad)$"
+    ]
+  },
+  {
+    "id": "trust-strip",
+    "decision": "Brief Phase 3 trust strip and Google rating (report section 9). Every line restates an existing site claim; the rating comes from the dated Google snapshot and links to the Google Business Profile.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(main copy added|tel/WhatsApp/mailto/external links changed)$",
+    "detail": [
+      "^\\+ (Doorstep service|Delhi, Noida, Greater Noida & Ghaziabad|90-day service warranty|Where applicable, explained before work|Genuine or compatible parts|Chosen with your approval)(  \\(x\\d+\\))?$",
+      "^\\+ (★★★★★|4\\.9|on Google|· 9 reviews)(  \\(x\\d+\\))?$",
+      "^\\+ external https://share\\.google/\\S+  \"★★★★★4\\.9 on Google · 9 reviews\"(  \\(x\\d+\\))?$"
+    ]
+  },
+  {
+    "id": "section-cta",
+    "decision": "Brief Phase 2 compact CTA blocks and in-article CTAs, copy from report section 9.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(main copy added|tel/WhatsApp/mailto/external links changed)$",
+    "detail": [
+      "^\\+ (Not sure what’s wrong with your TV\\?|Talk to a technician\\. Diagnosis is free and you approve the price before any paid work\\.|Want a firm figure for your TV\\?|Book a doorstep diagnosis and approve the price before any paid work\\.|Call now|WhatsApp)(  \\(x\\d+\\))?$",
+      "^\\+ external https://wa\\.me/\\d+  \"WhatsApp\"(  \\(x\\d+\\))?$",
+      "^\\+ tel tel:\\+\\d+  \"Call now\"(  \\(x\\d+\\))?$"
+    ]
+  },
+  {
+    "id": "blog-contents",
+    "decision": "D17 blog additions: 'On this page' jump links to the existing H2s and the 'Related guides' row (no heading tags).",
+    "levels": [
+      "REVIEW"
+    ],
+    "scope": "^/blog/",
+    "field": "^(main copy added|tel/WhatsApp/mailto/external links changed)$",
+    "detail": [
+      "^\\+ (On this page|Related guides|Read the guide →)(  \\(x\\d+\\))?$",
+      "^\\+ fragment #[a-z0-9-]+  \".+\"(  \\(x\\d+\\))?$"
+    ]
+  }
+]

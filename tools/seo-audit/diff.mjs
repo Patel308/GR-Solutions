@@ -3,6 +3,7 @@
 //
 //   node diff.mjs --base snapshots/baseline --head snapshots/current [--out reports/diff.md]
 //   node diff.mjs --base snapshots/baseline --head snapshots/baseline --head-pages pages-rendered
+//   node diff.mjs ... --approved approved-changes.json   (default; --approved none to disable)
 //
 // Differences are graded:
 //   VIOLATION  frozen by the redesign guardrails (titles, metas, canonicals,
@@ -12,7 +13,9 @@
 //   REVIEW     allowed only with a written justification (new links, new
 //              copy, new images, attribute changes that can affect CLS/LCP)
 //   INFO       expected side effects (word count, image loading attributes)
-// The exit code is 1 when there is at least one VIOLATION.
+//   APPROVED   a VIOLATION or REVIEW item matched by a signed-off rule in
+//              approved-changes.json (rule id and decision are reported)
+// The exit code is 1 when there is at least one VIOLATION that is not approved.
 
 import { existsSync } from 'node:fs';
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
@@ -30,7 +33,11 @@ function parseArgs(argv) {
     else if (key === '--out') args.out = path.resolve(here, argv[++i]);
     else if (key === '--base-pages') args.basePages = argv[++i];
     else if (key === '--head-pages') args.headPages = argv[++i];
+    else if (key === '--approved') args.approved = argv[++i];
   }
+  if (args.approved === undefined) args.approved = path.join(here, 'approved-changes.json');
+  else if (args.approved === 'none') args.approved = null;
+  else args.approved = path.resolve(here, args.approved);
   if (!args.base || !args.head) {
     console.error('usage: node diff.mjs --base <snapshot dir> --head <snapshot dir> [--out report.md]');
     process.exit(2);
@@ -297,13 +304,48 @@ async function compareSite(report, base, head) {
   if (red.removed.length || red.added.length) report.add('VIOLATION', 'site', 'redirects changed', [...red.removed.map((x) => `- ${x}`), ...red.added.map((x) => `+ ${x}`)]);
 }
 
+/**
+ * Moves items covered by a signed-off rule to APPROVED. A rule matches an item
+ * by level, field and scope (regular expressions). With `detail` patterns, only
+ * the matching detail lines are approved; any other lines of the same item keep
+ * their original level, so a rule can never hide an unrelated change.
+ */
+function applyApprovals(report, rules) {
+  const compiled = rules.map((rule) => ({
+    ...rule,
+    levels: rule.levels || ['VIOLATION', 'REVIEW'],
+    fieldRe: new RegExp(rule.field),
+    scopeRe: new RegExp(rule.scope || '.*'),
+    patterns: (rule.detail || []).map((pattern) => new RegExp(pattern)),
+  }));
+  const next = [];
+  for (const item of report.items) {
+    let rest = item.detail || [];
+    let handled = false;
+    for (const rule of compiled) {
+      if (!rule.levels.includes(item.level) || !rule.fieldRe.test(item.field) || !rule.scopeRe.test(item.scope)) continue;
+      const matches = (line) => rule.patterns.some((re) => re.test(line));
+      const approved = rule.patterns.length ? rest.filter(matches) : rest;
+      if (rest.length && !approved.length) continue;
+      next.push({ ...item, level: 'APPROVED', detail: approved, rule: rule.id, decision: rule.decision, originalLevel: item.level });
+      rest = rule.patterns.length ? rest.filter((line) => !matches(line)) : [];
+      handled = true;
+      if (!rest.length) break;
+    }
+    if (!handled) next.push(item);
+    else if (rest.length) next.push({ ...item, detail: rest });
+  }
+  report.items = next;
+}
+
 function render(report, args, pageCount) {
   const lines = [];
-  const levels = ['VIOLATION', 'REVIEW', 'INFO'];
+  const levels = ['VIOLATION', 'REVIEW', 'APPROVED', 'INFO'];
   lines.push('# SEO snapshot diff', '');
   lines.push(`- base: \`${path.relative(here, args.base)}/${args.basePages}\``);
   lines.push(`- head: \`${path.relative(here, args.head)}/${args.headPages}\``);
-  lines.push(`- pages compared: ${pageCount}`, '');
+  lines.push(`- pages compared: ${pageCount}`);
+  lines.push(`- approved-change rules: ${args.approved ? `\`${path.relative(here, args.approved)}\`` : 'none'}`, '');
   lines.push('| Level | Count |', '| --- | --- |');
   for (const level of levels) lines.push(`| ${level} | ${report.count(level)} |`);
   lines.push('');
@@ -319,7 +361,7 @@ function render(report, args, pageCount) {
     for (const [scope, scoped] of byScope) {
       lines.push(`### \`${scope}\``, '');
       for (const item of scoped) {
-        lines.push(`- **${item.field}**`);
+        lines.push(item.rule ? `- **${item.field}** (was ${item.originalLevel}; approved by \`${item.rule}\`: ${item.decision})` : `- **${item.field}**`);
         if (item.detail?.length) {
           lines.push('', '  ```diff', ...item.detail.map((line) => `  ${line}`), '  ```', '');
         }
@@ -355,6 +397,8 @@ async function main() {
   }
   if (args.basePages === 'pages' && args.headPages === 'pages') await compareSite(report, args.base, args.head);
 
+  if (args.approved && existsSync(args.approved)) applyApprovals(report, await readJson(args.approved));
+
   const markdown = render(report, args, compared);
   if (args.out) {
     await mkdir(path.dirname(args.out), { recursive: true });
@@ -362,7 +406,7 @@ async function main() {
     await writeFile(args.out.replace(/\.md$/, '.json'), `${JSON.stringify(report.items, null, 2)}\n`);
   }
   console.log(
-    `Compared ${compared} pages: ${report.count('VIOLATION')} violation(s), ${report.count('REVIEW')} to review, ${report.count('INFO')} info.` +
+    `Compared ${compared} pages: ${report.count('VIOLATION')} violation(s), ${report.count('REVIEW')} to review, ${report.count('APPROVED')} approved, ${report.count('INFO')} info.` +
       (args.out ? ` Report: ${path.relative(process.cwd(), args.out)}` : ''),
   );
   if (!args.out) console.log(markdown);
