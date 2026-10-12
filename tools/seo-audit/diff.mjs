@@ -58,24 +58,47 @@ function counts(list) {
   return map;
 }
 
-/** Multiset difference: what disappeared and what appeared, with counts. */
+const squash = (value) => String(value).replace(/\s+/g, '');
+
+/**
+ * Multiset difference: what disappeared and what appeared, with counts.
+ * Removals and additions that differ only in whitespace (for example a word
+ * boundary restored by a framework fix: "DelhiTV" -> "Delhi TV") are paired up
+ * and returned separately as `whitespaceOnly`, never as copy edits.
+ */
 function multisetDiff(baseList, headList) {
   const base = counts(baseList);
   const head = counts(headList);
-  const removed = [];
-  const added = [];
+  const removedRaw = [];
+  const addedRaw = [];
   for (const [item, n] of base) {
     const m = head.get(item) || 0;
-    if (n > m) removed.push(n - m > 1 ? `${item}  (x${n - m})` : item);
+    if (n > m) removedRaw.push({ item, n: n - m });
   }
   for (const [item, n] of head) {
     const m = base.get(item) || 0;
-    if (n > m) added.push(n - m > 1 ? `${item}  (x${n - m})` : item);
+    if (n > m) addedRaw.push({ item, n: n - m });
   }
-  return { removed, added };
+  const whitespaceOnly = [];
+  for (const r of removedRaw) {
+    for (const a of addedRaw) {
+      if (!r.n || !a.n || squash(r.item) !== squash(a.item)) continue;
+      const k = Math.min(r.n, a.n);
+      r.n -= k;
+      a.n -= k;
+      whitespaceOnly.push(`"${r.item}" -> "${a.item}"${k > 1 ? `  (x${k})` : ''}`);
+    }
+  }
+  const format = (list) => list.filter((x) => x.n > 0).map((x) => (x.n > 1 ? `${x.item}  (x${x.n})` : x.item));
+  return { removed: format(removedRaw), added: format(addedRaw), whitespaceOnly };
 }
 
 const sameSequence = (a, b) => a.length === b.length && a.every((item, i) => item === b[i]);
+const sameSquashed = (a, b) => sameSequence(a.map(squash), b.map(squash));
+
+function reportWhitespace(report, scope, field, whitespaceOnly) {
+  if (whitespaceOnly.length) report.add('INFO', scope, `${field}: whitespace-only change`, whitespaceOnly);
+}
 
 /** Paths where two JSON values differ (for readable JSON-LD reports). */
 function jsonPathDiff(a, b, prefix = '$', out = []) {
@@ -140,12 +163,13 @@ function comparePage(report, scope, a, b) {
   const hA = frozen(a.headings);
   const hB = frozen(b.headings);
   if (!sameSequence(hA, hB)) {
-    const { removed, added } = multisetDiff(hA, hB);
-    if (!removed.length && !added.length) {
-      report.add('VIOLATION', scope, 'H1-H3 order changed (same text)', [`before: ${hA.join(' | ')}`, `after:  ${hB.join(' | ')}`]);
-    } else {
+    const { removed, added, whitespaceOnly } = multisetDiff(hA, hB);
+    if (removed.length || added.length) {
       report.add('VIOLATION', scope, 'H1-H3 text changed', [...removed.map((x) => `- ${x}`), ...added.map((x) => `+ ${x}`)]);
+    } else if (!sameSquashed(hA, hB)) {
+      report.add('VIOLATION', scope, 'H1-H3 order changed (same text)', [`before: ${hA.join(' | ')}`, `after:  ${hB.join(' | ')}`]);
     }
+    reportWhitespace(report, scope, 'H1-H3', whitespaceOnly);
   }
   const h1Count = (list) => list.filter((h) => h.level === 1).length;
   if (h1Count(b.headings) !== 1) report.add('VIOLATION', scope, 'H1 count', [`after: ${h1Count(b.headings)} (must be exactly 1)`]);
@@ -161,11 +185,13 @@ function comparePage(report, scope, a, b) {
   const linkDiff = multisetDiff(internal(a.links), internal(b.links));
   if (linkDiff.removed.length) report.add('VIOLATION', scope, 'internal links removed or anchor changed', linkDiff.removed.map((x) => `- ${x}`));
   if (linkDiff.added.length) report.add('REVIEW', scope, 'internal links added', linkDiff.added.map((x) => `+ ${x}`));
+  reportWhitespace(report, scope, 'internal link anchors', linkDiff.whitespaceOnly);
   const external = (list) => list.filter((l) => l.kind !== 'internal').map((l) => `${l.kind} ${l.href}  "${l.text || l.ariaLabel || ''}"`);
   const extDiff = multisetDiff(external(a.links), external(b.links));
   if (extDiff.removed.length || extDiff.added.length) {
     report.add('REVIEW', scope, 'tel/WhatsApp/mailto/external links changed', [...extDiff.removed.map((x) => `- ${x}`), ...extDiff.added.map((x) => `+ ${x}`)]);
   }
+  reportWhitespace(report, scope, 'tel/WhatsApp/external link text', extDiff.whitespaceOnly);
   const regionMoves = multisetDiff(
     a.links.filter((l) => l.kind === 'internal').map((l) => `${l.region} ${l.href}`),
     b.links.filter((l) => l.kind === 'internal').map((l) => `${l.region} ${l.href}`),
@@ -179,6 +205,7 @@ function comparePage(report, scope, a, b) {
   const imgDiff = multisetDiff(imgKey(a.images), imgKey(b.images));
   if (imgDiff.removed.length) report.add('VIOLATION', scope, 'images removed or alt/filename changed', imgDiff.removed.map((x) => `- ${x}`));
   if (imgDiff.added.length) report.add('REVIEW', scope, 'images added', imgDiff.added.map((x) => `+ ${x}`));
+  reportWhitespace(report, scope, 'image alt', imgDiff.whitespaceOnly);
   const attrKey = (list) => list.map((img) => `${img.src} loading=${img.loading} fetchpriority=${img.fetchpriority} ${img.width}x${img.height} sizes=${img.sizes}`);
   const attrDiff = multisetDiff(attrKey(a.images), attrKey(b.images));
   if (attrDiff.removed.length || attrDiff.added.length) {
@@ -211,10 +238,11 @@ function comparePage(report, scope, a, b) {
   for (const region of ['main', 'header', 'footer', 'other']) {
     const runsA = a.copy?.[region] || [];
     const runsB = b.copy?.[region] || [];
-    const { removed, added } = multisetDiff(runsA, runsB);
+    const { removed, added, whitespaceOnly } = multisetDiff(runsA, runsB);
     if (removed.length) report.add('VIOLATION', scope, `${region} copy removed or edited`, removed.map((x) => `- ${x}`));
     if (added.length) report.add('REVIEW', scope, `${region} copy added`, added.map((x) => `+ ${x}`));
-    if (!removed.length && !added.length && !sameSequence(runsA, runsB)) {
+    reportWhitespace(report, scope, `${region} copy`, whitespaceOnly);
+    if (!removed.length && !added.length && !sameSquashed(runsA, runsB)) {
       report.add(region === 'main' ? 'REVIEW' : 'INFO', scope, `${region} copy reordered (same text)`, ['sections or blocks moved; text unchanged']);
     }
   }
@@ -233,7 +261,10 @@ function comparePage(report, scope, a, b) {
   if (newMissingAlt.length) report.add('VIOLATION', scope, 'images without alt attribute', newMissingAlt);
   const firstA = a.checks?.blocksAfterH1?.[0];
   const firstB = b.checks?.blocksAfterH1?.[0];
-  if (firstA !== firstB) report.add('REVIEW', scope, 'first content block after H1 changed (answer-first summary must stay first)', [`before: ${firstA}`, `after:  ${firstB}`]);
+  if (firstA !== firstB) {
+    const whitespace = firstA !== undefined && firstB !== undefined && squash(firstA) === squash(firstB);
+    report.add(whitespace ? 'INFO' : 'REVIEW', scope, whitespace ? 'first content block after H1: whitespace-only change' : 'first content block after H1 changed (answer-first summary must stay first)', [`before: ${firstA}`, `after:  ${firstB}`]);
+  }
 
   // ---- NAP
   for (const field of ['telLinks', 'whatsappLinks', 'mailtoLinks', 'visiblePhones', 'schemaTelephones']) {
