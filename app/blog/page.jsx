@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PageCTA from '@/components/PageCTA';
 import JsonLd from '@/components/JsonLd';
+import { formatDate, readingMinutes } from '@/components/blog/articleMeta';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 import { blogArticles } from '@/data/blogArticles';
@@ -20,6 +21,8 @@ const posts = [
     text: article.metaDescription,
     image: article.image,
     link: `/blog/${article.slug}`,
+    publishedAt: article.publishedAt,
+    minutes: readingMinutes(article),
   })),
   {
     category: 'LED TV',
@@ -78,46 +81,95 @@ export default function BlogPage() {
           ],
         }}
       />
-      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
-        <div className="container grid items-center gap-16 lg:grid-cols-2">
+      <section className="hero-surface border-b border-line" data-section="blog_hero">
+        <div className="container grid items-center gap-8 pb-10 pt-8 sm:pb-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-14 lg:pb-16 lg:pt-14">
           <div>
-            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">REPAIR INSIGHTS</span>
-            <h1 className="mt-7 text-[clamp(3rem,5.5vw,5rem)] font-black leading-tight text-secondary">
-              TV Repair Tips & Guides for <span className="text-primary">Delhi, Noida & NCR Residents</span>
+            <span className="eyebrow">REPAIR INSIGHTS</span>
+            <h1 className="mt-3 max-w-[18ch]">
+              TV Repair Tips & Guides for <span className="heading-accent">Delhi, Noida & NCR Residents</span>
             </h1>
-            <p className="mt-6 max-w-3xl text-xl leading-relaxed text-textMain">Maintenance tips, display technology explainers and repair guidance from GR Solution.</p>
+            <p className="lead mt-4 max-w-2xl">Maintenance tips, display technology explainers and repair guidance from GR Solution.</p>
           </div>
-          <Image src="/images/hero.webp" alt="GR Solution TV repair guide for Delhi NCR residents" width={650} height={460} className="w-full rounded-3xl object-cover shadow-cardPro" />
+          <div className="relative mx-auto w-full max-w-[36rem] lg:max-w-none">
+            <Image
+              src="/images/hero.webp"
+              alt="GR Solution TV repair guide for Delhi NCR residents"
+              width={650}
+              height={460}
+              preload
+              fetchPriority="high"
+              sizes="(min-width: 1280px) 540px, (min-width: 992px) 42vw, (min-width: 608px) 576px, calc(100vw - 2rem)"
+              className="aspect-[650/460] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
+            />
+          </div>
         </div>
       </section>
-      <section className="py-24">
+
+      <section className="section band" data-section="blog_posts">
         <div className="container">
-          <article className="mb-12 grid overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-cardPro lg:grid-cols-[1.2fr_1fr]">
-            <Image src="/images/hero.webp" alt="OLED and QLED TV repair diagnosis guide by GR Solution" width={760} height={420} className="h-full min-h-[360px] w-full object-cover" />
-            <div className="p-10">
-              <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FEATURED</span>
-              <h2 className="mt-5 text-3xl font-black leading-tight text-secondary">OLED/QLED Television Repair Needs Careful Diagnosis</h2>
-              <p className="mt-4 text-lg leading-relaxed text-textMuted">
+          <article className="card mb-10 grid overflow-hidden lg:mb-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
+            <div className="relative aspect-[760/420] bg-navy-50 lg:aspect-auto lg:min-h-[22rem]">
+              <Image
+                src="/images/hero.webp"
+                alt="OLED and QLED TV repair diagnosis guide by GR Solution"
+                width={760}
+                height={420}
+                sizes="(min-width: 992px) 660px, calc(100vw - 2rem)"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-6 sm:p-10">
+              <span className="badge self-start uppercase tracking-[0.06em]">FEATURED</span>
+              <h2 className="heading-panel mt-4 sm:text-[1.875rem]">OLED/QLED Television Repair Needs Careful Diagnosis</h2>
+              <p className="mt-3 leading-relaxed text-muted">
                 Premium display technology gives better brightness and contrast, but it also needs accurate diagnosis
                 when symptoms appear. GR Solution helps customers understand repair feasibility before major decisions.
               </p>
-              <Link href="/services/oled-qled-tv-repair" className="mt-6 inline-flex rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta transition hover:-translate-y-1 hover:bg-secondary">
+              <Link href="/services/oled-qled-tv-repair" className="btn btn-primary mt-6 self-start" data-cta="blog_featured">
                 Ask A Technician
               </Link>
             </div>
           </article>
-          <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+          <div className="grid items-stretch gap-3 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {posts.map((post) => (
-              <article className="flex min-h-[590px] flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={post.title}>
-                <Image src={post.image} alt={`${post.title} by GR Solution`} width={520} height={320} className="h-[290px] w-full object-cover" />
-                <div className="flex flex-1 flex-col gap-4 p-10">
-                  <span className="inline-flex self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">{post.category}</span>
-                  <h3 className="text-2xl font-black leading-tight text-secondary">{post.title}</h3>
-                  <p className="text-lg leading-relaxed text-textMuted">{post.text}</p>
-                  <Link href={post.link} className="mt-auto font-black text-primary hover:text-secondary">
-                    Read More <span aria-hidden="true">-&gt;</span>
-                  </Link>
+              // Phones: a compact row with a thumbnail beside the title. From
+              // 640px: a vertical card with the photo on top. Same HTML order.
+              <article
+                className="card card-interactive group relative grid grid-cols-[minmax(0,1fr)_5.5rem] items-start gap-x-4 overflow-hidden p-4 sm:flex sm:flex-col sm:p-0"
+                key={post.title}
+              >
+                <div className="col-start-2 row-span-2 row-start-1 overflow-hidden rounded-xl bg-navy-50 sm:w-full sm:rounded-none">
+                  <Image
+                    src={post.image}
+                    alt={`${post.title} by GR Solution`}
+                    width={520}
+                    height={320}
+                    sizes="(min-width: 1280px) 400px, (min-width: 992px) 30vw, (min-width: 768px) 46vw, (min-width: 640px) calc(100vw - 3rem), 88px"
+                    className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] sm:aspect-[520/320]"
+                  />
                 </div>
+                <div className="col-start-1 row-start-1 flex flex-wrap items-center gap-x-3 gap-y-1.5 sm:px-6 sm:pt-6">
+                  <span className="badge uppercase tracking-[0.06em]">{post.category}</span>
+                  {post.publishedAt ? (
+                    <span className="text-small text-muted">
+                      <time dateTime={post.publishedAt}>{formatDate(post.publishedAt, 'short')}</time> · {post.minutes} min read
+                    </span>
+                  ) : (
+                    <span className="text-small text-muted">Service guide</span>
+                  )}
+                </div>
+                <h3 className="col-start-1 row-start-2 mt-2 text-[1.0625rem] leading-snug transition-colors group-hover:text-navy-700 sm:mt-3 sm:px-6 sm:text-lg">
+                  {post.title}
+                </h3>
+                <p className="col-span-2 mt-2 text-[0.9375rem] leading-relaxed text-muted sm:flex-1 sm:px-6">{post.text}</p>
+                <Link
+                  href={post.link}
+                  className="link-arrow col-span-2 mt-1 self-start after:absolute after:inset-0 after:content-[''] sm:mx-6 sm:mb-3"
+                >
+                  Read More <span aria-hidden="true" className="sr-only">-&gt;</span>
+                  <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+                </Link>
               </article>
             ))}
           </div>

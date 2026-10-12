@@ -970,6 +970,15 @@
     }
   }
 
+  /* ---- Article contents list ---------------------------------------------------- */
+
+  .toc-link[aria-current='true'] {
+    border-left-color: rgb(var(--c-teal-400));
+    background: rgb(var(--c-navy-50));
+    color: rgb(var(--c-navy-700));
+    font-weight: 600;
+  }
+
   /* ---- Long-form article copy -------------------------------------------------- */
 
   .prose-article {
@@ -977,11 +986,6 @@
     font-size: clamp(1.0625rem, 1.02rem + 0.15vw, 1.125rem);
     line-height: 1.75;
     color: rgb(var(--c-body));
-  }
-
-  .prose-article h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 0.75rem;
   }
 
   .prose-article p + p {

@@ -7,7 +7,7 @@
 const solid = require('@fortawesome/free-solid-svg-icons');
 const brands = require('@fortawesome/free-brands-svg-icons');
 const fs = require('fs');
-const names = 'arrow-right arrow-up-right-from-square bars bolt calendar-check certificate check chevron-down circle-check circle-exclamation clipboard-list clock comments desktop display envelope file-invoice hand-holding-dollar headset house indian-rupee-sign list-ul location-dot magnifying-glass map-location-dot microchip panorama paper-plane phone phone-volume quote-left shield-halved spinner star truck-fast tv wrench xmark'.split(' ');
+const names = 'arrow-right arrow-up-right-from-square bars bolt calendar-check certificate check chevron-down circle-check circle-exclamation clipboard-list clock comments desktop display envelope file-invoice hand-holding-dollar headset house indian-rupee-sign list-ul location-dot magnifying-glass map-location-dot microchip panorama paper-plane pen-nib phone phone-volume quote-left shield-halved spinner star truck-fast tv wrench xmark'.split(' ');
 const brandNames = ['whatsapp'];
 const find = (pack, name) => Object.values(pack).find((d) => d && d.iconName === name);
 const version = require('@fortawesome/free-solid-svg-icons/package.json').version;
