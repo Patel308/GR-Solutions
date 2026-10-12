@@ -6,10 +6,12 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import JsonLd from '@/components/JsonLd';
 import BookingForm from '@/components/BookingForm';
+import TrustStrip from '@/components/TrustStrip';
 import { services } from '@/data/services';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 import { brands } from '@/data/brandServicePages';
+import { hasRealPricing, repairPriceBands } from '@/data/pricing';
 import { PhoneLink } from '@/components/ContactChannel';
 
 export const metadata = {
@@ -93,11 +95,33 @@ const popularLocationLinks = [
   { label: 'Contact GR Solution', href: '/contact' },
 ];
 
-export default function HomePage() {
-  const carouselServices = [...services.slice(0, 6), ...services.slice(0, 6)];
+// "How it works" restates commitments the site already makes (free diagnosis,
+// firm estimate before paid work, warranty explained up front).
+const steps = [
+  { icon: 'fa-solid fa-phone-volume', title: 'Call, WhatsApp or book online', text: 'Tell us the TV brand, screen size and what is going wrong.' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Free doorstep diagnosis', text: 'The technician finds the part that failed and gives you a firm estimate.' },
+  { icon: 'fa-solid fa-wrench', title: 'Approve, then we repair', text: 'No paid work starts until you approve it. Warranty terms are explained first.' },
+];
 
+// Price teaser: the same Delhi NCR market ranges as /pricing (smallest to
+// largest screen band for each fault).
+const teaserFaults = [
+  ['Backlight / LED strip replacement', 'Backlight / LED strips'],
+  ['Power supply board repair or replacement', 'Power supply board'],
+  ['Mainboard / motherboard repair', 'Mainboard'],
+];
+const teaserRows = teaserFaults.map(([fault]) => repairPriceBands.find((item) => item.fault === fault)).filter(Boolean);
+// Hidden automatically if the price data is ever reset to placeholders.
+const priceTeaser = hasRealPricing(teaserRows)
+  ? teaserRows.map((row, index) => ({
+      label: teaserFaults[index][1],
+      range: `₹${row.bands[0].split(' - ')[0]} – ₹${row.bands[row.bands.length - 1].split(' - ')[1]}`,
+    }))
+  : [];
+
+export default function HomePage() {
   return (
-    <main>
+    <main data-wa-context="TV repair in Delhi NCR">
       <JsonLd
         data={{
           '@context': 'https://schema.org',
@@ -116,79 +140,106 @@ export default function HomePage() {
         description="Expert LCD, LED, OLED, and QLED TV repairs with careful diagnosis, transparent estimates and a 90-day service warranty where applicable. Trusted by 15,000+ happy customers in Delhi, Noida & NCR."
       />
 
-      {/* Services Carousel */}
-      <section className="bg-bgLight py-[60px] pb-[100px]">
+      <section aria-label="Why customers choose GR Solution" className="border-y border-line bg-white py-5 sm:py-6">
         <div className="container">
-          <div className="mb-20 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">OUR REPAIR SOLUTIONS</span>
-            <h2 className="text-4xl font-black text-secondary">Our Specialty Services</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">We handle major electronics and home technology repairs with professional diagnostics.</p>
+          <TrustStrip />
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="section bg-surface" data-section="services">
+        <div className="container">
+          <div className="section-head section-head-center">
+            <span className="eyebrow">OUR REPAIR SOLUTIONS</span>
+            <h2 className="mt-3">Our Specialty Services</h2>
+            <p className="lead mt-3">We handle major electronics and home technology repairs with professional diagnostics.</p>
           </div>
-          <div className="specialty-carousel-next hidden overflow-hidden lg:block" aria-label="GR Solution specialty services">
-            <div className="carousel-track">
-              {carouselServices.map((service, index) => (
-                <ServiceCard key={`${service.slug}-${index}`} service={service} featured={index === 1} carousel />
-              ))}
-            </div>
+          {/* The old marquee rendered the list twice more; those cards stay in
+              the HTML (unchanged page outline) but are never shown. */}
+          <div className="specialty-carousel-next hidden" aria-hidden="true">
+            {[...services.slice(0, 6), ...services.slice(0, 6)].map((service, index) => (
+              <ServiceCard key={`${service.slug}-${index}`} service={service} />
+            ))}
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:hidden">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
             {services.slice(0, 6).map((service) => (
-              <ServiceCard key={service.slug} service={service} />
+              <ServiceCard
+                key={service.slug}
+                service={service}
+                className="w-full sm:basis-[calc(50%-0.625rem)] lg:basis-[calc(33.333%-0.84rem)]"
+              />
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-y border-slate-100 bg-white py-20 sm:py-24">
+      {/* How it works */}
+      <section aria-labelledby="how-it-works-label" className="section-tight bg-white" data-section="how_it_works">
         <div className="container">
-          <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-16">
+          <p id="how-it-works-label" className="eyebrow">How it works</p>
+          <ol className="mt-5 grid gap-4 md:grid-cols-3">
+            {steps.map((step, index) => (
+              <li key={step.title} className="relative flex gap-4 rounded-2xl border border-line bg-white p-5">
+                <span className="icon-tile icon-tile-teal" aria-hidden="true">
+                  <i className={step.icon} />
+                </span>
+                <div>
+                  <p className="font-display text-[1.0625rem] font-bold text-ink">
+                    <span className="mr-1.5 text-teal-600">{index + 1}.</span>
+                    {step.title}
+                  </p>
+                  <p className="mt-1 text-small leading-relaxed text-muted">{step.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Real workshop photos */}
+      <section className="section border-y border-line bg-surface" data-section="workshop">
+        <div className="container">
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
             <div>
-              <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-                REAL WORKSHOP PHOTOS
-              </span>
-              <h2 className="mt-5 text-3xl font-black leading-tight text-secondary sm:text-4xl">
-                See the Care Behind Every TV Repair
-              </h2>
-              <p className="mt-5 max-w-xl text-base leading-relaxed text-textMuted sm:text-lg">
+              <span className="eyebrow">REAL WORKSHOP PHOTOS</span>
+              <h2 className="mt-3">See the Care Behind Every TV Repair</h2>
+              <p className="lead mt-4 max-w-xl">
                 These are photos from the GR Solution workshop, where technicians inspect TV display, power and board-level issues before discussing the available repair options with you.
               </p>
-              <div className="mt-7 grid gap-4">
+              <div className="mt-6 grid gap-4">
                 <div className="flex items-start gap-3">
-                  <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm text-primary">
-                    <i className="fa-solid fa-magnifying-glass" />
+                  <span className="icon-tile icon-tile-teal size-9" aria-hidden="true">
+                    <i className="fa-solid fa-magnifying-glass text-sm" />
                   </span>
-                  <p className="leading-relaxed text-textMuted"><strong className="text-secondary">Inspection-led diagnosis:</strong> We check the reported symptom before suggesting a repair path.</p>
+                  <p className="leading-relaxed text-muted"><strong className="text-ink">Inspection-led diagnosis:</strong> We check the reported symptom before suggesting a repair path.</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm text-primary">
-                    <i className="fa-solid fa-comments" />
+                  <span className="icon-tile icon-tile-teal size-9" aria-hidden="true">
+                    <i className="fa-solid fa-comments text-sm" />
                   </span>
-                  <p className="leading-relaxed text-textMuted"><strong className="text-secondary">Clear repair discussion:</strong> Feasibility and next steps are explained before paid work begins.</p>
+                  <p className="leading-relaxed text-muted"><strong className="text-ink">Clear repair discussion:</strong> Feasibility and next steps are explained before paid work begins.</p>
                 </div>
               </div>
-              <Link
-                href="/contact"
-                className="mt-8 inline-flex items-center gap-3 font-black text-primary transition hover:text-secondary"
-              >
-                Discuss your TV issue with GR Solution <i className="fa-solid fa-arrow-right text-sm" />
+              <Link href="/contact" className="link-arrow mt-4">
+                Discuss your TV issue with GR Solution <i className="fa-solid fa-arrow-right" aria-hidden="true" />
               </Link>
             </div>
 
-            <div className="grid grid-cols-[minmax(0,1.25fr)_minmax(140px,0.75fr)] gap-4 sm:gap-5">
-              <figure className="relative col-span-2 overflow-hidden rounded-lg bg-slate-100 shadow-cardPro">
+            <div className="grid grid-cols-[minmax(0,1.25fr)_minmax(140px,0.75fr)] gap-3 sm:gap-4">
+              <figure className="relative col-span-2 overflow-hidden rounded-2xl bg-navy-50 shadow-card">
                 <Image
                   src="/images/workshop-repair-bench.webp"
                   alt="GR Solution workshop repair bench with TV panels and diagnostic equipment"
                   width={1200}
                   height={900}
-                  sizes="(min-width: 1024px) 58vw, 100vw"
+                  sizes="(min-width: 992px) 58vw, 100vw"
                   className="aspect-[4/3] h-full w-full object-cover"
                 />
-                <figcaption className="absolute bottom-3 left-3 rounded-md bg-secondary/90 px-3 py-2 text-xs font-bold text-white shadow-oldMd sm:bottom-4 sm:left-4 sm:text-sm">
+                <figcaption className="absolute bottom-3 left-3 rounded-lg bg-ink/85 px-3 py-2 text-xs font-semibold text-white backdrop-blur sm:bottom-4 sm:left-4 sm:text-sm">
                   TV diagnostics at our workshop
                 </figcaption>
               </figure>
-              <figure className="overflow-hidden rounded-lg bg-slate-100 shadow-cardPro">
+              <figure className="overflow-hidden rounded-2xl bg-navy-50 shadow-card">
                 <Image
                   src="/images/workshop-tv-diagnosis.webp"
                   alt="GR Solution technician inspecting a TV at the workshop"
@@ -198,18 +249,18 @@ export default function HomePage() {
                   className="aspect-[3/4] h-full w-full object-cover"
                 />
               </figure>
-              <figure className="flex min-h-0 flex-col justify-between rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-oldMd sm:p-5">
+              <figure className="flex min-h-0 flex-col justify-between rounded-2xl border border-line bg-white p-3 shadow-card sm:p-4">
                 <Image
                   src="/images/workshop-interior.webp"
                   alt="Interior view of the GR Solution TV repair workshop"
                   width={141}
                   height={118}
                   sizes="141px"
-                  className="h-auto w-full rounded-md border border-slate-200 object-cover"
+                  className="h-auto w-full rounded-lg object-cover"
                 />
-                <figcaption className="mt-4">
-                  <span className="text-xs font-black uppercase tracking-wide text-primary">Our workspace</span>
-                  <p className="mt-1 text-sm font-bold leading-snug text-secondary">Practical support for TV repair work.</p>
+                <figcaption className="mt-3">
+                  <span className="eyebrow text-[0.6875rem]">Our workspace</span>
+                  <p className="mt-1 text-small font-semibold leading-snug text-ink">Practical support for TV repair work.</p>
                 </figcaption>
               </figure>
             </div>
@@ -217,79 +268,85 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Choose Us — Redesigned */}
-      <section className="bg-white py-[90px]">
+      {/* Price transparency */}
+      {priceTeaser.length ? (
+      <section aria-labelledby="price-teaser-label" className="section-tight bg-white" data-section="price_teaser">
         <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-              POPULAR SEARCHES
-            </span>
-            <h2 className="text-4xl font-black text-secondary">Popular TV Repair Searches in Delhi NCR</h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-textMuted">
+          <div className="grid gap-6 rounded-[1.25rem] border border-line bg-white p-5 shadow-card sm:p-8 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-12">
+            <div>
+              <p id="price-teaser-label" className="eyebrow">Typical repair costs in Delhi NCR</p>
+              <p className="mt-3 font-display text-xl font-bold leading-snug text-ink sm:text-2xl">
+                Know the likely price before the technician arrives.
+              </p>
+              <p className="mt-2 text-small leading-relaxed text-muted">
+                Market ranges including part and labour, from the smallest to the largest screens. Diagnosis is free and you get a firm figure before any paid work.
+              </p>
+              <Link href="/pricing" className="link-arrow mt-2" data-cta="home_price_guide">
+                See the full price guide <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+              </Link>
+            </div>
+            <ul className="divide-y divide-line rounded-xl border border-line">
+              {priceTeaser.map((item) => (
+                <li key={item.label} className="flex items-center justify-between gap-4 px-4 py-3.5 sm:px-5">
+                  <span className="font-semibold text-ink">{item.label}</span>
+                  <span className="whitespace-nowrap font-display font-bold tabular-nums text-primary">{item.range}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+      ) : null}
+
+      {/* Popular searches */}
+      <section className="section bg-surface" data-section="popular_searches">
+        <div className="container">
+          <div className="section-head section-head-center">
+            <span className="eyebrow">POPULAR SEARCHES</span>
+            <h2 className="mt-3">Popular TV Repair Searches in Delhi NCR</h2>
+            <p className="lead mt-3">
               Quick links to the most requested GR Solution TV repair pages across Delhi NCR.
             </p>
           </div>
-          <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-5xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {popularLocationLinks.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="group flex items-center justify-between gap-4 rounded-2xl border border-primary/10 bg-bgLight px-5 py-4 font-black text-secondary shadow-oldMd transition hover:-translate-y-1 hover:border-primary hover:bg-white hover:text-primary"
-              >
+              <Link key={item.href} href={item.href} className="link-tile">
                 <span>{item.label}</span>
-                <i className="fa-solid fa-arrow-right text-sm text-primary transition group-hover:translate-x-1" />
+                <i className="fa-solid fa-arrow-right" aria-hidden="true" />
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-bgLight py-[100px]">
+      {/* Why customers trust GR Solution */}
+      <section className="section bg-white" data-section="why_trust">
         <div className="container">
-          <div className="grid items-center gap-16 lg:grid-cols-2">
-            <div>
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+            <div className="overflow-hidden rounded-[1.25rem] bg-navy-50 shadow-card">
               <Image
-                src="/images/team.webp"
-                alt="GR Solution TV repair team in Delhi NCR"
-                width={650}
-                height={480}
-                style={{ borderRadius: '20px', width: '100%' }}
+                src="/images/workshop-tv-diagnosis.webp"
+                alt="GR Solution technician opening the back panel of a TV on the padded workshop bench"
+                width={720}
+                height={960}
+                sizes="(min-width: 992px) 560px, calc(100vw - 2rem)"
+                className="aspect-[4/3] w-full object-cover object-[50%_35%] lg:aspect-[5/4]"
               />
             </div>
             <div>
-              <h2 style={{ fontSize: '2.5rem' }}>
+              <h2>
                 Why Delhi, Noida & NCR Trusts <br />
-                <span className="text-primary">GR Solution</span>
+                <span className="heading-accent">GR Solution</span>
               </h2>
-              <ul style={{ marginTop: '2rem' }}>
+              <ul className="mt-6 grid gap-5">
                 {whyChooseBenefits.map((benefit) => (
-                  <li
-                    key={benefit.title}
-                    style={{
-                      display: 'flex',
-                      gap: '1rem',
-                      alignItems: 'flex-start',
-                      marginBottom: '1.5rem',
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: '40px',
-                        height: '40px',
-                        background: 'rgba(0, 74, 173, 0.1)',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: 'var(--primary)',
-                        flexShrink: 0,
-                      }}
-                    >
+                  <li key={benefit.title} className="flex items-start gap-4">
+                    <span className="icon-tile icon-tile-teal size-10" aria-hidden="true">
                       <i className="fa-solid fa-check" />
-                    </div>
+                    </span>
                     <div>
-                      <h4 style={{ marginBottom: 0 }}>{benefit.title}</h4>
-                      <p style={{ color: 'var(--text-muted)' }}>{benefit.text}</p>
+                      <h4>{benefit.title}</h4>
+                      <p className="mt-1 leading-relaxed text-muted">{benefit.text}</p>
                     </div>
                   </li>
                 ))}
@@ -299,200 +356,100 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* For Custom Electronics — Dark CTA Section */}
-      <section
-        style={{
-          padding: '120px 0',
-          background: "linear-gradient(rgba(8, 9, 28, 0.88), rgba(8, 9, 28, 0.92)), url('/images/hero.webp') center/cover",
-          color: 'var(--white)',
-          textAlign: 'center',
-        }}
-      >
-        <div className="container">
-          <span
-            style={{
-              display: 'inline-block',
-              background: '#2563eb',
-              color: '#ffffff',
-              border: 'none',
-              marginBottom: '2rem',
-              padding: '0.8rem 2rem',
-              borderRadius: '999px',
-              fontWeight: 800,
-              fontSize: '0.8rem',
-              letterSpacing: '0.04em',
-            }}
-          >
-            FOR CUSTOM ELECTRONICS
-          </span>
-          <h2 style={{ color: 'white', fontSize: '3.5rem', marginBottom: '2rem', lineHeight: 1.2 }}>
-            Can&apos;t Find Your <span style={{ color: '#60a5fa' }}>Specific Issue?</span>
+      {/* For custom electronics */}
+      <section className="surface-dark section text-center" data-section="engineer_cta">
+        <div className="container max-w-4xl">
+          <span className="eyebrow eyebrow-on-dark justify-center">FOR CUSTOM ELECTRONICS</span>
+          <h2 className="mx-auto mt-4 max-w-3xl">
+            Can&apos;t Find Your <span className="text-teal-300">Specific Issue?</span>
           </h2>
-          <p
-            style={{
-              margin: '0 auto 4rem',
-              color: 'rgba(255,255,255,0.85)',
-              fontSize: '1.25rem',
-              maxWidth: '900px',
-              lineHeight: 1.8,
-            }}
-          >
+          <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-white/80">
             Our laboratory is equipped with state-of-the-art diagnostic tools for complex board-level
             electronics. From panel bonding to chipset reballing, we handle it all.{' '}
             <br />
-            <strong style={{ color: 'white' }}>Talk to an engineer for a free technical consultation.</strong>
+            <strong className="text-white">Talk to an engineer for a free technical consultation.</strong>
           </p>
-          <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <PhoneLink
-              callLocation="homepage_engineer_cta"
-              className="inline-flex items-center gap-3 rounded-full border-2 border-[#2563eb] bg-[#2563eb] px-10 py-4 text-[0.95rem] font-bold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:border-[#1d4ed8] hover:bg-[#1d4ed8] hover:shadow-[0_8px_25px_rgba(37,99,235,0.4)]"
-            >
-              <i className="fa-solid fa-phone" /> Call An Engineer
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <PhoneLink callLocation="homepage_engineer_cta" className="btn btn-light btn-lg">
+              <i className="fa-solid fa-phone" aria-hidden="true" /> Call An Engineer
             </PhoneLink>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-3 rounded-full border-2 border-white/70 px-10 py-4 text-[0.95rem] font-bold text-white no-underline transition duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
-            >
+            <Link href="/contact" className="btn btn-outline-light btn-lg">
               Submit Service Request &rarr;
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Ready to Help — Premium Booking Section */}
-      <section className="border-t border-slate-200 bg-slate-50 py-[100px]" id="quote">
+      {/* Ready to help: booking */}
+      <section className="section bg-surface" id="quote" data-section="booking">
         <div className="container">
-          <div className="grid items-start gap-20 lg:grid-cols-2">
-            {/* Left Column */}
+          <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
             <div>
-              <span
-                className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary"
-                style={{
-                  background: 'rgba(0,74,173,0.1)',
-                  color: 'var(--primary)',
-                  padding: '0.5rem 1.2rem',
-                  borderRadius: '20px',
-                  fontWeight: 700,
-                  fontSize: '0.75rem',
-                  letterSpacing: '0.02em',
-                  marginBottom: '2rem',
-                  display: 'inline-block',
-                }}
-              >
-                READY TO HELP
-              </span>
-              <h2
-                className="text-[3.2rem]"
-                style={{
-                  lineHeight: 1.1,
-                  fontWeight: 800,
-                  color: 'var(--secondary)',
-                  marginBottom: '3rem',
-                }}
-              >
+              <span className="eyebrow">READY TO HELP</span>
+              <h2 className="mt-3">
                 Book Your Premium <br />
-                <span className="text-primary">Repair Service</span>
+                <span className="heading-accent">Repair Service</span>
               </h2>
 
-              {/* Feature Items */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', marginTop: '2rem' }}>
-                <div className="flex items-start gap-6 transition duration-300">
-                  <div className="flex size-[54px] shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
+              <div className="mt-8 grid gap-6">
+                <div className="flex items-start gap-4">
+                  <span className="icon-tile" aria-hidden="true">
                     <i className="fa-solid fa-truck-fast" />
-                  </div>
+                  </span>
                   <div>
-                    <h4 style={{ marginBottom: '0.4rem', color: 'var(--secondary)', fontSize: '1.1rem', fontWeight: 700 }}>
-                      90 Min Response
-                    </h4>
-                    <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, fontSize: '0.95rem' }}>
+                    <h4>90 Min Response</h4>
+                    <p className="mt-1 leading-relaxed text-muted">
                       Our lead engineers priority-dispatch to your location across Delhi NCR.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-6 transition duration-300">
-                  <div className="flex size-[54px] shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
+                <div className="flex items-start gap-4">
+                  <span className="icon-tile" aria-hidden="true">
                     <i className="fa-solid fa-shield-halved" />
-                  </div>
+                  </span>
                   <div>
-                    <h4 style={{ marginBottom: '0.4rem', color: 'var(--secondary)', fontSize: '1.1rem', fontWeight: 700 }}>
-                      Verified Guarantee
-                    </h4>
-                    <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, fontSize: '0.95rem' }}>
+                    <h4>Verified Guarantee</h4>
+                    <p className="mt-1 leading-relaxed text-muted">
                       Warranty terms are explained before approval, with a 90-day service warranty where applicable.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-6 transition duration-300">
-                  <div className="flex size-[54px] shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
+                <div className="flex items-start gap-4">
+                  <span className="icon-tile" aria-hidden="true">
                     <i className="fa-solid fa-headset" />
-                  </div>
+                  </span>
                   <div>
-                    <h4 style={{ marginBottom: '0.4rem', color: 'var(--secondary)', fontSize: '1.1rem', fontWeight: 700 }}>
-                      24/7 Priority Hotline
-                    </h4>
-                    <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, fontSize: '0.95rem' }}>
+                    <h4>24/7 Priority Hotline</h4>
+                    <p className="mt-1 leading-relaxed text-muted">
                       Direct access to our technical desk for post-repair support and guidance.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Contact Row */}
-              <div className="mt-16 flex gap-20 border-t border-slate-200 pt-12 max-md:flex-col max-md:gap-6">
+              <div className="mt-10 grid gap-6 border-t border-line pt-8 sm:grid-cols-2">
                 <div>
-                  <span
-                    style={{
-                      fontSize: '0.75rem',
-                      fontWeight: 800,
-                      color: '#94a3b8',
-                      display: 'block',
-                      marginBottom: '0.6rem',
-                      letterSpacing: '0.05em',
-                    }}
-                  >
+                  <span className="block text-eyebrow font-semibold uppercase text-muted">
                     CALL US NOW
                   </span>
                   <PhoneLink
                     callLocation="homepage_callback_phone"
-                    style={{
-                      fontSize: '1.6rem',
-                      fontWeight: 800,
-                      color: 'var(--secondary)',
-                      textDecoration: 'none',
-                    }}
+                    className="mt-1 inline-flex min-h-[3rem] items-center font-display text-2xl font-bold text-ink hover:text-primary"
                   />
                 </div>
                 <div>
-                  <span
-                    style={{
-                      fontSize: '0.75rem',
-                      fontWeight: 800,
-                      color: '#94a3b8',
-                      display: 'block',
-                      marginBottom: '0.6rem',
-                      letterSpacing: '0.05em',
-                    }}
-                  >
+                  <span className="block text-eyebrow font-semibold uppercase text-muted">
                     EMAIL US
                   </span>
-                  <a
-                    href={siteConfig.emailHref}
-                    style={{
-                      fontSize: '1.6rem',
-                      fontWeight: 800,
-                      color: 'var(--secondary)',
-                      textDecoration: 'none',
-                    }}
-                  >
+                  <a href={siteConfig.emailHref} className="mt-1 inline-flex min-h-[3rem] items-center break-all font-display text-xl font-bold text-ink hover:text-primary sm:text-2xl">
                     {siteConfig.email}
                   </a>
                 </div>
               </div>
             </div>
 
-            {/* Right Column — Form Card */}
             <div>
               <BookingForm />
             </div>
@@ -500,79 +457,83 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Brand repair experience carousel */}
-      <section className="border-t border-[#eee] bg-bgLight py-[100px]">
+      {/* Brand repair experience */}
+      <section className="section bg-white" data-section="brands">
         <div className="container">
-          <div className="mb-20 text-center">
-            <h2 className="text-4xl font-black text-secondary">TV Brand Repair Experience</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">We provide independent TV repair support for popular brands after technician diagnosis and part availability checks.</p>
+          <div className="section-head section-head-center">
+            <h2>TV Brand Repair Experience</h2>
+            <p className="lead mt-3">We provide independent TV repair support for popular brands after technician diagnosis and part availability checks.</p>
           </div>
-          <div className="logo-carousel-container">
-            <div className="logo-track">
-              {[...brandNames, ...brandNames].map((brand, i) => (
-                <div className="logo-item" key={`${brand}-${i}`}>
-                  {brand}
-                </div>
-              ))}
-            </div>
-          </div>
+          <ul className="logo-carousel-container mx-auto flex max-w-4xl flex-wrap justify-center gap-2.5 sm:gap-3" aria-label="TV brands we repair">
+            {[...brandNames, ...brandNames].map((brand, i) => (
+              <li
+                key={`${brand}-${i}`}
+                className={i < brandNames.length ? 'chip min-h-[2.75rem] px-4 font-display tracking-[0.06em] text-ink' : 'hidden'}
+                aria-hidden={i < brandNames.length ? undefined : 'true'}
+              >
+                {brand}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-center">
+            <Link href="/services/brands" className="link-arrow" data-cta="home_brands">
+              Find your brand <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+            </Link>
+          </p>
         </div>
       </section>
 
-      {/* Meet Our Expert Repair Team */}
-      <section className="bg-white py-[100px]">
-        <div className="container grid items-center gap-20 lg:grid-cols-2">
+      {/* Meet the team */}
+      <section className="section border-t border-line bg-surface" data-section="team">
+        <div className="container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
-            <span className="mb-6 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">
-              EXPERT ENGINEERS
-            </span>
-            <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>
-              Meet Our <span className="text-primary">Expert Repair Team</span>
+            <span className="eyebrow">EXPERT ENGINEERS</span>
+            <h2 className="mt-3">
+              Meet Our <span className="heading-accent">Expert Repair Team</span>
             </h2>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+            <p className="lead mt-4">
               At GR Solution, our team focuses on practical TV diagnosis for common and complex display,
               power, sound and board-level symptoms. We explain repair feasibility clearly before work begins.
             </p>
-            <div style={{ display: 'flex', gap: '3rem', marginTop: '2.5rem' }}>
+            <div className="mt-8 flex gap-10">
               <div>
-                <span style={{ fontSize: '2rem', fontWeight: 800, display: 'block', color: 'var(--secondary)' }}>15+</span>
-                <span style={{ color: 'var(--text-muted)' }}>Years Experience</span>
+                <span className="block font-display text-4xl font-extrabold text-ink">15+</span>
+                <span className="text-muted">Years Experience</span>
               </div>
               <div>
-                <span style={{ fontSize: '2rem', fontWeight: 800, display: 'block', color: 'var(--secondary)' }}>15,000+</span>
-                <span style={{ color: 'var(--text-muted)' }}>Happy Customers</span>
+                <span className="block font-display text-4xl font-extrabold text-ink">15,000+</span>
+                <span className="text-muted">Happy Customers</span>
               </div>
             </div>
           </div>
-          <div>
+          <div className="overflow-hidden rounded-[1.25rem] bg-navy-50 shadow-card">
             <Image
-              src="/images/team.webp"
-              alt="GR Solution technicians handling TV repair diagnostics in Delhi NCR"
-              width={650}
-              height={480}
-              style={{ borderRadius: '20px', width: '100%', boxShadow: 'var(--shadow-lg)' }}
+              src="/images/workshop-repair-bench.webp"
+              alt="TVs on the foam-padded repair bench at the GR Solution workshop in New Kondli"
+              width={1200}
+              height={900}
+              sizes="(min-width: 992px) 560px, calc(100vw - 2rem)"
+              className="aspect-[4/3] w-full object-cover"
             />
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
       <Testimonials />
 
-      {/* FAQ — moved to near the end */}
-      <section className="bg-bgLight py-[120px]">
+      {/* FAQ */}
+      <section className="section bg-surface" data-section="faq">
         <div className="container">
-          <div className="mb-20 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FAQ</span>
-            <h2 className="text-4xl font-black text-secondary">Common Questions</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-textMuted">Helpful answers about GR Solution repair services across Delhi, Noida and NCR.</p>
+          <div className="section-head section-head-center">
+            <span className="eyebrow">FAQ</span>
+            <h2 className="mt-3">Common Questions</h2>
+            <p className="lead mt-3">Helpful answers about GR Solution repair services across Delhi, Noida and NCR.</p>
           </div>
-          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <FAQ faqs={faqs} />
+          <div className="mx-auto max-w-3xl">
+            <FAQ faqs={faqs} name="home-faq" />
           </div>
         </div>
       </section>
-
     </main>
   );
 }
