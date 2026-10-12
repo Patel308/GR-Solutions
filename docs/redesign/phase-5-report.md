@@ -18,9 +18,14 @@ Everything below was measured on production builds (`next build` +
   unchanged word for word. The other 22 are listed in
   [section 2.3](#23-signed-off-changes); they are form labels and one
   capitalisation fix.
-- **Speed: mobile Lighthouse is at or better than the old site on the five
-  reference pages** (details in [section 3](#3-speed)). Page weight dropped
-  by 8–33%.
+- **Speed: same or faster than the live site.** Mobile Lighthouse, 7 runs per
+  page alternating between the two builds: LCP median 2.59 → 2.37 s (home),
+  2.53 → 2.52 s (service), 2.53 → 2.23 s (city), 2.63 → 2.36 s (blog index);
+  the blog post is the same on average (2.44 → 2.46 s mean). Performance
+  96–98, CLS 0, pages 5–33% lighter. An earlier version of this report said
+  "at or better" from single batches; the rotation in
+  [section 3](#3-speed) is the reliable measurement, and it also turned up a
+  Next.js default that was costing 0.3–0.5 s (now switched off).
 - **Accessibility: Lighthouse accessibility 90–95 → 98–99.** 16 of 16
   keyboard checks pass. The one remaining automated finding is heading order
   from the H4 headings you asked me not to change (decision D13).
@@ -51,6 +56,21 @@ Everything below was measured on production builds (`next build` +
 | `486ce19` | Solid backgrounds instead of backdrop blur on phones (header, sticky bar, captions). |
 | `6831637` | Blog index: text-first first screen on phones. |
 | `0e26236` | Next.js setting `turbopackSharedRuntime: false` ([section 3.2](#32-a-framework-default-that-cost-lighthouse-03-05-s)). |
+
+### Before and after
+
+First screen on a phone (390 px wide), live site on the left:
+
+![Home page on a phone, before and after](phase-5/home-phone-before-after.jpg)
+
+![Service page on a phone, before and after](phase-5/service-phone-before-after.jpg)
+
+![City page on a phone, before and after](phase-5/city-phone-before-after.jpg)
+
+![Blog post on a phone, before and after](phase-5/post-phone-before-after.jpg)
+
+Home page on a desktop (1440 px): [before](phase-5/home-desktop-before.jpg),
+[after](phase-5/home-desktop-after.jpg).
 
 ## 2. SEO, AIO and GEO checks
 
@@ -155,28 +175,80 @@ D2, D7 and D8 (section 7); they repeat what the site already says.
 
 ### 3.1 Mobile Lighthouse
 
-Lighthouse 13.5, default mobile settings (simulated slow 4G, 4× CPU
-slowdown), Google Analytics blocked so runs are comparable.
+Lighthouse 13.5 with its default mobile settings (Moto G Power, simulated
+slow 4G, 4× CPU slowdown), Google Analytics blocked so runs are comparable.
+The live site (`main`, Next.js 16.2.9) and the new site were built for
+production, served side by side and measured in rotation, one run at a
+time, 7 runs per page and build:
 
-**Phase 0 baseline (old site) vs final (new site), median of runs:**
-
-| Page | Perf old → new | LCP old → new | FCP | CLS | A11y old → new | Weight old → new |
+| Page | LCP median, live → new | LCP mean | Performance | TBT | CLS | Page weight |
 | --- | --- | --- | --- | --- | --- | --- |
-| Home | 95 → 97 | 2.9 s → 2.6 s | 1.5 s → 1.5 s | 0 → 0 | 90 → 99 | 443 → 299 KB |
-| Service (OLED/QLED) | 98 → 99 | 2.3 s → 2.1 s | 1.5 s → 1.5 s | 0 → 0 | 94 → 98 | 317 → 288 KB |
-| City (Noida) | 96 → 96 | 2.7 s → 2.7 s | 1.5 s → 1.5 s | 0 → 0 | 94 → 99 | 327 → 298 KB |
-| Blog index | 96 → 96 | 2.7 s → 2.7 s | 1.5 s → 1.5 s | 0 → 0 | 94 → 98 | 329 → 301 KB |
-| Blog post | 97 → 97 | 2.5 s → 2.5 s | 1.5 s → 1.5 s | 0 → 0 | 95 → 99 | 363 → 297 KB |
+| Home | 2.59 → 2.37 s | 2.58 → 2.47 s | 97 → 98 | 43 → 48 ms | 0 → 0 | 443 → 299 KB |
+| Service (OLED/QLED) | 2.53 → 2.52 s | 2.44 → 2.41 s | 96 → 97 | 38 → 37 ms | 0 → 0 | 317 → 288 KB |
+| City (Noida) | 2.53 → 2.23 s | 2.46 → 2.36 s | 96 → 98 | 40 → 51 ms | 0 → 0 | 327 → 298 KB |
+| Blog index | 2.63 → 2.36 s | 2.56 → 2.41 s | 96 → 98 | 33 → 40 ms | 0 → 0 | 329 → 312 KB |
+| Blog post | 2.48 → 2.63 s | 2.44 → 2.46 s | 97 → 96 | 41 → 41 ms | 0 → 0 | 363 → 297 KB |
 
-Lighthouse's simulated LCP moves by up to ±0.5 s between batches on the same
-build on this machine (the old site measured 2.0–2.7 s on the city page in
-three batches), so small differences in either direction are noise.
+First contentful paint is 1.5 s on every page in both builds.
 
-Raw summaries: `tools/seo-audit/reports/phase-5/lighthouse/` (new) and
-`tools/seo-audit/reports/phase-5/lighthouse-baseline-rerun/` (old site,
-re-measured the same day).
+- **Four pages are the same or faster; the blog post is the same on
+  average.** Its median is higher only because both builds land on one of
+  two levels (see 3.3): each had 3 fast runs (2.0–2.25 s) and 4 slow ones
+  (live 2.48–2.79 s, new 2.63–2.68 s), and the median falls on a slow one.
+- **Lighter on every page**: images 24–47 KB instead of 63–185 KB (AVIF and
+  right-sized files). The new design adds 7 KB of CSS, the 7 KB heading font
+  and 3–6 KB of HTML; JavaScript is 158 KB against 167 KB live.
+- **Like for like**, against the old design rebuilt on Next.js 16.4 (commit
+  `29f372a`, same setting as in 3.2) the redesign is 0.3 s faster on home,
+  level on service, city and blog post (within 0.05 s on average) and about
+  0.13 s slower on the blog index (2.41 s against 2.28 s mean), which is
+  still faster than the live site's 2.56 s.
+- The 2.5 s LCP target: the new site's medians are under it on home, city
+  and blog index; service (2.52 s) and the blog post (2.63 s median, 2.46 s
+  mean) sit on the line, as the live site's do (2.53 s and 2.48 s). On this
+  machine Lighthouse puts both builds of every page around 2.5 s, so the
+  working target is "no worse than live", which holds.
 
-### 3.2 What made it fast
+Every run, plus the old-design-on-16.4 build:
+`tools/seo-audit/reports/phase-5/lighthouse-ab/`. How to repeat the
+comparison: `tools/seo-audit/README.md`, "Comparing two builds".
+
+### 3.2 A framework default that cost Lighthouse 0.3–0.5 s
+
+Next.js 16.4 (the security upgrade, D19) switched on a shared browser
+runtime that inlines a small bootstrap script into every page, just before
+the page's entry script. An inline script has to wait for the stylesheet,
+so the 3 KB entry script ended up running after the large framework scripts,
+and React's start-up work happened in its task.
+
+That matters to Lighthouse's simulation: it counts every script that had
+finished downloading by the first paint as blocking the LCP, unless that
+script's own long task started after the paint. With the entry script
+running last, the 72 KB React script stayed in the estimate: in 21 of 25
+spot-check runs on 16.4's default (old and new design alike) against 1 of 8
+on the live site, and those runs came out 0.3–0.5 s slower.
+
+`next.config.js` now sets `experimental.turbopackSharedRuntime: false`. It
+keeps the per-page runtime that 16.2.9 used, so the HTML loads its scripts
+exactly as the live site does, with all of 16.4's security fixes. Visitors'
+first paint never depended on this (every script is `async`); it is the lab
+figure in PageSpeed Insights that changes. The option is marked
+experimental, so re-check it on the next Next.js upgrade.
+
+### 3.3 Reading PageSpeed Insights after the merge
+
+On this site Lighthouse's mobile LCP tends to land on one of two levels for
+the same build, roughly 2.0–2.3 s or 2.5–2.8 s. Which one depends on
+whether React happens to start running a few milliseconds before or after
+the first frame is shown. The live site does the same (its blog post ranged 2.02–2.79 s).
+
+- Run PageSpeed Insights 3–5 times per page and compare the median with the
+  live site's median, not one run with another.
+- The numbers Google uses for ranking are the field data (Chrome UX Report)
+  at the top of the PageSpeed Insights page; they take about 28 days to
+  reflect the new design.
+
+### 3.4 What made it fast
 
 - **One heading font file of 6.8 KB** (Plus Jakarta Sans 800, trimmed to the
   characters the site uses), preloaded. Body text uses the device's own font
@@ -190,11 +262,21 @@ re-measured the same day).
 - **AVIF images** with WebP fallback (the hero is 43% smaller).
 - **Right-sized images**: every image has `sizes`, so phones download a
   640–750 px file instead of 1,920 px.
-- **Hero photos on service, city, brand and blog pages** are preloaded at
-  high priority on desktop only, where they are the largest element; on
-  phones they sit below the fold and load at low priority.
-- No new JavaScript libraries; the redesign ships 9 KB less JavaScript than
-  before.
+- **Text first on phones.** On service, city, brand, locality and blog pages
+  the largest element on a phone's first screen is text (the H1, the
+  answer-first summary or, on the blog index, the featured article's
+  summary), as on the live site. On the home page it is the hero photo,
+  which is preloaded at high priority for that reason. Hero photos on
+  service, city, brand and blog pages are preloaded at high priority on
+  desktop only, where they are the largest element; on phones they sit
+  below the summary and load at low priority. On the blog index, phones
+  skip the hero photo (the featured card just below shows the same photo)
+  and the featured card puts its photo after its text.
+- **No blur effects on phones.** The sticky header and action bar use solid
+  white: `backdrop-filter` blur slows the first frame in the software-rendered
+  Chrome that Lighthouse uses.
+- **The Next.js runtime setting** in 3.2.
+- No new JavaScript libraries.
 
 ## 4. Responsive check
 
@@ -284,6 +366,10 @@ node diff.mjs --base snapshots/baseline --head snapshots/current --out reports/c
 node lighthouse.mjs --base http://localhost:3100 --out reports/current/lighthouse --runs 5
 node screenshots.mjs --base http://localhost:3100 --out reports/current/responsive
 ```
+
+To compare two builds for speed, alternate them run by run (loop in
+`tools/seo-audit/README.md`, "Comparing two builds") and summarise with
+`ab-summary.mjs`.
 
 `diff.mjs` exits with an error if anything frozen changes that is not in
 `approved-changes.json`.

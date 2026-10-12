@@ -59,9 +59,10 @@ node ab-summary.mjs --dir $RUNS --variants live,new --labels "Live site,New site
 - `snapshots/baseline/` — the Phase 0 baseline (raw server HTML), taken from a
   production build of commit `595b6c7` (see `snapshots/baseline/meta.json`).
 - `reports/phase-0/` — Lighthouse and responsive summaries of the old site.
-- `reports/phase-5/` — the same for the redesigned site, plus a same-day
-  re-measurement of the old site (`lighthouse-baseline-rerun/`) and the
-  final interleaved A/B (`lighthouse-ab/`).
+- `reports/phase-5/` — the redesigned site. `lighthouse-ab/` is the final
+  speed comparison (live site, old design on Next.js 16.4 and new site,
+  7 alternating runs each); `lighthouse/` and `lighthouse-baseline-rerun/`
+  are earlier single batches, kept for reference.
   Raw Lighthouse reports and screenshots are git-ignored and can be
   regenerated with the commands above.
 
