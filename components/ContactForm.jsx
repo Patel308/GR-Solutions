@@ -4,6 +4,26 @@ import { useState } from 'react';
 import { siteConfig } from '@/data/siteConfig';
 import { services } from '@/data/services';
 
+// "Service Required" choices for the enquiry forms, grouped. The first group
+// keeps the existing service names so enquiry emails stay comparable.
+const SERVICE_GROUPS = [
+  { label: 'TV Repair', options: [...services.map((service) => service.title), 'Smart TV / Android TV Repair'] },
+  {
+    label: 'Premium TV Repair',
+    options: [
+      'Premium OLED TV Repair (LG, Sony, Samsung)',
+      'QLED / Neo QLED / Mini LED TV Repair',
+      'Large Screen TV Repair (65" and above)',
+    ],
+  },
+  {
+    label: 'Specific Repairs',
+    options: ['Screen / Panel Replacement', 'Backlight Repair', 'Motherboard / Power Board Repair'],
+  },
+  { label: 'New TV', options: ['New TV Purchase Enquiry'] },
+  { label: 'Other', options: ['Other / Not Sure'] },
+];
+
 // Book Visit (mobile action bar) requests are labelled in the email.
 const BOOK_VISIT = { subject: 'New doorstep visit request (Book Visit)', label: 'Book Visit button' };
 
@@ -69,11 +89,21 @@ export default function ContactForm({ id = 'contactForm', compact = false, title
           <option value="" disabled>
             {appointment ? 'Select area' : 'Select service'}
           </option>
-          {(appointment ? ['West Delhi', 'South Delhi', 'East Delhi', 'North Delhi', 'Noida', 'Greater Noida', 'Ghaziabad'] : services).map((item) => (
-            <option key={appointment ? item : item.slug} value={appointment ? item : item.title}>
-              {appointment ? item : item.title}
-            </option>
-          ))}
+          {appointment
+            ? ['West Delhi', 'South Delhi', 'East Delhi', 'North Delhi', 'Noida', 'Greater Noida', 'Ghaziabad'].map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))
+            : SERVICE_GROUPS.map((group) => (
+                <optgroup key={group.label} label={group.label}>
+                  {group.options.map((item) => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </optgroup>
+              ))}
         </select>
       </div>
       <div className="mb-4 grid gap-2">
