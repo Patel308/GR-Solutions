@@ -4,6 +4,7 @@ import './icons.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
+import MobileActionBar from '@/components/MobileActionBar';
 import JsonLd from '@/components/JsonLd';
 import CallTracking from '@/components/CallTracking';
 import { ContactChannelProvider } from '@/components/ContactChannel';
@@ -116,6 +117,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
           <FloatingButtons />
+          <MobileActionBar />
         </ContactChannelProvider>
         <CallTracking />
       </body>

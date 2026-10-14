@@ -4,7 +4,11 @@ import { useState } from 'react';
 import { siteConfig } from '@/data/siteConfig';
 import { services } from '@/data/services';
 
-export default function ContactForm({ id = 'contactForm', compact = false, title, appointment = false }) {
+// Book Visit (mobile action bar) requests are labelled in the email.
+const BOOK_VISIT = { subject: 'New doorstep visit request (Book Visit)', label: 'Book Visit button' };
+
+export default function ContactForm({ id = 'contactForm', compact = false, title, appointment = false, source }) {
+  const bookVisit = source === 'book_visit';
   const [status, setStatus] = useState('');
   const [pending, setPending] = useState(false);
 
@@ -46,7 +50,8 @@ export default function ContactForm({ id = 'contactForm', compact = false, title
       }
     >
       {title ? <h2 className="mb-8 text-2xl font-extrabold text-secondary">{title}</h2> : null}
-      <input type="hidden" name="_subject" value="New GR Solution website enquiry" />
+      <input type="hidden" name="_subject" value={bookVisit ? BOOK_VISIT.subject : 'New GR Solution website enquiry'} />
+      {bookVisit ? <input type="hidden" name="source" value={BOOK_VISIT.label} /> : null}
       <input type="hidden" name="_cc" value={siteConfig.formNotificationEmail} />
       <input type="hidden" name="_template" value="table" />
 

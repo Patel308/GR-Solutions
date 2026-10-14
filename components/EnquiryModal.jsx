@@ -2,7 +2,7 @@
 
 import ContactForm from './ContactForm';
 
-export default function EnquiryModal({ open, onClose }) {
+export default function EnquiryModal({ open, source, onClose }) {
   return (
     <div
       className={`fixed inset-0 z-[2000] flex items-center justify-center bg-secondary/65 p-4 backdrop-blur-sm transition duration-300 ${open ? 'visible opacity-100' : 'invisible opacity-0'}`}
@@ -16,7 +16,7 @@ export default function EnquiryModal({ open, onClose }) {
           <h2 className="text-3xl font-extrabold text-secondary">Quick Enquiry</h2>
           <p className="mt-2 text-textMuted">Fill in the details below and we will contact you shortly.</p>
         </div>
-        <ContactForm id="enquiryForm" compact />
+        <ContactForm id="enquiryForm" compact source={source} />
       </div>
     </div>
   );

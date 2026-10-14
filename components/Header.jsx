@@ -8,6 +8,7 @@ import { mainNavigation } from '@/data/navigation';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/siteConfig';
 import EnquiryModal from './EnquiryModal';
+import { OPEN_ENQUIRY_EVENT } from './MobileActionBar';
 import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
 
 const dropdownServices = services;
@@ -28,6 +29,17 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [enquirySource, setEnquirySource] = useState(null);
+
+  // The mobile action bar's "Book Visit" opens this same enquiry form.
+  useEffect(() => {
+    const open = (event) => {
+      setEnquirySource(event.detail?.source || null);
+      setModalOpen(true);
+    };
+    window.addEventListener(OPEN_ENQUIRY_EVENT, open);
+    return () => window.removeEventListener(OPEN_ENQUIRY_EVENT, open);
+  }, []);
 
   const isActive = (href) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
 
@@ -116,7 +128,10 @@ export default function Header() {
             <button
               type="button"
               className="hidden min-w-[190px] items-center justify-center gap-3 rounded-full border-2 border-primary bg-white px-6 py-4 font-extrabold leading-none text-primary shadow-cta transition duration-300 ease-old hover:-translate-y-1 hover:border-secondary hover:bg-secondary hover:text-white hover:shadow-ctaHover md:inline-flex"
-              onClick={() => setModalOpen(true)}
+              onClick={() => {
+                setEnquirySource(null);
+                setModalOpen(true);
+              }}
             >
               <i className="fa-solid fa-paper-plane" /> Quick Enquiry
             </button>
@@ -223,6 +238,7 @@ export default function Header() {
                 type="button"
                 onClick={() => {
                   closeMenu();
+                  setEnquirySource(null);
                   setModalOpen(true);
                 }}
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-full border-2 border-solid border-primary bg-white text-sm font-extrabold text-primary outline-none transition focus-visible:ring-2 focus-visible:ring-primary/40 active:scale-[0.97]"
@@ -250,7 +266,7 @@ export default function Header() {
         onClick={closeMenu}
         aria-hidden="true"
       />
-      <EnquiryModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      <EnquiryModal open={modalOpen} source={enquirySource} onClose={() => setModalOpen(false)} />
     </>
   );
 }
