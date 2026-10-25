@@ -1,0 +1,286 @@
+{
+  "metric": "Shared distinct five-word phrases / smaller phrase set; main content only; names retained",
+  "compared_service_pages": 82,
+  "targets": [
+    {
+      "path": "/services/toshiba-tv-repair-delhi",
+      "words": 799,
+      "closest": [
+        {
+          "path": "/services/toshiba-tv-repair-greater-noida",
+          "percent": 9.8
+        },
+        {
+          "path": "/services/toshiba-tv-repair-noida",
+          "percent": 9.78
+        },
+        {
+          "path": "/services/toshiba-tv-repair-ghaziabad",
+          "percent": 9.23
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/toshiba-tv-repair-noida",
+      "words": 792,
+      "closest": [
+        {
+          "path": "/services/lg-tv-repair-noida",
+          "percent": 12.96
+        },
+        {
+          "path": "/services/toshiba-tv-repair-greater-noida",
+          "percent": 11.05
+        },
+        {
+          "path": "/services/toshiba-tv-repair-delhi",
+          "percent": 9.78
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/toshiba-tv-repair-greater-noida",
+      "words": 816,
+      "closest": [
+        {
+          "path": "/services/vu-tv-repair-greater-noida",
+          "percent": 13.64
+        },
+        {
+          "path": "/services/lg-tv-repair-greater-noida",
+          "percent": 13.02
+        },
+        {
+          "path": "/services/toshiba-tv-repair-noida",
+          "percent": 11.05
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/toshiba-tv-repair-ghaziabad",
+      "words": 795,
+      "closest": [
+        {
+          "path": "/services/toshiba-tv-repair-greater-noida",
+          "percent": 9.61
+        },
+        {
+          "path": "/services/toshiba-tv-repair-noida",
+          "percent": 9.28
+        },
+        {
+          "path": "/services/toshiba-tv-repair-delhi",
+          "percent": 9.23
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/lg-tv-repair-noida",
+      "words": 802,
+      "closest": [
+        {
+          "path": "/services/toshiba-tv-repair-noida",
+          "percent": 12.96
+        },
+        {
+          "path": "/services/lg-tv-repair-greater-noida",
+          "percent": 11.14
+        },
+        {
+          "path": "/services/toshiba-tv-repair-greater-noida",
+          "percent": 8.51
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/lg-tv-repair-greater-noida",
+      "words": 838,
+      "closest": [
+        {
+          "path": "/services/toshiba-tv-repair-greater-noida",
+          "percent": 13.02
+        },
+        {
+          "path": "/services/vu-tv-repair-greater-noida",
+          "percent": 12.9
+        },
+        {
+          "path": "/services/lg-tv-repair-noida",
+          "percent": 11.14
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/vu-tv-repair-greater-noida",
+      "words": 831,
+      "closest": [
+        {
+          "path": "/services/toshiba-tv-repair-greater-noida",
+          "percent": 13.64
+        },
+        {
+          "path": "/services/lg-tv-repair-greater-noida",
+          "percent": 12.9
+        },
+        {
+          "path": "/services/lg-tv-repair-noida",
+          "percent": 8.39
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/plasma-tv-repair-ghaziabad",
+      "words": 781,
+      "closest": [
+        {
+          "path": "/services/toshiba-tv-repair-ghaziabad",
+          "percent": 6.58
+        },
+        {
+          "path": "/services/oled-qled-tv-repair-noida",
+          "percent": 5.81
+        },
+        {
+          "path": "/services/lg-tv-repair-greater-noida",
+          "percent": 5.42
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    },
+    {
+      "path": "/services/oled-qled-tv-repair-noida",
+      "words": 865,
+      "closest": [
+        {
+          "path": "/services/led-tv-repair-noida",
+          "percent": 10.34
+        },
+        {
+          "path": "/services/tv-repair-noida",
+          "percent": 10.0
+        },
+        {
+          "path": "/services/lcd-tv-repair-noida",
+          "percent": 6.44
+        }
+      ],
+      "preserved": {
+        "status": true,
+        "title": true,
+        "h1": true,
+        "description": true,
+        "canonical": true,
+        "robots": true,
+        "x_robots": true,
+        "internal_links": true,
+        "Service": true,
+        "BreadcrumbList": true,
+        "faq_matches_content": true
+      }
+    }
+  ],
+  "failures": []
+}

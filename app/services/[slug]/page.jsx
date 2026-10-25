@@ -24,6 +24,8 @@ import ContentTable from '@/components/ContentTable';
 import LocalityPage from '@/components/LocalityPage';
 import { getLocalityPageBySlug, getLocalityPagesByCity, localityPages } from '@/data/localityPages';
 import { PhoneLink, PhoneNumber, WhatsAppLink } from '@/components/ContactChannel';
+import ServicePageRevision from '@/components/ServicePageRevision';
+import { getServicePageRevision } from '@/data/servicePageRevisions';
 
 // Page copy is written with the SEO number; swap it for the visitor's channel
 // number so ad visitors browsing these pages never see the SEO line.
@@ -401,6 +403,19 @@ function LocalServicePage({ page }) {
     : page.relatedServiceLinks || [];
   const pageUrl = `${siteConfig.url}/services/${page.slug}`;
 
+  const content = getServicePageRevision(page.slug);
+  if (content) {
+    return <ServicePageRevision page={page} content={content} service={service}
+      relatedLinks={[
+        { label: 'GR Solution homepage', href: '/' },
+        { label: parentServiceTitle, href: parentServiceHref },
+        ...page.sameServiceOtherCities,
+        ...relatedSameCityPages,
+      ]}
+      guides={<RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />}
+    />;
+  }
+
   return (
     <main>
       <JsonLd
@@ -731,6 +746,20 @@ function LocalServicePage({ page }) {
 
 function BrandServicePage({ page }) {
   const pageUrl = `${siteConfig.url}/services/${page.slug}`;
+
+  const content = getServicePageRevision(page.slug);
+  if (content) {
+    return <ServicePageRevision page={page} content={content}
+      relatedLinks={[
+        { label: 'GR Solution homepage', href: '/' },
+        { label: 'All TV repair services', href: '/services' },
+        ...page.priorityInternalLinks,
+        ...page.relatedBrandCityLinks,
+        ...page.relatedCityServiceLinks,
+      ]}
+      guides={<RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />}
+    />;
+  }
 
   return (
     <main>

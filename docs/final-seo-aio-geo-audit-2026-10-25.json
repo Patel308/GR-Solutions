@@ -1,0 +1,48 @@
+{
+  "sitemap_pages_tested": 106,
+  "metadata_fields_preserved": [
+    "status",
+    "title",
+    "h1",
+    "description",
+    "canonical",
+    "robots",
+    "x_robots"
+  ],
+  "main_content_changes": [
+    "/services/lg-tv-repair-greater-noida",
+    "/services/lg-tv-repair-noida",
+    "/services/oled-qled-tv-repair-noida",
+    "/services/plasma-tv-repair-ghaziabad",
+    "/services/toshiba-tv-repair-delhi",
+    "/services/toshiba-tv-repair-ghaziabad",
+    "/services/toshiba-tv-repair-greater-noida",
+    "/services/toshiba-tv-repair-noida",
+    "/services/vu-tv-repair-greater-noida"
+  ],
+  "faqs_match_visible_copy": 9,
+  "existing_destinations_preserved": true,
+  "extra_internal_destinations_checked": 0,
+  "sitemap_dates_changed_only_for_revised_pages": true,
+  "robots_and_llms_unchanged": true,
+  "crawler_consistency": [
+    {
+      "agent": "Googlebot",
+      "same_server_rendered_main": true
+    },
+    {
+      "agent": "OAI-SearchBot",
+      "same_server_rendered_main": true
+    },
+    {
+      "agent": "GPTBot",
+      "same_server_rendered_main": true
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "service": "gr-solution"
+  },
+  "failures": [],
+  "limits": "Technical regression and extractability checks; not a Google indexing, ranking or AI citation guarantee."
+}

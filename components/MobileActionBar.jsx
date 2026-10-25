@@ -15,7 +15,7 @@ function trackEvent(name, params) {
 }
 
 const buttonClass =
-  'flex min-h-[48px] items-center justify-center gap-2 rounded-xl px-2 text-[15px] font-extrabold leading-none transition active:scale-[0.98]';
+  'flex min-h-[48px] min-w-0 flex-col items-center justify-center gap-1 rounded-xl px-1.5 py-1.5 text-[12px] font-extrabold leading-tight transition active:scale-[0.98] min-[360px]:flex-row min-[360px]:text-[13px] sm:gap-2 sm:text-[15px]';
 
 export default function MobileActionBar() {
   const openBookVisit = () => {
@@ -34,16 +34,19 @@ export default function MobileActionBar() {
         style={{ paddingBottom: 'calc(0.5rem + env(safe-area-inset-bottom))' }}
       >
         <PhoneLink callLocation="mobile_action_bar_call" className={`${buttonClass} bg-primary text-white`}>
-          <i className="fa-solid fa-phone" aria-hidden="true" /> Call
+          <i className="fa-solid fa-phone shrink-0" aria-hidden="true" />
+          <span className="whitespace-nowrap">Call</span>
         </PhoneLink>
         <WhatsAppLink
           className={`${buttonClass} bg-[#25d366] text-white`}
           onClick={() => trackEvent('click_whatsapp', {})}
         >
-          <i className="fa-brands fa-whatsapp" aria-hidden="true" /> WhatsApp
+          <i className="fa-brands fa-whatsapp shrink-0" aria-hidden="true" />
+          <span className="whitespace-nowrap">WhatsApp</span>
         </WhatsAppLink>
         <button type="button" className={`${buttonClass} border-2 border-primary bg-white text-primary`} onClick={openBookVisit}>
-          <i className="fa-solid fa-calendar-check" aria-hidden="true" /> Book Visit
+          <i className="fa-solid fa-calendar-check shrink-0" aria-hidden="true" />
+          <span className="whitespace-nowrap">Book Visit</span>
         </button>
       </nav>
     </>
