@@ -1,0 +1,137 @@
+{
+  "origin": "http://127.0.0.1:3100",
+  "checked_pages": 108,
+  "blog_articles": 17,
+  "replaced_articles": 11,
+  "remaining_legacy_articles": 4,
+  "remaining_duplicate_article_groups": [
+    [
+      "/blog/tv-screen-lines-vertical-horizontal",
+      "/blog/tv-repair-vs-replacement-guide"
+    ]
+  ],
+  "replacement_bytes_min": 32518,
+  "replacement_bytes_max": 175566,
+  "images": [
+    {
+      "path": "/blog/tv-motherboard-diagnosis",
+      "image": "/images/blog/tv-motherboard-diagnosis.webp",
+      "bytes": 166660,
+      "sha256": "c1c128795d71fd20483821d33c47768a2175f7dd1fba66a7b0f78623197e22d0",
+      "replaced": false
+    },
+    {
+      "path": "/blog/prepare-for-doorstep-tv-repair",
+      "image": "/images/blog/doorstep-tv-repair.webp",
+      "bytes": 181554,
+      "sha256": "1e3a18d837f3bdedbb747442ff3e497e387e9bd3d0cb929d4200ee65e43d707c",
+      "replaced": false
+    },
+    {
+      "path": "/blog/tv-repair-cost-delhi",
+      "image": "/images/blog/tv-repair-cost-delhi.webp",
+      "bytes": 159302,
+      "sha256": "45295a0a01ee735df5687760b0a7290bcf55618c31a937bab9ddc3d79b148816",
+      "replaced": true
+    },
+    {
+      "path": "/blog/tv-repair-cost-noida",
+      "image": "/images/blog/tv-repair-cost-noida.webp",
+      "bytes": 115120,
+      "sha256": "f7952eec838611b92c3050a24f0b166a598e88b6878f792f777960604cb393e7",
+      "replaced": true
+    },
+    {
+      "path": "/blog/tv-repair-cost-greater-noida",
+      "image": "/images/blog/tv-repair-cost-greater-noida.webp",
+      "bytes": 100590,
+      "sha256": "b07d778142b8345d871ccb45ef1e269c68c18e7f7a075801e328c48ccc16122c",
+      "replaced": true
+    },
+    {
+      "path": "/blog/tv-repair-cost-ghaziabad",
+      "image": "/images/blog/tv-repair-cost-ghaziabad.webp",
+      "bytes": 133212,
+      "sha256": "fee1b09f8a3c4738a4c496bebbed8d0b9a3f1529b538a640e07cbd53b04a1ba7",
+      "replaced": true
+    },
+    {
+      "path": "/blog/tv-screen-replacement-cost-delhi-ncr",
+      "image": "/images/blog/tv-screen-replacement-cost-delhi-ncr.webp",
+      "bytes": 82392,
+      "sha256": "b01d3794053d3d697c72cec280c1a251117220439bc3c4664177c365010e8f15",
+      "replaced": true
+    },
+    {
+      "path": "/blog/tv-sound-but-no-picture",
+      "image": "/images/blog/tv-sound-but-no-picture.webp",
+      "bytes": 32518,
+      "sha256": "cce7a60323a35888f3324c76f2fafc5c8cf7eec3431cbadbd0bd590fd8dcb5f5",
+      "replaced": true
+    },
+    {
+      "path": "/blog/tv-not-turning-on",
+      "image": "/images/blog/tv-not-turning-on.webp",
+      "bytes": 85346,
+      "sha256": "7c6633723d4c2044671d1157560954842f2dbf01f1fb7c669386220bf4ee2f25",
+      "replaced": true
+    },
+    {
+      "path": "/blog/tv-screen-lines-vertical-horizontal",
+      "image": "/images/service_panel.webp",
+      "bytes": 130682,
+      "sha256": "6f359fc2edd8307fa2374521e704002ad73552026fc5bf5f00827df13537b6b4",
+      "replaced": false
+    },
+    {
+      "path": "/blog/tv-backlight-failure-symptoms",
+      "image": "/images/service_tv.webp",
+      "bytes": 138628,
+      "sha256": "e4ede543564b8dfd3769025683068a73baebe264b1c87f0e4d19194499fd344c",
+      "replaced": false
+    },
+    {
+      "path": "/blog/tv-keeps-restarting",
+      "image": "/images/service_oled.webp",
+      "bytes": 72624,
+      "sha256": "5ebe4e4712dc08569d737a6e2713ed669d35ab60cbeda902e3a2ed08e4d9a075",
+      "replaced": false
+    },
+    {
+      "path": "/blog/tv-repair-vs-replacement-guide",
+      "image": "/images/service_panel.webp",
+      "bytes": 130682,
+      "sha256": "6f359fc2edd8307fa2374521e704002ad73552026fc5bf5f00827df13537b6b4",
+      "replaced": false
+    },
+    {
+      "path": "/blog/led-tv-screen-replacement-cost-delhi",
+      "image": "/images/blog/led-tv-screen-replacement-cost-delhi.webp",
+      "bytes": 122820,
+      "sha256": "27d4bbb9291eeeceb84a0c9e476f67599d1072ad45f324b29ca3560e9c2a177a",
+      "replaced": true
+    },
+    {
+      "path": "/blog/led-tv-panel-repair-delhi",
+      "image": "/images/blog/led-tv-panel-repair-delhi.webp",
+      "bytes": 174750,
+      "sha256": "3eec82c65c77a527d8fb51c7952a373bb27c03090e9ea29cdc0acc7cfa811bed",
+      "replaced": true
+    },
+    {
+      "path": "/blog/led-tv-screen-repair-delhi-ncr",
+      "image": "/images/blog/led-tv-screen-repair-delhi-ncr.webp",
+      "bytes": 53722,
+      "sha256": "d7e8c00325cd056b9ab485c41dfa06fbc805eccd003a6fe931bf98868e11e199",
+      "replaced": true
+    },
+    {
+      "path": "/blog/lcd-tv-repair-cost-delhi-ncr",
+      "image": "/images/blog/lcd-tv-repair-cost-delhi-ncr.webp",
+      "bytes": 175566,
+      "sha256": "cc2b4a96b58a397109f8df7bc498a6f99192d071bc574c1a0bd7ece0f5146168",
+      "replaced": true
+    }
+  ],
+  "failures": []
+}

@@ -5,6 +5,7 @@ import { repairPriceBands } from './pricing';
 export const repairTrustGuides = [
   {
     slug: 'tv-motherboard-diagnosis',
+    trustGuide: true,
     publishedAt: '2026-10-25',
     title: 'TV Motherboard Diagnosis: Evidence Before Replacement',
     h1: 'TV Motherboard Diagnosis: Check Before You Replace',
@@ -13,8 +14,9 @@ export const repairTrustGuides = [
     category: 'DIAGNOSIS GUIDE',
     primaryKeyword: 'tv motherboard repair cost',
     image: '/images/blog/tv-motherboard-diagnosis.webp',
+    imageWidth: 1536,
+    imageHeight: 1024,
     imageAlt: 'Illustration of an unplugged TV with separate power and main boards, model information and a diagnostic notebook',
-    imageCaption: 'Original AI-generated explanatory illustration. Board layout varies by model; this is not a repair photograph or a wiring diagram.',
     directAnswer: 'A TV stuck on its logo, restarting or losing HDMI input may have a motherboard fault, but those symptoms can also come from software, connected devices or the power supply. Record the model and repeatable symptoms, try only the manufacturer’s external checks, and ask what diagnostic evidence supports a board repair before approving replacement.',
     intro: 'The mainboard processes inputs, runs the TV software and controls many of its functions. It is not the same as the power supply board, a backlight driver or the display panel. Replacing it because a symptom sounds familiar can leave the original fault unresolved. This guide helps owners and repair mechanics organise observations and agree on the next diagnostic step; it does not replace a model-specific service manual or electrical safety training.',
     sections: [
@@ -109,6 +111,7 @@ export const repairTrustGuides = [
   },
   {
     slug: 'prepare-for-doorstep-tv-repair',
+    trustGuide: true,
     publishedAt: '2026-10-25',
     title: 'Doorstep TV Repair: A Customer’s Visit Checklist',
     h1: 'Doorstep TV Repair: Your Visit Checklist',
@@ -117,8 +120,9 @@ export const repairTrustGuides = [
     category: 'CUSTOMER CHECKLIST',
     primaryKeyword: 'tv repair home service',
     image: '/images/blog/doorstep-tv-repair.webp',
+    imageWidth: 1536,
+    imageHeight: 1024,
     imageAlt: 'Illustration of a customer and TV repair technician discussing a model photo, estimate and final-check checklist at home',
-    imageCaption: 'Original AI-generated illustration of a visit discussion. It does not depict an actual customer, technician or completed GR Solution job.',
     directAnswer: 'Before a doorstep TV repair visit, share the TV’s model, screen size, symptom, city and mounting details. Confirm visit availability and any handling or transport charges. After diagnosis, approve the scope and total estimate before paid work, then check the original fault, picture, sound and inputs before accepting completion.',
     intro: 'A clear repair process gives you something more useful than a promise that every TV can be fixed: you know what is being checked, what you are approving and what to do if the fault returns. This checklist is for households arranging independent TV repair in Delhi, Noida, Greater Noida and Ghaziabad. It also helps avoid a visit delayed by missing model information or inaccessible wall mounting.',
     sections: [

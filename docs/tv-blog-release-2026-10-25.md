@@ -57,3 +57,5 @@ Validation completed:
 - Raw reports: `blog-release-audit-2026-10-25.json` and `blog-ui-audit-2026-10-25.json`.
 
 GA4 collection has not been verified in the account's reporting interface. Register the event parameters as custom dimensions if content/placement breakdowns are needed in standard reports. Compare onsite click/view rates after release; use GSC separately for search-result CTR and operational records for real booked work.
+
+Subsequent user correction: visible image-generation captions were removed in the later image refresh. Image provenance and prompts remain in the project documentation. See `blog-image-refresh-2026-10-25.md` for the final image scope and caption policy.

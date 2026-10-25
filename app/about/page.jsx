@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import WorkshopGallery from '@/components/WorkshopGallery';
+import workshopStyles from '@/components/WorkshopGallery.module.css';
 import Link from 'next/link';
 import ContentTable from '@/components/ContentTable';
 import JsonLd from '@/components/JsonLd';
@@ -63,30 +65,6 @@ const howWeWork = [
   {
     title: 'Warranty explained up front',
     text: 'Warranty depends on the repair and the part used, and is explained before the work starts.',
-  },
-];
-
-const workshopPhotos = [
-  {
-    src: '/images/workshop-repair-bench.webp',
-    alt: 'GR Solution workshop repair bench with TV panels and diagnostic equipment',
-    caption: 'The repair bench, where panel and board-level work is done',
-    width: 1200,
-    height: 900,
-  },
-  {
-    src: '/images/workshop-tv-diagnosis.webp',
-    alt: 'GR Solution technician inspecting a TV at the workshop',
-    caption: 'Diagnosing a TV before any repair is quoted',
-    width: 720,
-    height: 960,
-  },
-  {
-    src: '/images/workshop-interior.webp',
-    alt: 'Interior view of the GR Solution TV repair workshop in New Kondli',
-    caption: 'Inside the New Kondli workshop',
-    width: 141,
-    height: 118,
   },
 ];
 
@@ -201,7 +179,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className={`${workshopStyles.section} py-20`}>
         <div className="container">
           <div className="mb-12 max-w-3xl">
             <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">REAL WORKSHOP</span>
@@ -210,21 +188,7 @@ export default function AboutPage() {
               These photos are from the GR Solution workshop in New Kondli, where bench-level repairs are carried out.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {workshopPhotos.map((photo) => (
-              <figure key={photo.src} className="m-0 overflow-hidden rounded-card bg-white shadow-oldMd">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  width={photo.width}
-                  height={photo.height}
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                  className="aspect-[4/3] h-auto w-full object-cover"
-                />
-                <figcaption className="p-5 font-bold text-secondary">{photo.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
+          <WorkshopGallery />
         </div>
       </section>
 

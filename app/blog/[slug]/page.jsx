@@ -11,6 +11,7 @@ import PriceTable from '@/components/PriceTable';
 import ContentTable from '@/components/ContentTable';
 import GuideBookingCTA from '@/components/GuideBookingCTA';
 import { getSupportingTrustGuides } from '@/data/repairTrustGuides';
+import styles from './article.module.css';
 
 export function generateStaticParams() {
   return blogArticles.map((article) => ({ slug: article.slug }));
@@ -117,13 +118,13 @@ export default async function BlogArticlePage({ params }) {
         </div>
       </section>
 
-      <section className="bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-24">
-        <div className="container grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
+      <section className={`${styles.hero} bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-12 md:py-24`}>
+        <div className={`${styles.heroGrid} container grid items-center gap-8 lg:gap-10 lg:grid-cols-[0.9fr_1.1fr]`}>
           <div>
             <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">
               {article.category}
             </span>
-            <h1 className={`mt-6 font-black leading-tight text-secondary ${article.imageCaption ? 'text-[clamp(2.2rem,4.2vw,3.5rem)]' : 'text-[clamp(2.7rem,5vw,4.6rem)]'}`}>{article.h1}</h1>
+            <h1 className={`mt-6 font-black leading-tight text-secondary ${article.trustGuide ? 'text-[clamp(2.2rem,4.2vw,3.5rem)]' : 'text-[clamp(2.7rem,5vw,4.6rem)]'}`}>{article.h1}</h1>
             <p className="mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
               {article.directAnswer}
             </p>
@@ -150,9 +151,8 @@ export default async function BlogArticlePage({ params }) {
               ) : null}
             </div>
           </div>
-          <figure className="min-w-0">
-            <Image src={article.image} alt={article.imageAlt || `${article.h1} guide by GR Solution`} width={680} height={article.imageCaption ? 453 : 500} sizes="(min-width: 1024px) 45vw, 100vw" className={`w-full rounded-3xl object-cover shadow-cardPro ${article.imageCaption ? 'aspect-[3/2] h-auto' : 'h-[min(520px,52vw)] min-h-[340px]'}`} priority />
-            {article.imageCaption ? <figcaption className="mt-3 text-sm leading-relaxed text-textMuted">{article.imageCaption}</figcaption> : null}
+          <figure className={styles.heroFigure}>
+            <Image src={article.image} alt={article.imageAlt || `${article.h1} guide by GR Solution`} width={article.imageWidth || 1024} height={article.imageHeight || 1024} sizes="(min-width: 992px) 52vw, 100vw" className={`${styles.heroImage} rounded-2xl shadow-cardPro md:rounded-3xl`} priority />
           </figure>
         </div>
       </section>
@@ -250,8 +250,8 @@ export default async function BlogArticlePage({ params }) {
       <PageCTA
         title="Need TV Repair Guidance?"
         description="Call or WhatsApp GR Solution with your TV model, fault symptoms and location for inspection-based next steps."
-        badge={article.imageCaption ? 'INSPECTION-BASED GUIDANCE' : undefined}
-        benefits={article.imageCaption ? ['Independent repair provider', 'Estimate before paid work', 'Visit availability confirmed first'] : undefined}
+        badge={article.trustGuide ? 'INSPECTION-BASED GUIDANCE' : undefined}
+        benefits={article.trustGuide ? ['Independent repair provider', 'Estimate before paid work', 'Visit availability confirmed first'] : undefined}
       />
     </main>
   );

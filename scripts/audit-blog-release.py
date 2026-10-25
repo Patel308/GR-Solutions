@@ -76,8 +76,6 @@ def check(current, before, origin):
                 with urllib.request.urlopen(origin + blog['image'].removeprefix(PUBLIC), timeout=30) as image:
                     if image.status != 200 or not image.headers.get('Content-Type', '').startswith('image/'):
                         errors.append(path + ': image not served')
-            if 'AI-generated' not in page['text']:
-                errors.append(path + ': illustration disclosure missing')
             if '/pricing' not in page['links'] or '/contact' not in page['links']:
                 errors.append(path + ': missing conversion links')
             if not any(path in p['links'] for other, p in pages.items() if other != path):
