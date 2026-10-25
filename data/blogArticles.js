@@ -8,6 +8,7 @@ export const blogAuthor = {
 
 import { costGuideArticles } from './costGuides';
 import { symptomGuideArticles } from './symptomGuides';
+import { repairTrustGuides } from './repairTrustGuides';
 
 const coreArticles = [
   {
@@ -277,7 +278,7 @@ const coreArticles = [
  */
 // Cost guides live in their own file because they carry tables and price data.
 // Newest first, so /blog leads with the freshest material.
-export const blogArticles = [...costGuideArticles, ...symptomGuideArticles, ...coreArticles];
+export const blogArticles = [...repairTrustGuides, ...costGuideArticles, ...symptomGuideArticles, ...coreArticles];
 
 export function getArticlesLinkingTo(path) {
   if (!path) return [];

@@ -1,0 +1,45 @@
+{
+  "origin": "http://127.0.0.1:3100",
+  "checked_pages": 108,
+  "existing_pages_preserved": 106,
+  "new_pages": [
+    "/blog/prepare-for-doorstep-tv-repair",
+    "/blog/tv-motherboard-diagnosis"
+  ],
+  "changed_existing_body": [
+    "/pricing",
+    "/blog",
+    "/services/led-tv-repair",
+    "/services/tv-repair-delhi",
+    "/services/tv-repair-noida",
+    "/services/tv-repair-greater-noida",
+    "/services/tv-repair-ghaziabad",
+    "/blog/tv-repair-cost-delhi",
+    "/blog/tv-repair-cost-noida",
+    "/blog/tv-repair-cost-greater-noida",
+    "/blog/tv-repair-cost-ghaziabad",
+    "/blog/tv-screen-replacement-cost-delhi-ncr",
+    "/blog/tv-sound-but-no-picture",
+    "/blog/tv-not-turning-on",
+    "/blog/tv-screen-lines-vertical-horizontal",
+    "/blog/tv-backlight-failure-symptoms",
+    "/blog/tv-keeps-restarting",
+    "/blog/tv-repair-vs-replacement-guide",
+    "/blog/led-tv-screen-replacement-cost-delhi",
+    "/blog/led-tv-panel-repair-delhi",
+    "/blog/led-tv-screen-repair-delhi-ncr",
+    "/blog/lcd-tv-repair-cost-delhi-ncr"
+  ],
+  "service_max_phrase_overlap": {
+    "/services/toshiba-tv-repair-delhi": 9.8,
+    "/services/toshiba-tv-repair-noida": 12.96,
+    "/services/toshiba-tv-repair-greater-noida": 13.64,
+    "/services/toshiba-tv-repair-ghaziabad": 9.61,
+    "/services/lg-tv-repair-noida": 12.96,
+    "/services/lg-tv-repair-greater-noida": 13.02,
+    "/services/vu-tv-repair-greater-noida": 13.64,
+    "/services/plasma-tv-repair-ghaziabad": 6.58,
+    "/services/oled-qled-tv-repair-noida": 10.34
+  },
+  "failures": []
+}

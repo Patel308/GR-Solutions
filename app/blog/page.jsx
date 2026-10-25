@@ -5,6 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 import { blogArticles } from '@/data/blogArticles';
+import GuideBookingCTA from '@/components/GuideBookingCTA';
 
 export const metadata = {
   title: pageMetadata.blog.title,
@@ -19,6 +20,7 @@ const posts = [
     title: article.title,
     text: article.metaDescription,
     image: article.image,
+    imageAlt: article.imageAlt,
     link: `/blog/${article.slug}`,
   })),
   {
@@ -109,18 +111,19 @@ export default function BlogPage() {
           <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <article className="flex min-h-[590px] flex-col overflow-hidden rounded-card border border-black/5 bg-white p-0 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg" key={post.title}>
-                <Image src={post.image} alt={`${post.title} by GR Solution`} width={520} height={320} className="h-[290px] w-full object-cover" />
+                <Link href={post.link} tabIndex={-1} aria-hidden="true"><Image src={post.image} alt={post.imageAlt || `${post.title} by GR Solution`} width={520} height={320} sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="h-[290px] w-full object-cover" /></Link>
                 <div className="flex flex-1 flex-col gap-4 p-10">
                   <span className="inline-flex self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">{post.category}</span>
-                  <h3 className="text-2xl font-black leading-tight text-secondary">{post.title}</h3>
+                  <h3 className="text-2xl font-black leading-tight text-secondary"><Link href={post.link} className="hover:text-primary">{post.title}</Link></h3>
                   <p className="text-lg leading-relaxed text-textMuted">{post.text}</p>
                   <Link href={post.link} className="mt-auto font-black text-primary hover:text-secondary">
-                    Read More <span aria-hidden="true">-&gt;</span>
+                    Read guide <span className="sr-only">: {post.title}</span> <span aria-hidden="true">-&gt;</span>
                   </Link>
                 </div>
               </article>
             ))}
           </div>
+          <GuideBookingCTA contentId="blog-index" placement="after_guides" />
         </div>
       </section>
       <PageCTA title="Need Help With Your TV Repair Issue?" />
