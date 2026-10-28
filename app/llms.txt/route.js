@@ -1,3 +1,4 @@
+import { brandRepairHubs } from '@/data/brandRepairHubs';
 import { services } from '@/data/services';
 import { cities, cityTvRepairPages } from '@/data/localServicePages';
 import { brands } from '@/data/brandServicePages';
@@ -33,6 +34,8 @@ export function GET() {
     '## Services',
     '',
     ...services.map((service) => `- [${service.title}](${url}/services/${service.slug}): ${service.shortDescription}`),
+    '',
+    ...brandRepairHubs.map((page) => `- [${page.h1}](${url}/services/${page.slug}): Independent model-specific repair options, estimates and links to city service pages.`),
     '',
     '## Service areas',
     '',

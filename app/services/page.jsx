@@ -1,3 +1,4 @@
+import { brandRepairHubs } from '@/data/brandRepairHubs';
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
@@ -232,6 +233,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="bg-bgLight py-16">
+        <div className="container">
+          <h2 className="text-3xl font-black text-secondary">Model-specific repair and estimate guides</h2>
+          <p className="mt-4 leading-relaxed text-textMuted">Understand the display type, proposed repair and quotation before choosing your local visit page.</p>
+          <div className="mt-6 grid gap-5 md:grid-cols-3">{brandRepairHubs.map((hub) => <Link key={hub.slug} href={`/services/${hub.slug}`} className="rounded-2xl bg-white p-6 font-black text-primary shadow-oldMd">{hub.h1}: models, faults and estimates →</Link>)}</div>
+        </div>
+      </section>
       {/* 4-Step Repair Process */}
       <section className="bg-bgLight py-24">
         <div className="container">

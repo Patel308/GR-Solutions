@@ -1,0 +1,68 @@
+{
+  "origin": "http://127.0.0.1:3100",
+  "checked_pages": 111,
+  "preserved_existing_pages": 108,
+  "new_hubs": [
+    "/services/lg-tv-repair",
+    "/services/samsung-tv-repair",
+    "/services/sony-tv-repair"
+  ],
+  "existing_pages_with_additive_links": [
+    "/services",
+    "/services/brands",
+    "/services/lg-tv-repair-delhi",
+    "/services/samsung-tv-repair-delhi",
+    "/services/sony-tv-repair-noida"
+  ],
+  "phrase_overlap": {
+    "/services/lg-tv-repair": {
+      "percent": 24.46,
+      "nearest": "/services/sony-tv-repair"
+    },
+    "/services/lg-tv-repair-greater-noida": {
+      "percent": 13.02,
+      "nearest": "/services/toshiba-tv-repair-greater-noida"
+    },
+    "/services/lg-tv-repair-noida": {
+      "percent": 12.96,
+      "nearest": "/services/toshiba-tv-repair-noida"
+    },
+    "/services/oled-qled-tv-repair-noida": {
+      "percent": 10.34,
+      "nearest": "/services/led-tv-repair-noida"
+    },
+    "/services/plasma-tv-repair-ghaziabad": {
+      "percent": 6.58,
+      "nearest": "/services/toshiba-tv-repair-ghaziabad"
+    },
+    "/services/samsung-tv-repair": {
+      "percent": 24.31,
+      "nearest": "/services/sony-tv-repair"
+    },
+    "/services/sony-tv-repair": {
+      "percent": 24.46,
+      "nearest": "/services/lg-tv-repair"
+    },
+    "/services/toshiba-tv-repair-delhi": {
+      "percent": 9.8,
+      "nearest": "/services/toshiba-tv-repair-greater-noida"
+    },
+    "/services/toshiba-tv-repair-ghaziabad": {
+      "percent": 9.61,
+      "nearest": "/services/toshiba-tv-repair-greater-noida"
+    },
+    "/services/toshiba-tv-repair-greater-noida": {
+      "percent": 13.64,
+      "nearest": "/services/vu-tv-repair-greater-noida"
+    },
+    "/services/toshiba-tv-repair-noida": {
+      "percent": 12.96,
+      "nearest": "/services/lg-tv-repair-noida"
+    },
+    "/services/vu-tv-repair-greater-noida": {
+      "percent": 13.64,
+      "nearest": "/services/toshiba-tv-repair-greater-noida"
+    }
+  },
+  "failures": []
+}
