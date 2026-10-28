@@ -39,9 +39,12 @@ Base commit: b4a543b88dc9de270d5ebc6c4fb7e9527be63dff
 - Existing topic titles and keywords are unchanged; existing text is retained as the prefix of each expanded topic.
 - Each target has four unique topic keywords and headings.
 - Confirmed that the target pages use the existing SupportingTopicsSection renderer rather than ServicePageRevision overrides.
-- Full npm lint, Next.js build, browser rendering and live crawl were not run: the local environment cannot reach the network proxy to clone/install dependencies. This draft must receive those checks before merge.
+- Network access was restored before production release. npm ci, npm run lint and npm run build passed.
+- Crawled all 108 indexed live URLs as a baseline and compared them with the local production build: zero errors. Only the three target pages changed visible text; metadata, H1, canonical, robots directives, all structured data and internal links are identical.
+- Existing visible words remain in their original order. Sitemap URL set, robots.txt and llms.txt are unchanged.
+- Chromium checks passed on all three pages at 390px and 1440px: HTTP 200, one H1, four visible supporting-topic cards, Call/WhatsApp/booking links, working FAQ toggles, no horizontal overflow and no browser page errors.
 - The existing GitHub workflow triggers on main pushes or manual dispatch and includes production deployment; it was not triggered for draft validation.
 
 ## Release boundary
 
-This branch is for review. It has not been merged or deployed. Rankings and AI/search visibility are not guaranteed by unchanged technical signals; compare Search Console query-to-page performance after any approved release.
+The user authorized production release after reviewing PR #3. Pre-merge lint, build, rendered SEO regression and browser checks passed. The existing main-push workflow will perform its quality gate before building and deploying the production image. Compare Search Console query-to-page performance after release; unchanged technical signals do not guarantee rankings or AI/search visibility.
