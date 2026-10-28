@@ -1,5 +1,7 @@
 # Transactional repair hubs — 28 October 2026
 
+**Subsequent ownership review: do not publish these drafts as-is.** See `cannibalisation-review-2026-10-28.md`. Technical checks passed, but the chosen repair-intent groups already have city-page owners; the new regional-hub distinction does not sufficiently separate their transactional intent.
+
 ## Evidence reviewed before implementation
 
 The latest research package found locally is `SEO_KEYWORD_RESEARCH_2026-10/GR_SOLUTION/`, extracted 25 October 2026. Reviewed its technical SEO/AEO/GEO audit, landing-page priorities, article briefs, assumptions/gaps, competitor/SERP report and clean keyword rows. The older `Keyword_Research/` export was not used as the primary selection source. This is a review of the latest saved research, not a claim that Keyword Planner was rerun on 28 October.
