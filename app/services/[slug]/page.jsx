@@ -1,3 +1,5 @@
+import RepairLandingPage, { RepairPageLinks } from '@/components/RepairLandingPage';
+import { repairLandingPages, getRepairLandingPage } from '@/data/repairLandingPages';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -93,11 +95,17 @@ const genericProcess = [
 ];
 
 export function generateStaticParams() {
-  return [...services, ...localServicePages, ...localityPages, ...brandServicePages].map((page) => ({ slug: page.slug }));
+  return [...services, ...localServicePages, ...localityPages, ...brandServicePages, ...repairLandingPages].map((page) => ({ slug: page.slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const landing = getRepairLandingPage(slug);
+  if (landing) return {
+    title: landing.title, description: landing.description,
+    alternates: { canonical: `/services/${landing.slug}` },
+    openGraph: { title: landing.title, description: landing.description, url: `/services/${landing.slug}`, images: [landing.photo] },
+  };
   const localityPage = getLocalityPageBySlug(slug);
   if (localityPage) {
     return {
@@ -161,6 +169,8 @@ export async function generateMetadata({ params }) {
 
 export default async function ServiceDetailPage({ params }) {
   const { slug } = await params;
+  const landing = getRepairLandingPage(slug);
+  if (landing) return <RepairLandingPage page={landing} />;
   const localityPage = getLocalityPageBySlug(slug);
   if (localityPage) return <LocalityPage page={localityPage} />;
 
@@ -369,6 +379,7 @@ export default async function ServiceDetailPage({ params }) {
 
       <ServiceFaultsSection serviceSlug={service.slug} serviceTitle={service.title} cityPages={cityPages} />
 
+      <RepairPageLinks path={`/services/${service.slug}`} />
       <RelatedGuides path={`/services/${service.slug}`} />
 
       {/* CTA */}
@@ -689,6 +700,7 @@ function LocalServicePage({ page }) {
         </div>
       </section>
 
+      <RepairPageLinks path={`/services/${page.slug}`} />
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {(page.tvTypesCovered?.length > 0 || page.brandCityLinks?.length > 0) && (
@@ -1030,6 +1042,7 @@ function BrandServicePage({ page }) {
         </div>
       </section>
 
+      <RepairPageLinks path={`/services/${page.slug}`} />
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {/* FAQ */}

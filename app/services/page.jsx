@@ -1,3 +1,4 @@
+import { repairLandingPages } from '@/data/repairLandingPages';
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
@@ -232,6 +233,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="bg-bgLight py-16">
+        <div className="container">
+          <h2 className="text-3xl font-black text-secondary">Focused support for your repair request</h2>
+          <div className="mt-6 grid gap-5 md:grid-cols-2">{repairLandingPages.map((page) => <Link key={page.slug} href={`/services/${page.slug}`} className="rounded-2xl border border-primary/10 bg-white p-6 shadow-oldMd"><h3 className="text-xl font-black text-primary">{page.h1} →</h3><p className="mt-3 leading-relaxed text-textMuted">{page.kind === 'local' ? 'Plan a Dwarka visit with sector, access, model and estimate details.' : 'Separate app, Wi-Fi, input and startup complaints before approving work.'}</p></Link>)}</div>
+        </div>
+      </section>
       {/* 4-Step Repair Process */}
       <section className="bg-bgLight py-24">
         <div className="container">
