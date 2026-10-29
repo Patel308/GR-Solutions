@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/services/tv-repair-dwarka",
+    "all_http_200": true,
+    "same_server_rendered_text_h1": true,
+    "self_canonicals": true,
+    "index_follow": true
+  },
+  {
+    "path": "/services/smart-tv-repair",
+    "all_http_200": true,
+    "same_server_rendered_text_h1": true,
+    "self_canonicals": true,
+    "index_follow": true
+  }
+]

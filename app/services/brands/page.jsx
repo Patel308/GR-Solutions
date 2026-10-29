@@ -1,4 +1,3 @@
-import { brandRepairHubs } from '@/data/brandRepairHubs';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
@@ -102,7 +101,6 @@ export default function BrandsHubPage() {
                 className="flex flex-col rounded-card border border-black/5 bg-white p-7 shadow-oldMd transition hover:-translate-y-1 hover:shadow-oldLg"
               >
                 <h3 className="text-2xl font-black text-secondary">{brand.displayName} TV Repair</h3>
-                {brandRepairHubs.some((hub) => hub.slug === brand.slugSegment) ? <Link className="mt-3 font-bold text-primary underline" href={`/services/${brand.slugSegment}`}>Model and repair estimate guide</Link> : null}
                 <p className="mt-3 text-sm font-bold uppercase tracking-wide text-primary">
                   {brand.panelTypes}
                 </p>

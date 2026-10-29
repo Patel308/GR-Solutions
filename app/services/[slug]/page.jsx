@@ -1,5 +1,5 @@
-import BrandRepairHub, { BrandHubLink } from '@/components/BrandRepairHub';
-import { brandRepairHubs, getBrandRepairHub } from '@/data/brandRepairHubs';
+import RepairLandingPage, { RepairPageLinks } from '@/components/RepairLandingPage';
+import { repairLandingPages, getRepairLandingPage } from '@/data/repairLandingPages';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -95,16 +95,16 @@ const genericProcess = [
 ];
 
 export function generateStaticParams() {
-  return [...services, ...localServicePages, ...localityPages, ...brandServicePages, ...brandRepairHubs].map((page) => ({ slug: page.slug }));
+  return [...services, ...localServicePages, ...localityPages, ...brandServicePages, ...repairLandingPages].map((page) => ({ slug: page.slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const hub = getBrandRepairHub(slug);
-  if (hub) return {
-    title: hub.title, description: hub.description,
-    alternates: { canonical: `/services/${hub.slug}` },
-    openGraph: { title: hub.title, description: hub.description, url: `/services/${hub.slug}`, images: ['/images/workshop-repair-bench.webp'] },
+  const landing = getRepairLandingPage(slug);
+  if (landing) return {
+    title: landing.title, description: landing.description,
+    alternates: { canonical: `/services/${landing.slug}` },
+    openGraph: { title: landing.title, description: landing.description, url: `/services/${landing.slug}`, images: [landing.photo] },
   };
   const localityPage = getLocalityPageBySlug(slug);
   if (localityPage) {
@@ -169,8 +169,8 @@ export async function generateMetadata({ params }) {
 
 export default async function ServiceDetailPage({ params }) {
   const { slug } = await params;
-  const hub = getBrandRepairHub(slug);
-  if (hub) return <BrandRepairHub page={hub} />;
+  const landing = getRepairLandingPage(slug);
+  if (landing) return <RepairLandingPage page={landing} />;
   const localityPage = getLocalityPageBySlug(slug);
   if (localityPage) return <LocalityPage page={localityPage} />;
 
@@ -379,6 +379,7 @@ export default async function ServiceDetailPage({ params }) {
 
       <ServiceFaultsSection serviceSlug={service.slug} serviceTitle={service.title} cityPages={cityPages} />
 
+      <RepairPageLinks path={`/services/${service.slug}`} />
       <RelatedGuides path={`/services/${service.slug}`} />
 
       {/* CTA */}
@@ -699,6 +700,7 @@ function LocalServicePage({ page }) {
         </div>
       </section>
 
+      <RepairPageLinks path={`/services/${page.slug}`} />
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {(page.tvTypesCovered?.length > 0 || page.brandCityLinks?.length > 0) && (
@@ -824,7 +826,6 @@ function BrandServicePage({ page }) {
         ]}
       />
 
-      {['sony-tv-repair-noida', 'samsung-tv-repair-delhi', 'lg-tv-repair-delhi'].includes(page.slug) ? <BrandHubLink brandSlug={page.brandSlug} /> : null}
       {/* Breadcrumb */}
       <section className="border-b border-[#eee] bg-white py-2">
         <div className="container">
@@ -1041,6 +1042,7 @@ function BrandServicePage({ page }) {
         </div>
       </section>
 
+      <RepairPageLinks path={`/services/${page.slug}`} />
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {/* FAQ */}

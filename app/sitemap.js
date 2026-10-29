@@ -1,4 +1,4 @@
-import { brandRepairHubs } from '@/data/brandRepairHubs';
+import { repairLandingPages } from '@/data/repairLandingPages';
 import { services } from '@/data/services';
 import { localServicePages } from '@/data/localServicePages';
 import { brandServicePages } from '@/data/brandServicePages';
@@ -65,6 +65,6 @@ export default function sitemap() {
     priority: 0.75,
   }));
 
-  const repairHubs = brandRepairHubs.map((page) => ({ url: `${siteConfig.url}/services/${page.slug}`, lastModified: page.reviewedAt, changeFrequency: 'monthly', priority: 0.85 }));
-  return [...staticPages, ...servicePages, ...localPages, ...localityUrls, ...brandPages, ...blogArticlePages, ...repairHubs];
+  const repairPages = repairLandingPages.map((page) => ({ url: `${siteConfig.url}/services/${page.slug}`, lastModified: page.reviewedAt, changeFrequency: 'monthly', priority: 0.85 }));
+  return [...staticPages, ...servicePages, ...localPages, ...localityUrls, ...brandPages, ...blogArticlePages, ...repairPages];
 }

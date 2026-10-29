@@ -1,0 +1,299 @@
+{
+  "responsive": [
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRatioDifference": 4.69645695666543e-8,
+      "imageRight": 8.199981689453125,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "topicSections": 4,
+      "width": 320
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRatioDifference": 4.69645695666543e-8,
+      "imageRight": 8.199981689453125,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "topicSections": 4,
+      "width": 320
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRatioDifference": 7.551986835885317e-8,
+      "imageRight": 7.79998779296875,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "topicSections": 4,
+      "width": 390
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRatioDifference": 7.551986835885317e-8,
+      "imageRight": 7.79998779296875,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "topicSections": 4,
+      "width": 390
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 82.80000305175781,
+      "imageLoaded": true,
+      "imageRatioDifference": 0.000009424405801761182,
+      "imageRight": 83.01249694824219,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "topicSections": 4,
+      "width": 768
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 82.80000305175781,
+      "imageLoaded": true,
+      "imageRatioDifference": 0.000009424405801761182,
+      "imageRight": 83.01249694824219,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "topicSections": 4,
+      "width": 768
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 733.4000244140625,
+      "imageLoaded": true,
+      "imageRatioDifference": 0.000032856607992792775,
+      "imageRight": 183.83746337890625,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "topicSections": 4,
+      "width": 1440
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 733.4000244140625,
+      "imageLoaded": true,
+      "imageRatioDifference": 0.000032856607992792775,
+      "imageRight": 183.83746337890625,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "topicSections": 4,
+      "width": 1440
+    }
+  ],
+  "functional": [
+    {
+      "path": "/services/tv-repair-dwarka",
+      "booking": [
+        {
+          "placement": "hero",
+          "opens": true
+        },
+        {
+          "placement": "planner",
+          "opens": true
+        },
+        {
+          "placement": "estimate",
+          "opens": true
+        },
+        {
+          "placement": "closing",
+          "opens": true
+        }
+      ],
+      "checklist": "2 / 5 details ready",
+      "faqOpens": true
+    },
+    {
+      "path": "/services/smart-tv-repair",
+      "booking": [
+        {
+          "placement": "hero",
+          "opens": true
+        },
+        {
+          "placement": "planner",
+          "opens": true
+        },
+        {
+          "placement": "estimate",
+          "opens": true
+        },
+        {
+          "placement": "closing",
+          "opens": true
+        }
+      ],
+      "symptoms": [
+        {
+          "heading": "Separate the TV from the home connection",
+          "pressed": 1
+        },
+        {
+          "heading": "Identify the source and input involved",
+          "pressed": 1
+        },
+        {
+          "heading": "Describe the startup sequence",
+          "pressed": 1
+        },
+        {
+          "heading": "Record the app and error first",
+          "pressed": 1
+        }
+      ],
+      "faqOpens": true
+    }
+  ],
+  "finalInlineSvgChecks": [
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRight": 8.199981689453125,
+      "inlineSvgIcons": 29,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "width": 320
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRight": 8.199981689453125,
+      "inlineSvgIcons": 33,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "width": 320
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRight": 7.79998779296875,
+      "inlineSvgIcons": 29,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "width": 390,
+      "enquiryOpens": true
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 8,
+      "imageLoaded": true,
+      "imageRight": 7.79998779296875,
+      "inlineSvgIcons": 33,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "width": 390,
+      "enquiryOpens": true
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 82.80000305175781,
+      "imageLoaded": true,
+      "imageRight": 83.01249694824219,
+      "inlineSvgIcons": 29,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "width": 768
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 82.80000305175781,
+      "imageLoaded": true,
+      "imageRight": 83.01249694824219,
+      "inlineSvgIcons": 33,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "width": 768
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 733.4000244140625,
+      "imageLoaded": true,
+      "imageRight": 183.83746337890625,
+      "inlineSvgIcons": 29,
+      "overflow": false,
+      "path": "/services/tv-repair-dwarka",
+      "width": 1440
+    },
+    {
+      "actionOverflow": false,
+      "faqs": 6,
+      "fontIconElements": 0,
+      "h1": 1,
+      "imageFit": "contain",
+      "imageLeft": 733.4000244140625,
+      "imageLoaded": true,
+      "imageRight": 183.83746337890625,
+      "inlineSvgIcons": 33,
+      "overflow": false,
+      "path": "/services/smart-tv-repair",
+      "width": 1440
+    }
+  ],
+  "finalCheckDate": "2026-10-29",
+  "noEnquirySubmitted": true
+}
