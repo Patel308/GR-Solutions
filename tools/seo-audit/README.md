@@ -11,6 +11,7 @@ production.
 | `lighthouse.mjs` | Mobile Lighthouse (default mobile config: Moto G Power, simulated slow 4G, 4× CPU) on the five reference pages, 3 runs each, median run reported. Google Analytics is blocked so before/after numbers stay comparable. |
 | `screenshots.mjs` | Responsive audit at 360/390/414/768/1280/1440: horizontal overflow, H1 size and line count, fold position of the first CTA, fixed overlays, tap targets < 48px, CLS; first-viewport screenshots plus full-page captures at 390px. |
 | `ab-summary.mjs` | Summarises an interleaved Lighthouse A/B (below): median, mean and range per page and build, plus every run's numbers. |
+| `launch-map.mjs` | One row per URL, live vs new: status, sitemap, title, meta description, canonical, robots, H1–H3, internal links, image alt text and JSON-LD, with the diff items per page. Spacing-only differences (the live build's dropped word spaces) are ignored; signed-off changes name their rule. |
 
 ## Running
 
@@ -56,6 +57,15 @@ node ab-summary.mjs --dir $RUNS --variants live,new --labels "Live site,New site
 
 ## What is committed
 
+- `snapshots/live-2026-11-02/` — the **launch baseline**: the live site as of
+  `origin/main` 606f612 (raw and rendered), 110 sitemap URLs. Compare a launch
+  candidate against this, not the September baseline:
+
+  ```bash
+  node diff.mjs --base snapshots/live-2026-11-02 --head snapshots/current --out reports/current/seo-diff-vs-live.md
+  node launch-map.mjs --base snapshots/live-2026-11-02 --head snapshots/current \
+    --diff reports/current/seo-diff-vs-live.json --out reports/current/launch-map.md
+  ```
 - `snapshots/baseline/` — the Phase 0 baseline (raw server HTML), taken from a
   production build of commit `595b6c7` (see `snapshots/baseline/meta.json`).
 - `reports/phase-0/` — Lighthouse and responsive summaries of the old site.

@@ -38,6 +38,7 @@ export default function ContactForm({ id = 'contactForm', compact = false, title
       subject={dialogSource?.subject || 'New GR Solution website enquiry'}
       hidden={{ _template: 'table', ...(dialogSource ? { source: dialogSource.label } : {}) }}
       fields={compact ? ['service', 'area'] : ['service', 'issue']}
+      labels={{ service: 'Service Required' }}
     />
   );
 

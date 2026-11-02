@@ -86,14 +86,14 @@ export default function ServicePageRevision({ page, content, service, relatedLin
               {content.answer}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <PhoneLink callLocation={page.brand ? 'city_service_hero_call' : 'service_cta_call'} className="inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 font-black text-white shadow-cta">
-                <i className="fa-solid fa-phone" /> Call GR Solution
+              <PhoneLink callLocation={page.brand ? 'city_service_hero_call' : 'service_cta_call'} className="btn btn-primary btn-lg">
+                <i className="fa-solid fa-phone" aria-hidden="true" /> Call GR Solution
               </PhoneLink>
-              <Link href="/contact" className="inline-flex items-center justify-center rounded-full border-2 border-primary bg-white px-7 py-4 font-black text-primary">
+              <Link href="/contact" className="btn btn-secondary btn-lg">
                 {page.brand ? 'Book Repair' : 'Book Inspection'}
               </Link>
-              <WhatsAppLink className="inline-flex items-center gap-3 rounded-full bg-[#25d366] px-7 py-4 font-black text-white">
-                <i className="fa-brands fa-whatsapp" /> WhatsApp
+              <WhatsAppLink className="btn btn-whatsapp btn-lg">
+                <i className="fa-brands fa-whatsapp" aria-hidden="true" /> WhatsApp
               </WhatsAppLink>
             </div>
           </div>

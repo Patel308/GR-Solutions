@@ -1,8 +1,11 @@
 node_modules/
-# Only the Phase 0 baseline (raw HTML snapshots + site files) is committed.
+# Committed: the Phase 0 baseline and the launch baseline (live site,
+# 2026-11-02), raw HTML snapshots + site files.
 snapshots/*
 !snapshots/baseline/
 snapshots/baseline/pages-rendered/
+!snapshots/live-2026-11-02/
+snapshots/live-2026-11-02/pages-rendered/
 # Regenerable artefacts
 reports/**/lighthouse/raw/
 reports/**/lighthouse-*/raw/

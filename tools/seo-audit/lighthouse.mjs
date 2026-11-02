@@ -216,7 +216,12 @@ function toMarkdown(summaries, args) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const chromePath = args.chrome || process.env.CHROME_PATH || '/opt/pw-browsers/chromium';
-  const pages = args.only ? REFERENCE_PAGES.filter((page) => page.path === args.only) : REFERENCE_PAGES;
+  // --only takes a reference page or any other path on the site.
+  const pages = args.only
+    ? REFERENCE_PAGES.filter((page) => page.path === args.only).concat(
+        REFERENCE_PAGES.some((page) => page.path === args.only) ? [] : [{ name: args.only, path: args.only }],
+      )
+    : REFERENCE_PAGES;
   await mkdir(path.join(args.out, 'raw'), { recursive: true });
 
   const summaries = [];

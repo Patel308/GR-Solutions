@@ -71,7 +71,11 @@ function readRuns(dir, slug, variant) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const label = (variant, i) => args.labels[i] || variant;
-  const results = REFERENCE_PAGES.map((page) => ({
+  // Reference pages first, then any other page found in the runs folder.
+  const extra = [...new Set(readdirSync(args.dir).map((name) => name.replace(new RegExp(`-(${args.variants.join('|')})-\\d+$`), '')))]
+    .filter((slug) => !REFERENCE_PAGES.some((page) => slugFor(page.path) === slug))
+    .map((slug) => ({ name: `/${slug.replace(/__/g, '/')}`, path: `/${slug.replace(/__/g, '/')}` }));
+  const results = [...REFERENCE_PAGES, ...extra].map((page) => ({
     name: page.name,
     path: page.path,
     variants: Object.fromEntries(args.variants.map((v) => [v, readRuns(args.dir, slugFor(page.path), v)])),

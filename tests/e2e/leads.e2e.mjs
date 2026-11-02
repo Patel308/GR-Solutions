@@ -159,12 +159,13 @@ async function expectLinks(page, expected, label) {
 const events = (page, name) =>
   page.evaluate((n) => (window.dataLayer || []).filter((e) => e && e.event === n).map((e) => ({ ...e })), name);
 
-async function fillAndSubmit(page, form, { phone = '+91 98765-43210', name = 'E2E Tester' } = {}) {
+async function fillAndSubmit(page, form, { phone = '+91 98765-43210', name = 'E2E Tester', service } = {}) {
   const phoneField = form.locator('input[name="phone"]');
   await phoneField.click();
   await page.waitForTimeout(1700); // a human-ish pause (anti-bot timer)
   await phoneField.fill(phone);
   await form.locator('input[name="name"]').fill(name);
+  if (service) await form.locator('select[name="service"]').selectOption(service);
   await form.locator('button[type="submit"]').click();
 }
 
@@ -287,6 +288,30 @@ const FORMS = [
       return page.locator('dialog[open] form');
     },
   },
+  {
+    name: 'guide booking prompt (motherboard guide), New TV Purchase Enquiry',
+    url: '/blog/tv-motherboard-diagnosis',
+    mobile: true,
+    subject: 'New doorstep visit request (Book Visit)',
+    source: 'Guide: Request free diagnosis',
+    service: 'New TV Purchase Enquiry',
+    open: async (page) => {
+      await page.click('[data-guide-cta$=":after_intro"] button');
+      return page.locator('dialog[open] form');
+    },
+  },
+  {
+    name: 'Dwarka repair page booking button, premium OLED option',
+    url: '/services/tv-repair-dwarka',
+    mobile: false,
+    subject: 'New doorstep visit request (Book Visit)',
+    source: 'Repair page: Request free diagnosis',
+    service: 'Premium OLED TV Repair (LG, Sony, Samsung)',
+    open: async (page) => {
+      await page.click('[data-repair-actions$=":hero"] button');
+      return page.locator('dialog[open] form');
+    },
+  },
 ];
 
 for (const spec of FORMS) {
@@ -301,7 +326,7 @@ for (const spec of FORMS) {
 
     const emailBefore = formsubmitPosts.length;
     const receivedBefore = received.length;
-    await fillAndSubmit(page, form);
+    await fillAndSubmit(page, form, { service: spec.service });
     await page.getByText('Thank you. We will contact you shortly.').waitFor({ timeout: 10000 });
 
     // Email (FormSubmit) copy.
@@ -317,6 +342,7 @@ for (const spec of FORMS) {
     assert.equal(email.page, new URL(page.url()).pathname);
     if (spec.subject) assert.equal(email._subject, spec.subject);
     if (spec.source) assert.equal(email.source, spec.source);
+    if (spec.service) assert.equal(email.service, spec.service);
 
     // Server-side forwarding.
     const calls = await waitFor(() => {

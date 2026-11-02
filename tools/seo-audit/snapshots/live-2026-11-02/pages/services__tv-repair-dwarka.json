@@ -1,0 +1,1377 @@
+{
+  "path": "/services/tv-repair-dwarka",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 141246,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair Dwarka | Doorstep Diagnosis | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Arrange TV repair in Dwarka with free diagnosis and an estimate before paid work. Share your sector, TV model and access details to confirm a doorstep visit.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/tv-repair-dwarka"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair Dwarka | Doorstep Diagnosis | GR Solution"
+      ],
+      [
+        "og:description",
+        "Arrange TV repair in Dwarka with free diagnosis and an estimate before paid work. Share your sector, TV model and access details to confirm a doorstep visit."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/tv-repair-dwarka"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/workshop-repair-bench.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair Dwarka | Doorstep Diagnosis | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Arrange TV repair in Dwarka with free diagnosis and an estimate before paid work. Share your sector, TV model and access details to confirm a doorstep visit."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 2,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Repair Dwarka",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Have these visit details ready",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "A clear handover starts here",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Dwarka service details, clearly explained",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Before the technician arrives",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "A Dwarka visit planned around your television",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV repair at home in Dwarka: confirm the visit details",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "LED and LCD TV repair in Dwarka: identify the failed section",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Smart TV, OLED and QLED enquiries need the model first",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Large screens, wall mounts and workshop collection",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Tell us what the Dwarka inspection needs to reproduce",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Dwarka repair estimates: know which work you are comparing",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "What to agree before paid work",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Compare the full repair, not just a part price",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "From your Dwarka enquiry to an approved repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Share the set and sector",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Confirm what needs checking",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Approve a clear estimate",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Check the original problem",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Choose the next page for your situation",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Dwarka: common questions",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Let’s plan your Dwarka repair visit",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-west-delhi",
+      "text": "TV repair in West Delhi",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "main",
+      "section": "TV Repair Dwarka"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "TV Repair Dwarka"
+    },
+    {
+      "kind": "fragment",
+      "href": "#prepare",
+      "text": "Plan your visit",
+      "region": "main",
+      "section": "TV Repair Dwarka"
+    },
+    {
+      "kind": "fragment",
+      "href": "#repair-options",
+      "text": "Repair options",
+      "region": "main",
+      "section": "TV Repair Dwarka"
+    },
+    {
+      "kind": "fragment",
+      "href": "#estimate",
+      "text": "Cost & estimate",
+      "region": "main",
+      "section": "TV Repair Dwarka"
+    },
+    {
+      "kind": "fragment",
+      "href": "#questions",
+      "text": "Questions",
+      "region": "main",
+      "section": "TV Repair Dwarka"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "main",
+      "section": "Have these visit details ready"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Have these visit details ready"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "See our workshop and repair process →",
+      "region": "main",
+      "section": "Dwarka service details, clearly explained"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing#sources",
+      "text": "See sources and method",
+      "region": "main",
+      "section": "Dwarka repair estimates: know which work you are comparing"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Full TV repair price guide and sources →",
+      "region": "main",
+      "section": "Dwarka repair estimates: know which work you are comparing"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "main",
+      "section": "Dwarka repair estimates: know which work you are comparing"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Dwarka repair estimates: know which work you are comparing"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/smart-tv-repair",
+      "text": "Smart TV repair: apps, Wi-Fi, inputs and startup →Use this service guide when the television starts but its smart functions fail.",
+      "region": "main",
+      "section": "Choose the next page for your situation"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-west-delhi",
+      "text": "TV repair across West Delhi →The wider area page covers nearby localities and general route planning.",
+      "region": "main",
+      "section": "Choose the next page for your situation"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-delhi",
+      "text": "LED TV repair in Delhi →Understand illumination, power and display-related repair options.",
+      "region": "main",
+      "section": "Choose the next page for your situation"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/prepare-for-doorstep-tv-repair",
+      "text": "Prepare for a doorstep TV repair visit →A practical handover, estimate and post-repair checklist.",
+      "region": "main",
+      "section": "Choose the next page for your situation"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-delhi",
+      "text": "Delhi TV repair cost guide →Compare fault-dependent market ranges and repair feasibility.",
+      "region": "main",
+      "section": "Choose the next page for your situation"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-vs-replacement-guide",
+      "text": "Repair or replace your TV? →Consider the panel, age, parts and quote before deciding.",
+      "region": "main",
+      "section": "Choose the next page for your situation"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "main",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Open the contact page",
+      "region": "main",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "external",
+      "href": "https://support.google.com/googletv/answer/10070482?hl=en",
+      "text": "Google TV Help: model-dependent device and connection troubleshooting",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Let’s plan your Dwarka repair visit"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Let’s plan your Dwarka repair visit"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/workshop-repair-bench.webp",
+      "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+      "width": "1200",
+      "height": "900",
+      "decoding": "async",
+      "sizes": "(min-width: 992px) 48vw, 100vw",
+      "srcsetWidths": [
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "main",
+      "section": "TV Repair Dwarka"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Let’s plan your Dwarka repair visit"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://grsolution.co.in/services/tv-repair-dwarka#service",
+        "name": "TV Repair Dwarka",
+        "serviceType": "Doorstep television diagnosis and repair in Dwarka",
+        "description": "Arrange TV repair in Dwarka with free diagnosis and an estimate before paid work. Share your sector, TV model and access details to confirm a doorstep visit.",
+        "url": "https://grsolution.co.in/services/tv-repair-dwarka",
+        "provider": {
+          "@id": "https://grsolution.co.in/#localbusiness"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Dwarka",
+          "containedInPlace": {
+            "@type": "City",
+            "name": "Delhi"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://grsolution.co.in/services/tv-repair-dwarka#webpage",
+        "name": "TV Repair Dwarka",
+        "url": "https://grsolution.co.in/services/tv-repair-dwarka",
+        "inLanguage": "en-IN",
+        "dateModified": "2026-10-28",
+        "mainEntity": {
+          "@id": "https://grsolution.co.in/services/tv-repair-dwarka#service"
+        },
+        "isPartOf": {
+          "@id": "https://grsolution.co.in/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV repair in West Delhi",
+            "item": "https://grsolution.co.in/services/tv-repair-west-delhi"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "TV Repair Dwarka",
+            "item": "https://grsolution.co.in/services/tv-repair-dwarka"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you arrange doorstep TV repair in Dwarka?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Share your Dwarka sector, TV model, fault and access details so GR Solution can confirm availability and a visit window. Our workshop is in New Kondli; a request does not create an instant or guaranteed appointment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a GR Solution workshop or branch in Dwarka?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our workshop is at C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096. Dwarka is a doorstep service area, not a separate workshop address. Any collection or workshop handling is discussed before the television is moved."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is diagnosis free, and when do I approve the repair cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GR Solution provides free diagnosis and gives an estimate before paid repair work. Confirm the proposed parts, labour, any separate handling arrangements and applicable warranty terms before approving the work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you inspect a wall-mounted or large television in Dwarka?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Share its size, bracket arrangement, floor and lift access when requesting service. Inspection establishes what can be done at home and whether workshop handling is necessary. Keep the TV mounted until safe handling is arranged."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair Samsung, Sony, LG and other TV brands in Dwarka?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GR Solution provides independent repair support for its listed TV brands, with the model, fault and parts checked before work is agreed. We are not a manufacturer-authorised service centre; check an active brand warranty before choosing paid independent repair."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if my Smart TV only has app or Wi-Fi problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Describe which app or connection fails and whether the television menu and HDMI sources work. A software, service or network issue may need a different approach from a hardware repair. Use the linked Smart TV service guide to prepare those observations."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "WebPage",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 3,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "GR Solution arranges TV repair visits in Dwarka from its New Kondli workshop. Share your sector, model, screen size and fault so we can confirm availability and plan the inspection. Diagnosis is free; paid repair starts after you approve an estimate. LED, LCD, OLED and QLED faults are assessed according to the model and display technology.",
+      "A useful repair visit starts before the technician travels. We check the information needed for your set, access and mounting arrangement so the visit has a clear purpose.",
+      "Request a Dwarka visit"
+    ],
+    "faq": {
+      "questions": 6,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "TV repair in West Delhi",
+        "TV Repair Dwarka"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "TV repair in West Delhi",
+          "TV Repair Dwarka"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 1926,
+  "mainTextSha256": "1e498930dff8779403fbf85216bd549589db92e784b194d882f7345c19447f0a",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "TV repair in West Delhi",
+      "/",
+      "TV Repair Dwarka",
+      "Dwarka, Delhi · Independent doorstep repair",
+      "TV Repair Dwarka",
+      "GR Solution arranges TV repair visits in Dwarka from its New Kondli workshop. Share your sector, model, screen size and fault so we can confirm availability and plan the inspection. Diagnosis is free; paid repair starts after you approve an estimate. LED, LCD, OLED and QLED faults are assessed according to the model and display technology.",
+      "A useful repair visit starts before the technician travels. We check the information needed for your set, access and mounting arrangement so the visit has a clear purpose.",
+      "Request a Dwarka visit",
+      "Call",
+      "WhatsApp",
+      "Availability confirmed first · Estimate before paid work",
+      "Free diagnosis",
+      "Approve the estimate",
+      "Independent repair",
+      "Our New Kondli workshop",
+      "Plan your visit",
+      "Repair options",
+      "Cost & estimate",
+      "Questions",
+      "Plan a useful visit",
+      "Have these visit details ready",
+      "This checklist stays on your device. Tick what you have; you can request help even if some details are missing.",
+      "Details ready for your Dwarka repair enquiry",
+      "Full TV model and screen size",
+      "A short description or video of the fault",
+      "Dwarka sector and building/society entrance",
+      "Stand or wall mount, floor and lift access",
+      "A preferred visit window to discuss",
+      "0",
+      "/ 5 details ready",
+      "A clear handover starts here",
+      "Have the available details ready when you contact us. Missing a model number or access detail? Explain what you know and we can discuss the next step.",
+      "Ticking this checklist does not submit a request or confirm a visit.",
+      "Request a Dwarka visit",
+      "Call",
+      "WhatsApp",
+      "Know the service",
+      "Dwarka service details, clearly explained",
+      "Service location",
+      "Your home in Dwarka, with the sector and access confirmed before a visit",
+      "Workshop",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Diagnosis",
+      "Free diagnosis and an estimate before paid repair work",
+      "Visit timing",
+      "An agreed time window after model, location and availability are checked",
+      "Workshop handling",
+      "Discussed first if bench testing or delicate display work is needed",
+      "Before the technician arrives",
+      "Keep the remote and the device or input that shows the fault available.",
+      "Find the purchase invoice if manufacturer or extended warranty may still apply.",
+      "Clear the area around the TV without removing a wall-mounted set.",
+      "Note any intermittent timing so the inspection can reproduce it.",
+      "See our workshop and repair process →",
+      "Diagnosis before parts",
+      "A Dwarka visit planned around your television",
+      "The sector, society entrance and mounting arrangement affect how a visit is organised. They do not tell us which part has failed. Keeping those two questions separate helps you understand both the appointment and the repair estimate.",
+      "TV repair at home in Dwarka: confirm the visit details",
+      "Send the Dwarka sector, society or building name, a useful entrance landmark and your preferred time window. If visitors need a gate pass or society approval, arrange it after the appointment is confirmed. Tell us the floor and lift access when the television is large or wall-mounted. An enquiry lets us discuss these details; it does not reserve an unconfirmed slot.",
+      "Our workshop is in New Kondli, on the other side of Delhi. Dwarka work is planned rather than presented as a nearby walk-in branch or an instant arrival promise. We confirm the service arrangement for the location and fault before a technician travels. If you are booking for another household, make sure someone can describe and demonstrate the original problem.",
+      "LED and LCD TV repair in Dwarka: identify the failed section",
+      "For LED TV repair in Dwarka, a dark picture with sound, uneven brightness or a set that does not start needs diagnosis of the relevant circuits. Backlight illumination, the power supply, the image path and the display panel are different repair paths. A symptom photo is useful preparation, but it is not enough to guarantee which part is needed.",
+      "For LCD TV repair in Dwarka, include the full model number and approximate age so compatibility and parts availability can be discussed realistically. Lines, colour changes and a double image should be described on the television’s menu as well as on an external source. Keep the set closed and avoid pressing the display or trying improvised panel fixes while waiting for an inspection.",
+      "Smart TV, OLED and QLED enquiries need the model first",
+      "If you need Smart TV repair in Dwarka, tell us whether the problem affects one app, all streaming, HDMI or startup itself. An app or network issue is different from a television that cannot produce a picture on any source. The Smart TV repair service linked below explains the useful observations to collect before a software or hardware intervention is proposed.",
+      "OLED televisions do not use separate LED backlight strips. QLED televisions are LCD-based and use illumination, with Mini LED systems on some models. The exact model therefore matters more than a general description such as premium TV. Physical damage, persistent display defects and compatible-part availability are assessed before recommending expensive panel work. A high original purchase price is not a reason to approve an uneconomical repair.",
+      "Large screens, wall mounts and workshop collection",
+      "Mention the screen size, stand or bracket arrangement and the space available to work safely. Keep a heavy or thin-panel TV in place until handling is arranged. A technician first determines what can be inspected at home and whether the fault genuinely needs bench testing. Collection is discussed as part of that decision rather than assumed when you request a visit.",
+      "If the set needs to move, agree its condition record, model identification, handling plan, any transport charges and the expected next update before handover. When the television returns, check the original fault and the inputs or apps you use. Ask for the approved work and applicable warranty terms to be recorded so any follow-up starts from the same repair scope.",
+      "Make the fault repeatable",
+      "Tell us what the Dwarka inspection needs to reproduce",
+      "Reported TV symptoms and the evidence useful for a Dwarka visit",
+      "What you notice",
+      "Useful detail to share",
+      "What inspection must separate",
+      "Sound but no visible picture",
+      "Whether menus appear; display type and screen size",
+      "Illumination, image-path, supply and panel faults",
+      "No startup or repeated shutdown",
+      "Standby-light behaviour and timing from a cold start",
+      "External power, internal supply, software and board behaviour",
+      "Lines, flicker or a partial picture",
+      "Whether the TV menu and several inputs are affected",
+      "Source/cable faults, connections, display electronics and panel condition",
+      "One app or Wi-Fi fails",
+      "App name, error message and whether HDMI still works",
+      "Service/network/software problems versus a TV hardware fault",
+      "Understand the estimate",
+      "Dwarka repair estimates: know which work you are comparing",
+      "The existing Delhi NCR market ranges below are a budget reference, not a fixed GR Solution rate card. The exact model, component, part availability and approved work determine the final estimate. A screen replacement should not be priced as if it were a minor board repair.",
+      "TV Repair Dwarka: indicative Delhi NCR component repair ranges by screen size",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "Backlight / LED strip replacement",
+      "Sound works but the screen is black or unevenly lit",
+      "₹3,000 - 8,000",
+      "₹5,500 - 12,000",
+      "₹8,500 - 18,000",
+      "Power supply board repair or replacement",
+      "No power, or a blinking standby light",
+      "₹1,000 - 3,500",
+      "₹1,800 - 5,000",
+      "₹2,500 - 6,500",
+      "Mainboard / motherboard repair",
+      "Boot loops, no input detection, random shutdowns",
+      "₹2,000 - 5,500",
+      "₹3,000 - 8,000",
+      "₹4,500 - 12,500",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "See sources and method",
+      ".",
+      "What to agree before paid work",
+      "The diagnosed fault and proposed repair",
+      "Part condition and model compatibility",
+      "Parts, labour and any applicable charges in the agreed total",
+      "Collection or transport arrangements, if needed",
+      "Warranty terms for the work being approved",
+      "Compare the full repair, not just a part price",
+      "A listed component price may not be the fitted total. Ask what work is included, whether handling is needed and which warranty applies. If diagnosis points outside the television, that should be clear before a repair is sold.",
+      "Full TV repair price guide and sources →",
+      "Ask about an estimate",
+      "Call",
+      "WhatsApp",
+      "A clear repair process",
+      "From your Dwarka enquiry to an approved repair",
+      "1",
+      "Share the set and sector",
+      "Send the full model, symptom, screen size and Dwarka location. We discuss access and a suitable visit window.",
+      "2",
+      "Confirm what needs checking",
+      "The technician inspects the reported fault. A symptom alone does not authorise replacement parts.",
+      "3",
+      "Approve a clear estimate",
+      "Agree the proposed repair, part condition, total cost and any handling arrangements before paid work.",
+      "4",
+      "Check the original problem",
+      "Repeat the affected picture, sound, startup or input task and keep the repair and warranty details for follow-up.",
+      "Related repair support",
+      "Choose the next page for your situation",
+      "Smart TV repair: apps, Wi-Fi, inputs and startup →",
+      "Use this service guide when the television starts but its smart functions fail.",
+      "TV repair across West Delhi →",
+      "The wider area page covers nearby localities and general route planning.",
+      "LED TV repair in Delhi →",
+      "Understand illumination, power and display-related repair options.",
+      "Prepare for a doorstep TV repair visit →",
+      "A practical handover, estimate and post-repair checklist.",
+      "Delhi TV repair cost guide →",
+      "Compare fault-dependent market ranges and repair feasibility.",
+      "Repair or replace your TV? →",
+      "Consider the panel, age, parts and quote before deciding.",
+      "Before you book",
+      "TV Repair Dwarka: common questions",
+      "Do you arrange doorstep TV repair in Dwarka?",
+      "Yes. Share your Dwarka sector, TV model, fault and access details so GR Solution can confirm availability and a visit window. Our workshop is in New Kondli; a request does not create an instant or guaranteed appointment.",
+      "Is there a GR Solution workshop or branch in Dwarka?",
+      "Our workshop is at C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096. Dwarka is a doorstep service area, not a separate workshop address. Any collection or workshop handling is discussed before the television is moved.",
+      "Is diagnosis free, and when do I approve the repair cost?",
+      "GR Solution provides free diagnosis and gives an estimate before paid repair work. Confirm the proposed parts, labour, any separate handling arrangements and applicable warranty terms before approving the work.",
+      "Can you inspect a wall-mounted or large television in Dwarka?",
+      "Share its size, bracket arrangement, floor and lift access when requesting service. Inspection establishes what can be done at home and whether workshop handling is necessary. Keep the TV mounted until safe handling is arranged.",
+      "Do you repair Samsung, Sony, LG and other TV brands in Dwarka?",
+      "GR Solution provides independent repair support for its listed TV brands, with the model, fault and parts checked before work is agreed. We are not a manufacturer-authorised service centre; check an active brand warranty before choosing paid independent repair.",
+      "What if my Smart TV only has app or Wi-Fi problems?",
+      "Describe which app or connection fails and whether the television menu and HDMI sources work. A software, service or network issue may need a different approach from a hardware repair. Use the linked Smart TV service guide to prepare those observations.",
+      "GR Solution · Independent TV repair",
+      "Let’s plan your Dwarka repair visit",
+      "Share the model, symptom and location. We will discuss availability, diagnosis and the next step before you approve paid work.",
+      "Request a Dwarka visit",
+      "Call",
+      "WhatsApp",
+      "Prefer a written enquiry?",
+      "Open the contact page",
+      ".",
+      "Reviewed by GR Solution Editorial Team · 28 October 2026. Model-specific manufacturer guidance and the pricing source dates should be checked when arranging work.",
+      "Google TV Help: model-dependent device and connection troubleshooting"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Message",
+      "Send Enquiry",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}
