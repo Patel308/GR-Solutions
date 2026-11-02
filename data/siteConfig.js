@@ -6,9 +6,11 @@
 //        read (schema, llms.txt, footer). Kamlesh's line.
 //   ads: shown only to visitors who arrived from an ad click (gclid etc.) in
 //        the last 90 days, and on the ads-only /landing page.
-//   home: the business's original number, shown on the home page (/) to
-//        every visitor, whatever their source (owner decision, 2 Nov 2026).
-//        Schema, llms.txt and every other page keep the seo line.
+//   home: the business's original number, shown on the home page (/) only
+//        to DIRECT visitors (typed the address or a bookmark, no search, AI,
+//        social, referral or ad visit in 90 days), after the page loads.
+//        The server HTML, schema, llms.txt and every other page keep the seo
+//        line (owner decision, 2 Nov 2026).
 // Routing rules: lib/leads/attribution.mjs and components/ContactChannel.jsx.
 export const contactChannels = {
   ads: {

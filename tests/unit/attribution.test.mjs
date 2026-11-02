@@ -127,10 +127,11 @@ test('leadAttribution flattens the state for a lead', () => {
   assert.equal(none.lead_channel, 'seo');
 });
 
-test('the home page always shows the home line; other pages follow the channel', () => {
-  assert.equal(lineFor('seo', '/'), 'home');
-  assert.equal(lineFor('ads', '/'), 'home');
-  assert.equal(lineFor('seo', '/services/tv-repair-noida'), 'seo');
+test('home line: direct visitors on the home page only', () => {
+  assert.equal(lineFor('seo', '/', true), 'home', 'direct visitor on /');
+  assert.equal(lineFor('seo', '/'), 'seo', 'search / AI / server HTML on /');
+  assert.equal(lineFor('ads', '/'), 'ads', 'ad visitor on /');
+  assert.equal(lineFor('seo', '/services/tv-repair-noida', true), 'seo', 'direct visitor elsewhere');
   assert.equal(lineFor('ads', '/contact'), 'ads');
   assert.equal(lineFor('ads', '/landing'), 'ads');
 });

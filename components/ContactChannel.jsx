@@ -46,10 +46,11 @@ export function currentLeadAttribution() {
   return leadAttribution(getAttributionState(), window.location.pathname);
 }
 
-// Channel from the stored touch only; null means "use the route default".
+// Channel from the stored touch: 'ads' or 'seo', or 'direct' when the visitor
+// has no search, AI, social, referral or ad visit in the last 90 days.
 function getStoredChannel() {
   const state = getAttributionState();
-  return state.last ? channelFor(state, window.location.pathname) : null;
+  return state.last ? channelFor(state, window.location.pathname) : 'direct';
 }
 
 const subscribe = () => () => {};
@@ -63,12 +64,14 @@ const ContactChannelContext = createContext(null);
 // After hydration a visitor whose latest non-direct visit in the last 90 days
 // came from an ad click sees the ads number on every page; a later visit from
 // search, an AI assistant or a referral switches back to the organic number.
-// The home page (/) always shows the home line (see FIXED_LINE_PATHS).
+// Direct visitors on the home page see the home line (DIRECT_LINE_PATHS);
+// the server HTML never does, so crawlers always read the organic number.
 export function ContactChannelProvider({ children }) {
   const pathname = usePathname();
   const storedChannel = useSyncExternalStore(subscribe, getStoredChannel, getServerChannel);
-  const channel = storedChannel || channelForPath(pathname);
-  const line = lineFor(channel, pathname);
+  const direct = storedChannel === 'direct';
+  const channel = storedChannel && !direct ? storedChannel : channelForPath(pathname);
+  const line = lineFor(channel, pathname, direct);
   return (
     <ContactChannelContext.Provider value={{ channel, line, ...contactChannels[line] }}>
       {children}
@@ -81,8 +84,7 @@ export function useContactChannel() {
   const value = useContext(ContactChannelContext);
   if (value) return value;
   const channel = channelForPath(pathname);
-  const line = lineFor(channel, pathname);
-  return { channel, line, ...contactChannels[line] };
+  return { channel, line: channel, ...contactChannels[channel] };
 }
 
 // Call link for the current channel. Renders the number itself when no
