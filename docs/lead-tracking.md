@@ -12,10 +12,19 @@ lead, and how to switch on the instant alerts. Code: `lib/leads/`,
 | Search engines and AI crawlers (they read the server HTML), organic Google / Bing, Google Maps, ChatGPT, Perplexity, Gemini, Copilot, social, referral, direct | **+91 93155 15700** (Kamlesh, the SEO/AIO/GEO line) |
 | Arrived from a Google Ads click (`gclid`, `gbraid`, `wbraid`, `gad_source`), Microsoft Ads (`msclkid`) or a link tagged `utm_medium=cpc` (or another paid medium) in the last 90 days | **+91 99902 83890** (ads line) |
 | The ads-only page `/landing` | ads line |
+| **The home page `/`**, every visitor whatever the source (owner decision, 2 Nov 2026) | **+91 99902 83890** (the business's original number, "home" line) |
 
-- Every page's HTML, the schema (`telephone`), `llms.txt` and the footer
-  NAP carry the organic number, so Google, the Business Profile and AI
-  answers all see one consistent number.
+- Every page's HTML except the home page, the schema (`telephone`, on every
+  page including the home page), `llms.txt` and the footer NAP carry the
+  organic number, so Google, the Business Profile and AI answers all see one
+  consistent business number. On the home page every call and WhatsApp link
+  and the visible number use the original number instead; one click to any
+  other page shows the visitor's normal line again.
+- Leads and call/WhatsApp taps keep their real channel (`seo` or `ads`) and
+  also record the line the visitor saw (`lead_line`: `seo`, `ads` or `home`).
+  A home-page lead reads "Line shown: Home page +91 99902 83890" in Telegram.
+  Change or remove this rule in `FIXED_LINE_PATHS`
+  (`lib/leads/attribution.mjs`).
 - The ads number is swapped in by the browser after the page loads, for that
   visitor only, and on every page they visit afterwards.
 - The rule is "last non-direct visit wins, for 90 days" (the Google

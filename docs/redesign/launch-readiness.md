@@ -1,7 +1,8 @@
 # Launch readiness: redesign to production
 
-Prepared 2 November 2026 on branch `claude/lucid-brown-1dbtvs`. Nothing is
-merged: merging into `main` deploys the site, and that decision is yours.
+Prepared 2 November 2026 on branch `claude/lucid-brown-1dbtvs`.
+**Launched the same day** on the owner's go-ahead: merge commit `3080205`
+on `main`. Launch record and post-launch checks: `docs/redesign/launch-record.md`.
 
 ## 1. What goes live
 
@@ -127,12 +128,19 @@ Every run: `tools/seo-audit/reports/launch-2026-11/lighthouse-ab/`.
 - Days 7–28: clicks and impressions against the previous period; PageSpeed
   Insights 3–5 runs per page, compared by median.
 - Roll back if indexing errors appear, or clicks fall more than 20–25% for
-  7+ days after the first week without another explanation:
+  7+ days after the first week without another explanation.
+- **One click, about 1 minute:** GitHub → Actions → **Roll Back Production**
+  → Run workflow, `image_tag` `sha-606f612`. Tested on 2 November 2026
+  before the launch (run 41385297395: the server was back on the old image
+  in about 6 seconds).
+- **To keep the old site** (before anyone pushes to `main` again):
 
   ```bash
-  git revert -m 1 <merge commit>
-  git push origin main     # redeploys the previous site in about 10–15 minutes
+  git revert -m 1 3080205   # the launch merge commit
+  git push origin main      # redeploys the previous site in about 3 minutes
   ```
+
+  Full runbook: `docs/rollback.md`.
 
 ## 7. Re-running the checks
 

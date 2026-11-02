@@ -10,6 +10,7 @@ import {
   channelForPath,
   classifyVisit,
   leadAttribution,
+  lineFor,
   parseStored,
 } from '@/lib/leads/attribution.mjs';
 
@@ -62,12 +63,14 @@ const ContactChannelContext = createContext(null);
 // After hydration a visitor whose latest non-direct visit in the last 90 days
 // came from an ad click sees the ads number on every page; a later visit from
 // search, an AI assistant or a referral switches back to the organic number.
+// The home page (/) always shows the home line (see FIXED_LINE_PATHS).
 export function ContactChannelProvider({ children }) {
   const pathname = usePathname();
   const storedChannel = useSyncExternalStore(subscribe, getStoredChannel, getServerChannel);
   const channel = storedChannel || channelForPath(pathname);
+  const line = lineFor(channel, pathname);
   return (
-    <ContactChannelContext.Provider value={{ channel, ...contactChannels[channel] }}>
+    <ContactChannelContext.Provider value={{ channel, line, ...contactChannels[line] }}>
       {children}
     </ContactChannelContext.Provider>
   );
@@ -78,15 +81,16 @@ export function useContactChannel() {
   const value = useContext(ContactChannelContext);
   if (value) return value;
   const channel = channelForPath(pathname);
-  return { channel, ...contactChannels[channel] };
+  const line = lineFor(channel, pathname);
+  return { channel, line, ...contactChannels[line] };
 }
 
 // Call link for the current channel. Renders the number itself when no
 // children are passed.
 export function PhoneLink({ callLocation, children, ...props }) {
-  const { channel, phone, phoneHref } = useContactChannel();
+  const { channel, line, phone, phoneHref } = useContactChannel();
   return (
-    <a href={phoneHref} data-call-location={callLocation} data-lead-channel={channel} {...props}>
+    <a href={phoneHref} data-call-location={callLocation} data-lead-channel={channel} data-lead-line={line} {...props}>
       {children ?? phone}
     </a>
   );
@@ -103,7 +107,7 @@ export function whatsAppMessage(element) {
 // The server HTML keeps a plain wa.me link (works without JavaScript); the
 // message is added at click time so it always matches the current page.
 export function WhatsAppLink({ children, message, onClick, ...props }) {
-  const { channel, whatsappHref } = useContactChannel();
+  const { channel, line, whatsappHref } = useContactChannel();
   const handleClick = (event) => {
     const text = message || whatsAppMessage(event.currentTarget);
     event.currentTarget.href = `${whatsappHref}?text=${encodeURIComponent(text)}`;
@@ -115,6 +119,7 @@ export function WhatsAppLink({ children, message, onClick, ...props }) {
       target="_blank"
       rel="noopener noreferrer"
       data-lead-channel={channel}
+      data-lead-line={line}
       onClick={handleClick}
       {...props}
     >

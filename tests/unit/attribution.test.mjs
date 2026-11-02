@@ -7,6 +7,7 @@ import {
   channelForPath,
   classifyVisit,
   leadAttribution,
+  lineFor,
   parseStored,
 } from '../../lib/leads/attribution.mjs';
 
@@ -124,4 +125,12 @@ test('leadAttribution flattens the state for a lead', () => {
   const none = leadAttribution(null, '/blog', NOW);
   assert.equal(none.source, 'direct');
   assert.equal(none.lead_channel, 'seo');
+});
+
+test('the home page always shows the home line; other pages follow the channel', () => {
+  assert.equal(lineFor('seo', '/'), 'home');
+  assert.equal(lineFor('ads', '/'), 'home');
+  assert.equal(lineFor('seo', '/services/tv-repair-noida'), 'seo');
+  assert.equal(lineFor('ads', '/contact'), 'ads');
+  assert.equal(lineFor('ads', '/landing'), 'ads');
 });

@@ -6,6 +6,9 @@
 //        read (schema, llms.txt, footer). Kamlesh's line.
 //   ads: shown only to visitors who arrived from an ad click (gclid etc.) in
 //        the last 90 days, and on the ads-only /landing page.
+//   home: the business's original number, shown on the home page (/) to
+//        every visitor, whatever their source (owner decision, 2 Nov 2026).
+//        Schema, llms.txt and every other page keep the seo line.
 // Routing rules: lib/leads/attribution.mjs and components/ContactChannel.jsx.
 export const contactChannels = {
   ads: {
@@ -21,6 +24,13 @@ export const contactChannels = {
     whatsapp: '+91 93155 15700',
     whatsappHref: 'https://wa.me/919315515700',
     owner: 'Kamlesh',
+  },
+  home: {
+    phone: '+91 99902 83890',
+    phoneHref: 'tel:+919990283890',
+    whatsapp: '+91 99902 83890',
+    whatsappHref: 'https://wa.me/919990283890',
+    owner: '',
   },
 };
 

@@ -87,7 +87,7 @@ export default function LeadForm({
   // check then waits for the submit, so the inline error cannot push the
   // button down mid-tap (which made the tap miss and nothing was sent).
   const pressingSubmit = useRef(false);
-  const { channel } = useContactChannel();
+  const { channel, line } = useContactChannel();
   const [state, setState] = useState('idle'); // idle | sending | success | error
   const [errors, setErrors] = useState({});
 
@@ -144,6 +144,7 @@ export default function LeadForm({
     formData.set('lead_id', leadId);
     formData.set('page', page);
     formData.set('lead_channel', channel);
+    formData.set('lead_line', line);
     const trafficSource = attribution.source ? `${attribution.source} / ${attribution.medium}` : '';
     if (trafficSource) formData.set('traffic_source', trafficSource);
     if (attribution.campaign) formData.set('campaign', attribution.campaign);
@@ -165,6 +166,7 @@ export default function LeadForm({
       subject,
       page,
       lead_channel: channel,
+      lead_line: line,
       attribution,
       elapsed_ms: startedAt.current ? Date.now() - startedAt.current : undefined,
       _honey: field('_honey'),
