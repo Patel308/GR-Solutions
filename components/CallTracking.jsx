@@ -29,6 +29,7 @@ export default function CallTracking() {
       const href = element.getAttribute('href') || '';
       const section = sectionOf(element);
       const leadChannel = element.dataset.leadChannel || 'unknown';
+      const leadLine = element.dataset.leadLine || leadChannel;
       let traffic = {};
       try {
         const attribution = currentLeadAttribution();
@@ -41,6 +42,7 @@ export default function CallTracking() {
           method: 'phone',
           call_location: callLocation,
           lead_channel: leadChannel,
+          lead_line: leadLine,
           page_path: window.location.pathname,
           ...traffic,
         };
@@ -53,10 +55,10 @@ export default function CallTracking() {
           window.dataLayer.push({ event: 'phone_call_click', ...eventParams });
         }
 
-        track('click_call', { call_location: callLocation, lead_channel: leadChannel, section, ...traffic });
+        track('click_call', { call_location: callLocation, lead_channel: leadChannel, lead_line: leadLine, section, ...traffic });
         adsConversion('call');
       } else if (/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(href)) {
-        track('click_whatsapp', { lead_channel: leadChannel, section, cta_location: element.dataset.cta || section, ...traffic });
+        track('click_whatsapp', { lead_channel: leadChannel, lead_line: leadLine, section, cta_location: element.dataset.cta || section, ...traffic });
         adsConversion('whatsapp');
       }
 

@@ -7,6 +7,7 @@ import { configuredDestinations, describeSource, telegramText } from '../../lib/
 const LINES = {
   ads: { phone: '+91 99902 83890', owner: '' },
   seo: { phone: '+91 93155 15700', owner: 'Kamlesh' },
+  home: { phone: '+91 99902 83890', owner: '' },
 };
 const ENV = {
   LEAD_TELEGRAM_BOT_TOKEN: '123:abc',
@@ -100,6 +101,13 @@ test('organic lead names Kamlesh line in Telegram', async () => {
   const text = fetchImpl.calls[0].body.text;
   assert.match(text, /Line shown: SEO \(Kamlesh\) \+91 93155 15700/);
   assert.match(text, /Source: chatgpt \(AI assistant\)/);
+});
+
+test('a home-page lead names the home line it saw, and keeps its seo channel', async () => {
+  const { handler, fetchImpl } = setup({ env: { LEAD_TELEGRAM_BOT_TOKEN: 't', LEAD_TELEGRAM_CHAT_ID: '1', LEAD_TELEGRAM_API_BASE: 'https://tg.test' } });
+  await handler.post(request(lead({ lead_channel: 'seo', lead_line: 'home', page: '/', attribution: { source: 'direct' } })));
+  const text = fetchImpl.calls[0].body.text;
+  assert.match(text, /Line shown: Home page \+91 99902 83890/);
 });
 
 test('one failing destination still delivers; all failing returns 502; retries once on 5xx', async () => {

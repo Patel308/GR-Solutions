@@ -58,3 +58,9 @@ test('spam signals: honeypot is spam, fast submit and link spam are flagged', ()
   assert.deepEqual(validateLead(valid({ elapsed_ms: 8000 })).flags, []);
   assert.deepEqual(validateLead(valid({ message: 'http://a http://b http://c' })).flags, ['links']);
 });
+
+test('lead_line: the line the visitor saw, defaulting to the channel', () => {
+  assert.equal(validateLead(valid({ lead_channel: 'seo', lead_line: 'home' })).lead.lead_line, 'home');
+  assert.equal(validateLead(valid({ lead_channel: 'ads' })).lead.lead_line, 'ads');
+  assert.equal(validateLead(valid({ lead_channel: 'seo', lead_line: 'other' })).lead.lead_line, 'seo');
+});
