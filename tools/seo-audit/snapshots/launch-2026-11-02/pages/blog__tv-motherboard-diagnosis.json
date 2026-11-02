@@ -1,0 +1,1424 @@
+{
+  "path": "/blog/tv-motherboard-diagnosis",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 151222,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Motherboard Diagnosis & Repair Cost Guide | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "A TV restart loop or dead HDMI port does not prove a bad motherboard. Learn safe checks, technician handover details and what to ask before replacement.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/blog/tv-motherboard-diagnosis"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Motherboard Diagnosis & Repair Cost Guide | GR Solution"
+      ],
+      [
+        "og:description",
+        "A TV restart loop or dead HDMI port does not prove a bad motherboard. Learn safe checks, technician handover details and what to ask before replacement."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/blog/tv-motherboard-diagnosis"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/blog/tv-motherboard-diagnosis.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Motherboard Diagnosis & Repair Cost Guide | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "A TV restart loop or dead HDMI port does not prove a bad motherboard. Learn safe checks, technician handover details and what to ask before replacement."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": "high"
+      }
+    ],
+    "fontPreloads": [
+      "/_next/static/media/plus_jakarta_sans_latin_800_normal-s.p.2ox-htt1sw80l.woff2"
+    ],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Motherboard Diagnosis: Check Before You Replace",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Still need help with this TV fault?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Start with a symptom record, not a replacement part",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Safe checks before a technician opens the television",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "A diagnostic handover for TV repair mechanics",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What changes TV motherboard repair cost?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Indicative mainboard repair prices by screen size",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Find out what your TV actually needs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Decide whether to repair after the fault is established",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Sources and scope",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Helpful Links",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Motherboard Diagnosis: Evidence Before Replacement FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need TV Repair Guidance?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "fragment",
+      "href": "#main-content",
+      "text": "Skip to content",
+      "region": "other"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "GR Solution Editorial Team",
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "kind": "fragment",
+      "href": "#start-with-a-symptom-record-not-a-replacement-part",
+      "text": "Start with a symptom record, not a replacement part",
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "kind": "fragment",
+      "href": "#safe-checks-before-a-technician-opens-the-television",
+      "text": "Safe checks before a technician opens the television",
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "kind": "fragment",
+      "href": "#a-diagnostic-handover-for-tv-repair-mechanics",
+      "text": "A diagnostic handover for TV repair mechanics",
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "kind": "fragment",
+      "href": "#what-changes-tv-motherboard-repair-cost",
+      "text": "What changes TV motherboard repair cost?",
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "kind": "fragment",
+      "href": "#indicative-mainboard-repair-prices-by-screen-size",
+      "text": "Indicative mainboard repair prices by screen size",
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "kind": "fragment",
+      "href": "#decide-whether-to-repair-after-the-fault-is-established",
+      "text": "Decide whether to repair after the fault is established",
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "Discuss on WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Still need help with this TV fault?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call about my TV",
+      "region": "main",
+      "section": "Still need help with this TV fault?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-keeps-restarting",
+      "text": "Read the TV restart-loop guide",
+      "region": "main",
+      "section": "Safe checks before a technician opens the television"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-sound-but-no-picture",
+      "text": "Explore sound-without-picture symptoms",
+      "region": "main",
+      "section": "Safe checks before a technician opens the television"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Compare the published TV repair price bands",
+      "region": "main",
+      "section": "What changes TV motherboard repair cost?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/prepare-for-doorstep-tv-repair",
+      "text": "Prepare for your repair visit",
+      "region": "main",
+      "section": "What changes TV motherboard repair cost?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing#sources",
+      "text": "See sources and method",
+      "region": "main",
+      "section": "Indicative mainboard repair prices by screen size"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "Discuss on WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Find out what your TV actually needs"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call about my TV",
+      "region": "main",
+      "section": "Find out what your TV actually needs"
+    },
+    {
+      "kind": "external",
+      "href": "https://www.samsung.com/in/support/tv-audio-video/what-to-do-when-the-samsung-tv-is-not-turning-on/",
+      "text": "Samsung India: what to do when a TV will not turn on",
+      "region": "main",
+      "section": "Sources and scope"
+    },
+    {
+      "kind": "external",
+      "href": "https://www.samsung.com/in/support/warranty/",
+      "text": "Samsung India: product warranty information",
+      "region": "main",
+      "section": "Sources and scope"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "TV repair prices and free diagnosis policy",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-keeps-restarting",
+      "text": "TV keeps restarting: symptom guide",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-not-turning-on",
+      "text": "TV will not turn on: safe checks",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-sound-but-no-picture",
+      "text": "Sound but no picture: other diagnostic routes",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-vs-replacement-guide",
+      "text": "Repair or replace your TV?",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/prepare-for-doorstep-tv-repair",
+      "text": "Prepare for a doorstep TV repair visit",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV repair service",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact GR Solution",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#start-with-a-symptom-record-not-a-replacement-part",
+      "text": "Start with a symptom record, not a replacement part",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#safe-checks-before-a-technician-opens-the-television",
+      "text": "Safe checks before a technician opens the television",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#a-diagnostic-handover-for-tv-repair-mechanics",
+      "text": "A diagnostic handover for TV repair mechanics",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#what-changes-tv-motherboard-repair-cost",
+      "text": "What changes TV motherboard repair cost?",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#indicative-mainboard-repair-prices-by-screen-size",
+      "text": "Indicative mainboard repair prices by screen size",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#decide-whether-to-repair-after-the-fault-is-established",
+      "text": "Decide whether to repair after the fault is established",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/prepare-for-doorstep-tv-repair",
+      "text": "CUSTOMER CHECKLISTDoorstep TV Repair: A Customer’s Visit ChecklistKnow what to share when booking TV repair at home, what an estimate should include and what to check after repair in Delhi, Noida, Greater Noida and Ghaziabad.Read the guide →",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-sound-but-no-picture",
+      "text": "Symptom GuideTV Has Sound but No PictureWhy a TV plays sound with a black screen, the one-minute torch test that tells you the cause, and what each fix typically costs in Delhi NCR.Read the guide →",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-delhi",
+      "text": "Delhi Cost GuideTV Repair Cost in DelhiWhat TV repair actually costs in Delhi, which fault types are cheap or expensive to fix, and how to tell before you book whether a repair is worth approving.Read the guide →",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://share.google/iyXemxWlZ7gIQwDAr",
+      "text": "Open in Google Maps",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Visit",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "81",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 992px) 132px, 116px",
+      "srcsetWidths": [
+        "32w",
+        "48w",
+        "64w",
+        "96w",
+        "128w",
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/blog/tv-motherboard-diagnosis.webp",
+      "alt": "Illustration of an unplugged TV with separate power and main boards, model information and a diagnostic notebook",
+      "width": "1536",
+      "height": "1024",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 1280px) 510px, (min-width: 992px) 39vw, (min-width: 608px) 576px, calc(100vw - 2rem)",
+      "srcsetWidths": [
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "main",
+      "section": "TV Motherboard Diagnosis: Check Before You Replace"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "81",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 93155 15700",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 93155 15700",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://grsolution.co.in/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV Motherboard Diagnosis: Evidence Before Replacement",
+            "item": "https://grsolution.co.in/blog/tv-motherboard-diagnosis"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "TV Motherboard Diagnosis: Check Before You Replace",
+        "description": "A TV restart loop or dead HDMI port does not prove a bad motherboard. Learn safe checks, technician handover details and what to ask before replacement.",
+        "image": "https://grsolution.co.in/images/blog/tv-motherboard-diagnosis.webp",
+        "url": "https://grsolution.co.in/blog/tv-motherboard-diagnosis",
+        "datePublished": "2026-10-25",
+        "dateModified": "2026-10-25",
+        "author": {
+          "@type": "Organization",
+          "name": "GR Solution Editorial Team",
+          "url": "https://grsolution.co.in/about"
+        },
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://grsolution.co.in/blog/tv-motherboard-diagnosis"
+        },
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://grsolution.co.in/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does a restart loop prove the TV motherboard has failed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Software, external devices, power supply issues and other internal faults can cause similar behaviour. A repeatable symptom and model-specific diagnosis are needed before replacing a board."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I identify a bad TV mainboard without opening the TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "External checks can narrow the problem and provide useful evidence, but they usually cannot confirm a failed internal board. Leave internal testing to a qualified technician."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the motherboard the same as the power board?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The mainboard processes inputs and runs TV functions; the power board supplies operating power. Some designs combine functions, so the exact model matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can GR Solution quote a motherboard repair from a symptom alone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A symptom alone is not enough for a firm repair quote. GR Solution provides free diagnosis and an estimate before paid work, with part suitability and availability checked for the television."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "BreadcrumbList",
+    "BlogPosting",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 93155 15700"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "A TV stuck on its logo, restarting or losing HDMI input may have a motherboard fault, but those symptoms can also come from software, connected devices or the power supply. Record the model and repeatable symptoms, try only the manufacturer’s external checks, and ask what diagnostic evidence supports a board repair before approving replacement.",
+      "By GR Solution Editorial Team|TV repair guidance team",
+      "|"
+    ],
+    "faq": {
+      "questions": 4,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Blog",
+        "TV Motherboard Diagnosis: Evidence Before Replacement"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Blog",
+          "TV Motherboard Diagnosis: Evidence Before Replacement"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": true,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 1916,
+  "mainTextSha256": "8f31004550caf70e9775474bb694f3cd2bcdcc992ff9b79766405a9ea203d88e",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Blog",
+      "/",
+      "TV Motherboard Diagnosis: Evidence Before Replacement",
+      "DIAGNOSIS GUIDE",
+      "TV Motherboard Diagnosis: Check Before You Replace",
+      "A TV stuck on its logo, restarting or losing HDMI input may have a motherboard fault, but those symptoms can also come from software, connected devices or the power supply. Record the model and repeatable symptoms, try only the manufacturer’s external checks, and ask what diagnostic evidence supports a board repair before approving replacement.",
+      "By",
+      "GR Solution Editorial Team",
+      "|",
+      "TV repair guidance team",
+      "|",
+      "Published",
+      "25 October 2026",
+      "On this page",
+      "Start with a symptom record, not a replacement part",
+      "Safe checks before a technician opens the television",
+      "A diagnostic handover for TV repair mechanics",
+      "What changes TV motherboard repair cost?",
+      "Indicative mainboard repair prices by screen size",
+      "Decide whether to repair after the fault is established",
+      "The mainboard processes inputs, runs the TV software and controls many of its functions. It is not the same as the power supply board, a backlight driver or the display panel. Replacing it because a symptom sounds familiar can leave the original fault unresolved. This guide helps owners and repair mechanics organise observations and agree on the next diagnostic step; it does not replace a model-specific service manual or electrical safety training.",
+      "GR Solution · Independent TV repair",
+      "Still need help with this TV fault?",
+      "Share your TV model, symptom and city. Request free diagnosis and an estimate before approving paid repair work.",
+      "1",
+      "Share model & symptom",
+      "2",
+      "Confirm visit availability",
+      "3",
+      "Approve an estimate",
+      "Request free diagnosis",
+      "Discuss on WhatsApp",
+      "Call about my TV",
+      "Delhi, Noida, Greater Noida & Ghaziabad. Visit timing, access and any handling requirements are confirmed before a visit. Sending a request does not confirm a booking.",
+      "Start with a symptom record, not a replacement part",
+      "Write down what happens from a cold start: whether the standby indicator changes, whether a logo appears, whether audio continues and how long the TV runs before failing. Note whether the fault affects the TV’s own menu and built-in apps as well as an external source. A symptom that only affects one set-top box is a different starting point from a fault present on every input.",
+      "TV symptoms and the evidence still needed before blaming a mainboard",
+      "Observation",
+      "Other possibilities",
+      "Useful next evidence",
+      "Logo appears, then TV restarts",
+      "Software, external-device behaviour, unstable supply or a board fault",
+      "Timing of restarts; result with external devices disconnected",
+      "One HDMI input has no picture",
+      "Source selection, cable, connected device, settings or that port",
+      "A known-working cable and source; whether the TV menu is visible",
+      "Sound continues with a black screen",
+      "Backlight on suitable LCD/LED sets, display circuitry or other faults",
+      "Display technology; whether the built-in menu can be seen",
+      "No standby indicator",
+      "Socket, power cord, supply or an internal fault",
+      "Safe socket/cord checks recommended for the exact model",
+      "Apps freeze but broadcast TV works",
+      "App, network, storage or software issues",
+      "Which apps fail; installed software version; available official updates",
+      "These are diagnostic branches, not fault probabilities. OLED TVs do not use the separate backlight found in LCD/LED TVs.",
+      "Safe checks before a technician opens the television",
+      "Use the support instructions for your exact model. Samsung’s no-power guide, for example, includes a 30-second unplugging step; do not assume one reset procedure suits every TV. If the television is updating, follow the manufacturer’s update instructions rather than interrupting power.",
+      "Check that the correct input is selected and that the external source is powered on.",
+      "With devices switched off as their manuals require, disconnect optional HDMI and USB accessories, then check whether the TV’s own menu works.",
+      "Try a known-working external cable or source if it is safe and accessible. Record the result rather than repeatedly changing settings.",
+      "Use only official model-specific software instructions. Photograph settings you need before an advised reset, which may erase apps and preferences.",
+      "Stop if there is a burning smell, liquid entry, damaged wiring or sparking. Arrange professional inspection; do not keep trying to start the TV.",
+      "Do not remove the cover, bridge connections, heat a board or copy voltage tests from another model. Internal circuits can remain hazardous after unplugging. Wall-mounted sets should not be lifted or tilted by one person to reach a label.",
+      "Read the TV restart-loop guide",
+      "Explore sound-without-picture symptoms",
+      "A diagnostic handover for TV repair mechanics",
+      "A useful handover separates what was observed from what was inferred. Record the full model suffix, display type and the customer’s account of the first failure. Reproduce the fault under documented conditions before proposing a part. Internal testing belongs with a qualified technician using the applicable service documentation and safe equipment.",
+      "Create separate fields for symptom, test conditions, result and interpretation. “Restarts after the logo” is an observation; “mainboard defective” is a conclusion requiring evidence.",
+      "Check the relationship between the power supply, mainboard and display system using the exact model’s diagnostic information. A visually intact board does not establish that it works.",
+      "Before ordering a replacement, verify the board part number and revision, model/panel compatibility and any required manufacturer configuration. A similar connector layout is insufficient.",
+      "After the approved work, reproduce the original use case and check picture, audio, inputs and stability. Explain any functions or faults that were outside the repair scope.",
+      "Ask the technician to explain the conclusion in plain language. A photograph of a board alone is not evidence that replacement is necessary.",
+      "What changes TV motherboard repair cost?",
+      "There is no reliable universal motherboard price. Component repair and a complete board replacement are different jobs. The full TV model, board revision, part condition and availability, software requirements and other faults all affect the estimate. The published pricing guide gives indicative market ranges; it is not a fixed quote for your television.",
+      "Questions to compare TV mainboard repair estimates",
+      "Ask about",
+      "What the estimate should clarify",
+      "Diagnosis",
+      "Why the mainboard is implicated and what remains uncertain",
+      "Proposed work",
+      "Component repair or replacement of the board assembly",
+      "Replacement part",
+      "Matching part/revision and whether the part is new, refurbished or used",
+      "Total payable",
+      "Parts, labour, transport, handling and any applicable taxes or additional charges",
+      "Repair terms",
+      "Written coverage, exclusions and what happens if the same symptom returns",
+      "GR Solution’s published policy provides free diagnosis and an estimate before paid repair work begins. Ask for visit availability and handling arrangements for your location. If the set may still be under manufacturer warranty, check that route before independent repair.",
+      "Compare the published TV repair price bands",
+      "Prepare for your repair visit",
+      "Indicative mainboard repair prices by screen size",
+      "For a budget reference, the existing Delhi NCR pricing research places mainboard repair at about ₹2,000–₹12,500 across the screen sizes below. These market ranges were reviewed in September 2026; they are not a newly verified supplier price list, a fixed GR Solution charge or a promise that a complete replacement board fits the same range. Diagnosis and an actual parts quote still decide the cost.",
+      "Indicative Delhi NCR mainboard repair prices, reviewed September 2026",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "Mainboard / motherboard repair",
+      "Boot loops, no input detection, random shutdowns",
+      "₹2,000 - 5,500",
+      "₹3,000 - 8,000",
+      "₹4,500 - 12,500",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "See sources and method",
+      ".",
+      "GR Solution · Independent TV repair",
+      "Find out what your TV actually needs",
+      "Online price ranges cannot identify a failed part. GR Solution diagnoses your TV free of charge and gives an estimate before paid repair work begins.",
+      "1",
+      "Share model & symptom",
+      "2",
+      "Confirm visit availability",
+      "3",
+      "Approve an estimate",
+      "Request free diagnosis",
+      "Discuss on WhatsApp",
+      "Call about my TV",
+      "Delhi, Noida, Greater Noida & Ghaziabad. Visit timing, access and any handling requirements are confirmed before a visit. Sending a request does not confirm a booking.",
+      "Decide whether to repair after the fault is established",
+      "Compare the complete estimate with a genuinely comparable replacement TV, allowing for the current set’s age, panel condition, other faults and part availability. A repairable mainboard with a healthy panel is a different decision from a set needing both a board and a panel. No single percentage rule makes that choice for every owner.",
+      "Before calling, prepare the model, screen size, city, symptom timeline and the external checks already tried. Share model-label photos privately with the repair provider rather than publishing serial numbers in comments or reviews.",
+      "Sources and scope",
+      "Editorial guidance reviewed on 25 October 2026. Manufacturer instructions apply to the specified products; this guide does not claim manufacturer authorisation or document an actual repair case.",
+      "Samsung India: what to do when a TV will not turn on",
+      "External no-power checks for Samsung TVs. Procedures depend on the model.",
+      "Samsung India: product warranty information",
+      "Check the applicable manufacturer terms before arranging independent work.",
+      "Helpful Links",
+      "TV repair prices and free diagnosis policy",
+      "TV keeps restarting: symptom guide",
+      "TV will not turn on: safe checks",
+      "Sound but no picture: other diagnostic routes",
+      "Repair or replace your TV?",
+      "Prepare for a doorstep TV repair visit",
+      "LED TV repair service",
+      "Contact GR Solution",
+      "Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.",
+      "On this page",
+      "Start with a symptom record, not a replacement part",
+      "Safe checks before a technician opens the television",
+      "A diagnostic handover for TV repair mechanics",
+      "What changes TV motherboard repair cost?",
+      "Indicative mainboard repair prices by screen size",
+      "Decide whether to repair after the fault is established",
+      "Related guides",
+      "CUSTOMER CHECKLIST",
+      "Doorstep TV Repair: A Customer’s Visit Checklist",
+      "Know what to share when booking TV repair at home, what an estimate should include and what to check after repair in Delhi, Noida, Greater Noida and Ghaziabad.",
+      "Read the guide →",
+      "Symptom Guide",
+      "TV Has Sound but No Picture",
+      "Why a TV plays sound with a black screen, the one-minute torch test that tells you the cause, and what each fix typically costs in Delhi NCR.",
+      "Read the guide →",
+      "Delhi Cost Guide",
+      "TV Repair Cost in Delhi",
+      "What TV repair actually costs in Delhi, which fault types are cheap or expensive to fix, and how to tell before you book whether a repair is worth approving.",
+      "Read the guide →",
+      "FAQ",
+      "TV Motherboard Diagnosis: Evidence Before Replacement FAQs",
+      "Does a restart loop prove the TV motherboard has failed?",
+      "No. Software, external devices, power supply issues and other internal faults can cause similar behaviour. A repeatable symptom and model-specific diagnosis are needed before replacing a board.",
+      "Can I identify a bad TV mainboard without opening the TV?",
+      "External checks can narrow the problem and provide useful evidence, but they usually cannot confirm a failed internal board. Leave internal testing to a qualified technician.",
+      "Is the motherboard the same as the power board?",
+      "No. The mainboard processes inputs and runs TV functions; the power board supplies operating power. Some designs combine functions, so the exact model matters.",
+      "Can GR Solution quote a motherboard repair from a symptom alone?",
+      "A symptom alone is not enough for a firm repair quote. GR Solution provides free diagnosis and an estimate before paid work, with part suitability and availability checked for the television.",
+      "INSPECTION-BASED GUIDANCE",
+      "Need TV Repair Guidance?",
+      "Call or WhatsApp GR Solution with your TV model, fault symptoms and location for inspection-based next steps.",
+      "Independent repair provider",
+      "Estimate before paid work",
+      "Visit availability confirmed first",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM · Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 5+ years of technical excellence and transparent pricing.",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Open in Google Maps",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "WhatsApp",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "Skip to content",
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Phone number",
+      "Your name",
+      "(optional)",
+      "Service Required",
+      "(optional)",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Service area",
+      "(optional)",
+      "Select area",
+      "West Delhi",
+      "South Delhi",
+      "East Delhi",
+      "North Delhi",
+      "Noida",
+      "Greater Noida",
+      "Ghaziabad",
+      "Request a callback",
+      "We only use your number to call you back about your TV.",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}

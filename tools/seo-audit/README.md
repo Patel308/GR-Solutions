@@ -55,6 +55,16 @@ done
 node ab-summary.mjs --dir $RUNS --variants live,new --labels "Live site,New site" --out reports/current/lighthouse-ab
 ```
 
+## After every deploy (GitHub Actions)
+
+`.github/workflows/verify-production.yml` (**Verify Production**) runs after
+each successful deploy, and on demand from the Actions tab. It builds the
+deployed commit, crawls that build and https://grsolution.co.in, and fails on
+any difference between them, so a green run means the live site serves
+exactly what the commit builds. It also reports the live site against the
+pre-redesign baseline with the signed-off changes applied. Reports are
+attached to the run as `production-verification`.
+
 ## What is committed
 
 - `snapshots/live-2026-11-02/` — the **launch baseline**: the live site as of
@@ -66,6 +76,8 @@ node ab-summary.mjs --dir $RUNS --variants live,new --labels "Live site,New site
   node launch-map.mjs --base snapshots/live-2026-11-02 --head snapshots/current \
     --diff reports/current/seo-diff-vs-live.json --out reports/current/launch-map.md
   ```
+- `snapshots/launch-2026-11-02/` — the launch build itself (commit `dfc6a15`,
+  raw HTML), as tested before it went live.
 - `snapshots/baseline/` — the Phase 0 baseline (raw server HTML), taken from a
   production build of commit `595b6c7` (see `snapshots/baseline/meta.json`).
 - `reports/phase-0/` — Lighthouse and responsive summaries of the old site.

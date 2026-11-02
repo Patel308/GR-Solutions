@@ -1,0 +1,1372 @@
+{
+  "path": "/blog/prepare-for-doorstep-tv-repair",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 143465,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Doorstep TV Repair Visit Checklist | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Know what to share when booking TV repair at home, what an estimate should include and what to check after repair in Delhi, Noida, Greater Noida and Ghaziabad.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/blog/prepare-for-doorstep-tv-repair"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Doorstep TV Repair Visit Checklist | GR Solution"
+      ],
+      [
+        "og:description",
+        "Know what to share when booking TV repair at home, what an estimate should include and what to check after repair in Delhi, Noida, Greater Noida and Ghaziabad."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/blog/prepare-for-doorstep-tv-repair"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/blog/doorstep-tv-repair.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Doorstep TV Repair Visit Checklist | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Know what to share when booking TV repair at home, what an estimate should include and what to check after repair in Delhi, Noida, Greater Noida and Ghaziabad."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": "high"
+      }
+    ],
+    "fontPreloads": [
+      "/_next/static/media/plus_jakarta_sans_latin_800_normal-s.p.2ox-htt1sw80l.woff2"
+    ],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Doorstep TV Repair: Your Visit Checklist",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Ready to arrange a TV inspection?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "First check whether the manufacturer should handle the repair",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Send the details that make a visit easier to plan",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Confirm arrangements before the technician travels",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Approve a clear estimate, not just a part name",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Run these checks before accepting completion",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Request a visit with the right expectations",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Sources and scope",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Helpful Links",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Doorstep TV Repair: A Customer’s Visit Checklist FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need TV Repair Guidance?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "fragment",
+      "href": "#main-content",
+      "text": "Skip to content",
+      "region": "other"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "GR Solution Editorial Team",
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "kind": "fragment",
+      "href": "#first-check-whether-the-manufacturer-should-handle-the-repair",
+      "text": "First check whether the manufacturer should handle the repair",
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "kind": "fragment",
+      "href": "#send-the-details-that-make-a-visit-easier-to-plan",
+      "text": "Send the details that make a visit easier to plan",
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "kind": "fragment",
+      "href": "#confirm-arrangements-before-the-technician-travels",
+      "text": "Confirm arrangements before the technician travels",
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "kind": "fragment",
+      "href": "#approve-a-clear-estimate-not-just-a-part-name",
+      "text": "Approve a clear estimate, not just a part name",
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "kind": "fragment",
+      "href": "#run-these-checks-before-accepting-completion",
+      "text": "Run these checks before accepting completion",
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "kind": "fragment",
+      "href": "#request-a-visit-with-the-right-expectations",
+      "text": "Request a visit with the right expectations",
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "Discuss on WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Ready to arrange a TV inspection?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call about my TV",
+      "region": "main",
+      "section": "Ready to arrange a TV inspection?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-motherboard-diagnosis",
+      "text": "Check motherboard diagnosis before replacing a board",
+      "region": "main",
+      "section": "Approve a clear estimate, not just a part name"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-vs-replacement-guide",
+      "text": "Compare repair with replacement",
+      "region": "main",
+      "section": "Approve a clear estimate, not just a part name"
+    },
+    {
+      "kind": "external",
+      "href": "https://www.samsung.com/in/support/warranty/",
+      "text": "Samsung India: manufacturer warranty information",
+      "region": "main",
+      "section": "Sources and scope"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Free diagnosis policy and indicative repair prices",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-motherboard-diagnosis",
+      "text": "TV motherboard diagnosis: evidence before replacement",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-vs-replacement-guide",
+      "text": "Compare repair with replacement",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-screen-replacement-cost-delhi-ncr",
+      "text": "Understand screen replacement costs",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV repair in Delhi",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV repair in Noida",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV repair in Greater Noida",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV repair in Ghaziabad",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About the independent GR Solution team",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Request TV repair guidance",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#first-check-whether-the-manufacturer-should-handle-the-repair",
+      "text": "First check whether the manufacturer should handle the repair",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#send-the-details-that-make-a-visit-easier-to-plan",
+      "text": "Send the details that make a visit easier to plan",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#confirm-arrangements-before-the-technician-travels",
+      "text": "Confirm arrangements before the technician travels",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#approve-a-clear-estimate-not-just-a-part-name",
+      "text": "Approve a clear estimate, not just a part name",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#run-these-checks-before-accepting-completion",
+      "text": "Run these checks before accepting completion",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "fragment",
+      "href": "#request-a-visit-with-the-right-expectations",
+      "text": "Request a visit with the right expectations",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-screen-replacement-cost-delhi-ncr",
+      "text": "Panel & Screen Cost GuideTV Screen Replacement Cost in Delhi NCRWhat TV screen and panel replacement costs across Delhi NCR, how to tell a real panel fault from a backlight problem, and when replacement wins.Read the guide →",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-vs-replacement-guide",
+      "text": "Decision GuideTV Repair vs ReplacementA practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set.Read the guide →",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-motherboard-diagnosis",
+      "text": "DIAGNOSIS GUIDETV Motherboard Diagnosis: Evidence Before ReplacementA TV restart loop or dead HDMI port does not prove a bad motherboard. Learn safe checks, technician handover details and what to ask before replacement.Read the guide →",
+      "region": "main",
+      "section": "Helpful Links"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://share.google/iyXemxWlZ7gIQwDAr",
+      "text": "Open in Google Maps",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Visit",
+      "region": "other",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "81",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 992px) 132px, 116px",
+      "srcsetWidths": [
+        "32w",
+        "48w",
+        "64w",
+        "96w",
+        "128w",
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/blog/doorstep-tv-repair.webp",
+      "alt": "Illustration of a customer and TV repair technician discussing a model photo, estimate and final-check checklist at home",
+      "width": "1536",
+      "height": "1024",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 1280px) 510px, (min-width: 992px) 39vw, (min-width: 608px) 576px, calc(100vw - 2rem)",
+      "srcsetWidths": [
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "main",
+      "section": "Doorstep TV Repair: Your Visit Checklist"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "81",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need TV Repair Guidance?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 93155 15700",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 93155 15700",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://grsolution.co.in/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Doorstep TV Repair: A Customer’s Visit Checklist",
+            "item": "https://grsolution.co.in/blog/prepare-for-doorstep-tv-repair"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Doorstep TV Repair: Your Visit Checklist",
+        "description": "Know what to share when booking TV repair at home, what an estimate should include and what to check after repair in Delhi, Noida, Greater Noida and Ghaziabad.",
+        "image": "https://grsolution.co.in/images/blog/doorstep-tv-repair.webp",
+        "url": "https://grsolution.co.in/blog/prepare-for-doorstep-tv-repair",
+        "datePublished": "2026-10-25",
+        "dateModified": "2026-10-25",
+        "author": {
+          "@type": "Organization",
+          "name": "GR Solution Editorial Team",
+          "url": "https://grsolution.co.in/about"
+        },
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://grsolution.co.in/blog/prepare-for-doorstep-tv-repair"
+        },
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://grsolution.co.in/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What should I share when booking TV repair at home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Share the full model, screen size, symptom, city or locality and whether the TV is wall-mounted. Confirm availability, access requirements and any handling arrangements before the visit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is GR Solution an authorised manufacturer service centre?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GR Solution is an independent TV repair provider. If manufacturer warranty may apply, check with the manufacturer before arranging independent work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does requesting free diagnosis confirm a visit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The team must confirm locality coverage, availability and visit arrangements. GR Solution’s published policy provides free diagnosis and an estimate before paid repair work begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will every TV repair be completed at my home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The fault, safe access, equipment and part availability determine whether work can be completed at home or needs workshop handling. Confirm the proposed process and any charges before approval."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I check after a TV repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reproduce the original fault conditions, check picture, sound and relevant inputs, and keep the invoice, work description and written repair terms. Agree how any unresolved or recurring symptom will be reported."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "BreadcrumbList",
+    "BlogPosting",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 93155 15700"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Before a doorstep TV repair visit, share the TV’s model, screen size, symptom, city and mounting details. Confirm visit availability and any handling or transport charges. After diagnosis, approve the scope and total estimate before paid work, then check the original fault, picture, sound and inputs before accepting completion.",
+      "By GR Solution Editorial Team|TV repair guidance team",
+      "|"
+    ],
+    "faq": {
+      "questions": 5,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Blog",
+        "Doorstep TV Repair: A Customer’s Visit Checklist"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Blog",
+          "Doorstep TV Repair: A Customer’s Visit Checklist"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": true,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 1682,
+  "mainTextSha256": "cf6e34257d731b78b96e1c0b2dc9ae40c7f72251d56a2b07c1c096759b8ac9a2",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Blog",
+      "/",
+      "Doorstep TV Repair: A Customer’s Visit Checklist",
+      "CUSTOMER CHECKLIST",
+      "Doorstep TV Repair: Your Visit Checklist",
+      "Before a doorstep TV repair visit, share the TV’s model, screen size, symptom, city and mounting details. Confirm visit availability and any handling or transport charges. After diagnosis, approve the scope and total estimate before paid work, then check the original fault, picture, sound and inputs before accepting completion.",
+      "By",
+      "GR Solution Editorial Team",
+      "|",
+      "TV repair guidance team",
+      "|",
+      "Published",
+      "25 October 2026",
+      "On this page",
+      "First check whether the manufacturer should handle the repair",
+      "Send the details that make a visit easier to plan",
+      "Confirm arrangements before the technician travels",
+      "Approve a clear estimate, not just a part name",
+      "Run these checks before accepting completion",
+      "Request a visit with the right expectations",
+      "A clear repair process gives you something more useful than a promise that every TV can be fixed: you know what is being checked, what you are approving and what to do if the fault returns. This checklist is for households arranging independent TV repair in Delhi, Noida, Greater Noida and Ghaziabad. It also helps avoid a visit delayed by missing model information or inaccessible wall mounting.",
+      "GR Solution · Independent TV repair",
+      "Ready to arrange a TV inspection?",
+      "Share your TV model, symptom and city. Request free diagnosis and an estimate before approving paid repair work.",
+      "1",
+      "Share model & symptom",
+      "2",
+      "Confirm visit availability",
+      "3",
+      "Approve an estimate",
+      "Request free diagnosis",
+      "Discuss on WhatsApp",
+      "Call about my TV",
+      "Delhi, Noida, Greater Noida & Ghaziabad. Visit timing, access and any handling requirements are confirmed before a visit. Sending a request does not confirm a booking.",
+      "First check whether the manufacturer should handle the repair",
+      "Find the purchase invoice and check the manufacturer’s warranty terms for your model and fault. If a warranty may apply, contact the manufacturer before commissioning independent repair. Coverage, exclusions and the effect of outside work depend on the applicable terms; do not assume all faults or accidental damage are covered.",
+      "GR Solution is an independent TV repair provider. A brand name in a service description identifies the televisions discussed; it does not mean the business is that manufacturer’s authorised service centre.",
+      "Send the details that make a visit easier to plan",
+      "A short, precise description is more useful than “screen problem”. Describe what first failed and whether the TV still produces sound, shows a menu or responds to its remote. A brief video can help show an intermittent symptom, but it does not confirm the failed part.",
+      "Information to share privately when requesting TV repair at home",
+      "Detail",
+      "Why it helps",
+      "Example",
+      "Full model and screen size",
+      "Identifies the display type and potential parts",
+      "Model-label photo and approximate purchase year",
+      "Symptom and timing",
+      "Helps the technician plan diagnosis",
+      "Starts normally; picture disappears after ten minutes",
+      "City and locality",
+      "Allows a realistic route and visit discussion",
+      "Noida, with the sector or neighbourhood",
+      "Wall mounting and access",
+      "Shows whether handling help or access arrangements are needed",
+      "Wall bracket; limited space behind the TV",
+      "Previous work or damage",
+      "Avoids missing a relevant part of the history",
+      "Earlier board replacement, liquid entry or impact",
+      "Send your address and model-label photos through the private booking channel. Do not post personal details or serial numbers publicly.",
+      "Confirm arrangements before the technician travels",
+      "Request a visit rather than assuming an online enquiry reserves a time slot. Confirm availability for your locality, a suitable time window and how the technician will contact you. For a tower or gated community, explain entry rules, lift access and parking restrictions that affect carrying equipment or a large TV.",
+      "Explain whether the television is wall-mounted, on a stand or already removed. Do not attempt a heavy or awkward unmounting alone.",
+      "Ask whether unmounting, remounting, transport or workshop handling may be needed and whether any of these carry a separate charge.",
+      "Keep the remote and relevant connected device available so the original symptom can be demonstrated.",
+      "Clear a safe working area. If there is liquid damage, sparking or a burning smell, stop using the TV and explain this when requesting help.",
+      "GR Solution’s published diagnosis policy is free diagnosis with an estimate before paid repair work. Confirm the specific visit arrangements and any other applicable charges in advance. A symptom, locality or brand does not guarantee same-day repair or part availability.",
+      "Approve a clear estimate, not just a part name",
+      "Ask what the diagnosis established and whether anything remains uncertain. “Panel problem” or “board problem” is not a complete scope of work. The estimate should distinguish repair from replacement and explain the proposed part, labour, handling and any other charges before work starts.",
+      "Ask for the total payable and what would trigger a revised estimate. Additional paid work should need your approval.",
+      "If a replacement part is proposed, ask whether it is new, refurbished or used and how compatibility is checked.",
+      "Confirm whether work can be completed at home or whether workshop testing is required. For collection, request a written receipt identifying the TV, accessories and visible condition.",
+      "Request the repair-specific warranty or service terms in writing, including duration, exclusions and the process for reporting the same fault again. Do not assume a standard duration applies to every repair.",
+      "If a panel replacement is costly or parts are scarce, compare the complete quote with a suitable replacement TV. You can ask questions or decline a repair after reviewing the estimate; do not approve work simply because a visit has occurred.",
+      "Check motherboard diagnosis before replacing a board",
+      "Compare repair with replacement",
+      "Run these checks before accepting completion",
+      "Test the condition that originally caused trouble, rather than accepting a brief start-up screen as the only check. An intermittent issue may need longer observation; agree how an unresolved or recurring symptom will be handled. Only test inputs and features relevant to your TV and the approved repair.",
+      "External checks after an approved TV repair",
+      "Check",
+      "What to confirm",
+      "Original fault",
+      "Repeat the same source, app or use case that previously failed",
+      "Picture",
+      "Watch normal content and the TV menu for the reported lines, flicker or loss of picture",
+      "Sound",
+      "Confirm the intended speakers or sound system work at a comfortable volume",
+      "Inputs and remote",
+      "Check the connected devices and remote functions involved in the repair",
+      "Physical setup",
+      "Ask the technician to confirm safe stand or mounting arrangements and cable routing",
+      "Documentation",
+      "Keep the invoice, approved work description, part details and written repair terms",
+      "These checks help you confirm the agreed outcome; they cannot guarantee that an older television will never develop another fault. Keep a record of the repair date and report a recurrence promptly through the agreed contact channel.",
+      "Request a visit with the right expectations",
+      "GR Solution serves Delhi, Noida, Greater Noida and Ghaziabad. Share the city, model and symptoms to discuss availability and inspection-based next steps. A phone conversation can help plan a visit, but a final diagnosis and firm estimate depend on checking the TV. There is no need to guess the failed component before you contact the service provider.",
+      "Sources and scope",
+      "Editorial guidance reviewed on 25 October 2026. Manufacturer instructions apply to the specified products; this guide does not claim manufacturer authorisation or document an actual repair case.",
+      "Samsung India: manufacturer warranty information",
+      "An example of manufacturer-specific terms. Check your own brand, model, invoice and applicable coverage.",
+      "Helpful Links",
+      "Free diagnosis policy and indicative repair prices",
+      "TV motherboard diagnosis: evidence before replacement",
+      "Compare repair with replacement",
+      "Understand screen replacement costs",
+      "TV repair in Delhi",
+      "TV repair in Noida",
+      "TV repair in Greater Noida",
+      "TV repair in Ghaziabad",
+      "About the independent GR Solution team",
+      "Request TV repair guidance",
+      "Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.",
+      "On this page",
+      "First check whether the manufacturer should handle the repair",
+      "Send the details that make a visit easier to plan",
+      "Confirm arrangements before the technician travels",
+      "Approve a clear estimate, not just a part name",
+      "Run these checks before accepting completion",
+      "Request a visit with the right expectations",
+      "Related guides",
+      "Panel & Screen Cost Guide",
+      "TV Screen Replacement Cost in Delhi NCR",
+      "What TV screen and panel replacement costs across Delhi NCR, how to tell a real panel fault from a backlight problem, and when replacement wins.",
+      "Read the guide →",
+      "Decision Guide",
+      "TV Repair vs Replacement",
+      "A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set.",
+      "Read the guide →",
+      "DIAGNOSIS GUIDE",
+      "TV Motherboard Diagnosis: Evidence Before Replacement",
+      "A TV restart loop or dead HDMI port does not prove a bad motherboard. Learn safe checks, technician handover details and what to ask before replacement.",
+      "Read the guide →",
+      "FAQ",
+      "Doorstep TV Repair: A Customer’s Visit Checklist FAQs",
+      "What should I share when booking TV repair at home?",
+      "Share the full model, screen size, symptom, city or locality and whether the TV is wall-mounted. Confirm availability, access requirements and any handling arrangements before the visit.",
+      "Is GR Solution an authorised manufacturer service centre?",
+      "GR Solution is an independent TV repair provider. If manufacturer warranty may apply, check with the manufacturer before arranging independent work.",
+      "Does requesting free diagnosis confirm a visit?",
+      "No. The team must confirm locality coverage, availability and visit arrangements. GR Solution’s published policy provides free diagnosis and an estimate before paid repair work begins.",
+      "Will every TV repair be completed at my home?",
+      "No. The fault, safe access, equipment and part availability determine whether work can be completed at home or needs workshop handling. Confirm the proposed process and any charges before approval.",
+      "What should I check after a TV repair?",
+      "Reproduce the original fault conditions, check picture, sound and relevant inputs, and keep the invoice, work description and written repair terms. Agree how any unresolved or recurring symptom will be reported.",
+      "INSPECTION-BASED GUIDANCE",
+      "Need TV Repair Guidance?",
+      "Call or WhatsApp GR Solution with your TV model, fault symptoms and location for inspection-based next steps.",
+      "Independent repair provider",
+      "Estimate before paid work",
+      "Visit availability confirmed first",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM · Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 5+ years of technical excellence and transparent pricing.",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Open in Google Maps",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "WhatsApp",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "Skip to content",
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Phone number",
+      "Your name",
+      "(optional)",
+      "Service Required",
+      "(optional)",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Service area",
+      "(optional)",
+      "Select area",
+      "West Delhi",
+      "South Delhi",
+      "East Delhi",
+      "North Delhi",
+      "Noida",
+      "Greater Noida",
+      "Ghaziabad",
+      "Request a callback",
+      "We only use your number to call you back about your TV.",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}

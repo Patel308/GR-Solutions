@@ -1,0 +1,110 @@
+name: Verify Production
+
+# After every deploy: is what grsolution.co.in serves exactly what the
+# deployed commit builds? Builds that commit here, crawls the build and the
+# live site (every sitemap URL, raw HTML: titles, metas, canonicals, robots,
+# headings, links + anchor text, images + alt, JSON-LD, copy, FAQ/schema
+# parity, sitemap, robots.txt, redirects, llms.txt) and fails on any
+# difference. Also reports the live site against the pre-redesign baseline
+# (tools/seo-audit/snapshots/live-2026-11-02) with the signed-off changes
+# applied. Reports are attached to the run. See tools/seo-audit/README.md.
+
+on:
+  workflow_run:
+    workflows: ["Build, Push, Deploy"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: grsolution-verify-production
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  NEXT_PUBLIC_SITE_URL: https://grsolution.co.in
+  NEXT_PUBLIC_GA_MEASUREMENT_ID: G-0RQ8C75FPT
+  LIVE: https://grsolution.co.in
+
+jobs:
+  verify:
+    name: Live site matches the deployed build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout the deployed commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            tools/seo-audit/package-lock.json
+
+      - name: Install
+        run: |
+          npm ci
+          npm ci --prefix tools/seo-audit --ignore-scripts
+
+      - name: Build the deployed commit (same settings as the Docker image)
+        env:
+          NEXT_PUBLIC_GOOGLE_ADS_ID: ${{ vars.NEXT_PUBLIC_GOOGLE_ADS_ID }}
+          NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL: ${{ vars.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL }}
+          NEXT_PUBLIC_GOOGLE_ADS_CALL_LABEL: ${{ vars.NEXT_PUBLIC_GOOGLE_ADS_CALL_LABEL }}
+          NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL: ${{ vars.NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL }}
+        run: npm run build
+
+      - name: Crawl the build and the live site
+        working-directory: tools/seo-audit
+        run: |
+          set -euo pipefail
+          (cd ../.. && npx next start -p 3100 > /tmp/next.log 2>&1 &)
+          for i in $(seq 1 60); do curl -fsS -o /dev/null http://127.0.0.1:3100/api/health && break; sleep 1; done
+          node crawl.mjs --base http://127.0.0.1:3100 --out snapshots/build
+          node crawl.mjs --base "$LIVE" --out snapshots/production --concurrency 3
+
+      - name: Live site vs the deployed build (must be identical)
+        id: same
+        working-directory: tools/seo-audit
+        run: node diff.mjs --base snapshots/build --head snapshots/production --approved none --out reports/current/production-vs-build.md
+
+      - name: Live site vs the pre-redesign baseline (signed-off changes applied)
+        if: always() && steps.same.outcome != 'skipped'
+        continue-on-error: true
+        working-directory: tools/seo-audit
+        run: |
+          node diff.mjs --base snapshots/live-2026-11-02 --head snapshots/production --out reports/current/production-vs-pre-launch.md
+          node launch-map.mjs --base snapshots/live-2026-11-02 --head snapshots/production \
+            --diff reports/current/production-vs-pre-launch.json --out reports/current/production-launch-map.md
+
+      - name: Summary
+        if: always()
+        working-directory: tools/seo-audit
+        run: |
+          {
+            echo "## Live site vs the deployed build"
+            if [ -f reports/current/production-vs-build.md ]; then sed -n '1,40p' reports/current/production-vs-build.md; else echo "Not compared (an earlier step failed)."; fi
+            echo ""
+            echo "## Live site vs the pre-redesign baseline"
+            if [ -f reports/current/production-launch-map.md ]; then sed -n '1,8p' reports/current/production-launch-map.md; else echo "Not compared."; fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Attach reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-verification
+          path: |
+            tools/seo-audit/reports/current/
+            tools/seo-audit/snapshots/production/
+          if-no-files-found: ignore
+          retention-days: 90

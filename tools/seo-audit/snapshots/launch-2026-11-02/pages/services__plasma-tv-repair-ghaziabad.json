@@ -1,0 +1,1181 @@
+{
+  "path": "/services/plasma-tv-repair-ghaziabad",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 96871,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Plasma TV Repair Ghaziabad | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Need Plasma TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/plasma-tv-repair-ghaziabad"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Plasma TV Repair Ghaziabad | GR Solution"
+      ],
+      [
+        "og:description",
+        "Need Plasma TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/plasma-tv-repair-ghaziabad"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Plasma TV Repair Ghaziabad | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Need Plasma TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [
+      "/_next/static/media/plus_jakarta_sans_latin_800_normal-s.p.2ox-htt1sw80l.woff2"
+    ],
+    "stylesheets": 2,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Plasma TV Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Decide whether the plasma has one repairable fault",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Treat weight and ventilation as part of the Ghaziabad job",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Plasma repair decisions for a Ghaziabad household",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Gather history without opening the enclosure",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Set a spending ceiling for an ageing plasma",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Ghaziabad service arrangements",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Plasma TV Repair in Ghaziabad: your questions",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Related services and locations",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Arrange Plasma TV Repair in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "fragment",
+      "href": "#main-content",
+      "text": "Skip to content",
+      "region": "other"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call GR Solution",
+      "region": "main",
+      "section": "Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Inspection",
+      "region": "main",
+      "section": "Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-ghaziabad",
+      "text": "Ghaziabad repair cost guide →",
+      "region": "main",
+      "section": "Set a spending ceiling for an ageing plasma"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "GR Solution pricing and sources →",
+      "region": "main",
+      "section": "Set a spending ceiling for an ageing plasma"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Ghaziabad service arrangements"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Ghaziabad service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact and booking",
+      "region": "main",
+      "section": "Ghaziabad service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "GR Solution homepage",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-delhi",
+      "text": "Plasma TV Repair Delhi",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-noida",
+      "text": "Plasma TV Repair Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-greater-noida",
+      "text": "Plasma TV Repair Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-ghaziabad",
+      "text": "LED TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-ghaziabad",
+      "text": "OLED/QLED TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-ghaziabad",
+      "text": "LCD TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-ghaziabad",
+      "text": "Curved TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "external",
+      "href": "https://share.google/iyXemxWlZ7gIQwDAr",
+      "text": "Open in Google Maps",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Visit",
+      "region": "other",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "81",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 992px) 132px, 116px",
+      "srcsetWidths": [
+        "32w",
+        "48w",
+        "64w",
+        "96w",
+        "128w",
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "Plasma TV Repair in Ghaziabad by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Plasma TV Repair in Ghaziabad"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "81",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Arrange Plasma TV Repair in Ghaziabad"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 93155 15700",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 93155 15700",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Plasma TV Repair in Ghaziabad",
+        "serviceType": "Plasma TV repair",
+        "description": "Need Plasma TV Repair Ghaziabad? GR Solution provides doorstep TV inspection, diagnosis and repair support across Ghaziabad and nearby NCR areas.",
+        "url": "https://grsolution.co.in/services/plasma-tv-repair-ghaziabad",
+        "areaServed": "Ghaziabad",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 93155 15700",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "postalCode": "110096",
+            "addressRegion": "Delhi NCR",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Plasma TV Repair",
+            "item": "https://grsolution.co.in/services/plasma-tv-repair"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Plasma TV Repair in Ghaziabad",
+            "item": "https://grsolution.co.in/services/plasma-tv-repair-ghaziabad"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can plasma backlight strips be replaced to restore the picture?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A plasma panel produces its image without an LED strip backlight. A blank or unstable picture requires plasma-specific checks, including power, sustain and control functions. Advice intended for an LED set can be misleading here."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does clicking mean the plasma power board is definitely bad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Protection behaviour can be triggered by a fault elsewhere, and relay sounds are only a clue. Testing must establish the failed section before a replacement board is justified."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is every old plasma worth collecting for repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Share the model, condition and fault history first. If compatible parts are unavailable or the likely expense is impractical, discussing replacement may avoid paying to move a heavy set unnecessarily."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 93155 15700"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 2
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "GR Solution assesses plasma TV repair in Ghaziabad by checking the fault, the panel condition and the availability of ageing parts. A plasma has no LED backlight strips. Clicking, a blank glowing display or heat-related shutdown needs investigation of the relevant power and sustain circuitry before spending is approved.",
+      "Call GR SolutionBook Inspection WhatsApp",
+      "Decide whether the plasma has one repairable fault"
+    ],
+    "faq": {
+      "questions": 3,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "Plasma TV Repair",
+        "Ghaziabad"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "Plasma TV Repair",
+          "Plasma TV Repair in Ghaziabad"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 776,
+  "mainTextSha256": "6dca49e6d13ce26b9284c0f2754452271083e6aa3c571561319ebd0a08b5ffd0",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "Plasma TV Repair",
+      "/",
+      "Ghaziabad",
+      "Ghaziabad",
+      "Plasma TV Repair in Ghaziabad",
+      "GR Solution assesses plasma TV repair in Ghaziabad by checking the fault, the panel condition and the availability of ageing parts. A plasma has no LED backlight strips. Clicking, a blank glowing display or heat-related shutdown needs investigation of the relevant power and sustain circuitry before spending is approved.",
+      "Call GR Solution",
+      "Book Inspection",
+      "WhatsApp",
+      "Decide whether the plasma has one repairable fault",
+      "An older set can still be useful when a single power or sustain-board problem is identified and a suitable part can be obtained. Its age does not prove that repair is impossible. Equally, a television with multiple faults, damaged glass or unavailable assemblies should not receive a succession of speculative replacements simply because it was expensive when new.",
+      "Describe the first failure as precisely as possible: a click without startup, repeated protection shutdown, abnormal colour or sound behind a blank screen. Report whether the issue appears immediately or after the set warms. A technician must verify the relationship between the power, control and sustain sections; the sound of a relay alone cannot identify which board failed.",
+      "Treat weight and ventilation as part of the Ghaziabad job",
+      "Plasma televisions are substantially heavier than many modern flat screens. For Vaishali or Vasundhara builder floors, say whether the stairs turn sharply and whether a lift is usable. For an Indirapuram tower, arrange entry and service-lift permission if transport is eventually required. Leave the television on its support until a safe plan has been agreed.",
+      "A set that switches off when hot needs more than repeated cooling and restarting. Keep the external vents unobstructed and note whether the TV sits inside a tight cabinet. Do not remove covers to clean internal boards: plasma circuitry can retain dangerous charge after unplugging. Internal diagnosis belongs to a trained technician.",
+      "Plasma repair decisions for a Ghaziabad household",
+      "Plasma repair decisions for a Ghaziabad household",
+      "Observed condition",
+      "Question before buying parts",
+      "Practical decision",
+      "One startup fault; screen was previously normal",
+      "Can the failed circuit and matching part be confirmed?",
+      "Consider a defined board repair",
+      "Shutdown after warming inside a cabinet",
+      "Cooling restriction, supply issue or protection fault?",
+      "Diagnose the heat trigger before reuse",
+      "Several symptoms plus unavailable assemblies",
+      "Will one repair leave other expensive faults?",
+      "Compare replacement rather than repeated spending",
+      "Gather history without opening the enclosure",
+      "Photograph the model and record any protection blink sequence.",
+      "Describe past repairs, clicking and time until shutdown.",
+      "Tell us the floor and approximate screen size before collection is discussed.",
+      "Set a spending ceiling for an ageing plasma",
+      "GR Solution diagnoses your TV free of charge and gives you a firm estimate before any paid work begins.",
+      "A Ghaziabad plasma estimate needs to account for the actual assembly, sourcing and the risk of other age-related faults. Ask whether a proposed part is new, refurbished or repaired, and what terms cover the work. General LED strip prices do not apply to plasma technology. Confirm any transport cost separately, then compare the total with a suitable replacement television before authorising a difficult parts search.",
+      "Ghaziabad repair cost guide →",
+      "GR Solution pricing and sources →",
+      "Ghaziabad service arrangements",
+      "Service enquiries include Kaushambi, Sahibabad, Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension and Crossings Republik. Appointment feasibility is checked from the New Kondli workshop and depends on the television and access.",
+      "+91 93155 15700",
+      "info@grsolution.co.in",
+      "Contact and booking",
+      "Plasma TV Repair in Ghaziabad: your questions",
+      "Can plasma backlight strips be replaced to restore the picture?",
+      "A plasma panel produces its image without an LED strip backlight. A blank or unstable picture requires plasma-specific checks, including power, sustain and control functions. Advice intended for an LED set can be misleading here.",
+      "Does clicking mean the plasma power board is definitely bad?",
+      "No. Protection behaviour can be triggered by a fault elsewhere, and relay sounds are only a clue. Testing must establish the failed section before a replacement board is justified.",
+      "Is every old plasma worth collecting for repair?",
+      "No. Share the model, condition and fault history first. If compatible parts are unavailable or the likely expense is impractical, discussing replacement may avoid paying to move a heavy set unnecessarily.",
+      "Related services and locations",
+      "GR Solution homepage",
+      "Plasma TV Repair",
+      "Plasma TV Repair Delhi",
+      "Plasma TV Repair Noida",
+      "Plasma TV Repair Greater Noida",
+      "LED TV Repair Ghaziabad",
+      "OLED/QLED TV Repair Ghaziabad",
+      "LCD TV Repair Ghaziabad",
+      "Curved TV Repair Ghaziabad",
+      "TV Repair Ghaziabad",
+      "FAST LOCAL SUPPORT",
+      "Arrange Plasma TV Repair in Ghaziabad",
+      "Send the plasma model and fault history to discuss inspection feasibility at your Ghaziabad address.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM · Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 5+ years of technical excellence and transparent pricing.",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Open in Google Maps",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "WhatsApp",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "Skip to content",
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Phone number",
+      "Your name",
+      "(optional)",
+      "Service Required",
+      "(optional)",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Service area",
+      "(optional)",
+      "Select area",
+      "West Delhi",
+      "South Delhi",
+      "East Delhi",
+      "North Delhi",
+      "Noida",
+      "Greater Noida",
+      "Ghaziabad",
+      "Request a callback",
+      "We only use your number to call you back about your TV.",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}

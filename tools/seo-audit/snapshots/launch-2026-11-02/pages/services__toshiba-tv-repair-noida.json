@@ -1,0 +1,1196 @@
+{
+  "path": "/services/toshiba-tv-repair-noida",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 96362,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Toshiba TV Repair Noida | Doorstep Service | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Toshiba TV repair in Noida. GR Solution provides doorstep inspection and repair support for Toshiba TV issues across Noida and nearby NCR areas.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/toshiba-tv-repair-noida"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Toshiba TV Repair Noida | Doorstep Service | GR Solution"
+      ],
+      [
+        "og:description",
+        "Toshiba TV repair in Noida. GR Solution provides doorstep inspection and repair support for Toshiba TV issues across Noida and nearby NCR areas."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/toshiba-tv-repair-noida"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Toshiba TV Repair Noida | Doorstep Service | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Toshiba TV repair in Noida. GR Solution provides doorstep inspection and repair support for Toshiba TV issues across Noida and nearby NCR areas."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [
+      "/_next/static/media/plus_jakarta_sans_latin_800_normal-s.p.2ox-htt1sw80l.woff2"
+    ],
+    "stylesheets": 2,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Toshiba TV Repair in Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Find out where the picture or sound disappears",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Prepare a society flat for a screen inspection",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Toshiba Noida checks before a parts decision",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Details that avoid a second trip to your tower",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Separate connection work from hardware replacement",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Noida service arrangements",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Toshiba TV Repair in Noida: your questions",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Related services and locations",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Arrange Toshiba TV Repair in Noida",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "fragment",
+      "href": "#main-content",
+      "text": "Skip to content",
+      "region": "other"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call GR Solution",
+      "region": "main",
+      "section": "Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Repair",
+      "region": "main",
+      "section": "Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-noida",
+      "text": "Noida repair cost guide →",
+      "region": "main",
+      "section": "Separate connection work from hardware replacement"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "GR Solution pricing and sources →",
+      "region": "main",
+      "section": "Separate connection work from hardware replacement"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Noida service arrangements"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Noida service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact and booking",
+      "region": "main",
+      "section": "Noida service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "GR Solution homepage",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All TV repair services",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-noida",
+      "text": "LED TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact GR Solution",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/toshiba-tv-repair-delhi",
+      "text": "Toshiba TV Repair in Delhi",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/toshiba-tv-repair-greater-noida",
+      "text": "Toshiba TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/toshiba-tv-repair-ghaziabad",
+      "text": "Toshiba TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/samsung-tv-repair-noida",
+      "text": "Samsung TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lg-tv-repair-noida",
+      "text": "LG TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/sony-tv-repair-noida",
+      "text": "Sony TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/mi-tv-repair-noida",
+      "text": "Mi/Xiaomi TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oneplus-tv-repair-noida",
+      "text": "OnePlus TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tcl-tv-repair-noida",
+      "text": "TCL TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://share.google/iyXemxWlZ7gIQwDAr",
+      "text": "Open in Google Maps",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Visit",
+      "region": "other",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "81",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 992px) 132px, 116px",
+      "srcsetWidths": [
+        "32w",
+        "48w",
+        "64w",
+        "96w",
+        "128w",
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "Toshiba TV Repair in Noida by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Toshiba TV Repair in Noida"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "81",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Arrange Toshiba TV Repair in Noida"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 93155 15700",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 93155 15700",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Toshiba TV Repair in Noida",
+        "serviceType": "Toshiba TV Repair in Noida",
+        "description": "Toshiba TV repair in Noida. GR Solution provides doorstep inspection and repair support for Toshiba TV issues across Noida and nearby NCR areas.",
+        "url": "https://grsolution.co.in/services/toshiba-tv-repair-noida",
+        "areaServed": "Noida",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 93155 15700",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "postalCode": "110096",
+            "addressRegion": "Delhi NCR",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Toshiba TV Repair in Noida",
+            "item": "https://grsolution.co.in/services/toshiba-tv-repair-noida"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can you inspect a wall-mounted Toshiba in a Noida society?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, subject to safe access and a confirmed appointment. Let us know the screen size and bracket arrangement first. The technician will explain whether removal is needed rather than asking you to demount it yourself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my Toshiba show a clear menu but no set-top box picture?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The TV can produce an image, so the source device, selected input, HDMI lead and port are useful starting points. A hardware input fault remains possible; the menu comparison narrows the investigation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should a Toshiba under warranty go to GR Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the warranty route first if the fault is covered. This is independent repair support, not Toshiba-authorised warranty servicing. Have the invoice ready so paid work does not begin unnecessarily."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 93155 15700"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 2
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "For Toshiba TV repair in Noida, GR Solution can assess missing pictures, power trouble and smart-interface faults at your address. Explain whether the problem affects the built-in menu, an app or an attached device. That distinction helps decide which checks and equipment the visit needs.",
+      "Call GR SolutionBook Repair WhatsApp",
+      "Find out where the picture or sound disappears"
+    ],
+    "faq": {
+      "questions": 3,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "Toshiba TV Repair in Noida"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "Toshiba TV Repair in Noida"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 788,
+  "mainTextSha256": "a013fb429daab5fec3a9f6a2ffada738899338bba32f7bb01346eb717bb1413c",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "Toshiba TV Repair in Noida",
+      "Noida",
+      "Toshiba TV Repair in Noida",
+      "For Toshiba TV repair in Noida, GR Solution can assess missing pictures, power trouble and smart-interface faults at your address. Explain whether the problem affects the built-in menu, an app or an attached device. That distinction helps decide which checks and equipment the visit needs.",
+      "Call GR Solution",
+      "Book Repair",
+      "WhatsApp",
+      "Find out where the picture or sound disappears",
+      "Start with the television menu rather than the set-top box picture. If settings remain clear while a broadcast freezes, the source, cable or connection may be the issue. If menus also flicker or show lines, the television itself needs closer attention. This simple comparison is useful when a Noida flat has several HDMI devices and the screen is fitted tightly to a wall.",
+      "Streaming faults need a second comparison. Try an ordinary channel or another app and note whether only one service fails. Network congestion, account problems and a software fault can resemble a failing smart board. Avoid installing firmware found for a similar Toshiba model: the exact product and software region matter.",
+      "Prepare a society flat for a screen inspection",
+      "Noida appointments can include sectors 18, 62, 63, 75, 76, 104 and 137, with timing confirmed against the location. Register the technician with society security and name the tower as well as the sector. Tell us if a soundbar, cabinet or concealed wiring blocks access to the television connectors.",
+      "A screen should stay on its existing support until the handling plan is agreed. Large sets may need another person and a clear working surface. If the reported issue began after shifting the TV or changing a wall bracket, include that detail without trying to reproduce the fault by pushing the panel.",
+      "Toshiba Noida checks before a parts decision",
+      "Toshiba Noida checks before a parts decision",
+      "Comparison",
+      "Possible direction",
+      "Next observation",
+      "Streaming fails but HDMI is stable",
+      "App, network or platform software",
+      "Does another streaming service load?",
+      "Every source has the same vertical mark",
+      "Display connection, driver or panel",
+      "Is the mark visible over settings?",
+      "A source works until another device starts",
+      "HDMI control or connected equipment",
+      "Which device triggers the change?",
+      "Details that avoid a second trip to your tower",
+      "Photograph the Toshiba identification sticker if it is accessible.",
+      "Describe the wall mount and the space below the screen.",
+      "Send the gate-entry procedure with a contact number for arrival.",
+      "Separate connection work from hardware replacement",
+      "GR Solution diagnoses your TV free of charge and gives you a firm estimate before any paid work begins.",
+      "The Noida estimate should reflect what inspection establishes, whether that is a connector, illumination circuit or mainboard. Agree any handling requirements before the appointment, then request the total for the proposed repair. Software symptoms do not automatically justify a replacement board. When glass damage or an expensive display assembly is confirmed, weigh that cost against replacement rather than paying for several speculative parts.",
+      "Noida repair cost guide →",
+      "GR Solution pricing and sources →",
+      "Noida service arrangements",
+      "Noida visits operate from the GR Solution workshop in New Kondli, Delhi. Sector, society and access details determine scheduling; a listed service area is not a claim of an office inside your complex.",
+      "+91 93155 15700",
+      "info@grsolution.co.in",
+      "Contact and booking",
+      "Toshiba TV Repair in Noida: your questions",
+      "Can you inspect a wall-mounted Toshiba in a Noida society?",
+      "Yes, subject to safe access and a confirmed appointment. Let us know the screen size and bracket arrangement first. The technician will explain whether removal is needed rather than asking you to demount it yourself.",
+      "Why does my Toshiba show a clear menu but no set-top box picture?",
+      "The TV can produce an image, so the source device, selected input, HDMI lead and port are useful starting points. A hardware input fault remains possible; the menu comparison narrows the investigation.",
+      "Should a Toshiba under warranty go to GR Solution?",
+      "Use the warranty route first if the fault is covered. This is independent repair support, not Toshiba-authorised warranty servicing. Have the invoice ready so paid work does not begin unnecessarily.",
+      "Related services and locations",
+      "GR Solution homepage",
+      "All TV repair services",
+      "TV Repair in Noida",
+      "LED TV Repair in Noida",
+      "Contact GR Solution",
+      "Toshiba TV Repair in Delhi",
+      "Toshiba TV Repair in Greater Noida",
+      "Toshiba TV Repair in Ghaziabad",
+      "Samsung TV Repair in Noida",
+      "LG TV Repair in Noida",
+      "Sony TV Repair in Noida",
+      "Mi/Xiaomi TV Repair in Noida",
+      "OnePlus TV Repair in Noida",
+      "TCL TV Repair in Noida",
+      "FAST LOCAL SUPPORT",
+      "Arrange Toshiba TV Repair in Noida",
+      "Share which inputs fail and the society or sector for your Toshiba service request in Noida.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM · Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 5+ years of technical excellence and transparent pricing.",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Open in Google Maps",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "WhatsApp",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "Skip to content",
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Phone number",
+      "Your name",
+      "(optional)",
+      "Service Required",
+      "(optional)",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Service area",
+      "(optional)",
+      "Select area",
+      "West Delhi",
+      "South Delhi",
+      "East Delhi",
+      "North Delhi",
+      "Noida",
+      "Greater Noida",
+      "Ghaziabad",
+      "Request a callback",
+      "We only use your number to call you back about your TV.",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}

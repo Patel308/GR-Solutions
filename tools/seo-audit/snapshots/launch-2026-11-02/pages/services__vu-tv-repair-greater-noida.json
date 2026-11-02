@@ -1,0 +1,1196 @@
+{
+  "path": "/services/vu-tv-repair-greater-noida",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 97156,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Vu TV Repair Greater Noida | Doorstep Service | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Vu TV repair in Greater Noida. GR Solution provides doorstep inspection and repair support for Vu TV issues across Greater Noida and nearby NCR areas.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/vu-tv-repair-greater-noida"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Vu TV Repair Greater Noida | Doorstep Service | GR Solution"
+      ],
+      [
+        "og:description",
+        "Vu TV repair in Greater Noida. GR Solution provides doorstep inspection and repair support for Vu TV issues across Greater Noida and nearby NCR areas."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/vu-tv-repair-greater-noida"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_panel.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Vu TV Repair Greater Noida | Doorstep Service | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Vu TV repair in Greater Noida. GR Solution provides doorstep inspection and repair support for Vu TV issues across Greater Noida and nearby NCR areas."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [
+      "/_next/static/media/plus_jakarta_sans_latin_800_normal-s.p.2ox-htt1sw80l.woff2"
+    ],
+    "stylesheets": 2,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Vu TV Repair in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "A 4K or Smart TV label is not a spare-part specification",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Check the devices used with the Vu, not only the television",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "How to describe a Vu fault for a Greater Noida visit",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Help match the visit to the installation",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Decide whether the Vu has a useful repair path",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Greater Noida service arrangements",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Vu TV Repair in Greater Noida: your questions",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Related services and locations",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Arrange Vu TV Repair in Greater Noida",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "fragment",
+      "href": "#main-content",
+      "text": "Skip to content",
+      "region": "other"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call GR Solution",
+      "region": "main",
+      "section": "Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Repair",
+      "region": "main",
+      "section": "Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-greater-noida",
+      "text": "Greater Noida repair cost guide →",
+      "region": "main",
+      "section": "Decide whether the Vu has a useful repair path"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "GR Solution pricing and sources →",
+      "region": "main",
+      "section": "Decide whether the Vu has a useful repair path"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Greater Noida service arrangements"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Greater Noida service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact and booking",
+      "region": "main",
+      "section": "Greater Noida service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "GR Solution homepage",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All TV repair services",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-greater-noida",
+      "text": "LED TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact GR Solution",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/vu-tv-repair-delhi",
+      "text": "Vu TV Repair in Delhi",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/vu-tv-repair-noida",
+      "text": "Vu TV Repair in Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/vu-tv-repair-ghaziabad",
+      "text": "Vu TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/samsung-tv-repair-greater-noida",
+      "text": "Samsung TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lg-tv-repair-greater-noida",
+      "text": "LG TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/sony-tv-repair-greater-noida",
+      "text": "Sony TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/mi-tv-repair-greater-noida",
+      "text": "Mi/Xiaomi TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oneplus-tv-repair-greater-noida",
+      "text": "OnePlus TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tcl-tv-repair-greater-noida",
+      "text": "TCL TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://share.google/iyXemxWlZ7gIQwDAr",
+      "text": "Open in Google Maps",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Visit",
+      "region": "other",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "81",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 992px) 132px, 116px",
+      "srcsetWidths": [
+        "32w",
+        "48w",
+        "64w",
+        "96w",
+        "128w",
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_panel.webp",
+      "alt": "Vu TV Repair in Greater Noida by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Vu TV Repair in Greater Noida"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "81",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Arrange Vu TV Repair in Greater Noida"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 93155 15700",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 93155 15700",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Vu TV Repair in Greater Noida",
+        "serviceType": "Vu TV Repair in Greater Noida",
+        "description": "Vu TV repair in Greater Noida. GR Solution provides doorstep inspection and repair support for Vu TV issues across Greater Noida and nearby NCR areas.",
+        "url": "https://grsolution.co.in/services/vu-tv-repair-greater-noida",
+        "areaServed": "Greater Noida",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 93155 15700",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "postalCode": "110096",
+            "addressRegion": "Delhi NCR",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Vu TV Repair in Greater Noida",
+            "item": "https://grsolution.co.in/services/vu-tv-repair-greater-noida"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can any Vu motherboard be fitted to another Vu 4K TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Board revision, panel compatibility and the required software must match. Choosing a board only by brand and resolution can leave the television unusable or create another fault."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a frozen Vu startup logo mean the saved apps must be erased?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A reset may be one diagnostic option, but it is not the only one and can remove saved accounts or settings. The exact model and failure should be reviewed before applying a recovery procedure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a home visit possible for a large Vu in Greater Noida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An appointment can start at the installation address, subject to access. Some jobs require tools or workspace beyond the home setup. Any recommendation to move the set should follow an explanation of that requirement."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 93155 15700"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 2
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "For Vu TV repair in Greater Noida, GR Solution checks the reported problem against the exact television model and installation. Startup freezes, a dark 4K picture, missing sound and connection faults require different tests. An inspection-based estimate comes before any approved repair or parts replacement.",
+      "Call GR SolutionBook Repair WhatsApp",
+      "A 4K or Smart TV label is not a spare-part specification"
+    ],
+    "faq": {
+      "questions": 3,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "Vu TV Repair in Greater Noida"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "Vu TV Repair in Greater Noida"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 827,
+  "mainTextSha256": "aafac8baa79c99bc292b7646e3c84f73c96a29413d5d4e545c7fb54ece8e42d7",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "Vu TV Repair in Greater Noida",
+      "Greater Noida",
+      "Vu TV Repair in Greater Noida",
+      "For Vu TV repair in Greater Noida, GR Solution checks the reported problem against the exact television model and installation. Startup freezes, a dark 4K picture, missing sound and connection faults require different tests. An inspection-based estimate comes before any approved repair or parts replacement.",
+      "Call GR Solution",
+      "Book Repair",
+      "WhatsApp",
+      "A 4K or Smart TV label is not a spare-part specification",
+      "Vu televisions span different sizes, software generations and display assemblies. Two sets marketed as 4K can need different mainboards, LED arrays or remotes. Send the complete identification label where accessible and tell us which smart interface appears. A photograph of the startup screen can help when the settings page will not open.",
+      "A set stuck at its logo may have a loading problem, unstable supply or a mainboard fault; it does not automatically need a new screen. Conversely, one fixed line appearing on menus and external sources needs attention to the display path. Keeping those reports separate prevents a generic replacement recommendation from substituting for diagnosis.",
+      "Check the devices used with the Vu, not only the television",
+      "A streaming stick, set-top box or receiver can make a healthy screen appear to fail. Describe whether sound vanishes through the internal speakers as well as external equipment and whether a different HDMI input behaves normally. Record the original cable positions before changing anything so the technician can reproduce your setup.",
+      "For Greater Noida West flats or addresses near Pari Chowk, share the society or street and the nearest entrance. Knowledge Park and Techzone enquiries also need the precise building. Scheduling is confirmed from the New Kondli base; being listed as a service area does not mean there is a Vu branch within the neighbourhood.",
+      "How to describe a Vu fault for a Greater Noida visit",
+      "How to describe a Vu fault for a Greater Noida visit",
+      "Reported problem",
+      "Useful distinction",
+      "Preparation for inspection",
+      "Vu logo stays on screen",
+      "Frozen loading versus a complete power loss",
+      "Show the indicator and startup sequence together",
+      "Picture is dark but audio plays",
+      "LED illumination versus missing video",
+      "Mention any brief flash when starting",
+      "Remote pairs but controls the TV unreliably",
+      "Remote, pairing state or receiver response",
+      "Keep both original and replacement remotes nearby",
+      "Help match the visit to the installation",
+      "State the screen size and whether it is on a stand or bracket.",
+      "Mention previous part changes and retain their invoices.",
+      "Arrange entry permission and clear space without moving the panel alone.",
+      "Decide whether the Vu has a useful repair path",
+      "GR Solution diagnoses your TV free of charge and gives you a firm estimate before any paid work begins.",
+      "The price depends on the specific failure and the availability of a matching part, not just the diagonal size. With undamaged glass, work on illumination, power or audio may be practical. An unavailable board or an expensive damaged panel can change that decision. Ask for the complete proposed charge, including agreed handling, and what the repair warranty covers before accepting the work.",
+      "Greater Noida repair cost guide →",
+      "GR Solution pricing and sources →",
+      "Greater Noida service arrangements",
+      "Bookings can be discussed for Alpha, Beta, Gamma, Greater Noida West and neighbouring sectors. GR Solution provides independent Vu support; an active manufacturer or retailer warranty should be checked before commissioning outside repair.",
+      "+91 93155 15700",
+      "info@grsolution.co.in",
+      "Contact and booking",
+      "Vu TV Repair in Greater Noida: your questions",
+      "Can any Vu motherboard be fitted to another Vu 4K TV?",
+      "No. Board revision, panel compatibility and the required software must match. Choosing a board only by brand and resolution can leave the television unusable or create another fault.",
+      "Does a frozen Vu startup logo mean the saved apps must be erased?",
+      "A reset may be one diagnostic option, but it is not the only one and can remove saved accounts or settings. The exact model and failure should be reviewed before applying a recovery procedure.",
+      "Is a home visit possible for a large Vu in Greater Noida?",
+      "An appointment can start at the installation address, subject to access. Some jobs require tools or workspace beyond the home setup. Any recommendation to move the set should follow an explanation of that requirement.",
+      "Related services and locations",
+      "GR Solution homepage",
+      "All TV repair services",
+      "TV Repair in Greater Noida",
+      "LED TV Repair in Greater Noida",
+      "Contact GR Solution",
+      "Vu TV Repair in Delhi",
+      "Vu TV Repair in Noida",
+      "Vu TV Repair in Ghaziabad",
+      "Samsung TV Repair in Greater Noida",
+      "LG TV Repair in Greater Noida",
+      "Sony TV Repair in Greater Noida",
+      "Mi/Xiaomi TV Repair in Greater Noida",
+      "OnePlus TV Repair in Greater Noida",
+      "TCL TV Repair in Greater Noida",
+      "FAST LOCAL SUPPORT",
+      "Arrange Vu TV Repair in Greater Noida",
+      "Request Vu support with the full product label, an honest symptom description and your Greater Noida location.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM · Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 5+ years of technical excellence and transparent pricing.",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Open in Google Maps",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "WhatsApp",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "Skip to content",
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Phone number",
+      "Your name",
+      "(optional)",
+      "Service Required",
+      "(optional)",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Service area",
+      "(optional)",
+      "Select area",
+      "West Delhi",
+      "South Delhi",
+      "East Delhi",
+      "North Delhi",
+      "Noida",
+      "Greater Noida",
+      "Ghaziabad",
+      "Request a callback",
+      "We only use your number to call you back about your TV.",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}

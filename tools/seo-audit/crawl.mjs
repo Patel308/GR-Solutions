@@ -79,8 +79,14 @@ async function pool(items, size, worker) {
 
 // Raw request with an explicit Host header (fetch() forbids overriding Host),
 // used to test the www -> apex redirect.
-function requestWithHost(base, pathname, host) {
+// Against the real HTTPS site the www host has its own certificate and DNS,
+// so it is requested directly.
+async function requestWithHost(base, pathname, host) {
   const target = new URL(pathname, base);
+  if (target.protocol === 'https:') {
+    const { status, location } = await fetchText(`https://${host}${pathname}`);
+    return { status, location };
+  }
   return new Promise((resolve, reject) => {
     const req = http.request(
       { hostname: target.hostname, port: target.port, path: target.pathname, method: 'GET', headers: { host } },

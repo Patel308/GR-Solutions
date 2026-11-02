@@ -1,0 +1,1272 @@
+{
+  "path": "/services",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 109973,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair Services in Delhi NCR | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Explore GR Solution repair services for LED TV, OLED/QLED TV, LCD TV, Plasma TV and Curved TV support across Delhi, Noida and NCR.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair Services in Delhi NCR | GR Solution"
+      ],
+      [
+        "og:description",
+        "Explore GR Solution repair services for LED TV, OLED/QLED TV, LCD TV, Plasma TV and Curved TV support across Delhi, Noida and NCR."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair Services in Delhi NCR | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Explore GR Solution repair services for LED TV, OLED/QLED TV, LCD TV, Plasma TV and Curved TV support across Delhi, Noida and NCR."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [],
+    "fontPreloads": [
+      "/_next/static/media/plus_jakarta_sans_latin_800_normal-s.p.2ox-htt1sw80l.woff2"
+    ],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Professional TV Repair Services",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "OLED/QLED TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LCD TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Plasma TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Curved TV Repair",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "How nearby TV repair requests work",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair by City",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Top Local TV Repair Searches",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair by Brand",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Focused support for your repair request",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Repair Dwarka →",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Smart TV Repair →",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Our 4-Step Repair Process",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Contact GR Solution",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Share Device Issue",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Get Diagnosis Visit",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Approve Repair Estimate",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "fragment",
+      "href": "#main-content",
+      "text": "Skip to content",
+      "region": "other"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://share.google/iyXemxWlZ7gIQwDAr",
+      "text": "★★★★★4.9 on Google · 9 reviews",
+      "ariaLabel": "4.9 on Google · 9 reviews (opens our Google Business Profile)",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "View Service",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call now",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "main",
+      "section": "How nearby TV repair requests work"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "main",
+      "section": "How nearby TV repair requests work"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "main",
+      "section": "How nearby TV repair requests work"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "How nearby TV repair requests work"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair Delhi",
+      "region": "main",
+      "section": "TV Repair by City"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair Noida",
+      "region": "main",
+      "section": "TV Repair by City"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair Greater Noida",
+      "region": "main",
+      "section": "TV Repair by City"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair Ghaziabad",
+      "region": "main",
+      "section": "TV Repair by City"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-noida",
+      "text": "LED TV Repair Noida",
+      "region": "main",
+      "section": "Top Local TV Repair Searches"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-delhi",
+      "text": "LED TV Repair Delhi",
+      "region": "main",
+      "section": "Top Local TV Repair Searches"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/sony-tv-repair-noida",
+      "text": "Sony TV Repair Noida",
+      "region": "main",
+      "section": "Top Local TV Repair Searches"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/samsung-tv-repair-delhi",
+      "text": "Samsung TV Service Centre Delhi",
+      "region": "main",
+      "section": "Top Local TV Repair Searches"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lg-tv-repair-delhi",
+      "text": "LG TV Service Center in Delhi",
+      "region": "main",
+      "section": "Top Local TV Repair Searches"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Indirapuram Ghaziabad",
+      "region": "main",
+      "section": "Top Local TV Repair Searches"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/sony-tv-repair-delhi",
+      "text": "Sony TV Repair",
+      "region": "main",
+      "section": "TV Repair by Brand"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/samsung-tv-repair-delhi",
+      "text": "Samsung TV Repair",
+      "region": "main",
+      "section": "TV Repair by Brand"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lg-tv-repair-delhi",
+      "text": "LG TV Repair",
+      "region": "main",
+      "section": "TV Repair by Brand"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/mi-tv-repair-delhi",
+      "text": "Mi/Xiaomi TV Repair",
+      "region": "main",
+      "section": "TV Repair by Brand"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/vu-tv-repair-delhi",
+      "text": "Vu TV Repair",
+      "region": "main",
+      "section": "TV Repair by Brand"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oneplus-tv-repair-delhi",
+      "text": "OnePlus TV Repair",
+      "region": "main",
+      "section": "TV Repair by Brand"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-dwarka",
+      "text": "TV Repair Dwarka → Plan a Dwarka visit with sector, access, model and estimate details.",
+      "region": "main",
+      "section": "Focused support for your repair request"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/smart-tv-repair",
+      "text": "Smart TV Repair → Separate app, Wi-Fi, input and startup complaints before approving work.",
+      "region": "main",
+      "section": "Focused support for your repair request"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call now",
+      "region": "main",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "external",
+      "href": "https://share.google/iyXemxWlZ7gIQwDAr",
+      "text": "Open in Google Maps",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Our 4-Step Repair Process"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Visit",
+      "region": "other",
+      "section": "Our 4-Step Repair Process"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "81",
+      "loading": "eager",
+      "fetchpriority": "low",
+      "decoding": "async",
+      "sizes": "(min-width: 992px) 132px, 116px",
+      "srcsetWidths": [
+        "32w",
+        "48w",
+        "64w",
+        "96w",
+        "128w",
+        "256w",
+        "384w",
+        "640w",
+        "750w",
+        "828w",
+        "1080w",
+        "1200w",
+        "1920w",
+        "2048w",
+        "3840w"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/illustrations/led-tv.svg",
+      "alt": "LED TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [],
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "src": "/images/illustrations/oled-qled-tv.svg",
+      "alt": "OLED/QLED TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [],
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "src": "/images/illustrations/lcd-tv.svg",
+      "alt": "LCD TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [],
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "src": "/images/illustrations/plasma-tv.svg",
+      "alt": "Plasma TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [],
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "src": "/images/illustrations/curved-tv.svg",
+      "alt": "Curved TV Repair by GR Solution",
+      "width": "520",
+      "height": "320",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [],
+      "region": "main",
+      "section": "Professional TV Repair Services"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "81",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Our 4-Step Repair Process"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 93155 15700",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 93155 15700",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "GR Solution Repair Services",
+      "url": "https://grsolution.co.in/services",
+      "hasPart": [
+        {
+          "@type": "Service",
+          "name": "LED TV Repair",
+          "url": "https://grsolution.co.in/services/led-tv-repair"
+        },
+        {
+          "@type": "Service",
+          "name": "OLED/QLED TV Repair",
+          "url": "https://grsolution.co.in/services/oled-qled-tv-repair"
+        },
+        {
+          "@type": "Service",
+          "name": "LCD TV Repair",
+          "url": "https://grsolution.co.in/services/lcd-tv-repair"
+        },
+        {
+          "@type": "Service",
+          "name": "Plasma TV Repair",
+          "url": "https://grsolution.co.in/services/plasma-tv-repair"
+        },
+        {
+          "@type": "Service",
+          "name": "Curved TV Repair",
+          "url": "https://grsolution.co.in/services/curved-tv-repair"
+        }
+      ]
+    }
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "CollectionPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 93155 15700"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Explore GR Solution services for LED, OLED/QLED, LCD, Plasma and Curved TV repair across Delhi, Noida, Greater Noida and Ghaziabad.",
+      "Doorstep serviceDelhi, Noida, Greater Noida & Ghaziabad",
+      "90-day service warrantyWhere applicable, explained before work"
+    ],
+    "faq": {
+      "questions": 0,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [],
+      "schema": [],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 606,
+  "mainTextSha256": "273a39d696f01ccb5f01b7f5e7b6168523f12d0b25222292e68f3eac20c97fc1",
+  "copy": {
+    "main": [
+      "REPAIR SERVICES",
+      "Professional TV",
+      "Repair Services",
+      "Explore GR Solution services for LED, OLED/QLED, LCD, Plasma and Curved TV repair across Delhi, Noida, Greater Noida and Ghaziabad.",
+      "Doorstep service",
+      "Delhi, Noida, Greater Noida & Ghaziabad",
+      "90-day service warranty",
+      "Where applicable, explained before work",
+      "Genuine or compatible parts",
+      "Chosen with your approval",
+      "★★★★★",
+      "4.9",
+      "on Google",
+      "· 9 reviews",
+      "LED TV Repair",
+      "Doorstep LED TV diagnosis and repair support for display, sound, power and backlight faults.",
+      "Backlight and display fault diagnosis",
+      "Power and motherboard inspection",
+      "Doorstep support across Delhi NCR",
+      "View Service",
+      "OLED/QLED TV Repair",
+      "Careful diagnostics for premium OLED, QLED and high-end smart TV display issues.",
+      "Premium panel-aware diagnosis",
+      "Color, line and brightness issue checks",
+      "Board-level troubleshooting guidance",
+      "View Service",
+      "LCD TV Repair",
+      "Practical LCD TV repair support for ageing display, power, sound and input issues.",
+      "Age and part feasibility inspection",
+      "Display and power diagnosis",
+      "Clear repair-versus-replace guidance",
+      "View Service",
+      "Plasma TV Repair",
+      "Specialized inspection for older plasma TVs with display, power, heating and sound issues.",
+      "Older TV feasibility guidance",
+      "Power and sustain board checks",
+      "Practical repair advice before spending",
+      "View Service",
+      "Curved TV Repair",
+      "Careful curved TV inspection for display distortion, panel symptoms, power and sound faults.",
+      "Curved panel handling care",
+      "Display and power diagnosis",
+      "Mounting and stand-related inspection",
+      "View Service",
+      "Not sure what’s wrong with your TV?",
+      "Talk to a technician. Diagnosis is free and you approve the price before any paid work.",
+      "Call now",
+      "WhatsApp",
+      "NEARBY SUPPORT",
+      "How nearby TV repair requests work",
+      "Searches such as TV repair nearby, nearest TV repairman, nearby TV service centre, nearest TV repair shop or TV repair shops in my area usually mean the customer wants quick local help. GR Solution provides independent doorstep inspection across its verified Delhi NCR service areas and does not claim unverified shop branches or brand authorization.",
+      "Share your location, TV brand, screen size and exact symptom first. The team can then explain visit availability and whether the issue is suitable for doorstep diagnosis.",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Ghaziabad",
+      "LOCAL TV REPAIR",
+      "TV Repair by City",
+      "Start with the city page if you need complete TV repair guidance for LED, OLED/QLED, LCD, Plasma and Curved TV issues.",
+      "TV Repair Delhi",
+      "TV Repair Noida",
+      "TV Repair Greater Noida",
+      "TV Repair Ghaziabad",
+      "POPULAR SEARCHES",
+      "Top Local TV Repair Searches",
+      "Quick links based on high-priority Google Keyword Planner opportunities for GR Solution.",
+      "LED TV Repair Noida",
+      "LED TV Repair Delhi",
+      "Sony TV Repair Noida",
+      "Samsung TV Service Centre Delhi",
+      "LG TV Service Center in Delhi",
+      "TV Repair in Indirapuram Ghaziabad",
+      "BY BRAND",
+      "TV Repair by Brand",
+      "GR Solution provides repair support for the following TV brands across Delhi, Noida, Greater Noida and Ghaziabad.",
+      "Sony TV Repair",
+      "Samsung TV Repair",
+      "LG TV Repair",
+      "Mi/Xiaomi TV Repair",
+      "Vu TV Repair",
+      "OnePlus TV Repair",
+      "Focused support for your repair request",
+      "TV Repair Dwarka →",
+      "Plan a Dwarka visit with sector, access, model and estimate details.",
+      "Smart TV Repair →",
+      "Separate app, Wi-Fi, input and startup complaints before approving work.",
+      "SERVICE FLOW",
+      "Our 4-Step Repair Process",
+      "A simple process from first contact to approved repair.",
+      "STEP 1",
+      "Contact GR Solution",
+      "Call, WhatsApp or submit the enquiry form with your repair requirement.",
+      "STEP 2",
+      "Share Device Issue",
+      "Tell us the model, symptoms and service location for better diagnosis.",
+      "STEP 3",
+      "Get Diagnosis Visit",
+      "Our technician checks the device and explains the issue clearly.",
+      "STEP 4",
+      "Approve Repair Estimate",
+      "You receive a transparent estimate before any paid repair work begins.",
+      "Not sure what’s wrong with your TV?",
+      "Talk to a technician. Diagnosis is free and you approve the price before any paid work.",
+      "Call now",
+      "WhatsApp"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM · Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 5+ years of technical excellence and transparent pricing.",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Open in Google Maps",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "WhatsApp",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "Skip to content",
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Phone number",
+      "Your name",
+      "(optional)",
+      "Service Required",
+      "(optional)",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Service area",
+      "(optional)",
+      "Select area",
+      "West Delhi",
+      "South Delhi",
+      "East Delhi",
+      "North Delhi",
+      "Noida",
+      "Greater Noida",
+      "Ghaziabad",
+      "Request a callback",
+      "We only use your number to call you back about your TV.",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}
