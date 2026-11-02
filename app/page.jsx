@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import WorkshopGallery from '@/components/WorkshopGallery';
+import workshopStyles from '@/components/WorkshopGallery.module.css';
 import Link from 'next/link';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
@@ -197,9 +199,9 @@ export default function HomePage() {
       </section>
 
       {/* Real workshop photos */}
-      <section className="section border-y border-line bg-surface" data-section="workshop">
+      <section className={`${workshopStyles.section} section border-y border-line bg-surface`} data-section="workshop">
         <div className="container">
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
+          <div className="grid gap-10">
             <div>
               <span className="eyebrow">REAL WORKSHOP PHOTOS</span>
               <h2 className="mt-3">See the Care Behind Every TV Repair</h2>
@@ -225,45 +227,7 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-[minmax(0,1.25fr)_minmax(140px,0.75fr)] gap-3 sm:gap-4">
-              <figure className="relative col-span-2 overflow-hidden rounded-2xl bg-navy-50 shadow-card">
-                <Image
-                  src="/images/workshop-repair-bench.webp"
-                  alt="GR Solution workshop repair bench with TV panels and diagnostic equipment"
-                  width={1200}
-                  height={900}
-                  sizes="(min-width: 992px) 58vw, 100vw"
-                  className="aspect-[4/3] h-full w-full object-cover"
-                />
-                <figcaption className="absolute bottom-3 left-3 rounded-lg bg-ink/90 px-3 py-2 text-xs font-semibold text-white sm:bottom-4 sm:left-4 sm:text-sm">
-                  TV diagnostics at our workshop
-                </figcaption>
-              </figure>
-              <figure className="overflow-hidden rounded-2xl bg-navy-50 shadow-card">
-                <Image
-                  src="/images/workshop-tv-diagnosis.webp"
-                  alt="GR Solution technician inspecting a TV at the workshop"
-                  width={720}
-                  height={960}
-                  sizes="(min-width: 1024px) 32vw, 62vw"
-                  className="aspect-[3/4] h-full w-full object-cover"
-                />
-              </figure>
-              <figure className="flex min-h-0 flex-col justify-between rounded-2xl border border-line bg-white p-3 shadow-card sm:p-4">
-                <Image
-                  src="/images/workshop-interior.webp"
-                  alt="Interior view of the GR Solution TV repair workshop"
-                  width={141}
-                  height={118}
-                  sizes="141px"
-                  className="h-auto w-full rounded-lg object-cover"
-                />
-                <figcaption className="mt-3">
-                  <span className="eyebrow text-[0.6875rem]">Our workspace</span>
-                  <p className="mt-1 text-small font-semibold leading-snug text-ink">Practical support for TV repair work.</p>
-                </figcaption>
-              </figure>
-            </div>
+            <WorkshopGallery />
           </div>
         </div>
       </section>

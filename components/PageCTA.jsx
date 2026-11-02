@@ -3,7 +3,7 @@ import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
 
 const assurances = ['Same-day visit available', 'Transparent estimate', 'Delhi NCR doorstep support'];
 
-export default function PageCTA({ badge = 'FAST LOCAL SUPPORT', title, description, serviceName }) {
+export default function PageCTA({ badge = 'FAST LOCAL SUPPORT', title, description, serviceName, benefits }) {
   const ctaTitle = title || (serviceName ? `Need Expert ${serviceName} in Delhi NCR?` : 'Need Repair Support?');
   const ctaDescription =
     description ||
@@ -26,7 +26,7 @@ export default function PageCTA({ badge = 'FAST LOCAL SUPPORT', title, descripti
             <h2 className="mx-auto mt-4 max-w-[24ch] text-white">{ctaTitle}</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lead text-white/75">{ctaDescription}</p>
             <ul className="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-x-6 gap-y-2 text-small font-semibold text-white/85">
-              {assurances.map((item) => (
+              {(benefits?.length ? benefits : assurances).map((item) => (
                 <li key={item} className="flex items-center gap-2">
                   <i className="fa-solid fa-circle-check text-teal-300" aria-hidden="true" /> {item}
                 </li>

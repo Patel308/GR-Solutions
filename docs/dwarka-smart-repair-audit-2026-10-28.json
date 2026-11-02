@@ -1,0 +1,79 @@
+{
+  "origin": "http://127.0.0.1:3100",
+  "checked_pages": 110,
+  "preserved_existing_pages": 108,
+  "new_pages": [
+    {
+      "path": "/services/tv-repair-dwarka",
+      "h1": "TV Repair Dwarka",
+      "words": 1969,
+      "faq_count": 6,
+      "internal_links": 11
+    },
+    {
+      "path": "/services/smart-tv-repair",
+      "h1": "Smart TV Repair",
+      "words": 1942,
+      "faq_count": 6,
+      "internal_links": 11
+    }
+  ],
+  "existing_pages_with_additions": [
+    "/services",
+    "/services/led-tv-repair",
+    "/services/tv-repair-delhi",
+    "/services/tv-repair-west-delhi"
+  ],
+  "removed_draft_routes_404": [
+    "/services/lg-tv-repair",
+    "/services/samsung-tv-repair",
+    "/services/sony-tv-repair"
+  ],
+  "text_similarity_not_cannibalisation": {
+    "/services/lg-tv-repair-greater-noida": {
+      "shared_five_word_phrases_percent": 13.02,
+      "nearest_page": "/services/toshiba-tv-repair-greater-noida"
+    },
+    "/services/lg-tv-repair-noida": {
+      "shared_five_word_phrases_percent": 12.96,
+      "nearest_page": "/services/toshiba-tv-repair-noida"
+    },
+    "/services/oled-qled-tv-repair-noida": {
+      "shared_five_word_phrases_percent": 10.34,
+      "nearest_page": "/services/led-tv-repair-noida"
+    },
+    "/services/plasma-tv-repair-ghaziabad": {
+      "shared_five_word_phrases_percent": 6.58,
+      "nearest_page": "/services/toshiba-tv-repair-ghaziabad"
+    },
+    "/services/smart-tv-repair": {
+      "shared_five_word_phrases_percent": 12.81,
+      "nearest_page": "/services/tv-repair-dwarka"
+    },
+    "/services/toshiba-tv-repair-delhi": {
+      "shared_five_word_phrases_percent": 9.8,
+      "nearest_page": "/services/toshiba-tv-repair-greater-noida"
+    },
+    "/services/toshiba-tv-repair-ghaziabad": {
+      "shared_five_word_phrases_percent": 9.61,
+      "nearest_page": "/services/toshiba-tv-repair-greater-noida"
+    },
+    "/services/toshiba-tv-repair-greater-noida": {
+      "shared_five_word_phrases_percent": 13.64,
+      "nearest_page": "/services/vu-tv-repair-greater-noida"
+    },
+    "/services/toshiba-tv-repair-noida": {
+      "shared_five_word_phrases_percent": 12.96,
+      "nearest_page": "/services/lg-tv-repair-noida"
+    },
+    "/services/tv-repair-dwarka": {
+      "shared_five_word_phrases_percent": 17.18,
+      "nearest_page": "/services/tv-repair-indirapuram"
+    },
+    "/services/vu-tv-repair-greater-noida": {
+      "shared_five_word_phrases_percent": 13.64,
+      "nearest_page": "/services/toshiba-tv-repair-greater-noida"
+    }
+  },
+  "failures": []
+}

@@ -6,9 +6,8 @@ import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
 import PriceTable from '@/components/PriceTable';
 import SectionCTA from '@/components/SectionCTA';
-import { HeroActions } from '@/components/page/PageHero';
 import LinkTiles from '@/components/page/LinkTiles';
-import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
+import GuideBookingCTA from '@/components/GuideBookingCTA';
 import { cities } from '@/data/localServicePages';
 import { pageMetadata } from '@/data/pages';
 import {
@@ -117,16 +116,7 @@ export default function PricingPage() {
                 screen size. Panel replacement is the expensive exception. What decides your price is which component
                 failed {'—'} not the brand.
               </p>
-              <div className="mt-6">
-                <HeroActions>
-                  <PhoneLink callLocation="pricing_hero_call" className="btn btn-primary btn-lg" data-cta="pricing_hero_call">
-                    <i className="fa-solid fa-phone" aria-hidden="true" /> Call now
-                  </PhoneLink>
-                  <WhatsAppLink className="btn btn-whatsapp btn-lg" data-cta="pricing_hero_whatsapp">
-                    <i className="fa-brands fa-whatsapp" aria-hidden="true" /> WhatsApp
-                  </WhatsAppLink>
-                </HeroActions>
-              </div>
+              <GuideBookingCTA contentId="pricing" intent="price" placement="after_answer" />
             </div>
 
             {/* Price snapshot */}
@@ -190,6 +180,11 @@ export default function PricingPage() {
             .
           </p>
           <PriceTable rows={panelPriceBands} caption="TV panel replacement prices in Delhi NCR" showSourcesLink={false} />
+          <GuideBookingCTA contentId="pricing" intent="price" placement="after_price_tables" />
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            <Link href="/blog/tv-motherboard-diagnosis" className="rounded-xl border border-primary/15 p-4 font-bold text-primary hover:text-secondary">Before approving a board replacement: what evidence to ask for</Link>
+            <Link href="/blog/prepare-for-doorstep-tv-repair" className="rounded-xl border border-primary/15 p-4 font-bold text-primary hover:text-secondary">Before booking a visit: model, access and estimate checklist</Link>
+          </div>
 
           <SectionCTA
             section="pricing_mid_cta"

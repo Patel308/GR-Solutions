@@ -1,3 +1,4 @@
+import { repairLandingPages } from '@/data/repairLandingPages';
 import { services } from '@/data/services';
 import { localServicePages } from '@/data/localServicePages';
 import { brandServicePages } from '@/data/brandServicePages';
@@ -5,6 +6,7 @@ import { localityPages } from '@/data/localityPages';
 import { blogArticles } from '@/data/blogArticles';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
+import { getServicePageRevision, serviceContentReviewedAt } from '@/data/servicePageRevisions';
 
 // Google ignores <changefreq> and <priority>; it reads <lastmod>. These dates
 // track the last substantive content revision for each page group, so bump the
@@ -37,7 +39,7 @@ export default function sitemap() {
 
   const localPages = localServicePages.map((page) => ({
     url: `${siteConfig.url}/services/${page.slug}`,
-    lastModified: LAST_REVIEWED.local,
+    lastModified: getServicePageRevision(page.slug) ? serviceContentReviewedAt : LAST_REVIEWED.local,
     changeFrequency: 'monthly',
     priority: 0.85,
   }));
@@ -51,7 +53,7 @@ export default function sitemap() {
 
   const brandPages = brandServicePages.map((page) => ({
     url: `${siteConfig.url}/services/${page.slug}`,
-    lastModified: LAST_REVIEWED.brand,
+    lastModified: getServicePageRevision(page.slug) ? serviceContentReviewedAt : LAST_REVIEWED.brand,
     changeFrequency: 'monthly',
     priority: 0.8,
   }));
@@ -63,5 +65,6 @@ export default function sitemap() {
     priority: 0.75,
   }));
 
-  return [...staticPages, ...servicePages, ...localPages, ...localityUrls, ...brandPages, ...blogArticlePages];
+  const repairPages = repairLandingPages.map((page) => ({ url: `${siteConfig.url}/services/${page.slug}`, lastModified: page.reviewedAt, changeFrequency: 'monthly', priority: 0.85 }));
+  return [...staticPages, ...servicePages, ...localPages, ...localityUrls, ...brandPages, ...blogArticlePages, ...repairPages];
 }

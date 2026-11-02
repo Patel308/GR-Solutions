@@ -1,3 +1,4 @@
+import { RepairPageLinks } from './RepairLandingPage';
 import Link from 'next/link';
 import ContentTable from '@/components/ContentTable';
 import FAQ from '@/components/FAQ';
@@ -210,6 +211,7 @@ export default function LocalityPage({ page }) {
         </div>
       </section>
 
+      <RepairPageLinks path={`/services/${page.slug}`} />
       <PageCTA
         badge={`${page.name.toUpperCase()} TV REPAIR`}
         title={`TV not working in ${page.name}?`}

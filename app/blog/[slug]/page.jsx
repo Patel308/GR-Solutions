@@ -3,7 +3,6 @@ import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
 import FAQ from '@/components/FAQ';
-import SectionCTA from '@/components/SectionCTA';
 import PageHero from '@/components/page/PageHero';
 import SectionHead from '@/components/page/SectionHead';
 import LinkTiles from '@/components/page/LinkTiles';
@@ -14,6 +13,8 @@ import { blogArticles, blogAuthor, getBlogArticleBySlug } from '@/data/blogArtic
 import { siteConfig, entityIds } from '@/data/siteConfig';
 import PriceTable from '@/components/PriceTable';
 import ContentTable from '@/components/ContentTable';
+import GuideBookingCTA from '@/components/GuideBookingCTA';
+import { getSupportingTrustGuides } from '@/data/repairTrustGuides';
 
 export function generateStaticParams() {
   return blogArticles.map((article) => ({ slug: article.slug }));
@@ -43,6 +44,9 @@ export default async function BlogArticlePage({ params }) {
   if (!article) notFound();
 
   const pageUrl = `${siteConfig.url}/blog/${article.slug}`;
+  const supportingGuides = getSupportingTrustGuides(article);
+  const ctaIntent = /cost|price/.test(article.slug) ? 'price' : article.slug === 'prepare-for-doorstep-tv-repair' ? 'visit' : 'symptom';
+  const firstPriceSection = article.sections.findIndex((section) => section.priceTable);
   // The byline is a team, not an individual, so it is typed as an Organization.
   // Schema.org allows either for `author`; claiming Person for a group name is
   // the kind of mismatch that undermines E-E-A-T rather than supporting it.
@@ -60,8 +64,6 @@ export default async function BlogArticlePage({ params }) {
 
   // One call-to-action inside the article: straight after the price table on
   // cost and symptom guides, otherwise halfway through.
-  const priceIndex = sections.findIndex((section) => section.priceTable);
-  const ctaAfter = priceIndex >= 0 ? priceIndex : Math.max(0, Math.ceil(sections.length / 2) - 1);
   const related = relatedArticles(article, blogArticles, 3);
 
   return (
@@ -114,7 +116,12 @@ export default async function BlogArticlePage({ params }) {
         eyebrow={article.category}
         title={article.h1}
         answer={article.directAnswer}
-        image={{ src: article.image, alt: `${article.h1} guide by GR Solution` }}
+        image={{
+          src: article.image,
+          alt: article.imageAlt || `${article.h1} guide by GR Solution`,
+          width: article.imageWidth,
+          height: article.imageHeight,
+        }}
       >
         {/* Author and dates. The "|" separators are kept in the HTML for
             the byline text; the layout replaces them visually. */}
@@ -163,6 +170,7 @@ export default async function BlogArticlePage({ params }) {
             <TocDetails items={toc} className="mb-8 xl:hidden" />
             <article className="prose-article">
               <p className="text-[1.125rem] leading-relaxed text-ink sm:text-[1.1875rem]">{article.intro}</p>
+              <GuideBookingCTA contentId={article.slug} intent={ctaIntent} placement="after_intro" />
               <div className="mt-10 grid gap-10">
                 {sections.map((section, index) => (
                   <div key={section.heading} className="min-w-0">
@@ -182,23 +190,40 @@ export default async function BlogArticlePage({ params }) {
                         </ul>
                       ) : null}
                       {section.closing ? <p className="mt-5">{section.closing}</p> : null}
+                      {section.links?.length ? (
+                        <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2">
+                          {section.links.map((link) => (
+                            <Link key={link.href} href={link.href} className="text-link font-semibold">
+                              {link.label}
+                            </Link>
+                          ))}
+                        </div>
+                      ) : null}
+                      {index === firstPriceSection ? (
+                        <GuideBookingCTA contentId={article.slug} intent="price" placement="after_price_table" />
+                      ) : null}
                     </section>
-                    {index === ctaAfter ? (
-                      priceIndex >= 0 ? (
-                        <SectionCTA
-                          section="article_cta"
-                          withContainer={false}
-                          className="mt-8 py-0 sm:py-0"
-                          title="Want a firm figure for your TV?"
-                          text="Book a doorstep diagnosis and approve the price before any paid work."
-                        />
-                      ) : (
-                        <SectionCTA section="article_cta" withContainer={false} className="mt-8 py-0 sm:py-0" />
-                      )
-                    ) : null}
                   </div>
                 ))}
               </div>
+              {article.sources?.length ? (
+                <section className="mt-12 border-t border-line pt-8" aria-label="Editorial sources">
+                  <h2 className="heading-panel">Sources and scope</h2>
+                  <p className="mt-3">
+                    Editorial guidance reviewed on 25 October 2026. Manufacturer instructions apply to the specified products; this guide does not claim manufacturer authorisation or document an actual repair case.
+                  </p>
+                  <ul className="mt-4 grid gap-4">
+                    {article.sources.map((source) => (
+                      <li key={source.href}>
+                        <a href={source.href} className="text-link font-semibold">
+                          {source.label}
+                        </a>
+                        <p className="mt-1 text-small leading-relaxed text-muted">{source.note}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
             </article>
           </div>
 
@@ -209,6 +234,19 @@ export default async function BlogArticlePage({ params }) {
               <p className="mt-5 rounded-xl bg-surface p-4 text-small leading-relaxed text-muted">
                 Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.
               </p>
+              {supportingGuides.length ? (
+                <nav aria-label="Related repair checklists" className="mt-6">
+                  <h2 className="text-[1.125rem] font-bold text-ink">Before you approve a repair</h2>
+                  <div className="mt-3 grid gap-2">
+                    {supportingGuides.map((guide) => (
+                      <Link key={guide.slug} href={`/blog/${guide.slug}`} className="link-tile">
+                        <span className="min-w-0 flex-1 leading-snug">{guide.title}</span>
+                        <i className="fa-solid fa-arrow-right shrink-0 text-xs" aria-hidden="true" />
+                      </Link>
+                    ))}
+                  </div>
+                </nav>
+              ) : null}
             </aside>
             <TocNav items={toc} className="sticky top-28 mt-8 hidden xl:block" />
             <TocSpy ids={toc.map((item) => item.id)} />
@@ -252,6 +290,8 @@ export default async function BlogArticlePage({ params }) {
       <PageCTA
         title="Need TV Repair Guidance?"
         description="Call or WhatsApp GR Solution with your TV model, fault symptoms and location for inspection-based next steps."
+        badge={article.trustGuide ? 'INSPECTION-BASED GUIDANCE' : undefined}
+        benefits={article.trustGuide ? ['Independent repair provider', 'Estimate before paid work', 'Visit availability confirmed first'] : undefined}
       />
     </main>
   );

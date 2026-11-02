@@ -1,0 +1,220 @@
+{
+  "responsive": [
+    {
+      "buttonOverflow": false,
+      "clientWidth": 305,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 305,
+      "path": "/blog/tv-motherboard-diagnosis",
+      "width": 320
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 305,
+      "ctaCount": 1,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 305,
+      "path": "/blog/prepare-for-doorstep-tv-repair",
+      "width": 320
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 305,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 305,
+      "path": "/pricing",
+      "width": 320
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 305,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 305,
+      "path": "/blog/tv-repair-cost-delhi",
+      "width": 320
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 305,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 305,
+      "path": "/blog/tv-sound-but-no-picture",
+      "width": 320
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 360,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 360,
+      "path": "/blog/tv-motherboard-diagnosis",
+      "width": 375
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 360,
+      "ctaCount": 1,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 360,
+      "path": "/blog/prepare-for-doorstep-tv-repair",
+      "width": 375
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 360,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 360,
+      "path": "/pricing",
+      "width": 375
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 360,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 360,
+      "path": "/blog/tv-repair-cost-delhi",
+      "width": 375
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 360,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 360,
+      "path": "/blog/tv-sound-but-no-picture",
+      "width": 375
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 753,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 753,
+      "path": "/blog/tv-motherboard-diagnosis",
+      "width": 768
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 753,
+      "ctaCount": 1,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 753,
+      "path": "/blog/prepare-for-doorstep-tv-repair",
+      "width": 768
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 753,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 753,
+      "path": "/pricing",
+      "width": 768
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 753,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 753,
+      "path": "/blog/tv-repair-cost-delhi",
+      "width": 768
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 753,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 753,
+      "path": "/blog/tv-sound-but-no-picture",
+      "width": 768
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 1265,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 1265,
+      "path": "/blog/tv-motherboard-diagnosis",
+      "width": 1280
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 1265,
+      "ctaCount": 1,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 1265,
+      "path": "/blog/prepare-for-doorstep-tv-repair",
+      "width": 1280
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 1265,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 1265,
+      "path": "/pricing",
+      "width": 1280
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 1265,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 1265,
+      "path": "/blog/tv-repair-cost-delhi",
+      "width": 1280
+    },
+    {
+      "buttonOverflow": false,
+      "clientWidth": 1265,
+      "ctaCount": 2,
+      "imageLoaded": true,
+      "overflow": false,
+      "pageWidth": 1265,
+      "path": "/blog/tv-sound-but-no-picture",
+      "width": 1280
+    }
+  ],
+  "enquiry": [
+    {
+      "path": "/blog/tv-motherboard-diagnosis",
+      "opened": true
+    },
+    {
+      "path": "/blog/prepare-for-doorstep-tv-repair",
+      "opened": true
+    },
+    {
+      "path": "/blog/tv-repair-cost-delhi",
+      "opened": true
+    }
+  ],
+  "pricing_enquiry_opened": true,
+  "forms_submitted": false
+}

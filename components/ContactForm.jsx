@@ -6,6 +6,8 @@ const DIALOG_SOURCES = {
   sticky_bar: { label: 'Book Visit button', subject: 'New doorstep visit request (Book Visit)' },
   header: { label: 'Quick Enquiry button (header)', subject: 'New GR Solution website enquiry' },
   mobile_menu: { label: 'Enquiry button (mobile menu)', subject: 'New GR Solution website enquiry' },
+  guide: { label: 'Guide: Request free diagnosis', subject: 'New doorstep visit request (Book Visit)' },
+  repair_page: { label: 'Repair page: Request free diagnosis', subject: 'New doorstep visit request (Book Visit)' },
 };
 
 // Contact page appointment form, landing page form and the Quick Enquiry
@@ -35,7 +37,7 @@ export default function ContactForm({ id = 'contactForm', compact = false, title
       section={compact ? 'enquiry_dialog' : 'lead_form'}
       subject={dialogSource?.subject || 'New GR Solution website enquiry'}
       hidden={{ _template: 'table', ...(dialogSource ? { source: dialogSource.label } : {}) }}
-      fields={compact ? ['issue', 'area'] : ['issue']}
+      fields={compact ? ['service', 'area'] : ['service', 'issue']}
     />
   );
 

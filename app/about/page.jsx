@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import WorkshopGallery from '@/components/WorkshopGallery';
+import workshopStyles from '@/components/WorkshopGallery.module.css';
 import Link from 'next/link';
 import ContentTable from '@/components/ContentTable';
 import GoogleRating from '@/components/GoogleRating';
@@ -72,30 +74,6 @@ const howWeWork = [
     icon: 'fa-solid fa-shield-halved',
     title: 'Warranty explained up front',
     text: 'Warranty depends on the repair and the part used, and is explained before the work starts.',
-  },
-];
-
-const workshopPhotos = [
-  {
-    src: '/images/workshop-repair-bench.webp',
-    alt: 'GR Solution workshop repair bench with TV panels and diagnostic equipment',
-    caption: 'The repair bench, where panel and board-level work is done',
-    width: 1200,
-    height: 900,
-  },
-  {
-    src: '/images/workshop-tv-diagnosis.webp',
-    alt: 'GR Solution technician inspecting a TV at the workshop',
-    caption: 'Diagnosing a TV before any repair is quoted',
-    width: 720,
-    height: 960,
-  },
-  {
-    src: '/images/workshop-interior.webp',
-    alt: 'Interior view of the GR Solution TV repair workshop in New Kondli',
-    caption: 'Inside the New Kondli workshop',
-    width: 141,
-    height: 118,
   },
 ];
 
@@ -225,7 +203,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section band-tint" data-section="about_workshop">
+      <section className={`${workshopStyles.section} section band-tint`} data-section="about_workshop">
         <div className="container">
           <SectionHead
             align="left"
@@ -233,36 +211,7 @@ export default function AboutPage() {
             title="Inside our workshop"
             lead="These photos are from the GR Solution workshop in New Kondli, where bench-level repairs are carried out."
           />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,0.8fr)] lg:gap-5">
-            {workshopPhotos.map((photo) => {
-              const small = photo.width < 400;
-              return (
-                <figure
-                  key={photo.src}
-                  className={`card m-0 flex flex-col overflow-hidden ${small ? 'sm:col-span-2 lg:col-span-1' : ''}`}
-                >
-                  <div className={small ? 'flex flex-1 items-center justify-center bg-surface p-6' : 'flex-1 bg-navy-50'}>
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      width={photo.width}
-                      height={photo.height}
-                      sizes={small ? `${photo.width}px` : '(min-width: 992px) 34vw, (min-width: 640px) 50vw, 100vw'}
-                      className={
-                        small
-                          ? 'h-auto w-full max-w-[141px] rounded-lg object-cover'
-                          : 'aspect-[4/3] h-full w-full object-cover'
-                      }
-                    />
-                  </div>
-                  <figcaption className="flex items-start gap-2.5 p-4 font-semibold leading-snug text-ink sm:p-5">
-                    <i className="fa-solid fa-location-dot mt-1 text-teal-600" aria-hidden="true" />
-                    {photo.caption}
-                  </figcaption>
-                </figure>
-              );
-            })}
-          </div>
+          <WorkshopGallery />
         </div>
       </section>
 

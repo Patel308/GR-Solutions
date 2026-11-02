@@ -1,3 +1,5 @@
+import RepairLandingPage, { RepairPageLinks } from '@/components/RepairLandingPage';
+import { repairLandingPages, getRepairLandingPage } from '@/data/repairLandingPages';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import FAQ from '@/components/FAQ';
@@ -30,6 +32,8 @@ import ContentTable from '@/components/ContentTable';
 import LocalityPage from '@/components/LocalityPage';
 import { getLocalityPageBySlug, getLocalityPagesByCity, localityPages } from '@/data/localityPages';
 import { PhoneLink, PhoneNumber, WhatsAppLink } from '@/components/ContactChannel';
+import ServicePageRevision from '@/components/ServicePageRevision';
+import { getServicePageRevision } from '@/data/servicePageRevisions';
 
 // Page copy is written with the SEO number; swap it for the visitor's channel
 // number so ad visitors browsing these pages never see the SEO line.
@@ -128,11 +132,17 @@ const genericProcess = [
 ];
 
 export function generateStaticParams() {
-  return [...services, ...localServicePages, ...localityPages, ...brandServicePages].map((page) => ({ slug: page.slug }));
+  return [...services, ...localServicePages, ...localityPages, ...brandServicePages, ...repairLandingPages].map((page) => ({ slug: page.slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const landing = getRepairLandingPage(slug);
+  if (landing) return {
+    title: landing.title, description: landing.description,
+    alternates: { canonical: `/services/${landing.slug}` },
+    openGraph: { title: landing.title, description: landing.description, url: `/services/${landing.slug}`, images: [landing.photo] },
+  };
   const localityPage = getLocalityPageBySlug(slug);
   if (localityPage) {
     return {
@@ -196,6 +206,8 @@ export async function generateMetadata({ params }) {
 
 export default async function ServiceDetailPage({ params }) {
   const { slug } = await params;
+  const landing = getRepairLandingPage(slug);
+  if (landing) return <RepairLandingPage page={landing} />;
   const localityPage = getLocalityPageBySlug(slug);
   if (localityPage) return <LocalityPage page={localityPage} />;
 
@@ -371,6 +383,7 @@ export default async function ServiceDetailPage({ params }) {
 
       <ServiceFaultsSection serviceSlug={service.slug} serviceTitle={service.title} cityPages={cityPages} />
 
+      <RepairPageLinks path={`/services/${service.slug}`} />
       <RelatedGuides path={`/services/${service.slug}`} />
 
       {/* CTA */}
@@ -402,6 +415,19 @@ function LocalServicePage({ page }) {
     : page.relatedServiceLinks || [];
   const pageUrl = `${siteConfig.url}/services/${page.slug}`;
   const waContext = `${service ? lowerServiceTitle(service.title) : 'TV repair'} in ${page.cityName}`;
+
+  const content = getServicePageRevision(page.slug);
+  if (content) {
+    return <ServicePageRevision page={page} content={content} service={service}
+      relatedLinks={[
+        { label: 'GR Solution homepage', href: '/' },
+        { label: parentServiceTitle, href: parentServiceHref },
+        ...page.sameServiceOtherCities,
+        ...relatedSameCityPages,
+      ]}
+      guides={<RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />}
+    />;
+  }
 
   return (
     <main data-wa-context={waContext}>
@@ -648,6 +674,7 @@ function LocalServicePage({ page }) {
         </div>
       </section>
 
+      <RepairPageLinks path={`/services/${page.slug}`} />
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {(page.tvTypesCovered?.length > 0 || page.brandCityLinks?.length > 0) && (
@@ -695,6 +722,20 @@ function LocalServicePage({ page }) {
 
 function BrandServicePage({ page }) {
   const pageUrl = `${siteConfig.url}/services/${page.slug}`;
+
+  const content = getServicePageRevision(page.slug);
+  if (content) {
+    return <ServicePageRevision page={page} content={content}
+      relatedLinks={[
+        { label: 'GR Solution homepage', href: '/' },
+        { label: 'All TV repair services', href: '/services' },
+        ...page.priorityInternalLinks,
+        ...page.relatedBrandCityLinks,
+        ...page.relatedCityServiceLinks,
+      ]}
+      guides={<RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />}
+    />;
+  }
 
   return (
     <main data-wa-context={`${page.brand} TV repair in ${page.cityName}`}>
@@ -921,6 +962,7 @@ function BrandServicePage({ page }) {
         </div>
       </section>
 
+      <RepairPageLinks path={`/services/${page.slug}`} />
       <RelatedGuides path={`/services/${page.slug}`} cityName={page.cityName} />
 
       {/* FAQ */}

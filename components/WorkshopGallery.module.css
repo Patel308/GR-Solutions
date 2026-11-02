@@ -1,0 +1,36 @@
+.gallery {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+  width: 100%;
+  min-width: 0;
+}
+
+.photo {
+  margin: 0;
+  min-width: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgb(15 23 42 / 8%);
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: minmax(0, 16fr) minmax(0, 9fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .section > :global(.container) {
+    width: 100%;
+    max-width: none;
+    padding-inline: 8px;
+  }
+}

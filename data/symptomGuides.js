@@ -25,7 +25,10 @@ export const symptomGuideArticles = [
       'Why a TV plays sound with a black screen, the one-minute torch test that tells you the cause, and what each fix typically costs in Delhi NCR.',
     h1: 'TV Has Sound but No Picture: Causes and Fixes',
     category: 'Symptom Guide',
-    image: '/images/service_tv.webp',
+    image: '/images/blog/tv-sound-but-no-picture.webp',
+    imageWidth: 1280,
+    imageHeight: 853,
+    imageAlt: "Illustration of a TV producing sound with a dark screen and an external flashlight check",
     primaryKeyword: 'tv sound but no picture',
     directAnswer:
       'A TV with sound but no picture usually has a failed backlight, not a dead screen. Shine a phone torch at the screen at a sharp angle: if you can faintly see the picture, the panel is working and the backlight has failed — typically ₹3,000–₹8,000 to fix on a 32”–43” set. If you see nothing, the fault is further back.',
@@ -120,7 +123,10 @@ export const symptomGuideArticles = [
       'What it means when a TV will not turn on, how to read the standby light, the checks to do first, and the typical repair cost in Delhi NCR.',
     h1: 'TV Not Turning On: What the Standby Light Is Telling You',
     category: 'Symptom Guide',
-    image: '/images/service_tv.webp',
+    image: '/images/blog/tv-not-turning-on.webp',
+    imageWidth: 1280,
+    imageHeight: 853,
+    imageAlt: "Illustration of a TV with no standby light, an unplugged power cord, remote and external-check checklist",
     primaryKeyword: 'tv not turning on',
     directAnswer:
       'A TV that will not turn on most often has a power supply board fault, especially after a storm or power cut. Check the standby light first: no light points to power supply or socket; a steady light points to the mainboard or remote; a blinking light is the TV reporting an error. Power board repair usually costs ₹1,000–₹6,500 in Delhi NCR.',

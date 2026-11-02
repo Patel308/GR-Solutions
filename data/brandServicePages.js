@@ -415,10 +415,69 @@ const brandDiagnosticLabels = {
   toshiba: 'Toshiba TV Boot Loop Repair',
 };
 
+// Additional repair guidance belongs to these existing brand-city URLs only.
+// Preserve the original topics and page identity; do not generate competing routes.
+const priorityBrandTopicDetails = {
+  "sony-tv-repair-noida": {
+    "extensions": [
+      "For Sony Bravia TV repair in Noida, share the full model code, screen size and whether the fault appears on built-in menus as well as HDMI sources. A dark LED screen, an OLED display fault and a damaged panel need different tests. Repair or replacement is recommended only after the affected circuit and compatible parts are identified.",
+      "For Sony Android TV repair in Noida, note whether the set is stuck on the Sony logo, repeatedly restarts or only fails inside one app. Software, an external device, power instability and mainboard faults can look similar. A boot loop alone is not a reason to order a motherboard; diagnosis should establish the cause first."
+    ],
+    "additionalTopics": [
+      {
+        "keyword": "Sony OLED TV Repair Noida",
+        "title": "Sony OLED TV repair in Noida",
+        "text": "Sony OLED televisions use self-emitting pixels and do not have separate LED backlight strips. A black screen, image retention or a display line needs model-specific checks to distinguish settings, image processing, power and panel condition. Board-related faults may be repairable, while physical panel damage or persistent burn-in needs a realistic feasibility and replacement-cost assessment. Before booking, send the model label and a photo of the symptom. Ask for the proposed work, parts availability and applicable warranty terms before approving an estimate."
+      },
+      {
+        "keyword": "Sony LED TV Repair Noida",
+        "title": "Sony LED TV repair in Noida",
+        "text": "Sony LED TV repair starts by separating backlight illumination from the picture signal, power supply and panel. Sound with no picture does not by itself prove that the screen needs replacing. For a 55-inch or 65-inch set, share the mounting arrangement, society sector, tower and lift access when requesting a Noida visit. Keep the television mounted until safe handling is arranged. The inspection determines whether work can be completed at home or needs a workshop; confirm any collection arrangements and the estimate before repair."
+      }
+    ]
+  },
+  "samsung-tv-repair-delhi": {
+    "extensions": [
+      "For Samsung QLED TV repair in Delhi, uneven brightness, colour changes and no-picture complaints need checks of illumination, its controls and the image path before panel replacement is considered. QLED is LCD-based and uses a backlight; it is different from self-emitting OLED. Send the full model code so the inspection and any replacement part match the actual television.",
+      "For Samsung Smart Hub repair in Delhi, distinguish an app or network problem from a television that freezes on every source. Note any recent update, error message and whether HDMI and the settings menu still work. A reset or firmware intervention should follow model-specific guidance, with settings and account implications explained before proceeding; app failure alone does not establish a hardware fault."
+    ],
+    "additionalTopics": [
+      {
+        "keyword": "Samsung Neo QLED Repair Delhi",
+        "title": "Samsung Neo QLED repair in Delhi",
+        "text": "Samsung Neo QLED models use Mini LED illumination, so a dark area or unstable brightness needs different checks from a conventional LED-strip job. Local dimming behaviour, the illumination supply, processing and panel condition must be distinguished before recommending a repair. Provide the full model code and describe whether the fault affects menus, streaming and external inputs. For a large wall-mounted screen in Delhi, mention access and handling constraints when booking. A technician confirms repair feasibility and compatible-part availability before an estimate is approved."
+      },
+      {
+        "keyword": "Samsung LED TV Repair in Delhi",
+        "title": "Samsung LED TV repair in Delhi",
+        "text": "Samsung LED and Crystal UHD televisions can need backlight, power, mainboard or input diagnosis when the screen is dark or startup is unreliable. A standby-light pattern and the presence of sound are useful observations, rather than a diagnosis on their own. Share the model, size, Delhi locality and a short symptom video when requesting service. GR Solution provides independent repair support, not manufacturer warranty service. Ask what the estimate includes, whether workshop handling is needed and which warranty terms apply to the proposed work."
+      }
+    ]
+  },
+  "lg-tv-repair-delhi": {
+    "extensions": [
+      "For LG OLED TV repair in Delhi, first confirm the display type from the full model code. OLED pixels produce their own light, so a dark screen cannot be repaired by replacing LED backlight strips. Power, processing and panel checks should guide the estimate. Persistent image retention, burn-in or physical damage needs an honest feasibility assessment rather than a promise that every panel can be restored.",
+      "For LG WebOS TV repair in Delhi, explain whether the problem affects one app, every app, HDMI or the home menu itself. Network conditions, software state, connected devices and hardware can cause similar complaints. A slow interface does not prove the mainboard has failed. Before any reset or software work, ask what settings or account access may need to be restored."
+    ],
+    "additionalTopics": [
+      {
+        "keyword": "LG LED TV Repair in Delhi",
+        "title": "LG LED TV repair in Delhi",
+        "text": "LG LED televisions use a separate backlight, unlike LG OLED models. Sound with a dark screen, flicker or uneven brightness calls for checks of illumination and its supply as well as the image path. Lines can also involve connections, display electronics or the panel, so a photograph alone cannot confirm the part required. Send the full model, size, Delhi address and whether the fault appears on the menu. Inspection determines the repair path, compatible parts and estimate before any paid work begins."
+      },
+      {
+        "keyword": "LG Smart TV Repair Delhi",
+        "title": "LG Smart TV repair and large-screen handling in Delhi",
+        "text": "When booking LG Smart TV repair for a 55-inch or 65-inch television, include the model code, whether it is LED or OLED, and its wall-mount or stand arrangement. Share the floor, lift access and parking details for the Delhi visit without trying to remove a heavy screen yourself. Some faults can be assessed at home; bench testing or delicate display work may require workshop handling. Confirm the proposed repair, any collection arrangements, parts availability and warranty terms before approving the work. GR Solution is an independent repair provider."
+      }
+    ]
+  }
+};
+
 function makeSupportingTopics(brand, city) {
   const label = brandTechnologyLabels[brand.slug];
   const diagnosticLabel = brandDiagnosticLabels[brand.slug];
-  return [
+  const topics = [
     {
       keyword: `${label} ${city.name}`,
       title: `${label} in ${city.name}`,
@@ -429,6 +488,16 @@ function makeSupportingTopics(brand, city) {
       title: `${diagnosticLabel} in ${city.name}`,
       text: `${makeSearchIntentGuidance(brand, city)} GR Solution checks software, power, display and board behavior before recommending parts or a workshop-level repair.`,
     },
+  ];
+  const details = priorityBrandTopicDetails[makeBrandCitySlug(brand, city)];
+  if (!details) return topics;
+
+  return [
+    ...topics.map((topic, index) => ({
+      ...topic,
+      text: `${topic.text} ${details.extensions[index]}`,
+    })),
+    ...details.additionalTopics,
   ];
 }
 

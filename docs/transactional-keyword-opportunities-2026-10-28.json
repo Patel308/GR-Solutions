@@ -1,0 +1,466 @@
+{
+  "review_date": "2026-10-28",
+  "source": "Fresh Google Ads KeywordPlanIdeaService discovery and historical metrics, not just prior export",
+  "history_window": "2024-10 through 2026-09 (24 complete months)",
+  "language": "en",
+  "coverage_baseline_pages": 108,
+  "live_heading_sample_pages": 9,
+  "measurement_note": "English city-targeted rounded estimates. Non-additive; bids are INR auction signals, not organic difficulty or job value. Exact-string absence does not establish missing semantic coverage. No GSC performance or repair-profit data.",
+  "candidates": [
+    {
+      "keyword": "tv repair dwarka",
+      "priority": "P1",
+      "gap": "Locality demand with only broad-area mentions",
+      "recommended_action": "Strengthen the West Delhi owner with genuine Dwarka visit/access details; consider a dedicated locality page only if operational coverage and useful unique information are confirmed",
+      "initial_existing_owner": "/services/tv-repair-west-delhi",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 110,
+          "top_of_page_bid_low_inr": 5.66,
+          "top_of_page_bid_high_inr": 21.22,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 0,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": [
+          "/services/led-tv-repair-delhi",
+          "/services/oled-qled-tv-repair-delhi",
+          "/services/lcd-tv-repair-delhi",
+          "/services/plasma-tv-repair-delhi",
+          "/services/curved-tv-repair-delhi",
+          "/services/tv-repair-delhi",
+          "/services/tv-repair-west-delhi",
+          "/services/samsung-tv-repair-delhi",
+          "/services/lg-tv-repair-delhi",
+          "/services/sony-tv-repair-delhi",
+          "/services/mi-tv-repair-delhi",
+          "/services/oneplus-tv-repair-delhi",
+          "/services/tcl-tv-repair-delhi",
+          "/services/panasonic-tv-repair-delhi",
+          "/services/vu-tv-repair-delhi",
+          "/services/philips-tv-repair-delhi",
+          "/services/hisense-tv-repair-delhi",
+          "/services/toshiba-tv-repair-delhi",
+          "/blog/led-tv-panel-repair-delhi",
+          "/blog/led-tv-screen-repair-delhi-ncr"
+        ]
+      }
+    },
+    {
+      "keyword": "smart tv repair",
+      "priority": "P1",
+      "gap": "Device/platform topic mentioned but no focused title or H1",
+      "recommended_action": "Test a focused all-brand software/app/Wi-Fi diagnostic section on an existing service owner before deciding a separate platform page is needed",
+      "initial_existing_owner": "/services/led-tv-repair",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 50,
+          "top_of_page_bid_low_inr": 8.3,
+          "top_of_page_bid_high_inr": 18.26,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 50,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": [
+          "/services/tv-repair-near-me",
+          "/services/lg-tv-repair-delhi",
+          "/services/oneplus-tv-repair-delhi",
+          "/services/oneplus-tv-repair-noida",
+          "/services/oneplus-tv-repair-greater-noida",
+          "/services/oneplus-tv-repair-ghaziabad",
+          "/services/tcl-tv-repair-delhi",
+          "/services/tcl-tv-repair-noida",
+          "/services/tcl-tv-repair-greater-noida",
+          "/services/tcl-tv-repair-ghaziabad",
+          "/services/vu-tv-repair-delhi",
+          "/services/vu-tv-repair-noida",
+          "/services/vu-tv-repair-ghaziabad",
+          "/services/hisense-tv-repair-delhi",
+          "/services/hisense-tv-repair-noida",
+          "/services/hisense-tv-repair-greater-noida",
+          "/services/hisense-tv-repair-ghaziabad"
+        ]
+      }
+    },
+    {
+      "keyword": "tv display repair",
+      "priority": "P1",
+      "gap": "Exact phrase unused; screen/display intent already covered semantically",
+      "recommended_action": "Improve existing LED repair display diagnosis and quote entry; not an automatic new-page opportunity",
+      "initial_existing_owner": "/services/led-tv-repair",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 90,
+          "top_of_page_bid_low_inr": 5.83,
+          "top_of_page_bid_high_inr": 33.67,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 30,
+          "top_of_page_bid_low_inr": 9.95,
+          "top_of_page_bid_high_inr": 39.68,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": 11.18,
+          "top_of_page_bid_high_inr": 39.82,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 20,
+          "top_of_page_bid_low_inr": 15.95,
+          "top_of_page_bid_high_inr": 45.58,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": []
+      }
+    },
+    {
+      "keyword": "tv repair rohini",
+      "priority": "P2",
+      "gap": "Locality term broadly mentioned without focused page",
+      "recommended_action": "Improve the Delhi service page or validate a unique locality page; confirm route coverage, not a fictional branch",
+      "initial_existing_owner": "/services/tv-repair-delhi",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 30,
+          "top_of_page_bid_low_inr": 7.4,
+          "top_of_page_bid_high_inr": 30.01,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": [
+          "/services/led-tv-repair-delhi",
+          "/services/oled-qled-tv-repair-delhi",
+          "/services/lcd-tv-repair-delhi",
+          "/services/plasma-tv-repair-delhi",
+          "/services/curved-tv-repair-delhi",
+          "/services/tv-repair-delhi",
+          "/services/samsung-tv-repair-delhi",
+          "/services/lg-tv-repair-delhi",
+          "/services/sony-tv-repair-delhi",
+          "/services/mi-tv-repair-delhi",
+          "/services/oneplus-tv-repair-delhi",
+          "/services/tcl-tv-repair-delhi",
+          "/services/panasonic-tv-repair-delhi",
+          "/services/vu-tv-repair-delhi",
+          "/services/philips-tv-repair-delhi",
+          "/services/hisense-tv-repair-delhi",
+          "/services/toshiba-tv-repair-delhi",
+          "/blog/led-tv-panel-repair-delhi"
+        ]
+      }
+    },
+    {
+      "keyword": "tv repair rk puram",
+      "priority": "P2",
+      "gap": "Unmentioned locality topic in the 108-page snapshot",
+      "recommended_action": "Verify operational route coverage, then add a specific South Delhi section first",
+      "initial_existing_owner": "/services/tv-repair-south-delhi",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 30,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 20,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": null,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": []
+      }
+    },
+    {
+      "keyword": "tv repair janakpuri",
+      "priority": "P2",
+      "gap": "One broad locality mention; no focused target",
+      "recommended_action": "Enhance current West Delhi coverage before adding a second local acquisition URL",
+      "initial_existing_owner": "/services/tv-repair-west-delhi",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 20,
+          "top_of_page_bid_low_inr": 11.15,
+          "top_of_page_bid_high_inr": 26.59,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 0,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": [
+          "/services/tv-repair-west-delhi"
+        ]
+      }
+    },
+    {
+      "keyword": "haier tv repair",
+      "priority": "P2 conditional",
+      "gap": "Brand absent from titles/H1/main text",
+      "recommended_action": "Confirm actual repair capability and parts support, then use existing general repair coverage first; volume is modest",
+      "initial_existing_owner": "/services/tv-repair-delhi",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 20,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": []
+      }
+    },
+    {
+      "keyword": "realme tv repair",
+      "priority": "P3 conditional",
+      "gap": "Brand absent; small-volume auction signal",
+      "recommended_action": "Investigate capability and lead economics before prioritising; high ad bid is not repair profit",
+      "initial_existing_owner": "/services/tv-repair-delhi",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": 11.18,
+          "top_of_page_bid_high_inr": 94.76,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": null,
+          "top_of_page_bid_high_inr": null,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": []
+      }
+    },
+    {
+      "keyword": "tv repair home service near me",
+      "priority": "Existing-intent optimisation",
+      "gap": "Exact phrase absent but doorstep/near-me task already served",
+      "recommended_action": "Improve visit availability, estimate policy and direct call/WhatsApp handoff on the existing near-me page; no extra synonym page",
+      "initial_existing_owner": "/services/tv-repair-near-me",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 110,
+          "top_of_page_bid_low_inr": 8.42,
+          "top_of_page_bid_high_inr": 30.21,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 30,
+          "top_of_page_bid_low_inr": 17.52,
+          "top_of_page_bid_high_inr": 99.76,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 10,
+          "top_of_page_bid_low_inr": 13.3,
+          "top_of_page_bid_high_inr": 44.38,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 20,
+          "top_of_page_bid_low_inr": 9.95,
+          "top_of_page_bid_high_inr": 63.68,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": []
+      }
+    },
+    {
+      "keyword": "tv repair shop near me",
+      "priority": "Existing-intent optimisation",
+      "gap": "Exact phrase absent but local repair/shop intent already served",
+      "recommended_action": "Make the genuine workshop address and visit/collection options clear on the current near-me page; no extra shop synonym page",
+      "initial_existing_owner": "/services/tv-repair-near-me",
+      "metrics": {
+        "Delhi": {
+          "monthly_estimate": 720,
+          "top_of_page_bid_low_inr": 8.49,
+          "top_of_page_bid_high_inr": 29.86,
+          "close_variants": []
+        },
+        "Noida": {
+          "monthly_estimate": 260,
+          "top_of_page_bid_low_inr": 12.44,
+          "top_of_page_bid_high_inr": 40.26,
+          "close_variants": []
+        },
+        "Greater Noida": {
+          "monthly_estimate": 70,
+          "top_of_page_bid_low_inr": 10.9,
+          "top_of_page_bid_high_inr": 44.11,
+          "close_variants": []
+        },
+        "Ghaziabad": {
+          "monthly_estimate": 210,
+          "top_of_page_bid_low_inr": 10.36,
+          "top_of_page_bid_high_inr": 42.38,
+          "close_variants": []
+        }
+      },
+      "baseline_coverage": {
+        "title_urls": [],
+        "h1_urls": [],
+        "main_body_urls": []
+      }
+    }
+  ],
+  "not_claimed_high_demand": [
+    "65 inch tv repair: Delhi 10/month",
+    "mini led tv repair: Delhi 10/month",
+    "tv backlight repair: Delhi 20/month and already present in service headings",
+    "tv motherboard repair: Delhi 20/month and already covered by existing service and new diagnosis guide"
+  ],
+  "search_intent_sources": [
+    "https://okhomeservices.com/",
+    "https://www.urbancompany.com/delhi-ncr-tv-repair-rohini-new-delhi",
+    "https://rrelectronics.info/smart-tv-repair/",
+    "https://www.gsmcaresolution.in/services.html",
+    "https://www.akelectronicsrepair.in/led-tv-repairing-service-saket.html"
+  ],
+  "release_state": "Research only; no application edits, commit, push or deployment during this discovery",
+  "raw_api_evidence_local": "Keyword_Research/transactional-keyword-gap-discovery-2026-10-28.json (not committed)"
+}

@@ -6,6 +6,7 @@ import { formatDate, readingMinutes } from '@/components/blog/articleMeta';
 import { pageMetadata } from '@/data/pages';
 import { siteConfig } from '@/data/siteConfig';
 import { blogArticles } from '@/data/blogArticles';
+import GuideBookingCTA from '@/components/GuideBookingCTA';
 
 export const metadata = {
   title: pageMetadata.blog.title,
@@ -20,6 +21,7 @@ const posts = [
     title: article.title,
     text: article.metaDescription,
     image: article.image,
+    imageAlt: article.imageAlt,
     link: `/blog/${article.slug}`,
     publishedAt: article.publishedAt,
     minutes: readingMinutes(article),
@@ -164,14 +166,16 @@ export default function BlogPage() {
                 key={post.title}
               >
                 <div className="col-start-2 row-span-2 row-start-1 overflow-hidden rounded-xl bg-navy-50 sm:w-full sm:rounded-none">
-                  <Image
-                    src={post.image}
-                    alt={`${post.title} by GR Solution`}
-                    width={520}
-                    height={320}
-                    sizes="(min-width: 1280px) 400px, (min-width: 992px) 30vw, (min-width: 768px) 46vw, (min-width: 640px) calc(100vw - 3rem), 88px"
-                    className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] sm:aspect-[520/320]"
-                  />
+                  <Link href={post.link} tabIndex={-1} aria-hidden="true">
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt || `${post.title} by GR Solution`}
+                      width={520}
+                      height={320}
+                      sizes="(min-width: 1280px) 400px, (min-width: 992px) 30vw, (min-width: 768px) 46vw, (min-width: 640px) calc(100vw - 3rem), 88px"
+                      className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] sm:aspect-[520/320]"
+                    />
+                  </Link>
                 </div>
                 <div className="col-start-1 row-start-1 flex flex-wrap items-center gap-x-3 gap-y-1.5 sm:px-6 sm:pt-6">
                   <span className="badge uppercase tracking-[0.06em]">{post.category}</span>
@@ -184,19 +188,20 @@ export default function BlogPage() {
                   )}
                 </div>
                 <h3 className="col-start-1 row-start-2 mt-2 text-[1.0625rem] leading-snug transition-colors group-hover:text-navy-700 sm:mt-3 sm:px-6 sm:text-lg">
-                  {post.title}
+                  <Link href={post.link}>{post.title}</Link>
                 </h3>
                 <p className="col-span-2 mt-2 text-[0.9375rem] leading-relaxed text-muted sm:flex-1 sm:px-6">{post.text}</p>
                 <Link
                   href={post.link}
                   className="link-arrow col-span-2 mt-1 self-start after:absolute after:inset-0 after:content-[''] sm:mx-6 sm:mb-3"
                 >
-                  Read More <span aria-hidden="true" className="sr-only">-&gt;</span>
+                  Read guide <span className="sr-only">: {post.title}</span> <span aria-hidden="true" className="sr-only">-&gt;</span>
                   <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
               </article>
             ))}
           </div>
+          <GuideBookingCTA contentId="blog-index" placement="after_guides" />
         </div>
       </section>
       <PageCTA title="Need Help With Your TV Repair Issue?" />

@@ -23,6 +23,30 @@ export const BRAND_OPTIONS = ['Samsung', 'Sony', 'LG', 'MI/Xiaomi', 'OnePlus', '
 
 export const AREA_OPTIONS = ['West Delhi', 'South Delhi', 'East Delhi', 'North Delhi', 'Noida', 'Greater Noida', 'Ghaziabad'];
 
+// "Service required" choices, grouped (same list as the live site since
+// 14 Oct 2026). The first group keeps the service names so enquiry emails
+// stay comparable.
+export const SERVICE_GROUPS = [
+  {
+    label: 'TV Repair',
+    options: ['LED TV Repair', 'OLED/QLED TV Repair', 'LCD TV Repair', 'Plasma TV Repair', 'Curved TV Repair', 'Smart TV / Android TV Repair'],
+  },
+  {
+    label: 'Premium TV Repair',
+    options: [
+      'Premium OLED TV Repair (LG, Sony, Samsung)',
+      'QLED / Neo QLED / Mini LED TV Repair',
+      'Large Screen TV Repair (65" and above)',
+    ],
+  },
+  {
+    label: 'Specific Repairs',
+    options: ['Screen / Panel Replacement', 'Backlight Repair', 'Motherboard / Power Board Repair'],
+  },
+  { label: 'New TV', options: ['New TV Purchase Enquiry'] },
+  { label: 'Other', options: ['Other / Not Sure'] },
+];
+
 export { normalisePhone };
 
 const PHONE_ERROR = 'Enter a 10-digit phone number so we can call you back.';
@@ -289,7 +313,14 @@ export default function LeadForm({
         <SelectField id={id('brand')} name="brand" label={label('brand', 'TV brand')} placeholder="Select brand" options={BRAND_OPTIONS} />
       ) : null}
       {fields.includes('service') ? (
-        <SelectField id={id('service')} name="service" label={label('service', 'Service required')} placeholder="Select service" options={services} />
+        <SelectField
+          id={id('service')}
+          name="service"
+          label={label('service', 'Service required')}
+          placeholder="Select service"
+          options={services}
+          groups={services.length ? null : SERVICE_GROUPS}
+        />
       ) : null}
       {fields.includes('area') ? (
         <SelectField id={id('area')} name="area" label={label('area', 'Service area')} placeholder="Select area" options={AREA_OPTIONS} />
@@ -329,7 +360,7 @@ export default function LeadForm({
   );
 }
 
-function SelectField({ id, name, label, placeholder, options }) {
+function SelectField({ id, name, label, placeholder, options = [], groups = null }) {
   return (
     <div>
       <label htmlFor={id} className="field-label">
@@ -337,11 +368,21 @@ function SelectField({ id, name, label, placeholder, options }) {
       </label>
       <select id={id} name={name} defaultValue="" className="field-input">
         <option value="">{placeholder}</option>
-        {options.map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
+        {groups
+          ? groups.map((group) => (
+              <optgroup key={group.label} label={group.label}>
+                {group.options.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </optgroup>
+            ))
+          : options.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
       </select>
     </div>
   );

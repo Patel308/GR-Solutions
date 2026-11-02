@@ -1,0 +1,386 @@
+[
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 216.6000061035156,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 4.69645695666543e-8,
+        "right": 8.199981689453125,
+        "width": 288.8000183105469
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 384.9125061035156,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0003004286196901518,
+        "right": 8.199981689453125,
+        "width": 288.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/",
+    "width": 320,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 216.6000061035156,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 4.69645695666543e-8,
+        "right": 8.199981689453125,
+        "width": 288.8000183105469
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 384.9125061035156,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0003004286196901518,
+        "right": 8.199981689453125,
+        "width": 288.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/about",
+    "width": 320,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of an unplugged TV with separate power and main boards, model information and a diagnostic notebook",
+        "fit": "contain",
+        "height": 192.52500915527344,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.00006495040665921437,
+        "right": 8.199981689453125,
+        "width": 288.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-motherboard-diagnosis",
+    "width": 320,
+    "nonImageFigureCaptions": 2,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of a TV with no standby light, an unplugged power cord, remote and external-check checklist",
+        "fit": "contain",
+        "height": 192.52500915527344,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0005212160646186348,
+        "right": 8.199981689453125,
+        "width": 288.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-not-turning-on",
+    "width": 320,
+    "nonImageFigureCaptions": 1,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 269.3999938964844,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 7.551986835885317e-8,
+        "right": 7.79998779296875,
+        "width": 359.20001220703125
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 478.7375183105469,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0003067933230707087,
+        "right": 7.79998779296875,
+        "width": 359.20001220703125
+      }
+    ],
+    "overflow": false,
+    "path": "/",
+    "width": 390,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 269.3999938964844,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 7.551986835885317e-8,
+        "right": 7.79998779296875,
+        "width": 359.20001220703125
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 478.7375183105469,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0003067933230707087,
+        "right": 7.79998779296875,
+        "width": 359.20001220703125
+      }
+    ],
+    "overflow": false,
+    "path": "/about",
+    "width": 390,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of an unplugged TV with separate power and main boards, model information and a diagnostic notebook",
+        "fit": "contain",
+        "height": 239.65000915527344,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0011475131039979658,
+        "right": 7.79998779296875,
+        "width": 359.20001220703125
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-motherboard-diagnosis",
+    "width": 390,
+    "nonImageFigureCaptions": 2,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of a TV with no standby light, an unplugged power cord, remote and external-check checklist",
+        "fit": "contain",
+        "height": 239.08750915527344,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.001792663255672622,
+        "right": 7.79998779296875,
+        "width": 359.20001220703125
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-not-turning-on",
+    "width": 390,
+    "nonImageFigureCaptions": 1,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 381.6000061035156,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 2.6657562601783983e-8,
+        "right": 8.199981689453125,
+        "width": 508.8000183105469
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 678.125,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.00030417446716590746,
+        "right": 8.199981689453125,
+        "width": 508.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/",
+    "width": 540,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 381.6000061035156,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 2.6657562601783983e-8,
+        "right": 8.199981689453125,
+        "width": 508.8000183105469
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 678.125,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.00030417446716590746,
+        "right": 8.199981689453125,
+        "width": 508.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/about",
+    "width": 540,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of an unplugged TV with separate power and main boards, model information and a diagnostic notebook",
+        "fit": "contain",
+        "height": 339.4624938964844,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0011598410465332163,
+        "right": 8.199981689453125,
+        "width": 508.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-motherboard-diagnosis",
+    "width": 540,
+    "nonImageFigureCaptions": 2,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of a TV with no standby light, an unplugged power cord, remote and external-check checklist",
+        "fit": "contain",
+        "height": 338.6625061035156,
+        "left": 8,
+        "loaded": true,
+        "ratioDifference": 0.0017945492582247535,
+        "right": 8.199981689453125,
+        "width": 508.8000183105469
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-not-turning-on",
+    "width": 540,
+    "nonImageFigureCaptions": 1,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 496.0874938964844,
+        "left": 183.6374969482422,
+        "loaded": true,
+        "ratioDifference": 4.101101591658107e-8,
+        "right": 579.9124908447266,
+        "width": 661.4500122070312
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 495.8999938964844,
+        "left": 869.0875244140625,
+        "loaded": true,
+        "ratioDifference": 0.000302514189381653,
+        "right": 183.83746337890625,
+        "width": 372.0750122070313
+      }
+    ],
+    "overflow": false,
+    "path": "/",
+    "width": 1440,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "GR Solution workshop repair bench with TV panels and diagnostic equipment",
+        "fit": "contain",
+        "height": 496.0874938964844,
+        "left": 183.6374969482422,
+        "loaded": true,
+        "ratioDifference": 4.101101591658107e-8,
+        "right": 579.9124908447266,
+        "width": 661.4500122070312
+      },
+      {
+        "alt": "GR Solution technician inspecting a TV at the workshop",
+        "fit": "contain",
+        "height": 495.8999938964844,
+        "left": 869.0875244140625,
+        "loaded": true,
+        "ratioDifference": 0.000302514189381653,
+        "right": 183.83746337890625,
+        "width": 372.0750122070313
+      }
+    ],
+    "overflow": false,
+    "path": "/about",
+    "width": 1440,
+    "nonImageFigureCaptions": 0,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of an unplugged TV with separate power and main boards, model information and a diagnostic notebook",
+        "fit": "contain",
+        "height": 373.1000061035156,
+        "left": 681.5125122070312,
+        "loaded": true,
+        "ratioDifference": 4.089731664436158e-8,
+        "right": 183.83746337890625,
+        "width": 559.6500244140625
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-motherboard-diagnosis",
+    "width": 1440,
+    "nonImageFigureCaptions": 2,
+    "imageCaptions": 0
+  },
+  {
+    "images": [
+      {
+        "alt": "Illustration of a TV with no standby light, an unplugged power cord, remote and external-check checklist",
+        "fit": "contain",
+        "height": 373.1000061035156,
+        "left": 681.5125122070312,
+        "loaded": true,
+        "ratioDifference": 0.0005861255739612048,
+        "right": 183.83746337890625,
+        "width": 559.6500244140625
+      }
+    ],
+    "overflow": false,
+    "path": "/blog/tv-not-turning-on",
+    "width": 1440,
+    "nonImageFigureCaptions": 1,
+    "imageCaptions": 0
+  }
+]

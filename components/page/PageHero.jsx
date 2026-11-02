@@ -12,8 +12,18 @@ const HERO_IMAGE_SIZES = '(min-width: 1280px) 510px, (min-width: 992px) 39vw, (m
 // A <link> element (hoisted into <head> by React) rather than a preload()
 // hint: hints also travel with prefetched pages, which would make the current
 // page download the photos of pages it merely links to.
-function HeroImage({ src, alt }) {
-  const { props } = getImageProps({ src, alt, width: 680, height: 500, sizes: HERO_IMAGE_SIZES, loading: 'eager' });
+// Pages that pass their image's real size (blog articles since Oct 2026) get
+// the whole photo, uncropped; others keep the 680x500 crop.
+function HeroImage({ src, alt, width, height }) {
+  const natural = Boolean(width && height);
+  const { props } = getImageProps({
+    src,
+    alt,
+    width: natural ? width : 680,
+    height: natural ? height : 500,
+    sizes: HERO_IMAGE_SIZES,
+    loading: 'eager',
+  });
   return (
     <>
       <link
@@ -29,7 +39,7 @@ function HeroImage({ src, alt }) {
         {...props}
         alt={alt}
         fetchPriority="low"
-        className="relative aspect-[680/500] w-full rounded-[1.25rem] object-cover shadow-card-hover ring-1 ring-black/5"
+        className={`relative w-full rounded-[1.25rem] shadow-card-hover ring-1 ring-black/5 ${natural ? 'h-auto' : 'aspect-[680/500] object-cover'}`}
       />
     </>
   );
@@ -63,7 +73,7 @@ export default function PageHero({ breadcrumb, eyebrow, title, answer, actions, 
           {image ? (
             <div className="relative mx-auto w-full max-w-[36rem] lg:max-w-none">
               <div className="absolute -inset-3 hidden rounded-[1.75rem] bg-gradient-to-br from-teal-100/60 via-transparent to-navy-100/70 lg:block" aria-hidden="true" />
-              <HeroImage src={image.src} alt={image.alt} />
+              <HeroImage src={image.src} alt={image.alt} width={image.width} height={image.height} />
             </div>
           ) : null}
 
