@@ -62,7 +62,39 @@ Item-level diff: `tools/seo-audit/reports/launch-2026-11/seo-diff-vs-live.md`.
 | Accessibility (axe, 19 pages × 4 widths) | Only the known footer H4 heading-order item (D13). Fixed on the way: duplicate landmark names on pages with two booking prompts, low-contrast WhatsApp button on the revised service pages |
 | Keyboard (skip link, menu, dialog, dropdown, FAQ) | 16 / 16 |
 | Layout, 10 pages × 7 widths (320–1440 px) | No horizontal scroll, layout shift 0 |
-| Mobile Lighthouse vs live, interleaved | Running; results to follow |
+| Mobile Lighthouse vs live, interleaved | See below |
+
+**Mobile Lighthouse vs the live site** (default mobile settings, Google
+Analytics blocked, the two builds alternated run by run; 7 runs per page,
+14 on the three pages that came out slower):
+
+| Page | LCP mean, live → new | LCP median | Performance |
+| --- | --- | --- | --- |
+| Home | 2.69 → **2.33 s** | 2.73 → 2.27 s | 96 → 98 |
+| Blog post (TV repair cost, Delhi) | 2.50 → **2.17 s** | 2.63 → 2.14 s | 96 → 98 |
+| City (Noida) | 2.44 → **2.31 s** | 2.44 → 2.15 s | 97 → 98 |
+| Revised service page (LG, Noida) | 2.36 → 2.31 s | 2.36 → 2.21 s | 97 → 98 |
+| Dwarka repair page | 2.18 → 2.38 s | 2.07 → 2.22 s | 99 → 98 |
+| Service (OLED/QLED) | 2.31 → 2.48 s | 2.28 → 2.57 s | 97.5 → 96 |
+| Blog index | 2.23 → 2.44 s | 2.14 → 2.29 s | 98 → 98 |
+| **All 70 runs per build** | 2.34 → 2.37 s | 2.36 → **2.27 s** | |
+
+First contentful paint 1.5 s and layout shift 0 everywhere; every page of
+the new build is lighter (299–329 KB against 309–449 KB).
+
+- Every page of the launch candidate averages **under the 2.5 s LCP
+  target**; the live home page does not (2.69 s).
+- Three pages are about 0.2 s slower in this simulation. The cause is
+  fixed, not random: the new build's render-blocking CSS is 18 KB against
+  live's 11 KB (the design system and its icon set) plus the 7 KB heading
+  font, about 0.08 s at the simulated 1.6 Mbps. The rest is Lighthouse's
+  run-to-run swing (see `docs/redesign/phase-5-report.md`, section 3.3).
+  For real visitors on 4G this is a few tens of milliseconds.
+- If those 0.2 s matter more than the look: dropping the heading font
+  (system font for headings too) saves 7 KB; moving the icon set out of the
+  render-blocking CSS saves about 7 KB. Either is a small, separate change.
+
+Every run: `tools/seo-audit/reports/launch-2026-11/lighthouse-ab/`.
 
 ## 4. Before you merge (owner)
 
