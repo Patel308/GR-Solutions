@@ -6,7 +6,7 @@ earlier images back on the Hostinger server. Nothing is rebuilt.
 
 | Image | What it is |
 | --- | --- |
-| `sha-606f612` | The site before the 2026 redesign (live 29 Oct – 2 Nov 2026). Git tag `prod/pre-redesign-2026-11-02`. |
+| `sha-606f612` | The site before the 2026 redesign (commit 606f612, live 29 Oct – 2 Nov 2026). |
 
 Any other earlier version: take its commit on `main` (`git log --first-parent main`,
 or the commit shown on its "Build, Push, Deploy" run) and use `sha-` plus the
