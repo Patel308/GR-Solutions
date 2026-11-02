@@ -1,0 +1,283 @@
+[
+  {
+    "source": "www.grsolution.co.in/:path*",
+    "probedPath": "/about",
+    "destination": "https://grsolution.co.in/:path*",
+    "permanent": true,
+    "status": 308,
+    "location": "https://grsolution.co.in/about"
+  },
+  {
+    "source": "/index.html",
+    "destination": "/",
+    "permanent": true,
+    "status": 308,
+    "location": "/"
+  },
+  {
+    "source": "/about.html",
+    "destination": "/about",
+    "permanent": true,
+    "status": 308,
+    "location": "/about"
+  },
+  {
+    "source": "/services.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/blog.html",
+    "destination": "/blog",
+    "permanent": true,
+    "status": 308,
+    "location": "/blog"
+  },
+  {
+    "source": "/contact.html",
+    "destination": "/contact",
+    "permanent": true,
+    "status": 308,
+    "location": "/contact"
+  },
+  {
+    "source": "/landing.html",
+    "destination": "/landing",
+    "permanent": true,
+    "status": 308,
+    "location": "/landing"
+  },
+  {
+    "source": "/privacy.html",
+    "destination": "/privacy",
+    "permanent": true,
+    "status": 308,
+    "location": "/privacy"
+  },
+  {
+    "source": "/terms.html",
+    "destination": "/terms",
+    "permanent": true,
+    "status": 308,
+    "location": "/terms"
+  },
+  {
+    "source": "/led-tv.html",
+    "destination": "/services/led-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/led-tv-repair"
+  },
+  {
+    "source": "/lcd-tv.html",
+    "destination": "/services/lcd-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/lcd-tv-repair"
+  },
+  {
+    "source": "/oled-tv.html",
+    "destination": "/services/oled-qled-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/oled-qled-tv-repair"
+  },
+  {
+    "source": "/blog-details.html",
+    "destination": "/blog",
+    "permanent": true,
+    "status": 308,
+    "location": "/blog"
+  },
+  {
+    "source": "/projects.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/fridge.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/shop.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/single-shop.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/led-tv-repair.html",
+    "destination": "/services/led-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/led-tv-repair"
+  },
+  {
+    "source": "/services/oled-qled-tv-repair.html",
+    "destination": "/services/oled-qled-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/oled-qled-tv-repair"
+  },
+  {
+    "source": "/services/lcd-tv-repair.html",
+    "destination": "/services/lcd-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/lcd-tv-repair"
+  },
+  {
+    "source": "/services/plasma-tv-repair.html",
+    "destination": "/services/plasma-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/plasma-tv-repair"
+  },
+  {
+    "source": "/services/curved-tv-repair.html",
+    "destination": "/services/curved-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/curved-tv-repair"
+  },
+  {
+    "source": "/services/oled-qled-repair.html",
+    "destination": "/services/oled-qled-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/oled-qled-tv-repair"
+  },
+  {
+    "source": "/services/panel-bonding.html",
+    "destination": "/services/led-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/led-tv-repair"
+  },
+  {
+    "source": "/services/smart-tv-setup.html",
+    "destination": "/services/led-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/led-tv-repair"
+  },
+  {
+    "source": "/services/cctv-repair.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/dth-services.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/laptop-repair.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/mobile-repair.html",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/oled-qled-repair",
+    "destination": "/services/oled-qled-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/oled-qled-tv-repair"
+  },
+  {
+    "source": "/services/mi-xiaomi-tv-repair-delhi",
+    "destination": "/services/mi-tv-repair-delhi",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/mi-tv-repair-delhi"
+  },
+  {
+    "source": "/services/mi-xiaomi-tv-repair-noida",
+    "destination": "/services/mi-tv-repair-noida",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/mi-tv-repair-noida"
+  },
+  {
+    "source": "/services/mi-xiaomi-tv-repair-greater-noida",
+    "destination": "/services/mi-tv-repair-greater-noida",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/mi-tv-repair-greater-noida"
+  },
+  {
+    "source": "/services/mi-xiaomi-tv-repair-ghaziabad",
+    "destination": "/services/mi-tv-repair-ghaziabad",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/mi-tv-repair-ghaziabad"
+  },
+  {
+    "source": "/services/panel-bonding",
+    "destination": "/services/led-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/led-tv-repair"
+  },
+  {
+    "source": "/services/smart-tv-setup",
+    "destination": "/services/led-tv-repair",
+    "permanent": true,
+    "status": 308,
+    "location": "/services/led-tv-repair"
+  },
+  {
+    "source": "/services/cctv-repair",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/dth-services",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/laptop-repair",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  },
+  {
+    "source": "/services/mobile-repair",
+    "destination": "/services",
+    "permanent": true,
+    "status": 308,
+    "location": "/services"
+  }
+]

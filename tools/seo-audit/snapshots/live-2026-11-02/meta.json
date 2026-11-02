@@ -1,0 +1,9 @@
+{
+  "crawledAt": "2026-11-02T02:40:57.757Z",
+  "base": "http://127.0.0.1:3200",
+  "commit": "606f612037819eea37e3ca3ccedb02ace55b666f",
+  "pages": 112,
+  "sitemapUrls": 110,
+  "rendered": true,
+  "note": "Live production (origin/main 606f612, Next.js 16.2.9) built locally on 2026-11-02; launch baseline for the redesign."
+}

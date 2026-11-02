@@ -1,0 +1,1579 @@
+{
+  "path": "/services/tv-repair-delhi",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 168761,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair Delhi | Doorstep TV Service | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Need TV repair in Delhi? GR Solution provides doorstep LED, OLED/QLED, LCD, Plasma and Curved TV diagnosis across Delhi.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/tv-repair-delhi"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair Delhi | Doorstep TV Service | GR Solution"
+      ],
+      [
+        "og:description",
+        "Need TV repair in Delhi? GR Solution provides doorstep LED, OLED/QLED, LCD, Plasma and Curved TV diagnosis across Delhi."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/tv-repair-delhi"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair Delhi | Doorstep TV Service | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Need TV repair in Delhi? GR Solution provides doorstep LED, OLED/QLED, LCD, Plasma and Curved TV diagnosis across Delhi."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Repair in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Useful TV Repair Delhi Guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "GR Solution Contact",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Which Delhi TV repair do you actually need?",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common TV symptoms in Delhi and their usual causes",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Getting a TV repaired in Delhi: the local picture",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Visit planning",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Power supply and your TV",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Homes and handling",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Delhi service areas and visit planning",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Delhi areas with their own guide",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Detailed TV Repair Delhi Guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Best answer for TV Repair Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common problems we solve",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV types covered",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Local coverage in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Repair versus replacement guidance",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Pricing guidance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Common Problems We Solve",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What To Check Before Calling",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Repair vs Replace",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Topics for Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Doorstep TV Repair in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Inspection at Home in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Same-Day TV Inspection Requests in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Wall-Mounted TV Diagnosis in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Screen Line Diagnosis in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Motherboard Repair in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Smart TV Software Repair in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Why Choose GR Solution In Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Quality Checks",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "How TV Repair Delhi Works",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Local Coverage",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Cost Guidance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Quick Support",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Same Service In Other Cities",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Related TV Repair Services In Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Read Before You Book in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Repair Cost in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Screen Replacement Cost in Delhi NCR",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Repair vs Replacement",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Screen Replacement Cost Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "LED TV Panel Repair Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Types Covered",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Brand Repair Links",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Delhi FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need TV Repair Delhi?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "TV Repair Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call GR Solution",
+      "region": "main",
+      "section": "TV Repair in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Inspection",
+      "region": "main",
+      "section": "TV Repair in Delhi"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Useful TV Repair Delhi Guidance"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Useful TV Repair Delhi Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Visit GR Solution homepage",
+      "region": "main",
+      "section": "Useful TV Repair Delhi Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Explore main TV Repair Services",
+      "region": "main",
+      "section": "Useful TV Repair Delhi Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Open contact and booking page",
+      "region": "main",
+      "section": "Useful TV Repair Delhi Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-east-delhi",
+      "text": "TV Repair in East Delhi",
+      "region": "main",
+      "section": "Delhi areas with their own guide"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-south-delhi",
+      "text": "TV Repair in South Delhi",
+      "region": "main",
+      "section": "Delhi areas with their own guide"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-west-delhi",
+      "text": "TV Repair in West Delhi",
+      "region": "main",
+      "section": "Delhi areas with their own guide"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-delhi",
+      "text": "Full DelhiTV repair cost guide →",
+      "region": "main",
+      "section": "Cost Guidance"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair Noida",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair Greater Noida",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Same Service In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-delhi",
+      "text": "LED TV Repair Delhi",
+      "region": "main",
+      "section": "Related TV Repair Services In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-delhi",
+      "text": "OLED/QLED TV Repair Delhi",
+      "region": "main",
+      "section": "Related TV Repair Services In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-delhi",
+      "text": "LCD TV Repair Delhi",
+      "region": "main",
+      "section": "Related TV Repair Services In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-delhi",
+      "text": "Plasma TV Repair Delhi",
+      "region": "main",
+      "section": "Related TV Repair Services In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-delhi",
+      "text": "Curved TV Repair Delhi",
+      "region": "main",
+      "section": "Related TV Repair Services In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-delhi",
+      "text": "Delhi Cost Guide TV Repair Cost in Delhi What TV repair actually costs in Delhi, which fault types are cheap or expensive to fix, and how to tell before you book whether a repair is worth approving. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-screen-replacement-cost-delhi-ncr",
+      "text": "Panel & Screen Cost Guide TV Screen Replacement Cost in Delhi NCR What TV screen and panel replacement costs across Delhi NCR, how to tell a real panel fault from a backlight problem, and when replacement wins. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-vs-replacement-guide",
+      "text": "Decision Guide TV Repair vs Replacement A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/led-tv-screen-replacement-cost-delhi",
+      "text": "LED TV Cost Guide LED TV Screen Replacement Cost Delhi Understand LED TV screen replacement cost in Delhi, repair feasibility, panel damage, backlight faults and inspection-based guidance. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/led-tv-panel-repair-delhi",
+      "text": "Panel Repair Guide LED TV Panel Repair Delhi Learn when LED TV panel repair in Delhi is practical, what causes lines, patches, no display and how GR Solution diagnoses faults. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/sony-tv-repair-delhi",
+      "text": "Sony TV Repair Delhi",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/samsung-tv-repair-delhi",
+      "text": "Samsung TV Repair Delhi",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lg-tv-repair-delhi",
+      "text": "LG TV Repair Delhi",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/mi-tv-repair-delhi",
+      "text": "Mi/Xiaomi TV Repair Delhi",
+      "region": "main",
+      "section": "Brand Repair Links"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need TV Repair Delhi?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Need TV Repair Delhi?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "TV Repair Delhi by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "TV Repair in Delhi"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need TV Repair Delhi?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "TV Repair Delhi Service",
+        "serviceType": "TV repair service",
+        "description": "Need TV repair in Delhi? GR Solution provides doorstep LED, OLED/QLED, LCD, Plasma and Curved TV diagnosis across Delhi.",
+        "url": "https://grsolution.co.in/services/tv-repair-delhi",
+        "areaServed": "Delhi",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 99902 83890",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "addressRegion": "Delhi NCR",
+            "postalCode": "110096",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV Repair Delhi Service",
+            "item": "https://grsolution.co.in/services/tv-repair-delhi"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide TV repair in Delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution provides doorstep TV inspection and repair support in Delhi, including LED, OLED/QLED, LCD, Plasma and Curved TV issues."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Delhi areas do you cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common coverage includes East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Laxmi Nagar, Preet Vihar, Mayur Vihar, Dwarka and Rohini and nearby NCR areas, subject to technician schedule and access details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a TV with sound but no picture be repaired?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often yes. Sound-without-picture can come from backlight, T-Con, panel, power or mainboard issues, so inspection is needed before deciding."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair Smart TV app and HDMI issues?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution checks smart TV software, HDMI input, source switching, remote response and motherboard-related behavior during diagnosis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does TV repair cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cost depends on the failed component and screen size. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. The Delhi cost guide covers every common fault, and GR Solution confirms the exact figure after inspection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I repair or replace my TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Repair is usually worth it when the screen is intact. In Delhi: dead after power returned from a cut usually leads to affordable board repair; sound but no picture usually leads to repairable if the panel is intact; lines across the screen usually leads to depends on whether the panel is damaged."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I check before calling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the power socket, try another input, note whether sound is present and keep the TV model number ready. Customers in Delhi can speed up a visit by sharing the nearest landmark, parking/access details, floor number and whether the TV is wall mounted."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I book TV repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call GR Solution, send a WhatsApp message or use the contact form with the TV brand, size, issue and service location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I know what type of TV I have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the model number on the sticker at the back. Share it when booking and we will identify the panel type and match likely parts before the visit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which parts of Delhi can you reach fastest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "East Delhi — New Kondli, Mayur Vihar, Laxmi Nagar and Preet Vihar — is closest to our base. Cross-city areas such as South Delhi, Dwarka and Rohini are booked into a time window."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 4,
+    "emailMentions": 3
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Need TV repair in Delhi? GR Solution provides doorstep inspection, diagnosis, and repair support for LED, OLED/QLED, LCD, Plasma and Curved TV issues across Delhi and nearby NCR areas.",
+      "Call GR SolutionBook Inspection",
+      "Doorstep inspectionTransparent estimateDelhi NCR support"
+    ],
+    "faq": {
+      "questions": 10,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "TV Repair Services",
+        "Delhi"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "TV Repair Delhi Service"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 2632,
+  "mainTextSha256": "a4423ef2e37eacf51ebdcf5137fc28875ae05fdd643673caca431c9ace177e85",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "TV Repair Services",
+      "/",
+      "Delhi",
+      "TV REPAIR DELHI",
+      "TV Repair in Delhi",
+      "Need TV repair in Delhi? GR Solution provides doorstep inspection, diagnosis, and repair support for LED, OLED/QLED, LCD, Plasma and Curved TV issues across Delhi and nearby NCR areas.",
+      "Call GR Solution",
+      "Book Inspection",
+      "Doorstep inspection",
+      "Transparent estimate",
+      "Delhi NCR support",
+      "Useful TV Repair Delhi Guidance",
+      "Delhi TV repair requests can come from apartments, offices, shops, rented flats and independent homes, so the first step is understanding the exact TV symptom and access situation. GR Solution helps customers compare LED, OLED/QLED, LCD, Plasma and Curved TV repair options before approving any work.",
+      "For TV repair in Delhi, common service planning areas include East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Laxmi Nagar, Preet Vihar, Mayur Vihar, Dwarka and Rohini. The same no-display issue can mean a backlight fault in one LED TV, a board issue in another, or panel damage in a premium display, so diagnosis matters more than guessing.",
+      "Because GR Solution is based in New Kondli, Delhi requests can usually be discussed with strong local context. Customers looking for TV repair in South Delhi, TV repair home service Delhi or TV repair at home Delhi should share nearby landmarks, floor number, parking or society entry instructions and whether the TV is wall mounted.",
+      "GR Solution Contact",
+      "Phone:",
+      "+91 93155 15700",
+      "Email:",
+      "info@grsolution.co.in",
+      "Address: C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Visit GR Solution homepage",
+      "Explore main TV Repair Services",
+      "Open contact and booking page",
+      "LOCAL INSIGHT",
+      "Which Delhi TV repair do you actually need?",
+      "Delhi households own every kind of television we repair, often in the same building. The page you need depends on the type: most sets bought in the last decade are LED; premium sets are OLED or QLED; older second-room sets are often LCD; and a few long-serving plasma and curved sets are still in use. The table below maps the most common Delhi symptoms to what usually causes them.",
+      "If you are not sure what type you own, the model number on the back sticker answers it. Share it when you book, along with the area: East Delhi visits from our New Kondli base are the quickest to schedule, and South, West and North Delhi visits are booked into a time window.",
+      "Before booking: check whether other appliances on the same circuit also misbehaved when the TV failed. If a fridge or router restarted at the same moment, a supply event is the likely trigger, and the power board is where the diagnosis starts.",
+      "Common TV symptoms in Delhi and their usual causes",
+      "Common TV symptoms in Delhi and their usual causes",
+      "Symptom",
+      "Usual cause",
+      "Typical outcome",
+      "Dead after power returned from a cut",
+      "Power supply board",
+      "Affordable board repair",
+      "Sound but no picture",
+      "Backlight (LED) or inverter (LCD)",
+      "Repairable if the panel is intact",
+      "Lines across the screen",
+      "T-Con, ribbon or panel",
+      "Depends on whether the panel is damaged",
+      "DELHI AT A GLANCE",
+      "Getting a TV repaired in Delhi: the local picture",
+      "Visit planning",
+      "GR Solution works out of New Kondli in East Delhi, on the Noida border near Mayur Vihar Phase 3. That makes East Delhi the shortest trip we make. South, West and North Delhi are cross-city journeys, so those visits are booked into a time window rather than promised within the hour.",
+      "Power supply and your TV",
+      "Delhi’s electricity is distributed by different companies depending on the area — BSES Yamuna in East and Central Delhi, BSES Rajdhani in South and West Delhi, Tata Power-DDL in North and North-West Delhi, and NDMC in the New Delhi area. Whoever supplies your home, summer peak demand and monsoon storms are the two periods when voltage dips and spikes are most likely, and a spike is one of the classic ways a TV power board fails.",
+      "Homes and handling",
+      "Delhi’s housing is unusually mixed: DDA flats, group housing societies in the planned sub-cities, builder floors, independent houses and older colonies can all sit within a couple of kilometres of each other. Builder floors and older buildings often have no lift, which matters when a large set has to be carried to the workshop.",
+      "Delhi service areas and visit planning",
+      "Delhi service areas and visit planning",
+      "Area",
+      "Typical housing",
+      "Visit planning",
+      "New Kondli, Kondli, Mayur Vihar",
+      "DDA flats, group housing societies",
+      "Closest to our base — shortest wait",
+      "Laxmi Nagar, Preet Vihar",
+      "Builder floors, market-side homes",
+      "Short trip; parking is tight near the markets",
+      "South Delhi",
+      "Independent houses, builder floors, older colonies",
+      "Cross-city; booked into a time window",
+      "Dwarka",
+      "Sector-based society apartments",
+      "Far side of the city; plan the day ahead",
+      "Rohini",
+      "Sector housing, builder floors",
+      "Cross-city; plan the day ahead",
+      "If the building has no lift and the TV is above 50 inches, mention it when booking so two people are sent.",
+      "Delhi areas with their own guide",
+      "Local detail for the parts of Delhi we are asked about most: housing, access, electricity supply and how a visit is planned there.",
+      "TV Repair in East Delhi",
+      "TV Repair in South Delhi",
+      "TV Repair in West Delhi",
+      "LOCAL REPAIR GUIDE",
+      "Detailed TV Repair Delhi Guidance",
+      "Practical answers for diagnosis, local scheduling, safe handling, repair feasibility and after-repair checks.",
+      "Best answer for TV Repair Delhi",
+      "Need TV repair in Delhi? GR Solution provides doorstep inspection, diagnosis and repair support for LED, OLED/QLED, LCD, Plasma and Curved TV issues across Delhi and nearby NCR areas. The useful first step is to describe the exact symptom: no display, sound without picture, blinking light, display lines, dim screen, app freezing, HDMI issue or sudden power failure.",
+      "Common problems we solve",
+      "The Delhi symptoms we see most are dead after power returned from a cut, sound but no picture, lines across the screen. Across all TV types we also handle backlight failure, power board and motherboard faults, screen lines, HDMI and input faults, smart TV app problems and no-sound faults.",
+      "TV types covered",
+      "GR Solution supports LED, OLED/QLED, LCD, Plasma and Curved TVs. LED sets often need backlight or board diagnosis, OLED/QLED TVs need careful panel-aware inspection, LCD and Plasma models need repair-feasibility checks, and Curved TVs need handling care because screen pressure can affect the panel.",
+      "Local coverage in Delhi",
+      "Coverage includes East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Laxmi Nagar, Preet Vihar, Mayur Vihar, Dwarka and Rohini. Availability depends on technician schedule, TV size, building access, parking, wall-mount status and whether the issue looks safe for doorstep inspection or needs workshop-level tools after diagnosis.",
+      "Repair versus replacement guidance",
+      "Repair is often sensible when the panel glass is intact. For Delhi homes: dead after power returned from a cut usually leads to affordable board repair; sound but no picture usually leads to repairable if the panel is intact; lines across the screen usually leads to depends on whether the panel is damaged.",
+      "Pricing guidance",
+      "Backlight / LED strip replacement: roughly ₹3,000 - 8,000 on 32\" - 43\" sets, ₹5,500 - 12,000 on 44\" - 55\" and ₹8,500 - 18,000 on 56\" and above in the Delhi NCR market. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. Final cost is confirmed after inspection.",
+      "Common Problems We Solve",
+      "TV has sound but no picture or a completely black screen.",
+      "Backlight is dim, uneven, flickering or not working.",
+      "Screen shows vertical lines, patches, color distortion or half display.",
+      "TV does not power on, restarts repeatedly or shuts down after heating.",
+      "Smart TV apps, HDMI inputs, WiFi, remote or source switching fail.",
+      "Panel, motherboard, power board, speaker or T-Con symptoms need diagnosis.",
+      "What To Check Before Calling",
+      "Check the power socket, try a different input source, confirm whether sound is present, avoid pressing the screen, keep the TV model number ready, and share a short photo or video of the symptom if possible.",
+      "Repair vs Replace",
+      "Repair is worth checking when the display glass is intact and the fault appears related to backlight, board, power, audio, input or software behavior. Replacement may be better when the panel is physically damaged, parts are unavailable, or the repair estimate is too close to a new TV.",
+      "HELPFUL TOPICS",
+      "TV Repair Topics for Delhi",
+      "Concise guidance for common search questions, diagnosis decisions and safe next steps.",
+      "Doorstep TV Repair in Delhi",
+      "GR Solution starts suitable Delhi requests with doorstep inspection, helping customers understand display, sound, power, input and smart TV symptoms before moving a large television or approving repair.",
+      "TV Inspection at Home in Delhi",
+      "Share the TV brand, model, screen size, exact symptom and access details for an at-home inspection request in Delhi.",
+      "Same-Day TV Inspection Requests in Delhi",
+      "Same-day availability in Delhi depends on technician route, booking time, access and the reported fault.",
+      "Wall-Mounted TV Diagnosis in Delhi",
+      "Share mounting height, bracket type and access details before a Delhi visit.",
+      "TV Screen Line Diagnosis in Delhi",
+      "Vertical or horizontal lines may involve cables, timing electronics, a board or the panel itself.",
+      "TV Motherboard Repair in Delhi",
+      "Boot loops, missing inputs, frozen smart features and restart behavior can point toward the motherboard, but software, power and connected devices should be ruled out first.",
+      "Smart TV Software Repair in Delhi",
+      "App crashes, Wi-Fi problems and a frozen home screen may be software or storage related.",
+      "Why Choose GR Solution In Delhi",
+      "GR Solution uses symptom-led TV diagnosis for Delhi, so the technician checks what the TV is actually doing before suggesting repair.",
+      "Business details remain consistent: GR Solution, C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096, phone +91 93155 15700 and email info@grsolution.co.in.",
+      "Because GR Solution is based at C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096, Delhi requests can usually be assessed with clear local context and practical scheduling.",
+      "Customers receive practical repair-versus-replace guidance instead of fake fixed-price claims or unverified brand authorization claims.",
+      "Quality Checks",
+      "The final check depends on the TV type and approved repair, but these checkpoints help confirm that the fault is stable after service.",
+      "picture and brightness test",
+      "sound output check",
+      "HDMI/source switching",
+      "smart app response",
+      "stability after repair",
+      "SERVICE PROCESS",
+      "How TV Repair Delhi Works",
+      "STEP 1",
+      "Share your TV brand, size, symptom and Delhi location.",
+      "STEP 2",
+      "Get a call or WhatsApp response for visit planning.",
+      "STEP 3",
+      "Technician checks display, sound, power, input and board symptoms.",
+      "STEP 4",
+      "Repair feasibility and estimate are explained clearly.",
+      "STEP 5",
+      "Approved repair is completed and checked for stable picture and sound.",
+      "Local Coverage",
+      "TV repair coverage in Delhi includes East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Laxmi Nagar, Preet Vihar, Mayur Vihar, Dwarka and Rohini and nearby NCR locations, subject to technician schedule and service feasibility.",
+      "Cost Guidance",
+      "Pricing depends on screen size, brand, model, part availability and fault type. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. GR Solution gives an inspection-based estimate before any paid repair is started.",
+      "Full DelhiTV repair cost guide →",
+      "Quick Support",
+      "Delhi customers often want fast repair because the TV is used daily in family rooms, offices or waiting areas. GR Solution prioritizes clear scheduling, diagnosis-first communication and practical repair-versus-replacement guidance.",
+      "Same Service In Other Cities",
+      "TV Repair Noida",
+      "TV Repair Greater Noida",
+      "TV Repair Ghaziabad",
+      "Related TV Repair Services In Delhi",
+      "LED TV Repair Delhi",
+      "OLED/QLED TV Repair Delhi",
+      "LCD TV Repair Delhi",
+      "Plasma TV Repair Delhi",
+      "Curved TV Repair Delhi",
+      "IN-DEPTH GUIDES",
+      "Read Before You Book in Delhi",
+      "Detailed cost and diagnosis guides covering what actually drives the price and which faults are worth repairing.",
+      "Delhi Cost Guide",
+      "TV Repair Cost in Delhi",
+      "What TV repair actually costs in Delhi, which fault types are cheap or expensive to fix, and how to tell before you book whether a repair is worth approving.",
+      "Read the guide →",
+      "Panel & Screen Cost Guide",
+      "TV Screen Replacement Cost in Delhi NCR",
+      "What TV screen and panel replacement costs across Delhi NCR, how to tell a real panel fault from a backlight problem, and when replacement wins.",
+      "Read the guide →",
+      "Decision Guide",
+      "TV Repair vs Replacement",
+      "A practical way to decide whether to repair or replace a broken TV, using fault type, age, screen size and repair cost against a new set.",
+      "Read the guide →",
+      "LED TV Cost Guide",
+      "LED TV Screen Replacement Cost Delhi",
+      "Understand LED TV screen replacement cost in Delhi, repair feasibility, panel damage, backlight faults and inspection-based guidance.",
+      "Read the guide →",
+      "Panel Repair Guide",
+      "LED TV Panel Repair Delhi",
+      "Learn when LED TV panel repair in Delhi is practical, what causes lines, patches, no display and how GR Solution diagnoses faults.",
+      "Read the guide →",
+      "TV Types Covered",
+      "LED TV backlight, power board, sound and no-picture faults",
+      "OLED/QLED TV color, brightness, line and premium panel symptoms",
+      "LCD TV ageing display, audio, power and input issues",
+      "Plasma TV power, sustain board, heating and older-model feasibility checks",
+      "Curved TV display distortion, mounting pressure and panel handling concerns",
+      "Brand Repair Links",
+      "Sony TV Repair Delhi",
+      "Samsung TV Repair Delhi",
+      "LG TV Repair Delhi",
+      "Mi/Xiaomi TV Repair Delhi",
+      "FAQ",
+      "TV Repair Delhi FAQs",
+      "Do you provide TV repair in Delhi?",
+      "Yes, GR Solution provides doorstep TV inspection and repair support in Delhi, including LED, OLED/QLED, LCD, Plasma and Curved TV issues.",
+      "Which Delhi areas do you cover?",
+      "Common coverage includes East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Laxmi Nagar, Preet Vihar, Mayur Vihar, Dwarka and Rohini and nearby NCR areas, subject to technician schedule and access details.",
+      "Can a TV with sound but no picture be repaired?",
+      "Often yes. Sound-without-picture can come from backlight, T-Con, panel, power or mainboard issues, so inspection is needed before deciding.",
+      "Do you repair Smart TV app and HDMI issues?",
+      "Yes, GR Solution checks smart TV software, HDMI input, source switching, remote response and motherboard-related behavior during diagnosis.",
+      "How much does TV repair cost?",
+      "Cost depends on the failed component and screen size. Power supply board repair or replacement: roughly ₹1,000 - 3,500 on 32\" - 43\" sets, ₹1,800 - 5,000 on 44\" - 55\" and ₹2,500 - 6,500 on 56\" and above in the Delhi NCR market. The Delhi cost guide covers every common fault, and GR Solution confirms the exact figure after inspection.",
+      "Should I repair or replace my TV?",
+      "Repair is usually worth it when the screen is intact. In Delhi: dead after power returned from a cut usually leads to affordable board repair; sound but no picture usually leads to repairable if the panel is intact; lines across the screen usually leads to depends on whether the panel is damaged.",
+      "What should I check before calling?",
+      "Check the power socket, try another input, note whether sound is present and keep the TV model number ready. Customers in Delhi can speed up a visit by sharing the nearest landmark, parking/access details, floor number and whether the TV is wall mounted.",
+      "How can I book TV repair?",
+      "Call GR Solution, send a WhatsApp message or use the contact form with the TV brand, size, issue and service location.",
+      "How do I know what type of TV I have?",
+      "Check the model number on the sticker at the back. Share it when booking and we will identify the panel type and match likely parts before the visit.",
+      "Which parts of Delhi can you reach fastest?",
+      "East Delhi — New Kondli, Mayur Vihar, Laxmi Nagar and Preet Vihar — is closest to our base. Cross-city areas such as South Delhi, Dwarka and Rohini are booked into a time window.",
+      "FAST LOCAL SUPPORT",
+      "Need TV Repair Delhi?",
+      "Call GR Solution for doorstep diagnosis, transparent repair guidance and TV service support across Delhi.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

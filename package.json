@@ -6,18 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint app components data"
+    "lint": "eslint app components data lib",
+    "test": "node --test tests/unit/*.test.mjs"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "next": "16.4.3",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.5.0",
     "eslint": "^9.39.4",
-    "eslint-config-next": "^16.2.9",
-    "postcss": "^8.5.15",
+    "eslint-config-next": "16.4.3",
+    "postcss": "^8.5.29",
     "tailwindcss": "^3.4.19"
   }
 }

@@ -1,0 +1,765 @@
+{
+  "measuredAt": "2026-10-12T07:54:49.065Z",
+  "base": "http://localhost:3100",
+  "runs": 5,
+  "pages": [
+    {
+      "name": "Home",
+      "path": "/",
+      "finalUrl": "http://localhost:3100/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 99,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        96,
+        97,
+        96,
+        97,
+        98
+      ],
+      "metrics": {
+        "FCP": 1534.6405499999998,
+        "LCP": 2587.101375,
+        "TBT": 40,
+        "CLS": 0,
+        "SI": 1534.6405499999998
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1535.26945,
+        "LCP": 2590.20525,
+        "TBT": 40,
+        "CLS": 0,
+        "SI": 1535.26945
+      },
+      "lcpElement": {
+        "selector": "div.container > div.relative > div.relative > img.aspect-[4/3]",
+        "snippet": "<img alt=\"GR Solution technician repairing LED TV at home in Delhi NCR\" fetchpriority=\"high\" width=\"1024\" height=\"1024\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[4/3] w-full object-cover lg:aspect-[5/6]\" style=\"color:transparent\" sizes=\"(min-width: 992px) 560px, calc(100vw - 2rem)\" srcset=\"/_next/image?url=%2Fimages%2Fhero.webp&amp;w=32&amp;q=75 32w, /_next/image?url=%2F…\" src=\"http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&amp;w=750&amp;q=75\">",
+        "label": "GR Solution technician repairing LED TV at home in Delhi NCR",
+        "top": 692,
+        "height": 285,
+        "subparts": {
+          "timeToFirstByte": 17,
+          "resourceLoadDelay": 15,
+          "resourceLoadDuration": 11,
+          "elementRenderDelay": 164
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 29,
+          "kb": 299
+        },
+        "script": {
+          "requests": 10,
+          "kb": 158
+        },
+        "other": {
+          "requests": 12,
+          "kb": 58
+        },
+        "image": {
+          "requests": 4,
+          "kb": 30
+        },
+        "document": {
+          "requests": 1,
+          "kb": 27
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 19
+        },
+        "font": {
+          "requests": 1,
+          "kb": 7
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 299,
+      "domSize": 855,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 300,
+          "savingsBytes": 26877
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 16 KiB",
+          "savingsMs": 150,
+          "savingsBytes": null
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB",
+          "savingsMs": 150,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2647.5,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 1
+    },
+    {
+      "name": "Service: OLED/QLED TV Repair",
+      "path": "/services/oled-qled-tv-repair",
+      "finalUrl": "http://localhost:3100/services/oled-qled-tv-repair",
+      "scores": {
+        "performance": 99,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        96,
+        98,
+        99,
+        96,
+        99
+      ],
+      "metrics": {
+        "FCP": 1534.32095,
+        "LCP": 2061.302375,
+        "TBT": 43,
+        "CLS": 0,
+        "SI": 1534.32095
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1535.38265,
+        "LCP": 2211.47725,
+        "TBT": 43,
+        "CLS": 0,
+        "SI": 1535.38265
+      },
+      "lcpElement": {
+        "selector": "div.container > div.mt-3 > div > p.answer-box",
+        "snippet": "<p class=\"answer-box mt-5\">",
+        "label": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board,…",
+        "top": 263,
+        "height": 290,
+        "subparts": {
+          "timeToFirstByte": 9,
+          "elementRenderDelay": 138
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 27,
+          "kb": 288
+        },
+        "script": {
+          "requests": 10,
+          "kb": 158
+        },
+        "other": {
+          "requests": 12,
+          "kb": 58
+        },
+        "image": {
+          "requests": 2,
+          "kb": 24
+        },
+        "document": {
+          "requests": 1,
+          "kb": 22
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 19
+        },
+        "font": {
+          "requests": 1,
+          "kb": 7
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 288,
+      "domSize": 577,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "displayValue": "Est savings of 10 KiB",
+          "savingsMs": 0,
+          "savingsBytes": 10295
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 0,
+          "savingsBytes": 26877
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 13 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2491,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 4
+    },
+    {
+      "name": "City: TV Repair in Noida",
+      "path": "/services/tv-repair-noida",
+      "finalUrl": "http://localhost:3100/services/tv-repair-noida",
+      "scores": {
+        "performance": 96,
+        "accessibility": 99,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        97,
+        97,
+        97,
+        96,
+        96
+      ],
+      "metrics": {
+        "FCP": 1537.0779,
+        "LCP": 2688.1947499999997,
+        "TBT": 59.50000000000023,
+        "CLS": 0,
+        "SI": 1537.0779
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1535.2576,
+        "LCP": 2558.644,
+        "TBT": 43.50000000000023,
+        "CLS": 0,
+        "SI": 1535.2576
+      },
+      "lcpElement": {
+        "selector": "div.container > div.mt-3 > div > p.answer-box",
+        "snippet": "<p class=\"answer-box mt-5\">",
+        "label": "Need TV repair in Noida? GR Solution provides doorstep inspection, diagnosis, a…",
+        "top": 227,
+        "height": 208,
+        "subparts": {
+          "timeToFirstByte": 15,
+          "elementRenderDelay": 207
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 27,
+          "kb": 298
+        },
+        "script": {
+          "requests": 10,
+          "kb": 158
+        },
+        "other": {
+          "requests": 12,
+          "kb": 58
+        },
+        "document": {
+          "requests": 1,
+          "kb": 32
+        },
+        "image": {
+          "requests": 2,
+          "kb": 24
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 19
+        },
+        "font": {
+          "requests": 1,
+          "kb": 7
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 298,
+      "domSize": 824,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 300,
+          "savingsBytes": 26877
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB",
+          "savingsMs": 150,
+          "savingsBytes": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 13 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2551,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 4
+    },
+    {
+      "name": "Blog index",
+      "path": "/blog",
+      "finalUrl": "http://localhost:3100/blog",
+      "scores": {
+        "performance": 96,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        96,
+        96,
+        99,
+        97,
+        98
+      ],
+      "metrics": {
+        "FCP": 1538.2555499999999,
+        "LCP": 2692.1388750000006,
+        "TBT": 39,
+        "CLS": 0,
+        "SI": 1538.2555499999999
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1535.4736,
+        "LCP": 2395.011125,
+        "TBT": 38,
+        "CLS": 0,
+        "SI": 1535.4736
+      },
+      "lcpElement": {
+        "selector": "section.hero-surface > div.container > div.relative > img.aspect-[650/460]",
+        "snippet": "<img alt=\"GR Solution TV repair guide for Delhi NCR residents\" fetchpriority=\"high\" width=\"650\" height=\"460\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[650/460] w-full rounded-[1.25rem] object-cover shadow-card-hover r…\" style=\"color:transparent\" sizes=\"(min-width: 1280px) 540px, (min-width: 992px) 42vw, (min-width: 608px) 576…\" srcset=\"/_next/image?url=%2Fimages%2Fhero.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%…\" src=\"http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&amp;w=750&amp;q=75\">",
+        "label": "GR Solution TV repair guide for Delhi NCR residents",
+        "top": 374,
+        "height": 269,
+        "subparts": {
+          "timeToFirstByte": 12,
+          "resourceLoadDelay": 16,
+          "resourceLoadDuration": 55,
+          "elementRenderDelay": 136
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 28,
+          "kb": 301
+        },
+        "script": {
+          "requests": 10,
+          "kb": 158
+        },
+        "other": {
+          "requests": 10,
+          "kb": 52
+        },
+        "image": {
+          "requests": 5,
+          "kb": 46
+        },
+        "document": {
+          "requests": 1,
+          "kb": 19
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 19
+        },
+        "font": {
+          "requests": 1,
+          "kb": 7
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 301,
+      "domSize": 545,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 150,
+          "savingsBytes": 26877
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 16 KiB",
+          "savingsMs": 150,
+          "savingsBytes": null
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "displayValue": "Est savings of 12 KiB",
+          "savingsMs": 0,
+          "savingsBytes": 12515
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2656,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 1
+    },
+    {
+      "name": "Blog post: TV Repair Cost in Delhi",
+      "path": "/blog/tv-repair-cost-delhi",
+      "finalUrl": "http://localhost:3100/blog/tv-repair-cost-delhi",
+      "scores": {
+        "performance": 97,
+        "accessibility": 99,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "performanceScoreRuns": [
+        97,
+        97,
+        97,
+        98,
+        97
+      ],
+      "metrics": {
+        "FCP": 1536.5478,
+        "LCP": 2456.0956000000006,
+        "TBT": 43.49999999999977,
+        "CLS": 0,
+        "SI": 1536.5478
+      },
+      "metricsMedianAcrossRuns": {
+        "FCP": 1536.5478,
+        "LCP": 2456.0956000000006,
+        "TBT": 43.49999999999977,
+        "CLS": 0,
+        "SI": 1536.5478
+      },
+      "lcpElement": {
+        "selector": "div.container > div.mt-3 > div > p.answer-box",
+        "snippet": "<p class=\"answer-box mt-5\">",
+        "label": "TV repair cost in Delhi is decided by which component failed, not by the brand.…",
+        "top": 300,
+        "height": 317,
+        "subparts": {
+          "timeToFirstByte": 13,
+          "elementRenderDelay": 151
+        }
+      },
+      "resources": {
+        "total": {
+          "requests": 26,
+          "kb": 297
+        },
+        "script": {
+          "requests": 11,
+          "kb": 159
+        },
+        "other": {
+          "requests": 10,
+          "kb": 52
+        },
+        "image": {
+          "requests": 2,
+          "kb": 33
+        },
+        "document": {
+          "requests": 1,
+          "kb": 27
+        },
+        "stylesheet": {
+          "requests": 1,
+          "kb": 19
+        },
+        "font": {
+          "requests": 1,
+          "kb": 7
+        },
+        "media": {
+          "requests": 0,
+          "kb": 0
+        },
+        "third-party": {
+          "requests": 2,
+          "kb": 0
+        }
+      },
+      "totalByteWeightKB": 297,
+      "domSize": 638,
+      "failing": {
+        "accessibility": [
+          {
+            "id": "heading-order",
+            "title": "Heading elements are not in a sequentially-descending order",
+            "score": 0,
+            "displayValue": null
+          }
+        ],
+        "best-practices": [],
+        "seo": []
+      },
+      "topInsights": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 26 KiB",
+          "savingsMs": 300,
+          "savingsBytes": 26877
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "displayValue": "Est savings of 11 KiB",
+          "savingsMs": 150,
+          "savingsBytes": 10883
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB",
+          "savingsMs": 150,
+          "savingsBytes": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 19 KiB",
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": null,
+          "savingsMs": 0,
+          "savingsBytes": null
+        }
+      ],
+      "environment": {
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2468.5,
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile"
+      },
+      "medianRunIndex": 4
+    }
+  ]
+}

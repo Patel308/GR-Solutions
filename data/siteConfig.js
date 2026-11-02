@@ -1,25 +1,28 @@
 // Separate call/WhatsApp lines per traffic source, so paid-ad leads and organic
-// (SEO) leads ring on different numbers. `ads` is the primary business number
-// (also used in schema, llms.txt and the Google Business Profile NAP).
+// leads ring on different numbers.
+//   seo: organic search, Google Maps, AI assistants (AIO/GEO), referrals and
+//        direct visits. This is the business NAP number: it is what every page
+//        renders on the server, so it is what search engines and AI crawlers
+//        read (schema, llms.txt, footer). Kamlesh's line.
+//   ads: shown only to visitors who arrived from an ad click (gclid etc.) in
+//        the last 90 days, and on the ads-only /landing page.
+// Routing rules: lib/leads/attribution.mjs and components/ContactChannel.jsx.
 export const contactChannels = {
   ads: {
     phone: '+91 99902 83890',
     phoneHref: 'tel:+919990283890',
     whatsapp: '+91 99902 83890',
     whatsappHref: 'https://wa.me/919990283890',
+    owner: '',
   },
   seo: {
     phone: '+91 93155 15700',
     phoneHref: 'tel:+919315515700',
     whatsapp: '+91 93155 15700',
     whatsappHref: 'https://wa.me/919315515700',
+    owner: 'Kamlesh',
   },
 };
-
-// Pages that receive paid-ad traffic show the `ads` number; every other page is
-// organic and shows the `seo` number. Any page opened from an ad click (gclid,
-// fbclid, utm_medium=cpc, ...) is also treated as ads -- see ContactChannel.jsx.
-export const adPaths = ['/', '/landing'];
 
 export const siteConfig = {
   name: 'GR Solution',
@@ -27,7 +30,7 @@ export const siteConfig = {
   description:
     'Premium LED TV, OLED/QLED TV, LCD TV, Plasma TV and Curved TV repair services across Delhi, Noida, Greater Noida, Ghaziabad and NCR.',
   url: 'https://grsolution.co.in',
-  ...contactChannels.ads,
+  ...contactChannels.seo,
   email: 'info@grsolution.co.in',
   emailHref: 'mailto:info@grsolution.co.in',
   formEndpoint: 'https://formsubmit.co/ajax/kamleshg9569@gmail.com',

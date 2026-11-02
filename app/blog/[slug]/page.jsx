@@ -1,32 +1,23 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
-import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
 import PageCTA from '@/components/PageCTA';
 import FAQ from '@/components/FAQ';
+import PageHero from '@/components/page/PageHero';
+import SectionHead from '@/components/page/SectionHead';
+import LinkTiles from '@/components/page/LinkTiles';
+import { TocDetails, TocNav, headingId } from '@/components/blog/ArticleToc';
+import TocSpy from '@/components/blog/TocSpy';
+import { formatDate, relatedArticles } from '@/components/blog/articleMeta';
 import { blogArticles, blogAuthor, getBlogArticleBySlug } from '@/data/blogArticles';
 import { siteConfig, entityIds } from '@/data/siteConfig';
 import PriceTable from '@/components/PriceTable';
 import ContentTable from '@/components/ContentTable';
 import GuideBookingCTA from '@/components/GuideBookingCTA';
 import { getSupportingTrustGuides } from '@/data/repairTrustGuides';
-import styles from './article.module.css';
 
 export function generateStaticParams() {
   return blogArticles.map((article) => ({ slug: article.slug }));
-}
-
-// Dates are rendered in a fixed en-IN format so the static output stays
-// identical regardless of where the build runs.
-function formatDate(value) {
-  if (!value) return '';
-  return new Date(`${value}T00:00:00Z`).toLocaleDateString('en-IN', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    timeZone: 'UTC',
-  });
 }
 
 export async function generateMetadata({ params }) {
@@ -65,6 +56,15 @@ export default async function BlogArticlePage({ params }) {
     url: `${siteConfig.url}${blogAuthor.profileUrl}`,
     ...(blogAuthor.linkedinUrl ? { sameAs: [blogAuthor.linkedinUrl] } : {}),
   };
+
+  // Fragment ids for the existing H2s, used by the "On this page" list.
+  const usedIds = new Set();
+  const sections = article.sections.map((section) => ({ ...section, id: headingId(section.heading, usedIds) }));
+  const toc = sections.map((section) => ({ id: section.id, label: section.heading }));
+
+  // One call-to-action inside the article: straight after the price table on
+  // cost and symptom guides, otherwise halfway through.
+  const related = relatedArticles(article, blogArticles, 3);
 
   return (
     <main>
@@ -106,143 +106,183 @@ export default async function BlogArticlePage({ params }) {
         ]}
       />
 
-      <section className="border-b border-[#eee] bg-white py-2">
-        <div className="container">
-          <Breadcrumb
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Blog', href: '/blog' },
-              { label: article.title, href: null },
-            ]}
-          />
-        </div>
-      </section>
-
-      <section className={`${styles.hero} bg-[linear-gradient(135deg,#f0f7ff_0%,#ffffff_72%)] py-12 md:py-24`}>
-        <div className={`${styles.heroGrid} container grid items-center gap-8 lg:gap-10 lg:grid-cols-[0.9fr_1.1fr]`}>
-          <div>
-            <span className="inline-flex rounded-full bg-primary/10 px-5 py-2 text-sm font-black text-primary">
-              {article.category}
+      <PageHero
+        section="article_hero"
+        breadcrumb={[
+          { label: 'Home', href: '/' },
+          { label: 'Blog', href: '/blog' },
+          { label: article.title, href: null },
+        ]}
+        eyebrow={article.category}
+        title={article.h1}
+        answer={article.directAnswer}
+        image={{
+          src: article.image,
+          alt: article.imageAlt || `${article.h1} guide by GR Solution`,
+          width: article.imageWidth,
+          height: article.imageHeight,
+        }}
+      >
+        {/* Author and dates. The "|" separators are kept in the HTML for
+            the byline text; the layout replaces them visually. */}
+        <div className="mt-6 flex flex-col gap-3 text-small sm:flex-row sm:items-center sm:gap-6">
+          <div className="flex items-center gap-3">
+            <span className="icon-tile size-10 bg-white text-navy-600 shadow-xs ring-1 ring-navy-100" aria-hidden="true">
+              <i className="fa-solid fa-pen-nib" />
             </span>
-            <h1 className={`mt-6 font-black leading-tight text-secondary ${article.trustGuide ? 'text-[clamp(2.2rem,4.2vw,3.5rem)]' : 'text-[clamp(2.7rem,5vw,4.6rem)]'}`}>{article.h1}</h1>
-            <p className="mt-6 rounded-2xl border border-primary/10 bg-white p-5 text-lg font-bold leading-relaxed text-secondary shadow-oldMd">
-              {article.directAnswer}
-            </p>
-            <div className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-bold text-textMuted">
-              <span>
+            <span className="leading-snug">
+              <span className="block font-semibold text-ink">
                 By{' '}
-                <Link href={blogAuthor.profileUrl} className="text-primary hover:text-secondary">
+                <Link href={blogAuthor.profileUrl} className="text-navy-600 underline-offset-4 hover:text-navy-800 hover:underline">
                   {blogAuthor.name}
                 </Link>
               </span>
-              <span aria-hidden="true">|</span>
-              <span>{blogAuthor.role}</span>
-              <span aria-hidden="true">|</span>
+              <span aria-hidden="true" className="hidden">|</span>
+              <span className="block text-muted">{blogAuthor.role}</span>
+            </span>
+          </div>
+          <span aria-hidden="true" className="hidden">|</span>
+          <div className="grid gap-1 font-semibold text-muted sm:border-l sm:border-line sm:pl-6">
+            <span className="flex items-center gap-2">
+              <i className="fa-solid fa-calendar-check w-4 text-center text-teal-600" aria-hidden="true" />
               <span>
                 Published <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
               </span>
-              {article.updatedAt && article.updatedAt !== article.publishedAt ? (
-                <>
-                  <span aria-hidden="true">|</span>
+            </span>
+            {article.updatedAt && article.updatedAt !== article.publishedAt ? (
+              <>
+                <span aria-hidden="true" className="hidden">|</span>
+                <span className="flex items-center gap-2">
+                  <i className="fa-solid fa-circle-check w-4 text-center text-teal-600" aria-hidden="true" />
                   <span>
                     Last reviewed <time dateTime={article.updatedAt}>{formatDate(article.updatedAt)}</time>
                   </span>
-                </>
-              ) : null}
-            </div>
+                </span>
+              </>
+            ) : null}
           </div>
-          <figure className={styles.heroFigure}>
-            <Image src={article.image} alt={article.imageAlt || `${article.h1} guide by GR Solution`} width={article.imageWidth || 1024} height={article.imageHeight || 1024} sizes="(min-width: 992px) 52vw, 100vw" className={`${styles.heroImage} rounded-2xl shadow-cardPro md:rounded-3xl`} priority />
-          </figure>
+        </div>
+      </PageHero>
+
+      <section className="section band" data-section="article_body">
+        <div className="container grid gap-10 xl:grid-cols-[minmax(0,1fr)_20rem] xl:gap-16">
+          <div className="min-w-0">
+            <TocDetails items={toc} className="mb-8 xl:hidden" />
+            <article className="prose-article">
+              <p className="text-[1.125rem] leading-relaxed text-ink sm:text-[1.1875rem]">{article.intro}</p>
+              <GuideBookingCTA contentId={article.slug} intent={ctaIntent} placement="after_intro" />
+              <div className="mt-10 grid gap-10">
+                {sections.map((section, index) => (
+                  <div key={section.heading} className="min-w-0">
+                    <section>
+                      <h2 id={section.id} className="heading-panel">{section.heading}</h2>
+                      {section.body ? <p className="mt-4">{section.body}</p> : null}
+                      {section.table ? <ContentTable table={section.table} /> : null}
+                      {section.priceTable ? <PriceTable {...section.priceTable} /> : null}
+                      {section.list?.length ? (
+                        <ul className="mt-5 grid gap-3">
+                          {section.list.map((item) => (
+                            <li key={item} className="flex gap-3">
+                              <span className="mt-[0.7em] size-1.5 shrink-0 rounded-full bg-teal-400" aria-hidden="true" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
+                      {section.closing ? <p className="mt-5">{section.closing}</p> : null}
+                      {section.links?.length ? (
+                        <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2">
+                          {section.links.map((link) => (
+                            <Link key={link.href} href={link.href} className="text-link font-semibold">
+                              {link.label}
+                            </Link>
+                          ))}
+                        </div>
+                      ) : null}
+                      {index === firstPriceSection ? (
+                        <GuideBookingCTA contentId={article.slug} intent="price" placement="after_price_table" />
+                      ) : null}
+                    </section>
+                  </div>
+                ))}
+              </div>
+              {article.sources?.length ? (
+                <section className="mt-12 border-t border-line pt-8" aria-label="Editorial sources">
+                  <h2 className="heading-panel">Sources and scope</h2>
+                  <p className="mt-3">
+                    Editorial guidance reviewed on 25 October 2026. Manufacturer instructions apply to the specified products; this guide does not claim manufacturer authorisation or document an actual repair case.
+                  </p>
+                  <ul className="mt-4 grid gap-4">
+                    {article.sources.map((source) => (
+                      <li key={source.href}>
+                        <a href={source.href} className="text-link font-semibold">
+                          {source.label}
+                        </a>
+                        <p className="mt-1 text-small leading-relaxed text-muted">{source.note}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+            </article>
+          </div>
+
+          <div className="min-w-0">
+            <aside className="card p-5 sm:p-6">
+              <h2 className="heading-panel">Helpful Links</h2>
+              <LinkTiles className="mt-4" links={article.internalLinks} />
+              <p className="mt-5 rounded-xl bg-surface p-4 text-small leading-relaxed text-muted">
+                Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.
+              </p>
+              {supportingGuides.length ? (
+                <nav aria-label="Related repair checklists" className="mt-6">
+                  <h2 className="text-[1.125rem] font-bold text-ink">Before you approve a repair</h2>
+                  <div className="mt-3 grid gap-2">
+                    {supportingGuides.map((guide) => (
+                      <Link key={guide.slug} href={`/blog/${guide.slug}`} className="link-tile">
+                        <span className="min-w-0 flex-1 leading-snug">{guide.title}</span>
+                        <i className="fa-solid fa-arrow-right shrink-0 text-xs" aria-hidden="true" />
+                      </Link>
+                    ))}
+                  </div>
+                </nav>
+              ) : null}
+            </aside>
+            <TocNav items={toc} className="sticky top-28 mt-8 hidden xl:block" />
+            <TocSpy ids={toc.map((item) => item.id)} />
+          </div>
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container grid gap-10 lg:grid-cols-[1.35fr_0.65fr]">
-          <article className="min-w-0 rounded-card border border-black/5 bg-white p-5 shadow-oldMd sm:p-8">
-            <p className="text-lg leading-relaxed text-textMuted">{article.intro}</p>
-            <GuideBookingCTA contentId={article.slug} intent={ctaIntent} placement="after_intro" />
-            <div className="mt-10 grid gap-8">
-              {article.sections.map((section, sectionIndex) => (
-                <section key={section.heading}>
-                  <h2 className="text-3xl font-black text-secondary">{section.heading}</h2>
-                  {section.body ? (
-                    <p className="mt-4 text-lg leading-relaxed text-textMuted">{section.body}</p>
-                  ) : null}
-                  {section.table ? <ContentTable table={section.table} /> : null}
-                  {section.priceTable ? <PriceTable {...section.priceTable} /> : null}
-                  {section.list?.length ? (
-                    <ul className="mt-5 grid gap-3">
-                      {section.list.map((item) => (
-                        <li key={item} className="flex gap-3 text-lg leading-relaxed text-textMuted">
-                          <span className="mt-2 size-2 shrink-0 rounded-full bg-primary" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
-                  {section.closing ? (
-                    <p className="mt-5 text-lg leading-relaxed text-textMuted">{section.closing}</p>
-                  ) : null}
-                  {section.links?.length ? (
-                    <div className="mt-5 flex flex-wrap gap-4">
-                      {section.links.map((link) => <Link key={link.href} href={link.href} className="font-bold text-primary underline decoration-primary/30 underline-offset-4">{link.label}</Link>)}
-                    </div>
-                  ) : null}
-                  {sectionIndex === firstPriceSection ? <GuideBookingCTA contentId={article.slug} intent="price" placement="after_price_table" /> : null}
-                </section>
-              ))}
-            </div>
-            {article.sources?.length ? (
-              <section className="mt-10 border-t border-black/10 pt-8" aria-label="Editorial sources">
-                <h2 className="text-2xl font-black text-secondary">Sources and scope</h2>
-                <p className="mt-3 leading-relaxed text-textMuted">Editorial guidance reviewed on 25 October 2026. Manufacturer instructions apply to the specified products; this guide does not claim manufacturer authorisation or document an actual repair case.</p>
-                <ul className="mt-4 grid gap-4">
-                  {article.sources.map((source) => (
-                    <li key={source.href}>
-                      <a href={source.href} className="font-bold text-primary underline decoration-primary/30 underline-offset-4">{source.label}</a>
-                      <p className="mt-1 text-sm leading-relaxed text-textMuted">{source.note}</p>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ) : null}
-          </article>
-
-          <aside className="min-w-0 rounded-card border border-primary/10 bg-bgLight p-5 shadow-oldMd sm:p-8">
-            <h2 className="text-2xl font-black text-secondary">Helpful Links</h2>
-            <div className="mt-6 grid gap-3">
-              {article.internalLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="rounded-2xl border border-primary/10 bg-white p-4 font-black text-primary transition hover:-translate-y-1 hover:text-secondary">
-                  {link.label}
+      {related.length ? (
+        <section aria-labelledby="related-guides-label" className="section-tight band-tint" data-section="related_guides">
+          <div className="container">
+            <p id="related-guides-label" className="eyebrow">Related guides</p>
+            <div className="mt-5 grid gap-4 md:grid-cols-3 lg:gap-5">
+              {related.map((item) => (
+                <Link
+                  key={item.slug}
+                  href={`/blog/${item.slug}`}
+                  className="card card-interactive group flex flex-col p-5 sm:p-6"
+                >
+                  <span className="badge self-start uppercase tracking-[0.06em]">{item.category}</span>
+                  <span className="mt-3 font-display text-lg font-bold leading-snug text-ink transition-colors group-hover:text-navy-700">
+                    {item.title}
+                  </span>
+                  <span className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-muted">{item.metaDescription}</span>
+                  <span className="mt-4 font-semibold text-navy-600">Read the guide &rarr;</span>
                 </Link>
               ))}
             </div>
-            <div className="mt-8 rounded-2xl bg-white p-5 text-sm leading-relaxed text-textMuted">
-              Final cost depends on screen size, model, fault type, parts availability and whether repair is possible. GR Solution provides inspection-based guidance before work begins.
-            </div>
-            {supportingGuides.length ? (
-              <nav aria-label="Related repair checklists" className="mt-8">
-                <h2 className="text-xl font-black text-secondary">Before you approve a repair</h2>
-                <div className="mt-4 grid gap-3">
-                  {supportingGuides.map((guide) => (
-                    <Link key={guide.slug} href={`/blog/${guide.slug}`} className="rounded-2xl border border-primary/10 bg-white p-4 font-bold leading-relaxed text-primary hover:text-secondary">{guide.title}</Link>
-                  ))}
-                </div>
-              </nav>
-            ) : null}
-          </aside>
-        </div>
-      </section>
-
-      <section className="bg-bgLight py-20">
-        <div className="container">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-black text-primary">FAQ</span>
-            <h2 className="text-4xl font-black text-secondary">{article.title} FAQs</h2>
           </div>
-          <div className="mx-auto max-w-[850px]">
-            <FAQ faqs={article.faqs} />
+        </section>
+      ) : null}
+
+      <section className="section band" data-section="faq">
+        <div className="container">
+          <SectionHead eyebrow="FAQ" title={`${article.title} FAQs`} />
+          <div className="mx-auto max-w-3xl">
+            <FAQ faqs={article.faqs} name="article-faq" />
           </div>
         </div>
       </section>

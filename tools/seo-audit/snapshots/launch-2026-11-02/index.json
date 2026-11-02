@@ -1,0 +1,2782 @@
+[
+  {
+    "path": "/",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Expert TV Repair Delhi NCR | LED, OLED, LCD | GR Solution",
+    "h1": [
+      "Premium TV Repair Services At Your Doorstep"
+    ],
+    "wordCount": 1295,
+    "headings": 41,
+    "internalLinks": 76,
+    "images": 22,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 183509
+  },
+  {
+    "path": "/about",
+    "inSitemap": true,
+    "status": 200,
+    "title": "About GR Solution | TV Repair Experts Delhi NCR",
+    "h1": [
+      "Delhi's Expert TV Repair Team 5+ Years of Service"
+    ],
+    "wordCount": 618,
+    "headings": 22,
+    "internalLinks": 57,
+    "images": 5,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "AboutPage",
+      "BreadcrumbList"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 96218
+  },
+  {
+    "path": "/services",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Services in Delhi NCR | GR Solution",
+    "h1": [
+      "Professional TV Repair Services"
+    ],
+    "wordCount": 606,
+    "headings": 23,
+    "internalLinks": 70,
+    "images": 7,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "CollectionPage"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 109973
+  },
+  {
+    "path": "/services/brands",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair by Brand in Delhi NCR | All Brands | GR Solution",
+    "h1": [
+      "TV Repair by Brand in Delhi NCR"
+    ],
+    "wordCount": 486,
+    "headings": 20,
+    "internalLinks": 94,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 111914
+  },
+  {
+    "path": "/pricing",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Prices in Delhi NCR | 2026 Price Guide",
+    "h1": [
+      "TV Repair Prices in Delhi NCR"
+    ],
+    "wordCount": 1254,
+    "headings": 18,
+    "internalLinks": 52,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 5,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 132066
+  },
+  {
+    "path": "/reviews",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Customer Reviews | GR Solution TV Repair Delhi NCR",
+    "h1": [
+      "GR Solution Customer Reviews"
+    ],
+    "wordCount": 352,
+    "headings": 15,
+    "internalLinks": 46,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 77154
+  },
+  {
+    "path": "/blog",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Tips Delhi NCR | GR Solution Blog",
+    "h1": [
+      "TV Repair Tips & Guides for Delhi, Noida & NCR Residents"
+    ],
+    "wordCount": 1160,
+    "headings": 32,
+    "internalLinks": 114,
+    "images": 27,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 190770
+  },
+  {
+    "path": "/contact",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Contact GR Solution | TV Repair Delhi, Noida & NCR",
+    "h1": [
+      "Experience Premium At-Home TV Repair"
+    ],
+    "wordCount": 185,
+    "headings": 12,
+    "internalLinks": 43,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "ContactPage",
+      "BreadcrumbList"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 72164
+  },
+  {
+    "path": "/privacy",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Privacy Policy | GR Solution TV Repair Delhi NCR",
+    "h1": [
+      "Privacy Policy"
+    ],
+    "wordCount": 96,
+    "headings": 10,
+    "internalLinks": 43,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 53540
+  },
+  {
+    "path": "/terms",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Terms & Conditions | GR Solution TV Repair Delhi NCR",
+    "h1": [
+      "Terms & Conditions"
+    ],
+    "wordCount": 91,
+    "headings": 10,
+    "internalLinks": 43,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 53414
+  },
+  {
+    "path": "/services/led-tv-repair",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Repair Delhi NCR | Doorstep Diagnosis | GR Solution",
+    "h1": [
+      "Premium LED TV Repair"
+    ],
+    "wordCount": 1178,
+    "headings": 40,
+    "internalLinks": 65,
+    "images": 6,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 137694
+  },
+  {
+    "path": "/services/oled-qled-tv-repair",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OLED/QLED TV Repair Delhi NCR | GR Solution",
+    "h1": [
+      "OLED/QLED TV Repair Experts"
+    ],
+    "wordCount": 987,
+    "headings": 35,
+    "internalLinks": 60,
+    "images": 6,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 131415
+  },
+  {
+    "path": "/services/lcd-tv-repair",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LCD TV Repair Delhi NCR | Screen & Power Fix | GR",
+    "h1": [
+      "Reliable LCD TV Repair"
+    ],
+    "wordCount": 961,
+    "headings": 34,
+    "internalLinks": 59,
+    "images": 6,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 128881
+  },
+  {
+    "path": "/services/plasma-tv-repair",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Plasma TV Repair Delhi NCR | GR Solution",
+    "h1": [
+      "Professional Plasma TV Repair"
+    ],
+    "wordCount": 870,
+    "headings": 32,
+    "internalLinks": 58,
+    "images": 6,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 126674
+  },
+  {
+    "path": "/services/curved-tv-repair",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Curved TV Repair Delhi NCR | GR Solution",
+    "h1": [
+      "Curved TV Repair Service"
+    ],
+    "wordCount": 920,
+    "headings": 34,
+    "internalLinks": 59,
+    "images": 6,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 129394
+  },
+  {
+    "path": "/services/led-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Repair Delhi | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "LED TV Repair in Delhi"
+    ],
+    "wordCount": 2618,
+    "headings": 48,
+    "internalLinks": 66,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 12,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 185103
+  },
+  {
+    "path": "/services/led-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Repair Noida | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "LED TV Repair in Noida"
+    ],
+    "wordCount": 2459,
+    "headings": 45,
+    "internalLinks": 63,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 12,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 180797
+  },
+  {
+    "path": "/services/led-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "LED TV Repair in Greater Noida"
+    ],
+    "wordCount": 2455,
+    "headings": 44,
+    "internalLinks": 63,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 12,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 181014
+  },
+  {
+    "path": "/services/led-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Repair Ghaziabad | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "LED TV Repair in Ghaziabad"
+    ],
+    "wordCount": 2363,
+    "headings": 45,
+    "internalLinks": 63,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 12,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 180559
+  },
+  {
+    "path": "/services/oled-qled-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OLED/QLED TV Repair Delhi | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "OLED/QLED TV Repair in Delhi"
+    ],
+    "wordCount": 2071,
+    "headings": 39,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 11,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 169521
+  },
+  {
+    "path": "/services/oled-qled-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OLED/QLED TV Repair Noida | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "OLED/QLED TV Repair in Noida"
+    ],
+    "wordCount": 859,
+    "headings": 17,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 99692
+  },
+  {
+    "path": "/services/oled-qled-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OLED/QLED TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "OLED/QLED TV Repair in Greater Noida"
+    ],
+    "wordCount": 2123,
+    "headings": 39,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 11,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 171345
+  },
+  {
+    "path": "/services/oled-qled-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OLED/QLED TV Repair Ghaziabad | GR Solution",
+    "h1": [
+      "OLED/QLED TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1976,
+    "headings": 39,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 11,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 169379
+  },
+  {
+    "path": "/services/lcd-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LCD TV Repair Delhi | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "LCD TV Repair in Delhi"
+    ],
+    "wordCount": 1751,
+    "headings": 36,
+    "internalLinks": 61,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 159568
+  },
+  {
+    "path": "/services/lcd-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LCD TV Repair Noida | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "LCD TV Repair in Noida"
+    ],
+    "wordCount": 2132,
+    "headings": 41,
+    "internalLinks": 61,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 10,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 168412
+  },
+  {
+    "path": "/services/lcd-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LCD TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "LCD TV Repair in Greater Noida"
+    ],
+    "wordCount": 2076,
+    "headings": 40,
+    "internalLinks": 61,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 165889
+  },
+  {
+    "path": "/services/lcd-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LCD TV Repair Ghaziabad | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "LCD TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1990,
+    "headings": 41,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 166254
+  },
+  {
+    "path": "/services/plasma-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Plasma TV Repair Delhi | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "Plasma TV Repair in Delhi"
+    ],
+    "wordCount": 2027,
+    "headings": 39,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 164257
+  },
+  {
+    "path": "/services/plasma-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Plasma TV Repair Noida | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "Plasma TV Repair in Noida"
+    ],
+    "wordCount": 1954,
+    "headings": 38,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 162926
+  },
+  {
+    "path": "/services/plasma-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Plasma TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Plasma TV Repair in Greater Noida"
+    ],
+    "wordCount": 1989,
+    "headings": 38,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 163934
+  },
+  {
+    "path": "/services/plasma-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Plasma TV Repair Ghaziabad | GR Solution",
+    "h1": [
+      "Plasma TV Repair in Ghaziabad"
+    ],
+    "wordCount": 776,
+    "headings": 15,
+    "internalLinks": 61,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 96871
+  },
+  {
+    "path": "/services/curved-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Curved TV Repair Delhi | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "Curved TV Repair in Delhi"
+    ],
+    "wordCount": 1950,
+    "headings": 38,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 162749
+  },
+  {
+    "path": "/services/curved-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Curved TV Repair Noida | Doorstep TV Repair | GR Solution",
+    "h1": [
+      "Curved TV Repair in Noida"
+    ],
+    "wordCount": 1943,
+    "headings": 38,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 162853
+  },
+  {
+    "path": "/services/curved-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Curved TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Curved TV Repair in Greater Noida"
+    ],
+    "wordCount": 1996,
+    "headings": 38,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 164299
+  },
+  {
+    "path": "/services/curved-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Curved TV Repair Ghaziabad | GR Solution",
+    "h1": [
+      "Curved TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1877,
+    "headings": 38,
+    "internalLinks": 60,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 9,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 162718
+  },
+  {
+    "path": "/services/tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Delhi | Doorstep TV Service | GR Solution",
+    "h1": [
+      "TV Repair in Delhi"
+    ],
+    "wordCount": 2759,
+    "headings": 54,
+    "internalLinks": 75,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 10,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 194856
+  },
+  {
+    "path": "/services/tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Noida | Doorstep TV Technician | GR Solution",
+    "h1": [
+      "TV Repair in Noida"
+    ],
+    "wordCount": 2571,
+    "headings": 51,
+    "internalLinks": 70,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 10,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 189352
+  },
+  {
+    "path": "/services/tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Greater Noida | Doorstep Support | GR Solution",
+    "h1": [
+      "TV Repair in Greater Noida"
+    ],
+    "wordCount": 2540,
+    "headings": 50,
+    "internalLinks": 68,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 10,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 187045
+  },
+  {
+    "path": "/services/tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Ghaziabad | Indirapuram & Vaishali | GR",
+    "h1": [
+      "TV Repair in Ghaziabad"
+    ],
+    "wordCount": 2515,
+    "headings": 53,
+    "internalLinks": 72,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 10,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 192090
+  },
+  {
+    "path": "/services/tv-repair-near-me",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Near Me | Doorstep TV Service | GR Solution",
+    "h1": [
+      "TV Repair Near Me in Delhi NCR"
+    ],
+    "wordCount": 1576,
+    "headings": 37,
+    "internalLinks": 71,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 156466
+  },
+  {
+    "path": "/services/tv-repair-east-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair in East Delhi | GR Solution",
+    "h1": [
+      "TV Repair in East Delhi"
+    ],
+    "wordCount": 898,
+    "headings": 16,
+    "internalLinks": 57,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 122372
+  },
+  {
+    "path": "/services/tv-repair-south-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair in South Delhi | GR Solution",
+    "h1": [
+      "TV Repair in South Delhi"
+    ],
+    "wordCount": 912,
+    "headings": 16,
+    "internalLinks": 57,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 123017
+  },
+  {
+    "path": "/services/tv-repair-west-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair in West Delhi | GR Solution",
+    "h1": [
+      "TV Repair in West Delhi"
+    ],
+    "wordCount": 902,
+    "headings": 17,
+    "internalLinks": 58,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 122403
+  },
+  {
+    "path": "/services/tv-repair-indirapuram",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair in Indirapuram | GR Solution",
+    "h1": [
+      "TV Repair in Indirapuram"
+    ],
+    "wordCount": 823,
+    "headings": 16,
+    "internalLinks": 56,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 120523
+  },
+  {
+    "path": "/services/tv-repair-vasundhara",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair in Vasundhara | GR Solution",
+    "h1": [
+      "TV Repair in Vasundhara"
+    ],
+    "wordCount": 807,
+    "headings": 16,
+    "internalLinks": 56,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 118334
+  },
+  {
+    "path": "/services/tv-repair-noida-sector-62",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair in Noida Sector 62 | GR Solution",
+    "h1": [
+      "TV Repair in Noida Sector 62"
+    ],
+    "wordCount": 853,
+    "headings": 16,
+    "internalLinks": 56,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 119771
+  },
+  {
+    "path": "/services/tv-repair-noida-sector-137",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair in Noida Sector 137 | GR Solution",
+    "h1": [
+      "TV Repair in Noida Sector 137"
+    ],
+    "wordCount": 871,
+    "headings": 16,
+    "internalLinks": 56,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": false,
+    "htmlBytes": 119903
+  },
+  {
+    "path": "/services/samsung-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Samsung TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Samsung TV Repair in Delhi"
+    ],
+    "wordCount": 1834,
+    "headings": 27,
+    "internalLinks": 63,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 154514
+  },
+  {
+    "path": "/services/samsung-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Samsung TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Samsung TV Repair in Noida"
+    ],
+    "wordCount": 1442,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146607
+  },
+  {
+    "path": "/services/samsung-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Samsung TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Samsung TV Repair in Greater Noida"
+    ],
+    "wordCount": 1470,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147680
+  },
+  {
+    "path": "/services/samsung-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Samsung TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "Samsung TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1448,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147457
+  },
+  {
+    "path": "/services/lg-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LG TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "LG TV Repair in Delhi"
+    ],
+    "wordCount": 1779,
+    "headings": 25,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 150903
+  },
+  {
+    "path": "/services/lg-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LG TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "LG TV Repair in Noida"
+    ],
+    "wordCount": 798,
+    "headings": 15,
+    "internalLinks": 64,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 96225
+  },
+  {
+    "path": "/services/lg-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LG TV Repair Greater Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "LG TV Repair in Greater Noida"
+    ],
+    "wordCount": 834,
+    "headings": 15,
+    "internalLinks": 64,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 97719
+  },
+  {
+    "path": "/services/lg-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LG TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "LG TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1432,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146454
+  },
+  {
+    "path": "/services/sony-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Sony TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Sony TV Repair in Delhi"
+    ],
+    "wordCount": 1484,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146947
+  },
+  {
+    "path": "/services/sony-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Sony TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Sony TV Repair in Noida"
+    ],
+    "wordCount": 1750,
+    "headings": 25,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 151111
+  },
+  {
+    "path": "/services/sony-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Sony TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Sony TV Repair in Greater Noida"
+    ],
+    "wordCount": 1485,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147628
+  },
+  {
+    "path": "/services/sony-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Sony TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "Sony TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1437,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147073
+  },
+  {
+    "path": "/services/mi-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Mi/Xiaomi TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Mi/Xiaomi TV Repair in Delhi"
+    ],
+    "wordCount": 1452,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147478
+  },
+  {
+    "path": "/services/mi-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Mi/Xiaomi TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Mi/Xiaomi TV Repair in Noida"
+    ],
+    "wordCount": 1433,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147176
+  },
+  {
+    "path": "/services/mi-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Mi/Xiaomi TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Mi/Xiaomi TV Repair in Greater Noida"
+    ],
+    "wordCount": 1445,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147979
+  },
+  {
+    "path": "/services/mi-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Mi/Xiaomi TV Repair Ghaziabad | GR Solution",
+    "h1": [
+      "Mi/Xiaomi TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1407,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147478
+  },
+  {
+    "path": "/services/oneplus-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OnePlus TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "OnePlus TV Repair in Delhi"
+    ],
+    "wordCount": 1407,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146484
+  },
+  {
+    "path": "/services/oneplus-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OnePlus TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "OnePlus TV Repair in Noida"
+    ],
+    "wordCount": 1396,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146286
+  },
+  {
+    "path": "/services/oneplus-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OnePlus TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "OnePlus TV Repair in Greater Noida"
+    ],
+    "wordCount": 1422,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147303
+  },
+  {
+    "path": "/services/oneplus-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "OnePlus TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "OnePlus TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1384,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146855
+  },
+  {
+    "path": "/services/tcl-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TCL TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "TCL TV Repair in Delhi"
+    ],
+    "wordCount": 1440,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 145857
+  },
+  {
+    "path": "/services/tcl-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TCL TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "TCL TV Repair in Noida"
+    ],
+    "wordCount": 1429,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 145659
+  },
+  {
+    "path": "/services/tcl-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TCL TV Repair Greater Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "TCL TV Repair in Greater Noida"
+    ],
+    "wordCount": 1455,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146777
+  },
+  {
+    "path": "/services/tcl-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TCL TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "TCL TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1417,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146241
+  },
+  {
+    "path": "/services/panasonic-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Panasonic TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Panasonic TV Repair in Delhi"
+    ],
+    "wordCount": 1429,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146808
+  },
+  {
+    "path": "/services/panasonic-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Panasonic TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Panasonic TV Repair in Noida"
+    ],
+    "wordCount": 1418,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146610
+  },
+  {
+    "path": "/services/panasonic-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Panasonic TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Panasonic TV Repair in Greater Noida"
+    ],
+    "wordCount": 1444,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147592
+  },
+  {
+    "path": "/services/panasonic-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Panasonic TV Repair Ghaziabad | GR Solution",
+    "h1": [
+      "Panasonic TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1406,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147078
+  },
+  {
+    "path": "/services/vu-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Vu TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Vu TV Repair in Delhi"
+    ],
+    "wordCount": 1384,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 144998
+  },
+  {
+    "path": "/services/vu-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Vu TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Vu TV Repair in Noida"
+    ],
+    "wordCount": 1397,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 144988
+  },
+  {
+    "path": "/services/vu-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Vu TV Repair Greater Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Vu TV Repair in Greater Noida"
+    ],
+    "wordCount": 827,
+    "headings": 15,
+    "internalLinks": 64,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 97156
+  },
+  {
+    "path": "/services/vu-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Vu TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "Vu TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1361,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 145382
+  },
+  {
+    "path": "/services/philips-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Philips TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Philips TV Repair in Delhi"
+    ],
+    "wordCount": 1381,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 145844
+  },
+  {
+    "path": "/services/philips-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Philips TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Philips TV Repair in Noida"
+    ],
+    "wordCount": 1370,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 145646
+  },
+  {
+    "path": "/services/philips-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Philips TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Philips TV Repair in Greater Noida"
+    ],
+    "wordCount": 1396,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146663
+  },
+  {
+    "path": "/services/philips-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Philips TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "Philips TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1358,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146215
+  },
+  {
+    "path": "/services/hisense-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Hisense TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Hisense TV Repair in Delhi"
+    ],
+    "wordCount": 1408,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146263
+  },
+  {
+    "path": "/services/hisense-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Hisense TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Hisense TV Repair in Noida"
+    ],
+    "wordCount": 1397,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146065
+  },
+  {
+    "path": "/services/hisense-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Hisense TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Hisense TV Repair in Greater Noida"
+    ],
+    "wordCount": 1423,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147082
+  },
+  {
+    "path": "/services/hisense-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Hisense TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "Hisense TV Repair in Ghaziabad"
+    ],
+    "wordCount": 1385,
+    "headings": 23,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 8,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146647
+  },
+  {
+    "path": "/services/toshiba-tv-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Toshiba TV Repair Delhi | Doorstep Service | GR Solution",
+    "h1": [
+      "Toshiba TV Repair in Delhi"
+    ],
+    "wordCount": 795,
+    "headings": 15,
+    "internalLinks": 64,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 96351
+  },
+  {
+    "path": "/services/toshiba-tv-repair-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Toshiba TV Repair Noida | Doorstep Service | GR Solution",
+    "h1": [
+      "Toshiba TV Repair in Noida"
+    ],
+    "wordCount": 788,
+    "headings": 15,
+    "internalLinks": 64,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 96362
+  },
+  {
+    "path": "/services/toshiba-tv-repair-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Toshiba TV Repair Greater Noida | GR Solution",
+    "h1": [
+      "Toshiba TV Repair in Greater Noida"
+    ],
+    "wordCount": 812,
+    "headings": 15,
+    "internalLinks": 64,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 97633
+  },
+  {
+    "path": "/services/toshiba-tv-repair-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Toshiba TV Repair Ghaziabad | Doorstep Service | GR Solution",
+    "h1": [
+      "Toshiba TV Repair in Ghaziabad"
+    ],
+    "wordCount": 791,
+    "headings": 15,
+    "internalLinks": 64,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 3,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 97035
+  },
+  {
+    "path": "/blog/tv-motherboard-diagnosis",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Motherboard Diagnosis & Repair Cost Guide | GR Solution",
+    "h1": [
+      "TV Motherboard Diagnosis: Check Before You Replace"
+    ],
+    "wordCount": 1916,
+    "headings": 18,
+    "internalLinks": 63,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 4,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 151222
+  },
+  {
+    "path": "/blog/prepare-for-doorstep-tv-repair",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Doorstep TV Repair Visit Checklist | GR Solution",
+    "h1": [
+      "Doorstep TV Repair: Your Visit Checklist"
+    ],
+    "wordCount": 1682,
+    "headings": 17,
+    "internalLinks": 62,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 5,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 143465
+  },
+  {
+    "path": "/blog/tv-repair-cost-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Cost in Delhi | What Drives the Price",
+    "h1": [
+      "TV Repair Cost in Delhi: What Actually Drives the Price"
+    ],
+    "wordCount": 1917,
+    "headings": 18,
+    "internalLinks": 55,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 157512
+  },
+  {
+    "path": "/blog/tv-repair-cost-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Cost in Noida | Prices & Technician Charges",
+    "h1": [
+      "TV Repair Cost in Noida: A Practical Breakdown"
+    ],
+    "wordCount": 1739,
+    "headings": 17,
+    "internalLinks": 56,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 153845
+  },
+  {
+    "path": "/blog/tv-repair-cost-greater-noida",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Cost in Greater Noida | Charges Explained",
+    "h1": [
+      "TV Repair Cost in Greater Noida: What to Expect"
+    ],
+    "wordCount": 1663,
+    "headings": 16,
+    "internalLinks": 55,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 148357
+  },
+  {
+    "path": "/blog/tv-repair-cost-ghaziabad",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Cost in Ghaziabad | Repair or Replace?",
+    "h1": [
+      "TV Repair Cost in Ghaziabad: Repair or Replace?"
+    ],
+    "wordCount": 1562,
+    "headings": 17,
+    "internalLinks": 56,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 147991
+  },
+  {
+    "path": "/blog/tv-screen-replacement-cost-delhi-ncr",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Screen Replacement Cost Delhi NCR | Is It Worth It?",
+    "h1": [
+      "TV Screen Replacement Cost in Delhi NCR"
+    ],
+    "wordCount": 1608,
+    "headings": 17,
+    "internalLinks": 58,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 146768
+  },
+  {
+    "path": "/blog/tv-sound-but-no-picture",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Sound but No Picture? Causes, Fixes & Cost",
+    "h1": [
+      "TV Has Sound but No Picture: Causes and Fixes"
+    ],
+    "wordCount": 1264,
+    "headings": 17,
+    "internalLinks": 55,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 4,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 130077
+  },
+  {
+    "path": "/blog/tv-not-turning-on",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Not Turning On? Standby Light Blinking Explained",
+    "h1": [
+      "TV Not Turning On: What the Standby Light Is Telling You"
+    ],
+    "wordCount": 1206,
+    "headings": 17,
+    "internalLinks": 55,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 4,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 126992
+  },
+  {
+    "path": "/blog/tv-screen-lines-vertical-horizontal",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Vertical or Horizontal Lines on TV Screen: Fixable?",
+    "h1": [
+      "Vertical or Horizontal Lines on a TV Screen: What They Mean"
+    ],
+    "wordCount": 1152,
+    "headings": 16,
+    "internalLinks": 54,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 4,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 125220
+  },
+  {
+    "path": "/blog/tv-backlight-failure-symptoms",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Backlight Failure: Symptoms, Test & Repair Cost",
+    "h1": [
+      "TV Backlight Failure: Symptoms, Test and Repair Cost"
+    ],
+    "wordCount": 1111,
+    "headings": 16,
+    "internalLinks": 56,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 4,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 123749
+  },
+  {
+    "path": "/blog/tv-keeps-restarting",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Keeps Turning Off and On? Causes and Fixes",
+    "h1": [
+      "TV Keeps Restarting or Turning Off and On"
+    ],
+    "wordCount": 1094,
+    "headings": 15,
+    "internalLinks": 55,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 4,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 123842
+  },
+  {
+    "path": "/blog/tv-repair-vs-replacement-guide",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Repair or Replace Your TV? A Practical Decision Guide",
+    "h1": [
+      "Should You Repair or Replace Your TV?"
+    ],
+    "wordCount": 1222,
+    "headings": 17,
+    "internalLinks": 57,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 4,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 133846
+  },
+  {
+    "path": "/blog/led-tv-screen-replacement-cost-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Screen Replacement Cost Delhi | GR Solution",
+    "h1": [
+      "LED TV Screen Replacement Cost in Delhi"
+    ],
+    "wordCount": 1066,
+    "headings": 17,
+    "internalLinks": 54,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 5,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 117970
+  },
+  {
+    "path": "/blog/led-tv-panel-repair-delhi",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Panel Repair Delhi | Lines & Display Guide",
+    "h1": [
+      "LED TV Panel Repair in Delhi"
+    ],
+    "wordCount": 790,
+    "headings": 16,
+    "internalLinks": 55,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 5,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 111943
+  },
+  {
+    "path": "/blog/led-tv-screen-repair-delhi-ncr",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LED TV Screen Repair Delhi NCR | GR Solution",
+    "h1": [
+      "LED TV Screen Repair in Delhi NCR"
+    ],
+    "wordCount": 876,
+    "headings": 16,
+    "internalLinks": 57,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 7,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 118792
+  },
+  {
+    "path": "/blog/lcd-tv-repair-cost-delhi-ncr",
+    "inSitemap": true,
+    "status": 200,
+    "title": "LCD TV Repair Cost Delhi NCR | GR Solution",
+    "h1": [
+      "LCD TV Repair Cost in Delhi NCR"
+    ],
+    "wordCount": 1098,
+    "headings": 19,
+    "internalLinks": 57,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "BreadcrumbList",
+      "BlogPosting",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 124823
+  },
+  {
+    "path": "/services/tv-repair-dwarka",
+    "inSitemap": true,
+    "status": 200,
+    "title": "TV Repair Dwarka | Doorstep Diagnosis | GR Solution",
+    "h1": [
+      "TV Repair Dwarka"
+    ],
+    "wordCount": 1926,
+    "headings": 27,
+    "internalLinks": 56,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 135507
+  },
+  {
+    "path": "/services/smart-tv-repair",
+    "inSitemap": true,
+    "status": 200,
+    "title": "Smart TV Repair | Apps, Wi-Fi & Startup | GR Solution",
+    "h1": [
+      "Smart TV Repair"
+    ],
+    "wordCount": 1895,
+    "headings": 27,
+    "internalLinks": 55,
+    "images": 3,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite",
+      "Service",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "faqQuestions": 6,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 138237
+  },
+  {
+    "path": "/landing",
+    "inSitemap": false,
+    "status": 200,
+    "title": "Book TV Repair in Delhi, Noida & NCR | GR Solution",
+    "h1": [
+      "Book TV Repair Across Delhi NCR"
+    ],
+    "wordCount": 290,
+    "headings": 11,
+    "internalLinks": 47,
+    "images": 6,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 79019
+  },
+  {
+    "path": "/__seo-audit-missing-page",
+    "inSitemap": false,
+    "status": 404,
+    "title": "GR Solution | TV Repair Delhi, Noida & NCR",
+    "h1": [
+      "Page Not Found"
+    ],
+    "wordCount": 24,
+    "headings": 6,
+    "internalLinks": 46,
+    "images": 2,
+    "jsonLdTypes": [
+      "Organization",
+      "LocalBusiness+ProfessionalService",
+      "WebSite"
+    ],
+    "faqQuestions": 0,
+    "faqNotExact": 0,
+    "breadcrumbMatches": true,
+    "htmlBytes": 50628
+  }
+]

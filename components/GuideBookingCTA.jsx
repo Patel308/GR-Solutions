@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { PhoneLink, WhatsAppLink, useContactChannel } from '@/components/ContactChannel';
-import { OPEN_ENQUIRY_EVENT } from '@/components/MobileActionBar';
+import { useEnquiry } from '@/components/EnquiryContext';
 
 function trackContentEvent(name, contentId, intent, placement, channel, action) {
   if (typeof window.gtag !== 'function') return;
@@ -20,6 +20,7 @@ function trackContentEvent(name, contentId, intent, placement, channel, action) 
 // Only public content identifiers go to analytics; never form/WhatsApp details.
 export default function GuideBookingCTA({ contentId, intent = 'symptom', placement = 'after_answer' }) {
   const { channel } = useContactChannel();
+  const { openEnquiry } = useEnquiry();
   const ctaRef = useRef(null);
   const viewed = useRef(new Set());
   const pricing = intent === 'price';
@@ -40,12 +41,12 @@ export default function GuideBookingCTA({ contentId, intent = 'symptom', placeme
   }, [contentId, intent, placement, channel]);
   const book = () => {
     track('open_enquiry');
-    window.dispatchEvent(new CustomEvent(OPEN_ENQUIRY_EVENT, { detail: { source: 'book_visit' } }));
+    openEnquiry('guide');
   };
   const button = 'inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-xl px-4 py-3 text-center text-sm font-black leading-snug transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary';
 
   return (
-    <section ref={ctaRef} data-guide-cta={`${contentId}:${placement}`} aria-label="Get help with your TV" className="my-8 overflow-hidden rounded-2xl border border-primary/20 bg-[linear-gradient(125deg,#eff8ff,#f2fbf7)] p-5 sm:p-7">
+    <section ref={ctaRef} data-guide-cta={`${contentId}:${placement}`} aria-label={/price_table/.test(placement) ? 'Get an estimate for your TV' : 'Get help with your TV'} className="my-8 overflow-hidden rounded-2xl border border-primary/20 bg-[linear-gradient(125deg,#eff8ff,#f2fbf7)] p-5 sm:p-7">
       <p className="text-xs font-black uppercase tracking-widest text-primary">GR Solution · Independent TV repair</p>
       <h2 className="mt-3 text-2xl font-black leading-tight text-secondary">
         {pricing ? 'Find out what your TV actually needs' : intent === 'visit' ? 'Ready to arrange a TV inspection?' : 'Still need help with this TV fault?'}

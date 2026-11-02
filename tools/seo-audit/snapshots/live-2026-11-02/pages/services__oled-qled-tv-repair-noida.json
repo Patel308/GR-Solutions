@@ -1,0 +1,1173 @@
+{
+  "path": "/services/oled-qled-tv-repair-noida",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 97025,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "OLED/QLED TV Repair Noida | Doorstep TV Repair | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Need OLED/QLED TV Repair Noida? GR Solution provides doorstep TV inspection, diagnosis and repair support across Noida and nearby NCR areas.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/oled-qled-tv-repair-noida"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "OLED/QLED TV Repair Noida | Doorstep TV Repair | GR Solution"
+      ],
+      [
+        "og:description",
+        "Need OLED/QLED TV Repair Noida? GR Solution provides doorstep TV inspection, diagnosis and repair support across Noida and nearby NCR areas."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/oled-qled-tv-repair-noida"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_oled.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "OLED/QLED TV Repair Noida | Doorstep TV Repair | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Need OLED/QLED TV Repair Noida? GR Solution provides doorstep TV inspection, diagnosis and repair support across Noida and nearby NCR areas."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 2,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "OLED/QLED TV Repair in Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Know which premium screen is being diagnosed",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Keep the large Noida screen safe while the options are checked",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "OLED versus QLED: what a Noida repair estimate should distinguish",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Prepare evidence for the premium-display visit",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Compare the actual assembly cost with a new television",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Noida service arrangements",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "OLED/QLED TV Repair in Noida: your questions",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Related services and locations",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Read Before You Book in Noida",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "TV Repair Cost in Noida",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Arrange OLED/QLED TV Repair in Noida",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call GR Solution",
+      "region": "main",
+      "section": "OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Inspection",
+      "region": "main",
+      "section": "OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-noida",
+      "text": "Noida repair cost guide →",
+      "region": "main",
+      "section": "Compare the actual assembly cost with a new television"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "GR Solution pricing and sources →",
+      "region": "main",
+      "section": "Compare the actual assembly cost with a new television"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Noida service arrangements"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Noida service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact and booking",
+      "region": "main",
+      "section": "Noida service arrangements"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "GR Solution homepage",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-delhi",
+      "text": "OLED/QLED TV Repair Delhi",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-greater-noida",
+      "text": "OLED/QLED TV Repair Greater Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-ghaziabad",
+      "text": "OLED/QLED TV Repair Ghaziabad",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-noida",
+      "text": "LED TV Repair Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-noida",
+      "text": "LCD TV Repair Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-noida",
+      "text": "Plasma TV Repair Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-noida",
+      "text": "Curved TV Repair Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair Noida",
+      "region": "main",
+      "section": "Related services and locations"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-noida",
+      "text": "Noida Cost Guide TV Repair Cost in Noida What TV repair costs in Noida, why larger and premium panels change the maths, and how high-rise access affects where the repair happens. Read the guide →",
+      "region": "main",
+      "section": "Read Before You Book in Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call",
+      "region": "other",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_oled.webp",
+      "alt": "OLED/QLED TV Repair in Noida by GR Solution",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "OLED/QLED TV Repair in Noida"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Arrange OLED/QLED TV Repair in Noida"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "OLED/QLED TV Repair in Noida",
+        "serviceType": "OLED and QLED TV repair",
+        "description": "Need OLED/QLED TV Repair Noida? GR Solution provides doorstep TV inspection, diagnosis and repair support across Noida and nearby NCR areas.",
+        "url": "https://grsolution.co.in/services/oled-qled-tv-repair-noida",
+        "areaServed": "Noida",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 99902 83890",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "postalCode": "110096",
+            "addressRegion": "Delhi NCR",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "OLED/QLED TV Repair",
+            "item": "https://grsolution.co.in/services/oled-qled-tv-repair"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "OLED/QLED TV Repair in Noida",
+            "item": "https://grsolution.co.in/services/oled-qled-tv-repair-noida"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can OLED burn-in always be removed with a refresh cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Temporary retention can differ from permanent pixel wear. Use the maintenance guidance supplied for the exact television and seek assessment of a persistent mark; a refresh procedure is not a guaranteed panel repair."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a dark QLED zone mean the entire display must be replaced?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Local-dimming hardware, its control and the light supply can cause brightness problems. The LCD panel and the image path also need evaluation before a specific replacement is recommended."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should a cracked premium TV be powered on for a diagnosis video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Do not keep testing a physically damaged screen or a set with exposed or displaced parts. Photograph the damage with the television off and ask for handling guidance. Glass damage needs a different feasibility discussion from a software complaint."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 2
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "OLED and QLED TV repair in Noida begins with identifying the display technology. GR Solution inspects premium televisions independently and explains whether the symptom involves settings, power, boards, illumination or the panel. OLED uses self-emitting pixels; QLED is LCD-based and uses a backlight, so repair options differ.",
+      "Call GR SolutionBook Inspection WhatsApp",
+      "Know which premium screen is being diagnosed"
+    ],
+    "faq": {
+      "questions": 3,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "OLED/QLED TV Repair",
+        "Noida"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "OLED/QLED TV Repair",
+          "OLED/QLED TV Repair in Noida"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 859,
+  "mainTextSha256": "6c7a0f17674d4cf24c916dd6800ba9cac144aa5040f65a28bee3195c8ba19566",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "OLED/QLED TV Repair",
+      "/",
+      "Noida",
+      "Noida",
+      "OLED/QLED TV Repair in Noida",
+      "OLED and QLED TV repair in Noida begins with identifying the display technology. GR Solution inspects premium televisions independently and explains whether the symptom involves settings, power, boards, illumination or the panel. OLED uses self-emitting pixels; QLED is LCD-based and uses a backlight, so repair options differ.",
+      "Call GR Solution",
+      "Book Inspection",
+      "WhatsApp",
+      "Know which premium screen is being diagnosed",
+      "Similar marketing labels do not make the internal assemblies interchangeable. On a QLED, uneven zones or a picture that is visible only very faintly can involve illumination and its driving circuits. An OLED has no separate backlight to replace. A dark region or image-retention complaint needs assessment appropriate to that model rather than a standard LED-strip quotation.",
+      "Use ordinary content and the television menu to record the issue. A mark appearing only in one video can come from the source; a defect over every input needs closer display-path checks. Note whether local dimming, ambient-light adjustment or picture mode changes the appearance. Do not press the glass or repeatedly force panel maintenance routines to test a suspected fault.",
+      "Keep the large Noida screen safe while the options are checked",
+      "For a wall-mounted television in an Expressway society or another Noida sector, explain the bracket type and access to the rear connectors. A thin premium panel can be damaged by twisting during removal. Discuss the workspace and handling requirements before anyone loosens the mount; a lift does not by itself make transport safe.",
+      "Locate the invoice and any extended service plan before commissioning independent work. A qualifying manufacturer claim can be more appropriate than paying for a display assembly. Where outside repair is sensible, agree which measurements support the diagnosis, what will be changed and whether bench facilities are actually necessary.",
+      "OLED versus QLED: what a Noida repair estimate should distinguish",
+      "OLED versus QLED: what a Noida repair estimate should distinguish",
+      "Display or symptom",
+      "Relevant investigation",
+      "Spending consideration",
+      "QLED with uneven brightness",
+      "Dimming behaviour, illumination zones and supply",
+      "A backlight fault is different from damaged LCD glass",
+      "OLED with a persistent image-shaped mark",
+      "Normal maintenance history and pixel wear",
+      "Panel work can outweigh the remaining value",
+      "Either technology fails only with one HDMI source",
+      "Signal format, input configuration and connection",
+      "Prove a TV fault before approving hardware",
+      "Prepare evidence for the premium-display visit",
+      "Provide the brand, full model, screen size and purchase date.",
+      "Take an unedited photo with the defect visible over a normal menu.",
+      "Describe mounting, society entry and any recent physical damage.",
+      "Compare the actual assembly cost with a new television",
+      "GR Solution diagnoses your TV free of charge and gives you a firm estimate before any paid work begins.",
+      "OLED/QLED repair prices in Noida cannot be reduced to one panel-repair rate. A configuration correction, power-board job and replacement OLED assembly have different costs and prospects. Request the proposed component, labour, handling charges and warranty in writing. For a high display quote, compare a similar new model and its cover, not the original purchase price. Parts availability must be confirmed for the exact variant.",
+      "Noida repair cost guide →",
+      "GR Solution pricing and sources →",
+      "Noida service arrangements",
+      "GR Solution can discuss appointments in sectors 62, 75, 76, 104, 137 and other Noida locations. Work is coordinated from New Kondli as an independent repair service, with the visit and safe handling confirmed for your installation.",
+      "+91 93155 15700",
+      "info@grsolution.co.in",
+      "Contact and booking",
+      "OLED/QLED TV Repair in Noida: your questions",
+      "Can OLED burn-in always be removed with a refresh cycle?",
+      "No. Temporary retention can differ from permanent pixel wear. Use the maintenance guidance supplied for the exact television and seek assessment of a persistent mark; a refresh procedure is not a guaranteed panel repair.",
+      "Does a dark QLED zone mean the entire display must be replaced?",
+      "Not necessarily. Local-dimming hardware, its control and the light supply can cause brightness problems. The LCD panel and the image path also need evaluation before a specific replacement is recommended.",
+      "Should a cracked premium TV be powered on for a diagnosis video?",
+      "Do not keep testing a physically damaged screen or a set with exposed or displaced parts. Photograph the damage with the television off and ask for handling guidance. Glass damage needs a different feasibility discussion from a software complaint.",
+      "Related services and locations",
+      "GR Solution homepage",
+      "OLED/QLED TV Repair",
+      "OLED/QLED TV Repair Delhi",
+      "OLED/QLED TV Repair Greater Noida",
+      "OLED/QLED TV Repair Ghaziabad",
+      "LED TV Repair Noida",
+      "LCD TV Repair Noida",
+      "Plasma TV Repair Noida",
+      "Curved TV Repair Noida",
+      "TV Repair Noida",
+      "IN-DEPTH GUIDES",
+      "Read Before You Book in Noida",
+      "Detailed cost and diagnosis guides covering what actually drives the price and which faults are worth repairing.",
+      "Noida Cost Guide",
+      "TV Repair Cost in Noida",
+      "What TV repair costs in Noida, why larger and premium panels change the maths, and how high-rise access affects where the repair happens.",
+      "Read the guide →",
+      "FAST LOCAL SUPPORT",
+      "Arrange OLED/QLED TV Repair in Noida",
+      "Share the OLED or QLED model and your Noida installation details to discuss the safest inspection route.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Smart TV / Android TV Repair",
+      "Premium OLED TV Repair (LG, Sony, Samsung)",
+      "QLED / Neo QLED / Mini LED TV Repair",
+      "Large Screen TV Repair (65\" and above)",
+      "Screen / Panel Replacement",
+      "Backlight Repair",
+      "Motherboard / Power Board Repair",
+      "New TV Purchase Enquiry",
+      "Other / Not Sure",
+      "Message",
+      "Send Enquiry",
+      "Call",
+      "WhatsApp",
+      "Book Visit"
+    ]
+  }
+}

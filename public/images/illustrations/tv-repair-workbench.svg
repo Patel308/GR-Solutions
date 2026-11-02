@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5F8FC"/><stop offset="1" stop-color="#DCE8F8"/></linearGradient>
+    <pattern id="peg" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r="2.2" fill="#B9D0F1"/></pattern>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1D63C2"/><stop offset="1" stop-color="#082C66"/></linearGradient>
+    <linearGradient id="bench" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14294A"/><stop offset="1" stop-color="#0A1A33"/></linearGradient>
+    <linearGradient id="lamp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFF0F5" stop-opacity=".9"/><stop offset="1" stop-color="#CFF0F5" stop-opacity="0"/></linearGradient>
+  </defs>
+
+  <!-- Wall and pegboard -->
+  <rect width="640" height="480" fill="url(#wall)"/>
+  <rect x="36" y="44" width="232" height="196" rx="16" fill="#FFFFFF"/>
+  <rect x="36" y="44" width="232" height="196" rx="16" fill="url(#peg)"/>
+  <rect x="36" y="44" width="232" height="196" rx="16" stroke="#DCE8F8" stroke-width="2"/>
+
+  <!-- Wrench -->
+  <g transform="rotate(-38 92 140)">
+    <rect x="86" y="96" width="12" height="92" rx="6" fill="#0A3A85"/>
+    <path d="M78 92a14 14 0 1 1 28 0c0 4-2 8-5 10h-18c-3-2-5-6-5-10z" fill="#0A3A85"/>
+    <rect x="88" y="78" width="8" height="16" rx="2" fill="#FFFFFF"/>
+  </g>
+  <!-- Screwdriver -->
+  <g transform="rotate(14 160 140)">
+    <rect x="152" y="80" width="18" height="52" rx="8" fill="#0E7C90"/>
+    <rect x="156" y="88" width="4" height="36" rx="2" fill="#5CC8DA"/>
+    <rect x="158" y="132" width="6" height="64" rx="3" fill="#94A3B8"/>
+    <path d="M158 196h6l-3 10z" fill="#64748B"/>
+  </g>
+  <!-- Pliers -->
+  <g transform="rotate(-12 220 140)">
+    <path d="M206 92l10 52M234 92l-10 52" stroke="#0B1B33" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="220" cy="148" r="7" fill="#94A3B8"/>
+    <path d="M215 154l-4 40M225 154l4 40" stroke="#94A3B8" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lamp light -->
+  <path d="M470 0h40l90 316H360z" fill="url(#lamp)" opacity=".55"/>
+  <rect x="468" y="0" width="44" height="14" rx="4" fill="#0B1B33"/>
+
+  <!-- TV on the bench -->
+  <ellipse cx="452" cy="322" rx="140" ry="7" fill="#0B1B33" opacity=".12"/>
+  <rect x="300" y="96" width="304" height="196" rx="12" fill="#0B1B33"/>
+  <rect x="309" y="105" width="286" height="178" rx="6" fill="url(#screen)"/>
+  <!-- Test pattern -->
+  <g>
+    <rect x="309" y="105" width="41" height="120" fill="#CFF0F5"/>
+    <rect x="350" y="105" width="41" height="120" fill="#5CC8DA"/>
+    <rect x="391" y="105" width="41" height="120" fill="#1997AD"/>
+    <rect x="432" y="105" width="41" height="120" fill="#8BB0E6"/>
+    <rect x="473" y="105" width="41" height="120" fill="#4F86D4"/>
+    <rect x="514" y="105" width="41" height="120" fill="#1D63C2"/>
+    <rect x="555" y="105" width="40" height="120" fill="#0A3A85"/>
+    <rect x="309" y="225" width="286" height="58" fill="#071F47"/>
+    <rect x="330" y="240" width="120" height="8" rx="4" fill="#5CC8DA" opacity=".8"/>
+    <rect x="330" y="256" width="78" height="8" rx="4" fill="#B9D0F1" opacity=".55"/>
+    <circle cx="560" cy="254" r="14" stroke="#5CC8DA" stroke-width="4"/>
+    <path d="M553 254l5 5 9-10" stroke="#5CC8DA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="438" y="292" width="28" height="18" fill="#0B1B33"/>
+  <rect x="398" y="308" width="108" height="10" rx="5" fill="#0B1B33"/>
+
+  <!-- Bench -->
+  <rect x="0" y="318" width="640" height="16" fill="#1E3A66"/>
+  <rect x="0" y="334" width="640" height="146" fill="url(#bench)"/>
+  <rect x="0" y="318" width="640" height="3" fill="#4F86D4" opacity=".5"/>
+  <g stroke="#29457A" stroke-width="2">
+    <rect x="40" y="356" width="250" height="52" rx="6"/>
+    <rect x="350" y="356" width="250" height="52" rx="6"/>
+    <rect x="40" y="422" width="250" height="52" rx="6"/>
+    <rect x="350" y="422" width="250" height="52" rx="6"/>
+  </g>
+  <g fill="#4F86D4" opacity=".7">
+    <rect x="145" y="378" width="40" height="8" rx="4"/>
+    <rect x="455" y="378" width="40" height="8" rx="4"/>
+    <rect x="145" y="444" width="40" height="8" rx="4"/>
+    <rect x="455" y="444" width="40" height="8" rx="4"/>
+  </g>
+
+  <!-- Multimeter -->
+  <g>
+    <rect x="62" y="214" width="96" height="104" rx="14" fill="#D97706"/>
+    <rect x="70" y="222" width="80" height="88" rx="9" fill="#0B1B33"/>
+    <rect x="78" y="230" width="64" height="26" rx="4" fill="#CFF0F5"/>
+    <path d="M84 244c6-10 10-10 14 0s8 10 12 0 8-10 12 0 8 10 14 0" stroke="#0A3A85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="110" cy="282" r="16" fill="#334155"/>
+    <circle cx="110" cy="282" r="9" fill="#475569"/>
+    <rect x="108" y="266" width="4" height="12" rx="2" fill="#FFFFFF"/>
+    <circle cx="84" cy="300" r="3.5" fill="#B91C1C"/>
+    <circle cx="136" cy="300" r="3.5" fill="#FFFFFF"/>
+  </g>
+  <!-- Probe leads -->
+  <path d="M84 304c4 28 40 30 70 22 30-8 52-2 70 6" stroke="#B91C1C" stroke-width="4" stroke-linecap="round"/>
+  <path d="M136 304c8 20 40 22 66 16 26-6 46-2 62 8" stroke="#0B1B33" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Circuit board -->
+  <g>
+    <rect x="178" y="286" width="112" height="32" rx="5" fill="#0E7C90"/>
+    <rect x="188" y="292" width="24" height="16" rx="2" fill="#0B1B33"/>
+    <rect x="220" y="294" width="16" height="12" rx="2" fill="#0B1B33"/>
+    <rect x="244" y="292" width="10" height="20" rx="2" fill="#CFF0F5"/>
+    <rect x="260" y="296" width="20" height="10" rx="2" fill="#0B1B33"/>
+    <path d="M186 314h96" stroke="#5CC8DA" stroke-width="2" stroke-dasharray="6 4"/>
+  </g>
+</svg>

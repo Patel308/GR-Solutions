@@ -1,0 +1,5144 @@
+[
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 19937,
+      "h1": {
+        "fontSize": 51.2,
+        "lineHeight": 55,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "800",
+        "top": 296,
+        "bottom": 572,
+        "height": 276,
+        "lines": 5,
+        "shareOfViewport": 0.34
+      },
+      "bodyText": {
+        "fontSize": 18.88,
+        "lineHeight": 1.75,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 35
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Get Free Quote",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 827,
+        "left": 16,
+        "width": 182,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 286,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 66,
+        "under48": 31,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Discuss your TV issue with GR Solution",
+            "width": 328,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 172,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Flogo.jpg&w=384&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 16863,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 448,
+        "height": 168,
+        "lines": 3,
+        "shareOfViewport": 0.21
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 36
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1159,
+        "left": 16,
+        "width": 142,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 286,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 55,
+        "under48": 32,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "OLED/QLED TV Repair Delhi",
+            "width": 258,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 156,
+        "tag": "P",
+        "text": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board, ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 26939,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 308,
+        "bottom": 420,
+        "height": 112,
+        "lines": 2,
+        "shareOfViewport": 0.14
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 36
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 727,
+        "left": 16,
+        "width": 199,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 286,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 70,
+        "under48": 30,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "TV Repair Services",
+            "width": 129,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Visit GR Solution homepage",
+            "width": 264,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Explore main TV Repair Services",
+            "width": 264,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Open contact and booking page",
+            "width": 264,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 128,
+        "tag": "P",
+        "text": "Need TV repair in Noida? GR Solution provides doorstep inspection, diagnosis, an",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 21924,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 60,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 224,
+        "bottom": 584,
+        "height": 360,
+        "lines": 6,
+        "shareOfViewport": 0.45
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 28
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 19476,
+        "left": 103,
+        "width": 154,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 286,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 54,
+        "under48": 44,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 248,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 248,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 248,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 248,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 248,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 248,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 124,
+        "tag": "H1",
+        "text": "TV Repair Tips & Guides for Delhi, Noida & NCR Residents",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 14873,
+      "h1": {
+        "fontSize": 43.2,
+        "lineHeight": 54,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 550,
+        "height": 270,
+        "lines": 5,
+        "shareOfViewport": 0.34
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 36
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Contact GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 10113,
+        "left": 48,
+        "width": 264,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 286,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 45,
+        "under48": 27,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 30,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 180,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 169,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 124,
+        "tag": "H1",
+        "text": "TV Repair Cost in Delhi: What Actually Drives the Price",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 360,
+    "metrics": {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 5788,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 52,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 224,
+        "bottom": 431,
+        "height": 207,
+        "lines": 4,
+        "shareOfViewport": 0.26
+      },
+      "bodyText": {
+        "fontSize": 20,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 33
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "+91 93155 15700",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1621,
+        "left": 92,
+        "width": 152,
+        "height": 21,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 286,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 38,
+        "under48": 26,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "+91 93155 15700",
+            "width": 152,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "info@grsolution.co.in",
+            "width": 201,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Google Business Profile",
+            "width": 283,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 66,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 108,
+        "tag": "H1",
+        "text": "Experience Premium At-Home TV Repair",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 19422,
+      "h1": {
+        "fontSize": 51.2,
+        "lineHeight": 55,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "800",
+        "top": 296,
+        "bottom": 572,
+        "height": 276,
+        "lines": 5,
+        "shareOfViewport": 0.33
+      },
+      "bodyText": {
+        "fontSize": 18.88,
+        "lineHeight": 1.75,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 38
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Get Free Quote",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 827,
+        "left": 16,
+        "width": 182,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Get Free Quote",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 316,
+          "top": 704,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 66,
+        "under48": 31,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Discuss your TV issue with GR Solution",
+            "width": 338,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 144,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Flogo.jpg&w=384&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 16218,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 392,
+        "height": 112,
+        "lines": 2,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 40
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1015,
+        "left": 16,
+        "width": 142,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 316,
+          "top": 704,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 55,
+        "under48": 32,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "OLED/QLED TV Repair Delhi",
+            "width": 258,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 224,
+        "tag": "P",
+        "text": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board, ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 25656,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 392,
+        "height": 112,
+        "lines": 2,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 40
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 699,
+        "left": 16,
+        "width": 199,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 316,
+          "top": 704,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 70,
+        "under48": 30,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "TV Repair Services",
+            "width": 129,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Visit GR Solution homepage",
+            "width": 294,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Explore main TV Repair Services",
+            "width": 294,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Open contact and booking page",
+            "width": 294,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 184,
+        "tag": "P",
+        "text": "Need TV repair in Noida? GR Solution provides doorstep inspection, diagnosis, an",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 21325,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 60,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 224,
+        "bottom": 464,
+        "height": 240,
+        "lines": 4,
+        "shareOfViewport": 0.28
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 31
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 18877,
+        "left": 118,
+        "width": 154,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 316,
+          "top": 704,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 54,
+        "under48": 44,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 278,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 278,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 278,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 278,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 278,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 278,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 232,
+        "tag": "H1",
+        "text": "TV Repair Tips & Guides for Delhi, Noida & NCR Residents",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 14264,
+      "h1": {
+        "fontSize": 43.2,
+        "lineHeight": 54,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 496,
+        "height": 216,
+        "lines": 4,
+        "shareOfViewport": 0.26
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 40
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Contact GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 9584,
+        "left": 48,
+        "width": 294,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 316,
+          "top": 704,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 45,
+        "under48": 27,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 30,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 180,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 169,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 124,
+        "tag": "P",
+        "text": "TV repair cost in Delhi is decided by which component failed, not by the brand. ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 390,
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 5788,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 52,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 224,
+        "bottom": 431,
+        "height": 207,
+        "lines": 4,
+        "shareOfViewport": 0.25
+      },
+      "bodyText": {
+        "fontSize": 20,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 36
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "+91 93155 15700",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1621,
+        "left": 92,
+        "width": 152,
+        "height": 21,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 316,
+          "top": 704,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 38,
+        "under48": 26,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "+91 93155 15700",
+            "width": 152,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "info@grsolution.co.in",
+            "width": 201,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Google Business Profile",
+            "width": 283,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 66,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 196,
+        "tag": "H1",
+        "text": "Experience Premium At-Home TV Repair",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 19224,
+      "h1": {
+        "fontSize": 51.2,
+        "lineHeight": 55,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "800",
+        "top": 296,
+        "bottom": 572,
+        "height": 276,
+        "lines": 5,
+        "shareOfViewport": 0.31
+      },
+      "bodyText": {
+        "fontSize": 18.88,
+        "lineHeight": 1.75,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 39
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Get Free Quote",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 827,
+        "left": 23,
+        "width": 182,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Get Free Quote",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 340,
+          "top": 756,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 66,
+        "under48": 31,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Discuss your TV issue with GR Solution",
+            "width": 338,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 148,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Flogo.jpg&w=384&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 16051,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 392,
+        "height": 112,
+        "lines": 2,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 41
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1015,
+        "left": 23,
+        "width": 142,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 340,
+          "top": 756,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 55,
+        "under48": 32,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "OLED/QLED TV Repair Delhi",
+            "width": 258,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 120,
+        "tag": "P",
+        "text": "GR Solution repairs OLED and QLED televisions across Delhi NCR, covering board, ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 25361,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 392,
+        "height": 112,
+        "lines": 2,
+        "shareOfViewport": 0.13
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 41
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 669,
+        "left": 23,
+        "width": 199,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 340,
+          "top": 756,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 70,
+        "under48": 30,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "TV Repair Services",
+            "width": 129,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Visit GR Solution homepage",
+            "width": 304,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Explore main TV Repair Services",
+            "width": 304,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Open contact and booking page",
+            "width": 304,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 152,
+        "tag": "P",
+        "text": "Need TV repair in Noida? GR Solution provides doorstep inspection, diagnosis, an",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 21037,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 60,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 224,
+        "bottom": 464,
+        "height": 240,
+        "lines": 4,
+        "shareOfViewport": 0.27
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 32
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 18619,
+        "left": 130,
+        "width": 154,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 340,
+          "top": 756,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 54,
+        "under48": 44,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 288,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 288,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 288,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 288,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 288,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 288,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 120,
+        "tag": "H1",
+        "text": "TV Repair Tips & Guides for Delhi, Noida & NCR Residents",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 13954,
+      "h1": {
+        "fontSize": 43.2,
+        "lineHeight": 54,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 280,
+        "bottom": 496,
+        "height": 216,
+        "lines": 4,
+        "shareOfViewport": 0.24
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 41
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Contact GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 9350,
+        "left": 55,
+        "width": 304,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 340,
+          "top": 756,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 45,
+        "under48": 27,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 30,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 180,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 169,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 128,
+        "tag": "P",
+        "text": "TV repair cost in Delhi is decided by which component failed, not by the brand. ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 414,
+    "metrics": {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "scrollWidth": 414,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 5709,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 52,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 224,
+        "bottom": 431,
+        "height": 207,
+        "lines": 4,
+        "shareOfViewport": 0.23
+      },
+      "bodyText": {
+        "fontSize": 20,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 37
+      },
+      "header": {
+        "height": 64,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "+91 93155 15700",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1592,
+        "left": 99,
+        "width": 152,
+        "height": 21,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 340,
+          "top": 756,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 38,
+        "under48": 26,
+        "examples": [
+          {
+            "text": "CallCall Now",
+            "width": 78,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "+91 93155 15700",
+            "width": 152,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "info@grsolution.co.in",
+            "width": 201,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Google Business Profile",
+            "width": 283,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 66,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 148,
+        "tag": "P",
+        "text": "Delhi, Noida & NCR's trusted engineering team for OLED, QLED and LED TV repairs.",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 15789,
+      "h1": {
+        "fontSize": 51.2,
+        "lineHeight": 55,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "800",
+        "top": 260,
+        "bottom": 426,
+        "height": 166,
+        "lines": 3,
+        "shareOfViewport": 0.16
+      },
+      "bodyText": {
+        "fontSize": 18.88,
+        "lineHeight": 1.75,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 63
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Get Free Quote",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 614,
+        "left": 84,
+        "width": 182,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Get Free Quote",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 694,
+          "top": 884,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 67,
+        "under48": 30,
+        "examples": [
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Discuss your TV issue with GR Solution",
+            "width": 338,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "+91 99902 83890",
+            "width": 227,
+            "height": 31,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 228,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Flogo.jpg&w=256&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 11992,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 296,
+        "bottom": 408,
+        "height": 112,
+        "lines": 2,
+        "shareOfViewport": 0.11
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 67
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 826,
+        "left": 84,
+        "width": 142,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call Now",
+        "Book Service",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 694,
+          "top": 884,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 56,
+        "under48": 31,
+        "examples": [
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "OLED/QLED TV Repair Delhi",
+            "width": 258,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "OLED/QLED TV Repair Noida",
+            "width": 264,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 148,
+        "tag": "P",
+        "text": "OLED and QLED televisions need careful handling because display, brightness and ",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 19614,
+      "h1": {
+        "fontSize": 44.8,
+        "lineHeight": 56,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 296,
+        "bottom": 352,
+        "height": 56,
+        "lines": 1,
+        "shareOfViewport": 0.05
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 67
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 571,
+        "left": 84,
+        "width": 199,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 694,
+          "top": 884,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 71,
+        "under48": 29,
+        "examples": [
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "TV Repair Services",
+            "width": 129,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Visit GR Solution homepage",
+            "width": 535,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Explore main TV Repair Services",
+            "width": 535,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Open contact and booking page",
+            "width": 535,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Full NoidaTV repair cost guide →",
+            "width": 258,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 144,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 13743,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 60,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 240,
+        "bottom": 420,
+        "height": 180,
+        "lines": 3,
+        "shareOfViewport": 0.18
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 58
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 12149,
+        "left": 203,
+        "width": 154,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 694,
+          "top": 884,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 55,
+        "under48": 43,
+        "examples": [
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 204,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 204,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 204,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 204,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 204,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 204,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 204,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 216,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 10461,
+      "h1": {
+        "fontSize": 43.2,
+        "lineHeight": 54,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 296,
+        "bottom": 458,
+        "height": 162,
+        "lines": 3,
+        "shareOfViewport": 0.16
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 67
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Contact GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 7097,
+        "left": 116,
+        "width": 535,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 694,
+          "top": 884,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 46,
+        "under48": 26,
+        "examples": [
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 30,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 180,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "See sources and method",
+            "width": 169,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 66,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 128,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 768,
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 4713,
+      "h1": {
+        "fontSize": 48,
+        "lineHeight": 52,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 240,
+        "bottom": 344,
+        "height": 104,
+        "lines": 2,
+        "shareOfViewport": 0.1
+      },
+      "bodyText": {
+        "fontSize": 20,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 60
+      },
+      "header": {
+        "height": 80,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "+91 93155 15700",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1449,
+        "left": 160,
+        "width": 152,
+        "height": 21,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 694,
+          "top": 884,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 39,
+        "under48": 26,
+        "examples": [
+          {
+            "text": "Open menu",
+            "width": 40,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "+91 93155 15700",
+            "width": 152,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110",
+            "width": 483,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "info@grsolution.co.in",
+            "width": 201,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Google Business Profile",
+            "width": 283,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 45,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "About Us",
+            "width": 70,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          },
+          {
+            "text": "Services",
+            "width": 66,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": true
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 176,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 10003,
+      "h1": {
+        "fontSize": 70.4,
+        "lineHeight": 76,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "800",
+        "top": 328,
+        "bottom": 632,
+        "height": 304,
+        "lines": 4,
+        "shareOfViewport": 0.38
+      },
+      "bodyText": {
+        "fontSize": 18.88,
+        "lineHeight": 1.75,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 59
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Get Free Quote",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 820,
+        "left": 141,
+        "width": 182,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1206,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 38,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 68,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 82,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 228,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Flogo.jpg&w=256&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8730,
+      "h1": {
+        "fontSize": 64,
+        "lineHeight": 80,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 312,
+        "bottom": 552,
+        "height": 240,
+        "lines": 3,
+        "shareOfViewport": 0.3
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 52
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1071,
+        "left": 141,
+        "width": 142,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1206,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 60,
+        "under48": 35,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 68,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 82,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 168,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 13862,
+      "h1": {
+        "fontSize": 64,
+        "lineHeight": 80,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 312,
+        "bottom": 472,
+        "height": 160,
+        "lines": 2,
+        "shareOfViewport": 0.2
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 57
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 704,
+        "left": 141,
+        "width": 199,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1206,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 75,
+        "under48": 33,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 68,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 82,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "TV Repair Services",
+            "width": 129,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 152,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8702,
+      "h1": {
+        "fontSize": 70.4,
+        "lineHeight": 88,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 256,
+        "bottom": 784,
+        "height": 528,
+        "lines": 6,
+        "shareOfViewport": 0.66
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 42
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 7822,
+        "left": 370,
+        "width": 154,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1206,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 59,
+        "under48": 47,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 68,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 82,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 231,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 231,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 231,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 152,
+        "tag": "H1",
+        "text": "TV Repair Tips & Guides for Delhi, Noida & NCR Residents",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8549,
+      "h1": {
+        "fontSize": 64,
+        "lineHeight": 80,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 312,
+        "bottom": 632,
+        "height": 320,
+        "lines": 4,
+        "shareOfViewport": 0.4
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 57
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Contact GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1380,
+        "left": 860,
+        "width": 247,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1206,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 50,
+        "under48": 30,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 68,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 82,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 30,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 180,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 128,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 1280,
+    "metrics": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scrollWidth": 1280,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 3193,
+      "h1": {
+        "fontSize": 76.8,
+        "lineHeight": 83,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 256,
+        "bottom": 588,
+        "height": 332,
+        "lines": 4,
+        "shareOfViewport": 0.41
+      },
+      "bodyText": {
+        "fontSize": 20,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 51
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "+91 93155 15700",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1288,
+        "left": 217,
+        "width": 152,
+        "height": 21,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1206,
+          "top": 660,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 43,
+        "under48": 29,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 68,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 82,
+            "height": 40,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "+91 93155 15700",
+            "width": 152,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "info@grsolution.co.in",
+            "width": 201,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Google Business Profile",
+            "width": 283,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 132,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Home",
+    "path": "/",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 10128,
+      "h1": {
+        "fontSize": 79.2,
+        "lineHeight": 86,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "800",
+        "top": 276,
+        "bottom": 704,
+        "height": 428,
+        "lines": 5,
+        "shareOfViewport": 0.48
+      },
+      "bodyText": {
+        "fontSize": 18.88,
+        "lineHeight": 1.75,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 63
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Get Free Quote",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 892,
+        "left": 192,
+        "width": 182,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Get Free Quote",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1366,
+          "top": 760,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 76,
+        "under48": 38,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 72,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 87,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 160,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 188,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Flogo.jpg&w=256&q=75"
+      }
+    }
+  },
+  {
+    "name": "Service: OLED/QLED TV Repair",
+    "path": "/services/oled-qled-tv-repair",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8663,
+      "h1": {
+        "fontSize": 72,
+        "lineHeight": 90,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 312,
+        "bottom": 582,
+        "height": 270,
+        "lines": 3,
+        "shareOfViewport": 0.3
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 55
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1106,
+        "left": 192,
+        "width": 142,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1366,
+          "top": 760,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 60,
+        "under48": 35,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 72,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 87,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "View Service",
+            "width": 154,
+            "height": 44,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 136,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "City: TV Repair in Noida",
+    "path": "/services/tv-repair-noida",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 13673,
+      "h1": {
+        "fontSize": 72,
+        "lineHeight": 90,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 312,
+        "bottom": 492,
+        "height": 180,
+        "lines": 2,
+        "shareOfViewport": 0.2
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 61
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 729,
+        "left": 192,
+        "width": 199,
+        "height": 52,
+        "aboveFold": true
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "Call GR Solution",
+        "Book Inspection",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1366,
+          "top": 760,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 75,
+        "under48": 33,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 72,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 87,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 59,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "TV Repair Services",
+            "width": 129,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 156,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_oled.webp&w=750&q=75"
+      }
+    }
+  },
+  {
+    "name": "Blog index",
+    "path": "/blog",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8747,
+      "h1": {
+        "fontSize": 79.2,
+        "lineHeight": 99,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 256,
+        "bottom": 850,
+        "height": 594,
+        "lines": 6,
+        "shareOfViewport": 0.66
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(110, 109, 122)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 44
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "Call Now",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 7867,
+        "left": 450,
+        "width": 154,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1366,
+          "top": 760,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 59,
+        "under48": 47,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 72,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 87,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 251,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 251,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Read More ->",
+            "width": 251,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 136,
+        "tag": "H1",
+        "text": "TV Repair Tips & Guides for Delhi, Noida & NCR Residents",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Blog post: TV Repair Cost in Delhi",
+    "path": "/blog/tv-repair-cost-delhi",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 8298,
+      "h1": {
+        "fontSize": 72,
+        "lineHeight": 90,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 312,
+        "bottom": 762,
+        "height": 450,
+        "lines": 5,
+        "shareOfViewport": 0.5
+      },
+      "bodyText": {
+        "fontSize": 18,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 61
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "/contact",
+        "text": "Contact GR Solution",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1515,
+        "left": 950,
+        "width": 266,
+        "height": 52,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1366,
+          "top": 760,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 50,
+        "under48": 30,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 72,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 87,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Home",
+            "width": 40,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 30,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "GR Solution Editorial Team",
+            "width": 180,
+            "height": 17,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 136,
+        "tag": "H1",
+        "text": "TV Repair Cost in Delhi: What Actually Drives the Price",
+        "src": null
+      }
+    }
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "width": 1440,
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [],
+      "pageHeight": 3209,
+      "h1": {
+        "fontSize": 86.4,
+        "lineHeight": 93,
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "fontWeight": "900",
+        "top": 256,
+        "bottom": 629,
+        "height": 373,
+        "lines": 4,
+        "shareOfViewport": 0.41
+      },
+      "bodyText": {
+        "fontSize": 20,
+        "lineHeight": 1.63,
+        "color": "rgb(13, 12, 34)",
+        "fontFamily": "Inter, \"Segoe UI\", Arial, Helvetica, sans-serif",
+        "approxCharsPerLine": 55
+      },
+      "header": {
+        "height": 96,
+        "position": "sticky"
+      },
+      "firstMainCta": {
+        "href": "tel:+919315515700",
+        "text": "+91 93155 15700",
+        "fixed": false,
+        "inHeader": false,
+        "inMain": true,
+        "top": 1350,
+        "left": 268,
+        "width": 152,
+        "height": 21,
+        "aboveFold": false
+      },
+      "ctasInFirstViewport": [
+        "Contact Us [header]",
+        "CallCall Now [header]",
+        "WhatsApp GR Solution [fixed]",
+        "Call GR Solution [fixed]"
+      ],
+      "fixedElements": [
+        {
+          "what": "div",
+          "left": 1366,
+          "top": 760,
+          "width": 54,
+          "height": 120
+        }
+      ],
+      "tapTargets": {
+        "interactive": 43,
+        "under48": 30,
+        "examples": [
+          {
+            "text": "Home",
+            "width": 46,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "About Us",
+            "width": 72,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Services",
+            "width": 89,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Blog",
+            "width": 35,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "Contact Us",
+            "width": 87,
+            "height": 20,
+            "inlineInText": false,
+            "inHeader": true,
+            "inFooter": false
+          },
+          {
+            "text": "+91 93155 15700",
+            "width": 152,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110",
+            "width": 483,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          },
+          {
+            "text": "info@grsolution.co.in",
+            "width": 201,
+            "height": 21,
+            "inlineInText": false,
+            "inHeader": false,
+            "inFooter": false
+          }
+        ]
+      },
+      "fontsLoaded": [],
+      "cls": 0,
+      "shifts": [],
+      "lcp": {
+        "time": 128,
+        "tag": "IMG",
+        "text": "",
+        "src": "http://localhost:3100/_next/image?url=%2Fimages%2Fservice_tv.webp&w=750&q=75"
+      }
+    }
+  }
+]

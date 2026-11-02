@@ -1,0 +1,15 @@
+node_modules/
+# Committed: the Phase 0 baseline, the launch baseline (live site,
+# 2026-11-02) and the launch build (commit dfc6a15), raw HTML snapshots +
+# site files.
+snapshots/*
+!snapshots/baseline/
+snapshots/baseline/pages-rendered/
+!snapshots/live-2026-11-02/
+snapshots/live-2026-11-02/pages-rendered/
+!snapshots/launch-2026-11-02/
+# Regenerable artefacts
+reports/**/lighthouse/raw/
+reports/**/lighthouse-*/raw/
+reports/**/screenshots/
+reports/current/

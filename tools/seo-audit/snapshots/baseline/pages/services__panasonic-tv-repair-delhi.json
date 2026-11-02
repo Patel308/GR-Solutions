@@ -1,0 +1,1240 @@
+{
+  "path": "/services/panasonic-tv-repair-delhi",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 120257,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "Panasonic TV Repair Delhi | Doorstep Service | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "Panasonic TV repair in Delhi. GR Solution provides doorstep inspection and repair support for Panasonic TV issues across Delhi and nearby NCR areas.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/panasonic-tv-repair-delhi"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "Panasonic TV Repair Delhi | Doorstep Service | GR Solution"
+      ],
+      [
+        "og:description",
+        "Panasonic TV repair in Delhi. GR Solution provides doorstep inspection and repair support for Panasonic TV issues across Delhi and nearby NCR areas."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/panasonic-tv-repair-delhi"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "Panasonic TV Repair Delhi | Doorstep Service | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "Panasonic TV repair in Delhi. GR Solution provides doorstep inspection and repair support for Panasonic TV issues across Delhi and nearby NCR areas."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      },
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "Panasonic TV Repair in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Is It Worth Repairing A Panasonic TV In Delhi?",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "GR Solution Contact",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What Problems Can Be Fixed In A Panasonic TV?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Topics for Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Panasonic LED TV Repair in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Panasonic TV Power Board Repair in Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "How Does GR Solution Inspect A Panasonic TV?",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Repair vs Replace",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Panasonic TV Repair Process",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Why Choose GR Solution In Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What To Check Before Calling",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Service Coverage In Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Pricing Guidance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Panasonic TV Repair In Other Cities",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Other TV Brands In Delhi",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Panasonic TV Repair FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Need Panasonic TV Repair in Delhi?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Panasonic TV Repair in Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Repair",
+      "region": "main",
+      "section": "Panasonic TV Repair in Delhi"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Panasonic TV Repair in Delhi"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "main",
+      "section": "Is It Worth Repairing A Panasonic TV In Delhi?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "main",
+      "section": "Is It Worth Repairing A Panasonic TV In Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Visit GR Solution homepage",
+      "region": "main",
+      "section": "Is It Worth Repairing A Panasonic TV In Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Explore all TV repair services",
+      "region": "main",
+      "section": "Is It Worth Repairing A Panasonic TV In Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Open contact and booking page",
+      "region": "main",
+      "section": "Is It Worth Repairing A Panasonic TV In Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "main",
+      "section": "Is It Worth Repairing A Panasonic TV In Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-delhi",
+      "text": "LED TV Repair in Delhi",
+      "region": "main",
+      "section": "Is It Worth Repairing A Panasonic TV In Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/panasonic-tv-repair-noida",
+      "text": "Panasonic TV Repair in Noida",
+      "region": "main",
+      "section": "Panasonic TV Repair In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/panasonic-tv-repair-greater-noida",
+      "text": "Panasonic TV Repair in Greater Noida",
+      "region": "main",
+      "section": "Panasonic TV Repair In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/panasonic-tv-repair-ghaziabad",
+      "text": "Panasonic TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "Panasonic TV Repair In Other Cities"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/samsung-tv-repair-delhi",
+      "text": "Samsung TV Repair in Delhi",
+      "region": "main",
+      "section": "Other TV Brands In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lg-tv-repair-delhi",
+      "text": "LG TV Repair in Delhi",
+      "region": "main",
+      "section": "Other TV Brands In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/sony-tv-repair-delhi",
+      "text": "Sony TV Repair in Delhi",
+      "region": "main",
+      "section": "Other TV Brands In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/mi-tv-repair-delhi",
+      "text": "Mi/Xiaomi TV Repair in Delhi",
+      "region": "main",
+      "section": "Other TV Brands In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oneplus-tv-repair-delhi",
+      "text": "OnePlus TV Repair in Delhi",
+      "region": "main",
+      "section": "Other TV Brands In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tcl-tv-repair-delhi",
+      "text": "TCL TV Repair in Delhi",
+      "region": "main",
+      "section": "Other TV Brands In Delhi"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "View All TV Repair Services",
+      "region": "main",
+      "section": "Other TV Brands In Delhi"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/service_tv.webp",
+      "alt": "Panasonic TV repair service by GR Solution in Delhi",
+      "width": "680",
+      "height": "500",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "main",
+      "section": "Panasonic TV Repair in Delhi"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "Need Panasonic TV Repair in Delhi?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Panasonic TV Repair in Delhi",
+        "serviceType": "Panasonic TV Repair in Delhi",
+        "description": "Panasonic TV repair in Delhi. GR Solution provides doorstep inspection and repair support for Panasonic TV issues across Delhi and nearby NCR areas.",
+        "url": "https://grsolution.co.in/services/panasonic-tv-repair-delhi",
+        "areaServed": "Delhi",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "GR Solution",
+          "telephone": "+91 99902 83890",
+          "email": "info@grsolution.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+            "addressLocality": "Delhi",
+            "addressRegion": "Delhi NCR",
+            "postalCode": "110096",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "description": "Inspection-based estimate after diagnosis"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Panasonic TV Repair in Delhi",
+            "item": "https://grsolution.co.in/services/panasonic-tv-repair-delhi"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide Panasonic TV repair in Delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, GR Solution provides doorstep inspection and repair support for Panasonic TVs across Delhi and nearby NCR areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is GR Solution an authorized Panasonic service center?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GR Solution provides independent doorstep Panasonic TV repair support in Delhi NCR. We do not claim to be an official authorized Panasonic service center unless explicitly stated. Our technicians inspect common display, sound, power and smart TV issues and explain available repair options."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What Panasonic TV problems can be repaired?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Power board failure causing the TV to not switch on at all No signal or no channel detection on older LCD models Sound distortion or muffled audio from built-in speakers A technician confirms the exact fault during inspection before any repair is approved."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a Panasonic TV be repaired at home in Delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many Panasonic TV issues can be diagnosed and repaired at the doorstep. If a fault needs safer workshop-level handling, the technician explains this clearly before moving ahead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does Panasonic TV repair cost in Delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Final repair cost depends on the model, screen size, fault type and parts availability. GR Solution provides inspection-based guidance before repair instead of fixed pricing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I repair or replace my Panasonic TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For older Panasonic LED or LCD TVs, repair is often the more economical choice when the fault is power board, capacitor, tuner or sound related, since these parts are usually straightforward to source and service. Replacement becomes more sensible if the panel itself is damaged or if the TV is old enough that repeated board failures make further repair impractical."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which areas in Delhi do you cover for Panasonic TV repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common coverage includes East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Mayur Vihar, Laxmi Nagar, Preet Vihar, Dwarka, Rohini and nearby localities, subject to scheduling and service availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book Panasonic TV repair in Delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call, WhatsApp or use the website contact form with your TV model, the issue you are facing and your service location in the city."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 4,
+    "emailMentions": 3
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "Need Panasonic TV repair in Delhi? GR Solution provides doorstep inspection and repair support for Panasonic LED and LCD and Smart TV issues across Delhi and nearby NCR areas.",
+      "Call NowBook Repair WhatsApp",
+      "GR Solution offers doorstep Panasonic TV repair service in Delhi, covering LED and LCD display lines, including older Panasonic TV models. A technician inspects the reported issue and shares a clear, inspection-based estimate before any repair work begins."
+    ],
+    "faq": {
+      "questions": 8,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "Panasonic TV Repair in Delhi"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "Panasonic TV Repair in Delhi"
+        ]
+      ],
+      "matches": true
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 1375,
+  "mainTextSha256": "f01c37418385487d6d195f015aa70c1e9c092b7acd11f9967c0bd7cc4546a82d",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "Panasonic TV Repair in Delhi",
+      "PANASONIC TV REPAIR",
+      "Panasonic TV Repair in Delhi",
+      "Need Panasonic TV repair in Delhi? GR Solution provides doorstep inspection and repair support for Panasonic LED and LCD and Smart TV issues across Delhi and nearby NCR areas.",
+      "Call Now",
+      "Book Repair",
+      "WhatsApp",
+      "GR Solution offers doorstep Panasonic TV repair service in Delhi, covering LED and LCD display lines, including older Panasonic TV models. A technician inspects the reported issue and shares a clear, inspection-based estimate before any repair work begins.",
+      "Is It Worth Repairing A Panasonic TV In Delhi?",
+      "Panasonic TVs use LED and LCD display lines, including older Panasonic TV models, and faults can range from simple software glitches to backlight, power or board-level issues. If you are looking for Panasonic TV repair in Delhi, GR Solution helps you understand the actual fault before approving repair, instead of guessing or replacing parts unnecessarily.",
+      "Delhi customers often need quick support for apartments, independent homes, rented flats and office displays where downtime is inconvenient. Our Panasonic TV repair support in Delhi is built around symptom-first inspection, so customers do not have to guess whether the issue is a power board, panel, backlight, software or input problem. Panasonic TV repair in Delhi covers practical diagnosis for LED, LCD, older Plasma, power, sound, display and input-related faults.",
+      "GR Solution Contact",
+      "Phone:",
+      "+91 93155 15700",
+      "Email:",
+      "info@grsolution.co.in",
+      "Address: C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Visit GR Solution homepage",
+      "Explore all TV repair services",
+      "Open contact and booking page",
+      "TV Repair in Delhi",
+      "LED TV Repair in Delhi",
+      "COMMON PROBLEMS",
+      "What Problems Can Be Fixed In A Panasonic TV?",
+      "Power board failure causing the TV to not switch on at all",
+      "No signal or no channel detection on older LCD models",
+      "Sound distortion or muffled audio from built-in speakers",
+      "Visible lines appearing across the LED or LCD panel",
+      "Backlight dimming unevenly over time",
+      "TV taking unusually long to power on or display an image",
+      "Remote not responding consistently to commands",
+      "Capacitor or board-level faults common in older Panasonic units",
+      "HELPFUL TOPICS",
+      "TV Repair Topics for Delhi",
+      "Concise guidance for common search questions, diagnosis decisions and safe next steps.",
+      "Panasonic LED TV Repair in Delhi",
+      "GR Solution provides independent, inspection-led support for Panasonic LED and LCD and related smart TV symptoms across Delhi. Model, screen condition and parts availability are checked before repair is approved.",
+      "Panasonic TV Power Board Repair in Delhi",
+      "Panasonic TV repair in Delhi covers practical diagnosis for LED, LCD, older Plasma, power, sound, display and input-related faults. GR Solution checks software, power, display and board behavior before recommending parts or a workshop-level repair.",
+      "How Does GR Solution Inspect A Panasonic TV?",
+      "Panasonic TVs in service today often include older LED and LCD models, so power board and capacitor-related faults are checked early, since these are common failure points as the unit ages. No-signal or no-channel complaints on older LCD sets are usually a tuner or board issue rather than a panel fault, and panel lines are inspected separately to rule out backlight versus glass-level damage. Slow power-on behavior is generally linked to a weakening power board rather than the panel itself.",
+      "Repair vs Replace",
+      "For older Panasonic LED or LCD TVs, repair is often the more economical choice when the fault is power board, capacitor, tuner or sound related, since these parts are usually straightforward to source and service. Replacement becomes more sensible if the panel itself is damaged or if the TV is old enough that repeated board failures make further repair impractical.",
+      "PROCESS",
+      "Panasonic TV Repair Process",
+      "STEP 1",
+      "Share your Panasonic TV issue and Delhi location with GR Solution.",
+      "STEP 2",
+      "Get a visit schedule or next-step guidance based on the symptoms described.",
+      "STEP 3",
+      "Technician inspects the LED and LCD display, power, sound and board behavior.",
+      "STEP 4",
+      "Receive a clear, inspection-based repair estimate before any work begins.",
+      "STEP 5",
+      "Approved repair is completed and tested for stable picture and sound before handover.",
+      "Why Choose GR Solution In Delhi",
+      "GR Solution follows a symptom-led approach for Panasonic TV repair, so the visit starts with what the TV is actually doing rather than a rushed assumption.",
+      "Business details stay consistent for local trust: GR Solution, C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096, phone +91 93155 15700 and email info@grsolution.co.in.",
+      "Because GR Solution is based at C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096, Delhi requests can usually be assessed with clear local context and practical scheduling.",
+      "For Panasonic TVs specifically, the team explains whether the issue is repairable at home, needs safer workshop handling, or should be weighed against replacement before money is spent.",
+      "What To Check Before Calling",
+      "Check that the power socket and switch are working normally.",
+      "Try the remote with fresh batteries to rule out a remote-side issue.",
+      "Switch to a different HDMI or input source to confirm the symptom.",
+      "Restart the TV using the power button rather than only the remote.",
+      "Note whether sound is present even when the picture is not.",
+      "Keep the exact Panasonic model number ready before calling.",
+      "Service Coverage In Delhi",
+      "Service coverage for Panasonic TV repair in Delhi includes East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Mayur Vihar, Laxmi Nagar, Preet Vihar, Dwarka, Rohini and nearby NCR pockets. Availability depends on technician schedule, TV size, access and part requirements.",
+      "Pricing Guidance",
+      "Final repair cost depends on model, screen size, fault type, and parts availability. GR Solution provides inspection-based guidance before repair, and does not publish fixed prices for complex faults.",
+      "Panasonic TV Repair In Other Cities",
+      "Panasonic TV Repair in Noida",
+      "Panasonic TV Repair in Greater Noida",
+      "Panasonic TV Repair in Ghaziabad",
+      "Other TV Brands In Delhi",
+      "Samsung TV Repair in Delhi",
+      "LG TV Repair in Delhi",
+      "Sony TV Repair in Delhi",
+      "Mi/Xiaomi TV Repair in Delhi",
+      "OnePlus TV Repair in Delhi",
+      "TCL TV Repair in Delhi",
+      "View All TV Repair Services",
+      "FAQ",
+      "Panasonic TV Repair FAQs",
+      "Do you provide Panasonic TV repair in Delhi?",
+      "Yes, GR Solution provides doorstep inspection and repair support for Panasonic TVs across Delhi and nearby NCR areas.",
+      "Is GR Solution an authorized Panasonic service center?",
+      "GR Solution provides independent doorstep Panasonic TV repair support in Delhi NCR. We do not claim to be an official authorized Panasonic service center unless explicitly stated. Our technicians inspect common display, sound, power and smart TV issues and explain available repair options.",
+      "What Panasonic TV problems can be repaired?",
+      "Power board failure causing the TV to not switch on at all No signal or no channel detection on older LCD models Sound distortion or muffled audio from built-in speakers A technician confirms the exact fault during inspection before any repair is approved.",
+      "Can a Panasonic TV be repaired at home in Delhi?",
+      "Many Panasonic TV issues can be diagnosed and repaired at the doorstep. If a fault needs safer workshop-level handling, the technician explains this clearly before moving ahead.",
+      "How much does Panasonic TV repair cost in Delhi?",
+      "Final repair cost depends on the model, screen size, fault type and parts availability. GR Solution provides inspection-based guidance before repair instead of fixed pricing.",
+      "Should I repair or replace my Panasonic TV?",
+      "For older Panasonic LED or LCD TVs, repair is often the more economical choice when the fault is power board, capacitor, tuner or sound related, since these parts are usually straightforward to source and service. Replacement becomes more sensible if the panel itself is damaged or if the TV is old enough that repeated board failures make further repair impractical.",
+      "Which areas in Delhi do you cover for Panasonic TV repair?",
+      "Common coverage includes East Delhi, South Delhi, West Delhi, North Delhi, New Kondli, Mayur Vihar, Laxmi Nagar, Preet Vihar, Dwarka, Rohini and nearby localities, subject to scheduling and service availability.",
+      "How do I book Panasonic TV repair in Delhi?",
+      "Call, WhatsApp or use the website contact form with your TV model, the issue you are facing and your service location in the city.",
+      "FAST LOCAL SUPPORT",
+      "Need Panasonic TV Repair in Delhi?",
+      "Call GR Solution for doorstep diagnosis, transparent repair guidance and Panasonic TV service support across Delhi.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}

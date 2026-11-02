@@ -1,0 +1,1077 @@
+{
+  "path": "/services/tv-repair-vasundhara",
+  "inSitemap": true,
+  "status": 200,
+  "location": null,
+  "xRobotsTag": null,
+  "htmlBytes": 97330,
+  "head": {
+    "htmlLang": "en-IN",
+    "title": "TV Repair in Vasundhara | GR Solution",
+    "titleCount": 1,
+    "metaDescription": "TV repair in Vasundhara, Ghaziabad — all sectors, including independent houses, builder floors and apartment blocks. LED and LCD repair at home.",
+    "metaDescriptionCount": 1,
+    "canonical": [
+      "https://grsolution.co.in/services/tv-repair-vasundhara"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "googlebot": [
+      "index, follow"
+    ],
+    "viewport": "width=device-width, initial-scale=1",
+    "themeColor": "#0d47a1",
+    "openGraph": [
+      [
+        "og:title",
+        "TV Repair in Vasundhara | GR Solution"
+      ],
+      [
+        "og:description",
+        "TV repair in Vasundhara, Ghaziabad — all sectors, including independent houses, builder floors and apartment blocks. LED and LCD repair at home."
+      ],
+      [
+        "og:url",
+        "https://grsolution.co.in/services/tv-repair-vasundhara"
+      ],
+      [
+        "og:image",
+        "https://grsolution.co.in/images/service_tv.webp"
+      ]
+    ],
+    "twitter": [
+      [
+        "twitter:card",
+        "summary_large_image"
+      ],
+      [
+        "twitter:title",
+        "TV Repair in Vasundhara | GR Solution"
+      ],
+      [
+        "twitter:description",
+        "TV repair in Vasundhara, Ghaziabad — all sectors, including independent houses, builder floors and apartment blocks. LED and LCD repair at home."
+      ],
+      [
+        "twitter:image",
+        "https://grsolution.co.in/images/logo.jpg"
+      ]
+    ],
+    "alternates": [],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "/images/logo.jpg"
+      }
+    ],
+    "imagePreloads": [
+      {
+        "href": null,
+        "imagesrcset": true,
+        "fetchpriority": null
+      }
+    ],
+    "fontPreloads": [],
+    "stylesheets": 1,
+    "externalScripts": []
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Enquiry",
+      "region": "other"
+    },
+    {
+      "level": 1,
+      "text": "TV Repair in Vasundhara",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Vasundhara at a glance",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Areas covered",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Long-serving sets and honest repair-or-replace advice",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "Common situations in Vasundhara",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Before the visit",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "What repairs typically cost",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV Repair Vasundhara FAQs",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV repair services in Ghaziabad",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Other Ghaziabad areas",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "TV not working in Vasundhara?",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "Quick Links",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Our Services",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Popular Locations",
+      "region": "footer"
+    },
+    {
+      "level": 4,
+      "text": "Contact Us",
+      "region": "footer"
+    }
+  ],
+  "links": [
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "ariaLabel": "GR Solution home",
+      "imgAlt": "GR Solution TV repair service logo",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "CallCall Now",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "All services",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "header"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "header"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "Quick Enquiry"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "TV Repair in Vasundhara"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "TV Repair in Vasundhara"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing#sources",
+      "text": "See sources and method",
+      "region": "main",
+      "section": "What repairs typically cost"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog/tv-repair-cost-ghaziabad",
+      "text": "Full GhaziabadTV repair cost guide →",
+      "region": "main",
+      "section": "What repairs typically cost"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "TV repair services in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair-ghaziabad",
+      "text": "LED TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "TV repair services in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair-ghaziabad",
+      "text": "OLED/QLED TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "TV repair services in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair-ghaziabad",
+      "text": "LCD TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "TV repair services in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair-ghaziabad",
+      "text": "Plasma TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "TV repair services in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair-ghaziabad",
+      "text": "Curved TV Repair in Ghaziabad",
+      "region": "main",
+      "section": "TV repair services in Ghaziabad"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-indirapuram",
+      "text": "TV Repair in Indirapuram",
+      "region": "main",
+      "section": "Other Ghaziabad areas"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "Call Now",
+      "region": "main",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "WhatsApp Us",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "main",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Book Service",
+      "region": "main",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "",
+      "imgAlt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/",
+      "text": "Home",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/about",
+      "text": "About Us",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services",
+      "text": "Services",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/blog",
+      "text": "Blog",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/contact",
+      "text": "Contact Us",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/pricing",
+      "text": "Repair Prices",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/reviews",
+      "text": "Customer Reviews",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/led-tv-repair",
+      "text": "LED TV Repair",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/oled-qled-tv-repair",
+      "text": "OLED/QLED TV Repair",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/lcd-tv-repair",
+      "text": "LCD TV Repair",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/plasma-tv-repair",
+      "text": "Plasma TV Repair",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/curved-tv-repair",
+      "text": "Curved TV Repair",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-near-me",
+      "text": "TV Repair Near Me",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-delhi",
+      "text": "TV Repair in Delhi",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-noida",
+      "text": "TV Repair in Noida",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-greater-noida",
+      "text": "TV Repair in Greater Noida",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/tv-repair-ghaziabad",
+      "text": "TV Repair in Ghaziabad",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/services/brands",
+      "text": "TV Repair by Brand",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "+91 93155 15700",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "mailto",
+      "href": "mailto:info@grsolution.co.in",
+      "text": "info@grsolution.co.in",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "internal",
+      "href": "/terms",
+      "text": "Terms & Conditions",
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "external",
+      "href": "https://wa.me/919315515700",
+      "text": "",
+      "ariaLabel": "WhatsApp GR Solution",
+      "rel": "noopener noreferrer",
+      "target": "_blank",
+      "region": "other",
+      "section": "TV not working in Vasundhara?"
+    },
+    {
+      "kind": "tel",
+      "href": "tel:+919315515700",
+      "text": "",
+      "ariaLabel": "Call GR Solution",
+      "region": "other",
+      "section": "TV not working in Vasundhara?"
+    }
+  ],
+  "images": [
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution TV repair service logo",
+      "width": "150",
+      "height": "50",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "header"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "alt": "GR Solution Logo - Premium TV Repair Provider in Delhi, Noida & NCR",
+      "width": "150",
+      "height": "40",
+      "loading": "lazy",
+      "decoding": "async",
+      "srcsetWidths": [
+        "1x",
+        "2x"
+      ],
+      "region": "footer",
+      "section": "TV not working in Vasundhara?"
+    }
+  ],
+  "backgroundImages": [],
+  "iframes": [],
+  "jsonLd": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://grsolution.co.in/#organization",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grsolution.co.in/images/logo.jpg"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 99902 83890",
+          "contactType": "customer service",
+          "areaServed": [
+            "Delhi NCR",
+            "Delhi",
+            "Noida",
+            "Greater Noida",
+            "Ghaziabad"
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://grsolution.co.in/#localbusiness",
+        "parentOrganization": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "sameAs": [
+          "https://share.google/iyXemxWlZ7gIQwDAr"
+        ],
+        "name": "GR Solution",
+        "image": "https://grsolution.co.in/images/logo.jpg",
+        "url": "https://grsolution.co.in",
+        "telephone": "+91 99902 83890",
+        "email": "info@grsolution.co.in",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Card",
+        "priceRange": "Inspection-based estimate",
+        "hasMap": "https://share.google/iyXemxWlZ7gIQwDAr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C-4/102, Pocket C 3, New Kondli, Kondli",
+          "addressLocality": "Delhi",
+          "postalCode": "110096",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 28.6244,
+          "longitude": 77.3185
+        },
+        "areaServed": [
+          "Delhi NCR",
+          "Delhi",
+          "Noida",
+          "Greater Noida",
+          "Ghaziabad"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://grsolution.co.in/#website",
+        "name": "GR Solution",
+        "url": "https://grsolution.co.in",
+        "publisher": {
+          "@id": "https://grsolution.co.in/#organization"
+        },
+        "inLanguage": "en-IN"
+      }
+    ],
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "TV Repair in Vasundhara",
+        "serviceType": "TV repair service",
+        "description": "TV repair in Vasundhara, Ghaziabad — all sectors, including independent houses, builder floors and apartment blocks. LED and LCD repair at home.",
+        "url": "https://grsolution.co.in/services/tv-repair-vasundhara",
+        "provider": {
+          "@id": "https://grsolution.co.in/#localbusiness"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Vasundhara",
+          "containedInPlace": {
+            "@type": "City",
+            "name": "Ghaziabad"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grsolution.co.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://grsolution.co.in/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TV Repair in Ghaziabad",
+            "item": "https://grsolution.co.in/services/tv-repair-ghaziabad"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "TV Repair in Vasundhara",
+            "item": "https://grsolution.co.in/services/tv-repair-vasundhara"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you repair TVs in Vasundhara, Ghaziabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, across all Vasundhara sectors, including independent houses, builder floors and apartment blocks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it worth repairing an older LED TV in Vasundhara?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the screen is intact and the fault is the backlight, power board or a single board, usually yes. If the panel is cracked, a new TV is typically better value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair LED TVs in Vasundhara at home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Most LED faults, including backlight and power board repairs, are done at home, which matters in buildings without a lift."
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "jsonLdTypes": [
+    "Organization",
+    "LocalBusiness+ProfessionalService",
+    "WebSite",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "nap": {
+    "telLinks": [
+      "tel:+919315515700"
+    ],
+    "whatsappLinks": [
+      "https://wa.me/919315515700"
+    ],
+    "mailtoLinks": [
+      "mailto:info@grsolution.co.in"
+    ],
+    "visiblePhones": [
+      "+919315515700"
+    ],
+    "schemaTelephones": [
+      "+91 99902 83890"
+    ],
+    "addressMentions": 1,
+    "emailMentions": 1
+  },
+  "checks": {
+    "h1Count": 1,
+    "headingBeforeH1": [
+      "H2: Quick Enquiry"
+    ],
+    "blocksAfterH1": [
+      "GR Solution provides doorstep TV repair across Vasundhara, Ghaziabad, including all its numbered sectors. Vasundhara is a planned area of independent houses, builder floors and apartment blocks close to our New Kondli base. Many TVs here are long-serving family sets, so we give a straight repair-or-replace comparison along with the estimate.",
+      "Call Now WhatsApp",
+      "Vasundhara is a planned residential area in Ghaziabad, laid out in numbered sectors and developed over several decades. Unlike the tower-dominated Indirapuram next door, much of Vasundhara is low-rise: independent houses, builder floors and apartment blocks, many without lifts. The TVs here are often the family’s main set, kept running for years, which shapes both the faults we see and the advice we give."
+    ],
+    "faq": {
+      "questions": 3,
+      "notExact": []
+    },
+    "breadcrumb": {
+      "visible": [
+        "Home",
+        "Services",
+        "TV Repair in Ghaziabad",
+        "Vasundhara"
+      ],
+      "schema": [
+        [
+          "Home",
+          "Services",
+          "TV Repair in Ghaziabad",
+          "TV Repair in Vasundhara"
+        ]
+      ],
+      "matches": false
+    },
+    "articleHeadlineMatchesH1": null,
+    "imagesMissingAlt": [],
+    "imagesWithoutDimensions": [],
+    "jsonLdParseErrors": 0
+  },
+  "wordCount": 752,
+  "mainTextSha256": "b5655e88c0d3931fb8bdd02d76dba0d934d263def8f7a653ab814b4a77bfd423",
+  "copy": {
+    "main": [
+      "Home",
+      "/",
+      "Services",
+      "/",
+      "TV Repair in Ghaziabad",
+      "/",
+      "Vasundhara",
+      "VASUNDHARA · GHAZIABAD",
+      "TV Repair in Vasundhara",
+      "GR Solution provides doorstep TV repair across Vasundhara, Ghaziabad, including all its numbered sectors. Vasundhara is a planned area of independent houses, builder floors and apartment blocks close to our New Kondli base. Many TVs here are long-serving family sets, so we give a straight repair-or-replace comparison along with the estimate.",
+      "Call Now",
+      "WhatsApp",
+      "Vasundhara is a planned residential area in Ghaziabad, laid out in numbered sectors and developed over several decades. Unlike the tower-dominated Indirapuram next door, much of Vasundhara is low-rise: independent houses, builder floors and apartment blocks, many without lifts. The TVs here are often the family’s main set, kept running for years, which shapes both the faults we see and the advice we give.",
+      "Vasundhara at a glance",
+      "Vasundhara local facts",
+      "Fact",
+      "Detail",
+      "Distance from our base",
+      "Short — close to the East Delhi border",
+      "Electricity distributor",
+      "PVVNL (Paschimanchal Vidyut Vitran Nigam Limited)",
+      "Typical housing",
+      "Independent houses, builder floors and low-rise apartment blocks across numbered sectors",
+      "Workshop handling",
+      "Short trip, but stairs without lifts favour on-site repair",
+      "Areas covered",
+      "Vasundhara sectors 1–19",
+      "Vasundhara Enclave border",
+      "Vaishali border",
+      "Indirapuram border",
+      "Long-serving sets and honest repair-or-replace advice",
+      "Vasundhara households tend to keep a TV for a long time, which means we see more older LED sets and a fair number of LCDs still in daily use. Long running hours wear out backlight LEDs, so a picture that has dimmed gradually over months, or a screen that goes dark while the sound carries on, is one of the most common complaints. It is also one of the most repairable.",
+      "For an older mid-size set, a repair has real competition from the price of a new entry-level TV, so every Vasundhara estimate comes with a direct comparison. In the low-rise buildings, many homes have no lift. That makes on-site board and backlight work the norm, sparing a heavy older set a trip down the stairs.",
+      "Common situations in Vasundhara",
+      "Common situations in Vasundhara",
+      "Situation",
+      "What we check first",
+      "Usual path",
+      "Picture dimmed gradually on an older LED",
+      "Backlight LED wear",
+      "Backlight repair, usually worthwhile",
+      "LCD clicks but will not start",
+      "Power-supply capacitors",
+      "Low-cost on-site repair",
+      "Cracked screen on a 43\" family set",
+      "Panel damage",
+      "Replacement usually better value",
+      "Before the visit",
+      "Mention the floor and whether there is a lift — many Vasundhara buildings have neither lifts nor wide stairs.",
+      "Have a rough idea of the TV’s age and screen size so the repair-or-replace comparison can be made straight away.",
+      "For LCDs that click, count the clicks and stop retrying until the visit.",
+      "What repairs typically cost",
+      "Typical TV repair costs in Vasundhara",
+      "Fault",
+      "32\" - 43\"",
+      "44\" - 55\"",
+      "56\" and above",
+      "Backlight / LED strip replacement",
+      "Sound works but the screen is black or unevenly lit",
+      "₹3,000 - 8,000",
+      "₹5,500 - 12,000",
+      "₹8,500 - 18,000",
+      "Power supply board repair or replacement",
+      "No power, or a blinking standby light",
+      "₹1,000 - 3,500",
+      "₹1,800 - 5,000",
+      "₹2,500 - 6,500",
+      "Mainboard / motherboard repair",
+      "Boot loops, no input detection, random shutdowns",
+      "₹2,000 - 5,500",
+      "₹3,000 - 8,000",
+      "₹4,500 - 12,500",
+      "Delhi NCR market ranges including part and labour, researched from published sources and last reviewed September 2026. These are indicative, not a fixed quote: the final figure depends on the exact model, part availability and whether the job is done at home or at the workshop, and is confirmed after inspection.",
+      "See sources and method",
+      ".",
+      "Full GhaziabadTV repair cost guide →",
+      "TV Repair Vasundhara FAQs",
+      "Do you repair TVs in Vasundhara, Ghaziabad?",
+      "Yes, across all Vasundhara sectors, including independent houses, builder floors and apartment blocks.",
+      "Is it worth repairing an older LED TV in Vasundhara?",
+      "If the screen is intact and the fault is the backlight, power board or a single board, usually yes. If the panel is cracked, a new TV is typically better value.",
+      "Do you repair LED TVs in Vasundhara at home?",
+      "Yes. Most LED faults, including backlight and power board repairs, are done at home, which matters in buildings without a lift.",
+      "TV repair services in Ghaziabad",
+      "TV Repair in Ghaziabad",
+      "LED TV Repair in Ghaziabad",
+      "OLED/QLED TV Repair in Ghaziabad",
+      "LCD TV Repair in Ghaziabad",
+      "Plasma TV Repair in Ghaziabad",
+      "Curved TV Repair in Ghaziabad",
+      "Other Ghaziabad areas",
+      "TV Repair in Indirapuram",
+      "VASUNDHARA TV REPAIR",
+      "TV not working in Vasundhara?",
+      "Share your TV model and the symptom, and GR Solution will plan a doorstep visit in Vasundhara with an estimate before any paid work begins.",
+      "Same-day visit available",
+      "Transparent estimate",
+      "Delhi NCR doorstep support",
+      "Call Now",
+      "WhatsApp Us",
+      "Book Service"
+    ],
+    "header": [
+      "Home",
+      "About Us",
+      "Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Quick Enquiry",
+      "Call",
+      "Call Now",
+      "Home",
+      "About Us",
+      "Services",
+      "All services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Blog",
+      "Contact Us",
+      "Enquiry",
+      "WhatsApp",
+      "Mon–Sun, 9 AM–9 PM· Free diagnosis · Delhi NCR"
+    ],
+    "footer": [
+      "Delhi, Noida & NCR's #1 premium TV repair service provider with 15+ years of technical excellence and transparent pricing.",
+      "Quick Links",
+      "Home",
+      "About Us",
+      "Services",
+      "Blog",
+      "Contact Us",
+      "Repair Prices",
+      "Customer Reviews",
+      "Our Services",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Popular Locations",
+      "TV Repair Near Me",
+      "TV Repair in Delhi",
+      "TV Repair in Noida",
+      "TV Repair in Greater Noida",
+      "TV Repair in Ghaziabad",
+      "TV Repair by Brand",
+      "Contact Us",
+      "Visit Center",
+      "C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096",
+      "Call Support",
+      "+91 93155 15700",
+      "Email Us",
+      "info@grsolution.co.in",
+      "© 2026 GR Solution. All Rights Reserved.",
+      "Mon - Sun: 09:00 AM - 09:00 PM",
+      "Privacy Policy",
+      "Terms & Conditions"
+    ],
+    "other": [
+      "×",
+      "Quick Enquiry",
+      "Fill in the details below and we will contact you shortly.",
+      "Name",
+      "Phone",
+      "Service Required",
+      "Select service",
+      "LED TV Repair",
+      "OLED/QLED TV Repair",
+      "LCD TV Repair",
+      "Plasma TV Repair",
+      "Curved TV Repair",
+      "Message",
+      "Send Enquiry"
+    ]
+  }
+}
