@@ -1,0 +1,113 @@
+name: Roll Back Production
+
+# One-click rollback: puts an earlier, already-built Docker image back on the
+# Hostinger server. Nothing is rebuilt and git history is not touched, so it
+# takes about a minute. Run it from GitHub: Actions -> Roll Back Production ->
+# Run workflow. See docs/rollback.md.
+#
+# Every deploy pushes the image as pateldeepesh/tv-wale:sha-<7-char commit>,
+# so any earlier main commit can be put back by its short hash.
+#
+# A rollback is temporary: the next push to main deploys main again. To keep
+# the older site, also revert the change on main (docs/rollback.md, step 3).
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        description: "Image to put live: sha-<7-char commit>. sha-606f612 = the site before the redesign."
+        required: true
+        default: sha-606f612
+      reason:
+        description: "Why (shown in the run summary)"
+        required: true
+
+# Same group as the deploy workflow: a rollback never runs at the same time
+# as a deploy, it waits for it.
+concurrency:
+  group: grsolution-production-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  DOCKER_IMAGE: pateldeepesh/tv-wale
+
+jobs:
+  rollback:
+    name: Put an earlier image live
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 15
+
+    steps:
+      - name: Check the requested image
+        id: image
+        env:
+          IMAGE_TAG: ${{ inputs.image_tag }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ ! "$IMAGE_TAG" =~ ^sha-[0-9a-f]{7}$ ]]; then
+            echo "::error::image_tag must look like sha-606f612 (sha- and the 7-character commit hash)"
+            exit 1
+          fi
+          printf '%s' "$DOCKERHUB_TOKEN" | docker login --username "$DOCKERHUB_USERNAME" --password-stdin > /dev/null
+          DIGEST=$(docker buildx imagetools inspect "$DOCKER_IMAGE:$IMAGE_TAG" --format '{{json .Manifest}}' | jq -r .digest)
+          if [[ ! "$DIGEST" =~ ^sha256:[a-f0-9]{64}$ ]]; then
+            echo "::error::Image $DOCKER_IMAGE:$IMAGE_TAG was not found on Docker Hub"
+            exit 1
+          fi
+          echo "digest=$DIGEST" >> "$GITHUB_OUTPUT"
+          echo "Rolling back to $DOCKER_IMAGE:$IMAGE_TAG ($DIGEST)"
+
+      - name: Deploy that image
+        env:
+          HOSTINGER_SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          HOSTINGER_SSH_KNOWN_HOSTS: ${{ secrets.HOSTINGER_SSH_KNOWN_HOSTS }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+          IMAGE_DIGEST: ${{ steps.image.outputs.digest }}
+        run: |
+          set -euo pipefail
+          [[ "$IMAGE_DIGEST" =~ ^sha256:[a-f0-9]{64}$ ]]
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$HOSTINGER_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          printf '%s\n' "$HOSTINGER_SSH_KEY" > ~/.ssh/site_deploy
+          chmod 600 ~/.ssh/known_hosts ~/.ssh/site_deploy
+          trap 'rm -f ~/.ssh/site_deploy' EXIT
+          printf '%s\n' "$DOCKERHUB_USERNAME" "$DOCKERHUB_TOKEN" "$IMAGE_DIGEST" |
+            ssh -T -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
+              -i ~/.ssh/site_deploy deploy@187.127.146.219
+
+      - name: Verify the Hostinger origin
+        run: |
+          set -euo pipefail
+          ORIGIN=187.127.146.219
+          DOMAIN=grsolution.co.in
+          curl -fsS --max-time 20 --resolve "$DOMAIN:443:$ORIGIN" "https://$DOMAIN/api/health" > /dev/null
+          HTML=$(curl -fsS --max-time 20 --resolve "$DOMAIN:443:$ORIGIN" "https://$DOMAIN/")
+          CHUNK=$(printf '%s' "$HTML" | grep -o '"/_next/static/chunks/[^"]*\.js"' | head -1 | tr -d '"' || true)
+          [[ -n "$CHUNK" ]]
+          curl -fsS --max-time 20 --resolve "$DOMAIN:443:$ORIGIN" "https://$DOMAIN$CHUNK" > /dev/null
+          echo "Hostinger origin and static asset passed"
+
+      - name: Summary
+        if: always()
+        env:
+          IMAGE_TAG: ${{ inputs.image_tag }}
+          REASON: ${{ inputs.reason }}
+          IMAGE_DIGEST: ${{ steps.image.outputs.digest }}
+          OUTCOME: ${{ job.status }}
+        run: |
+          {
+            echo "## Production rollback: $OUTCOME"
+            echo ""
+            echo "- Image: \`$DOCKER_IMAGE:$IMAGE_TAG\`"
+            echo "- Digest: \`${IMAGE_DIGEST:-not resolved}\`"
+            echo "- Reason: $REASON"
+            echo ""
+            echo "This lasts until the next push to main. To keep it, revert the change on main (docs/rollback.md)."
+          } >> "$GITHUB_STEP_SUMMARY"
