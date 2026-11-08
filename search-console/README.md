@@ -36,6 +36,26 @@ On Windows you can also use `search-console\gsc <command>`. Add `--json` to `sum
 - Google hides rare (anonymized) queries, so query rows don't add up to the site totals.
 - The `data/` folder is git-ignored.
 
+## GA4 (behaviour, channels, AI-assistant traffic, leads)
+
+GA4 property `552899662`, read through the same service account.
+
+```bash
+py search-console/ga4.py doctor
+py search-console/ga4.py summary            # last 28 days vs previous 28 (use --days N)
+py search-console/ga4.py channels           # includes GA4's "AI Assistant" channel
+py search-console/ga4.py ai                 # AI assistants -> landing pages -> key events (90 days)
+py search-console/ga4.py organic-pages      # organic landing pages with engagement and key events
+py search-console/ga4.py leads              # key events (generate_lead, contact_click, ...)
+py search-console/ga4.py pages | sources | countries | devices | realtime
+```
+
+## SEO / AIO / GEO checkpoint
+
+Before any SEO, AIO or GEO work, follow **`search-console/SEO_WORKFLOW.md`**. It starts with
+`py search-console/snapshot.py`, which saves a dated baseline from all three sources to
+`search-console/data/snapshots/<date>/`. Read its `SNAPSHOT.md` first.
+
 ## Cloud sessions (Codex cloud / Claude Code on the web)
 
 The cloud machine can't see the owner's PC, so it uses `search-console/gsc_api.py` in this repo and
@@ -84,5 +104,7 @@ must be a user in Google Ads. Allow network access to `googleads.googleapis.com`
 - **`gsc.py` / `gsc.cmd`:** launchers
 - **`gsc_api.py`:** a copy of the shared API. Don't edit it here: edit `C:/Users/dell/Desktop/Scallar Stack/Console/scripts/gsc_api.py`
   and run `sync_project_folders.py`.
+- **`ga4.py`, `snapshot.py` (+ `.cmd`), `ga4_api.py`, `seo_snapshot.py`:** GA4 reports and the checkpoint snapshot.
+- **`SEO_WORKFLOW.md`:** the checkpoint and evidence gates for SEO / AIO / GEO work.
 - **`keywords.py` / `keywords.cmd` / `ads_api.py`:** Keyword Planner launcher and a copy of
   `Scallar Stack/Google ads/ads_api.py`. The same rule applies: edit the original, then re-sync.

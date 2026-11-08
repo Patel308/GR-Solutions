@@ -8,6 +8,10 @@ Auth is a read-only service account, so don't write new GSC/OAuth code or ask fo
 In a cloud session, run `pip install -r search-console/requirements.txt` first if packages are
 missing. The key comes from env `GSC_SERVICE_ACCOUNT_JSON_B64`; if it's absent, tell the user
 to add it to the environment settings.
+Before any SEO, AIO or GEO task, follow `search-console/SEO_WORKFLOW.md`: take or refresh the
+snapshot (`python3 search-console/snapshot.py`), read its `SNAPSHOT.md`, and pass the evidence gates
+(cite GSC / GA4 / Keyword Planner and the snapshot date; never invent volumes or rankings).
+For GA4 behaviour, channels, AI-assistant traffic and leads, use `python3 search-console/ga4.py <command>`.
 For keyword research (search volume, keyword ideas, trends), use
 `python3 search-console/keywords.py <command>` (Google Ads Keyword Planner, read-only; see the
 README). Don't build another Keyword Planner client.
