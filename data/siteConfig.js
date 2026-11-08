@@ -11,6 +11,12 @@
 //        social, referral or ad visit in 90 days), after the page loads.
 //        The server HTML, schema, llms.txt and every other page keep the seo
 //        line (owner decision, 2 Nov 2026).
+//   seo2: second organic line, shown to search, AI, social, referral and
+//        direct visitors on half the money pages (pricing, /services/brands
+//        and every brand page except Sony; see SEO2_PAGES / SEO2_BRANDS in
+//        lib/leads/attribution.mjs), after the page loads, so those enquiries
+//        arrive on their own number (owner decision, 8 Nov 2026). The server
+//        HTML and schema there keep the seo line (the business NAP).
 // Routing rules: lib/leads/attribution.mjs and components/ContactChannel.jsx.
 export const contactChannels = {
   ads: {
@@ -26,6 +32,13 @@ export const contactChannels = {
     whatsapp: '+91 93155 15700',
     whatsappHref: 'https://wa.me/919315515700',
     owner: 'Kamlesh',
+  },
+  seo2: {
+    phone: '+91 84498 20270',
+    phoneHref: 'tel:+918449820270',
+    whatsapp: '+91 84498 20270',
+    whatsappHref: 'https://wa.me/918449820270',
+    owner: '',
   },
   home: {
     phone: '+91 99902 83890',

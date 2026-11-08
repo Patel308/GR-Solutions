@@ -64,14 +64,16 @@ const ContactChannelContext = createContext(null);
 // After hydration a visitor whose latest non-direct visit in the last 90 days
 // came from an ad click sees the ads number on every page; a later visit from
 // search, an AI assistant or a referral switches back to the organic number.
-// Direct visitors on the home page see the home line (DIRECT_LINE_PATHS);
-// the server HTML never does, so crawlers always read the organic number.
+// Page lines (lineFor) apply only after hydration: direct visitors on the
+// home page see the home line, organic and direct visitors on the seo2 pages
+// (pricing and most brand repair pages) the seo2 line. The server HTML never does, so crawlers always
+// read the business number.
 export function ContactChannelProvider({ children }) {
   const pathname = usePathname();
   const storedChannel = useSyncExternalStore(subscribe, getStoredChannel, getServerChannel);
   const direct = storedChannel === 'direct';
   const channel = storedChannel && !direct ? storedChannel : channelForPath(pathname);
-  const line = lineFor(channel, pathname, direct);
+  const line = storedChannel === null ? channel : lineFor(channel, pathname, direct);
   return (
     <ContactChannelContext.Provider value={{ channel, line, ...contactChannels[line] }}>
       {children}
