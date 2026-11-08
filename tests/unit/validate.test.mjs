@@ -65,6 +65,6 @@ test('lead_line: the line the visitor saw, defaulting to the channel', () => {
   assert.equal(validateLead(valid({ lead_channel: 'seo', lead_line: 'other' })).lead.lead_line, 'seo');
 });
 
-test('lead_line accepts the brand-page line', () => {
+test('lead_line accepts the second SEO line', () => {
   assert.equal(validateLead(valid({ lead_channel: 'seo', lead_line: 'seo2' })).lead.lead_line, 'seo2');
 });

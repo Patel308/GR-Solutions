@@ -30,7 +30,8 @@ const ADS = { tel: 'tel:+919990283890', wa: 'https://wa.me/919990283890' };
 // The home page's own line (the business's original number), shown on / to
 // direct visitors only. Same digits as the ads line.
 const HOME = ADS;
-// Second organic line: organic and direct visitors on the brand repair pages.
+// Second organic line: organic and direct visitors on pricing, the brands hub
+// and every brand page except Sony.
 const SEO2 = { tel: 'tel:+918449820270', wa: 'https://wa.me/918449820270' };
 const WEBHOOK_SECRET = 'e2e-hmac';
 const DAY = 864e5;
@@ -189,11 +190,11 @@ async function fillAndSubmit(page, form, { phone = '+91 98765-43210', name = 'E2
 // ------------------------------------------------------- number routing
 
 test('server HTML: every page carries the organic number; schema and llms.txt too', async () => {
-  for (const url of ['/', '/services/samsung-tv-repair-delhi', '/services/sony-tv-repair-noida', '/services/brands', '/services/tv-repair-noida', '/services/oled-qled-tv-repair', '/blog/tv-repair-cost-delhi', '/contact', '/about', '/pricing']) {
+  for (const url of ['/', '/services/samsung-tv-repair-delhi', '/services/lg-tv-repair-delhi', '/services/brands', '/services/sony-tv-repair-noida', '/services/tv-repair-noida', '/services/oled-qled-tv-repair', '/blog/tv-repair-cost-delhi', '/contact', '/about', '/pricing']) {
     const html = await (await fetch(`${SITE}${url}`)).text();
     assert.ok(html.includes('tel:+919315515700'), `${url} has the organic tel link`);
     assert.ok(!html.includes('9990283890'), `${url} never mentions the ads number`);
-    assert.ok(!html.includes('8449820270'), `${url} server HTML never carries the brand-page line`);
+    assert.ok(!html.includes('8449820270'), `${url} server HTML never carries the second SEO line`);
     const ld = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]).join('');
     assert.ok(ld.includes('+91 93155 15700'), `${url} JSON-LD telephone is the organic number`);
   }
@@ -310,13 +311,18 @@ test('/landing shows the ads number for direct and ad visitors', async () => {
   await context.close();
 });
 
-test('brand repair pages: organic, AI and direct visitors see the brand-page line; ad visitors the ads line', async () => {
+test('seo2 pages: organic, AI and direct visitors see the second SEO line; ad visitors the ads line; Sony stays on Kamlesh', async () => {
   const cases = [
+    ['/pricing', 'https://www.google.com/', SEO2],
+    ['/pricing', 'https://chatgpt.com/', SEO2],
+    ['/pricing', undefined, SEO2],
+    ['/pricing?gclid=E2E-PRICING', 'https://www.google.com/', ADS],
+    ['/services/sony-tv-repair-noida', 'https://www.google.com/', ORGANIC],
     ['/services/samsung-tv-repair-delhi', 'https://www.google.com/', SEO2],
     ['/services/samsung-tv-repair-delhi', 'https://chatgpt.com/', SEO2],
     ['/services/samsung-tv-repair-delhi?utm_source=chatgpt.com', undefined, SEO2],
     ['/services/samsung-tv-repair-delhi', undefined, SEO2],
-    ['/services/sony-tv-repair-noida', 'https://www.perplexity.ai/', SEO2],
+    ['/services/oneplus-tv-repair-delhi', 'https://www.perplexity.ai/', SEO2],
     ['/services/lg-tv-repair-delhi', 'https://www.bing.com/', SEO2],
     ['/services/brands', 'https://www.google.com/', SEO2],
     ['/services/samsung-tv-repair-delhi?gclid=E2E-BRAND', 'https://www.google.com/', ADS],
@@ -331,7 +337,7 @@ test('brand repair pages: organic, AI and direct visitors see the brand-page lin
   }
 });
 
-test('brand-page line follows the page: Samsung page, then a general page, then a brand page again', async () => {
+test('the second SEO line follows the page: Samsung, services hub, pricing, Sony, LG', async () => {
   const context = await newContext();
   const page = await openPage(context, '/services/samsung-tv-repair-delhi', { referer: 'https://www.google.co.in/' });
   await expectLinks(page, SEO2, 'Samsung page from Google');
@@ -341,13 +347,15 @@ test('brand-page line follows the page: Samsung page, then a general page, then 
   await page.waitForURL('**/services');
   await expectLinks(page, ORGANIC, 'services hub after client navigation');
   const pricing = await openPage(context, '/pricing');
-  await expectLinks(pricing, ORGANIC, 'pricing');
+  await expectLinks(pricing, SEO2, 'pricing');
   const sony = await openPage(context, '/services/sony-tv-repair-delhi');
-  await expectLinks(sony, SEO2, 'another brand page');
+  await expectLinks(sony, ORGANIC, 'Sony page (Kamlesh)');
+  const lg = await openPage(context, '/services/lg-tv-repair-noida');
+  await expectLinks(lg, SEO2, 'another seo2 brand page');
   await context.close();
 });
 
-test('an organic lead from the Samsung page names the brand-page line', async () => {
+test('an organic lead from the Samsung page names the second SEO line', async () => {
   formsubmitMode = 'ok';
   destinationsFail = false;
   const context = await newContext({ mobile: true });
@@ -367,7 +375,7 @@ test('an organic lead from the Samsung page names the brand-page line', async ()
     const fresh = received.slice(before).filter((c) => c.body && JSON.stringify(c.body).includes(email.lead_id));
     return fresh.length >= 2 ? fresh : null;
   });
-  assert.match(calls.find((c) => c.kind === 'telegram').body.text, /Line shown: SEO brand pages \+91 84498 20270/);
+  assert.match(calls.find((c) => c.kind === 'telegram').body.text, /Line shown: SEO line 2 \+91 84498 20270/);
   assert.equal(calls.find((c) => c.kind === 'sheet').body.line_number, '+91 84498 20270');
   await context.close();
 });

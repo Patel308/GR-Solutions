@@ -12,7 +12,7 @@ lead, and how to switch on the instant alerts. Code: `lib/leads/`,
 | Search engines and AI crawlers (they read the server HTML), organic Google / Bing, Google Maps, ChatGPT, Perplexity, Gemini, Copilot, social, referral, direct | **+91 93155 15700** (Kamlesh, the SEO/AIO/GEO line) |
 | Arrived from a Google Ads click (`gclid`, `gbraid`, `wbraid`, `gad_source`), Microsoft Ads (`msclkid`) or a link tagged `utm_medium=cpc` (or another paid medium) in the last 90 days | **+91 99902 83890** (ads line) |
 | The ads-only page `/landing` | ads line |
-| **Brand repair pages**: every brand x city page (Samsung, Sony, LG, Mi, OnePlus, Panasonic, Philips, TCL, Toshiba, Vu, Hisense) and `/services/brands`, for search, AI, social, referral and direct visitors (owner decision, 8 Nov 2026) | **+91 84498 20270** (second organic line, `seo2`, "SEO brand pages") |
+| **Half the money pages**: `/pricing`, `/services/brands` and every brand x city page except Sony (Samsung, LG, Mi, OnePlus, Panasonic, Philips, TCL, Toshiba, Vu, Hisense), for search, AI, social, referral and direct visitors (owner decision, 8 Nov 2026) | **+91 84498 20270** (second organic line, `seo2`, "SEO line 2") |
 | **The home page `/`, direct visitors only**: typed the address or used a bookmark, with no search, AI, social, referral or ad visit in the last 90 days (owner decision, 2 Nov 2026) | **+91 99902 83890** (the business's original number, "home" line) |
 
 - Every page's HTML (the home page too), the schema (`telephone`),
@@ -24,14 +24,19 @@ lead, and how to switch on the instant alerts. Code: `lib/leads/`,
   social or referral links see Kamlesh's line there; ad visitors see the ads
   line. One click to any other page shows the direct visitor the organic
   line again.
-- Brand repair pages: the server HTML (what Google and AI crawlers read)
-  and the schema keep +91 93155 15700; a visitor's browser swaps every call
-  and WhatsApp link to +91 84498 20270 after the page loads. Ad visitors keep
-  the ads line there. One click to a non-brand page (pricing, city, LED/OLED
-  pages, blog) shows Kamlesh's line again. Leads read "Line shown: SEO brand
-  pages +91 84498 20270". The split by Search Console clicks (3 months to
-  8 Nov 2026) was about 44% brand pages / 56% the other money pages. Change
-  the brands in `BRAND_LINE_BRANDS` (`lib/leads/attribution.mjs`).
+- The money pages are split 50/50 by Search Console clicks (3 months to
+  8 Nov 2026): pricing, the brands hub and every brand page except Sony on
+  +91 84498 20270 (~65 clicks: Samsung Delhi 30, pricing 27, LG 4,
+  OnePlus 3, Mi 1); Sony, city, area and TV-type pages (LED, OLED/QLED, LCD,
+  plasma, curved, smart) and `/services` on Kamlesh's line (~64 clicks:
+  Sony Noida 19, Greater Noida 9, Delhi 7, Noida 6, ...). Blog posts stay on
+  Kamlesh's line.
+- On those pages the server HTML (what Google and AI crawlers read) and the
+  schema keep +91 93155 15700; a visitor's browser swaps every call and
+  WhatsApp link to +91 84498 20270 after the page loads. Ad visitors keep the
+  ads line there. The number follows the page. Leads read "Line shown: SEO
+  line 2 +91 84498 20270". Change the split in `SEO2_PAGES`, `SEO2_BRANDS`
+  and `SEO_BRANDS` (`lib/leads/attribution.mjs`).
 - Some apps open links without saying where the visitor came from (no
   referrer, no `utm_` tag); those visits look direct and see the original
   number on the home page.

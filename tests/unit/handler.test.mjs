@@ -111,11 +111,11 @@ test('a home-page lead names the home line it saw, and keeps its seo channel', a
   assert.match(text, /Line shown: Home page \+91 99902 83890/);
 });
 
-test('a brand-page lead names the brand-page line, and keeps its seo channel', async () => {
+test('a seo2-page lead names the second SEO line, and keeps its seo channel', async () => {
   const { handler, fetchImpl } = setup({ env: { LEAD_TELEGRAM_BOT_TOKEN: 't', LEAD_TELEGRAM_CHAT_ID: '1', LEAD_TELEGRAM_API_BASE: 'https://tg.test' } });
   await handler.post(request(lead({ lead_channel: 'seo', lead_line: 'seo2', page: '/services/samsung-tv-repair-delhi', attribution: { source: 'google', medium: 'organic' } })));
   const text = fetchImpl.calls[0].body.text;
-  assert.match(text, /Line shown: SEO brand pages \+91 84498 20270/);
+  assert.match(text, /Line shown: SEO line 2 \+91 84498 20270/);
   assert.match(text, /Page: \/services\/samsung-tv-repair-delhi/);
 });
 

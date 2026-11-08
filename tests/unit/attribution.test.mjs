@@ -6,8 +6,9 @@ import {
   channelFor,
   channelForPath,
   classifyVisit,
-  BRAND_LINE_BRANDS,
-  isBrandLinePage,
+  SEO2_BRANDS,
+  SEO_BRANDS,
+  isSeo2Page,
   leadAttribution,
   lineFor,
   parseStored,
@@ -138,14 +139,18 @@ test('home line: direct visitors on the home page only', () => {
   assert.equal(lineFor('ads', '/landing'), 'ads');
 });
 
-test('brand repair pages: seo2 line for organic and direct visitors, ads line for ad visitors', () => {
+test('seo2 pages (pricing, brands hub, brand pages except Sony): seo2 for organic and direct visitors, ads for ad visitors', () => {
   assert.equal(lineFor('seo', '/services/samsung-tv-repair-delhi'), 'seo2');
   assert.equal(lineFor('seo', '/services/samsung-tv-repair-delhi', true), 'seo2', 'direct visitor');
   assert.equal(lineFor('ads', '/services/samsung-tv-repair-delhi'), 'ads');
-  assert.equal(lineFor('seo', '/services/sony-tv-repair-noida'), 'seo2');
+  assert.equal(lineFor('seo', '/pricing'), 'seo2');
+  assert.equal(lineFor('ads', '/pricing'), 'ads');
+  assert.equal(lineFor('seo', '/services/lg-tv-repair-delhi'), 'seo2');
   assert.equal(lineFor('seo', '/services/vu-tv-repair-greater-noida'), 'seo2');
   assert.equal(lineFor('seo', '/services/brands'), 'seo2');
-  for (const other of ['/pricing', '/services', '/services/tv-repair-delhi', '/services/led-tv-repair-delhi', '/services/lcd-tv-repair-noida',
+  assert.equal(lineFor('seo', '/services/sony-tv-repair-noida'), 'seo', 'Sony pages stay on the seo line');
+  assert.equal(lineFor('seo', '/services/sony-tv-repair-delhi'), 'seo');
+  for (const other of ['/services', '/services/tv-repair-delhi', '/services/led-tv-repair-delhi', '/services/lcd-tv-repair-noida',
     '/services/oled-qled-tv-repair', '/services/smart-tv-repair', '/services/tv-repair-dwarka', '/blog/tv-repair-cost-delhi', '/contact']) {
     assert.equal(lineFor('seo', other), 'seo', other);
   }
@@ -153,13 +158,15 @@ test('brand repair pages: seo2 line for organic and direct visitors, ads line fo
   assert.equal(lineFor('seo', '/'), 'seo');
 });
 
-test('the brand list matches every brand in data/brandServicePages.js', async () => {
+test('every brand in data/brandServicePages.js is assigned to exactly one line', async () => {
   const { readFile } = await import('node:fs/promises');
   const source = await readFile(new URL('../../data/brandServicePages.js', import.meta.url), 'utf8');
   const brands = [...source.matchAll(/slugSegment: '([a-z]+)-tv-repair'/g)].map((m) => m[1]);
   assert.ok(brands.length >= 11);
-  assert.deepEqual([...brands].sort(), [...BRAND_LINE_BRANDS].sort());
+  assert.deepEqual([...brands].sort(), [...SEO2_BRANDS, ...SEO_BRANDS].sort());
   for (const brand of brands) {
-    for (const city of ['delhi', 'noida', 'ghaziabad', 'greater-noida']) assert.ok(isBrandLinePage(`/services/${brand}-tv-repair-${city}`));
+    for (const city of ['delhi', 'noida', 'ghaziabad', 'greater-noida']) {
+      assert.equal(isSeo2Page(`/services/${brand}-tv-repair-${city}`), SEO2_BRANDS.includes(brand), `${brand} ${city}`);
+    }
   }
 });

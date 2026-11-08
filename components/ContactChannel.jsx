@@ -65,8 +65,8 @@ const ContactChannelContext = createContext(null);
 // came from an ad click sees the ads number on every page; a later visit from
 // search, an AI assistant or a referral switches back to the organic number.
 // Page lines (lineFor) apply only after hydration: direct visitors on the
-// home page see the home line, organic and direct visitors on the brand
-// repair pages the seo2 line. The server HTML never does, so crawlers always
+// home page see the home line, organic and direct visitors on the seo2 pages
+// (pricing and most brand repair pages) the seo2 line. The server HTML never does, so crawlers always
 // read the business number.
 export function ContactChannelProvider({ children }) {
   const pathname = usePathname();
