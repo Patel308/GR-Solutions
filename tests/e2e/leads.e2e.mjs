@@ -380,6 +380,21 @@ test('an organic lead from the Samsung page names the second SEO line', async ()
   await context.close();
 });
 
+test('site icon: every page links the square GR icon set, and each file is served', async () => {
+  for (const url of ['/', '/services/samsung-tv-repair-delhi', '/pricing', '/blog/tv-repair-cost-delhi']) {
+    const html = await (await fetch(`${SITE}${url}`)).text();
+    assert.match(html, /<link rel="icon" href="\/favicon\.ico" sizes="16x16 32x32 48x48"/, `${url} favicon.ico`);
+    assert.match(html, /<link rel="icon" href="\/icon\.svg" type="image\/svg\+xml"/, `${url} icon.svg`);
+    assert.match(html, /<link rel="apple-touch-icon" href="\/apple-touch-icon\.png" sizes="180x180"/, `${url} apple-touch-icon`);
+    assert.ok(!/rel="icon"[^>]*logo\.jpg/.test(html), `${url} no longer uses the wide logo as icon`);
+  }
+  for (const [file, type] of [['/favicon.ico', /icon/], ['/icon.svg', /svg/], ['/icon-96.png', /png/], ['/icon-192.png', /png/], ['/apple-touch-icon.png', /png/]]) {
+    const response = await fetch(`${SITE}${file}`);
+    assert.equal(response.status, 200, file);
+    assert.match(response.headers.get('content-type') || '', type, file);
+  }
+});
+
 // ------------------------------------------------------- lead capture
 
 const FORMS = [

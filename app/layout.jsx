@@ -25,8 +25,16 @@ export const metadata = {
       follow: true,
     },
   },
+  // Square "GR" mark built for small sizes (tools/favicon). Google shows the
+  // site icon in a 28 px circle next to every search result.
   icons: {
-    icon: '/images/logo.jpg',
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16 32x32 48x48' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-96.png', type: 'image/png', sizes: '96x96' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
   },
   // TODO: Add metadata.verification.google when the real Google Search Console code is provided.
   openGraph: {
