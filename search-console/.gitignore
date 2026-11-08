@@ -1,0 +1,5 @@
+data/
+__pycache__/
+# never commit a key
+service-account*.json
+*-key.json
