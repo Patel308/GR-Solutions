@@ -3,5 +3,10 @@
   "property": "sc-domain:grsolution.co.in",
   "domain": "grsolution.co.in",
   "status": "live",
-  "console_home": "C:/Users/dell/Desktop/Scallar Stack/Console"
+  "console_home": "C:/Users/dell/Desktop/Scallar Stack/Console",
+  "ads_home": "C:/Users/dell/Desktop/Scallar Stack/Google ads",
+  "geos": [
+    "india"
+  ],
+  "language": "en"
 }

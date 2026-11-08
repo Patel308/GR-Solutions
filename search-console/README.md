@@ -51,9 +51,38 @@ Check it with `python3 search-console/gsc.py doctor`. It should print `OK  grsol
 If it fails: "packages missing" means step 2 wasn't done; "No Search Console credentials" means
 step 1 wasn't done; a connection error means step 3 wasn't done.
 
+## Keyword research (Google Ads Keyword Planner)
+
+Search volume, competition, bid ranges and 24-month trends for SEO and content planning, with
+defaults for this site: countries `india`, language `en`. It's read-only: it can't create
+campaigns or spend money.
+
+```bash
+py search-console/keywords.py doctor                                   # confirm access
+py search-console/keywords.py ideas "seed one" "seed two" --min-volume 50 --save
+py search-console/keywords.py ideas --url https://grsolution.co.in/some-page   # ideas from a page
+py search-console/keywords.py ideas --site-seed grsolution.co.in               # ideas for the whole domain
+py search-console/keywords.py metrics "exact keyword" "another one"     # volume for a fixed list
+py search-console/keywords.py metrics --file keywords.txt --csv search-console/data/keywords/volumes.csv
+py search-console/keywords.py ideas "seed" --geo uk us --lang en       # other markets
+py search-console/keywords.py geo Noida Gurugram --country IN          # city ids for local SEO (--geo 1007826)
+```
+
+Columns: `avg_monthly_searches`, `competition` (Ads competition, not SEO difficulty), top-of-page bid
+range in the Ads account currency (INR), `average_cpc`, `trend_3m_pct`, `yoy_pct`, `close_variants`.
+Close variants with identical numbers are folded into one row (use `--all-variants` to keep them).
+Results are cached for 14 days in `search-console/.cache/` (`--no-cache` to refresh).
+
+**Cloud sessions:** run `pip install google-ads` once (it isn't in requirements.txt), and set these environment variables (by the owner; never committed):
+`GOOGLE_ADS_DEVELOPER_TOKEN`, `GOOGLE_ADS_CUSTOMER_ID` and `GOOGLE_ADS_LOGIN_CUSTOMER_ID`. They also
+need the service-account key (`GSC_SERVICE_ACCOUNT_JSON_B64`, already used above). The service account
+must be a user in Google Ads. Allow network access to `googleads.googleapis.com`.
+
 ## Files
 
 - **`site.json`:** this project's site and property
 - **`gsc.py` / `gsc.cmd`:** launchers
 - **`gsc_api.py`:** a copy of the shared API. Don't edit it here: edit `C:/Users/dell/Desktop/Scallar Stack/Console/scripts/gsc_api.py`
   and run `sync_project_folders.py`.
+- **`keywords.py` / `keywords.cmd` / `ads_api.py`:** Keyword Planner launcher and a copy of
+  `Scallar Stack/Google ads/ads_api.py`. The same rule applies: edit the original, then re-sync.
