@@ -8,4 +8,7 @@ Auth is a read-only service account, so don't write new GSC/OAuth code or ask fo
 In a cloud session, run `pip install -r search-console/requirements.txt` first if packages are
 missing. The key comes from env `GSC_SERVICE_ACCOUNT_JSON_B64`; if it's absent, tell the user
 to add it to the environment settings.
+For keyword research (search volume, keyword ideas, trends), use
+`python3 search-console/keywords.py <command>` (Google Ads Keyword Planner, read-only; see the
+README). Don't build another Keyword Planner client.
 <!-- END:search-console -->
