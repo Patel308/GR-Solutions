@@ -6,8 +6,6 @@ import {
   channelFor,
   channelForPath,
   classifyVisit,
-  SEO2_BRANDS,
-  SEO_BRANDS,
   isSeo2Page,
   leadAttribution,
   lineFor,
@@ -139,34 +137,31 @@ test('home line: direct visitors on the home page only', () => {
   assert.equal(lineFor('ads', '/landing'), 'ads');
 });
 
-test('seo2 pages (pricing, brands hub, brand pages except Sony): seo2 for organic and direct visitors, ads for ad visitors', () => {
-  assert.equal(lineFor('seo', '/services/samsung-tv-repair-delhi'), 'seo2');
-  assert.equal(lineFor('seo', '/services/samsung-tv-repair-delhi', true), 'seo2', 'direct visitor');
-  assert.equal(lineFor('ads', '/services/samsung-tv-repair-delhi'), 'ads');
-  assert.equal(lineFor('seo', '/pricing'), 'seo2');
-  assert.equal(lineFor('ads', '/pricing'), 'ads');
-  assert.equal(lineFor('seo', '/services/lg-tv-repair-delhi'), 'seo2');
-  assert.equal(lineFor('seo', '/services/vu-tv-repair-greater-noida'), 'seo2');
-  assert.equal(lineFor('seo', '/services/brands'), 'seo2');
-  assert.equal(lineFor('seo', '/services/sony-tv-repair-noida'), 'seo', 'Sony pages stay on the seo line');
-  assert.equal(lineFor('seo', '/services/sony-tv-repair-delhi'), 'seo');
-  for (const other of ['/services', '/services/tv-repair-delhi', '/services/led-tv-repair-delhi', '/services/lcd-tv-repair-noida',
-    '/services/oled-qled-tv-repair', '/services/smart-tv-repair', '/services/tv-repair-dwarka', '/blog/tv-repair-cost-delhi', '/contact']) {
-    assert.equal(lineFor('seo', other), 'seo', other);
+test('seo2 pages (pricing and most service pages): seo2 for organic and direct visitors, ads for ad visitors', () => {
+  for (const page of ['/pricing', '/services', '/services/brands', '/services/samsung-tv-repair-delhi', '/services/sony-tv-repair-noida',
+    '/services/lg-tv-repair-delhi', '/services/vu-tv-repair-greater-noida', '/services/led-tv-repair-delhi', '/services/led-tv-repair',
+    '/services/lcd-tv-repair-noida', '/services/curved-tv-repair', '/services/smart-tv-repair']) {
+    assert.equal(lineFor('seo', page), 'seo2', page);
+    assert.equal(lineFor('seo', page, true), 'seo2', `${page} direct`);
+    assert.equal(lineFor('ads', page), 'ads', `${page} ad visitor`);
+  }
+  for (const page of ['/services/tv-repair-delhi', '/services/tv-repair-noida', '/services/tv-repair-greater-noida', '/services/tv-repair-ghaziabad',
+    '/services/tv-repair-near-me', '/services/tv-repair-dwarka', '/services/tv-repair-noida-sector-62', '/services/oled-qled-tv-repair',
+    '/services/oled-qled-tv-repair-delhi', '/services/plasma-tv-repair', '/services/plasma-tv-repair-noida', '/blog/tv-repair-cost-delhi', '/contact', '/about']) {
+    assert.equal(lineFor('seo', page), 'seo', page);
   }
   assert.equal(lineFor('seo', '/', true), 'home');
   assert.equal(lineFor('seo', '/'), 'seo');
 });
 
-test('every brand in data/brandServicePages.js is assigned to exactly one line', async () => {
+test('split over every sitemap page: 23 Kamlesh service pages, everything else under /services and pricing on seo2', async () => {
   const { readFile } = await import('node:fs/promises');
-  const source = await readFile(new URL('../../data/brandServicePages.js', import.meta.url), 'utf8');
-  const brands = [...source.matchAll(/slugSegment: '([a-z]+)-tv-repair'/g)].map((m) => m[1]);
-  assert.ok(brands.length >= 11);
-  assert.deepEqual([...brands].sort(), [...SEO2_BRANDS, ...SEO_BRANDS].sort());
-  for (const brand of brands) {
-    for (const city of ['delhi', 'noida', 'ghaziabad', 'greater-noida']) {
-      assert.equal(isSeo2Page(`/services/${brand}-tv-repair-${city}`), SEO2_BRANDS.includes(brand), `${brand} ${city}`);
-    }
-  }
+  const index = JSON.parse(await readFile(new URL('../../tools/seo-audit/snapshots/launch-2026-11-02/index.json', import.meta.url), 'utf8'));
+  const paths = index.filter((p) => p.inSitemap).map((p) => p.path);
+  const services = paths.filter((p) => p.startsWith('/services/'));
+  const kamlesh = services.filter((p) => !isSeo2Page(p));
+  assert.equal(kamlesh.length, 23);
+  assert.ok(kamlesh.every((p) => /^\/services\/(tv-repair-|oled-qled-tv-repair|plasma-tv-repair)/.test(p)), kamlesh.join(' '));
+  assert.equal(services.length - kamlesh.length, 61);
+  assert.ok(paths.filter((p) => p.startsWith('/blog')).every((p) => !isSeo2Page(p)), 'blog stays on Kamlesh');
 });

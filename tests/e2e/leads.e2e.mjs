@@ -30,8 +30,8 @@ const ADS = { tel: 'tel:+919990283890', wa: 'https://wa.me/919990283890' };
 // The home page's own line (the business's original number), shown on / to
 // direct visitors only. Same digits as the ads line.
 const HOME = ADS;
-// Second organic line: organic and direct visitors on pricing, the brands hub
-// and every brand page except Sony.
+// Second organic line: organic and direct visitors on pricing and every
+// service page except city/area, OLED/QLED and plasma pages.
 const SEO2 = { tel: 'tel:+918449820270', wa: 'https://wa.me/918449820270' };
 const WEBHOOK_SECRET = 'e2e-hmac';
 const DAY = 864e5;
@@ -265,7 +265,7 @@ test('the ads attribution expires after 90 days', async () => {
   await context.close();
 });
 
-test('home page: original number for a direct visitor, then the organic number one click away', async () => {
+test('home page: original number for a direct visitor, then the page line one click away', async () => {
   const context = await newContext();
   const page = await openPage(context, '/');
   await page.waitForTimeout(600);
@@ -274,7 +274,7 @@ test('home page: original number for a direct visitor, then the organic number o
   assert.deepEqual(marks, ['seo/home'], 'channel stays seo, line is home');
   await page.locator('a[href="/services"]:visible').first().click();
   await page.waitForURL('**/services');
-  await expectLinks(page, ORGANIC, 'after client navigation to /services');
+  await expectLinks(page, SEO2, 'after client navigation to /services (a seo2 page)');
   const back = await openPage(context, '/');
   await expectLinks(back, HOME, 'direct return to /');
   assert.deepEqual(page.errors, []);
@@ -311,13 +311,21 @@ test('/landing shows the ads number for direct and ad visitors', async () => {
   await context.close();
 });
 
-test('seo2 pages: organic, AI and direct visitors see the second SEO line; ad visitors the ads line; Sony stays on Kamlesh', async () => {
+test('seo2 pages: organic, AI and direct visitors see the second SEO line; ad visitors the ads line; city, OLED and plasma pages stay on Kamlesh', async () => {
   const cases = [
     ['/pricing', 'https://www.google.com/', SEO2],
     ['/pricing', 'https://chatgpt.com/', SEO2],
     ['/pricing', undefined, SEO2],
     ['/pricing?gclid=E2E-PRICING', 'https://www.google.com/', ADS],
-    ['/services/sony-tv-repair-noida', 'https://www.google.com/', ORGANIC],
+    ['/services/sony-tv-repair-noida', 'https://www.google.com/', SEO2],
+    ['/services/led-tv-repair-delhi', 'https://www.google.com/', SEO2],
+    ['/services/curved-tv-repair', 'https://chatgpt.com/', SEO2],
+    ['/services', 'https://www.google.com/', SEO2],
+    ['/services/led-tv-repair-delhi?gclid=E2E-LED', 'https://www.google.com/', ADS],
+    ['/services/tv-repair-delhi', 'https://www.google.com/', ORGANIC],
+    ['/services/tv-repair-greater-noida', 'https://chatgpt.com/', ORGANIC],
+    ['/services/oled-qled-tv-repair', 'https://www.perplexity.ai/', ORGANIC],
+    ['/services/plasma-tv-repair-delhi', 'https://www.bing.com/', ORGANIC],
     ['/services/samsung-tv-repair-delhi', 'https://www.google.com/', SEO2],
     ['/services/samsung-tv-repair-delhi', 'https://chatgpt.com/', SEO2],
     ['/services/samsung-tv-repair-delhi?utm_source=chatgpt.com', undefined, SEO2],
@@ -337,7 +345,7 @@ test('seo2 pages: organic, AI and direct visitors see the second SEO line; ad vi
   }
 });
 
-test('the second SEO line follows the page: Samsung, services hub, pricing, Sony, LG', async () => {
+test('the line follows the page: Samsung, services hub, pricing, Sony, city page, LG', async () => {
   const context = await newContext();
   const page = await openPage(context, '/services/samsung-tv-repair-delhi', { referer: 'https://www.google.co.in/' });
   await expectLinks(page, SEO2, 'Samsung page from Google');
@@ -345,11 +353,13 @@ test('the second SEO line follows the page: Samsung, services hub, pricing, Sony
   assert.deepEqual(marks, ['seo/seo2']);
   await page.locator('a[href="/services"]:visible').first().click();
   await page.waitForURL('**/services');
-  await expectLinks(page, ORGANIC, 'services hub after client navigation');
+  await expectLinks(page, SEO2, 'services hub after client navigation');
   const pricing = await openPage(context, '/pricing');
   await expectLinks(pricing, SEO2, 'pricing');
   const sony = await openPage(context, '/services/sony-tv-repair-delhi');
-  await expectLinks(sony, ORGANIC, 'Sony page (Kamlesh)');
+  await expectLinks(sony, SEO2, 'Sony page');
+  const city = await openPage(context, '/services/tv-repair-noida');
+  await expectLinks(city, ORGANIC, 'city page (Kamlesh)');
   const lg = await openPage(context, '/services/lg-tv-repair-noida');
   await expectLinks(lg, SEO2, 'another seo2 brand page');
   await context.close();
