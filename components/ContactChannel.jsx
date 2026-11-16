@@ -66,7 +66,7 @@ const ContactChannelContext = createContext(null);
 // search, an AI assistant or a referral switches back to the organic number.
 // Page lines (lineFor) apply only after hydration: direct visitors on the
 // home page see the home line, organic and direct visitors on the seo2 pages
-// (pricing and most brand repair pages) the seo2 line. The server HTML never does, so crawlers always
+// (pricing and most service pages, see isSeo2Page) the seo2 line. The server HTML never does, so crawlers always
 // read the business number.
 export function ContactChannelProvider({ children }) {
   const pathname = usePathname();

@@ -12,11 +12,12 @@
 //        The server HTML, schema, llms.txt and every other page keep the seo
 //        line (owner decision, 2 Nov 2026).
 //   seo2: second organic line, shown to search, AI, social, referral and
-//        direct visitors on half the money pages (pricing, /services/brands
-//        and every brand page except Sony; see SEO2_PAGES / SEO2_BRANDS in
-//        lib/leads/attribution.mjs), after the page loads, so those enquiries
-//        arrive on their own number (owner decision, 8 Nov 2026). The server
-//        HTML and schema there keep the seo line (the business NAP).
+//        direct visitors on about three quarters of the money pages
+//        (pricing and every /services page except city/area, OLED/QLED and
+//        plasma pages; see isSeo2Page in lib/leads/attribution.mjs), after
+//        the page loads, so those enquiries arrive on their own number
+//        (owner decisions, 8 and 16 Nov 2026). The server HTML and schema
+//        there keep the seo line (the business NAP).
 // Routing rules: lib/leads/attribution.mjs and components/ContactChannel.jsx.
 export const contactChannels = {
   ads: {
