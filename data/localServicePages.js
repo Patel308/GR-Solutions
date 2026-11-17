@@ -694,8 +694,11 @@ const genericTvCityProfiles = {
   'greater-noida': {
     keyword: 'TV Repair Greater Noida',
     h1: 'TV Repair in Greater Noida',
-    metaTitle: 'TV Repair Greater Noida | Doorstep Support | GR Solution',
-    metaDescription: 'GR Solution provides TV repair in Greater Noida for LED, OLED/QLED, LCD, Plasma and Curved TV issues with doorstep support.',
+    // 17 Nov 2026 CTR test: this page ranks ~6.4 for "tv repair near me" (369 impressions,
+    // 1 click, GSC 90d) and 7.5 overall (0.47% CTR). Keyword kept first; free diagnosis and
+    // a real price range added as click reasons. Re-check GSC around 15 Dec 2026.
+    metaTitle: 'TV Repair Greater Noida | Free Doorstep Diagnosis',
+    metaDescription: `Free doorstep TV diagnosis in Greater Noida and a firm estimate before any paid work. Typical backlight repair: ₹${repairPriceBands.find((row) => row.fault === 'Backlight / LED strip replacement').bands[0]} on 32"-43" TVs.`,
     image: '/images/service_tv.webp',
     intro:
       'Greater Noida TV repair calls often involve larger homes, societies, villas and commercial spaces where moving a big TV without diagnosis can create unnecessary risk. GR Solution provides doorstep inspection support for LED, OLED/QLED, LCD, Plasma and Curved TV faults.',

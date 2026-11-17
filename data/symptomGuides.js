@@ -295,7 +295,11 @@ export const symptomGuideArticles = [
     publishedAt: '2026-09-25',
     updatedAt: '2026-09-25',
     title: 'TV Backlight Failure Symptoms',
-    metaTitle: 'TV Backlight Failure: Symptoms, Test & Repair Cost',
+    // 17 Nov 2026 CTR test: 1,979 impressions, 8 clicks (0.40%), position 6.8 (GSC 90d),
+    // mostly "backlight repair cost" searches. The starting price is now in the title.
+    // The description is unchanged on purpose: it is also the card text and link anchor
+    // in "related guides" boxes on other pages. Re-check GSC around 15 Dec 2026.
+    metaTitle: `TV Backlight Failure: Symptoms, Test & Repair Cost (₹${repairPriceBands.find((row) => row.fault === 'Backlight / LED strip replacement').bands[0].split(' - ')[0]}+)`,
     metaDescription:
       'The signs of a failing TV backlight, how to confirm it with a torch, backlight repair costs by screen size in Delhi NCR, and how long repairs last.',
     h1: 'TV Backlight Failure: Symptoms, Test and Repair Cost',

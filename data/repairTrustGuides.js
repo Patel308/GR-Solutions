@@ -1,6 +1,7 @@
 // Two supporting topics selected from the 25 October 2026 research briefs.
 // These are editorial guides, not claimed repair case studies or technician certification.
 import { repairPriceBands } from './pricing';
+import { decisionGuides } from './decisionGuides';
 
 export const repairTrustGuides = [
   {
@@ -215,6 +216,8 @@ export const repairTrustGuides = [
       { question: 'What should I check after a TV repair?', answer: 'Reproduce the original fault conditions, check picture, sound and relevant inputs, and keep the invoice, work description and written repair terms. Agree how any unresolved or recurring symptom will be reported.' },
     ],
   },
+  // Decision guides from the 17 November 2026 AI-visibility research (data/decisionGuides.js).
+  ...decisionGuides,
 ];
 
 // Give existing symptom/cost guides a contextual route into the new checklists.

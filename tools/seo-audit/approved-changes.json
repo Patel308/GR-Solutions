@@ -246,5 +246,47 @@
       "REVIEW"
     ],
     "field": "^sitemap lastmod changed$"
+  },
+  {
+    "id": "decision-guides",
+    "decision": "Owner, 17 Nov 2026 (AI-visibility audit): two decision guides for the follow-up searches ChatGPT and Google AI Mode run (Otterly query fan-outs) and the brand service-centre demand (Keyword Planner: 'samsung service center near me' 135,000/mo). New URLs /blog/authorised-service-centre-vs-local-tv-repair and /blog/how-to-choose-tv-repair-service-delhi-ncr. Existing pages only GAIN cards/links to them; they are excluded from the scored 'Related guides' cards (excludeFromRelated) so no existing related link is displaced.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^H1-H3 text changed$",
+    "detail": [
+      "^\\+ H3: (Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)$",
+      "^\\+ H2: (Before you approve a repair|Read Before You Book in (Delhi|Noida|Greater Noida|Ghaziabad))$"
+    ]
+  },
+  {
+    "id": "decision-guides",
+    "decision": "Decision guides (see above): the two new URLs in sitemap.xml and llms.txt.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^(sitemap URLs changed|llms\\.txt changed)$",
+    "detail": [
+      "^\\+ https://grsolution\\.co\\.in/blog/(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)$",
+      "^\\+ - \\[(Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)\\]\\(https://grsolution\\.co\\.in/blog/(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)\\): .+$"
+    ]
+  },
+  {
+    "id": "decision-guides",
+    "decision": "Decision guides (see above): new pages, and cards/links to them added on related pages.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(new page in head snapshot|internal links added|main copy added|images added)$"
+  },
+  {
+    "id": "ctr-title-test-2026-11",
+    "decision": "Owner, 17 Nov 2026: CTR fix for page-1 rankings with almost no clicks (GSC 90d). /services/tv-repair-greater-noida: 2,128 impressions, 0.47% CTR, ranks ~6.4 for 'tv repair near me'. /blog/tv-backlight-failure-symptoms: 1,979 impressions, 0.40% CTR. Keyword kept first; free diagnosis / starting price added. Backlight description deliberately unchanged (it is card text elsewhere). Re-check GSC ~15 Dec 2026.",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": "^(head\\.title|head\\.metaDescription|head\\.openGraph|head\\.twitter|JSON-LD changed)$",
+    "scope": "^/(services/tv-repair-greater-noida|blog/tv-backlight-failure-symptoms)$"
   }
 ]

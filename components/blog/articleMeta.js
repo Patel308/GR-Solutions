@@ -37,7 +37,9 @@ export function relatedArticles(article, all, limit = 3) {
     (family(other.category) === family(article.category) ? 5 : 0) +
     (other.internalLinks || []).filter((link) => targets.has(link.href)).length;
   return all
-    .filter((other) => other.slug !== article.slug)
+    // `excludeFromRelated` keeps a new article from displacing the related cards (and
+    // their internal links) that existing articles already show.
+    .filter((other) => other.slug !== article.slug && !other.excludeFromRelated)
     .map((other, index) => ({ other, index, score: score(other) }))
     .sort((a, b) => b.score - a.score || a.index - b.index)
     .slice(0, limit)
