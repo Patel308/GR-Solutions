@@ -256,7 +256,7 @@
     "field": "^H1-H3 text changed$",
     "detail": [
       "^\\+ H3: (Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)$",
-      "^\\+ H2: (Before you approve a repair|Read Before You Book in (Delhi|Noida|Greater Noida|Ghaziabad))$"
+      "^\\+ H2: (Before you approve a repair|Read Before You Book( in (Delhi|Noida|Greater Noida|Ghaziabad))?)$"
     ]
   },
   {
