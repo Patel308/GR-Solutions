@@ -30,7 +30,8 @@ export const decisionGuides = [
     excludeFromRelated: true,
     publishedAt: '2026-11-17',
     title: 'Authorised Service Centre vs Local TV Repair',
-    h1: 'Authorised Service Centre vs Local TV Repair: Which Should You Call?',
+    // Kept short so it fits in three lines on a 360px phone.
+    h1: 'Authorised Service Centre or Local TV Repair?',
     metaTitle: 'Service Centre vs Local TV Repair: Which Is Better? (2026)',
     metaDescription: 'Under warranty? Use the brand’s service centre. Out of warranty? Compare parts, total price and repair warranty first. Checklist and Delhi NCR prices.',
     category: 'DECISION GUIDE',

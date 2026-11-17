@@ -191,9 +191,10 @@ export default async function BlogArticlePage({ params }) {
                       ) : null}
                       {section.closing ? <p className="mt-5">{section.closing}</p> : null}
                       {section.links?.length ? (
-                        <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2">
+                        <div className="mt-5 flex flex-wrap gap-x-5">
                           {section.links.map((link) => (
-                            <Link key={link.href} href={link.href} className="text-link font-semibold">
+                            // min-h-12: 48px tap target, as on the contact links (docs/design-system.md).
+                            <Link key={link.href} href={link.href} className="text-link inline-flex min-h-12 items-center font-semibold">
                               {link.label}
                             </Link>
                           ))}

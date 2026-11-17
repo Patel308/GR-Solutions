@@ -2,9 +2,12 @@
 
 Built from GR Solution's real workshop photos plus on-brand graphics
 (colours from docs/design-system.md). Drawn at 2x and downscaled for smooth edges.
-usage: py -I scripts/make-guide-heroes.py .   (Windows: uses Segoe UI from C:/Windows/Fonts)
+usage: py -I scripts/make-guide-heroes.py .
+   Windows (Segoe UI from C:/Windows/Fonts). For the site heading font it needs
+   fontTools and brotli (pip install fonttools brotli); otherwise Segoe UI Bold.
 """
 import sys
+import tempfile
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -25,11 +28,30 @@ MUTED = (71, 85, 105)
 GREEN = (15, 122, 61)
 
 FONTS = Path('C:/Windows/Fonts')
-def font(name, size):
-    return ImageFont.truetype(str(FONTS / name), size * S)
 
-BOLD = 'segoeuib.ttf'
-SEMI = 'seguisb.ttf'
+
+def _heading_font_path():
+    """The site's heading face (Plus Jakarta Sans 800, docs/design-system.md), converted
+    from app/fonts/*.woff2. Needs fontTools + brotli; falls back to Segoe UI Bold."""
+    ttf = Path(tempfile.gettempdir()) / 'gr-PlusJakartaSans-800.ttf'
+    if not ttf.exists():
+        try:
+            from fontTools.ttLib import TTFont
+            face = TTFont(str(ROOT / 'app' / 'fonts' / 'plus-jakarta-sans-latin-800-normal.woff2'))
+            face.flavor = None
+            face.save(str(ttf))
+        except Exception as error:  # noqa: BLE001 - any failure means "use the fallback"
+            print(f'Heading font unavailable ({error}); using Segoe UI Bold')
+            return FONTS / 'segoeuib.ttf'
+    return ttf
+
+
+HEAD = _heading_font_path()      # headings, badges, titles (site heading font)
+SEMI = FONTS / 'seguisb.ttf'     # labels and list text (Windows system UI font, as the site's body)
+
+
+def font(path, size):
+    return ImageFont.truetype(str(path), size * S)
 
 
 def cover(img, box_w, box_h, focus_x=0.5, focus_y=0.5):
@@ -93,7 +115,7 @@ def wrench_icon(draw, cx, cy, size, fill):
 
 
 def wordmark(draw, x, y, light=True):
-    f = font(BOLD, 30)
+    f = font(HEAD, 30)
     draw.text((x, y), 'GR', font=f, fill=TEAL300 if light else NAVY600)
     gw = draw.textlength('GR ', font=f)
     draw.text((x + gw, y), 'Solution', font=f, fill=WHITE if light else INK)
@@ -134,8 +156,8 @@ def hero_service_centre():
 
     pad = 92 * S
     # Eyebrow + headline.
-    pill(d, (pad, 92 * S), 'TV REPAIR DECISION GUIDE', font(BOLD, 24), TEAL400, WHITE)
-    head = font(BOLD, 74)
+    pill(d, (pad, 92 * S), 'TV REPAIR DECISION GUIDE', font(HEAD, 24), TEAL400, WHITE)
+    head = font(HEAD, 74)
     d.text((pad, 168 * S), 'Service centre', font=head, fill=WHITE)
     d.text((pad, 254 * S), 'or local repair?', font=head, fill=TEAL300)
 
@@ -148,7 +170,7 @@ def hero_service_centre():
     img.alpha_composite(card)
     d = ImageDraw.Draw(img)
     shield_icon(d, cx0 + 92 * S, cy0 + 100 * S, 52 * S, TEAL400, WHITE)
-    d.text((cx0 + 170 * S, cy0 + 58 * S), 'Brand service centre', font=font(BOLD, 38), fill=WHITE)
+    d.text((cx0 + 170 * S, cy0 + 58 * S), 'Brand service centre', font=font(HEAD, 34), fill=WHITE)
     d.text((cx0 + 170 * S, cy0 + 108 * S), 'Best while under warranty', font=font(SEMI, 26), fill=(205, 222, 240))
     rows = ['Keeps manufacturer warranty', 'Brand rates out of warranty', 'Visit charge as applicable']
     for i, row in enumerate(rows):
@@ -163,10 +185,10 @@ def hero_service_centre():
     ImageDraw.Draw(panel).rounded_rectangle((rx - 40 * S, 440 * S, W - 60 * S, 840 * S), radius=34 * S, fill=NAVY950 + (165,))
     img.alpha_composite(panel.filter(ImageFilter.GaussianBlur(6 * S)))
     d = ImageDraw.Draw(img)
-    tag_w, tag_h = pill(d, (rx, 470 * S), 'INDEPENDENT REPAIR', font(BOLD, 26), WHITE, NAVY950, pad_x=26, pad_y=14)
+    tag_w, tag_h = pill(d, (rx, 470 * S), 'INDEPENDENT REPAIR', font(HEAD, 26), WHITE, NAVY950, pad_x=26, pad_y=14)
     wrench_icon(d, rx + 30 * S, 600 * S, 38 * S, TEAL300)
-    d.text((rx + 90 * S, 572 * S), 'Worth comparing once', font=font(BOLD, 36), fill=WHITE)
-    d.text((rx + 90 * S, 618 * S), 'the warranty has ended', font=font(BOLD, 36), fill=WHITE)
+    d.text((rx + 90 * S, 572 * S), 'Worth comparing once', font=font(HEAD, 36), fill=WHITE)
+    d.text((rx + 90 * S, 618 * S), 'the warranty has ended', font=font(HEAD, 36), fill=WHITE)
     for i, row in enumerate(['Free diagnosis first', 'Written estimate before work']):
         y = 700 * S + i * 58 * S
         check_icon(d, rx + 30 * S, y + 18 * S, 17 * S, TEAL400, WHITE)
@@ -179,7 +201,7 @@ def hero_service_centre():
     img.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(18 * S)))
     d = ImageDraw.Draw(img)
     d.ellipse((bx - br, by - br, bx + br, by + br), fill=WHITE, outline=TEAL400, width=8 * S)
-    vs = font(BOLD, 58)
+    vs = font(HEAD, 58)
     l, t, r, b = d.textbbox((0, 0), 'VS', font=vs)
     d.text((bx - (r - l) / 2 - l, by - (b - t) / 2 - t), 'VS', font=vs, fill=NAVY600)
 
@@ -207,8 +229,8 @@ def hero_checklist():
     d = ImageDraw.Draw(img)
 
     pad = 92 * S
-    pill(d, (pad, 84 * S), "BUYER'S CHECKLIST  ·  DELHI NCR", font(BOLD, 24), TEAL400, WHITE)
-    head = font(BOLD, 70)
+    pill(d, (pad, 84 * S), "BUYER'S CHECKLIST  ·  DELHI NCR", font(HEAD, 24), TEAL400, WHITE)
+    head = font(HEAD, 70)
     d.text((pad, 156 * S), 'Choose the right', font=head, fill=WHITE)
     d.text((pad, 238 * S), 'TV repair service', font=head, fill=TEAL300)
 
@@ -222,7 +244,7 @@ def hero_checklist():
     d.rounded_rectangle((cx0, cy0, cx1, cy1), radius=34 * S, fill=SURFACE)
     d.rounded_rectangle((cx0, cy0, cx1, cy0 + 96 * S), radius=34 * S, fill=WHITE)
     d.rectangle((cx0, cy0 + 60 * S, cx1, cy0 + 96 * S), fill=WHITE)
-    d.text((cx0 + 44 * S, cy0 + 26 * S), '7-point check before you book', font=font(BOLD, 34), fill=INK)
+    d.text((cx0 + 44 * S, cy0 + 26 * S), '7-point check before you book', font=font(HEAD, 34), fill=INK)
     d.line((cx0, cy0 + 96 * S, cx1, cy0 + 96 * S), fill=(226, 232, 240), width=2 * S)
 
     items = [
