@@ -16,3 +16,14 @@ For keyword research (search volume, keyword ideas, trends), use
 `python3 search-console/keywords.py <command>` (Google Ads Keyword Planner, read-only; see the
 README). Don't build another Keyword Planner client.
 <!-- END:search-console -->
+
+<!-- BEGIN:new-pages-geo -->
+## New and changed pages: indexing and AI citation (automated)
+
+Most of this happens without extra work, as long as pages are built from the existing data files and templates:
+
+- **Key facts and prices.** Every service, city and brand page renders `components/KeyFacts.jsx` under the trust band: free diagnosis, the most common repair with its Delhi NCR price range, service area, hours, warranty, and a price table for that TV type. The facts come from `data/keyFacts.js`, `data/pricing.js` and `data/siteConfig.js`. A new page built from `app/services/[slug]/page.jsx` or `components/ServicePageRevision.jsx` gets it automatically. A page outside those templates should render `<KeyFacts />` itself. Never add a claim to `data/keyFacts.js` that is not already confirmed elsewhere on the site.
+- **Sitemap and llms.txt.** Both are generated from the data files, so a new page appears in them automatically.
+- **Bing / IndexNow.** After every production deploy, `.github/workflows/deploy.yml` runs `scripts/indexnow.mjs`. It compares the sitemap before and after the deploy and submits every new, changed or removed URL to IndexNow (Bing, which feeds ChatGPT search, Copilot and DuckDuckGo). A URL counts as changed only when its sitemap `<lastmod>` changes, so **bump the matching date in `app/sitemap.js` (or `keyFactsReviewedAt`, a blog article's `updatedAt`, a landing page's `reviewedAt`) whenever a page's content really changes.** To resubmit everything, run the workflow manually with `indexnow_all` ticked, or run `node scripts/indexnow.mjs --all`. The key file is `public/443043e7cb5fa7d21f24112881af65cf.txt`; it is public by design.
+- **Before merging a template change,** run the SEO check in `docs/design-system.md` and keep titles, metas, canonicals, H1s and heading order unchanged unless the change was signed off.
+<!-- END:new-pages-geo -->

@@ -33,6 +33,7 @@ import LocalityPage from '@/components/LocalityPage';
 import { getLocalityPageBySlug, getLocalityPagesByCity, localityPages } from '@/data/localityPages';
 import { PhoneLink, PhoneNumber, WhatsAppLink } from '@/components/ContactChannel';
 import ServicePageRevision from '@/components/ServicePageRevision';
+import KeyFacts from '@/components/KeyFacts';
 import { getServicePageRevision } from '@/data/servicePageRevisions';
 
 // Page copy is written with the SEO number; swap it for the visitor's channel
@@ -309,6 +310,8 @@ export default async function ServiceDetailPage({ params }) {
 
       <TrustBand />
 
+      <KeyFacts subject={`${service.title} in Delhi NCR`} serviceSlug={service.slug} />
+
       {/* Benefits */}
       <section className="section band" data-section="service_benefits">
         <div className="container">
@@ -523,6 +526,8 @@ function LocalServicePage({ page }) {
       </PageHero>
 
       <TrustBand />
+
+      <KeyFacts subject={page.h1} serviceSlug={page.parentServiceSlug} cityName={page.cityName} />
 
       <section className="section band" data-section="city_guidance">
         <div className="container grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,0.85fr)] lg:gap-12">
@@ -821,6 +826,8 @@ function BrandServicePage({ page }) {
       </PageHero>
 
       <TrustBand />
+
+      <KeyFacts subject={page.h1} cityName={page.cityName} brand={page.brand} />
 
       {/* Intro + city explanation */}
       <section className="section band" data-section="brand_intro">

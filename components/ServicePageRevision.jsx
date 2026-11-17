@@ -8,6 +8,7 @@ import PageCTA from '@/components/PageCTA';
 import { PhoneLink, WhatsAppLink } from '@/components/ContactChannel';
 import { siteConfig } from '@/data/siteConfig';
 import { diagnosisPolicy } from '@/data/pricing';
+import KeyFacts from '@/components/KeyFacts';
 
 // The content varies by URL; the page shell and the business entity stay shared.
 // Metadata remains owned by the existing route's generateMetadata function.
@@ -100,6 +101,8 @@ export default function ServicePageRevision({ page, content, service, relatedLin
           <Image src={page.image} alt={`${page.title} by GR Solution`} width={680} height={500} className="h-[min(520px,52vw)] min-h-[340px] w-full rounded-3xl object-cover shadow-cardPro" priority />
         </div>
       </section>
+
+      <KeyFacts subject={page.h1} serviceSlug={page.parentServiceSlug} cityName={page.cityName} brand={page.brand} />
 
       {content.sections.map((section, index) => (
         <section key={section.heading} className={index % 2 ? 'bg-bgLight py-16' : 'py-16'}>

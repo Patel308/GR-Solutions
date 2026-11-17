@@ -1004,7 +1004,7 @@ export const nearMeServicePage = {
   ],
   whyChoose: [
     'Nearby support across Delhi NCR with clear location and scheduling communication.',
-    `Consistent NAP details: GR Solution, ${siteContactAddress}, phone ${contactChannels.seo.phone} and email info@grsolution.co.in.`,
+    `A real local workshop you can reach: GR Solution, ${siteContactAddress}. Call or WhatsApp ${contactChannels.seo.phone}, or email info@grsolution.co.in.`,
     'Independent TV repair support without fake authorized service center claims.',
     'Practical guidance for Smart TV, LED, OLED/QLED, LCD, Plasma and Curved TV faults.',
   ],

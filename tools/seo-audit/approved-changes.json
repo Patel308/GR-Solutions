@@ -184,5 +184,67 @@
       "^- Delhi, Noida & NCR's #1 premium TV repair service provider with 15\\+ years of technical excellence and transparent pricing\\.$",
       "^\\+ Delhi, Noida & NCR's #1 premium TV repair service provider with 5\\+ years of technical excellence and transparent pricing\\.$"
     ]
+  },
+  {
+    "id": "key-facts-block",
+    "decision": "Owner, 17 Nov 2026 (AI-visibility audit): every service, city and brand page shows an answer-first key facts and Delhi NCR price block under the trust band (components/KeyFacts.jsx), so the money pages are as citable by ChatGPT, Perplexity and Google AI Mode as /pricing. No heading tags; every fact restates data/pricing.js, siteConfig or the existing 90-day warranty wording; adds one internal link to /pricing.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(main copy added|internal links added)$",
+    "scope": "^/services/",
+    "detail": [
+      "^\\+ Key facts$",
+      "^\\+ .+: key facts and typical prices$",
+      "^\\+ .+: typical Delhi NCR repair costs by fault and screen size$",
+      "^\\+ (Diagnosis|Most common repair|Service area|Hours|Warranty|Who repairs it|Book|Typical costs by fault and screen size|Fault|32\\\" - 43\\\"|44\\\" - 55\\\"|56\\\" and above)$",
+      "^\\+ Free\\. You get a firm estimate before any paid work starts\\.$",
+      "^\\+ .+: about ₹[\\d,]+ - [\\d,]+ on 32\\\" - 43\\\" TVs, ₹[\\d,]+ - [\\d,]+ on 44\\\" - 55\\\" \\(Delhi NCR market range, parts and labour\\)\\.$",
+      "^\\+ Doorstep visits across (Delhi|Noida|Greater Noida|Ghaziabad)(, plus| and|,) .+$",
+      "^\\+ Monday to Sunday, 9 am to 9 pm$",
+      "^\\+ 90-day service warranty on the repair, where applicable\\. Terms are confirmed with your estimate\\.$",
+      "^\\+ GR Solution is an independent TV repair service, not an authorised .+ service centre\\.$",
+      "^\\+ (Call or WhatsApp|with your TV brand, screen size and the fault\\.)$",
+      "^\\+ ₹[\\d,]+ - [\\d,]+(  \\(x\\d+\\))?$",
+      "^\\+ (Backlight / LED strip replacement|Power supply board repair or replacement|Mainboard / motherboard repair|T-Con board repair or replacement|Audio / speaker circuit repair|HDMI / input port repair|Software / firmware reset on smart TVs)$",
+      "^\\+ (Sound works but the screen is black or unevenly lit|No power, or a blinking standby light|Boot loops, no input detection, random shutdowns|Half screen, double image, vertical lines|No sound, distorted sound, one speaker dead|One or all inputs not detected|Apps crashing, stuck on logo, interface frozen)$",
+      "^\\+ Delhi NCR market ranges including part and labour, researched from published sources and last reviewed .+$",
+      "^\\+ /pricing  \\\"Full TV repair price guide, panel prices and sources\\\"$",
+      "^\\+ Full TV repair price guide, panel prices and sources$"
+    ]
+  },
+  {
+    "id": "key-facts-block",
+    "decision": "Key facts block (see above): its Call/WhatsApp link renders the organic number through PhoneLink.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^tel/WhatsApp/mailto/external links changed$",
+    "scope": "^/services/",
+    "detail": [
+      "^\\+ tel tel:\\+919315515700  \\\"\\+91 93155 15700\\\"(  \\(x\\d+\\))?$"
+    ]
+  },
+  {
+    "id": "near-me-nap-wording",
+    "decision": "Owner, 17 Nov 2026: the near-me page showed SEO jargon to customers ('Consistent NAP details: ...', quoted by Gemini). Replaced with a plain sentence carrying the same address, number and email.",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": "^main copy (removed or edited|added)$",
+    "scope": "^/services/tv-repair-near-me$",
+    "detail": [
+      "^- Consistent NAP details: GR Solution, .+$",
+      "^\\+ A real local workshop you can reach: GR Solution, .+$"
+    ]
+  },
+  {
+    "id": "key-facts-lastmod",
+    "decision": "Owner, 17 Nov 2026: service, city and brand pages gained the key facts block, so their sitemap <lastmod> moves to keyFactsReviewedAt; IndexNow submits them after deploy.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^sitemap lastmod changed$"
   }
 ]

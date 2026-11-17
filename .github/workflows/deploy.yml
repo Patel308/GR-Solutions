@@ -5,6 +5,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      indexnow_all:
+        description: 'Submit every sitemap URL to IndexNow (Bing) after deploy, not only new/changed ones'
+        type: boolean
+        default: false
 
 concurrency:
   group: grsolution-production-deploy
@@ -104,6 +109,11 @@ jobs:
     timeout-minutes: 15
 
     steps:
+      # Kept so the IndexNow step can tell which URLs this deploy added, changed or removed.
+      - name: Save the live sitemap before deploying
+        continue-on-error: true
+        run: curl -fsS --max-time 20 https://grsolution.co.in/sitemap.xml -o "$RUNNER_TEMP/sitemap-before.xml"
+
       - name: Deploy the exact Docker Hub image
         env:
           HOSTINGER_SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
@@ -134,3 +144,20 @@ jobs:
           [[ -n "$CHUNK" ]]
           curl -fsS --max-time 20 --resolve "$DOMAIN:443:$ORIGIN" "https://$DOMAIN$CHUNK" > /dev/null
           echo "Hostinger origin and static asset passed"
+
+      - name: Checkout the IndexNow script
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/indexnow.mjs
+          sparse-checkout-cone-mode: false
+
+      # Tells Bing (which feeds ChatGPT search, Copilot and DuckDuckGo) about new,
+      # changed and removed pages straight away. A failure here never fails the deploy.
+      - name: Notify Bing via IndexNow
+        continue-on-error: true
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.indexnow_all }}" == "true" ]]; then
+            node scripts/indexnow.mjs --all
+          else
+            node scripts/indexnow.mjs --before "$RUNNER_TEMP/sitemap-before.xml"
+          fi
