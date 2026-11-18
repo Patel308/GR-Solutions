@@ -345,5 +345,45 @@
     "detail": [
       "^\\+ - Same-day doorstep visits: Ghaziabad \\(time slot confirmed when you call\\)(  \\(x\\d+\\))?$"
     ]
+  },
+  {
+    "id": "internal-links-2026-11-18",
+    "decision": "Owner, 18 Nov 2026 (docs/index-coverage-2026-11-18.md): internal links into pages Google has not crawled or indexed (Smart TV repair, Dwarka, Noida Sectors 137/62, Toshiba/Hisense/Vu city pages). Additions only: the existing 'More specific repair support' section on 7 more pages, and all 11 brands in each city hub's brand list.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^H1-H3 text changed$",
+    "scope": "^/services/(oled-qled-tv-repair|tv-repair-noida|tv-repair-ghaziabad|tv-repair-near-me|tv-repair-south-delhi|sony-tv-repair-noida|led-tv-repair-noida)$",
+    "detail": [
+      "^\\+ H2: More specific repair support(  \\(x\\d+\\))?$"
+    ]
+  },
+  {
+    "id": "internal-links-2026-11-18",
+    "decision": "Internal links (see above): repair-support link cards.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(internal links added|main copy added)$",
+    "scope": "^/services/(oled-qled-tv-repair|tv-repair-noida|tv-repair-ghaziabad|tv-repair-near-me|tv-repair-south-delhi|sony-tv-repair-noida|led-tv-repair-noida)$",
+    "detail": [
+      "^\\+ /services/(smart-tv-repair|tv-repair-dwarka|tv-repair-noida-sector-137|tv-repair-noida-sector-62)  \\\".+\\\"(  \\(x\\d+\\))?$",
+      "^\\+ More specific repair support(  \\(x\\d+\\))?$",
+      "^\\+ (Smart TV apps, Wi-Fi and startup repair|TV repair in Dwarka|TV repair in Noida Sector 137|TV repair in Noida Sector 62) →(  \\(x\\d+\\))?$",
+      "^\\+ (For premium sets where the panel is fine but apps, HDMI or startup misbehave\\.|A focused service for smart-platform and connected-device complaints\\.|Plan the local visit with sector, model and access details\\.|When the picture works but smart features fail\\.|South-west Delhi visit planning: sector, society access and mounting details\\.|Expressway high-rise societies: tower access and in-flat repairs\\.|Visit planning for Sector 62 and its neighbouring sectors\\.)(  \\(x\\d+\\))?$"
+    ]
+  },
+  {
+    "id": "internal-links-2026-11-18",
+    "decision": "Internal links (see above): all 11 brands in each city hub's brand list.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(internal links added|main copy added)$",
+    "scope": "^/services/tv-repair-(delhi|noida|greater-noida|ghaziabad)$",
+    "detail": [
+      "^\\+ /services/(oneplus|tcl|panasonic|vu|philips|hisense|toshiba)-tv-repair-(delhi|noida|greater-noida|ghaziabad)  \\\"(OnePlus|TCL|Panasonic|Vu|Philips|Hisense|Toshiba) TV Repair (Delhi|Noida|Greater Noida|Ghaziabad)\\\"(  \\(x\\d+\\))?$",
+      "^\\+ (OnePlus|TCL|Panasonic|Vu|Philips|Hisense|Toshiba) TV Repair (Delhi|Noida|Greater Noida|Ghaziabad)(  \\(x\\d+\\))?$"
+    ]
   }
 ]

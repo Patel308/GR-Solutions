@@ -15,6 +15,15 @@ const discovery = {
   '/services/tv-repair-west-delhi': [{ href: '/services/tv-repair-dwarka', label: 'Dwarka visit planning and TV repair', detail: 'Sector, society access, mounting and estimate guidance for a Dwarka enquiry.' }],
   '/services/tv-repair-delhi': [{ href: '/services/tv-repair-dwarka', label: 'TV repair in Dwarka', detail: 'Plan the local visit with model and access details.' }, { href: '/services/smart-tv-repair', label: 'Smart TV apps, Wi-Fi and startup repair', detail: 'A focused service for smart-platform and connected-device complaints.' }],
   '/services/led-tv-repair': [{ href: '/services/smart-tv-repair', label: 'When the picture works but smart features fail', detail: 'Explore Smart TV app, network, input and startup diagnosis.' }],
+  // 18 Nov 2026 (docs/index-coverage-2026-11-18.md): links into pages Google has
+  // not crawled or indexed yet, from relevant indexed pages. Additions only.
+  '/services/oled-qled-tv-repair': [{ href: '/services/smart-tv-repair', label: 'Smart TV apps, Wi-Fi and startup repair', detail: 'For premium sets where the panel is fine but apps, HDMI or startup misbehave.' }],
+  '/services/tv-repair-noida': [{ href: '/services/smart-tv-repair', label: 'Smart TV apps, Wi-Fi and startup repair', detail: 'A focused service for smart-platform and connected-device complaints.' }],
+  '/services/tv-repair-ghaziabad': [{ href: '/services/smart-tv-repair', label: 'Smart TV apps, Wi-Fi and startup repair', detail: 'A focused service for smart-platform and connected-device complaints.' }],
+  '/services/tv-repair-near-me': [{ href: '/services/tv-repair-dwarka', label: 'TV repair in Dwarka', detail: 'Plan the local visit with sector, model and access details.' }, { href: '/services/smart-tv-repair', label: 'Smart TV apps, Wi-Fi and startup repair', detail: 'When the picture works but smart features fail.' }],
+  '/services/tv-repair-south-delhi': [{ href: '/services/tv-repair-dwarka', label: 'TV repair in Dwarka', detail: 'South-west Delhi visit planning: sector, society access and mounting details.' }],
+  '/services/sony-tv-repair-noida': [{ href: '/services/tv-repair-noida-sector-137', label: 'TV repair in Noida Sector 137', detail: 'Expressway high-rise societies: tower access and in-flat repairs.' }, { href: '/services/tv-repair-noida-sector-62', label: 'TV repair in Noida Sector 62', detail: 'Visit planning for Sector 62 and its neighbouring sectors.' }],
+  '/services/led-tv-repair-noida': [{ href: '/services/tv-repair-noida-sector-137', label: 'TV repair in Noida Sector 137', detail: 'Expressway high-rise societies: tower access and in-flat repairs.' }, { href: '/services/tv-repair-noida-sector-62', label: 'TV repair in Noida Sector 62', detail: 'Visit planning for Sector 62 and its neighbouring sectors.' }],
 };
 
 export function RepairPageLinks({ path }) {

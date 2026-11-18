@@ -931,6 +931,12 @@ export const cityTvRepairPages = cities.map((city) => {
       { label: `Samsung TV Repair ${city.name}`, href: `/services/samsung-tv-repair-${city.slug}` },
       { label: `LG TV Repair ${city.name}`, href: `/services/lg-tv-repair-${city.slug}` },
       { label: `Mi/Xiaomi TV Repair ${city.name}`, href: `/services/mi-tv-repair-${city.slug}` },
+      // 18 Nov 2026: the remaining brands, so every brand x city page gets a link
+      // from its city hub (Toshiba Delhi, Hisense Ghaziabad and Vu Greater Noida had
+      // only 4 internal links and were not indexed). Listed here rather than imported
+      // from brandServicePages.js, which already imports this file.
+      ...[['oneplus', 'OnePlus'], ['tcl', 'TCL'], ['panasonic', 'Panasonic'], ['vu', 'Vu'], ['philips', 'Philips'], ['hisense', 'Hisense'], ['toshiba', 'Toshiba']]
+        .map(([slug, name]) => ({ label: `${name} TV Repair ${city.name}`, href: `/services/${slug}-tv-repair-${city.slug}` })),
     ],
     tvTypesCovered,
   };
