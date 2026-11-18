@@ -28,3 +28,14 @@ Most of this happens without extra work, as long as pages are built from the exi
 - **Before merging a template change,** run the SEO check in `docs/design-system.md` and keep titles, metas, canonicals, H1s and heading order unchanged unless the change was signed off.
 - **Brand x city pages.** The same brand's page across cities was about 75% identical text, and Google left several unindexed (docs/index-coverage-2026-11-18.md). Do not add new brand x city combinations without demand evidence (Keyword Planner or GSC) and facts unique to that page. To differentiate an existing one, add a `servicePageRevisions` entry with page-specific content (see `samsung-tv-repair-noida`) and keep its 5-word overlap with sibling pages well under 35%.
 <!-- END:new-pages-geo -->
+
+<!-- BEGIN:design-check -->
+## Design check before any page change ships
+
+Every page must follow the 2 Nov 2026 redesign in `docs/design-system.md`. Before building a page on a template, adding a component or pushing:
+
+- **Use the redesign building blocks:** `PageHero` (breadcrumb inside, eyebrow, H1, `answer-box`, `HeroActions`), `TrustBand` under the hero, `SectionHead`, `section band` / `band-tint` sections, `panel` / `card` surfaces, `LinkTiles`, and the tokens `text-ink`, `text-body`, `text-muted`, `navy-*`, `teal-*`.
+- **Never use the pre-redesign classes** (`shadow-oldMd`, `shadow-cardPro`, `text-textMuted`, `rounded-card`, `bg-bgLight`, `text-secondary`, gradient `py-24` heroes). `tests/unit/design-legacy.test.mjs` fails on any new use and runs in the deploy workflow; the few files still listed in it may only go down.
+- **Look before pushing:** take a phone and desktop screenshot of every changed template (`tools/seo-audit/screenshots.mjs`) and compare it with an already-redesigned page such as a brand x city page.
+- Why: on 18 Nov 2026 Samsung Noida was rewritten onto `components/ServicePageRevision.jsx`, a template the redesign had missed, and went live looking older than the rest of the site. The template was converted on 19 Nov.
+<!-- END:design-check -->

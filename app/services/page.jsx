@@ -205,10 +205,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-bgLight py-16">
+      <section className="section band" data-section="services_focused">
         <div className="container">
-          <h2 className="text-3xl font-black text-secondary">Focused support for your repair request</h2>
-          <div className="mt-6 grid gap-5 md:grid-cols-2">{repairLandingPages.map((page) => <Link key={page.slug} href={`/services/${page.slug}`} className="rounded-2xl border border-primary/10 bg-white p-6 shadow-oldMd"><h3 className="text-xl font-black text-primary">{page.h1} →</h3><p className="mt-3 leading-relaxed text-textMuted">{page.kind === 'local' ? 'Plan a Dwarka visit with sector, access, model and estimate details.' : 'Separate app, Wi-Fi, input and startup complaints before approving work.'}</p></Link>)}</div>
+          <SectionHead title="Focused support for your repair request" />
+          <div className="grid gap-5 md:grid-cols-2">{repairLandingPages.map((page) => <Link key={page.slug} href={`/services/${page.slug}`} className="card card-interactive block p-5 sm:p-7"><h3 className="text-navy-700">{page.h1} →</h3><p className="mt-3 leading-relaxed text-body">{page.kind === 'local' ? 'Plan a Dwarka visit with sector, access, model and estimate details.' : 'Separate app, Wi-Fi, input and startup complaints before approving work.'}</p></Link>)}</div>
         </div>
       </section>
       {/* 4-Step Repair Process */}

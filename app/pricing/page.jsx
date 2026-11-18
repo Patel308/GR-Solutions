@@ -182,8 +182,8 @@ export default function PricingPage() {
           <PriceTable rows={panelPriceBands} caption="TV panel replacement prices in Delhi NCR" showSourcesLink={false} />
           <GuideBookingCTA contentId="pricing" intent="price" placement="after_price_tables" />
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            <Link href="/blog/tv-motherboard-diagnosis" className="rounded-xl border border-primary/15 p-4 font-bold text-primary hover:text-secondary">Before approving a board replacement: what evidence to ask for</Link>
-            <Link href="/blog/prepare-for-doorstep-tv-repair" className="rounded-xl border border-primary/15 p-4 font-bold text-primary hover:text-secondary">Before booking a visit: model, access and estimate checklist</Link>
+            <Link href="/blog/tv-motherboard-diagnosis" className="card card-interactive flex min-h-12 items-center p-4 font-semibold text-navy-700">Before approving a board replacement: what evidence to ask for</Link>
+            <Link href="/blog/prepare-for-doorstep-tv-repair" className="card card-interactive flex min-h-12 items-center p-4 font-semibold text-navy-700">Before booking a visit: model, access and estimate checklist</Link>
           </div>
 
           <SectionCTA

@@ -45,7 +45,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Unit tests (lead routing, validation, forwarding)
+      # Also runs tests/unit/design-legacy.test.mjs, which blocks a deploy that
+      # adds pre-redesign styling classes (docs/design-system.md).
+      - name: Unit tests (lead routing, validation, forwarding, design guard)
         run: npm test
 
       - name: Production build check
