@@ -385,5 +385,15 @@
       "^\\+ /services/(oneplus|tcl|panasonic|vu|philips|hisense|toshiba)-tv-repair-(delhi|noida|greater-noida|ghaziabad)  \\\"(OnePlus|TCL|Panasonic|Vu|Philips|Hisense|Toshiba) TV Repair (Delhi|Noida|Greater Noida|Ghaziabad)\\\"(  \\(x\\d+\\))?$",
       "^\\+ (OnePlus|TCL|Panasonic|Vu|Philips|Hisense|Toshiba) TV Repair (Delhi|Noida|Greater Noida|Ghaziabad)(  \\(x\\d+\\))?$"
     ]
+  },
+  {
+    "id": "samsung-noida-rewrite",
+    "decision": "Owner, 18 Nov 2026: full content rewrite of /services/samsung-tv-repair-noida through servicePageRevisions (not indexed, 4 impressions in 90 days; 'samsung service center noida' 5,400/mo). 5-word overlap with Samsung Delhi 61.6% -> 11.8%. Title, H1, URL and canonical unchanged; homepage, /services and /contact still linked (anchor text differs); workshop address kept in the main copy; FAQ text equals FAQPage schema; breadcrumb now matches its schema.",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": ".*",
+    "scope": "^/services/samsung-tv-repair-noida$"
   }
 ]

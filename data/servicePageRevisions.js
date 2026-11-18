@@ -1,3 +1,5 @@
+import { repairPriceBands } from './pricing';
+
 // Editorial revisions for the nine highly repetitive URLs in the indexing report.
 // Keep diagnostic advice conditional: these are not invented customer jobs or
 // claims about the prevalence of faults in a particular neighbourhood.
@@ -354,6 +356,77 @@ export const servicePageRevisions = {
       { question: 'Should a cracked premium TV be powered on for a diagnosis video?', answer: 'Do not keep testing a physically damaged screen or a set with exposed or displaced parts. Photograph the damage with the television off and ask for handling guidance. Glass damage needs a different feasibility discussion from a software complaint.' },
     ],
     cta: 'Share the OLED or QLED model and your Noida installation details to discuss the safest inspection route.',
+  },
+  // 18 Nov 2026. Not indexed ("crawled, not indexed"): ~75% of the copy matched the
+  // Samsung pages for the other cities. Demand (Keyword Planner, India): "samsung
+  // service center noida" 5,400/mo, "samsung tv service center noida" 210/mo
+  // (+336% YoY), "samsung tv repair noida" 30/mo, so the page speaks to people
+  // looking for a service centre: warranty cases to Samsung, out-of-warranty
+  // repair here. Samsung facts come from Samsung India's warranty, out-of-warranty
+  // charges and Device Care / Self Diagnosis support pages; Noida facts from
+  // cityLocalFacts.js; prices from data/pricing.js.
+  'samsung-tv-repair-noida': {
+    metaDescription: 'Samsung TV out of warranty in Noida? Independent home repair for LED, Crystal UHD and QLED TVs: free diagnosis, written estimate. Not a Samsung service centre.',
+    answer: 'Looking for a Samsung service centre in Noida? If your Samsung TV is still under warranty, book through Samsung India’s official support, because Samsung states that third-party repair attempts are not covered by its warranty. Once the warranty has ended, GR Solution repairs Samsung LED, Crystal UHD and QLED TVs at home across Noida, with a free diagnosis and a firm estimate before any paid work. GR Solution is independent and is not a Samsung-authorised service centre.',
+    sections: [
+      {
+        heading: 'Samsung service centre or independent repair: which one you need',
+        paragraphs: [
+          'Most Noida searches for a Samsung service centre come down to one of two needs: a warranty repair, or a working TV at a fair price after the warranty has ended. They call for different routes. Samsung India lists a 12-month standard warranty for its TVs and a three-year programme on selected models, so the purchase invoice decides the first call, not the phone number that appears first in a search.',
+          'Once the standard warranty and any extended plan have ended, you can compare Samsung’s out-of-warranty service with an independent repairer. Samsung India publishes its out-of-warranty labour charges and notes that parts, taxes and transport are extra, with a visiting charge for inspection where applicable. Here the diagnosis is free, and the written estimate covers parts and labour before anything is opened for repair.',
+        ],
+      },
+      {
+        heading: 'Run Samsung’s built-in Self Diagnosis before the visit',
+        paragraphs: [
+          'Samsung TVs from 2020 onwards include a Self Diagnosis menu, normally under Settings › Support › Device Care › Self Diagnosis; on some models it sits directly under Support. Its Picture Test displays a high-definition test image, its Sound Test plays a melody through the speakers, and the same menu holds HDMI Troubleshooting and a Smart Hub Connection Test.',
+          'Two minutes with these tests narrows the fault before anyone touches the set. A clean test picture with a faulty programme points to the source, cable or settings rather than the panel. Lines or dark patches on the test picture itself mean the display path inside the TV is involved. Note the result, take a photo, and include it when you book.',
+        ],
+      },
+      {
+        heading: 'Read the model number before you call',
+        paragraphs: [
+          'The label on the back tells the technician what kind of Samsung you own. Indian Samsung LED and Crystal UHD models usually begin with UA and QLED models with QA, followed by the screen size in inches: a UA43 model is a 43-inch LED TV, a QA65 model a 65-inch QLED. A letter after the series name marks the model year.',
+          'The panel type changes the repair. On an LED or Crystal UHD set, sound with a black screen usually means backlight strips or their driver. A QLED adds a quantum-dot layer in front of a similar LED backlight, so colour or uniformity complaints are checked more carefully before any part is assumed to have failed.',
+        ],
+      },
+      {
+        heading: 'Planning a Samsung repair visit in Noida',
+        paragraphs: [
+          'Noida is next door to our New Kondli workshop. Sectors 15, 16 and 18 near the Delhi border are short trips, the Sector 62–63 belt is a moderate drive, and the Expressway sectors from 128 to 137 are the longer Noida visits. Electricity here is distributed by PVVNL, and most high-rise societies switch to generator backup during a cut; that changeover is a common moment for a TV’s power board to fail.',
+          'Many Samsung TVs in Noida societies are large and wall-mounted. Share the tower, floor, gate-pass arrangement and how the set is mounted, so the visit is planned around access rather than discovered at the door. Power board, backlight and software faults are normally repaired inside the flat; a panel goes to the workshop only when a bench is genuinely needed.',
+        ],
+      },
+    ],
+    table: {
+      caption: 'Samsung TV symptoms in Noida homes: first check and usual path',
+      columns: ['Samsung symptom', 'First check', 'Usual path'],
+      rows: [
+        ['Sound plays, screen stays black', 'Self Diagnosis Picture Test, then a torch test on the screen', 'Backlight strip or driver repair'],
+        ['Dead after the generator changeover', 'Power supply board behaviour', 'Power board repair, usually at home'],
+        ['Stuck on the Samsung logo or restarting', 'Samsung’s software steps for the model, then supply and mainboard', 'Software fix first; board repair only with evidence'],
+        ['Lines appear on the test picture too', 'T-Con board and panel connections', 'Board repair if the panel is intact'],
+        ['Apps freeze but the picture is fine', 'Smart Hub Connection Test and the home network', 'Software and network fixes, no parts'],
+      ],
+    },
+    preparationHeading: 'Before you call about a Samsung TV in Noida',
+    preparation: [
+      'Check the invoice: if Samsung’s warranty or an extended plan still covers the TV, book with Samsung first.',
+      'Note the full model number (UA… or QA…) and the screen size.',
+      'Run Self Diagnosis › Picture Test and Sound Test, and note what you saw.',
+      'Share your sector, tower and floor, and whether the TV is wall-mounted.',
+    ],
+    costHeading: 'What a Samsung repair in Noida costs',
+    cost: `The price depends on the failed part and the screen size, not on the city. The price table on this page shows indicative Delhi NCR market ranges: backlight strips on a 32–43 inch LED or Crystal UHD set, for example, typically fall in the ₹${repairPriceBands.find((row) => row.fault === 'Backlight / LED strip replacement').bands[0]} band. A QLED or large-panel job needs the exact model before a figure means anything. You get a firm estimate after the free diagnosis, before any paid work, with the 90-day service warranty terms confirmed where applicable.`,
+    coverage: 'Samsung TV visits across Noida are coordinated from New Kondli: Sectors 15, 16 and 18 near the Delhi border, the Sector 62–63 belt, Sectors 75, 76 and 104, and the Expressway sectors up to 137. Confirm your exact address and slot when you call. Workshop: GR Solution, C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096. GR Solution is an independent repairer, not a Samsung-authorised service centre.',
+    faqs: [
+      { question: 'Is GR Solution the Samsung service centre in Noida?', answer: 'No. GR Solution is an independent TV repair provider based in New Kondli, East Delhi. For warranty repairs, use Samsung India’s official support. We repair out-of-warranty Samsung TVs at home across Noida.' },
+      { question: 'My Samsung TV is still under warranty. Should I call you?', answer: 'Contact Samsung first. Samsung India states that third-party repair attempts are not covered by its warranty, so an independent repair could affect your cover.' },
+      { question: 'How do I run Self Diagnosis on a Samsung TV?', answer: 'On models from 2020 onwards, open Settings, then Support, then Device Care, then Self Diagnosis, and run the Picture Test and Sound Test. On some models Self Diagnosis is directly under Support.' },
+      { question: 'Can you repair a Samsung QLED TV in Noida?', answer: 'Yes, once it is out of warranty. Power board, mainboard, backlight and software faults on QLED sets are usually repairable at home. A damaged QLED panel is priced separately and can come close to the cost of a new TV.' },
+      { question: 'Do you visit Expressway societies such as Sector 137?', answer: 'Yes. The Expressway sectors are the longer Noida visits, so share the tower, floor and gate-pass details when you book.' },
+    ],
+    cta: 'Share your Samsung model number, the Self Diagnosis result and your Noida sector to arrange an out-of-warranty repair visit.',
   },
 };
 

@@ -134,16 +134,17 @@ export default function ServicePageRevision({ page, content, service, relatedLin
             <h2 className="text-3xl font-black text-secondary">{content.costHeading}</h2>
             <p className="mt-5 font-bold leading-relaxed text-secondary">{diagnosisPolicy.note}</p>
             <p className="mt-5 text-lg leading-relaxed text-textMuted">{content.cost}</p>
-            <Link href={costGuide} className="mt-5 inline-flex font-black text-primary">{page.cityName} repair cost guide &rarr;</Link>
-            <div className="mt-4"><Link href="/pricing" className="font-black text-primary">GR Solution pricing and sources &rarr;</Link></div>
+            {/* min-h-12: 48px tap targets (docs/design-system.md). Class-only change. */}
+            <Link href={costGuide} className="mt-5 inline-flex min-h-12 items-center font-black text-primary">{page.cityName} repair cost guide &rarr;</Link>
+            <div className="mt-1"><Link href="/pricing" className="inline-flex min-h-12 items-center font-black text-primary">GR Solution pricing and sources &rarr;</Link></div>
           </article>
           <aside className="rounded-card border border-primary/10 bg-white p-8">
             <h2 className="text-2xl font-black text-secondary">{page.cityName} service arrangements</h2>
             <p className="mt-5 leading-relaxed text-textMuted">{content.coverage}</p>
-            <div className="mt-6 grid gap-3">
-              <PhoneLink callLocation="city_service_contact_phone" className="font-black text-primary" />
-              <a href={siteConfig.emailHref} className="break-all font-black text-primary">{siteConfig.email}</a>
-              <Link href="/contact" className="font-black text-primary">Contact and booking</Link>
+            <div className="mt-6 grid gap-1">
+              <PhoneLink callLocation="city_service_contact_phone" className="inline-flex min-h-12 items-center font-black text-primary" />
+              <a href={siteConfig.emailHref} className="inline-flex min-h-12 items-center break-all font-black text-primary">{siteConfig.email}</a>
+              <Link href="/contact" className="inline-flex min-h-12 items-center font-black text-primary">Contact and booking</Link>
             </div>
           </aside>
         </div>
