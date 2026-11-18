@@ -400,6 +400,70 @@ const localities = [
       },
     ],
   },
+  // ------------------------------------------------------- Greater Noida
+  // Added 18 Nov 2026. Evidence: Keyword Planner "tv repair gaur city" 320/mo
+  // (+254% YoY), "led tv repair greater noida west" 90/mo; GSC 90d ~140 impressions
+  // for Greater Noida West queries ranking 7-9 on the Greater Noida hub, 0 clicks.
+  // Coverage of Greater Noida West is already stated in cityLocalFacts.js and
+  // localServicePages.js.
+  {
+    slug: 'tv-repair-greater-noida-west',
+    reviewedAt: '2026-11-18',
+    name: 'Greater Noida West',
+    citySlug: 'greater-noida',
+    cityName: 'Greater Noida',
+    keyword: 'TV Repair Greater Noida West',
+    metaDescription:
+      'TV repair in Greater Noida West and Gaur City: LED, QLED and OLED repairs inside township flats, free diagnosis and a firm estimate before paid work.',
+    directAnswer:
+      'GR Solution repairs LED, QLED and OLED TVs at home in Greater Noida West, also called Noida Extension, including Gaur City 1 and 2, Gaur Chowk, Techzone 4, Sector 1, Sectors 16B and 16C and Bisrakh. Homes here are almost all township flats, so repairs are done inside the flat wherever the fault allows, with a free diagnosis and a firm estimate before any paid work.',
+    intro:
+      'Greater Noida West, which most residents call Noida Extension, is a belt of high-rise townships around Gaur Chowk, Gaur City and Techzone 4. It is administered as part of Greater Noida but sits right next to Noida, so from our New Kondli base it is reached through Noida rather than down the Expressway. That makes it a shorter trip than the Pari Chowk side of Greater Noida, though visits are still booked into a time window and planned around the tower.',
+    areas: ['Gaur City 1', 'Gaur City 2', 'Gaur Chowk (Ek Murti)', 'Techzone 4', 'Sector 1', 'Sector 16B', 'Sector 16C', 'Bisrakh'],
+    facts: [
+      ['Distance from our base', 'Shorter than the rest of Greater Noida; reached through Noida, not the Expressway'],
+      ['Electricity distributor', 'NPCL (Noida Power Company Limited), as in the rest of Greater Noida'],
+      ['Typical housing', 'Large group-housing townships of many towers, most with power backup'],
+      ['Workshop handling', 'Large panels stay in the flat unless a fault genuinely needs a bench'],
+    ],
+    angleHeading: 'Tower numbers, Gaur Chowk traffic and large living-room screens',
+    angle: [
+      'Two things shape a TV visit here. The first is scale: Gaur City alone is a cluster of dozens of towers, so the society name, tower and flat number tell the technician far more than the sector does. The second is Gaur Chowk, the Ek Murti roundabout, whose traffic at peak hours is the slowest part of reaching most societies. That is why we give a time window rather than an exact minute.',
+      'The televisions follow the housing. Most flats here were bought in the last decade, so living rooms tend to have 50- to 65-inch LED and QLED sets, and some are still covered by the maker or a retailer plan; those should go to the brand first. Out of warranty, a dark screen with working sound on a large panel usually means backlight strips, and a set that dies when the supply switches to backup usually points to the power board. Both are normally repaired inside the flat.',
+    ],
+    situations: {
+      caption: 'Common situations in Greater Noida West',
+      columns: cols,
+      rows: [
+        ['Gaur City flat, 55" LED with sound but no picture', 'Backlight, using the torch test', 'Backlight strip repair inside the flat'],
+        ['Set went dead when the supply switched to backup', 'Power supply board', 'Board repair, usually in the same visit'],
+        ['TV bought within the last year or two', 'Manufacturer or extended-plan cover', 'Brand first while it is still covered'],
+      ],
+    },
+    tips: [
+      'Share the society name, tower, floor and flat number; in Gaur City the tower matters more than the sector.',
+      'Pre-approve the visit at the gate or in your society’s visitor app, so the technician is not held at security.',
+      'For a wall-mounted set of 55 inches or more, say so when you book.',
+    ],
+    faqs: [
+      {
+        question: 'Do you repair TVs in Greater Noida West?',
+        answer: 'Yes. We cover Greater Noida West (Noida Extension), including Gaur City 1 and 2, Gaur Chowk, Techzone 4, Sector 1, Sectors 16B and 16C and Bisrakh.',
+      },
+      {
+        question: 'Is Greater Noida West the same as Noida Extension?',
+        answer: 'Yes. Greater Noida West is widely called Noida Extension. It is administered as part of Greater Noida but sits next to Noida.',
+      },
+      {
+        question: 'Do you repair LED TVs at home in Gaur City?',
+        answer: 'Yes. Most LED faults, including backlight and power board repairs, are done inside the flat. Diagnosis is free, and you get a firm estimate before any paid work.',
+      },
+      {
+        question: 'Is GR Solution a brand service centre in Greater Noida West?',
+        answer: 'No. GR Solution is an independent TV repair workshop based in New Kondli, East Delhi. If your TV is still under the manufacturer’s warranty, use the brand’s official service first.',
+      },
+    ],
+  },
 ];
 
 export const localityPages = localities.map((item) => ({

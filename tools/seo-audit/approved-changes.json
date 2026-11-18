@@ -288,5 +288,48 @@
     ],
     "field": "^(head\\.title|head\\.metaDescription|head\\.openGraph|head\\.twitter|JSON-LD changed)$",
     "scope": "^/(services/tv-repair-greater-noida|blog/tv-backlight-failure-symptoms)$"
+  },
+  {
+    "id": "sony-out-of-warranty",
+    "decision": "Owner, 18 Nov 2026 (opportunity research): Sony city pages get an out-of-warranty note (components/BrandWarrantyNote.jsx, no heading tags) and a description aimed at out-of-warranty owners. GSC 90d: ~990 impressions, 4 clicks for Sony 'service center' queries on /services/sony-tv-repair-noida; Keyword Planner 'sony service center noida' 880/mo. Titles and H1s unchanged; the description states GR Solution is independent.",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": "^(head\\.metaDescription|head\\.openGraph|head\\.twitter|JSON-LD changed|internal links added|main copy added)$",
+    "scope": "^/services/sony-tv-repair-(delhi|noida|greater-noida|ghaziabad)$"
+  },
+  {
+    "id": "greater-noida-west-page",
+    "decision": "Owner, 18 Nov 2026: new locality page /services/tv-repair-greater-noida-west (Keyword Planner 'tv repair gaur city' 320/mo, +254% YoY; GSC ~140 impressions for Greater Noida West queries on the hub, 0 clicks). Coverage was already stated on the site. Rendered similarity to other locality pages 19-24%, within the existing range.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^(sitemap URLs changed|llms\\.txt changed)$",
+    "detail": [
+      "^\\+ https://grsolution\\.co\\.in/services/tv-repair-greater-noida-west$",
+      "^\\+ - \\[TV Repair in Greater Noida West\\]\\(https://grsolution\\.co\\.in/services/tv-repair-greater-noida-west\\).*$"
+    ]
+  },
+  {
+    "id": "greater-noida-west-page",
+    "decision": "New locality page (see above): the Greater Noida hub gains the standard locality-links section (one H2) that the other city hubs already have.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^H1-H3 text changed$",
+    "scope": "^/services/tv-repair-greater-noida$",
+    "detail": [
+      "^\\+ H2: Greater Noida areas with their own guide$"
+    ]
+  },
+  {
+    "id": "greater-noida-west-page",
+    "decision": "New locality page (see above): the page itself and links to it on the Greater Noida hub and the About page's area list.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^(new page in head snapshot|internal links added|main copy added)$",
+    "scope": "^(services__tv-repair-greater-noida-west|/services/tv-repair-greater-noida|/about)$"
   }
 ]

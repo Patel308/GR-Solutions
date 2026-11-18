@@ -1,6 +1,7 @@
 import { cities } from './localServicePages';
 import { buildTitle, clampDescription } from './seo';
 import { contactChannels } from './siteConfig';
+import { getBrandWarrantyNote } from './brandWarranty';
 
 const siteContactAddress = 'C-4/102, Pocket C 3, New Kondli, Kondli, Delhi 110096';
 
@@ -520,7 +521,11 @@ export const brandServicePages = brands.flatMap((brand) =>
       title,
       h1,
       metaTitle: buildTitle(`${brand.displayName} TV Repair ${city.name}`, 'Doorstep Service'),
-      metaDescription: clampDescription(`${brand.displayName} TV repair in ${city.name}. GR Solution provides doorstep inspection and repair support for ${brand.displayName} TV issues across ${city.name} and nearby NCR areas.`),
+      // Brands with an out-of-warranty note (data/brandWarranty.js) use its snippet.
+      metaDescription: clampDescription(
+        getBrandWarrantyNote(brand.slug)?.metaDescription(city.name)
+          || `${brand.displayName} TV repair in ${city.name}. GR Solution provides doorstep inspection and repair support for ${brand.displayName} TV issues across ${city.name} and nearby NCR areas.`,
+      ),
       image: brand.image,
       heroIntro: `Need ${keyword}? GR Solution provides doorstep inspection and repair support for ${brand.displayName} ${brand.panelTypes} and Smart TV issues across ${city.name} and nearby NCR areas.`,
       directAnswer: `GR Solution offers doorstep ${brand.displayName} TV repair service in ${city.name}, covering ${brand.techNote}. A technician inspects the reported issue and shares a clear, inspection-based estimate before any repair work begins.`,
