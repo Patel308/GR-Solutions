@@ -28,6 +28,7 @@ export function GET() {
     `- Email: ${email}`,
     `- Hours: ${openingHours.days.length === 7 ? 'Monday to Sunday' : openingHours.days.join(', ')}, ${openingHours.opens} to ${openingHours.closes} IST`,
     `- Service areas: ${serviceAreas.join(', ')}`,
+    ...(siteConfig.sameDayVisitAreas?.length ? [`- Same-day doorstep visits: ${siteConfig.sameDayVisitAreas.join(', ')} (time slot confirmed when you call)`] : []),
     `- Diagnosis: free. A doorstep diagnosis identifies the failed component, then a firm estimate is given before any paid work begins.`,
     `- Price guide: ${url}/pricing`,
     '',

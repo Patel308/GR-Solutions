@@ -53,7 +53,7 @@ export default function sitemap() {
 
   const localityUrls = localityPages.map((page) => ({
     url: `${siteConfig.url}/services/${page.slug}`,
-    lastModified: LAST_REVIEWED.locality,
+    lastModified: page.reviewedAt || LAST_REVIEWED.locality,
     changeFrequency: 'monthly',
     priority: 0.8,
   }));

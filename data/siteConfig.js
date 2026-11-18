@@ -70,6 +70,10 @@ export const siteConfig = {
     addressCountry: 'IN',
   },
   serviceAreas: ['Delhi NCR', 'Delhi', 'Noida', 'Greater Noida', 'Ghaziabad'],
+  // Cities with same-day doorstep visits (owner confirmed for Ghaziabad, 18 Nov 2026).
+  // Shown in the key-facts block, the Ghaziabad locality pages and llms.txt. Add a
+  // city here only when the business confirms it.
+  sameDayVisitAreas: ['Ghaziabad'],
   geo: {
     latitude: 28.6244,
     longitude: 77.3185,

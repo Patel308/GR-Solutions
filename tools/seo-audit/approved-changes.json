@@ -255,8 +255,8 @@
     ],
     "field": "^H1-H3 text changed$",
     "detail": [
-      "^\\+ H3: (Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)$",
-      "^\\+ H2: (Before you approve a repair|Read Before You Book( in (Delhi|Noida|Greater Noida|Ghaziabad))?)$"
+      "^\\+ H3: (Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)(  \\(x\\d+\\))?$",
+      "^\\+ H2: (Before you approve a repair|Read Before You Book( in (Delhi|Noida|Greater Noida|Ghaziabad))?)(  \\(x\\d+\\))?$"
     ]
   },
   {
@@ -267,17 +267,30 @@
     ],
     "field": "^(sitemap URLs changed|llms\\.txt changed)$",
     "detail": [
-      "^\\+ https://grsolution\\.co\\.in/blog/(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)$",
-      "^\\+ - \\[(Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)\\]\\(https://grsolution\\.co\\.in/blog/(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)\\): .+$"
+      "^\\+ https://grsolution\\.co\\.in/blog/(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)(  \\(x\\d+\\))?$",
+      "^\\+ - \\[(Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)\\]\\(https://grsolution\\.co\\.in/blog/(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)\\): .+(  \\(x\\d+\\))?$"
     ]
   },
   {
     "id": "decision-guides",
-    "decision": "Decision guides (see above): new pages, and cards/links to them added on related pages.",
+    "decision": "Decision guides (see above): new pages, and cards/links to them added on related pages. Tightened 18 Nov 2026: only the guides' own URLs, titles, card text and labels are approved; any other added copy or link still needs review.",
     "levels": [
       "REVIEW"
     ],
-    "field": "^(new page in head snapshot|internal links added|main copy added|images added)$"
+    "field": "^(internal links added|main copy added|images added)$",
+    "detail": [
+      "^\\+ /images/blog/(how-to-choose-tv-repair-service-checklist|service-centre-vs-local-tv-repair-delhi-ncr)\\.webp  alt=\\\".+\\\"(  \\(x\\d+\\))?$",
+      "^\\+ /blog/(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)  \\\".+\\\"(  \\(x\\d+\\))?$",
+      "^\\+ (Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)(  \\(x\\d+\\))?$",
+      "^\\+ : (Authorised Service Centre vs Local TV Repair|How to Choose a TV Repair Service in Delhi NCR)(  \\(x\\d+\\))?$",
+      "^\\+ (DECISION GUIDE|BUYER’S CHECKLIST|IN-DEPTH GUIDES|Before you approve a repair|Read guide|Read the guide →|->)(  \\(x\\d+\\))?$",
+      "^\\+ Read Before You Book( in (Delhi|Noida|Greater Noida|Ghaziabad))?(  \\(x\\d+\\))?$",
+      "^\\+ Detailed cost and diagnosis guides covering what actually drives the price and which faults are worth repairing\\.(  \\(x\\d+\\))?$",
+      "^\\+ 7 checks before you book a TV technician: .+(  \\(x\\d+\\))?$",
+      "^\\+ Under warranty\\? Use the brand’s service centre\\. .+(  \\(x\\d+\\))?$",
+      "^\\+ · \\d+ min read(  \\(x\\d+\\))?$",
+      "^\\+ 17 Nov 2026(  \\(x\\d+\\))?$"
+    ]
   },
   {
     "id": "ctr-title-test-2026-11",
@@ -288,5 +301,49 @@
     ],
     "field": "^(head\\.title|head\\.metaDescription|head\\.openGraph|head\\.twitter|JSON-LD changed)$",
     "scope": "^/(services/tv-repair-greater-noida|blog/tv-backlight-failure-symptoms)$"
+  },
+  {
+    "id": "sony-out-of-warranty",
+    "decision": "Owner, 18 Nov 2026 (opportunity research): Sony city pages get an out-of-warranty note (components/BrandWarrantyNote.jsx, no heading tags) and a description aimed at out-of-warranty owners. GSC 90d: ~990 impressions, 4 clicks for Sony 'service center' queries on /services/sony-tv-repair-noida; Keyword Planner 'sony service center noida' 880/mo. Titles and H1s unchanged; the description states GR Solution is independent.",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": "^(head\\.metaDescription|head\\.openGraph|head\\.twitter|JSON-LD changed|internal links added|main copy added)$",
+    "scope": "^/services/sony-tv-repair-(delhi|noida|greater-noida|ghaziabad)$"
+  },
+  {
+    "id": "decision-guides",
+    "decision": "Decision guides: the two new page snapshots.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^new page in head snapshot$",
+    "scope": "^blog__(authorised-service-centre-vs-local-tv-repair|how-to-choose-tv-repair-service-delhi-ncr)$"
+  },
+  {
+    "id": "ghaziabad-same-day",
+    "decision": "Owner, 18 Nov 2026: same-day doorstep visits are available in Ghaziabad (siteConfig.sameDayVisitAreas). Shown in the key-facts block on Ghaziabad pages, the Indirapuram and Vasundhara fact tables, and llms.txt. Answers the Otterly question 'Same day doorstep TV repair in Ghaziabad'.",
+    "levels": [
+      "REVIEW"
+    ],
+    "field": "^main copy added$",
+    "scope": "^/services/(.+-ghaziabad|tv-repair-indirapuram|tv-repair-vasundhara)$",
+    "detail": [
+      "^\\+ Same-day visits(  \\(x\\d+\\))?$",
+      "^\\+ Same-day doorstep visits are available across Ghaziabad\\. We confirm the time slot when you call\\.(  \\(x\\d+\\))?$",
+      "^\\+ Available across Ghaziabad; we confirm the time slot when you call(  \\(x\\d+\\))?$"
+    ]
+  },
+  {
+    "id": "ghaziabad-same-day",
+    "decision": "Same-day visits in Ghaziabad (see above): llms.txt business facts line.",
+    "levels": [
+      "VIOLATION"
+    ],
+    "field": "^llms\\.txt changed$",
+    "detail": [
+      "^\\+ - Same-day doorstep visits: Ghaziabad \\(time slot confirmed when you call\\)(  \\(x\\d+\\))?$"
+    ]
   }
 ]

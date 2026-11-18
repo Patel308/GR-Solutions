@@ -34,6 +34,7 @@ import { getLocalityPageBySlug, getLocalityPagesByCity, localityPages } from '@/
 import { PhoneLink, PhoneNumber, WhatsAppLink } from '@/components/ContactChannel';
 import ServicePageRevision from '@/components/ServicePageRevision';
 import KeyFacts from '@/components/KeyFacts';
+import BrandWarrantyNote from '@/components/BrandWarrantyNote';
 import { getServicePageRevision } from '@/data/servicePageRevisions';
 
 // Page copy is written with the SEO number; swap it for the visitor's channel
@@ -828,6 +829,8 @@ function BrandServicePage({ page }) {
       <TrustBand />
 
       <KeyFacts subject={page.h1} cityName={page.cityName} brand={page.brand} />
+
+      <BrandWarrantyNote brandSlug={page.brandSlug} cityName={page.cityName} />
 
       {/* Intro + city explanation */}
       <section className="section band" data-section="brand_intro">

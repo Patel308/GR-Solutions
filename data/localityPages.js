@@ -188,6 +188,7 @@ const localities = [
   // -------------------------------------------------------------- Ghaziabad
   {
     slug: 'tv-repair-indirapuram',
+    reviewedAt: '2026-11-18', // same-day visit fact added
     name: 'Indirapuram',
     citySlug: 'ghaziabad',
     cityName: 'Ghaziabad',
@@ -204,6 +205,7 @@ const localities = [
       ['Electricity distributor', 'PVVNL (Paschimanchal Vidyut Vitran Nigam Limited)'],
       ['Typical housing', 'High-rise group housing societies organised into khands'],
       ['Workshop handling', 'Short trip, so a bench repair is a practical option when needed'],
+      ['Same-day visits', 'Available across Ghaziabad; we confirm the time slot when you call'],
     ],
     angleHeading: 'Society towers, generator backup and large screens',
     angle: [
@@ -241,6 +243,7 @@ const localities = [
   },
   {
     slug: 'tv-repair-vasundhara',
+    reviewedAt: '2026-11-18', // same-day visit fact added
     name: 'Vasundhara',
     citySlug: 'ghaziabad',
     cityName: 'Ghaziabad',
@@ -257,6 +260,7 @@ const localities = [
       ['Electricity distributor', 'PVVNL (Paschimanchal Vidyut Vitran Nigam Limited)'],
       ['Typical housing', 'Independent houses, builder floors and low-rise apartment blocks across numbered sectors'],
       ['Workshop handling', 'Short trip, but stairs without lifts favour on-site repair'],
+      ['Same-day visits', 'Available across Ghaziabad; we confirm the time slot when you call'],
     ],
     angleHeading: 'Long-serving sets and honest repair-or-replace advice',
     angle: [

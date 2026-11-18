@@ -82,8 +82,11 @@ export function getKeyFacts({ serviceSlug, cityName, brand } = {}) {
       value: `${lead.fault}: about ₹${lead.bands[0]} on ${sizeBands[0]} TVs, ₹${lead.bands[1]} on ${sizeBands[1]} (Delhi NCR market range, parts and labour).`,
     });
   }
+  facts.push({ label: 'Service area', value: areaLine(cityName) });
+  if (cityName && (siteConfig.sameDayVisitAreas || []).includes(cityName)) {
+    facts.push({ label: 'Same-day visits', value: `Same-day doorstep visits are available across ${cityName}. We confirm the time slot when you call.` });
+  }
   facts.push(
-    { label: 'Service area', value: areaLine(cityName) },
     { label: 'Hours', value: hoursLine() },
     { label: 'Warranty', value: '90-day service warranty on the repair, where applicable. Terms are confirmed with your estimate.' },
   );
