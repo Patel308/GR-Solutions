@@ -169,6 +169,28 @@
     ]
   },
   {
+    "id": "owner-primary-deepanshu",
+    "decision": "Owner, 25 Nov 2026: Deepanshu's +91 84498 20270 is the one number on every page for every visitor (replaces Kamlesh's +91 93155 15700 as the NAP, and the ads/home lines). Server HTML, schema telephone, llms.txt and every tel/WhatsApp link carry it.",
+    "levels": [
+      "VIOLATION",
+      "REVIEW"
+    ],
+    "field": "^(JSON-LD changed|NAP (schemaTelephones|telLinks|whatsappLinks|visiblePhones)|llms\\.txt changed|tel/WhatsApp/mailto/external links changed|(main|footer) copy (removed or edited|added))$",
+    "detail": [
+      "^\\s*~ \\[Organization, LocalBusiness\\+ProfessionalService, WebSite\\]:$",
+      "^\\s*~ \\[.*\\]:$",
+      "^\\s*\\$\\[\\d+\\](\\.[A-Za-z@]+|\\[\\d+\\])*\\.telephone: \"\\+91 99902 83890\" -> \"\\+91 84498 20270\"$",
+      "^\\s*before: \\[\"(\\+91 99902 83890|\\+919990283890|tel:\\+919990283890|https://wa\\.me/919990283890)\"\\]$",
+      "^\\s*after: +\\[\"(\\+91 84498 20270|\\+918449820270|tel:\\+918449820270|https://wa\\.me/918449820270)\"\\]$",
+      "^- - Phone: \\+91 99902 83890$",
+      "^\\+ - Phone: \\+91 84498 20270$",
+      "^- (tel tel:\\+919990283890|external https://wa\\.me/919990283890) .*$",
+      "^\\+ (tel tel:\\+918449820270|external https://wa\\.me/918449820270) .*$",
+      "^- \\+91 99902 83890$",
+      "^\\+ \\+91 84498 20270$"
+    ]
+  },
+  {
     "id": "owner-5-years",
     "decision": "Owner, 12 Oct 2026: 'It's 5+ years, not 15'. The experience claim reads 5+ in the About H1, the About and home stats and the footer.",
     "levels": [
@@ -194,6 +216,23 @@
     "field": "^(main copy added|internal links added)$",
     "scope": "^/services/",
     "detail": [
+      "^\\+ Key facts$",
+      "^\\+ .+: key facts and typical prices$",
+      "^\\+ .+: typical Delhi NCR repair costs by fault and screen size$",
+      "^\\+ (Diagnosis|Most common repair|Service area|Hours|Warranty|Who repairs it|Book|Typical costs by fault and screen size|Fault|32\\\" - 43\\\"|44\\\" - 55\\\"|56\\\" and above)$",
+      "^\\+ Free\\. You get a firm estimate before any paid work starts\\.$",
+      "^\\+ .+: about ₹[\\d,]+ - [\\d,]+ on 32\\\" - 43\\\" TVs, ₹[\\d,]+ - [\\d,]+ on 44\\\" - 55\\\" \\(Delhi NCR market range, parts and labour\\)\\.$",
+      "^\\+ Doorstep visits across (Delhi|Noida|Greater Noida|Ghaziabad)(, plus| and|,) .+$",
+      "^\\+ Monday to Sunday, 9 am to 9 pm$",
+      "^\\+ 90-day service warranty on the repair, where applicable\\. Terms are confirmed with your estimate\\.$",
+      "^\\+ GR Solution is an independent TV repair service, not an authorised .+ service centre\\.$",
+      "^\\+ (Call or WhatsApp|with your TV brand, screen size and the fault\\.)$",
+      "^\\+ ₹[\\d,]+ - [\\d,]+(  \\(x\\d+\\))?$",
+      "^\\+ (Backlight / LED strip replacement|Power supply board repair or replacement|Mainboard / motherboard repair|T-Con board repair or replacement|Audio / speaker circuit repair|HDMI / input port repair|Software / firmware reset on smart TVs)$",
+      "^\\+ (Sound works but the screen is black or unevenly lit|No power, or a blinking standby light|Boot loops, no input detection, random shutdowns|Half screen, double image, vertical lines|No sound, distorted sound, one speaker dead|One or all inputs not detected|Apps crashing, stuck on logo, interface frozen)$",
+      "^\\+ Delhi NCR market ranges including part and labour, researched from published sources and last reviewed .+$",
+      "^\\+ /pricing  \\\"Full TV repair price guide, panel prices and sources\\\"$",
+      "^\\+ Full TV repair price guide, panel prices and sources$",
       "^\\+ Key facts$",
       "^\\+ .+: key facts and typical prices$",
       "^\\+ .+: typical Delhi NCR repair costs by fault and screen size$",

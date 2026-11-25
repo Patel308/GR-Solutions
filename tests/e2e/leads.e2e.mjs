@@ -25,14 +25,16 @@ const SITE_PORT = Number(process.env.E2E_SITE_PORT || 3150);
 const MOCK_PORT = Number(process.env.E2E_MOCK_PORT || 4545);
 const SITE = `http://127.0.0.1:${SITE_PORT}`;
 const MOCK = `http://127.0.0.1:${MOCK_PORT}`;
-const ORGANIC = { tel: 'tel:+919315515700', wa: 'https://wa.me/919315515700' };
-const ADS = { tel: 'tel:+919990283890', wa: 'https://wa.me/919990283890' };
-// The home page's own line (the business's original number), shown on / to
-// direct visitors only. Same digits as the ads line.
-const HOME = ADS;
-// Second organic line: organic and direct visitors on pricing and every
-// service page except city/area, OLED/QLED and plasma pages.
-const SEO2 = { tel: 'tel:+918449820270', wa: 'https://wa.me/918449820270' };
+// Owner decision, 25 Nov 2026: Deepanshu's +91 84498 20270 is the one number
+// for every line. The routing still runs and labels each line (seo, ads, home,
+// seo2), so the tests below keep checking it through data-lead-line and the
+// lead records; every line resolves to this number.
+const PRIMARY = { tel: 'tel:+918449820270', wa: 'https://wa.me/918449820270' };
+const RETIRED = ['9315515700', '93155 15700', '9990283890', '99902 83890'];
+const ORGANIC = PRIMARY;
+const ADS = PRIMARY;
+const HOME = PRIMARY;
+const SEO2 = PRIMARY;
 const WEBHOOK_SECRET = 'e2e-hmac';
 const DAY = 864e5;
 
@@ -174,6 +176,16 @@ async function expectChannel(page, channel) {
   );
 }
 
+// Line labels resolve after hydration; the number is the same before and
+// after, so wait for the labels themselves.
+async function expectMarks(page, expected) {
+  let last;
+  await waitFor(async () => {
+    last = await page.evaluate(() => [...new Set([...document.querySelectorAll('[data-lead-line]')].map((el) => `${el.dataset.leadChannel}/${el.dataset.leadLine}`))]);
+    return JSON.stringify(last) === JSON.stringify(expected);
+  }, { message: `line marks ${JSON.stringify(expected)}` }).catch(() => assert.deepEqual(last, expected));
+}
+
 const events = (page, name) =>
   page.evaluate((n) => (window.dataLayer || []).filter((e) => e && e.event === n).map((e) => ({ ...e })), name);
 
@@ -189,19 +201,18 @@ async function fillAndSubmit(page, form, { phone = '+91 98765-43210', name = 'E2
 
 // ------------------------------------------------------- number routing
 
-test('server HTML: every page carries the organic number; schema and llms.txt too', async () => {
-  for (const url of ['/', '/services/samsung-tv-repair-delhi', '/services/lg-tv-repair-delhi', '/services/brands', '/services/sony-tv-repair-noida', '/services/tv-repair-noida', '/services/oled-qled-tv-repair', '/blog/tv-repair-cost-delhi', '/contact', '/about', '/pricing']) {
+test('server HTML: every page, the schema and llms.txt carry only the primary number', async () => {
+  for (const url of ['/', '/landing', '/services/samsung-tv-repair-delhi', '/services/lg-tv-repair-delhi', '/services/brands', '/services/sony-tv-repair-noida', '/services/tv-repair-noida', '/services/tv-repair-near-me', '/services/oled-qled-tv-repair', '/blog/tv-repair-cost-delhi', '/contact', '/about', '/pricing']) {
     const html = await (await fetch(`${SITE}${url}`)).text();
-    assert.ok(html.includes('tel:+919315515700'), `${url} has the organic tel link`);
-    assert.ok(!html.includes('9990283890'), `${url} never mentions the ads number`);
-    assert.ok(!html.includes('8449820270'), `${url} server HTML never carries the second SEO line`);
+    assert.ok(html.includes(PRIMARY.tel) && html.includes(PRIMARY.wa), `${url} has the primary tel and WhatsApp links`);
+    for (const old of RETIRED) assert.ok(!html.includes(old), `${url} never mentions ${old}`);
+    assert.ok(!/kamlesh/i.test(html.replace(/kamleshg9569@gmail\.com/g, '')), `${url} never names Kamlesh`);
     const ld = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]).join('');
-    assert.ok(ld.includes('+91 93155 15700'), `${url} JSON-LD telephone is the organic number`);
+    if (ld) assert.ok(ld.includes('"telephone":"+91 84498 20270"'), `${url} JSON-LD telephone is the primary number`);
   }
   const llms = await (await fetch(`${SITE}/llms.txt`)).text();
-  assert.match(llms, /- Phone: \+91 93155 15700/);
-  const landing = await (await fetch(`${SITE}/landing`)).text();
-  assert.ok(landing.includes('tel:+919990283890'), '/landing (ads-only page) shows the ads number');
+  assert.match(llms, /- Phone: \+91 84498 20270/);
+  for (const old of RETIRED) assert.ok(!llms.includes(old), `llms.txt never mentions ${old}`);
 });
 
 test('organic, AI, social and direct visitors see the organic number after hydration (direct on the home page: its own line)', async () => {
@@ -270,8 +281,7 @@ test('home page: original number for a direct visitor, then the page line one cl
   const page = await openPage(context, '/');
   await page.waitForTimeout(600);
   await expectLinks(page, HOME, '/ direct');
-  const marks = await page.evaluate(() => [...new Set([...document.querySelectorAll('[data-lead-line]')].map((el) => `${el.dataset.leadChannel}/${el.dataset.leadLine}`))]);
-  assert.deepEqual(marks, ['seo/home'], 'channel stays seo, line is home');
+  await expectMarks(page, ['seo/home']);
   await page.locator('a[href="/services"]:visible').first().click();
   await page.waitForURL('**/services');
   await expectLinks(page, SEO2, 'after client navigation to /services (a seo2 page)');
@@ -281,13 +291,12 @@ test('home page: original number for a direct visitor, then the page line one cl
   await context.close();
 });
 
-test('home page: a visitor who found the site through search or AI keeps Kamlesh line, even on a later direct return', async () => {
+test('home page: a visitor who found the site through search or AI keeps the seo line, even on a later direct return', async () => {
   const context = await newContext();
   const page = await openPage(context, '/', { referer: 'https://www.google.co.in/' });
   await page.waitForTimeout(600);
   await expectLinks(page, ORGANIC, '/ from Google');
-  const marks = await page.evaluate(() => [...new Set([...document.querySelectorAll('[data-lead-line]')].map((el) => `${el.dataset.leadChannel}/${el.dataset.leadLine}`))]);
-  assert.deepEqual(marks, ['seo/seo']);
+  await expectMarks(page, ['seo/seo']);
   const later = await openPage(context, '/');
   await page.waitForTimeout(600);
   await expectLinks(later, ORGANIC, 'later direct return to /');
@@ -311,7 +320,7 @@ test('/landing shows the ads number for direct and ad visitors', async () => {
   await context.close();
 });
 
-test('seo2 pages: organic, AI and direct visitors see the second SEO line; ad visitors the ads line; city, OLED and plasma pages stay on Kamlesh', async () => {
+test('seo2 pages: organic, AI and direct visitors see the second SEO line; ad visitors the ads line; city, OLED and plasma pages stay on the seo line', async () => {
   const cases = [
     ['/pricing', 'https://www.google.com/', SEO2],
     ['/pricing', 'https://chatgpt.com/', SEO2],
@@ -349,8 +358,7 @@ test('the line follows the page: Samsung, services hub, pricing, Sony, city page
   const context = await newContext();
   const page = await openPage(context, '/services/samsung-tv-repair-delhi', { referer: 'https://www.google.co.in/' });
   await expectLinks(page, SEO2, 'Samsung page from Google');
-  const marks = await page.evaluate(() => [...new Set([...document.querySelectorAll('[data-lead-line]')].map((el) => `${el.dataset.leadChannel}/${el.dataset.leadLine}`))]);
-  assert.deepEqual(marks, ['seo/seo2']);
+  await expectMarks(page, ['seo/seo2']);
   await page.locator('a[href="/services"]:visible').first().click();
   await page.waitForURL('**/services');
   await expectLinks(page, SEO2, 'services hub after client navigation');
@@ -359,7 +367,7 @@ test('the line follows the page: Samsung, services hub, pricing, Sony, city page
   const sony = await openPage(context, '/services/sony-tv-repair-delhi');
   await expectLinks(sony, SEO2, 'Sony page');
   const city = await openPage(context, '/services/tv-repair-noida');
-  await expectLinks(city, ORGANIC, 'city page (Kamlesh)');
+  await expectLinks(city, ORGANIC, 'city page (seo line)');
   const lg = await openPage(context, '/services/lg-tv-repair-noida');
   await expectLinks(lg, SEO2, 'another seo2 brand page');
   await context.close();
@@ -385,7 +393,7 @@ test('an organic lead from the Samsung page names the second SEO line', async ()
     const fresh = received.slice(before).filter((c) => c.body && JSON.stringify(c.body).includes(email.lead_id));
     return fresh.length >= 2 ? fresh : null;
   });
-  assert.match(calls.find((c) => c.kind === 'telegram').body.text, /Line shown: SEO line 2 \+91 84498 20270/);
+  assert.match(calls.find((c) => c.kind === 'telegram').body.text, /Line shown: SEO line 2 \(Deepanshu\) \+91 84498 20270/);
   assert.equal(calls.find((c) => c.kind === 'sheet').body.line_number, '+91 84498 20270');
   await context.close();
 });
@@ -514,8 +522,8 @@ for (const spec of FORMS) {
     assert.match(telegram.body.text, /\+91 98765 43210/);
     assert.match(telegram.body.text, /Source: Google Ads/);
     assert.equal(email.lead_line, 'ads');
-    assert.match(telegram.body.text, /Line shown: Ads \+91 99902 83890/);
-    assert.equal(sheet.body.line_number, '+91 99902 83890');
+    assert.match(telegram.body.text, /Line shown: Ads \(Deepanshu\) \+91 84498 20270/);
+    assert.equal(sheet.body.line_number, '+91 84498 20270');
     assert.equal(sheet.body.secret, 'e2e-sheet');
     assert.equal(sheet.body.lead_id, email.lead_id);
     assert.equal(sheet.body.click_id_type, 'gclid');
@@ -536,7 +544,7 @@ for (const spec of FORMS) {
   });
 }
 
-test('an organic (ChatGPT) lead is tagged seo and names Kamlesh line', async () => {
+test('an organic (ChatGPT) lead is tagged seo and names the primary line', async () => {
   formsubmitMode = 'ok';
   destinationsFail = false;
   const context = await newContext({ mobile: false });
@@ -548,7 +556,7 @@ test('an organic (ChatGPT) lead is tagged seo and names Kamlesh line', async () 
   assert.equal(email.lead_channel, 'seo');
   assert.equal(email.traffic_source, 'chatgpt / ai');
   const telegram = await waitFor(() => received.slice(before).find((c) => c.kind === 'telegram'));
-  assert.match(telegram.body.text, /Line shown: SEO \(Kamlesh\) \+91 93155 15700/);
+  assert.match(telegram.body.text, /Line shown: SEO \(Deepanshu\) \+91 84498 20270/);
   assert.match(telegram.body.text, /Source: chatgpt \(AI assistant\)/);
   await context.close();
 });
@@ -566,7 +574,7 @@ test('a direct visitor lead from the home page names the home line', async () =>
   assert.equal(email.lead_channel, 'seo');
   assert.equal(email.lead_line, 'home');
   const telegram = await waitFor(() => received.slice(before).find((c) => c.kind === 'telegram'));
-  assert.match(telegram.body.text, /Line shown: Home page \+91 99902 83890/);
+  assert.match(telegram.body.text, /Line shown: Home page \(Deepanshu\) \+91 84498 20270/);
   assert.match(telegram.body.text, /Source: direct \/ unknown/);
   await context.close();
 });
@@ -692,6 +700,6 @@ test('call and WhatsApp taps are tracked with channel and traffic source', async
   const wa = (await events(page, 'click_whatsapp')).at(-1);
   assert.equal(wa.lead_channel, 'ads');
   const href = await page.getAttribute('[data-sticky-bar] [data-cta="sticky_bar_whatsapp"]', 'href');
-  assert.match(href, /^https:\/\/wa\.me\/919990283890\?text=Hi%20GR%20Solution/);
+  assert.match(href, /^https:\/\/wa\.me\/918449820270\?text=Hi%20GR%20Solution/);
   await context.close();
 });
