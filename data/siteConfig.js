@@ -1,53 +1,29 @@
-// Separate call/WhatsApp lines per traffic source, so paid-ad leads and organic
-// leads ring on different numbers.
-//   seo: organic search, Google Maps, AI assistants (AIO/GEO), referrals and
-//        direct visits. This is the business NAP number: it is what every page
-//        renders on the server, so it is what search engines and AI crawlers
-//        read (schema, llms.txt, footer). Kamlesh's line.
-//   ads: shown only to visitors who arrived from an ad click (gclid etc.) in
-//        the last 90 days, and on the ads-only /landing page.
-//   home: the business's original number, shown on the home page (/) only
-//        to DIRECT visitors (typed the address or a bookmark, no search, AI,
-//        social, referral or ad visit in 90 days), after the page loads.
-//        The server HTML, schema, llms.txt and every other page keep the seo
-//        line (owner decision, 2 Nov 2026).
-//   seo2: second organic line, shown to search, AI, social, referral and
-//        direct visitors on about three quarters of the money pages
-//        (pricing and every /services page except city/area, OLED/QLED and
-//        plasma pages; see isSeo2Page in lib/leads/attribution.mjs), after
-//        the page loads, so those enquiries arrive on their own number
-//        (owner decisions, 8 and 16 Nov 2026). The server HTML and schema
-//        there keep the seo line (the business NAP).
-// Routing rules: lib/leads/attribution.mjs and components/ContactChannel.jsx.
+// The business phone: Deepanshu's +91 84498 20270 is the one number on every
+// page, for every visitor (owner decision, 25 Nov 2026; replaces Kamlesh's
+// number, which was the organic/NAP number from 12 Oct). It is what
+// the server HTML, schema (telephone), llms.txt and the footer NAP carry, so
+// search engines and AI assistants read it too.
+const primaryLine = {
+  phone: '+91 84498 20270',
+  phoneHref: 'tel:+918449820270',
+  whatsapp: '+91 84498 20270',
+  whatsappHref: 'https://wa.me/918449820270',
+  owner: 'Deepanshu',
+};
+
+// Per-traffic lines. The routing still runs (lib/leads/attribution.mjs,
+// components/ContactChannel.jsx) and every lead and call/WhatsApp tap still
+// records its channel (seo / ads) and line, but all lines now use the primary
+// number. To split numbers again, give a line its own number here:
+//   seo:  organic search, Google Maps, AI assistants, referrals, direct.
+//   ads:  visitors from an ad click in the last 90 days, and /landing.
+//   home: direct visitors on the home page.
+//   seo2: search/AI/direct visitors on pricing and most /services pages.
 export const contactChannels = {
-  ads: {
-    phone: '+91 99902 83890',
-    phoneHref: 'tel:+919990283890',
-    whatsapp: '+91 99902 83890',
-    whatsappHref: 'https://wa.me/919990283890',
-    owner: '',
-  },
-  seo: {
-    phone: '+91 93155 15700',
-    phoneHref: 'tel:+919315515700',
-    whatsapp: '+91 93155 15700',
-    whatsappHref: 'https://wa.me/919315515700',
-    owner: 'Kamlesh',
-  },
-  seo2: {
-    phone: '+91 84498 20270',
-    phoneHref: 'tel:+918449820270',
-    whatsapp: '+91 84498 20270',
-    whatsappHref: 'https://wa.me/918449820270',
-    owner: '',
-  },
-  home: {
-    phone: '+91 99902 83890',
-    phoneHref: 'tel:+919990283890',
-    whatsapp: '+91 99902 83890',
-    whatsappHref: 'https://wa.me/919990283890',
-    owner: '',
-  },
+  ads: primaryLine,
+  seo: primaryLine,
+  seo2: primaryLine,
+  home: primaryLine,
 };
 
 export const siteConfig = {

@@ -7,48 +7,27 @@ lead, and how to switch on the instant alerts. Code: `lib/leads/`,
 
 ## 1. Which number a visitor sees
 
-| Visitor | Number shown |
-| --- | --- |
-| Search engines and AI crawlers (they read the server HTML), organic Google / Bing, Google Maps, ChatGPT, Perplexity, Gemini, Copilot, social, referral, direct | **+91 93155 15700** (Kamlesh, the SEO/AIO/GEO line) |
-| Arrived from a Google Ads click (`gclid`, `gbraid`, `wbraid`, `gad_source`), Microsoft Ads (`msclkid`) or a link tagged `utm_medium=cpc` (or another paid medium) in the last 90 days | **+91 99902 83890** (ads line) |
-| The ads-only page `/landing` | ads line |
-| **About three quarters of the money pages**: `/pricing`, `/services`, `/services/brands`, every brand page (Samsung, Sony, LG, Mi, OnePlus, Panasonic, Philips, TCL, Toshiba, Vu, Hisense), LED, LCD, curved and smart TV pages, for search, AI, social, referral and direct visitors (owner decisions, 8 and 16 Nov 2026) | **+91 84498 20270** (second organic line, `seo2`, "SEO line 2") |
-| **The home page `/`, direct visitors only**: typed the address or used a bookmark, with no search, AI, social, referral or ad visit in the last 90 days (owner decision, 2 Nov 2026) | **+91 99902 83890** (the business's original number, "home" line) |
+**One number everywhere: +91 84498 20270 (Deepanshu)** (owner decision,
+25 Nov 2026). Every page, every visitor (search, Google Maps, AI assistants,
+social, referral, direct and Google Ads), the server HTML, the schema
+(`telephone`), `llms.txt`, the footer NAP and every call and WhatsApp link.
+It is set once, as `primaryLine` in `data/siteConfig.js`.
 
-- Every page's HTML (the home page too), the schema (`telephone`),
-  `llms.txt` and the footer NAP carry the organic number, so Google, the
-  Business Profile and AI answers all see one consistent business number.
-- On the home page, a direct visitor's browser swaps every call and WhatsApp
-  link and the visible number to the original number after the page loads.
-  Visitors from Google, Maps, ChatGPT, Perplexity and other AI assistants,
-  social or referral links see Kamlesh's line there; ad visitors see the ads
-  line. One click to any other page shows the direct visitor the organic
-  line again.
-- Split by Search Console clicks (3 months to 8 Nov 2026, from the owner's
-  Search Console export; the API key was not available in the cloud session):
-  - 8 Nov: 50/50. Pricing, the brands hub and brand pages except Sony on
-    +91 84498 20270 (~65 clicks); the rest on Kamlesh (~64).
-  - 16 Nov: half of Kamlesh's remaining money pages moved as well: Sony
-    (19), LED (9), curved (3), LCD and smart (0) and `/services` (1), ~32.
-  - Now: +91 84498 20270 on ~97 of ~129 money-page clicks (75%). Kamlesh's
-    line keeps the city and area pages (`/services/tv-repair-*`: Delhi,
-    Noida, Greater Noida, Ghaziabad, Dwarka, near-me, ...), OLED/QLED and
-    plasma pages (~32 clicks, 25%), the blog, and search/AI visitors on the
-    home page.
-- On those pages the server HTML (what Google and AI crawlers read) and the
-  schema keep +91 93155 15700; a visitor's browser swaps every call and
-  WhatsApp link to +91 84498 20270 after the page loads. Ad visitors keep the
-  ads line there. The number follows the page. Leads read "Line shown: SEO
-  line 2 +91 84498 20270". Change the split in `isSeo2Page` /
-  `SEO_SERVICE_PAGE` (`lib/leads/attribution.mjs`).
-- Some apps open links without saying where the visitor came from (no
-  referrer, no `utm_` tag); those visits look direct and see the original
-  number on the home page.
-- Leads and call/WhatsApp taps keep their real channel (`seo` or `ads`) and
-  also record the line the visitor saw (`lead_line`: `seo`, `ads` or `home`).
-  A home-page lead reads "Line shown: Home page +91 99902 83890" in Telegram.
-  Change or remove this rule in `DIRECT_LINE_PATHS`
-  (`lib/leads/attribution.mjs`).
+- The routing still runs and labels each visit, so leads and call/WhatsApp
+  taps keep their channel (`seo` or `ads`, with source, campaign and click
+  ID) and the line they fell under (`lead_line`: `seo`, `ads`, `home`,
+  `seo2`). Telegram reads e.g. "Line shown: SEO (Deepanshu) +91 84498
+  20270". Google Ads calls can no longer be told apart by the number dialled;
+  use the `click_call` / `click_whatsapp` events (they carry `lead_channel`
+  and the traffic source) and the Ads conversion tags instead.
+- To split numbers again, give a line its own number in `contactChannels`
+  (`data/siteConfig.js`); the page rules (`isSeo2Page`, `DIRECT_LINE_PATHS`
+  in `lib/leads/attribution.mjs`) are still in place.
+- History: 12 Oct, Kamlesh's +91 93155 15700 for organic traffic and the
+  NAP, +91 99902 83890 for Google Ads; 2 Nov, +91 99902 83890 for direct
+  visitors on the home page; 8 and 16 Nov, +91 84498 20270 on half, then
+  three quarters, of the money pages; 25 Nov, +91 84498 20270 everywhere.
+
 - The ads number is swapped in by the browser after the page loads, for that
   visitor only, and on every page they visit afterwards.
 - The rule is "last non-direct visit wins, for 90 days" (the Google
@@ -59,7 +38,7 @@ lead, and how to switch on the instant alerts. Code: `lib/leads/`,
 - Keep **auto-tagging on** in Google Ads (Admin → Account settings →
   Auto-tagging; it is on by default). Without it an ad click carries no
   `gclid`; add `utm_medium=cpc` to the final URL suffix in that case.
-- **Google Business Profile:** set its primary phone to +91 93155 15700 so
+- **Google Business Profile:** set its primary phone to +91 84498 20270 so
   the profile and the site agree (local ranking uses this NAP match).
 
 ## 2. What happens to a form lead
